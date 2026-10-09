@@ -8,11 +8,11 @@ The definitions and examples in the catalog are written in plain words for this 
 
 | Reference | Link | Accessed | Entries citing it | How it is cited |
 |---|---|---|---:|---|
-| Internet Encyclopedia of Philosophy, "Fallacies" (Bradley Dowden) | <https://iep.utm.edu/fallacy/> | 2026-10-08 | 129 | Section 6, "Partial List of Fallacies"; entries cited by their heading. |
-| Stanford Encyclopedia of Philosophy, "Fallacies" (Hans Hansen) | <https://plato.stanford.edu/entries/fallacies/> | 2026-10-08 | 28 | Section 1 (the core fallacies) and Section 2 (history: Aristotle, Port-Royal Logic, Locke, and others). |
+| Internet Encyclopedia of Philosophy, "Fallacies" (Bradley Dowden) | <https://iep.utm.edu/fallacy/> | 2026-10-08 | 111 | Section 6, "Partial List of Fallacies"; entries cited by their heading. |
+| Stanford Encyclopedia of Philosophy, "Fallacies" (Hans Hansen) | <https://plato.stanford.edu/entries/fallacies/> | 2026-10-08 | 29 | Section 1 (the core fallacies) and Section 2 (history: Aristotle, Port-Royal Logic, Locke, and others). |
 | Aristotle, On Sophistical Refutations, trans. W. A. Pickard-Cambridge (Internet Classics Archive) | <https://classics.mit.edu/Aristotle/sophist_refut.mb.txt> | 2026-10-08 | 13 | Chapters 4 and 5 list the thirteen sophistical refutations. |
-| Wikipedia, "List of fallacies" | <https://en.wikipedia.org/wiki/List_of_fallacies> | 2026-10-08 | 143 | Cited by section and item name. |
-| The Fallacy Files (Gary N. Curtis) | <https://www.fallacyfiles.org/> | 2026-10-08 | 89 | Cited by the individual entry page. |
+| Wikipedia, "List of fallacies" | <https://en.wikipedia.org/wiki/List_of_fallacies> | 2026-10-08 | 141 | Cited by section and item name. |
+| The Fallacy Files (Gary N. Curtis) | <https://www.fallacyfiles.org/> | 2026-10-08 | 85 | Cited by the individual entry page. |
 
 ## Notes on the references
 
