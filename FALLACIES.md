@@ -1153,6 +1153,7 @@ Status: standard · Detectable from text: yes
 - Independent physiological evidence of fit (digestion, nutrient data) offered for a conclusion about fit. A long history of use, or the phrase 'what our bodies are built for', is not such evidence. *(catalog wording)*
 - If the conclusion is a moral one drawn from facts, use is-ought. *(catalog wording)*
 - If only age or history is given, use appeal to tradition. If naturalness wording and history appear in the same step, report appeal to nature and note tradition. *(catalog wording)*
+- Evolutionary history alone offered for a conclusion that only says something suits us ('appropriate', 'suited'), with no claim that it is safe, healthy, best or right: read it as a claim about fit (METHOD step b) and record possible issue, naming the evidence of fit that would settle it. *(catalog wording)*
 - If the reason given is that something is unavoidable or already here, rather than natural, use appeal to inevitability. *(catalog wording)*
 
 **Related, use only one per step** (naturalism): [Naturalistic fallacy](#naturalistic-fallacy), [Is-ought fallacy](#is-ought), [Moralistic fallacy](#moralistic-fallacy), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy), [Appeal to consequences](#appeal-to-consequences), [Appeal to inevitability](#appeal-to-inevitability), [Appeal to tradition](#appeal-to-tradition)
