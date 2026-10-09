@@ -1,6 +1,6 @@
 {
   "title": "Fallacy Catalog",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "A plain, sourced catalog of named logical fallacies for checking real arguments. Each entry gives a standard name, aliases, a category, a short definition, an original example, the conditions that must all be shown from the text before the label applies, legitimate look-alikes that are not the fallacy, whether the fallacy can be detected from the text alone, related entries to choose between, and the published references that list it.",
   "license": "MIT",
   "references": [
@@ -71,15 +71,14 @@
   "families": [
     {
       "name": "naturalism",
-      "rule": "Pick the one that matches the step: identifying 'good' with a natural property (naturalistic), a bare is-to-ought step (is-ought), 'natural so good' (appeal to nature), 'unavoidable or already here, so good or to be welcomed' (appeal to inevitability), an ought-claim used to settle what is true (moralistic), the outcome of a belief used to settle its truth (consequences).",
+      "rule": "Pick the one that matches the step: identifying 'good' with a natural property (naturalistic), a bare is-to-ought step (is-ought), 'natural so good' (appeal to nature), 'unavoidable or already here, so good or to be welcomed' with no value premise (is-ought), an ought-claim used to settle what is true (moralistic), the outcome of a belief used to settle its truth (consequences).",
       "members": [
         "naturalistic-fallacy",
         "is-ought",
         "appeal-to-nature",
         "moralistic-fallacy",
         "naturalistic-fallacy-fallacy",
-        "appeal-to-consequences",
-        "appeal-to-inevitability"
+        "appeal-to-consequences"
       ]
     },
     {
@@ -102,7 +101,7 @@
     },
     {
       "name": "authority and popularity",
-      "rule": "Use one: expertise (authority), fame (celebrity), achievement in another field (accomplishment), numbers (people), a growing trend (bandwagon), age (tradition), newness (novelty), group loyalty (group think), era (chronological snobbery), money (wealth or poverty), the speaker's sincerity or lack of motive to lie (sincerity), experts disagreeing so nothing can be known (inflation of conflict). If poverty, wealth or a sacrifice is cited only as the reason the speaker has no motive to lie, use appeal to sincerity.",
+      "rule": "Use one: expertise (authority), fame (celebrity), achievement in another field (accomplishment), numbers (people), a growing trend (bandwagon), age (tradition), newness (novelty), group loyalty (group think), era (chronological snobbery), money (wealth or poverty), experts disagreeing so nothing can be known (inflation of conflict). If poverty or a sacrifice is cited as the reason the speaker has no motive to lie, use appeal to poverty and note that sincerity does not show the speaker was in a position to know.",
       "members": [
         "appeal-to-authority",
         "appeal-to-celebrity",
@@ -115,8 +114,7 @@
         "chronological-snobbery",
         "appeal-to-wealth",
         "appeal-to-poverty",
-        "inflation-of-conflict",
-        "appeal-to-sincerity"
+        "inflation-of-conflict"
       ]
     },
     {
@@ -1376,8 +1374,7 @@
         "chronological-snobbery",
         "appeal-to-wealth",
         "appeal-to-poverty",
-        "inflation-of-conflict",
-        "appeal-to-sincerity"
+        "inflation-of-conflict"
       ],
       "sources": [
         {
@@ -1442,8 +1439,7 @@
         "chronological-snobbery",
         "appeal-to-wealth",
         "appeal-to-poverty",
-        "inflation-of-conflict",
-        "appeal-to-sincerity"
+        "inflation-of-conflict"
       ],
       "sources": [
         {
@@ -1533,8 +1529,7 @@
         "chronological-snobbery",
         "appeal-to-wealth",
         "appeal-to-poverty",
-        "inflation-of-conflict",
-        "appeal-to-sincerity"
+        "inflation-of-conflict"
       ],
       "sources": [
         {
@@ -1580,7 +1575,6 @@
         "appeal-to-nature",
         "moralistic-fallacy",
         "naturalistic-fallacy-fallacy",
-        "appeal-to-inevitability",
         "appeal-to-emotion",
         "appeal-to-pity",
         "appeal-to-fear",
@@ -1889,51 +1883,6 @@
       ]
     },
     {
-      "id": "appeal-to-inevitability",
-      "name": "Appeal to inevitability",
-      "aliases": [
-        "fait accompli argument"
-      ],
-      "category": "informal: relevance",
-      "status": "standard",
-      "text_detectable": "yes",
-      "outside_text_conditions": [],
-      "use_only_if_nothing_more_specific": false,
-      "definition": "Arguing that because something is unavoidable or already here, it is good, beneficial or to be welcomed.",
-      "example": "Automation is coming whether we like it or not, so it can only be good for workers.",
-      "required_conditions": [
-        "Something is described as unavoidable or already here.",
-        "It is concluded to be good, beneficial or to be welcomed.",
-        "The inevitability is the reason given for that step."
-      ],
-      "legitimate_lookalikes": [
-        {
-          "text": "Accepting that something is unavoidable and planning how to adapt to it, without claiming that it is good.",
-          "caveat_source": "catalog wording"
-        },
-        {
-          "text": "Arguing that resisting would be costly or futile, as a practical point about what to do, without claiming the thing itself is good.",
-          "caveat_source": "catalog wording"
-        },
-        {
-          "text": "If the reason is that something is natural, use appeal to nature; if it is that it has always been done, use appeal to tradition.",
-          "caveat_source": "catalog wording"
-        }
-      ],
-      "families": [
-        "naturalism"
-      ],
-      "related": [
-        "naturalistic-fallacy",
-        "is-ought",
-        "appeal-to-nature",
-        "moralistic-fallacy",
-        "naturalistic-fallacy-fallacy",
-        "appeal-to-consequences"
-      ],
-      "sources": "TODO"
-    },
-    {
       "id": "appeal-to-motive",
       "name": "Appeal to motive",
       "aliases": [
@@ -2029,7 +1978,7 @@
           "caveat_source": "catalog wording"
         },
         {
-          "text": "If the reason given is that something is unavoidable or already here, rather than natural, use appeal to inevitability.",
+          "text": "If the reason given is that something is unavoidable or already here, rather than natural, and no value premise is given, use is-ought.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -2042,7 +1991,6 @@
         "moralistic-fallacy",
         "naturalistic-fallacy-fallacy",
         "appeal-to-consequences",
-        "appeal-to-inevitability",
         "appeal-to-tradition"
       ],
       "sources": [
@@ -2098,8 +2046,7 @@
         "chronological-snobbery",
         "appeal-to-wealth",
         "appeal-to-poverty",
-        "inflation-of-conflict",
-        "appeal-to-sincerity"
+        "inflation-of-conflict"
       ],
       "sources": [
         {
@@ -2203,8 +2150,7 @@
         "group-think",
         "chronological-snobbery",
         "appeal-to-wealth",
-        "inflation-of-conflict",
-        "appeal-to-sincerity"
+        "inflation-of-conflict"
       ],
       "sources": [
         {
@@ -2321,53 +2267,6 @@
           "locator": "section \"Informal fallacies > Relevance fallacies > Red herring fallacies\", item \"Appeal to ridicule\""
         }
       ]
-    },
-    {
-      "id": "appeal-to-sincerity",
-      "name": "Appeal to sincerity",
-      "aliases": [
-        "'no reason to lie' argument"
-      ],
-      "category": "informal: relevance",
-      "status": "standard",
-      "text_detectable": "yes",
-      "outside_text_conditions": [],
-      "use_only_if_nothing_more_specific": false,
-      "definition": "Treating a speaker's sincerity, or the lack of any motive to lie, as showing that what they say is true, without addressing whether they were in a position to know.",
-      "example": "He has nothing to gain from saying the bridge is unsafe, so it must be unsafe.",
-      "required_conditions": [
-        "A claim is supported by someone's testimony.",
-        "The reason offered for its truth is the speaker's sincerity or lack of a motive to lie ('she has no reason to lie', 'he clearly believes it').",
-        "Whether the speaker was in a position to know, or could be mistaken, is not addressed."
-      ],
-      "legitimate_lookalikes": [
-        {
-          "text": "Lack of a motive to lie offered as one reason to trust a witness who was in a position to know (sincerity plus competence).",
-          "caveat_source": "catalog wording"
-        },
-        {
-          "text": "Answering a charge that the speaker is lying, where the question really is honesty rather than accuracy.",
-          "caveat_source": "catalog wording"
-        }
-      ],
-      "families": [
-        "authority and popularity"
-      ],
-      "related": [
-        "appeal-to-authority",
-        "appeal-to-celebrity",
-        "appeal-to-accomplishment",
-        "appeal-to-the-people",
-        "bandwagon",
-        "appeal-to-tradition",
-        "appeal-to-novelty",
-        "group-think",
-        "chronological-snobbery",
-        "appeal-to-wealth",
-        "appeal-to-poverty",
-        "inflation-of-conflict"
-      ],
-      "sources": "TODO"
     },
     {
       "id": "appeal-to-snobbery",
@@ -2537,8 +2436,7 @@
         "chronological-snobbery",
         "appeal-to-wealth",
         "appeal-to-poverty",
-        "inflation-of-conflict",
-        "appeal-to-sincerity"
+        "inflation-of-conflict"
       ],
       "sources": [
         {
@@ -2684,9 +2582,7 @@
         "appeal-to-wealth",
         "appeal-to-poverty",
         "inflation-of-conflict",
-        "appeal-to-sincerity",
-        "appeal-to-nature",
-        "appeal-to-inevitability"
+        "appeal-to-nature"
       ],
       "sources": [
         {
@@ -2747,8 +2643,7 @@
         "group-think",
         "chronological-snobbery",
         "appeal-to-poverty",
-        "inflation-of-conflict",
-        "appeal-to-sincerity"
+        "inflation-of-conflict"
       ],
       "sources": [
         {
@@ -3289,8 +3184,7 @@
         "chronological-snobbery",
         "appeal-to-wealth",
         "appeal-to-poverty",
-        "inflation-of-conflict",
-        "appeal-to-sincerity"
+        "inflation-of-conflict"
       ],
       "sources": [
         {
@@ -3694,8 +3588,7 @@
         "group-think",
         "appeal-to-wealth",
         "appeal-to-poverty",
-        "inflation-of-conflict",
-        "appeal-to-sincerity"
+        "inflation-of-conflict"
       ],
       "sources": [
         {
@@ -6579,8 +6472,7 @@
         "chronological-snobbery",
         "appeal-to-wealth",
         "appeal-to-poverty",
-        "inflation-of-conflict",
-        "appeal-to-sincerity"
+        "inflation-of-conflict"
       ],
       "sources": [
         {
@@ -7493,7 +7385,6 @@
         "chronological-snobbery",
         "appeal-to-wealth",
         "appeal-to-poverty",
-        "appeal-to-sincerity",
         "disregarding-known-science"
       ],
       "sources": [
@@ -7840,8 +7731,7 @@
         "appeal-to-nature",
         "moralistic-fallacy",
         "naturalistic-fallacy-fallacy",
-        "appeal-to-consequences",
-        "appeal-to-inevitability"
+        "appeal-to-consequences"
       ],
       "sources": [
         {
@@ -8815,8 +8705,7 @@
         "is-ought",
         "appeal-to-nature",
         "naturalistic-fallacy-fallacy",
-        "appeal-to-consequences",
-        "appeal-to-inevitability"
+        "appeal-to-consequences"
       ],
       "sources": [
         {
@@ -9004,8 +8893,7 @@
         "appeal-to-nature",
         "moralistic-fallacy",
         "naturalistic-fallacy-fallacy",
-        "appeal-to-consequences",
-        "appeal-to-inevitability"
+        "appeal-to-consequences"
       ],
       "sources": [
         {
@@ -9049,8 +8937,7 @@
         "is-ought",
         "appeal-to-nature",
         "moralistic-fallacy",
-        "appeal-to-consequences",
-        "appeal-to-inevitability"
+        "appeal-to-consequences"
       ],
       "sources": [
         {

@@ -2,9 +2,9 @@
 
 <!-- Generated from fallacies.json by tools/build_md.py. Do not edit by hand. -->
 
-223 named fallacies, grouped by category and listed alphabetically within each category. 221 entries have confirmed published sources; 2 are marked TODO. See [SOURCES.md](SOURCES.md) for the references, [METHOD.md](METHOD.md) for how to check an argument, and [README.md](README.md) for what each field means.
+221 named fallacies, grouped by category and listed alphabetically within each category. 221 entries have confirmed published sources; 0 are marked TODO. See [SOURCES.md](SOURCES.md) for the references, [METHOD.md](METHOD.md) for how to check an argument, and [README.md](README.md) for what each field means.
 
-Detectable from the text alone: 176 yes, 43 partly, 4 no (*partly* entries name the conditions that may need outside facts; entries marked *no* may only be raised as questions). 12 entries are contested names. 11 are broad fallbacks, to be used only when nothing more specific fits.
+Detectable from the text alone: 174 yes, 43 partly, 4 no (*partly* entries name the conditions that may need outside facts; entries marked *no* may only be raised as questions). 12 entries are contested names. 11 are broad fallbacks, to be used only when nothing more specific fits.
 
 ## Contents
 
@@ -14,7 +14,7 @@ Detectable from the text alone: 176 yes, 43 partly, 4 no (*partly* entries name 
 | [Formal: propositional](#formal-propositional) | 7 |
 | [Formal: syllogistic](#formal-syllogistic) | 9 |
 | [Formal: quantifier and modal](#formal-quantifier-and-modal) | 6 |
-| [Informal: relevance](#informal-relevance) | 55 |
+| [Informal: relevance](#informal-relevance) | 53 |
 | [Informal: ambiguity and language](#informal-ambiguity-and-language) | 29 |
 | [Informal: presumption](#informal-presumption) | 48 |
 | [Informal: weak induction](#informal-weak-induction) | 20 |
@@ -26,7 +26,7 @@ Detectable from the text alone: 176 yes, 43 partly, 4 no (*partly* entries name 
 - **Formal: propositional**: [Affirming a disjunct](#affirming-a-disjunct), [Affirming the consequent](#affirming-the-consequent), [Commutation of conditionals](#commutation-of-conditionals), [Confusing necessary and sufficient conditions](#confusing-necessary-and-sufficient), [Denying a conjunct](#denying-a-conjunct), [Denying the antecedent](#denying-the-antecedent), [Improper transposition](#improper-transposition)
 - **Formal: syllogistic**: [Affirmative conclusion from a negative premise](#affirmative-conclusion-from-negative-premise), [Exclusive premises](#exclusive-premises), [Four terms](#four-terms), [Illicit contraposition](#illicit-contraposition), [Illicit conversion](#illicit-conversion), [Illicit major](#illicit-major), [Illicit minor](#illicit-minor), [Negative conclusion from affirmative premises](#negative-conclusion-from-affirmative-premises), [Undistributed middle](#undistributed-middle)
 - **Formal: quantifier and modal**: [Existential fallacy](#existential-fallacy), [Intensional fallacy](#intensional-fallacy), [Modal scope fallacy](#modal-scope-fallacy), [Quantifier shift](#quantifier-shift), [Scope fallacy](#scope-fallacy), [Some are / some are not](#some-are-some-are-not)
-- **Informal: relevance**: [Ad hominem (abusive)](#ad-hominem), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to consequences](#appeal-to-consequences), [Appeal to emotion](#appeal-to-emotion), [Appeal to fear](#appeal-to-fear), [Appeal to flattery](#appeal-to-flattery), [Appeal to force](#appeal-to-force), [Appeal to inevitability](#appeal-to-inevitability), [Appeal to motive](#appeal-to-motive), [Appeal to nature](#appeal-to-nature), [Appeal to novelty](#appeal-to-novelty), [Appeal to pity](#appeal-to-pity), [Appeal to poverty](#appeal-to-poverty), [Appeal to ridicule](#appeal-to-ridicule), [Appeal to sincerity](#appeal-to-sincerity), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Appeal to the people](#appeal-to-the-people), [Appeal to the stone](#appeal-to-the-stone), [Appeal to tradition](#appeal-to-tradition), [Appeal to wealth](#appeal-to-wealth), [Argument from fallacy](#argument-from-fallacy), [Bandwagon](#bandwagon), [Bulverism](#bulverism), [Chronological snobbery](#chronological-snobbery), [Circumstantial ad hominem](#circumstantial-ad-hominem), [Confusing an explanation with an excuse](#confusing-explanation-with-excuse), [Courtier's reply](#courtiers-reply), [Genetic fallacy](#genetic-fallacy), [Group think](#group-think), [Guilt by association](#guilt-by-association), [I'm entitled to my opinion](#entitled-to-my-opinion), [Ipse dixit](#ipse-dixit), [Irrelevant conclusion](#irrelevant-conclusion), [Is-ought fallacy](#is-ought), [Loaded language](#loaded-language), [Moralistic fallacy](#moralistic-fallacy), [Naturalistic fallacy](#naturalistic-fallacy), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy), [Non sequitur](#non-sequitur), [Poisoning the well](#poisoning-the-well), [Red herring](#red-herring), [Reductio ad Hitlerum](#reductio-ad-hitlerum), [Relative privation](#relative-privation), [Scapegoating](#scapegoating), [Straw man](#straw-man), [Style over substance](#style-over-substance), [Subjectivist fallacy](#subjectivist-fallacy), [Tone policing](#tone-policing), [Traitorous critic fallacy](#traitorous-critic), [Tu quoque](#tu-quoque), [Two wrongs make a right](#two-wrongs), [Wishful thinking](#wishful-thinking)
+- **Informal: relevance**: [Ad hominem (abusive)](#ad-hominem), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to consequences](#appeal-to-consequences), [Appeal to emotion](#appeal-to-emotion), [Appeal to fear](#appeal-to-fear), [Appeal to flattery](#appeal-to-flattery), [Appeal to force](#appeal-to-force), [Appeal to motive](#appeal-to-motive), [Appeal to nature](#appeal-to-nature), [Appeal to novelty](#appeal-to-novelty), [Appeal to pity](#appeal-to-pity), [Appeal to poverty](#appeal-to-poverty), [Appeal to ridicule](#appeal-to-ridicule), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Appeal to the people](#appeal-to-the-people), [Appeal to the stone](#appeal-to-the-stone), [Appeal to tradition](#appeal-to-tradition), [Appeal to wealth](#appeal-to-wealth), [Argument from fallacy](#argument-from-fallacy), [Bandwagon](#bandwagon), [Bulverism](#bulverism), [Chronological snobbery](#chronological-snobbery), [Circumstantial ad hominem](#circumstantial-ad-hominem), [Confusing an explanation with an excuse](#confusing-explanation-with-excuse), [Courtier's reply](#courtiers-reply), [Genetic fallacy](#genetic-fallacy), [Group think](#group-think), [Guilt by association](#guilt-by-association), [I'm entitled to my opinion](#entitled-to-my-opinion), [Ipse dixit](#ipse-dixit), [Irrelevant conclusion](#irrelevant-conclusion), [Is-ought fallacy](#is-ought), [Loaded language](#loaded-language), [Moralistic fallacy](#moralistic-fallacy), [Naturalistic fallacy](#naturalistic-fallacy), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy), [Non sequitur](#non-sequitur), [Poisoning the well](#poisoning-the-well), [Red herring](#red-herring), [Reductio ad Hitlerum](#reductio-ad-hitlerum), [Relative privation](#relative-privation), [Scapegoating](#scapegoating), [Straw man](#straw-man), [Style over substance](#style-over-substance), [Subjectivist fallacy](#subjectivist-fallacy), [Tone policing](#tone-policing), [Traitorous critic fallacy](#traitorous-critic), [Tu quoque](#tu-quoque), [Two wrongs make a right](#two-wrongs), [Wishful thinking](#wishful-thinking)
 - **Informal: ambiguity and language**: [Accent](#accent), [Amphiboly](#amphiboly), [Anthropomorphism](#anthropomorphism), [Combination of words (Aristotle)](#combination-of-words), [Composition](#composition), [Dangling comparative](#dangling-comparative), [Definitional retreat](#definitional-retreat), [Division](#division), [Division of words (Aristotle)](#division-of-words), [Equivocation](#equivocation), [Etymological fallacy](#etymological-fallacy), [False attribution](#false-attribution), [Form of expression (Aristotle)](#form-of-expression), [If-by-whiskey](#if-by-whiskey), [Intentional fallacy](#intentional-fallacy), [Line-drawing fallacy](#line-drawing), [Logic chopping](#logic-chopping), [Motte-and-bailey](#motte-and-bailey), [Obscurum per obscurius](#obscurum-per-obscurius), [Overgenerality](#overgenerality), [Package deal](#package-deal), [Pathetic fallacy](#pathetic-fallacy), [Persuasive definition](#persuasive-definition), [Quoting out of context](#quoting-out-of-context), [Redefinition](#redefinition), [Referential fallacy](#referential-fallacy), [Reification](#reification), [Suppressed correlative](#suppressed-correlative), [Vagueness (exploiting)](#vagueness)
 - **Informal: presumption**: [Accident](#accident), [Accident (Aristotle's sense)](#accident-aristotle), [Ad hoc rescue](#ad-hoc-rescue), [Baconian fallacy](#baconian-fallacy), [Begging the question](#begging-the-question), [Broken window fallacy](#broken-window-fallacy), [Complex question](#complex-question), [Confirmation bias (as a fallacy)](#confirmation-bias), [Disregarding known science](#disregarding-known-science), [Doorman fallacy](#doorman-fallacy), [Double standard](#double-standard), [Exaggeration](#exaggeration), [Fallacy of exhaustive effort](#fallacy-of-exhaustive-effort), [False balance](#false-balance), [False dilemma](#false-dilemma), [False equivalence](#false-equivalence), [Far-fetched hypothesis](#far-fetched-hypothesis), [Goomba fallacy](#goomba-fallacy), [Hedging](#hedging), [Historian's fallacy](#historians-fallacy), [Historical fallacy](#historical-fallacy), [Homunculus fallacy](#homunculus-fallacy), [Ideology-driven argumentation](#ideology-driven-argumentation), [Inconsistency](#inconsistency), [Kettle logic](#kettle-logic), [Lack of proportion](#lack-of-proportion), [Loaded label](#loaded-label), [Lump of labour fallacy](#lump-of-labour), [Middle ground](#middle-ground), [Mind projection fallacy](#mind-projection), [Nirvana fallacy](#nirvana-fallacy), [No true Scotsman](#no-true-scotsman), [Non-cause (Aristotle's sense)](#non-cause-aristotle), [Oversimplification](#oversimplification), [Proving too much](#proving-too-much), [Psychologist's fallacy](#psychologists-fallacy), [Question-begging analogy](#question-begging-analogy), [Rationalization](#rationalization), [Secundum quid](#secundum-quid), [Self-fulfilling prophecy](#self-fulfilling-prophecy), [Slippery slope](#slippery-slope), [Special pleading](#special-pleading), [Sunk cost fallacy](#sunk-cost), [Superstitious thinking](#superstitious-thinking), [Tokenism](#tokenism), [Unfalsifiability](#unfalsifiability), [Vacuous truth (misuse)](#vacuous-truth), [Willed ignorance](#willed-ignorance)
 - **Informal: weak induction**: [Anecdotal evidence](#anecdotal-evidence), [Argument from ignorance](#argument-from-ignorance), [Argument from incredulity](#argument-from-incredulity), [Argument from silence](#argument-from-silence), [Cherry-picking](#cherry-picking), [Converse accident](#converse-accident), [False analogy](#false-analogy), [Feedback fallacy](#feedback-fallacy), [Hasty generalization](#hasty-generalization), [Inductive conversion](#inductive-conversion), [Inflation of conflict](#inflation-of-conflict), [Jumping to conclusions](#jumping-to-conclusions), [Misleading vividness](#misleading-vividness), [Nut-picking](#nut-picking), [Overwhelming exception](#overwhelming-exception), [Proof surrogate](#proof-surrogate), [Selective attention](#selective-attention), [Specificity](#specificity), [Stereotyping](#stereotyping), [Suppressed evidence](#suppressed-evidence)
@@ -55,9 +55,9 @@ These names are not separate entries. Use the entry they point to.
 
 Entries in the same family describe neighbouring mistakes. For a single step of an argument, pick the one that fits best and do not stack labels from the same family.
 
-- **Naturalism**: [Naturalistic fallacy](#naturalistic-fallacy), [Is-ought fallacy](#is-ought), [Appeal to nature](#appeal-to-nature), [Moralistic fallacy](#moralistic-fallacy), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy), [Appeal to consequences](#appeal-to-consequences), [Appeal to inevitability](#appeal-to-inevitability). Pick the one that matches the step: identifying 'good' with a natural property (naturalistic), a bare is-to-ought step (is-ought), 'natural so good' (appeal to nature), 'unavoidable or already here, so good or to be welcomed' (appeal to inevitability), an ought-claim used to settle what is true (moralistic), the outcome of a belief used to settle its truth (consequences).
+- **Naturalism**: [Naturalistic fallacy](#naturalistic-fallacy), [Is-ought fallacy](#is-ought), [Appeal to nature](#appeal-to-nature), [Moralistic fallacy](#moralistic-fallacy), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy), [Appeal to consequences](#appeal-to-consequences). Pick the one that matches the step: identifying 'good' with a natural property (naturalistic), a bare is-to-ought step (is-ought), 'natural so good' (appeal to nature), 'unavoidable or already here, so good or to be welcomed' with no value premise (is-ought), an ought-claim used to settle what is true (moralistic), the outcome of a belief used to settle its truth (consequences).
 - **Ad hominem**: [Ad hominem (abusive)](#ad-hominem), [Circumstantial ad hominem](#circumstantial-ad-hominem), [Tu quoque](#tu-quoque), [Appeal to motive](#appeal-to-motive), [Bulverism](#bulverism), [Poisoning the well](#poisoning-the-well), [Guilt by association](#guilt-by-association), [Reductio ad Hitlerum](#reductio-ad-hitlerum), [Genetic fallacy](#genetic-fallacy), [Traitorous critic fallacy](#traitorous-critic), [Tone policing](#tone-policing), [Courtier's reply](#courtiers-reply). One label per attack. Use the most specific: circumstances or stake (circumstantial), hypocrisy (tu quoque), motives (appeal to motive), explaining away a view not yet shown wrong (bulverism), pre-emptive (poisoning the well), association (guilt by association), origin (genetic).
-- **Authority and popularity**: [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty), [Inflation of conflict](#inflation-of-conflict), [Appeal to sincerity](#appeal-to-sincerity). Use one: expertise (authority), fame (celebrity), achievement in another field (accomplishment), numbers (people), a growing trend (bandwagon), age (tradition), newness (novelty), group loyalty (group think), era (chronological snobbery), money (wealth or poverty), the speaker's sincerity or lack of motive to lie (sincerity), experts disagreeing so nothing can be known (inflation of conflict). If poverty, wealth or a sacrifice is cited only as the reason the speaker has no motive to lie, use appeal to sincerity.
+- **Authority and popularity**: [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty), [Inflation of conflict](#inflation-of-conflict). Use one: expertise (authority), fame (celebrity), achievement in another field (accomplishment), numbers (people), a growing trend (bandwagon), age (tradition), newness (novelty), group loyalty (group think), era (chronological snobbery), money (wealth or poverty), experts disagreeing so nothing can be known (inflation of conflict). If poverty or a sacrifice is cited as the reason the speaker has no motive to lie, use appeal to poverty and note that sincerity does not show the speaker was in a position to know.
 - **Emotion**: [Appeal to emotion](#appeal-to-emotion), [Appeal to pity](#appeal-to-pity), [Appeal to fear](#appeal-to-fear), [Appeal to force](#appeal-to-force), [Appeal to flattery](#appeal-to-flattery), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Appeal to ridicule](#appeal-to-ridicule), [Scapegoating](#scapegoating), [Wishful thinking](#wishful-thinking), [Appeal to consequences](#appeal-to-consequences), [Style over substance](#style-over-substance). Use the specific emotion entry if one fits; appeal to emotion only if none does.
 - **Omitted evidence**: [Suppressed evidence](#suppressed-evidence), [Nut-picking](#nut-picking), [Selective attention](#selective-attention), [Confirmation bias (as a fallacy)](#confirmation-bias), [Disregarding known science](#disregarding-known-science), [Survivorship bias](#survivorship-bias), [Quoting out of context](#quoting-out-of-context), [Overwhelming exception](#overwhelming-exception), [Cherry-picking](#cherry-picking). For a passage that leaves out contrary evidence, use suppressed evidence or a more specific text-level entry; the bias entries (confirmation bias, selective attention) are questions only.
 - **Generalization**: [Accident](#accident), [Secundum quid](#secundum-quid), [Hasty generalization](#hasty-generalization), [Converse accident](#converse-accident), [Anecdotal evidence](#anecdotal-evidence), [Misleading vividness](#misleading-vividness), [Availability heuristic (as a fallacy)](#availability-heuristic), [Unrepresentative sample](#unrepresentative-sample), [Stereotyping](#stereotyping), [Jumping to conclusions](#jumping-to-conclusions), [Specificity](#specificity), [Overgenerality](#overgenerality), [Inductive conversion](#inductive-conversion). One label per step: rule misapplied to an exception (accident), dropped qualification (secundum quid), too few cases (hasty), exceptions made into a rule (converse accident), stories (anecdotal), vivid case (misleading vividness), biased sample (unrepresentative sample), group image applied to an individual (stereotyping).
@@ -839,7 +839,7 @@ Status: standard · Detectable from text: yes
 - Achievements in the same field and the same skill the claim is about are ordinary evidence of expertise (performing a skill is not the same skill as teaching it). *(catalog wording)*
 - The claim concerns a method (statistics, measurement, mathematics) that the person's own field uses. *(catalog wording)*
 
-**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty), [Inflation of conflict](#inflation-of-conflict), [Appeal to sincerity](#appeal-to-sincerity)
+**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty), [Inflation of conflict](#inflation-of-conflict)
 
 **Sources:**
 
@@ -871,7 +871,7 @@ Condition 2 may need facts outside the text. Each is met if the passage states t
 - Relying on a genuine expert speaking within their field, where experts broadly agree; most reasoning from authority is of this kind. *(source: IEP, section 6, "Partial List of Fallacies", entry "Appeal to Authority")*
 - Citing an authority as one piece of evidence among others. *(catalog wording)*
 
-**Related, use only one per step** (authority and popularity): [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty), [Inflation of conflict](#inflation-of-conflict), [Appeal to sincerity](#appeal-to-sincerity)
+**Related, use only one per step** (authority and popularity): [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty), [Inflation of conflict](#inflation-of-conflict)
 
 **Sources:**
 
@@ -905,7 +905,7 @@ Status: standard · Detectable from text: yes
 
 - The celebrity speaks within their own field of expertise. *(catalog wording)*
 
-**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty), [Inflation of conflict](#inflation-of-conflict), [Appeal to sincerity](#appeal-to-sincerity)
+**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty), [Inflation of conflict](#inflation-of-conflict)
 
 **Sources:**
 
@@ -934,7 +934,7 @@ Status: standard · Detectable from text: yes
 
 - Consequences are relevant when deciding what to do rather than what is true. *(catalog wording)*
 
-**Related, use only one per step** (naturalism, emotion): [Naturalistic fallacy](#naturalistic-fallacy), [Is-ought fallacy](#is-ought), [Appeal to nature](#appeal-to-nature), [Moralistic fallacy](#moralistic-fallacy), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy), [Appeal to inevitability](#appeal-to-inevitability), [Appeal to emotion](#appeal-to-emotion), [Appeal to pity](#appeal-to-pity), [Appeal to fear](#appeal-to-fear), [Appeal to force](#appeal-to-force), [Appeal to flattery](#appeal-to-flattery), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Appeal to ridicule](#appeal-to-ridicule), [Scapegoating](#scapegoating), [Wishful thinking](#wishful-thinking), [Style over substance](#style-over-substance)
+**Related, use only one per step** (naturalism, emotion): [Naturalistic fallacy](#naturalistic-fallacy), [Is-ought fallacy](#is-ought), [Appeal to nature](#appeal-to-nature), [Moralistic fallacy](#moralistic-fallacy), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy), [Appeal to emotion](#appeal-to-emotion), [Appeal to pity](#appeal-to-pity), [Appeal to fear](#appeal-to-fear), [Appeal to force](#appeal-to-force), [Appeal to flattery](#appeal-to-flattery), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Appeal to ridicule](#appeal-to-ridicule), [Scapegoating](#scapegoating), [Wishful thinking](#wishful-thinking), [Style over substance](#style-over-substance)
 
 **Sources:**
 
@@ -1071,35 +1071,6 @@ Status: standard · Detectable from text: yes
 
 `id: appeal-to-force`
 
-<a id="appeal-to-inevitability"></a>
-### Appeal to inevitability
-
-*Also called:* fait accompli argument
-
-Arguing that because something is unavoidable or already here, it is good, beneficial or to be welcomed.
-
-Status: standard · Detectable from text: yes
-
-**Example:** Automation is coming whether we like it or not, so it can only be good for workers.
-
-**Required conditions** (all must be shown from the text):
-
-1. Something is described as unavoidable or already here.
-2. It is concluded to be good, beneficial or to be welcomed.
-3. The inevitability is the reason given for that step.
-
-**Legitimate look-alikes** (not this fallacy):
-
-- Accepting that something is unavoidable and planning how to adapt to it, without claiming that it is good. *(catalog wording)*
-- Arguing that resisting would be costly or futile, as a practical point about what to do, without claiming the thing itself is good. *(catalog wording)*
-- If the reason is that something is natural, use appeal to nature; if it is that it has always been done, use appeal to tradition. *(catalog wording)*
-
-**Related, use only one per step** (naturalism): [Naturalistic fallacy](#naturalistic-fallacy), [Is-ought fallacy](#is-ought), [Appeal to nature](#appeal-to-nature), [Moralistic fallacy](#moralistic-fallacy), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy), [Appeal to consequences](#appeal-to-consequences)
-
-**Sources:** TODO (no confirmed published source yet)
-
-`id: appeal-to-inevitability`
-
 <a id="appeal-to-motive"></a>
 ### Appeal to motive
 
@@ -1154,9 +1125,9 @@ Status: standard · Detectable from text: yes
 - If the conclusion is a moral one drawn from facts, use is-ought. *(catalog wording)*
 - If only age or history is given, use appeal to tradition. If naturalness wording and history appear in the same step, report appeal to nature and note tradition. *(catalog wording)*
 - Evolutionary history alone offered for a conclusion that only says something suits us ('appropriate', 'suited'), with no claim that it is safe, healthy, best or right: read it as a claim about fit (METHOD step b) and record possible issue, naming the evidence of fit that would settle it. *(catalog wording)*
-- If the reason given is that something is unavoidable or already here, rather than natural, use appeal to inevitability. *(catalog wording)*
+- If the reason given is that something is unavoidable or already here, rather than natural, and no value premise is given, use is-ought. *(catalog wording)*
 
-**Related, use only one per step** (naturalism): [Naturalistic fallacy](#naturalistic-fallacy), [Is-ought fallacy](#is-ought), [Moralistic fallacy](#moralistic-fallacy), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy), [Appeal to consequences](#appeal-to-consequences), [Appeal to inevitability](#appeal-to-inevitability), [Appeal to tradition](#appeal-to-tradition)
+**Related, use only one per step** (naturalism): [Naturalistic fallacy](#naturalistic-fallacy), [Is-ought fallacy](#is-ought), [Moralistic fallacy](#moralistic-fallacy), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy), [Appeal to consequences](#appeal-to-consequences), [Appeal to tradition](#appeal-to-tradition)
 
 **Sources:**
 
@@ -1185,7 +1156,7 @@ Status: standard · Detectable from text: yes
 
 - Newness offered alongside evidence of real improvement. *(catalog wording)*
 
-**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty), [Inflation of conflict](#inflation-of-conflict), [Appeal to sincerity](#appeal-to-sincerity)
+**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty), [Inflation of conflict](#inflation-of-conflict)
 
 **Sources:**
 
@@ -1243,7 +1214,7 @@ Status: standard · Detectable from text: yes
 
 - Cheapness as one indicator of value where there is reason to think it tracks value. *(catalog wording)*
 
-**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Inflation of conflict](#inflation-of-conflict), [Appeal to sincerity](#appeal-to-sincerity)
+**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Inflation of conflict](#inflation-of-conflict)
 
 **Sources:**
 
@@ -1279,34 +1250,6 @@ Status: standard · Detectable from text: yes
 - Wikipedia, "List of fallacies", section "Informal fallacies > Relevance fallacies > Red herring fallacies", item "Appeal to ridicule". <https://en.wikipedia.org/wiki/List_of_fallacies>
 
 `id: appeal-to-ridicule`
-
-<a id="appeal-to-sincerity"></a>
-### Appeal to sincerity
-
-*Also called:* 'no reason to lie' argument
-
-Treating a speaker's sincerity, or the lack of any motive to lie, as showing that what they say is true, without addressing whether they were in a position to know.
-
-Status: standard · Detectable from text: yes
-
-**Example:** He has nothing to gain from saying the bridge is unsafe, so it must be unsafe.
-
-**Required conditions** (all must be shown from the text):
-
-1. A claim is supported by someone's testimony.
-2. The reason offered for its truth is the speaker's sincerity or lack of a motive to lie ('she has no reason to lie', 'he clearly believes it').
-3. Whether the speaker was in a position to know, or could be mistaken, is not addressed.
-
-**Legitimate look-alikes** (not this fallacy):
-
-- Lack of a motive to lie offered as one reason to trust a witness who was in a position to know (sincerity plus competence). *(catalog wording)*
-- Answering a charge that the speaker is lying, where the question really is honesty rather than accuracy. *(catalog wording)*
-
-**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty), [Inflation of conflict](#inflation-of-conflict)
-
-**Sources:** TODO (no confirmed published source yet)
-
-`id: appeal-to-sincerity`
 
 <a id="appeal-to-snobbery"></a>
 ### Appeal to snobbery
@@ -1388,7 +1331,7 @@ Status: standard · Detectable from text: yes
 - The question is about conventions, tastes or what is popular. *(catalog wording)*
 - Popular belief is some evidence that a claim is true; the fallacy is overestimating how much. *(source: IEP, section 6, "Partial List of Fallacies", entry "Appeal to the People")*
 
-**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty), [Inflation of conflict](#inflation-of-conflict), [Appeal to sincerity](#appeal-to-sincerity)
+**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty), [Inflation of conflict](#inflation-of-conflict)
 
 **Sources:**
 
@@ -1451,7 +1394,7 @@ Status: standard · Detectable from text: yes
 - A long record can be some evidence that a practice works; the error is treating age as enough. *(source: IEP, section 6, "Partial List of Fallacies", entry "Traditional Wisdom")*
 - If the step also calls the practice natural or what we are 'built for', report appeal to nature and note tradition. *(catalog wording)*
 
-**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty), [Inflation of conflict](#inflation-of-conflict), [Appeal to sincerity](#appeal-to-sincerity), [Appeal to nature](#appeal-to-nature), [Appeal to inevitability](#appeal-to-inevitability)
+**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty), [Inflation of conflict](#inflation-of-conflict), [Appeal to nature](#appeal-to-nature)
 
 **Sources:**
 
@@ -1481,7 +1424,7 @@ Status: standard · Detectable from text: yes
 
 - Price as one indicator of quality among others, where there is reason to think price tracks quality. *(catalog wording)*
 
-**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to poverty](#appeal-to-poverty), [Inflation of conflict](#inflation-of-conflict), [Appeal to sincerity](#appeal-to-sincerity)
+**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to poverty](#appeal-to-poverty), [Inflation of conflict](#inflation-of-conflict)
 
 **Sources:**
 
@@ -1539,7 +1482,7 @@ Status: standard · Detectable from text: yes
 
 - Pointing out that what most people believe after consideration is likely true, all things considered, is not fallacious. *(source: IEP, section 6, "Partial List of Fallacies", entry "Bandwagon")*
 
-**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty), [Inflation of conflict](#inflation-of-conflict), [Appeal to sincerity](#appeal-to-sincerity)
+**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty), [Inflation of conflict](#inflation-of-conflict)
 
 **Sources:**
 
@@ -1596,7 +1539,7 @@ Status: standard · Detectable from text: yes
 
 - Showing that the idea rested on a specific belief that has since been disproved. *(catalog wording)*
 
-**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty), [Inflation of conflict](#inflation-of-conflict), [Appeal to sincerity](#appeal-to-sincerity)
+**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty), [Inflation of conflict](#inflation-of-conflict)
 
 **Sources:**
 
@@ -1742,7 +1685,7 @@ Status: standard · Detectable from text: yes
 
 - Accepting a group's view because of the reasoning the group gave for it. *(catalog wording)*
 
-**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty), [Inflation of conflict](#inflation-of-conflict), [Appeal to sincerity](#appeal-to-sincerity)
+**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty), [Inflation of conflict](#inflation-of-conflict)
 
 **Sources:**
 
@@ -1896,7 +1839,7 @@ Status: standard · Detectable from text: yes
 - An ought-premise is implicit and uncontroversial in context, which makes the argument complete. *(source: IEP, section 6, "Partial List of Fallacies", entry "Is-Ought")*
 - Philosophers dispute whether every such step is fallacious. *(source: IEP, section 6, "Partial List of Fallacies", entry "Is-Ought")*
 
-**Related, use only one per step** (naturalism): [Naturalistic fallacy](#naturalistic-fallacy), [Appeal to nature](#appeal-to-nature), [Moralistic fallacy](#moralistic-fallacy), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy), [Appeal to consequences](#appeal-to-consequences), [Appeal to inevitability](#appeal-to-inevitability)
+**Related, use only one per step** (naturalism): [Naturalistic fallacy](#naturalistic-fallacy), [Appeal to nature](#appeal-to-nature), [Moralistic fallacy](#moralistic-fallacy), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy), [Appeal to consequences](#appeal-to-consequences)
 
 **Sources:**
 
@@ -1957,7 +1900,7 @@ Status: standard · Detectable from text: yes
 
 - A moral claim used only as a reason to check the evidence carefully. *(catalog wording)*
 
-**Related, use only one per step** (naturalism): [Naturalistic fallacy](#naturalistic-fallacy), [Is-ought fallacy](#is-ought), [Appeal to nature](#appeal-to-nature), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy), [Appeal to consequences](#appeal-to-consequences), [Appeal to inevitability](#appeal-to-inevitability)
+**Related, use only one per step** (naturalism): [Naturalistic fallacy](#naturalistic-fallacy), [Is-ought fallacy](#is-ought), [Appeal to nature](#appeal-to-nature), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy), [Appeal to consequences](#appeal-to-consequences)
 
 **Sources:**
 
@@ -1985,7 +1928,7 @@ Status: standard · Detectable from text: yes
 - Arguing (not assuming) that some natural property is a reliable sign of goodness. *(catalog wording)*
 - If the error is a bare step from 'is' to 'ought', use is-ought; if it is 'natural, so good', use appeal to nature. *(catalog wording)*
 
-**Related, use only one per step** (naturalism): [Is-ought fallacy](#is-ought), [Appeal to nature](#appeal-to-nature), [Moralistic fallacy](#moralistic-fallacy), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy), [Appeal to consequences](#appeal-to-consequences), [Appeal to inevitability](#appeal-to-inevitability)
+**Related, use only one per step** (naturalism): [Is-ought fallacy](#is-ought), [Appeal to nature](#appeal-to-nature), [Moralistic fallacy](#moralistic-fallacy), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy), [Appeal to consequences](#appeal-to-consequences)
 
 **Sources:**
 
@@ -2011,7 +1954,7 @@ Status: standard · Detectable from text: yes
 2. It supplies (or plainly assumes) the value premise needed.
 3. It is rejected as a naturalistic fallacy anyway.
 
-**Related, use only one per step** (naturalism): [Naturalistic fallacy](#naturalistic-fallacy), [Is-ought fallacy](#is-ought), [Appeal to nature](#appeal-to-nature), [Moralistic fallacy](#moralistic-fallacy), [Appeal to consequences](#appeal-to-consequences), [Appeal to inevitability](#appeal-to-inevitability)
+**Related, use only one per step** (naturalism): [Naturalistic fallacy](#naturalistic-fallacy), [Is-ought fallacy](#is-ought), [Appeal to nature](#appeal-to-nature), [Moralistic fallacy](#moralistic-fallacy), [Appeal to consequences](#appeal-to-consequences)
 
 **Sources:**
 
@@ -5022,7 +4965,7 @@ Status: standard · Detectable from text: yes
 - Concluding that the specific point in dispute is unsettled. *(catalog wording)*
 - If the claim simply conflicts with well-established findings and the conflict is not addressed, use disregarding known science. *(catalog wording)*
 
-**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty), [Appeal to sincerity](#appeal-to-sincerity), [Disregarding known science](#disregarding-known-science)
+**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty), [Disregarding known science](#disregarding-known-science)
 
 **Sources:**
 

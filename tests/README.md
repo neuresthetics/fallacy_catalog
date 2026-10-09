@@ -9,7 +9,7 @@ This folder holds every test run against the catalog: the passages, the answer k
 | `round1/` | 120 passages (50 legit, 50 fallacy, 20 borderline). Reviewers A and B. Catalog v0.3.0. |
 | `round2/` | 100 passages (40 legit, 20 no-argument, 40 fallacy). Reviewers C (strict literal) and D (practical). Catalog v0.4.0. |
 | `round3/` | 100 passages (43 legit, 11 no-argument, 35 fallacy, 11 mixed), 20 of them real public-domain excerpts. Reviewers E (strict literal) and F (practical). Catalog v0.5.0. |
-| `regression/` | Non-blind re-checks after the v0.5.0 and v0.6.0 fixes. |
+| `regression/` | Non-blind re-checks after the v0.5.0 and v0.6.0 fixes (with a v0.6.1 note on the two dropped entries). |
 | `audit/` | The two independent audits of the catalog that came before blind testing. |
 
 Each round folder contains:

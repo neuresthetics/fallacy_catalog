@@ -1,8 +1,8 @@
 # fallacy_catalog
 
-A catalog of 223 named logical fallacies, with sources, and a written procedure for checking an argument against it. It is meant for analysing real arguments, so most of its design is about avoiding false accusations.
+A catalog of 221 named logical fallacies, with sources, and a written procedure for checking an argument against it. It is meant for analysing real arguments, so most of its design is about avoiding false accusations.
 
-Current version: **0.6.0**.
+Current version: **0.6.1**.
 
 ## What it is and what it isn't
 
@@ -31,7 +31,7 @@ Current version: **0.6.0**.
 
 ### Sources
 
-Every entry cites at least one published reference that lists the fallacy, unless it is marked `"sources": "TODO"`. The references are:
+Every entry cites at least one published reference that lists the fallacy. No entry in v0.6.1 is unsourced. The references are:
 - the *Internet Encyclopedia of Philosophy* (IEP) article "Fallacies", section 6 (its alphabetical list);
 - the *Stanford Encyclopedia of Philosophy* (SEP) article "Fallacies";
 - Aristotle, *On Sophistical Refutations* (MIT Internet Classics Archive text);
@@ -43,7 +43,7 @@ Every entry cites at least one published reference that lists the fallacy, unles
 
 ### How each citation was checked
 
-- **The page was fetched, not recalled.** Each reference page was downloaded, and each citation was matched to a specific heading, list item or chapter in the downloaded copy. A citation was written only if the page listed that fallacy. When no page could be confirmed, the entry was marked `TODO` rather than given a guessed source. Two entries are `TODO` in v0.6.0: appeal to inevitability and appeal to sincerity, because no reference we could find lists either as a fallacy.
+- **The page was fetched, not recalled.** Each reference page was downloaded, and each citation was matched to a specific heading, list item or chapter in the downloaded copy. A citation was written only if the page listed that fallacy. When no page could be confirmed, the entry was marked `TODO` rather than given a guessed source. Two entries added in v0.6.0 (appeal to inevitability and appeal to sincerity) were dropped in v0.6.1 because no citable reference listing either as a fallacy could be found.
 - **For the pages added in v0.5.0 and v0.6.0, the check was scripted.** The script that wrote each new citation first asserted that specific phrases from the definition occur in the fetched page, and stopped if any were missing. These one-off build scripts are not part of the repository; the resulting citations are in `fallacies.json`.
 - **Every citation was re-checked by an independent audit.** Audit run 1 compared all citations in v0.1.0 with the cached pages (see [tests/audit/SUMMARY.md](tests/audit/SUMMARY.md)). It found no entry whose source lacked the fallacy outright, but it found mismatches: a "see X" cross-reference cited as if it described the entry, a modern sense attributed to Aristotle, and a Wikipedia one-liner paraphrased past what it says. These were re-cited, annotated or removed.
 - Definitions and examples are written in the catalog's own words, and long passages are not copied. The downloaded pages are not included in this repository, but the URLs and locators are.
@@ -56,7 +56,7 @@ Each legitimate look-alike carries a `caveat_source`:
 
 ### `status`: standard or contested
 
-- `standard` (211 entries): a name used in the references for a recognised error.
+- `standard` (209 entries): a name used in the references for a recognised error.
 - `contested` (12 entries): the name is disputed, used by only one source, or describes something whose status as a fallacy is debated (for example motte-and-bailey and the hot-hand fallacy). If you use a contested entry, say so.
 
 This is separate from the per-row "contested reading" in METHOD.md, which marks a *passage* whose fallacy charge is disputed in the scholarly literature (for example Mill's "proof" of utility).
@@ -68,14 +68,14 @@ This is separate from the per-row "contested reading" in METHOD.md, which marks 
 | `id` | Stable kebab-case identifier. |
 | `name`, `aliases` | Standard name and other names in use, including Latin names and names folded in from merged entries. |
 | `category` | Formal (general, propositional, syllogistic, quantifier and modal) or informal (relevance, ambiguity and language, presumption, weak induction, causal, statistical and probabilistic, dialogue and evasion). |
-| `text_detectable` | `yes` (176 entries): can be shown from the text. `partly` (43): at least one condition may need a fact from outside the text. `no` (4: confirmation bias, selective attention, availability heuristic, rationalization): depends on motive or inner bias, so it may be raised as a question but never flagged. |
+| `text_detectable` | `yes` (174 entries): can be shown from the text. `partly` (43): at least one condition may need a fact from outside the text. `no` (4: confirmation bias, selective attention, availability heuristic, rationalization): depends on motive or inner bias, so it may be raised as a question but never flagged. |
 | `outside_text_conditions` | Which numbered conditions may need facts from outside the passage. Such a condition is met only if the passage states the fact or it is common knowledge; otherwise the verdict is at most "possible issue". |
 | `use_only_if_nothing_more_specific` | `true` for 11 broad fallback labels (such as non sequitur, false cause and formal fallacy). Use them only when no specific entry fits. |
 | `definition`, `example` | Plain-words definition and an original example. |
 | `required_conditions` | 2 to 5 numbered conditions. All must be shown before flagging. |
 | `legitimate_lookalikes` | Reasonable arguments that resemble the fallacy, as `{text, caveat_source}`. |
 | `families`, `related` | "Use only one" families (35 in all), each with a rule for choosing between members, so one step gets one label. |
-| `sources` | `{ref, title, url, locator}` (optional `note`), or `"TODO"`. |
+| `sources` | `{ref, title, url, locator}` (optional `note`). The validator also accepts `"TODO"` for an entry under construction; none is in the released catalog. |
 
 The top-level `redirects` list holds 12 names folded into other entries.
 
@@ -114,6 +114,7 @@ The procedure is built to avoid accusing a sound argument. Each control below wa
 | 0.4.0 | ccc9a6f | 216 | **Blind test round 1** fixes: the per-condition `outside_text_conditions` field and METHOD step (f); new cherry-picking entry and selective-evidence tie-break; middle ground, slippery slope and other condition fixes; tie-breaks and reporting rules. |
 | 0.5.0 | 347a415, 46e8036 | 220 | **Blind test round 2** fixes: defaults vs precaution; new entries confusion of the inverse, Simpson's paradox, statistical vs practical significance, and relative vs absolute risk framing; causation and nature tie-breaks; "other errors" note. Two tie-break fixes from the non-blind regression check. |
 | 0.6.0 | deb6e75, e369e78 | 223 | **Blind test round 3** fixes: rules for dialogues, real excerpts, contested readings and rhetorical notes; new entries appeal to inevitability, appeal to sincerity and broken window fallacy; condition or look-alike changes to 16 entries; three fixes from the regression check. |
+| 0.6.1 | (this release) | 221 | Dropped the two v0.6.0 entries that had no citable source (appeal to inevitability, appeal to sincerity) and removed every reference to them. Passages of those kinds now route to sourced entries: "unavoidable or already here, so good" with no value premise to is-ought (as in R084, with appeal to nature for its "survival of the fittest" step); "poor, so no reason to lie, so true" to appeal to poverty (as in R023). Neither move has a dedicated entry, which is a known gap. |
 
 Details: [tests/audit/SUMMARY.md](tests/audit/SUMMARY.md) and each round's `FIXES.md`.
 
@@ -154,17 +155,17 @@ Numbers below are copied from the score files ([round 1](tests/round1/scores.md)
 
 In all three rounds, no legitimate or no-argument passage was flagged or given a possible issue by either reviewer: 0 of 328 reviewer judgments. Misses fell as fixes landed, then appeared in new places each round. Agreement between reviewers fell as the material became more realistic: in round 3, 4 of the 5 passage-level disagreements were real excerpts.
 
-**Regression check for v0.6.0 (non-blind):** 159 earlier passages were re-checked against the adjudicated keys, including all 20 real excerpts. Three problems were found and fixed before commit: two gaps in the new rules (a quoted exercise or review would have been scored as an argument; no routing between appeal to poverty and appeal to sincerity) and one mismatch carried over from v0.5.0 (P097). One label in round 3 (R023) moves, by design, from appeal to poverty to the new appeal-to-sincerity entry. See [tests/regression/regression_v060.md](tests/regression/regression_v060.md). v0.6.0 has not yet had a blind round.
+**Regression check for v0.6.0 (non-blind):** 159 earlier passages were re-checked against the adjudicated keys, including all 20 real excerpts. Three problems were found and fixed before commit: two gaps in the new rules (a quoted exercise or review would have been scored as an argument; no routing between appeal to poverty and appeal to sincerity) and one mismatch carried over from v0.5.0 (P097). That check referred to two entries since dropped in v0.6.1; R023 now routes to appeal to poverty (the keyed label) and R084 to is-ought and appeal to nature (both keyed), as noted in the file. See [tests/regression/regression_v060.md](tests/regression/regression_v060.md). v0.6.x has not yet had a blind round.
 
 ## Limitations
 
 - **The reviewers are not independent of each other.** The set writers, reviewers, scorers and auditors are all AI model instances from the same model family, and the same family built the catalog. They probably share blind spots. Round 1's two reviewers agreed on 119 of 120 verdicts and gave the same six possible issues, which the round-1 scorer judged to be consistency of the setup rather than two independent judgments. Later rounds used a strict and a practical reviewer to pull the two apart.
 - **Most test passages are model-written.** Only the 20 round-3 excerpts are real texts. Constructed passages tend to be cleaner than real arguments, and on real texts agreement was lower.
 - **The scorer adjudicated the key.** The scorer changed 18 answer-key rows across the three rounds (17 corrections and 1 clarified reason), usually towards the reviewers' answer. The reasons are recorded, and the "as keyed" numbers are reported alongside.
-- **Regression checks are not blind.** The person who writes the fixes also checks them, with the keys in view. Each new version is only properly tested by the next blind round, and v0.6.0 has not had one yet.
+- **Regression checks are not blind.** The person who writes the fixes also checks them, with the keys in view. Each new version is only properly tested by the next blind round, and v0.6.x has not had one yet.
 - **No human expert has validated the catalog or the test results.**
 - **"Possible issue" is used.** The method prefers "possible issue" to a forced call. Reviewers gave it on 6 and 7 of 120 passages (round 1) and 4 and 2 of 100 (round 2). In round 3 they gave it on 5 of 114 and 7 of 108 rows, and it was the worst verdict on 1 and 4 of 100 passages. On keyed fallacies, a possible issue counts as a soft miss. A user who needs a yes/no answer must decide what to do with these cases.
-- **Two entries have no published source** (`TODO`): appeal to inevitability and appeal to sincerity.
+- **Every entry has a published source; 0 are unsourced.** Two candidate entries (appeal to inevitability, appeal to sincerity) were dropped for lack of a citable source, so those moves have no dedicated entry and are handled by the nearest sourced entry (is-ought, appeal to poverty).
 - **Coverage is not exhaustive.** No list of fallacies is complete. Errors outside the catalog get "no issue" from the catalog even when the reasoning is poor, and are at best noted as "weak premise".
 
 ## Reproducing
@@ -214,9 +215,9 @@ Rules for sources:
 
 ## How to cite and use
 
-When you report a flag made with this catalog, give the entry id and the catalog version (for example `straw-man`, fallacy_catalog v0.6.0), quote the passage, and show the conditions and look-alikes as in METHOD.md's record format. Report contested entries and contested readings as such.
+When you report a flag made with this catalog, give the entry id and the catalog version (for example `straw-man`, fallacy_catalog v0.6.1), quote the passage, and show the conditions and look-alikes as in METHOD.md's record format. Report contested entries and contested readings as such.
 
-To cite the catalog: neuresthetics, *fallacy_catalog: a sourced catalog of logical fallacies with a false-positive-controlled checking method*, version 0.6.0, 2026.
+To cite the catalog: neuresthetics, *fallacy_catalog: a sourced catalog of logical fallacies with a false-positive-controlled checking method*, version 0.6.1, 2026.
 
 ## License
 

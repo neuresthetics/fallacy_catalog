@@ -14,6 +14,11 @@ Totals: round 1, 43 passages; round 2, 51; round 3, 65 (58 by the automatic sele
 
 "Intended" is the adjudicated key (round-3 overrules: R021 and R040 not errors; R041 and R063 possible issue or flag; R092 S1 added; R082 ad hoc rescue accepted as a second label).
 
+> **Note added in v0.6.1.** This check was run on v0.6.0, which included two entries, appeal to inevitability and appeal to sincerity, that were dropped in v0.6.1 because no citable published source lists either. The results below are left as recorded. Under v0.6.1 the affected passages route as follows (not re-scored blind):
+> - **R023** ("has given up everything ... no reason to lie, so his prediction must be true"): flag **appeal to poverty**, the keyed label. The authority-and-popularity family rule now says to use appeal to poverty when poverty or a sacrifice is cited as the reason the speaker has no motive to lie, and to note that sincerity does not show the speaker was in a position to know.
+> - **R084** (Carnegie): S2 ("It is here; we cannot evade it ... We accept and welcome, therefore ... as being not only beneficial, but essential") is a flag under **is-ought**: the premises state only what is, the conclusion says it is good and to be welcomed, and no value premise is given. S1 ("best for the race, because it insures the survival of the fittest") stays possible issue under **appeal to nature**. Both labels are in the key. The passage-level verdict (flag) is unchanged.
+> - Neither move has a dedicated entry in v0.6.1; this is a known gap.
+
 ## Summary
 
 | | passages | intended verdict | intended label | changed from v0.5.0 behaviour |

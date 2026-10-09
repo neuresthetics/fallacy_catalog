@@ -15,6 +15,8 @@ Applied in the v0.6.0 commit (223 entries):
 
 - **Found in the v0.6.0 regression check and fixed:** the dialogue rule's exercise/review clause (see H1), the appeal-to-sincerity routing rule, and an appeal-to-nature look-alike for evolutionary history offered for a fit-only conclusion (resolving P097 from round 1). See [../regression/regression_v060.md](../regression/regression_v060.md).
 
+- **Dropped in v0.6.1:** appeal to inevitability and appeal to sincerity were removed because no citable source could be found (the catalog keeps no unsourced entries). The routing rules now send these moves to is-ought ("unavoidable, so good" with no value premise) and appeal to poverty ("poor, so no reason to lie").
+
 **Not applied as written:**
 - The aliases "appeal to controversy", "argument from expert disagreement" and "manufactured doubt" were not added to inflation of conflict, because no fetched source uses them for this fallacy. The first two appear in the pointer text in disregarding known science instead, so a text search still finds the entry. "Manufactured doubt" names a deliberate strategy, not this inference.
 - "Idle argument" was not added as an alias of modal scope fallacy: the SEP entry on fatalism says it is unclear where the idle argument goes wrong, so it is recorded as a contested-reading note.
