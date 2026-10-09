@@ -31,7 +31,7 @@ CATEGORY_ORDER = [
     "informal: statistical and probabilistic",
     "informal: dialogue and evasion",
 ]
-REQUIRED = ["id", "name", "aliases", "category", "status", "text_detectable", "use_only_if_nothing_more_specific",
+REQUIRED = ["id", "name", "aliases", "category", "status", "text_detectable", "outside_text_conditions", "use_only_if_nothing_more_specific",
             "definition", "example", "required_conditions", "legitimate_lookalikes", "families", "related", "sources"]
 TEXT_DETECTABLE = {"yes", "partly", "no"}
 STATUS = {"standard", "contested"}
@@ -81,6 +81,14 @@ def validate(doc):
             errors.append(f"{eid}: 'status' must be one of {sorted(STATUS)}")
         if e.get("text_detectable") not in TEXT_DETECTABLE:
             errors.append(f"{eid}: 'text_detectable' must be one of {sorted(TEXT_DETECTABLE)}")
+        oc = e.get("outside_text_conditions")
+        n_rc = len(e.get("required_conditions") or [])
+        if not isinstance(oc, list) or not all(isinstance(i, int) and 1 <= i <= n_rc for i in oc):
+            errors.append(f"{eid}: 'outside_text_conditions' must be a list of condition numbers (1 to {n_rc})")
+        elif e.get("text_detectable") == "yes" and oc:
+            errors.append(f"{eid}: text_detectable 'yes' but outside_text_conditions is not empty")
+        elif e.get("text_detectable") in ("partly", "no") and not oc:
+            errors.append(f"{eid}: text_detectable '{e.get('text_detectable')}' needs at least one outside_text_conditions entry")
         if not isinstance(e.get("use_only_if_nothing_more_specific"), bool):
             errors.append(f"{eid}: 'use_only_if_nothing_more_specific' must be true or false")
         rc = e.get("required_conditions")
@@ -162,7 +170,7 @@ def render_fallacies(doc):
                "See [SOURCES.md](SOURCES.md) for the references, [METHOD.md](METHOD.md) for how to check an argument, "
                "and [README.md](README.md) for what each field means.\n")
     out.append(f"Detectable from the text alone: {td['yes']} yes, {td['partly']} partly, {td['no']} no "
-               "(entries marked *no* may only be raised as questions). "
+               "(*partly* entries name the conditions that may need outside facts; entries marked *no* may only be raised as questions). "
                f"{n_contested} entries are contested names. {n_fallback} are broad fallbacks, to be used only when nothing more specific fits.\n")
     out.append("## Contents\n")
     out.append("| Category | Entries |\n|---|---:|")
@@ -206,9 +214,14 @@ def render_fallacies(doc):
             out.append(" · ".join(tags) + "\n")
             out.append(f"**Example:** {e['example']}\n")
             out.append("**Required conditions** (all must be shown from the text):\n")
+            oc = set(e["outside_text_conditions"])
             for n, c in enumerate(e["required_conditions"], 1):
-                out.append(f"{n}. {c}")
+                mark = " *(may need facts outside the text)*" if n in oc else ""
+                out.append(f"{n}. {c}{mark}")
             out.append("")
+            if oc and e["text_detectable"] != "no":
+                nums = ", ".join(str(i) for i in sorted(oc))
+                out.append(f"Condition{'s' if len(oc) > 1 else ''} {nums} may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.\n")
             if e["legitimate_lookalikes"]:
                 out.append("**Legitimate look-alikes** (not this fallacy):\n")
                 for item in e["legitimate_lookalikes"]:

@@ -23,20 +23,28 @@ Charity has a limit: use it to find what the speaker meant, not to rewrite a pas
 **(c) Pick the most specific entry.** Use one label per step.
 - Check the entry's **Related, use only one per step** list and pick the single entry in that family that fits best. Do not stack labels from the same family.
 - Entries marked **Fallback** (`use_only_if_nothing_more_specific: true`), such as non sequitur, false cause and formal fallacy, may be used only when no more specific entry fits. Say which specific entries you considered and why they don't fit.
-- Two labels on one step are allowed only if you can show two separate errors.
+- Some families also give a cross-family tie-break (for example, the selective-evidence family separates suppressed evidence, cherry-picking, Texas sharpshooter, survivorship bias and the lottery fallacy). Follow it.
+- Two labels in one sentence are allowed only if you can show two separate errors, each meeting its own conditions. Example: "They've never been proven safe, so they must be what's causing these headaches" contains an argument from ignorance ("never proven safe" treated as showing harm) and a separate causal leap (the headaches blamed on them with no evidence). Both labels may be recorded if each is shown.
+- **Reporting names.** Use the entry's name, not an alias. Where a family rule says to report under a familiar name with a qualifier, do so: a shift of meaning in a syllogism's middle term is reported as "equivocation (four terms)".
 
-**(d) Check every required condition.** For each numbered condition in the entry, cite the words in the passage that satisfy it. If any condition is not met, do not flag. If a condition depends on facts that are not in the text (what the speaker knew, what evidence exists, how a study was run), the most you can record is "possible issue" (see (g)).
+**(d) Check every required condition.** For each numbered condition in the entry, cite the words in the passage that satisfy it. If any condition is not met, do not flag. If a condition depends on facts that are not in the text (what the speaker knew, what evidence exists, how a study was run), apply step (f).
 
 **(e) Rule out each legitimate look-alike.** For each look-alike listed in the entry, say in one line why it does not apply. If one plausibly applies, downgrade to "possible issue" or drop the flag.
 
-**(f) Treat entries that are not detectable from the text as questions.** Entries marked `text_detectable: no` (confirmation bias, selective attention, availability heuristic, rationalization) depend on motive, inner bias or facts outside the text. Never flag them. You may record a question, for example: "Is contrary evidence on X being left out?" Entries marked `partly` need at least one fact from outside the text; check it, or record "possible issue."
+**(f) Handle conditions that may need facts outside the text.**
+- Each entry lists, in `outside_text_conditions`, the numbered conditions that may need facts from outside the passage (they are marked in FALLACIES.md). Only those conditions are affected; every other condition must be met from the text as usual.
+- A condition marked as outside-text **is met** if the passage itself states the needed fact, or if the fact is common knowledge in the sense of step (b). Then the entry can be flagged like any other.
+- If the needed fact is neither stated nor common knowledge, record **possible issue** and name the fact that would settle it.
+- Entries marked `text_detectable: no` (confirmation bias, selective attention, availability heuristic, rationalization) depend on motive or inner bias. Never flag them. You may record a question, for example: "Is contrary evidence on X being left out?", or use a text-level entry such as suppressed evidence or cherry-picking if its conditions are met.
 
 **(g) Give a verdict.**
 - **Flag**: every condition is met from the text and no look-alike applies.
 - **Possible issue**: the text meets the conditions it can, but at least one condition depends on context that is not in the text, or a look-alike might apply. Say exactly what would settle it.
 - **No issue**: a condition fails, or a look-alike applies.
+- **Correct use of a fallacy name, or a fair reduction to absurdity.** If the speaker correctly identifies or rebuts a fallacy, or argues by reduction to absurdity from the opponent's own stated principle, the verdict is no issue. Record the entry they invoked, so the reader can see it was checked.
 
 **(h) Recommended: a second reviewer.** A second reviewer, who has not seen the first reviewer's verdicts, re-checks each flag using steps (a) to (g). Report only the flags both reviewers agree on; list the disagreements separately as possible issues.
+- If both reviewers flag the same step but with different entries, report the flag, list both names as "label disputed", and resolve it with the family or cross-family tie-break. If the names are still split, report the more general of the two entries.
 
 Contested entries (`status: contested`) are names that are disputed or not widely used. If you use one, say so in the write-up.
 

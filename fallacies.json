@@ -1,6 +1,6 @@
 {
   "title": "Fallacy Catalog",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A plain, sourced catalog of named logical fallacies for checking real arguments. Each entry gives a standard name, aliases, a category, a short definition, an original example, the conditions that must all be shown from the text before the label applies, legitimate look-alikes that are not the fallacy, whether the fallacy can be detected from the text alone, related entries to choose between, and the published references that list it.",
   "license": "MIT",
   "references": [
@@ -117,7 +117,8 @@
         "disregarding-known-science",
         "survivorship-bias",
         "quoting-out-of-context",
-        "overwhelming-exception"
+        "overwhelming-exception",
+        "cherry-picking"
       ]
     },
     {
@@ -172,7 +173,7 @@
     },
     {
       "name": "causation",
-      "rule": "Use the specific causal entry; false cause only if none fits. When the reverse direction is named and plausible, prefer reversing causation over cum hoc.",
+      "rule": "Use the specific causal entry; false cause only if none fits. Only a correlation is shown: cum hoc. The argument does address causes but misses an obvious third factor: ignoring a common cause. The reverse direction is named and plausible: reversing causation.",
       "members": [
         "false-cause",
         "post-hoc",
@@ -217,7 +218,7 @@
     },
     {
       "name": "ambiguity",
-      "rule": "One word (equivocation), grammar (amphiboly), stress (accent), syllogism middle term (four terms), reach of 'not' or 'all' (scope), word grouping (combination/division of words).",
+      "rule": "One word (equivocation), grammar (amphiboly), stress (accent), reach of 'not' or 'all' (scope), word grouping (combination/division of words). When the shifting word is the middle term of a categorical syllogism, report it as equivocation and add '(four terms)'.",
       "members": [
         "equivocation",
         "amphiboly",
@@ -321,7 +322,7 @@
     },
     {
       "name": "probability",
-      "rule": "Use one per step.",
+      "rule": "Use one per step. A screening or test result combined with how common the condition is: base-rate fallacy. 'The chance of this evidence if innocent' presented as the chance of innocence: prosecutor's fallacy.",
       "members": [
         "base-rate-fallacy",
         "prosecutors-fallacy",
@@ -344,7 +345,7 @@
     },
     {
       "name": "syllogisms",
-      "rule": "Name the rule that is broken; use one per syllogism unless two rules are broken.",
+      "rule": "Name the rule that is broken; use one per syllogism unless two rules are broken. When a term shifts meaning, report it as equivocation and add '(four terms)'.",
       "members": [
         "undistributed-middle",
         "illicit-major",
@@ -462,6 +463,17 @@
         "false-cause",
         "inconsistency"
       ]
+    },
+    {
+      "name": "selective evidence",
+      "rule": "Contrary evidence absent from the text: suppressed evidence. Contrary evidence stated (or plainly known) but ignored: cherry-picking. A pattern or cluster found by searching and treated as if predicted: Texas sharpshooter. The filter was success or survival: survivorship bias. 'Something improbable happened, so it was designed or rigged': lottery fallacy.",
+      "members": [
+        "suppressed-evidence",
+        "cherry-picking",
+        "texas-sharpshooter",
+        "survivorship-bias",
+        "lottery-fallacy"
+      ]
     }
   ],
   "redirects": [
@@ -543,6 +555,7 @@
       "category": "informal: ambiguity and language",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Changing the meaning of a sentence by stressing a word or syllable differently (in speech or by emphasis in writing), and then reasoning from the shifted meaning.",
       "example": "'We should not speak ILL of our friends', so it's fine to speak ill of strangers.",
@@ -612,6 +625,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Applying a general rule to a case that is a genuine exception, where the circumstances that make the rule sensible are absent.",
       "example": "Cutting people with knives is a crime. Surgeons cut people with knives. So surgeons are criminals.",
@@ -686,6 +700,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Aristotle's fallacy of assuming that whatever is true of a thing is also true of something that merely happens to coincide with it (an 'accident'), as if the two were interchangeable. This is different from the modern fallacy of accident (applying a rule to an exception).",
       "example": "Coriscus is different from Socrates. Socrates is a man. So Coriscus is different from a man.",
@@ -734,6 +749,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Saving a cherished claim from contrary evidence by inventing an explanation that has no support except that it saves the claim.",
       "example": "The psychic failed because the sceptics' negative energy blocked her powers.",
@@ -789,6 +805,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Rejecting a claim or argument by attacking the person who made it rather than the reasons they gave.",
       "example": "Why listen to his tax plan? He's been divorced three times.",
@@ -889,6 +906,7 @@
       "category": "formal: syllogistic",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "A syllogism with at least one negative premise but an affirmative conclusion.",
       "example": "No reptiles are warm-blooded. All snakes are reptiles. So all snakes are warm-blooded.",
@@ -939,6 +957,7 @@
       "category": "formal: propositional",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Reasoning from 'P or Q' and 'P' to 'not Q', as if 'or' always meant 'one but not both'.",
       "example": "She's either talented or hardworking. She's talented, so she isn't hardworking.",
@@ -990,6 +1009,7 @@
       "category": "formal: propositional",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Reasoning from 'If P then Q' and 'Q' to 'P'. Q could be true for some other reason.",
       "example": "If the pipes burst, the floor is wet. The floor is wet. So the pipes burst.",
@@ -1066,6 +1086,7 @@
       "category": "informal: ambiguity and language",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Drawing a conclusion from a sentence whose grammar allows two readings, relying on the reading that wasn't meant.",
       "example": "'She said on Monday she would sign the contract', so she has to sign it on Monday (when 'on Monday' may say when she spoke, not when she would sign).",
@@ -1134,18 +1155,25 @@
       ],
       "category": "informal: weak induction",
       "status": "standard",
-      "text_detectable": "yes",
+      "text_detectable": "partly",
+      "outside_text_conditions": [
+        3
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Relying on a personal story or a few vivid cases instead of more representative evidence.",
       "example": "My grandfather smoked every day and lived to 95, so smoking isn't that harmful.",
       "required_conditions": [
         "A conclusion about a general pattern is drawn.",
-        "The evidence offered is one or a few personal stories.",
+        "The evidence offered is one or a few personal stories, or unsystematic personal impressions.",
         "Better systematic evidence exists or would be needed for the conclusion."
       ],
       "legitimate_lookalikes": [
         {
           "text": "An anecdote used to illustrate a pattern established on other grounds, or to show that something is possible.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "Long, systematically recorded professional observation (for example, a clinic's own logged case series) is not mere anecdote.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -1194,6 +1222,9 @@
       "category": "informal: ambiguity and language",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        2
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Projecting human qualities such as intentions or feelings onto something that isn't human and reasoning from that projection.",
       "example": "My car hates the cold. It's trying to make me late.",
@@ -1251,16 +1282,22 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Judging a claim true or false by the achievements of the person making it rather than by the evidence.",
       "example": "She founded three companies, so her views on vaccines must be right.",
       "required_conditions": [
         "A claim is supported (or attacked) by pointing to the speaker's achievements.",
-        "The achievements are in a different field from the claim."
+        "The achievements are in a different field from the claim.",
+        "The achievement is treated as settling the matter or as the main reason to accept the claim."
       ],
       "legitimate_lookalikes": [
         {
           "text": "Achievements in the field the claim is about are ordinary evidence of expertise.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "The claim concerns a method (statistics, measurement, mathematics) that the person's own field uses.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -1301,6 +1338,9 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        2
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Accepting a claim because someone said it when that person is not a genuine expert on the question, the experts disagree, or the authority is being treated as settling the matter regardless of the evidence.",
       "example": "A famous physicist says this diet cures cancer, so it does.",
@@ -1399,6 +1439,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "A form of illegitimate appeal to authority: treating a celebrity's endorsement as a reason to accept a product, candidate or claim.",
       "example": "A famous actor uses this supplement, so it must work.",
@@ -1447,6 +1488,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Arguing that a factual claim is true or false because believing it would have good or bad results.",
       "example": "If there's no afterlife, life is meaningless, so there must be an afterlife.",
@@ -1515,6 +1557,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": true,
       "definition": "Trying to win acceptance of a claim by stirring up feelings that are not relevant to whether it is true.",
       "example": "Think of the children! Vote yes on this measure.",
@@ -1583,6 +1626,9 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        3
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Trying to win support by stirring up fear rather than giving evidence that the feared outcome is likely.",
       "example": "If you don't buy this alarm system, your family could be next.",
@@ -1642,6 +1688,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Using compliments to get someone to accept a claim.",
       "example": "A smart person like you can surely see that this investment is sound.",
@@ -1692,6 +1739,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Using a threat, open or veiled, to get someone to accept a claim, as if the threat were a reason for believing it.",
       "example": "You'll agree this plan is brilliant if you want to keep your job.",
@@ -1709,6 +1757,10 @@
             "url": "https://iep.utm.edu/fallacy/",
             "locator": "section 6, \"Partial List of Fallacies\", entry \"Scare Tactic\""
           }
+        },
+        {
+          "text": "Keep the look-alike above for plain demands to act ('comply or be fined'). If the demand is to accept, agree with, endorse or stop questioning a proposition whose merits are at issue, it does not apply.",
+          "caveat_source": "catalog wording"
         }
       ],
       "families": [
@@ -1778,6 +1830,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Dismissing an argument by questioning why its proponent is making it.",
       "example": "She only wants the park protected because she lives next to it.",
@@ -1832,17 +1885,26 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Arguing that something is good because it is 'natural', or bad because it is 'unnatural'.",
       "example": "This herbal remedy is natural, so it's safe.",
       "required_conditions": [
-        "Something is called natural or unnatural.",
+        "Something is called natural or unnatural, or equivalent wording is used (evolved, ancestral, 'what our bodies are built for').",
         "That label is offered as the reason it is good, safe or right (or bad).",
         "The feature that 'natural' stands for is not spelled out and separately shown to matter."
       ],
       "legitimate_lookalikes": [
         {
           "text": "'Natural' stands for a specific property (no additives, long track record) that is separately shown to matter.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "Evolutionary history offered as evidence of physiological fit, for a conclusion about fit.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If the conclusion is a moral one drawn from facts, use is-ought.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -1881,6 +1943,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Arguing that something is better or correct simply because it is new.",
       "example": "This app was released last week, so it must be better than the old one.",
@@ -1928,6 +1991,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Using sympathy for someone's situation as a reason to accept a conclusion that their situation doesn't support.",
       "example": "I deserve an A; I've had a really hard semester.",
@@ -1982,6 +2046,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Assuming a claim is more likely true, or a person more virtuous, because they are poor.",
       "example": "The monk owns nothing, so his views on economics must be wise.",
@@ -2028,6 +2093,7 @@
       "category": "informal: statistical and probabilistic",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Treating something that merely could happen as if it will happen, or something that is likely as if it were certain.",
       "example": "Someone could hack this account, so someone will.",
@@ -2071,6 +2137,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Presenting an opponent's view as laughable in order to dismiss it, without showing what is wrong with it.",
       "example": "Remote work? Sure, and let's hold board meetings in our pyjamas. Ha!",
@@ -2134,6 +2201,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Urging acceptance of a claim or product by suggesting that discerning, superior people accept it.",
       "example": "Only true connoisseurs appreciate this, and you're a connoisseur, aren't you?",
@@ -2181,6 +2249,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Using bitterness or resentment toward a person or group as a reason to accept a claim.",
       "example": "Those rich executives never paid their fair share; vote against anything they support.",
@@ -2240,6 +2309,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Arguing that a claim is true, or a practice right, simply because many or most people believe or do it.",
       "example": "Millions of people use this remedy, so it must work.",
@@ -2335,6 +2405,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Dismissing a claim as absurd or not worth discussing without giving any reason.",
       "example": "That theory is obviously ridiculous. Next question.",
@@ -2393,6 +2464,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Arguing that a practice or belief is right because it has long been held or done.",
       "example": "We've always hired this way, so it's the right way.",
@@ -2458,6 +2530,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Assuming that something is better or more likely true because it costs more or because a rich person holds it.",
       "example": "This wine costs $300, so it must taste better.",
@@ -2518,6 +2591,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Inferring that a claim is false because an argument offered for it is fallacious or weak. (The Fallacy Files treats this as a case of the broader 'bad reasons fallacy'.)",
       "example": "Your argument for vaccination was a slippery slope, so vaccines must not work.",
@@ -2564,6 +2638,7 @@
       "category": "informal: weak induction",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Treating a lack of disproof as proof, or a lack of proof as disproof.",
       "example": "No one has proved that ghosts don't exist, so they do.",
@@ -2640,6 +2715,7 @@
       "category": "informal: weak induction",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Concluding that something is false (or must have an extraordinary cause) because you find it hard to believe or imagine.",
       "example": "I can't imagine how an eye could evolve, so it couldn't have.",
@@ -2686,6 +2762,7 @@
       "category": "informal: dialogue and evasion",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Repeating a claim or argument until people stop disputing it, then citing that lack of objection (or the sheer number of repetitions) as evidence that it is true.",
       "example": "I've raised this at every meeting for a year and nobody argues with it any more, so it's obviously right.",
@@ -2736,6 +2813,9 @@
       "category": "informal: weak induction",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        3
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Drawing a conclusion from the absence of a statement or record, when that absence has other likely explanations.",
       "example": "His diary never mentions his brother, so he didn't have one.",
@@ -2776,6 +2856,10 @@
       "category": "informal: statistical and probabilistic",
       "status": "contested",
       "text_detectable": "no",
+      "outside_text_conditions": [
+        2,
+        3
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Judging how common or likely something is by how easily examples come to mind, and deciding on that basis.",
       "example": "I'll drive instead of flying; you always hear about plane crashes.",
@@ -2826,6 +2910,7 @@
       "category": "informal: dialogue and evasion",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Going off on a tangent instead of addressing the issue one is supposed to address.",
       "example": "Asked about the budget overrun, the minister talks about the great new stadium.",
@@ -2885,6 +2970,7 @@
       "category": "informal: dialogue and evasion",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Responding to a direct question by answering a different question or not answering at all.",
       "example": "'Did you approve the payment?' 'What matters is that the project delivered results.'",
@@ -2938,6 +3024,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Supposing that historians can reach the whole truth simply by piling up individual pieces of evidence, without questions or theories to guide them.",
       "example": "Collect every document from the period and the meaning of the war will become obvious.",
@@ -2973,6 +3060,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Arguing that a claim is correct because more and more people are coming to believe it.",
       "example": "Everyone's switching to this phone, so it must be the best.",
@@ -3032,6 +3120,9 @@
       "category": "informal: statistical and probabilistic",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        2
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Judging a probability from specific evidence (such as a test result) while ignoring how common the thing is to begin with.",
       "example": "The test is 99% accurate and I tested positive, so I almost certainly have this disease that affects 1 in 100,000 people.",
@@ -3047,6 +3138,10 @@
         },
         {
           "text": "The specific evidence is so strong that the base rate makes little difference, and this is shown.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If 'the chance of this evidence if innocent' is presented as the chance of innocence, use prosecutor's fallacy.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -3090,6 +3185,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Supporting a conclusion with a premise that is only acceptable to someone who already accepts the conclusion, so the argument gives no independent reason. Includes arguing in a circle, where the conclusion reappears, openly or reworded, among the premises.",
       "example": "Her advice is trustworthy because she's an honest person, and she's honest because her advice is trustworthy.",
@@ -3211,7 +3307,8 @@
       ],
       "category": "informal: relevance",
       "status": "standard",
-      "text_detectable": "partly",
+      "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Assuming a view is wrong and then explaining why the other person holds it (their bias, psychology or upbringing) instead of showing that it is wrong.",
       "example": "You only think the economy is doing badly because you're a pessimist.",
@@ -3252,12 +3349,79 @@
       ]
     },
     {
+      "id": "cherry-picking",
+      "name": "Cherry-picking",
+      "aliases": [
+        "cherry picking",
+        "selective use of evidence",
+        "fallacy of exclusion"
+      ],
+      "category": "informal: weak induction",
+      "status": "standard",
+      "text_detectable": "yes",
+      "outside_text_conditions": [],
+      "use_only_if_nothing_more_specific": false,
+      "definition": "Drawing a conclusion from a selected part of the evidence while the rest of it, which is stated or plainly known, points the other way or weakens it and goes unanswered. Unlike suppressed evidence, the contrary evidence is in plain view.",
+      "example": "The report shows test scores rose at three of the ten pilot schools and fell at the other seven. The programme clearly works: look at those three schools.",
+      "required_conditions": [
+        "The arguer selects a subset of the available or stated data.",
+        "The rest of the data, stated or plainly known, points the other way or dilutes the subset.",
+        "The conclusion rests on the subset, and the rest gets no answer."
+      ],
+      "legitimate_lookalikes": [
+        {
+          "text": "The subset is singled out for a stated, independent reason (for example, a subgroup named before the data came in).",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "Highlighting the strongest examples while acknowledging and answering the rest.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If the contrary evidence is absent from the text, use suppressed evidence instead.",
+          "caveat_source": "catalog wording"
+        }
+      ],
+      "families": [
+        "omitted evidence",
+        "selective evidence"
+      ],
+      "related": [
+        "suppressed-evidence",
+        "nut-picking",
+        "selective-attention",
+        "confirmation-bias",
+        "disregarding-known-science",
+        "survivorship-bias",
+        "quoting-out-of-context",
+        "overwhelming-exception",
+        "texas-sharpshooter",
+        "lottery-fallacy"
+      ],
+      "sources": [
+        {
+          "ref": "Wikipedia",
+          "title": "Wikipedia, \"List of fallacies\"",
+          "url": "https://en.wikipedia.org/wiki/List_of_fallacies",
+          "locator": "section \"Informal fallacies > Faulty generalizations\", item \"Cherry picking\""
+        },
+        {
+          "ref": "IEP",
+          "title": "Internet Encyclopedia of Philosophy, \"Fallacies\" (Bradley Dowden)",
+          "url": "https://iep.utm.edu/fallacy/",
+          "locator": "section 6, \"Partial List of Fallacies\", entry \"Cherry-Picking\"",
+          "note": "IEP treats cherry-picking as another name for suppressed evidence; this catalog keeps a separate entry for the case where the contrary evidence is in plain view"
+        }
+      ]
+    },
+    {
       "id": "chronological-snobbery",
       "name": "Chronological snobbery",
       "aliases": [],
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Dismissing an idea because it was popular in an earlier era that also held beliefs now known to be false.",
       "example": "People who believed in witches also believed that, so it must be wrong.",
@@ -3306,13 +3470,14 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Arguing that a claim is false, or a proposal should be rejected, because of the arguer's circumstances, such as what they stand to gain, rather than on the merits.",
       "example": "Of course the solar-panel installer says solar saves money; ignore her figures.",
       "required_conditions": [
         "Someone has made a claim or proposal.",
         "The reply points to the person's circumstances, such as a stake in the outcome.",
-        "The circumstances are offered as showing the claim is false or the proposal bad, not merely as a reason to check it."
+        "The circumstances are used to declare the claim false or ignorable, or to refuse to examine its evidence."
       ],
       "legitimate_lookalikes": [
         {
@@ -3327,6 +3492,10 @@
         },
         {
           "text": "Where the claim rests only on the person's word, their interests bear on how much to trust it.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "Bare distrust of a report that has its own evidence, without declaring it false: record possible issue, settled by whether the evidence gets examined.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -3377,6 +3546,7 @@
       "category": "informal: ambiguity and language",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Aristotle's fallacy of joining words that should be read separately, which changes the meaning, as when 'able to walk while sitting' is read as 'able to walk-while-sitting'.",
       "example": "He can carry a tune and a piano, so he can carry a tune-and-piano at once.",
@@ -3424,6 +3594,9 @@
       "category": "informal: causal",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        2
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Concluding that A causes B when both are actually caused by some third factor.",
       "example": "Children with bigger feet read better, so big feet improve reading (both come with age).",
@@ -3442,6 +3615,10 @@
             "url": "https://iep.utm.edu/fallacy/",
             "locator": "section 6, \"Partial List of Fallacies\", entry \"Common Cause\""
           }
+        },
+        {
+          "text": "An obvious common-knowledge third factor (rain causing both wiper use and accidents) counts as 'some evidence' of a common cause.",
+          "caveat_source": "catalog wording"
         }
       ],
       "families": [
@@ -3491,6 +3668,7 @@
       "category": "formal: propositional",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Inferring 'If Q then P' from 'If P then Q'. A conditional does not automatically run in reverse.",
       "example": "If something is a cat, it has fur. So if something has fur, it is a cat.",
@@ -3534,6 +3712,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Asking a question that assumes an unproven claim, so any direct answer seems to concede it.",
       "example": "Have you stopped cheating on your taxes?",
@@ -3612,6 +3791,7 @@
       "category": "informal: ambiguity and language",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Assuming that what is true of the parts, or of each member, must be true of the whole or the group.",
       "example": "Every player on the team is a star, so the team will be great.",
@@ -3667,6 +3847,10 @@
       "category": "informal: presumption",
       "status": "contested",
       "text_detectable": "no",
+      "outside_text_conditions": [
+        2,
+        3
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Seeking out or giving weight only to evidence that supports what you already believe, and not looking for evidence against it.",
       "example": "I only read reviews that agree with me, and they all prove I'm right.",
@@ -3695,7 +3879,8 @@
         "disregarding-known-science",
         "survivorship-bias",
         "quoting-out-of-context",
-        "overwhelming-exception"
+        "overwhelming-exception",
+        "cherry-picking"
       ],
       "sources": [
         {
@@ -3713,6 +3898,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Treating an account of why something happened as if it were a justification of it, or rejecting the explanation because it seems to excuse.",
       "example": "You say poverty contributes to crime? So you think criminals aren't responsible?",
@@ -3752,6 +3938,7 @@
       "category": "formal: propositional",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Treating a condition that must be present for something to happen as if it were enough by itself to make it happen, or the reverse.",
       "example": "Oxygen is needed for fire. There is oxygen in this room, so there will be a fire.",
@@ -3793,6 +3980,7 @@
       "category": "informal: statistical and probabilistic",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Judging that two things together are more likely than one of them alone. A combination can never be more probable than either part.",
       "example": "Dana studied environmental science and organises beach clean-ups. Which is more likely: (a) Dana works at a bank, or (b) Dana works at a bank and volunteers for a conservation group? Choosing (b) is the fallacy.",
@@ -3847,6 +4035,7 @@
       "category": "informal: weak induction",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Generalizing from exceptional cases to a rule meant for ordinary cases.",
       "example": "Patients in pain are allowed morphine, so everyone should be allowed morphine.",
@@ -3904,13 +4093,14 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Dismissing a criticism by claiming the critic hasn't studied the subject in enough depth to comment, without answering the criticism.",
       "example": "You can't criticise astrology until you've read the major astrological texts.",
       "required_conditions": [
         "A criticism is raised.",
         "The reply says the critic lacks the knowledge or training to comment.",
-        "The criticism itself is not answered, and it does not depend on the specialised knowledge."
+        "The criticism itself is not answered, and either it does not depend on the specialised knowledge, or the reply denies the critic standing to criticise at all, regardless of content, without naming any misunderstanding."
       ],
       "legitimate_lookalikes": [
         {
@@ -3953,6 +4143,7 @@
       "category": "informal: causal",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Concluding that because two things occur together, one causes the other.",
       "example": "Ice cream sales and drownings rise together, so ice cream causes drowning.",
@@ -3984,6 +4175,10 @@
         },
         {
           "text": "A correlation plus a comparison group or a known mechanism, offered as grounds to investigate.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If the argument does address causes but misses an obvious third factor, use ignoring a common cause.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -4033,6 +4228,9 @@
       "category": "informal: statistical and probabilistic",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        2
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Fitting a model so closely to existing data, noise included, that it describes the past well but predicts poorly, and then trusting its predictions. Fitting a curve to data is not itself a fallacy.",
       "example": "Our 30-variable formula explains every past election perfectly, so it will predict the next one.",
@@ -4092,6 +4290,7 @@
       "category": "informal: ambiguity and language",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Using a comparative word like 'better' or 'more' without saying what is being compared to, so the claim sounds meaningful but can't be checked.",
       "example": "Our toothpaste cleans 50% better!",
@@ -4138,6 +4337,7 @@
       "category": "informal: ambiguity and language",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Changing the meaning of a key word once an objection is raised, so the claim survives in name only.",
       "example": "When I said the plan 'worked', I meant it started a conversation.",
@@ -4200,6 +4400,7 @@
       "category": "formal: propositional",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Reasoning from 'not both P and Q' and 'not P' to 'Q'. Both could be false.",
       "example": "You can't be both at the office and at the gym. You're not at the office, so you must be at the gym.",
@@ -4242,6 +4443,7 @@
       "category": "formal: propositional",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Reasoning from 'If P then Q' and 'not P' to 'not Q'. Q could still be true for some other reason.",
       "example": "If it rains, the game is cancelled. It didn't rain. So the game wasn't cancelled.",
@@ -4298,6 +4500,9 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        2
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Making a claim that ignores or contradicts well-established science without addressing it.",
       "example": "This engine runs forever on a single tank of water.",
@@ -4326,7 +4531,8 @@
         "confirmation-bias",
         "survivorship-bias",
         "quoting-out-of-context",
-        "overwhelming-exception"
+        "overwhelming-exception",
+        "cherry-picking"
       ],
       "sources": [
         {
@@ -4346,6 +4552,7 @@
       "category": "informal: ambiguity and language",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Assuming that what is true of a whole or group must be true of each of its parts or members.",
       "example": "The university is world-famous, so every professor there is world-famous.",
@@ -4401,6 +4608,7 @@
       "category": "informal: ambiguity and language",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Aristotle's fallacy of splitting apart words that should be read together, which changes the meaning, as in '5 is 2 and 3, so 5 is even and odd'.",
       "example": "Five is two and three; two is even and three is odd; so five is both even and odd.",
@@ -4444,6 +4652,9 @@
       "category": "informal: presumption",
       "status": "contested",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        2
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Reducing a role to its most visible task and judging its value or cost on that basis, missing the less visible value it provides.",
       "example": "A doorman just opens doors, so replace him with an automatic door.",
@@ -4479,6 +4690,7 @@
       "category": "informal: statistical and probabilistic",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Counting the same outcome or piece of evidence more than once, so probabilities or totals come out too high.",
       "example": "A survey says 60% of residents use the bus and 50% use the train, so 110% of residents use public transport (people who use both were counted twice).",
@@ -4519,6 +4731,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Judging two relevantly similar people or cases by different standards.",
       "example": "When our candidate changes his mind it's growth; when theirs does it's flip-flopping.",
@@ -4540,6 +4753,10 @@
         },
         {
           "text": "If the speaker exempts their own case from a rule, use special pleading instead.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "Asking that a stated test be applied consistently is legitimate, unless it is used to dismiss the original criticism.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -4567,6 +4784,7 @@
       "category": "informal: statistical and probabilistic",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Drawing conclusions about individuals from statistics about the groups they belong to.",
       "example": "Richer states vote for party X, so richer people vote for party X.",
@@ -4608,6 +4826,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Treating the right to hold an opinion as if it were a reason the opinion is correct or exempt from criticism.",
       "example": "You can show me all the data you want; I'm entitled to my opinion.",
@@ -4655,6 +4874,7 @@
       "category": "informal: ambiguity and language",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Using a word or phrase in one sense in one part of an argument and in a different sense in another, so the argument only seems to work.",
       "example": "A feather is light. What is light cannot be dark. So a feather cannot be dark.",
@@ -4670,6 +4890,10 @@
         },
         {
           "text": "Puns or wordplay not offered as argument.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "When the shifting word is the middle term of a categorical syllogism, report it as equivocation and add '(four terms)'.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -4738,6 +4962,7 @@
       "category": "informal: ambiguity and language",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Assuming that a word's original or historical meaning is its real or current meaning.",
       "example": "'Decimate' originally meant killing one in ten, so you're wrong to use it for heavy losses.",
@@ -4796,6 +5021,9 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        1
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Overstating a key step in an argument so that the conclusion looks better supported than it is.",
       "example": "Everyone knows the new rule has been a total disaster, so it must be repealed.",
@@ -4845,6 +5073,7 @@
       "category": "formal: syllogistic",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Drawing a conclusion from a syllogism whose premises are both negative. Two denials do not connect the terms.",
       "example": "No fish are mammals. No birds are fish. So no birds are mammals.",
@@ -4893,6 +5122,7 @@
       "category": "formal: quantifier and modal",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Drawing a conclusion that says something exists from premises that are only universal ('all' or 'no') and so don't guarantee that anything exists.",
       "example": "All trespassers will be fined. So some trespassers will be fined.",
@@ -4949,6 +5179,7 @@
       "category": "informal: statistical and probabilistic",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Presenting a figure as more exact than the evidence can support, which gives it unearned authority.",
       "example": "This policy will save exactly 1,483,227 jobs.",
@@ -4988,6 +5219,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Assuming that when some conditions for the best outcome can't be met, meeting as many of the rest as possible must give the next-best outcome.",
       "example": "We can't have the ideal team of five, so hiring four of the five ideal people must be the next-best option (although the fifth role was what tied them together).",
@@ -5016,6 +5248,7 @@
       "category": "informal: statistical and probabilistic",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Comparing raw counts between groups of very different sizes instead of comparing rates.",
       "example": "There were ten cases among right-handers and only one among left-handers, so left-handed people are safer.",
@@ -5063,6 +5296,7 @@
       "category": "informal: weak induction",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Arguing that because two things are alike in some ways they are alike in another way, when the similarities are not relevant to that point or the differences matter more.",
       "example": "Employees are like nails: they work best when you hit them on the head.",
@@ -5142,6 +5376,9 @@
       "category": "informal: ambiguity and language",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        2
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Supporting a point with words a person never said, or with a source that does not exist.",
       "example": "As Einstein said, 'Compound interest is the most powerful force in the universe.'",
@@ -5186,6 +5423,9 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        2
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Presenting two positions as equally supported, for example in news coverage, when the evidence strongly favours one of them.",
       "example": "Giving equal airtime to one climate scientist and one sceptic, as if expert opinion were evenly split.",
@@ -5229,6 +5469,7 @@
       "category": "informal: causal",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": true,
       "definition": "Concluding that one thing causes another when the only support is that they occur together or in sequence, or when an obvious alternative explanation (a common cause, reversed direction, or chance) has not been ruled out.",
       "example": "Countries with more Nobel laureates eat more chocolate, so chocolate makes people smarter.",
@@ -5303,6 +5544,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Presenting too few options, often just two, as the only ones, when others exist.",
       "example": "Either we cut the school's art programme or we go bankrupt.",
@@ -5367,6 +5609,9 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        2
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Implying that two things, often two sides' cases, are roughly equal in strength or seriousness when one is much weaker or much less serious, glossing over the difference.",
       "example": "Both of them told lies, so the man who misstated his age is as dishonest as the man who committed fraud.",
@@ -5413,6 +5658,10 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        2,
+        3
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Offering a bizarre explanation as the correct one without first ruling out simpler, more likely explanations.",
       "example": "The crop circles must have been made by aliens.",
@@ -5459,6 +5708,9 @@
       "category": "informal: weak induction",
       "status": "contested",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        2
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Trusting an evaluation as objective, and acting on it, without checking whether its source is disinterested.",
       "example": "My manager says I'm the problem, so I must be (the manager is defending his own decisions).",
@@ -5493,6 +5745,7 @@
       "category": "informal: ambiguity and language",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Being misled by the grammatical form of a word into treating it as belonging to the wrong category, for example treating a word that sounds like an action as if it named an action.",
       "example": "'Flourishing' ends in -ing like 'running', so flourishing must be something a person does.",
@@ -5540,6 +5793,7 @@
       "category": "formal: general",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": true,
       "definition": "The general name for any argument whose form is invalid, so that true premises could still yield a false conclusion. Most invalid forms have no special name; when this label is used, show a counterexample with the same form.",
       "example": "Some doctors are runners. Some runners are teenagers. So some doctors are teenagers.",
@@ -5604,6 +5858,7 @@
       "category": "formal: syllogistic",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "A syllogism that uses four distinct terms instead of three, often because one word is used in two senses, so the premises never actually connect.",
       "example": "Nothing is better than eternal happiness. A sandwich is better than nothing. So a sandwich is better than eternal happiness.",
@@ -5615,6 +5870,10 @@
       "legitimate_lookalikes": [
         {
           "text": "The repeated word has the same meaning in both premises (check by substituting a definition).",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "Report it as equivocation with '(four terms)' added; this entry gives the syllogism analysis.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -5684,6 +5943,9 @@
       "category": "informal: causal",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        3
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Assuming that outcomes must have been caused by the hidden wrongdoing of people in charge.",
       "example": "The project failed, so someone must have sabotaged it.",
@@ -5733,6 +5995,7 @@
       "category": "informal: statistical and probabilistic",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Believing that past outcomes of a random, independent process change the odds of the next outcome, so that a result is 'due'.",
       "example": "Red has come up six times in a row, so black is due.",
@@ -5794,6 +6057,9 @@
       "category": "informal: statistical and probabilistic",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        1
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Assuming a single study can't suffer from the multiple-comparisons problem, when many choices about how to analyse the data were made after seeing it.",
       "example": "We only ran one test, so the result can't be a fluke (after choosing which subgroup and which outcome to test once the data were in).",
@@ -5835,6 +6101,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Judging a claim or practice good or bad by where it came from rather than by its present merits.",
       "example": "The idea for that law was first floated in a bar, so it can't be serious.",
@@ -5906,6 +6173,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Pinning views expressed by different people in a crowd onto the crowd as a whole, then calling the group inconsistent.",
       "example": "Critics say the film is too long and also say it's too rushed. Make up your minds!",
@@ -5939,7 +6207,8 @@
       ],
       "category": "informal: relevance",
       "status": "standard",
-      "text_detectable": "partly",
+      "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Substituting loyalty to or pride in one's group for reasons, so that the group's view is accepted without examination.",
       "example": "Our team has decided, and questioning it would be disloyal.",
@@ -5989,6 +6258,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Judging a claim or person by the company they keep or the groups they're linked to, rather than on the merits.",
       "example": "A dictator once supported this policy, so it must be bad.",
@@ -6064,6 +6334,7 @@
       "category": "informal: weak induction",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Drawing a general conclusion from too few cases to support it.",
       "example": "My two neighbours from that city were rude, so people from that city are rude.",
@@ -6083,6 +6354,14 @@
         },
         {
           "text": "Do not also tag converse accident or secundum quid for the same step.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "A small sample with a large, consistent effect, used for a reversible or low-stakes decision.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If the doubt is about how the sample was chosen rather than its size, use unrepresentative sample.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -6151,6 +6430,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Quietly qualifying a claim to dodge counterevidence and then acting as if the original, stronger claim still stood.",
       "example": "I said the stock would rise, and I meant eventually, in some sense.",
@@ -6199,6 +6479,9 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        2
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Assuming that people in the past had the information we have now, and judging their decisions accordingly.",
       "example": "The generals should have known the attack was coming; it's obvious from the records we have now.",
@@ -6238,6 +6521,9 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        2
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Assuming that a result came about only because a particular process was performed, when the process may have nothing to do with it.",
       "example": "Our children turned out well because we followed this parenting book.",
@@ -6275,6 +6561,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Explaining something by appeal to a smaller version of the same thing, which leaves the original question unanswered.",
       "example": "We see because a little viewer in the brain looks at the images from our eyes.",
@@ -6318,6 +6605,9 @@
       "category": "informal: statistical and probabilistic",
       "status": "contested",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        1
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Believing that a streak of successes in a chance process makes further successes more likely.",
       "example": "I've won five hands in a row, so I'm on a hot streak and should bet more.",
@@ -6357,6 +6647,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": true,
       "definition": "Treating a contested doctrine of one's own ideology as settled, when the conclusion depends on it and the arguer cannot or will not defend it.",
       "example": "Since the free market always produces the best outcome, any regulation is harmful.",
@@ -6397,6 +6688,7 @@
       "category": "informal: ambiguity and language",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Answering a question by supporting both sides, using emotionally loaded terms so that each side hears agreement.",
       "example": "If by 'growth' you mean jobs for families, I'm for it; if you mean concrete over our parks, I'm against it.",
@@ -6429,6 +6721,7 @@
       "category": "formal: syllogistic",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Applying contraposition (swap and negate both terms) to a categorical statement where it is not valid, such as 'No A are B' or 'Some A are B'.",
       "example": "No cats are dogs. So no non-dogs are non-cats.",
@@ -6481,6 +6774,7 @@
       "category": "formal: syllogistic",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Swapping the subject and predicate of a categorical statement where the swap is not valid, such as going from 'All A are B' to 'All B are A'.",
       "example": "All surgeons are doctors, so all doctors are surgeons.",
@@ -6535,6 +6829,7 @@
       "category": "formal: syllogistic",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "A syllogism whose conclusion says something about all of the major term's class when the major premise said something about only part of it.",
       "example": "All dogs are mammals. No cats are dogs. So no cats are mammals.",
@@ -6590,6 +6885,7 @@
       "category": "formal: syllogistic",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "A syllogism whose conclusion says something about all of the minor term's class when the minor premise said something about only part of it.",
       "example": "All squares are rectangles. All squares are shapes. So all shapes are rectangles.",
@@ -6638,6 +6934,7 @@
       "category": "formal: propositional",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Inferring 'If not P then not Q' from 'If P then Q'. The valid move is 'If not Q then not P'.",
       "example": "If you study, you'll pass. So if you don't study, you won't pass.",
@@ -6682,6 +6979,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": true,
       "definition": "Relying on two or more claims that cannot all be true, as if all of them supported the conclusion, without noticing the conflict.",
       "example": "I never generalize, because people who generalize are always hypocrites.",
@@ -6731,6 +7029,9 @@
       "category": "informal: statistical and probabilistic",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        2
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Treating events as independent and multiplying their probabilities when they are in fact linked, which can make a combination look far rarer than it is.",
       "example": "Each of the plane's two engines fails once in 10,000 flights, so both failing on one flight is a 1-in-100-million event (ignoring that they share fuel and maintenance).",
@@ -6771,6 +7072,7 @@
       "category": "informal: weak induction",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Reasoning from 'all (or most) A are B' to 'all (or most) B are A'.",
       "example": "Most jockeys are short, so most short people are jockeys.",
@@ -6812,6 +7114,7 @@
       "category": "informal: weak induction",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Arguing that because experts disagree on some point, nothing can be known in that field or the field as a whole is unreliable.",
       "example": "Economists argue about interest rates, so economics is just guesswork.",
@@ -6847,6 +7150,7 @@
       "category": "formal: quantifier and modal",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Swapping one name or description for another that refers to the same thing inside a context where the wording matters, such as statements about what someone knows, believes, said or wants, or about what is necessary.",
       "example": "Lena believes the author of that anonymous novel is brilliant. Unknown to her, the author is her dentist. So Lena believes her dentist is brilliant.",
@@ -6913,7 +7217,8 @@
       ],
       "category": "informal: ambiguity and language",
       "status": "contested",
-      "text_detectable": "partly",
+      "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "In literary criticism: treating the author's intention as what settles a work's meaning or value, rather than the work itself. The term is a critic's thesis and is disputed.",
       "example": "The author says it's not about war, so the war allegory everyone sees isn't there.",
@@ -6950,6 +7255,7 @@
       "category": "informal: statistical and probabilistic",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Concluding from one unlikely outcome that the process behind it must have been repeated many times before.",
       "example": "He rolled double sixes on his first throw, so he must have been playing for hours.",
@@ -6990,6 +7296,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Presenting a contested claim as true without any support, as if it were self-evident. (When the support offered is 'trust me, I'm an expert', use appeal to authority.)",
       "example": "It's simply true that this is the best policy. End of story.",
@@ -7043,6 +7350,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": true,
       "definition": "Offering an argument that may be fine in itself but supports a different conclusion from the one at issue.",
       "example": "The defendant can't be guilty of fraud; the fraud caused great suffering and fraud is a terrible crime (which argues that fraud is bad, not that he did it).",
@@ -7127,6 +7435,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Drawing a conclusion about what ought to be from premises that only say what is, without a premise that bridges the two.",
       "example": "People have always eaten meat, so people ought to eat meat.",
@@ -7191,6 +7500,10 @@
       "category": "informal: weak induction",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        2,
+        3
+      ],
       "use_only_if_nothing_more_specific": true,
       "definition": "Reaching a conclusion without relevant evidence that was readily available, when there was time and it was practical to get it.",
       "example": "The lights are off at her house, so she must have moved away.",
@@ -7252,6 +7565,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Offering several defences that contradict each other, in the hope that one will work.",
       "example": "I never borrowed your kettle; it was already broken; and anyway I gave it back undamaged.",
@@ -7289,6 +7603,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": true,
       "definition": "Treating a clearly trivial point as decisive, or a clearly decisive point as trivial, so that it gets the wrong weight in reaching the conclusion.",
       "example": "One typo in the report means none of its findings can be trusted.",
@@ -7335,6 +7650,7 @@
       "category": "informal: ambiguity and language",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Concluding that because no sharp line can be drawn between two things, there is no real difference between them, or that a vague term can't be used.",
       "example": "One more grain doesn't make a heap, so there's no such thing as a heap of sand.",
@@ -7417,6 +7733,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Using a descriptive label whose connotations assume the point in dispute.",
       "example": "This 'death tax' should be repealed.",
@@ -7478,6 +7795,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Using emotionally charged or value-laden words, in what is presented as a neutral argument, to push the listener toward a conclusion.",
       "example": "The bureaucrats' job-killing scheme will be voted on today.",
@@ -7557,6 +7875,7 @@
       "category": "informal: ambiguity and language",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Obscuring the issue with needlessly technical distinctions or formal machinery that don't bear on the real question.",
       "example": "Before we discuss the budget, define 'spending' in predicate logic.",
@@ -7607,6 +7926,7 @@
       "category": "informal: statistical and probabilistic",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Treating an outcome as too improbable to be chance because that particular outcome was unlikely, while ignoring that some unlikely outcome was bound to happen.",
       "example": "The odds that she in particular would win were 1 in 10 million, so the draw must have been rigged.",
@@ -7622,13 +7942,18 @@
         }
       ],
       "families": [
-        "chance"
+        "chance",
+        "selective evidence"
       ],
       "related": [
         "gamblers-fallacy",
         "hot-hand-fallacy",
         "inverse-gamblers-fallacy",
-        "regression-fallacy"
+        "regression-fallacy",
+        "suppressed-evidence",
+        "cherry-picking",
+        "texas-sharpshooter",
+        "survivorship-bias"
       ],
       "sources": [
         {
@@ -7646,6 +7971,9 @@
       "category": "informal: statistical and probabilistic",
       "status": "contested",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        2
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Applying the clean, known odds of a game or model to a real situation while ignoring a specific, identifiable way the real situation differs.",
       "example": "Our model treats market moves like coin flips, so a crash this size is effectively impossible.",
@@ -7690,6 +8018,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Treating the total amount of work in an economy as fixed, so that every job taken by one person or machine must be a job lost by another.",
       "example": "If older people work longer, there will be fewer jobs for the young.",
@@ -7721,6 +8050,7 @@
       "category": "informal: causal",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Assuming a causal link between events that have no plausible connection, such as between thoughts, rituals or symbols and outside events.",
       "example": "If I think about the accident, it might happen.",
@@ -7731,6 +8061,10 @@
       "legitimate_lookalikes": [
         {
           "text": "Rituals valued for their psychological effect on the person doing them.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If the reasoning is only 'it followed, so it caused', use post hoc.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -7768,6 +8102,9 @@
       "category": "informal: statistical and probabilistic",
       "status": "contested",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        2
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Deciding only on what can easily be measured and treating what can't be measured as unimportant or nonexistent.",
       "example": "Test scores went up, so the school is better, never mind whether students learn to think.",
@@ -7813,17 +8150,22 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Taking it for granted that the truth must lie halfway between two opposing positions.",
       "example": "You say the bridge needs 10 tonnes of steel; he says 2. Let's use 6.",
       "required_conditions": [
         "Two positions are in dispute.",
-        "A compromise is concluded to be correct.",
-        "The reason given is that it lies between them."
+        "The midpoint is asserted to be correct, fair, safe or true, not merely offered as a settlement.",
+        "Its being in the middle is the only reason given. (A midpoint that carries a factual claim, such as that it is safe or affordable, needs evidence for that claim.)"
       ],
       "legitimate_lookalikes": [
         {
-          "text": "Compromise as a practical way to reach agreement, not as a claim about truth.",
+          "text": "The midpoint is offered as a settlement both sides can accept ('let's settle at 4%').",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "The midpoint is backed by independent evidence (audits, data), not only by being in the middle.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -7853,6 +8195,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Treating a feature of how we perceive or know something as if it were a property of the thing itself.",
       "example": "The coin toss is random, so randomness is a physical property of the coin.",
@@ -7889,6 +8232,9 @@
       "category": "informal: weak induction",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        3
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Letting a few dramatic, memorable cases outweigh a larger body of statistical evidence.",
       "example": "I saw a terrible shark attack on the news, so swimming at the beach is too dangerous, whatever the statistics say.",
@@ -7943,6 +8289,7 @@
       "category": "informal: dialogue and evasion",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Demanding that others prove you wrong when it is your job to support your own claim.",
       "example": "I say this herb cures colds. Prove it doesn't.",
@@ -7995,6 +8342,7 @@
       "category": "formal: quantifier and modal",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Treating 'necessarily, if P then Q' as if it were 'if P, then necessarily Q', so that a merely true conclusion is wrongly presented as a necessary one.",
       "example": "Necessarily, if you are married you have a spouse. You are married. So you necessarily have a spouse (as if you could not have stayed single).",
@@ -8051,6 +8399,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Inferring what is the case from what ought to be the case, for example concluding that something can't be true because it would be bad if it were.",
       "example": "People shouldn't be unequal in ability, so there are no differences in ability.",
@@ -8090,6 +8439,7 @@
       "category": "informal: ambiguity and language",
       "status": "contested",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Defending a bold, controversial claim by retreating to a modest, easy-to-defend claim when challenged, then returning to the bold claim once the challenge passes.",
       "example": "'Medicine is a scam.' Challenged: 'I just mean drug companies sometimes put profit first.'",
@@ -8147,6 +8497,7 @@
       "category": "informal: dialogue and evasion",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Demanding new or greater evidence once the evidence originally asked for has been supplied.",
       "example": "You showed me one study? Show me ten. Ten? They must be from other countries.",
@@ -8189,6 +8540,9 @@
       "category": "informal: statistical and probabilistic",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        1
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Making many comparisons in one set of data and then treating a 'significant' result as meaningful, without allowing for the fact that some will turn up by chance.",
       "example": "We checked 40 foods against 40 diseases and found that eating celery is linked to ear infections.",
@@ -8228,6 +8582,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Defining 'good' as identical to some natural property (such as pleasure, what is desired, or what evolved) and treating the matter as settled. Sources also use the name for any move from 'is' to 'ought' and for 'natural, so good'; use is-ought or appeal to nature for those.",
       "example": "Pleasure is what people desire, so pleasure is what is good.",
@@ -8280,6 +8635,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Rejecting any argument from facts to values as a naturalistic fallacy even when it supplies the value premises needed to make it work.",
       "example": "You can't argue that smoking is bad because it causes cancer. That's deriving an ought from an is!",
@@ -8317,6 +8673,7 @@
       "category": "formal: syllogistic",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "A syllogism with only affirmative premises but a negative conclusion.",
       "example": "All pets are tame. Some birds are pets. So some birds are not tame.",
@@ -8366,6 +8723,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Rejecting a solution because it isn't perfect, rather than comparing it with realistic alternatives.",
       "example": "Seatbelts don't prevent all deaths, so there's no point wearing them.",
@@ -8420,6 +8778,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Protecting a generalization from a counterexample by redefining the group so that the counterexample doesn't count.",
       "example": "No true environmentalist flies. She flies? Then she's not a true environmentalist.",
@@ -8488,6 +8847,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "In an argument that derives an absurdity from several assumptions, blaming the absurdity on an assumption that played no part in deriving it and rejecting that assumption. This is different from the modern false cause fallacy about real-world causes.",
       "example": "From A, B and C we derived a contradiction, so C must be false (though the contradiction follows from A and B alone).",
@@ -8538,6 +8898,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": true,
       "definition": "A conclusion that doesn't follow from the reasons given, because they are irrelevant to it or far too weak.",
       "example": "She's an excellent cook, so she'll make a fine senator.",
@@ -8603,6 +8964,7 @@
       "category": "informal: weak induction",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Finding the most extreme or fringe members of an opposing group and presenting them as typical of the whole group.",
       "example": "Look at this one ranting post; that's what all supporters of that policy are like.",
@@ -8626,7 +8988,8 @@
         "disregarding-known-science",
         "survivorship-bias",
         "quoting-out-of-context",
-        "overwhelming-exception"
+        "overwhelming-exception",
+        "cherry-picking"
       ],
       "sources": [
         {
@@ -8646,6 +9009,7 @@
       "category": "informal: ambiguity and language",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Explaining something unclear by appeal to something even less clear.",
       "example": "Consciousness is just the quantum vibration of universal mind.",
@@ -8677,17 +9041,22 @@
       "category": "informal: statistical and probabilistic",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Reading an association found in an observational study as proof of cause and effect.",
       "example": "People who drink coffee in this survey live longer, so coffee extends life.",
       "required_conditions": [
         "The evidence is an association from an observational study (not a controlled experiment).",
         "A causal conclusion is drawn.",
-        "Confounders or reverse causation are not addressed."
+        "Confounders or reverse causation are not adequately addressed, and the causal claim is stated as established."
       ],
       "legitimate_lookalikes": [
         {
           "text": "The association is reported as a link to be tested, or confounders are carefully controlled.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "Partial adjustment for confounders with a hedged causal claim: record possible issue and name the alternative left unaddressed.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -8725,6 +9094,7 @@
       "category": "informal: statistical and probabilistic",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Extending a trend far beyond the range of data that support it, as if it would continue indefinitely.",
       "example": "The child grew 8 cm this year, so by age 40 he'll be over 4 metres tall.",
@@ -8767,6 +9137,7 @@
       "category": "informal: ambiguity and language",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Using a concept or claim so broad that it gives no useful information in context, often to avoid committing to anything checkable.",
       "example": "My plan for the economy is to make things better for people.",
@@ -8819,6 +9190,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": true,
       "definition": "Leaving out relevant complexity when the omitted complexity would weaken the conclusion, so that the simple version is what makes the conclusion look supported.",
       "example": "Crime is down because we hired more police. That's all there is to it.",
@@ -8860,6 +9232,7 @@
       "category": "informal: weak induction",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "A generalization stated with so many qualifications that what is left is much weaker than the headline claim suggests.",
       "example": "All our customers are satisfied, apart from those who complained, returned the product, or didn't respond.",
@@ -8879,7 +9252,8 @@
         "confirmation-bias",
         "disregarding-known-science",
         "survivorship-bias",
-        "quoting-out-of-context"
+        "quoting-out-of-context",
+        "cherry-picking"
       ],
       "sources": [
         {
@@ -8900,6 +9274,10 @@
       "category": "informal: statistical and probabilistic",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        1,
+        2
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Trying many analyses or experiments and reporting only the ones that cross the significance threshold, so the reported result looks stronger than it is.",
       "example": "We ran twenty versions of the study and published the one that reached p < 0.05.",
@@ -8939,6 +9317,7 @@
       "category": "informal: ambiguity and language",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Treating essentially different concepts as though they were essentially the same, usually because they are commonly grouped together.",
       "example": "Criticising a government policy is the same as hating the country.",
@@ -8979,6 +9358,7 @@
       "category": "informal: ambiguity and language",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Holding a mistaken belief because you attribute human feelings or purposes to inanimate things.",
       "example": "The storm is angry at us for building on this coast.",
@@ -9026,6 +9406,7 @@
       "category": "informal: ambiguity and language",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Winning an argument by getting others to accept a slanted definition of a key term that builds in the desired conclusion.",
       "example": "Real art means beautiful art, so this abstract painting isn't real art.",
@@ -9093,6 +9474,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Discrediting a person in advance, before they speak, so that anything they say will be dismissed.",
       "example": "Before you hear from my opponent, remember that he's a paid lobbyist who'll say anything.",
@@ -9154,6 +9536,7 @@
       "category": "informal: causal",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Concluding that because B happened after A, A caused B.",
       "example": "I wore my lucky socks and we won, so the socks helped us win.",
@@ -9230,6 +9613,7 @@
       "category": "informal: dialogue and evasion",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Restating a claim again and again despite objections or contrary evidence, without answering them, as if restating it settled the matter.",
       "example": "This diet works. It works. I've told you a hundred times: it works.",
@@ -9278,6 +9662,7 @@
       "category": "informal: weak induction",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Substituting a phrase that suggests proof, such as 'everyone knows' or 'studies show', for actual evidence.",
       "example": "Any reasonable person can see the plan is sound, and experts agree.",
@@ -9324,6 +9709,7 @@
       "category": "informal: statistical and probabilistic",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Confusing the chance of the evidence given innocence with the chance of innocence given the evidence, which overstates how strongly evidence points to guilt.",
       "example": "Only 1 in a million people would match this blood type, so there is only a 1 in a million chance the defendant is innocent.",
@@ -9334,6 +9720,10 @@
       "legitimate_lookalikes": [
         {
           "text": "The base rate and other evidence are combined correctly to estimate the probability of guilt.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If the error is ignoring how common the condition is when reading a test or screening result, use base-rate fallacy.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -9369,6 +9759,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "An argument that leads to an overly general conclusion. A common test (this catalog's wording, not the cited source's): the same reasoning would also establish things the arguer would reject.",
       "example": "We shouldn't fund the new library because some people never read (the same reasoning would rule out funding anything some people don't use).",
@@ -9404,6 +9795,9 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        2
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "An observer assumes their own perspective is objective and reads it into the behaviour or experience they are studying.",
       "example": "I would have felt humiliated in that situation, so the subject must have felt humiliated.",
@@ -9443,6 +9837,7 @@
       "category": "formal: quantifier and modal",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Swapping the order of 'every' and 'some': moving from 'everything has some X' to 'there is one X that everything has'.",
       "example": "Every child has a mother. So there is one woman who is the mother of every child.",
@@ -9493,6 +9888,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "An argument by analogy whose force depends on the very point in dispute.",
       "example": "Eating meat is like eating people, so it's wrong.",
@@ -9536,6 +9932,7 @@
       "category": "informal: dialogue and evasion",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Complaining about a minor point as if that undermined the whole argument.",
       "example": "You wrote 'less' instead of 'fewer', so your argument about the budget is worthless.",
@@ -9589,6 +9986,9 @@
       "category": "informal: ambiguity and language",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        2
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Quoting someone selectively so that the context that fixes their meaning is lost and they appear to say something else.",
       "example": "The critic called the film 'a triumph ... of marketing over substance', and the poster says 'a triumph!'.",
@@ -9616,6 +10016,7 @@
         "disregarding-known-science",
         "survivorship-bias",
         "overwhelming-exception",
+        "cherry-picking",
         "equivocation",
         "amphiboly",
         "accent",
@@ -9663,6 +10064,10 @@
       "category": "informal: presumption",
       "status": "contested",
       "text_detectable": "no",
+      "outside_text_conditions": [
+        2,
+        3
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Offering reasons that are not the real reasons for a belief or action, chosen to make it look more acceptable.",
       "example": "I bought the sports car for its safety rating.",
@@ -9701,6 +10106,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Bringing in an irrelevant topic to divert attention from the issue under discussion.",
       "example": "Why worry about the factory's pollution when so many people need jobs?",
@@ -9726,6 +10132,10 @@
         },
         {
           "text": "Merely asserting that another question must be settled first does not count; the dependence must be shown.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "Asking that a stated test be applied consistently is legitimate, unless it is used to dismiss the original criticism.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -9766,6 +10176,7 @@
       "category": "informal: ambiguity and language",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Giving a familiar term a new meaning and then slipping between the new and the ordinary meanings in the course of an argument.",
       "example": "Counting everyone under 25 as 'youth', youth unemployment is high, so teenagers can't find summer jobs.",
@@ -9813,6 +10224,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "A form of guilt by association: discrediting a view because Hitler or the Nazis held it or something like it.",
       "example": "Hitler was a vegetarian, so vegetarianism is suspect.",
@@ -9859,6 +10271,7 @@
       "category": "informal: ambiguity and language",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Assuming that every word refers to a real thing and that a word's meaning is just the thing it refers to.",
       "example": "We have a word for 'luck', so luck must be a force in the world.",
@@ -9897,6 +10310,9 @@
       "category": "informal: statistical and probabilistic",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        1
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Crediting a cause for a change that is just extreme results drifting back toward the average.",
       "example": "After her worst game of the season she wore a new bracelet, and next game she played better. The bracelet works.",
@@ -9965,6 +10381,7 @@
       "category": "informal: ambiguity and language",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Treating an abstraction, such as 'society', 'nature' or 'the market', as if it were a concrete thing or agent with its own will.",
       "example": "The market wants lower interest rates, so the central bank should obey it.",
@@ -10031,6 +10448,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Dismissing a problem or complaint because worse problems exist elsewhere.",
       "example": "Why complain about potholes when people in other countries have no roads?",
@@ -10074,6 +10492,7 @@
       "category": "informal: causal",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Assuming that because something happened under certain circumstances, those circumstances made it inevitable.",
       "example": "The company collapsed, so its collapse was bound to happen from the day it was founded.",
@@ -10127,6 +10546,7 @@
       "category": "informal: causal",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Getting cause and effect the wrong way round.",
       "example": "Hospitals are full of sick people, so hospitals make people sick.",
@@ -10179,6 +10599,9 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        3
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Blaming a person or group for a problem without evidence of their role, relying on their already being disliked or unpopular.",
       "example": "Sales are down because of those newcomers from the city. Everyone here knows what they're like.",
@@ -10227,6 +10650,7 @@
       "category": "formal: quantifier and modal",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Misreading or shifting how much of a sentence a word like 'not', 'all' or 'necessarily' applies to, and drawing a conclusion from the wrong reading.",
       "example": "'Everyone isn't coming' means no one is coming, so the party is cancelled (when the speaker meant 'not everyone is coming').",
@@ -10283,6 +10707,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Aristotle's fallacy of treating something true only in a certain respect, or with a qualification, as if it were true without qualification.",
       "example": "He's a good thief, and someone who is good is a good person, so he is a good person.",
@@ -10340,6 +10765,10 @@
       "category": "informal: weak induction",
       "status": "contested",
       "text_detectable": "no",
+      "outside_text_conditions": [
+        2,
+        3
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Focusing on some aspects of a situation while ignoring others that are relevant.",
       "example": "'How was school?' 'I got an A in art!' (the four failed tests go unmentioned).",
@@ -10364,7 +10793,8 @@
         "disregarding-known-science",
         "survivorship-bias",
         "quoting-out-of-context",
-        "overwhelming-exception"
+        "overwhelming-exception",
+        "cherry-picking"
       ],
       "sources": [
         {
@@ -10382,6 +10812,9 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        2
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Treating the fulfilment of a prediction as confirming it, when the act of predicting helped bring the outcome about.",
       "example": "I told everyone the bank would fail; the run on the bank proved me right.",
@@ -10412,6 +10845,7 @@
       "category": "informal: causal",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Assuming an outcome has one simple cause when it actually arose from several causes acting together.",
       "example": "The war started because an archduke was shot.",
@@ -10468,13 +10902,16 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        3
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Claiming that a first step will lead through a chain of events to an extreme outcome, without good reason to think each step will actually follow.",
       "example": "If we let students redo one test, soon they'll expect to redo every test, and degrees will be worthless.",
       "required_conditions": [
         "A first step is opposed.",
         "It is claimed to lead through a chain of steps to an undesirable result.",
-        "At least one step in the chain is given no adequate reason to think it likely."
+        "At least one step in the chain is given no adequate reason to think it likely. Evidence for the first link does not support later links, and a hedge ('probably') lowers the claimed probability but does not supply a missing link."
       ],
       "legitimate_lookalikes": [
         {
@@ -10489,6 +10926,10 @@
         },
         {
           "text": "A chain of tiny vague steps with no practical prediction is line-drawing, not this.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "When each later step needs a new decision by the same body, that step is not likely unless a binding mechanism (a precedent rule, a legal duty, bylaws) is shown. If one is shown, the step is supported.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -10546,6 +10987,7 @@
       "category": "informal: dialogue and evasion",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": true,
       "definition": "Offering so many details or side issues that the main point, or the evidence against it, is obscured.",
       "example": "Responding to one question about safety with a 40-page technical appendix nobody can parse.",
@@ -10609,6 +11051,7 @@
       "category": "formal: quantifier and modal",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Inferring 'Some A are not B' from 'Some A are B', or the reverse. 'Some' does not logically mean 'not all'.",
       "example": "Some of the samples are contaminated, so some of them are clean.",
@@ -10661,13 +11104,14 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Applying a rule or standard to others while exempting yourself or a favoured case without justifying the exception.",
       "example": "Everyone should obey the speed limit, but I'm a good driver, so I can go faster.",
       "required_conditions": [
         "A general rule or standard is accepted.",
         "An exception is claimed for one case.",
-        "No relevant difference justifying the exception is given."
+        "No reason relevant to the rule's purpose is given for the exception; rank, convenience or 'I'm busy' do not count."
       ],
       "legitimate_lookalikes": [
         {
@@ -10711,6 +11155,7 @@
       "category": "informal: weak induction",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Drawing a more specific conclusion than the evidence supports.",
       "example": "The trails were dug by an animal, so a badger dug them last Tuesday night.",
@@ -10757,6 +11202,7 @@
       "category": "informal: weak induction",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Applying a group image to an individual member, or to every member, as if it were a reliable rule, without evidence about that individual.",
       "example": "She's an accountant, so she must be boring.",
@@ -10807,6 +11253,9 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        2
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Misrepresenting someone's position as a weaker or more extreme version and then attacking that version instead of what they actually hold.",
       "example": "She wants stricter emissions rules. So she wants to ban cars and make us all ride bicycles.",
@@ -10875,6 +11324,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Treating the polish, confidence or catchiness of how an argument is delivered as if it added to how strong the argument is.",
       "example": "Vote for Ray, he will save the day! (a slogan offered in place of a reason to prefer him)",
@@ -10934,6 +11384,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Rejecting a claim on the grounds that truth is just a matter of opinion, when the claim is about objective fact.",
       "example": "Maybe the earth is round for you, but that's not my truth.",
@@ -10984,6 +11435,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Continuing with something because of what has already been spent on it, rather than judging it on its future costs and benefits.",
       "example": "We've already spent two years on this failing project, so we have to keep going.",
@@ -11024,6 +11476,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Treating omens, charms, rituals or similar grounds that are well known to be unreliable as reasons for a belief or as causes of events.",
       "example": "A black cat crossed my path, so I'll cancel the interview.",
@@ -11069,6 +11522,7 @@
       "category": "informal: ambiguity and language",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Redefining one of a pair of contrasting terms so that the other has nothing left to apply to.",
       "example": "I'm not fat; John is fatter than me, so only John counts as fat.",
@@ -11105,7 +11559,6 @@
       "id": "suppressed-evidence",
       "name": "Suppressed evidence",
       "aliases": [
-        "cherry-picking",
         "card stacking",
         "stacking the deck",
         "one-sidedness",
@@ -11119,6 +11572,10 @@
       "category": "informal: weak induction",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        2,
+        3
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Leaving out evidence that is significant and would weaken the conclusion, when the arguer had it or should have had it, and presenting the case as if it were complete.",
       "example": "Our drug helped 30 patients (we won't mention the 70 it didn't).",
@@ -11145,10 +11602,15 @@
         {
           "text": "A short case that does not claim to be complete.",
           "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If the contrary evidence is stated in the passage (or plainly known) and simply ignored, use cherry-picking.",
+          "caveat_source": "catalog wording"
         }
       ],
       "families": [
-        "omitted evidence"
+        "omitted evidence",
+        "selective evidence"
       ],
       "related": [
         "nut-picking",
@@ -11157,7 +11619,10 @@
         "disregarding-known-science",
         "survivorship-bias",
         "quoting-out-of-context",
-        "overwhelming-exception"
+        "overwhelming-exception",
+        "cherry-picking",
+        "texas-sharpshooter",
+        "lottery-fallacy"
       ],
       "sources": [
         {
@@ -11167,16 +11632,11 @@
           "locator": "section 6, \"Partial List of Fallacies\", entry \"Suppressed Evidence\""
         },
         {
-          "ref": "IEP",
-          "title": "Internet Encyclopedia of Philosophy, \"Fallacies\" (Bradley Dowden)",
-          "url": "https://iep.utm.edu/fallacy/",
-          "locator": "section 6, \"Partial List of Fallacies\", entry \"Cherry-Picking\""
-        },
-        {
           "ref": "Wikipedia",
           "title": "Wikipedia, \"List of fallacies\"",
           "url": "https://en.wikipedia.org/wiki/List_of_fallacies",
-          "locator": "section \"Informal fallacies > Faulty generalizations\", item \"Cherry picking\""
+          "locator": "section \"Informal fallacies > Faulty generalizations\", item \"Cherry picking\"",
+          "note": "Wikipedia lists suppressed evidence as another name for cherry picking"
         },
         {
           "ref": "Fallacy Files",
@@ -11202,6 +11662,9 @@
       "category": "informal: statistical and probabilistic",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        2
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Drawing conclusions from the cases that made it through some filter while ignoring the ones that didn't.",
       "example": "All the famous dropouts became billionaires, so dropping out is a good career move.",
@@ -11221,7 +11684,8 @@
         }
       ],
       "families": [
-        "omitted evidence"
+        "omitted evidence",
+        "selective evidence"
       ],
       "related": [
         "suppressed-evidence",
@@ -11230,7 +11694,10 @@
         "confirmation-bias",
         "disregarding-known-science",
         "quoting-out-of-context",
-        "overwhelming-exception"
+        "overwhelming-exception",
+        "cherry-picking",
+        "texas-sharpshooter",
+        "lottery-fallacy"
       ],
       "sources": [
         {
@@ -11250,6 +11717,10 @@
       "category": "informal: statistical and probabilistic",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        1,
+        3
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Picking out a cluster or pattern after looking at the data, then treating it as meaningful as if it had been predicted beforehand (like painting a target around bullet holes).",
       "example": "Five people on this street got sick, so something on this street is causing it (out of thousands of streets, some will have clusters by chance).",
@@ -11266,16 +11737,25 @@
         {
           "text": "A cluster found by searching is treated only as a lead to test with new data.",
           "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If the arguer just picks the favourable part of data already on the table, with no pattern-search, use cherry-picking.",
+          "caveat_source": "catalog wording"
         }
       ],
       "families": [
-        "multiple testing"
+        "multiple testing",
+        "selective evidence"
       ],
       "related": [
         "multiple-comparisons",
         "p-hacking",
         "garden-of-forking-paths",
-        "curve-fitting"
+        "curve-fitting",
+        "suppressed-evidence",
+        "cherry-picking",
+        "survivorship-bias",
+        "lottery-fallacy"
       ],
       "sources": [
         {
@@ -11305,6 +11785,7 @@
       "category": "informal: dialogue and evasion",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Using a stock phrase to end discussion rather than to answer the point.",
       "example": "It is what it is.",
@@ -11349,6 +11830,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Accepting a token gesture as if it were an adequate substitute for real action.",
       "example": "The company planted ten trees, so it clearly cares about the environment.",
@@ -11389,6 +11871,7 @@
       "category": "informal: relevance",
       "status": "contested",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Dismissing an argument because of the emotion or manner in which it is delivered rather than its content.",
       "example": "I'll listen to your complaint once you calm down.",
@@ -11442,6 +11925,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Answering criticism by attacking the critic's loyalty and telling them to leave, instead of addressing the criticism.",
       "example": "If you hate this country's healthcare so much, move somewhere else.",
@@ -11486,12 +11970,13 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Dismissing a claim or criticism because the person making it doesn't live up to it themselves.",
       "example": "You say smoking is bad for me, but you smoke.",
       "required_conditions": [
         "Someone makes a claim or criticism.",
-        "The reply points out that they do not act consistently with it.",
+        "The reply points out that they do not act consistently with it, and the inconsistency concerns the same claim or the principle directly behind it. (If it is looser, such as being overweight while urging someone to quit smoking, use ad hominem.)",
         "This is offered as a reason the claim or criticism is false or can be dismissed."
       ],
       "legitimate_lookalikes": [
@@ -11506,7 +11991,7 @@
           }
         },
         {
-          "text": "The question really is about the speaker's consistency or credibility, not the claim.",
+          "text": "If the reply targets the person's sincerity or fitness for a role, that is this look-alike; if it targets the message or policy, flag.",
           "caveat_source": "catalog wording"
         },
         {
@@ -11578,6 +12063,7 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Defending a wrong action because someone else did something wrong, as if one wrong cancels another.",
       "example": "He cheated on the last test, so it's fine for me to cheat on this one.",
@@ -11638,6 +12124,7 @@
       "category": "formal: syllogistic",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "A categorical syllogism in which the middle term (the one shared by both premises) never covers all members of its class, so the premises fail to link the other two terms.",
       "example": "All spies wear sunglasses. My neighbor wears sunglasses. So my neighbor is a spy.",
@@ -11710,6 +12197,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Offering an explanation of events that no possible observation could count against, and treating that as a strength of the explanation.",
       "example": "The cure works for those with enough faith; if it didn't work for you, your faith was too weak.",
@@ -11766,6 +12254,9 @@
       "category": "informal: statistical and probabilistic",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        2
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Generalizing about a population from a sample that was gathered in a way likely to differ from that population. Self-selection, where people choose whether to take part, is a common cause.",
       "example": "Our website poll shows 80% of people love our product.",
@@ -11842,6 +12333,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Offering a claim that is technically true only because there is nothing for it to be about, as if it were informative.",
       "example": "None of our cars have ever failed a safety test (we've never had one tested).",
@@ -11869,7 +12361,8 @@
       ],
       "category": "informal: ambiguity and language",
       "status": "standard",
-      "text_detectable": "partly",
+      "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Relying on a word with fuzzy boundaries so that a claim can't be tested or pinned down, or so that it seems to cover more than it does.",
       "example": "This supplement supports wellness.",
@@ -11923,6 +12416,7 @@
       "category": "informal: presumption",
       "status": "standard",
       "text_detectable": "yes",
+      "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Openly refusing to look at, or respond to, evidence or arguments against a view one has already decided to hold.",
       "example": "I've decided the treatment works, and I'm not reading any more studies about it.",
@@ -11979,6 +12473,9 @@
       "category": "informal: relevance",
       "status": "standard",
       "text_detectable": "partly",
+      "outside_text_conditions": [
+        2
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Believing or rejecting a claim because of how much you want it to be so, rather than because of evidence.",
       "example": "The tumour must be benign. I can't bear to think otherwise.",

@@ -2,9 +2,9 @@
 
 <!-- Generated from fallacies.json by tools/build_md.py. Do not edit by hand. -->
 
-215 named fallacies, grouped by category and listed alphabetically within each category. 215 entries have confirmed published sources; 0 are marked TODO. See [SOURCES.md](SOURCES.md) for the references, [METHOD.md](METHOD.md) for how to check an argument, and [README.md](README.md) for what each field means.
+216 named fallacies, grouped by category and listed alphabetically within each category. 216 entries have confirmed published sources; 0 are marked TODO. See [SOURCES.md](SOURCES.md) for the references, [METHOD.md](METHOD.md) for how to check an argument, and [README.md](README.md) for what each field means.
 
-Detectable from the text alone: 168 yes, 43 partly, 4 no (entries marked *no* may only be raised as questions). 12 entries are contested names. 11 are broad fallbacks, to be used only when nothing more specific fits.
+Detectable from the text alone: 172 yes, 40 partly, 4 no (*partly* entries name the conditions that may need outside facts; entries marked *no* may only be raised as questions). 12 entries are contested names. 11 are broad fallbacks, to be used only when nothing more specific fits.
 
 ## Contents
 
@@ -17,7 +17,7 @@ Detectable from the text alone: 168 yes, 43 partly, 4 no (entries marked *no* ma
 | [Informal: relevance](#informal-relevance) | 53 |
 | [Informal: ambiguity and language](#informal-ambiguity-and-language) | 29 |
 | [Informal: presumption](#informal-presumption) | 47 |
-| [Informal: weak induction](#informal-weak-induction) | 19 |
+| [Informal: weak induction](#informal-weak-induction) | 20 |
 | [Informal: causal](#informal-causal) | 9 |
 | [Informal: statistical and probabilistic](#informal-statistical-and-probabilistic) | 26 |
 | [Informal: dialogue and evasion](#informal-dialogue-and-evasion) | 9 |
@@ -29,7 +29,7 @@ Detectable from the text alone: 168 yes, 43 partly, 4 no (entries marked *no* ma
 - **Informal: relevance**: [Ad hominem (abusive)](#ad-hominem), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to consequences](#appeal-to-consequences), [Appeal to emotion](#appeal-to-emotion), [Appeal to fear](#appeal-to-fear), [Appeal to flattery](#appeal-to-flattery), [Appeal to force](#appeal-to-force), [Appeal to motive](#appeal-to-motive), [Appeal to nature](#appeal-to-nature), [Appeal to novelty](#appeal-to-novelty), [Appeal to pity](#appeal-to-pity), [Appeal to poverty](#appeal-to-poverty), [Appeal to ridicule](#appeal-to-ridicule), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Appeal to the people](#appeal-to-the-people), [Appeal to the stone](#appeal-to-the-stone), [Appeal to tradition](#appeal-to-tradition), [Appeal to wealth](#appeal-to-wealth), [Argument from fallacy](#argument-from-fallacy), [Bandwagon](#bandwagon), [Bulverism](#bulverism), [Chronological snobbery](#chronological-snobbery), [Circumstantial ad hominem](#circumstantial-ad-hominem), [Confusing an explanation with an excuse](#confusing-explanation-with-excuse), [Courtier's reply](#courtiers-reply), [Genetic fallacy](#genetic-fallacy), [Group think](#group-think), [Guilt by association](#guilt-by-association), [I'm entitled to my opinion](#entitled-to-my-opinion), [Ipse dixit](#ipse-dixit), [Irrelevant conclusion](#irrelevant-conclusion), [Is-ought fallacy](#is-ought), [Loaded language](#loaded-language), [Moralistic fallacy](#moralistic-fallacy), [Naturalistic fallacy](#naturalistic-fallacy), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy), [Non sequitur](#non-sequitur), [Poisoning the well](#poisoning-the-well), [Red herring](#red-herring), [Reductio ad Hitlerum](#reductio-ad-hitlerum), [Relative privation](#relative-privation), [Scapegoating](#scapegoating), [Straw man](#straw-man), [Style over substance](#style-over-substance), [Subjectivist fallacy](#subjectivist-fallacy), [Tone policing](#tone-policing), [Traitorous critic fallacy](#traitorous-critic), [Tu quoque](#tu-quoque), [Two wrongs make a right](#two-wrongs), [Wishful thinking](#wishful-thinking)
 - **Informal: ambiguity and language**: [Accent](#accent), [Amphiboly](#amphiboly), [Anthropomorphism](#anthropomorphism), [Combination of words (Aristotle)](#combination-of-words), [Composition](#composition), [Dangling comparative](#dangling-comparative), [Definitional retreat](#definitional-retreat), [Division](#division), [Division of words (Aristotle)](#division-of-words), [Equivocation](#equivocation), [Etymological fallacy](#etymological-fallacy), [False attribution](#false-attribution), [Form of expression (Aristotle)](#form-of-expression), [If-by-whiskey](#if-by-whiskey), [Intentional fallacy](#intentional-fallacy), [Line-drawing fallacy](#line-drawing), [Logic chopping](#logic-chopping), [Motte-and-bailey](#motte-and-bailey), [Obscurum per obscurius](#obscurum-per-obscurius), [Overgenerality](#overgenerality), [Package deal](#package-deal), [Pathetic fallacy](#pathetic-fallacy), [Persuasive definition](#persuasive-definition), [Quoting out of context](#quoting-out-of-context), [Redefinition](#redefinition), [Referential fallacy](#referential-fallacy), [Reification](#reification), [Suppressed correlative](#suppressed-correlative), [Vagueness (exploiting)](#vagueness)
 - **Informal: presumption**: [Accident](#accident), [Accident (Aristotle's sense)](#accident-aristotle), [Ad hoc rescue](#ad-hoc-rescue), [Baconian fallacy](#baconian-fallacy), [Begging the question](#begging-the-question), [Complex question](#complex-question), [Confirmation bias (as a fallacy)](#confirmation-bias), [Disregarding known science](#disregarding-known-science), [Doorman fallacy](#doorman-fallacy), [Double standard](#double-standard), [Exaggeration](#exaggeration), [Fallacy of exhaustive effort](#fallacy-of-exhaustive-effort), [False balance](#false-balance), [False dilemma](#false-dilemma), [False equivalence](#false-equivalence), [Far-fetched hypothesis](#far-fetched-hypothesis), [Goomba fallacy](#goomba-fallacy), [Hedging](#hedging), [Historian's fallacy](#historians-fallacy), [Historical fallacy](#historical-fallacy), [Homunculus fallacy](#homunculus-fallacy), [Ideology-driven argumentation](#ideology-driven-argumentation), [Inconsistency](#inconsistency), [Kettle logic](#kettle-logic), [Lack of proportion](#lack-of-proportion), [Loaded label](#loaded-label), [Lump of labour fallacy](#lump-of-labour), [Middle ground](#middle-ground), [Mind projection fallacy](#mind-projection), [Nirvana fallacy](#nirvana-fallacy), [No true Scotsman](#no-true-scotsman), [Non-cause (Aristotle's sense)](#non-cause-aristotle), [Oversimplification](#oversimplification), [Proving too much](#proving-too-much), [Psychologist's fallacy](#psychologists-fallacy), [Question-begging analogy](#question-begging-analogy), [Rationalization](#rationalization), [Secundum quid](#secundum-quid), [Self-fulfilling prophecy](#self-fulfilling-prophecy), [Slippery slope](#slippery-slope), [Special pleading](#special-pleading), [Sunk cost fallacy](#sunk-cost), [Superstitious thinking](#superstitious-thinking), [Tokenism](#tokenism), [Unfalsifiability](#unfalsifiability), [Vacuous truth (misuse)](#vacuous-truth), [Willed ignorance](#willed-ignorance)
-- **Informal: weak induction**: [Anecdotal evidence](#anecdotal-evidence), [Argument from ignorance](#argument-from-ignorance), [Argument from incredulity](#argument-from-incredulity), [Argument from silence](#argument-from-silence), [Converse accident](#converse-accident), [False analogy](#false-analogy), [Feedback fallacy](#feedback-fallacy), [Hasty generalization](#hasty-generalization), [Inductive conversion](#inductive-conversion), [Inflation of conflict](#inflation-of-conflict), [Jumping to conclusions](#jumping-to-conclusions), [Misleading vividness](#misleading-vividness), [Nut-picking](#nut-picking), [Overwhelming exception](#overwhelming-exception), [Proof surrogate](#proof-surrogate), [Selective attention](#selective-attention), [Specificity](#specificity), [Stereotyping](#stereotyping), [Suppressed evidence](#suppressed-evidence)
+- **Informal: weak induction**: [Anecdotal evidence](#anecdotal-evidence), [Argument from ignorance](#argument-from-ignorance), [Argument from incredulity](#argument-from-incredulity), [Argument from silence](#argument-from-silence), [Cherry-picking](#cherry-picking), [Converse accident](#converse-accident), [False analogy](#false-analogy), [Feedback fallacy](#feedback-fallacy), [Hasty generalization](#hasty-generalization), [Inductive conversion](#inductive-conversion), [Inflation of conflict](#inflation-of-conflict), [Jumping to conclusions](#jumping-to-conclusions), [Misleading vividness](#misleading-vividness), [Nut-picking](#nut-picking), [Overwhelming exception](#overwhelming-exception), [Proof surrogate](#proof-surrogate), [Selective attention](#selective-attention), [Specificity](#specificity), [Stereotyping](#stereotyping), [Suppressed evidence](#suppressed-evidence)
 - **Informal: causal**: [Cum hoc ergo propter hoc](#cum-hoc), [Fallacy of the single cause](#single-cause), [False cause](#false-cause), [Furtive fallacy](#furtive-fallacy), [Ignoring a common cause](#common-cause), [Magical thinking](#magical-thinking), [Post hoc ergo propter hoc](#post-hoc), [Retrospective determinism](#retrospective-determinism), [Reversing causation](#reverse-causation)
 - **Informal: statistical and probabilistic**: [Appeal to probability](#appeal-to-probability), [Availability heuristic (as a fallacy)](#availability-heuristic), [Base-rate fallacy](#base-rate-fallacy), [Conjunction fallacy](#conjunction-fallacy), [Double counting](#double-counting), [Ecological fallacy](#ecological-fallacy), [Fake precision](#fake-precision), [Fallacy of the sheep](#fallacy-of-the-sheep), [Gambler's fallacy](#gamblers-fallacy), [Garden of forking paths](#garden-of-forking-paths), [Hot hand fallacy](#hot-hand-fallacy), [Independence fallacy](#independence-fallacy), [Inverse gambler's fallacy](#inverse-gamblers-fallacy), [Lottery fallacy](#lottery-fallacy), [Ludic fallacy](#ludic-fallacy), [McNamara fallacy](#mcnamara-fallacy), [Multiple comparisons fallacy](#multiple-comparisons), [Observational interpretation fallacy](#observational-interpretation), [Over-extrapolation](#over-extrapolation), [Overfitting (curve fitting)](#curve-fitting), [P-hacking](#p-hacking), [Prosecutor's fallacy](#prosecutors-fallacy), [Regression fallacy](#regression-fallacy), [Survivorship bias](#survivorship-bias), [Texas sharpshooter fallacy](#texas-sharpshooter), [Unrepresentative sample](#unrepresentative-sample)
 - **Informal: dialogue and evasion**: [Argument from repetition](#argument-from-repetition), [Avoiding the issue](#avoiding-the-issue), [Avoiding the question](#avoiding-the-question), [Misplaced burden of proof](#misplaced-burden-of-proof), [Moving the goalposts](#moving-the-goalposts), [Proof by assertion](#proof-by-assertion), [Quibbling](#quibbling), [Smokescreen](#smokescreen), [Thought-terminating cliché](#thought-terminating-cliche)
@@ -59,14 +59,14 @@ Entries in the same family describe neighbouring mistakes. For a single step of 
 - **Ad hominem**: [Ad hominem (abusive)](#ad-hominem), [Circumstantial ad hominem](#circumstantial-ad-hominem), [Tu quoque](#tu-quoque), [Appeal to motive](#appeal-to-motive), [Bulverism](#bulverism), [Poisoning the well](#poisoning-the-well), [Guilt by association](#guilt-by-association), [Reductio ad Hitlerum](#reductio-ad-hitlerum), [Genetic fallacy](#genetic-fallacy), [Traitorous critic fallacy](#traitorous-critic), [Tone policing](#tone-policing), [Courtier's reply](#courtiers-reply). One label per attack. Use the most specific: circumstances or stake (circumstantial), hypocrisy (tu quoque), motives (appeal to motive), explaining away a view not yet shown wrong (bulverism), pre-emptive (poisoning the well), association (guilt by association), origin (genetic).
 - **Authority and popularity**: [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty). Use one: expertise (authority), fame (celebrity), achievement in another field (accomplishment), numbers (people), a growing trend (bandwagon), age (tradition), newness (novelty), group loyalty (group think), era (chronological snobbery), money (wealth or poverty).
 - **Emotion**: [Appeal to emotion](#appeal-to-emotion), [Appeal to pity](#appeal-to-pity), [Appeal to fear](#appeal-to-fear), [Appeal to force](#appeal-to-force), [Appeal to flattery](#appeal-to-flattery), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Appeal to ridicule](#appeal-to-ridicule), [Scapegoating](#scapegoating), [Wishful thinking](#wishful-thinking), [Appeal to consequences](#appeal-to-consequences), [Style over substance](#style-over-substance). Use the specific emotion entry if one fits; appeal to emotion only if none does.
-- **Omitted evidence**: [Suppressed evidence](#suppressed-evidence), [Nut-picking](#nut-picking), [Selective attention](#selective-attention), [Confirmation bias (as a fallacy)](#confirmation-bias), [Disregarding known science](#disregarding-known-science), [Survivorship bias](#survivorship-bias), [Quoting out of context](#quoting-out-of-context), [Overwhelming exception](#overwhelming-exception). For a passage that leaves out contrary evidence, use suppressed evidence or a more specific text-level entry; the bias entries (confirmation bias, selective attention) are questions only.
+- **Omitted evidence**: [Suppressed evidence](#suppressed-evidence), [Nut-picking](#nut-picking), [Selective attention](#selective-attention), [Confirmation bias (as a fallacy)](#confirmation-bias), [Disregarding known science](#disregarding-known-science), [Survivorship bias](#survivorship-bias), [Quoting out of context](#quoting-out-of-context), [Overwhelming exception](#overwhelming-exception), [Cherry-picking](#cherry-picking). For a passage that leaves out contrary evidence, use suppressed evidence or a more specific text-level entry; the bias entries (confirmation bias, selective attention) are questions only.
 - **Generalization**: [Accident](#accident), [Secundum quid](#secundum-quid), [Hasty generalization](#hasty-generalization), [Converse accident](#converse-accident), [Anecdotal evidence](#anecdotal-evidence), [Misleading vividness](#misleading-vividness), [Availability heuristic (as a fallacy)](#availability-heuristic), [Unrepresentative sample](#unrepresentative-sample), [Stereotyping](#stereotyping), [Jumping to conclusions](#jumping-to-conclusions), [Specificity](#specificity), [Overgenerality](#overgenerality), [Inductive conversion](#inductive-conversion). One label per step: rule misapplied to an exception (accident), dropped qualification (secundum quid), too few cases (hasty), exceptions made into a rule (converse accident), stories (anecdotal), vivid case (misleading vividness), biased sample (unrepresentative sample), group image applied to an individual (stereotyping).
 - **Diversion**: [Red herring](#red-herring), [Avoiding the issue](#avoiding-the-issue), [Avoiding the question](#avoiding-the-question), [Irrelevant conclusion](#irrelevant-conclusion), [Smokescreen](#smokescreen), [Non sequitur](#non-sequitur), [Relative privation](#relative-privation), [Logic chopping](#logic-chopping), [Quibbling](#quibbling). One label per move. Use the most specific; non sequitur and irrelevant conclusion are fallbacks.
 - **Bare assertion**: [Ipse dixit](#ipse-dixit), [Proof by assertion](#proof-by-assertion), [Argument from repetition](#argument-from-repetition), [Thought-terminating cliché](#thought-terminating-cliche), [Appeal to the stone](#appeal-to-the-stone), [I'm entitled to my opinion](#entitled-to-my-opinion), [Proof surrogate](#proof-surrogate), [Appeal to ridicule](#appeal-to-ridicule), [Subjectivist fallacy](#subjectivist-fallacy), [Willed ignorance](#willed-ignorance). Use one: no support at all (ipse dixit), restating against a counterargument (proof by assertion), citing many repetitions or others' silence as evidence (repetition), a stock phrase (cliche), declaring a view absurd without showing it (appeal to the stone), mocking it for a laugh (ridicule), a right to an opinion (entitled), truth said to be relative to the person (subjectivist), refusing to look (willed ignorance), a phrase in place of evidence (proof surrogate).
-- **Causation**: [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism). Use the specific causal entry; false cause only if none fits. When the reverse direction is named and plausible, prefer reversing causation over cum hoc.
+- **Causation**: [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism). Use the specific causal entry; false cause only if none fits. Only a correlation is shown: cum hoc. The argument does address causes but misses an obvious third factor: ignoring a common cause. The reverse direction is named and plausible: reversing causation.
 - **Definition and meaning shifts**: [Persuasive definition](#persuasive-definition), [Redefinition](#redefinition), [Definitional retreat](#definitional-retreat), [No true Scotsman](#no-true-scotsman), [Motte-and-bailey](#motte-and-bailey), [Equivocation](#equivocation), [Loaded label](#loaded-label), [Loaded language](#loaded-language), [Suppressed correlative](#suppressed-correlative), [Etymological fallacy](#etymological-fallacy). Use one: built-in evaluation (persuasive definition), unannounced new meaning (redefinition), shift after an objection (definitional retreat), shift to exclude a counterexample (no true Scotsman), bold-to-modest switch and back (motte-and-bailey), one word two senses (equivocation).
 - **Circularity**: [Begging the question](#begging-the-question), [Question-begging analogy](#question-begging-analogy), [Loaded label](#loaded-label), [Complex question](#complex-question), [Ideology-driven argumentation](#ideology-driven-argumentation). Use one: begging the question for the general case; the others when the circle is in an analogy, a label, a question, or a contested doctrine treated as settled.
-- **Ambiguity**: [Equivocation](#equivocation), [Amphiboly](#amphiboly), [Accent](#accent), [Four terms](#four-terms), [Scope fallacy](#scope-fallacy), [Combination of words (Aristotle)](#combination-of-words), [Division of words (Aristotle)](#division-of-words), [Form of expression (Aristotle)](#form-of-expression), [Quoting out of context](#quoting-out-of-context). One word (equivocation), grammar (amphiboly), stress (accent), syllogism middle term (four terms), reach of 'not' or 'all' (scope), word grouping (combination/division of words).
+- **Ambiguity**: [Equivocation](#equivocation), [Amphiboly](#amphiboly), [Accent](#accent), [Four terms](#four-terms), [Scope fallacy](#scope-fallacy), [Combination of words (Aristotle)](#combination-of-words), [Division of words (Aristotle)](#division-of-words), [Form of expression (Aristotle)](#form-of-expression), [Quoting out of context](#quoting-out-of-context). One word (equivocation), grammar (amphiboly), stress (accent), reach of 'not' or 'all' (scope), word grouping (combination/division of words). When the shifting word is the middle term of a categorical syllogism, report it as equivocation and add '(four terms)'.
 - **Parts and wholes**: [Composition](#composition), [Division](#division), [Ecological fallacy](#ecological-fallacy). Parts to whole (composition), whole to parts (division), group data to individuals (ecological).
 - **Comparison**: [False analogy](#false-analogy), [False equivalence](#false-equivalence), [False balance](#false-balance), [Question-begging analogy](#question-begging-analogy), [Dangling comparative](#dangling-comparative), [Package deal](#package-deal). Use one: a conclusion carried across from one case to another (false analogy), two things called equal (false equivalence), two sides given equal coverage (false balance).
 - **Options and limits**: [False dilemma](#false-dilemma), [Middle ground](#middle-ground), [Nirvana fallacy](#nirvana-fallacy), [Line-drawing fallacy](#line-drawing), [Slippery slope](#slippery-slope), [Vagueness (exploiting)](#vagueness). Use one per step. No sharp line, so no real difference (line-drawing); a conclusion that trades on a fuzzy term (vagueness).
@@ -75,9 +75,9 @@ Entries in the same family describe neighbouring mistakes. For a single step of 
 - **Consistency**: [Inconsistency](#inconsistency), [Kettle logic](#kettle-logic), [Special pleading](#special-pleading), [Double standard](#double-standard). Use the specific entry; inconsistency only if none fits.
 - **Multiple testing**: [Multiple comparisons fallacy](#multiple-comparisons), [P-hacking](#p-hacking), [Garden of forking paths](#garden-of-forking-paths), [Texas sharpshooter fallacy](#texas-sharpshooter), [Overfitting (curve fitting)](#curve-fitting). Use one per analysis.
 - **Chance**: [Gambler's fallacy](#gamblers-fallacy), [Hot hand fallacy](#hot-hand-fallacy), [Inverse gambler's fallacy](#inverse-gamblers-fallacy), [Lottery fallacy](#lottery-fallacy), [Regression fallacy](#regression-fallacy). Use one per step.
-- **Probability**: [Base-rate fallacy](#base-rate-fallacy), [Prosecutor's fallacy](#prosecutors-fallacy), [Conjunction fallacy](#conjunction-fallacy), [Independence fallacy](#independence-fallacy), [Appeal to probability](#appeal-to-probability), [Double counting](#double-counting). Use one per step.
+- **Probability**: [Base-rate fallacy](#base-rate-fallacy), [Prosecutor's fallacy](#prosecutors-fallacy), [Conjunction fallacy](#conjunction-fallacy), [Independence fallacy](#independence-fallacy), [Appeal to probability](#appeal-to-probability), [Double counting](#double-counting). Use one per step. A screening or test result combined with how common the condition is: base-rate fallacy. 'The chance of this evidence if innocent' presented as the chance of innocence: prosecutor's fallacy.
 - **Conditionals**: [Affirming the consequent](#affirming-the-consequent), [Denying the antecedent](#denying-the-antecedent), [Commutation of conditionals](#commutation-of-conditionals), [Improper transposition](#improper-transposition), [Confusing necessary and sufficient conditions](#confusing-necessary-and-sufficient). Use the exact form; do not tag both a form and its general name.
-- **Syllogisms**: [Undistributed middle](#undistributed-middle), [Illicit major](#illicit-major), [Illicit minor](#illicit-minor), [Exclusive premises](#exclusive-premises), [Affirmative conclusion from a negative premise](#affirmative-conclusion-from-negative-premise), [Negative conclusion from affirmative premises](#negative-conclusion-from-affirmative-premises), [Four terms](#four-terms), [Existential fallacy](#existential-fallacy), [Illicit conversion](#illicit-conversion), [Illicit contraposition](#illicit-contraposition), [Some are / some are not](#some-are-some-are-not). Name the rule that is broken; use one per syllogism unless two rules are broken.
+- **Syllogisms**: [Undistributed middle](#undistributed-middle), [Illicit major](#illicit-major), [Illicit minor](#illicit-minor), [Exclusive premises](#exclusive-premises), [Affirmative conclusion from a negative premise](#affirmative-conclusion-from-negative-premise), [Negative conclusion from affirmative premises](#negative-conclusion-from-affirmative-premises), [Four terms](#four-terms), [Existential fallacy](#existential-fallacy), [Illicit conversion](#illicit-conversion), [Illicit contraposition](#illicit-contraposition), [Some are / some are not](#some-are-some-are-not). Name the rule that is broken; use one per syllogism unless two rules are broken. When a term shifts meaning, report it as equivocation and add '(four terms)'.
 - **Quantifiers and modality**: [Quantifier shift](#quantifier-shift), [Scope fallacy](#scope-fallacy), [Modal scope fallacy](#modal-scope-fallacy), [Intensional fallacy](#intensional-fallacy). Use one per step.
 - **Projection**: [Anthropomorphism](#anthropomorphism), [Pathetic fallacy](#pathetic-fallacy), [Reification](#reification), [Mind projection fallacy](#mind-projection), [Psychologist's fallacy](#psychologists-fallacy), [Referential fallacy](#referential-fallacy), [Homunculus fallacy](#homunculus-fallacy). Use one: human traits onto animals or things (anthropomorphism), onto lifeless nature (pathetic), abstractions as agents (reification), perception onto the object (mind projection), observer onto subject (psychologist's), word onto object (referential), inner agent (homunculus).
 - **History**: [Historian's fallacy](#historians-fallacy), [Historical fallacy](#historical-fallacy), [Baconian fallacy](#baconian-fallacy), [Retrospective determinism](#retrospective-determinism). Use one per step.
@@ -88,6 +88,7 @@ Entries in the same family describe neighbouring mistakes. For a single step of 
 - **Others' conduct**: [Tu quoque](#tu-quoque), [Two wrongs make a right](#two-wrongs). Use one: a claim or criticism dismissed because the critic does the same (tu quoque); a wrong act defended because others do it (two wrongs).
 - **Accident: ancient and modern**: [Accident (Aristotle's sense)](#accident-aristotle), [Accident](#accident). Aristotle's sense is about attributes that merely coincide; the modern sense is a rule applied to an exception. Use the one that matches.
 - **Non-cause: ancient and modern**: [Non-cause (Aristotle's sense)](#non-cause-aristotle), [False cause](#false-cause), [Inconsistency](#inconsistency). Aristotle's sense is a superfluous premise blamed in a reduction to absurdity; for real-world causal claims use false cause.
+- **Selective evidence**: [Suppressed evidence](#suppressed-evidence), [Cherry-picking](#cherry-picking), [Texas sharpshooter fallacy](#texas-sharpshooter), [Survivorship bias](#survivorship-bias), [Lottery fallacy](#lottery-fallacy). Contrary evidence absent from the text: suppressed evidence. Contrary evidence stated (or plainly known) but ignored: cherry-picking. A pattern or cluster found by searching and treated as if predicted: Texas sharpshooter. The filter was success or survival: survivorship bias. 'Something improbable happened, so it was designed or rigged': lottery fallacy.
 
 ## Formal: general
 
@@ -411,6 +412,7 @@ Status: standard · Detectable from text: yes
 **Legitimate look-alikes** (not this fallacy):
 
 - The repeated word has the same meaning in both premises (check by substituting a definition). *(catalog wording)*
+- Report it as equivocation with '(four terms)' added; this entry gives the syllogism analysis. *(catalog wording)*
 
 **Related, use only one per step** (ambiguity, syllogisms): [Equivocation](#equivocation), [Amphiboly](#amphiboly), [Accent](#accent), [Scope fallacy](#scope-fallacy), [Combination of words (Aristotle)](#combination-of-words), [Division of words (Aristotle)](#division-of-words), [Form of expression (Aristotle)](#form-of-expression), [Quoting out of context](#quoting-out-of-context), [Undistributed middle](#undistributed-middle), [Illicit major](#illicit-major), [Illicit minor](#illicit-minor), [Exclusive premises](#exclusive-premises), [Affirmative conclusion from a negative premise](#affirmative-conclusion-from-negative-premise), [Negative conclusion from affirmative premises](#negative-conclusion-from-affirmative-premises), [Existential fallacy](#existential-fallacy), [Illicit conversion](#illicit-conversion), [Illicit contraposition](#illicit-contraposition), [Some are / some are not](#some-are-some-are-not)
 
@@ -826,10 +828,12 @@ Status: standard · Detectable from text: yes
 
 1. A claim is supported (or attacked) by pointing to the speaker's achievements.
 2. The achievements are in a different field from the claim.
+3. The achievement is treated as settling the matter or as the main reason to accept the claim.
 
 **Legitimate look-alikes** (not this fallacy):
 
 - Achievements in the field the claim is about are ordinary evidence of expertise. *(catalog wording)*
+- The claim concerns a method (statistics, measurement, mathematics) that the person's own field uses. *(catalog wording)*
 
 **Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty)
 
@@ -853,8 +857,10 @@ Status: standard · Detectable from text: partly
 **Required conditions** (all must be shown from the text):
 
 1. A claim is supported by what some person or body says.
-2. At least one of: the source is not an expert on this question; experts substantially disagree; the source cannot be trusted to be truthful; or the source is misquoted.
+2. At least one of: the source is not an expert on this question; experts substantially disagree; the source cannot be trusted to be truthful; or the source is misquoted. *(may need facts outside the text)*
 3. The authority is treated as settling the matter.
+
+Condition 2 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -981,7 +987,9 @@ Status: standard · Detectable from text: partly
 
 1. Fear of an outcome is aroused.
 2. The fear is offered as a reason to accept a claim or course of action.
-3. The feared outcome is unlikely, exaggerated, or unconnected to the action, and is not a well-known risk (well-known risks count as evidenced).
+3. The feared outcome is unlikely, exaggerated, or unconnected to the action, and is not a well-known risk (well-known risks count as evidenced). *(may need facts outside the text)*
+
+Condition 3 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -1044,6 +1052,7 @@ Status: standard · Detectable from text: yes
 **Legitimate look-alikes** (not this fallacy):
 
 - A threat may give a practical reason to act, but not a relevant reason to believe the claim. *(source: IEP, section 6, "Partial List of Fallacies", entry "Scare Tactic")*
+- Keep the look-alike above for plain demands to act ('comply or be fined'). If the demand is to accept, agree with, endorse or stop questioning a proposition whose merits are at issue, it does not apply. *(catalog wording)*
 
 **Related, use only one per step** (emotion): [Appeal to emotion](#appeal-to-emotion), [Appeal to pity](#appeal-to-pity), [Appeal to fear](#appeal-to-fear), [Appeal to flattery](#appeal-to-flattery), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Appeal to ridicule](#appeal-to-ridicule), [Scapegoating](#scapegoating), [Wishful thinking](#wishful-thinking), [Appeal to consequences](#appeal-to-consequences), [Style over substance](#style-over-substance)
 
@@ -1101,13 +1110,15 @@ Status: standard · Detectable from text: yes
 
 **Required conditions** (all must be shown from the text):
 
-1. Something is called natural or unnatural.
+1. Something is called natural or unnatural, or equivalent wording is used (evolved, ancestral, 'what our bodies are built for').
 2. That label is offered as the reason it is good, safe or right (or bad).
 3. The feature that 'natural' stands for is not spelled out and separately shown to matter.
 
 **Legitimate look-alikes** (not this fallacy):
 
 - 'Natural' stands for a specific property (no additives, long track record) that is separately shown to matter. *(catalog wording)*
+- Evolutionary history offered as evidence of physiological fit, for a conclusion about fit. *(catalog wording)*
+- If the conclusion is a moral one drawn from facts, use is-ought. *(catalog wording)*
 
 **Related, use only one per step** (naturalism): [Naturalistic fallacy](#naturalistic-fallacy), [Is-ought fallacy](#is-ought), [Moralistic fallacy](#moralistic-fallacy), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy), [Appeal to consequences](#appeal-to-consequences)
 
@@ -1479,7 +1490,7 @@ Status: standard · Detectable from text: yes
 
 Assuming a view is wrong and then explaining why the other person holds it (their bias, psychology or upbringing) instead of showing that it is wrong.
 
-Status: standard · Detectable from text: partly
+Status: standard · Detectable from text: yes
 
 **Example:** You only think the economy is doing badly because you're a pessimist.
 
@@ -1543,12 +1554,13 @@ Status: standard · Detectable from text: yes
 
 1. Someone has made a claim or proposal.
 2. The reply points to the person's circumstances, such as a stake in the outcome.
-3. The circumstances are offered as showing the claim is false or the proposal bad, not merely as a reason to check it.
+3. The circumstances are used to declare the claim false or ignorable, or to refuse to examine its evidence.
 
 **Legitimate look-alikes** (not this fallacy):
 
 - A stake in the outcome is a fair reason to check the claim more carefully or seek independent verification. *(source: IEP, section 6, "Partial List of Fallacies", entry "Genetic")*
 - Where the claim rests only on the person's word, their interests bear on how much to trust it. *(catalog wording)*
+- Bare distrust of a report that has its own evidence, without declaring it false: record possible issue, settled by whether the evidence gets examined. *(catalog wording)*
 
 **Related, use only one per step** (ad hominem): [Ad hominem (abusive)](#ad-hominem), [Tu quoque](#tu-quoque), [Appeal to motive](#appeal-to-motive), [Bulverism](#bulverism), [Poisoning the well](#poisoning-the-well), [Guilt by association](#guilt-by-association), [Reductio ad Hitlerum](#reductio-ad-hitlerum), [Genetic fallacy](#genetic-fallacy), [Traitorous critic fallacy](#traitorous-critic), [Tone policing](#tone-policing), [Courtier's reply](#courtiers-reply)
 
@@ -1599,7 +1611,7 @@ Status: standard · Detectable from text: yes
 
 1. A criticism is raised.
 2. The reply says the critic lacks the knowledge or training to comment.
-3. The criticism itself is not answered, and it does not depend on the specialised knowledge.
+3. The criticism itself is not answered, and either it does not depend on the specialised knowledge, or the reply denies the critic standing to criticise at all, regardless of content, without naming any misunderstanding.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -1652,7 +1664,7 @@ Status: standard · Detectable from text: yes
 
 Substituting loyalty to or pride in one's group for reasons, so that the group's view is accepted without examination.
 
-Status: standard · Detectable from text: partly
+Status: standard · Detectable from text: yes
 
 **Example:** Our team has decided, and questioning it would be disloyal.
 
@@ -2025,6 +2037,7 @@ Status: standard · Detectable from text: yes
 - A related point that is shown to bear on the issue. *(catalog wording)*
 - Arguing that another issue must be settled first, when that dependence is real. *(source: IEP, section 6, "Partial List of Fallacies", entry "Avoiding the Issue")*
 - Merely asserting that another question must be settled first does not count; the dependence must be shown. *(catalog wording)*
+- Asking that a stated test be applied consistently is legitimate, unless it is used to dismiss the original criticism. *(catalog wording)*
 
 **Related, use only one per step** (diversion): [Avoiding the issue](#avoiding-the-issue), [Avoiding the question](#avoiding-the-question), [Irrelevant conclusion](#irrelevant-conclusion), [Smokescreen](#smokescreen), [Non sequitur](#non-sequitur), [Relative privation](#relative-privation), [Logic chopping](#logic-chopping), [Quibbling](#quibbling)
 
@@ -2106,7 +2119,9 @@ Status: standard · Detectable from text: partly
 
 1. A problem is blamed on a person or group.
 2. No evidence of their role is given.
-3. The blame relies on their already being disliked or unpopular.
+3. The blame relies on their already being disliked or unpopular. *(may need facts outside the text)*
+
+Condition 3 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -2134,9 +2149,11 @@ Status: standard · Detectable from text: partly
 **Required conditions** (all must be shown from the text):
 
 1. The opponent's position is restated or summarised.
-2. The restatement differs materially from what they said or meant (show the original wording or a reliable summary of it; without it, at most possible issue).
+2. The restatement differs materially from what they said or meant (show the original wording or a reliable summary of it; without it, at most possible issue). *(may need facts outside the text)*
 3. The argument attacks the restatement.
 4. The attack is presented as refuting the opponent's actual position.
+
+Condition 2 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -2281,13 +2298,13 @@ Status: standard · Detectable from text: yes
 **Required conditions** (all must be shown from the text):
 
 1. Someone makes a claim or criticism.
-2. The reply points out that they do not act consistently with it.
+2. The reply points out that they do not act consistently with it, and the inconsistency concerns the same claim or the principle directly behind it. (If it is looser, such as being overweight while urging someone to quit smoking, use ad hominem.)
 3. This is offered as a reason the claim or criticism is false or can be dismissed.
 
 **Legitimate look-alikes** (not this fallacy):
 
 - Finding that a speaker is a hypocrite gives reason to be suspicious of their reasoning, but not enough reason to discount it. *(source: IEP, section 6, "Partial List of Fallacies", entry "Tu Quoque")*
-- The question really is about the speaker's consistency or credibility, not the claim. *(catalog wording)*
+- If the reply targets the person's sincerity or fitness for a role, that is this look-alike; if it targets the message or policy, flag. *(catalog wording)*
 - 'What about X?' that changes the subject to a third party is not this; consider red herring. *(catalog wording)*
 - 'Whataboutism' is not a reliable alias: only the 'you do it too, so your point fails' form is this fallacy. *(catalog wording)*
 
@@ -2350,8 +2367,10 @@ Status: standard · Detectable from text: partly
 **Required conditions** (all must be shown from the text):
 
 1. A claim is accepted or rejected.
-2. The stated or evident reason is that the speaker wants it to be true (or false).
+2. The stated or evident reason is that the speaker wants it to be true (or false). *(may need facts outside the text)*
 3. No evidence is offered.
+
+Condition 2 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -2447,8 +2466,10 @@ Status: standard · Detectable from text: partly
 **Required conditions** (all must be shown from the text):
 
 1. Human mental states or motives are attributed to an animal, object or force.
-2. The thing could not have them (or there is no evidence it does).
+2. The thing could not have them (or there is no evidence it does). *(may need facts outside the text)*
 3. A conclusion relies on the attribution.
+
+Condition 2 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -2654,6 +2675,7 @@ Status: standard · Detectable from text: yes
 
 - The word keeps one meaning throughout (substitute a definition at each use to check). *(catalog wording)*
 - Puns or wordplay not offered as argument. *(catalog wording)*
+- When the shifting word is the middle term of a categorical syllogism, report it as equivocation and add '(four terms)'. *(catalog wording)*
 
 **Related, use only one per step** (definition and meaning shifts, ambiguity): [Persuasive definition](#persuasive-definition), [Redefinition](#redefinition), [Definitional retreat](#definitional-retreat), [No true Scotsman](#no-true-scotsman), [Motte-and-bailey](#motte-and-bailey), [Loaded label](#loaded-label), [Loaded language](#loaded-language), [Suppressed correlative](#suppressed-correlative), [Etymological fallacy](#etymological-fallacy), [Amphiboly](#amphiboly), [Accent](#accent), [Four terms](#four-terms), [Scope fallacy](#scope-fallacy), [Combination of words (Aristotle)](#combination-of-words), [Division of words (Aristotle)](#division-of-words), [Form of expression (Aristotle)](#form-of-expression), [Quoting out of context](#quoting-out-of-context)
 
@@ -2712,8 +2734,10 @@ Status: standard · Detectable from text: partly
 **Required conditions** (all must be shown from the text):
 
 1. A claim is supported by attributing words or findings to a source.
-2. The source did not say it, does not exist, or is misrepresented (this must be checked against the source).
+2. The source did not say it, does not exist, or is misrepresented (this must be checked against the source). *(may need facts outside the text)*
 3. The argument relies on the attribution.
+
+Condition 2 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -2785,7 +2809,7 @@ Status: standard · Detectable from text: yes
 
 In literary criticism: treating the author's intention as what settles a work's meaning or value, rather than the work itself. The term is a critic's thesis and is disputed.
 
-Status: contested · Detectable from text: partly
+Status: contested · Detectable from text: yes
 
 **Example:** The author says it's not about war, so the war allegory everyone sees isn't there.
 
@@ -3054,14 +3078,16 @@ Status: standard · Detectable from text: partly
 **Required conditions** (all must be shown from the text):
 
 1. Someone's words are quoted or paraphrased.
-2. Surrounding words that change the meaning are left out (quote the fuller original; without it, at most possible issue).
+2. Surrounding words that change the meaning are left out (quote the fuller original; without it, at most possible issue). *(may need facts outside the text)*
 3. The argument relies on the shifted meaning.
+
+Condition 2 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
 - A shortened quote that keeps the original meaning. *(catalog wording)*
 
-**Related, use only one per step** (omitted evidence, ambiguity, misrepresentation): [Suppressed evidence](#suppressed-evidence), [Nut-picking](#nut-picking), [Selective attention](#selective-attention), [Confirmation bias (as a fallacy)](#confirmation-bias), [Disregarding known science](#disregarding-known-science), [Survivorship bias](#survivorship-bias), [Overwhelming exception](#overwhelming-exception), [Equivocation](#equivocation), [Amphiboly](#amphiboly), [Accent](#accent), [Four terms](#four-terms), [Scope fallacy](#scope-fallacy), [Combination of words (Aristotle)](#combination-of-words), [Division of words (Aristotle)](#division-of-words), [Form of expression (Aristotle)](#form-of-expression), [Straw man](#straw-man), [False attribution](#false-attribution), [Confusing an explanation with an excuse](#confusing-explanation-with-excuse)
+**Related, use only one per step** (omitted evidence, ambiguity, misrepresentation): [Suppressed evidence](#suppressed-evidence), [Nut-picking](#nut-picking), [Selective attention](#selective-attention), [Confirmation bias (as a fallacy)](#confirmation-bias), [Disregarding known science](#disregarding-known-science), [Survivorship bias](#survivorship-bias), [Overwhelming exception](#overwhelming-exception), [Cherry-picking](#cherry-picking), [Equivocation](#equivocation), [Amphiboly](#amphiboly), [Accent](#accent), [Four terms](#four-terms), [Scope fallacy](#scope-fallacy), [Combination of words (Aristotle)](#combination-of-words), [Division of words (Aristotle)](#division-of-words), [Form of expression (Aristotle)](#form-of-expression), [Straw man](#straw-man), [False attribution](#false-attribution), [Confusing an explanation with an excuse](#confusing-explanation-with-excuse)
 
 **Sources:**
 
@@ -3185,7 +3211,7 @@ Status: standard · Detectable from text: yes
 
 Relying on a word with fuzzy boundaries so that a claim can't be tested or pinned down, or so that it seems to cover more than it does.
 
-Status: standard · Detectable from text: partly
+Status: standard · Detectable from text: yes
 
 **Example:** This supplement supports wellness.
 
@@ -3411,15 +3437,15 @@ Status: contested · Detectable from text: no
 **Required conditions** (all must be shown from the text):
 
 1. A conclusion is supported by evidence.
-2. The evidence cited is selected only for agreeing with the conclusion.
-3. Relevant contrary evidence was available and ignored, because of a prior belief.
+2. The evidence cited is selected only for agreeing with the conclusion. *(may need facts outside the text)*
+3. Relevant contrary evidence was available and ignored, because of a prior belief. *(may need facts outside the text)*
 
 **Legitimate look-alikes** (not this fallacy):
 
 - Citing supporting evidence while dealing with the contrary evidence. *(catalog wording)*
 - If the text omits known contrary evidence, consider suppressed evidence (a text-level question). *(catalog wording)*
 
-**Related, use only one per step** (omitted evidence): [Suppressed evidence](#suppressed-evidence), [Nut-picking](#nut-picking), [Selective attention](#selective-attention), [Disregarding known science](#disregarding-known-science), [Survivorship bias](#survivorship-bias), [Quoting out of context](#quoting-out-of-context), [Overwhelming exception](#overwhelming-exception)
+**Related, use only one per step** (omitted evidence): [Suppressed evidence](#suppressed-evidence), [Nut-picking](#nut-picking), [Selective attention](#selective-attention), [Disregarding known science](#disregarding-known-science), [Survivorship bias](#survivorship-bias), [Quoting out of context](#quoting-out-of-context), [Overwhelming exception](#overwhelming-exception), [Cherry-picking](#cherry-picking)
 
 **Sources:**
 
@@ -3439,15 +3465,17 @@ Status: standard · Detectable from text: partly
 **Required conditions** (all must be shown from the text):
 
 1. A claim is made.
-2. It conflicts with well-established scientific findings (identify them).
+2. It conflicts with well-established scientific findings (identify them). *(may need facts outside the text)*
 3. The conflict is not addressed.
+
+Condition 2 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
 - Challenging a finding with new evidence, and saying so. *(catalog wording)*
 - A claim that engages the established evidence and argues against it is dissent, not this. *(catalog wording)*
 
-**Related, use only one per step** (omitted evidence): [Suppressed evidence](#suppressed-evidence), [Nut-picking](#nut-picking), [Selective attention](#selective-attention), [Confirmation bias (as a fallacy)](#confirmation-bias), [Survivorship bias](#survivorship-bias), [Quoting out of context](#quoting-out-of-context), [Overwhelming exception](#overwhelming-exception)
+**Related, use only one per step** (omitted evidence): [Suppressed evidence](#suppressed-evidence), [Nut-picking](#nut-picking), [Selective attention](#selective-attention), [Confirmation bias (as a fallacy)](#confirmation-bias), [Survivorship bias](#survivorship-bias), [Quoting out of context](#quoting-out-of-context), [Overwhelming exception](#overwhelming-exception), [Cherry-picking](#cherry-picking)
 
 **Sources:**
 
@@ -3467,8 +3495,10 @@ Status: contested · Detectable from text: partly
 **Required conditions** (all must be shown from the text):
 
 1. A role or service is judged by its most visible task.
-2. It has other, less visible functions or value.
+2. It has other, less visible functions or value. *(may need facts outside the text)*
 3. The conclusion (for example, to replace it) relies on overlooking them.
+
+Condition 2 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Related, use only one per step** (measurement and models): [McNamara fallacy](#mcnamara-fallacy), [Fake precision](#fake-precision), [Ludic fallacy](#ludic-fallacy), [Over-extrapolation](#over-extrapolation), [Fallacy of the sheep](#fallacy-of-the-sheep)
 
@@ -3497,6 +3527,7 @@ Status: standard · Detectable from text: yes
 
 - The cases differ in a relevant way, so different standards are justified. *(source: IEP, section 6, "Partial List of Fallacies", entry "Double Standard")*
 - If the speaker exempts their own case from a rule, use special pleading instead. *(catalog wording)*
+- Asking that a stated test be applied consistently is legitimate, unless it is used to dismiss the original criticism. *(catalog wording)*
 
 **Related, use only one per step** (consistency): [Inconsistency](#inconsistency), [Kettle logic](#kettle-logic), [Special pleading](#special-pleading)
 
@@ -3519,9 +3550,11 @@ Status: standard · Detectable from text: partly
 
 **Required conditions** (all must be shown from the text):
 
-1. A claim that is a crucial step in the reasoning is overstated.
+1. A claim that is a crucial step in the reasoning is overstated. *(may need facts outside the text)*
 2. The argument relies on the overstated version.
 3. The overstatement is meant literally.
+
+Condition 1 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -3569,8 +3602,10 @@ Status: standard · Detectable from text: partly
 **Required conditions** (all must be shown from the text):
 
 1. Two positions are presented as equally credible.
-2. The evidence strongly favours one of them.
+2. The evidence strongly favours one of them. *(may need facts outside the text)*
 3. The presentation implies they are on a par.
+
+Condition 2 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -3629,8 +3664,10 @@ Status: standard · Detectable from text: partly
 **Required conditions** (all must be shown from the text):
 
 1. Two things are presented as equivalent.
-2. They share some feature, but differ greatly in a relevant respect (state it).
+2. They share some feature, but differ greatly in a relevant respect (state it). *(may need facts outside the text)*
 3. The conclusion relies on treating them as equal.
+
+Condition 2 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -3657,8 +3694,10 @@ Status: standard · Detectable from text: partly
 **Required conditions** (all must be shown from the text):
 
 1. An explanation is offered for something.
-2. It is improbable (bizarre or extraordinary).
-3. Simpler, more likely explanations have not been ruled out.
+2. It is improbable (bizarre or extraordinary). *(may need facts outside the text)*
+3. Simpler, more likely explanations have not been ruled out. *(may need facts outside the text)*
+
+Conditions 2, 3 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -3739,7 +3778,9 @@ Status: standard · Detectable from text: partly
 **Required conditions** (all must be shown from the text):
 
 1. A past decision is judged.
-2. Information that the decision-makers did not have at the time is assumed to have been available to them.
+2. Information that the decision-makers did not have at the time is assumed to have been available to them. *(may need facts outside the text)*
+
+Condition 2 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -3767,7 +3808,9 @@ Status: standard · Detectable from text: partly
 **Required conditions** (all must be shown from the text):
 
 1. A result is attributed to a process that was carried out.
-2. No evidence is given that the process produced the result, and the result could plausibly be present anyway (say why).
+2. No evidence is given that the process produced the result, and the result could plausibly be present anyway (say why). *(may need facts outside the text)*
+
+Condition 2 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -3985,12 +4028,13 @@ Status: standard · Detectable from text: yes
 **Required conditions** (all must be shown from the text):
 
 1. Two positions are in dispute.
-2. A compromise is concluded to be correct.
-3. The reason given is that it lies between them.
+2. The midpoint is asserted to be correct, fair, safe or true, not merely offered as a settlement.
+3. Its being in the middle is the only reason given. (A midpoint that carries a factual claim, such as that it is safe or affordable, needs evidence for that claim.)
 
 **Legitimate look-alikes** (not this fallacy):
 
-- Compromise as a practical way to reach agreement, not as a claim about truth. *(catalog wording)*
+- The midpoint is offered as a settlement both sides can accept ('let's settle at 4%'). *(catalog wording)*
+- The midpoint is backed by independent evidence (audits, data), not only by being in the middle. *(catalog wording)*
 
 **Related, use only one per step** (options and limits): [False dilemma](#false-dilemma), [Nirvana fallacy](#nirvana-fallacy), [Line-drawing fallacy](#line-drawing), [Slippery slope](#slippery-slope), [Vagueness (exploiting)](#vagueness)
 
@@ -4185,8 +4229,10 @@ Status: standard · Detectable from text: partly
 **Required conditions** (all must be shown from the text):
 
 1. An observer describes someone else's experience or reasoning.
-2. The observer's own perspective is attributed to the person observed.
+2. The observer's own perspective is attributed to the person observed. *(may need facts outside the text)*
 3. A conclusion depends on the attribution.
+
+Condition 2 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Related, use only one per step** (projection): [Anthropomorphism](#anthropomorphism), [Pathetic fallacy](#pathetic-fallacy), [Reification](#reification), [Mind projection fallacy](#mind-projection), [Referential fallacy](#referential-fallacy), [Homunculus fallacy](#homunculus-fallacy)
 
@@ -4231,8 +4277,8 @@ Status: contested · Detectable from text: no
 **Required conditions** (all must be shown from the text):
 
 1. A reason is given for an action or belief.
-2. The stated reason is not the actual reason.
-3. The real reason is hidden.
+2. The stated reason is not the actual reason. *(may need facts outside the text)*
+3. The real reason is hidden. *(may need facts outside the text)*
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -4288,8 +4334,10 @@ Status: standard · Detectable from text: partly
 **Required conditions** (all must be shown from the text):
 
 1. A prediction is made.
-2. Making or acting on it helped bring it about.
+2. Making or acting on it helped bring it about. *(may need facts outside the text)*
 3. Its coming true is cited as proof that it was right independently.
+
+Condition 2 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Sources:**
 
@@ -4312,12 +4360,15 @@ Status: standard · Detectable from text: partly
 
 1. A first step is opposed.
 2. It is claimed to lead through a chain of steps to an undesirable result.
-3. At least one step in the chain is given no adequate reason to think it likely.
+3. At least one step in the chain is given no adequate reason to think it likely. Evidence for the first link does not support later links, and a hedge ('probably') lowers the claimed probability but does not supply a missing link. *(may need facts outside the text)*
+
+Condition 3 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
 - Whether this is fallacious depends on how likely each step is; well-supported chains are reasonable. *(source: IEP, section 6, "Partial List of Fallacies", entry "Slippery Slope")*
 - A chain of tiny vague steps with no practical prediction is line-drawing, not this. *(catalog wording)*
+- When each later step needs a new decision by the same body, that step is not likely unless a binding mechanism (a precedent rule, a legal duty, bylaws) is shown. If one is shown, the step is supported. *(catalog wording)*
 
 **Related, use only one per step** (options and limits): [False dilemma](#false-dilemma), [Middle ground](#middle-ground), [Nirvana fallacy](#nirvana-fallacy), [Line-drawing fallacy](#line-drawing), [Vagueness (exploiting)](#vagueness)
 
@@ -4346,7 +4397,7 @@ Status: standard · Detectable from text: yes
 
 1. A general rule or standard is accepted.
 2. An exception is claimed for one case.
-3. No relevant difference justifying the exception is given.
+3. No reason relevant to the rule's purpose is given for the exception; rank, convenience or 'I'm busy' do not count.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -4534,19 +4585,22 @@ Status: standard · Detectable from text: yes
 
 Relying on a personal story or a few vivid cases instead of more representative evidence.
 
-Status: standard · Detectable from text: yes
+Status: standard · Detectable from text: partly
 
 **Example:** My grandfather smoked every day and lived to 95, so smoking isn't that harmful.
 
 **Required conditions** (all must be shown from the text):
 
 1. A conclusion about a general pattern is drawn.
-2. The evidence offered is one or a few personal stories.
-3. Better systematic evidence exists or would be needed for the conclusion.
+2. The evidence offered is one or a few personal stories, or unsystematic personal impressions.
+3. Better systematic evidence exists or would be needed for the conclusion. *(may need facts outside the text)*
+
+Condition 3 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
 - An anecdote used to illustrate a pattern established on other grounds, or to show that something is possible. *(catalog wording)*
+- Long, systematically recorded professional observation (for example, a clinic's own logged case series) is not mere anecdote. *(catalog wording)*
 
 **Related, use only one per step** (generalization): [Accident](#accident), [Secundum quid](#secundum-quid), [Hasty generalization](#hasty-generalization), [Converse accident](#converse-accident), [Misleading vividness](#misleading-vividness), [Availability heuristic (as a fallacy)](#availability-heuristic), [Unrepresentative sample](#unrepresentative-sample), [Stereotyping](#stereotyping), [Jumping to conclusions](#jumping-to-conclusions), [Specificity](#specificity), [Overgenerality](#overgenerality), [Inductive conversion](#inductive-conversion)
 
@@ -4636,7 +4690,9 @@ Status: standard · Detectable from text: partly
 
 1. A source does not mention something.
 2. It is concluded that the thing did not happen or the author did not know of it.
-3. There is no strong reason to expect the source would have mentioned it.
+3. There is no strong reason to expect the source would have mentioned it. *(may need facts outside the text)*
+
+Condition 3 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -4649,6 +4705,38 @@ Status: standard · Detectable from text: partly
 - Wikipedia, "List of fallacies", section "Informal fallacies > Relevance fallacies", item "Argument from silence". <https://en.wikipedia.org/wiki/List_of_fallacies>
 
 `id: argument-from-silence`
+
+<a id="cherry-picking"></a>
+### Cherry-picking
+
+*Also called:* cherry picking, selective use of evidence, fallacy of exclusion
+
+Drawing a conclusion from a selected part of the evidence while the rest of it, which is stated or plainly known, points the other way or weakens it and goes unanswered. Unlike suppressed evidence, the contrary evidence is in plain view.
+
+Status: standard · Detectable from text: yes
+
+**Example:** The report shows test scores rose at three of the ten pilot schools and fell at the other seven. The programme clearly works: look at those three schools.
+
+**Required conditions** (all must be shown from the text):
+
+1. The arguer selects a subset of the available or stated data.
+2. The rest of the data, stated or plainly known, points the other way or dilutes the subset.
+3. The conclusion rests on the subset, and the rest gets no answer.
+
+**Legitimate look-alikes** (not this fallacy):
+
+- The subset is singled out for a stated, independent reason (for example, a subgroup named before the data came in). *(catalog wording)*
+- Highlighting the strongest examples while acknowledging and answering the rest. *(catalog wording)*
+- If the contrary evidence is absent from the text, use suppressed evidence instead. *(catalog wording)*
+
+**Related, use only one per step** (omitted evidence, selective evidence): [Suppressed evidence](#suppressed-evidence), [Nut-picking](#nut-picking), [Selective attention](#selective-attention), [Confirmation bias (as a fallacy)](#confirmation-bias), [Disregarding known science](#disregarding-known-science), [Survivorship bias](#survivorship-bias), [Quoting out of context](#quoting-out-of-context), [Overwhelming exception](#overwhelming-exception), [Texas sharpshooter fallacy](#texas-sharpshooter), [Lottery fallacy](#lottery-fallacy)
+
+**Sources:**
+
+- Wikipedia, "List of fallacies", section "Informal fallacies > Faulty generalizations", item "Cherry picking". <https://en.wikipedia.org/wiki/List_of_fallacies>
+- Internet Encyclopedia of Philosophy, "Fallacies" (Bradley Dowden), section 6, "Partial List of Fallacies", entry "Cherry-Picking". <https://iep.utm.edu/fallacy/> Note: IEP treats cherry-picking as another name for suppressed evidence; this catalog keeps a separate entry for the case where the contrary evidence is in plain view.
+
+`id: cherry-picking`
 
 <a id="converse-accident"></a>
 ### Converse accident
@@ -4727,8 +4815,10 @@ Status: contested · Detectable from text: partly
 **Required conditions** (all must be shown from the text):
 
 1. An evaluation (feedback, a review) is relied on.
-2. Its source has an interest or bias that is not checked.
+2. Its source has an interest or bias that is not checked. *(may need facts outside the text)*
 3. It is treated as objective.
+
+Condition 2 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -4762,6 +4852,8 @@ Status: standard · Detectable from text: yes
 - A small sample can suffice when the population is known to be uniform in the relevant respect. *(catalog wording)*
 - A tentative conclusion stated with appropriate caution. *(catalog wording)*
 - Do not also tag converse accident or secundum quid for the same step. *(catalog wording)*
+- A small sample with a large, consistent effect, used for a reversible or low-stakes decision. *(catalog wording)*
+- If the doubt is about how the sample was chosen rather than its size, use unrepresentative sample. *(catalog wording)*
 
 **Related, use only one per step** (generalization): [Accident](#accident), [Secundum quid](#secundum-quid), [Converse accident](#converse-accident), [Anecdotal evidence](#anecdotal-evidence), [Misleading vividness](#misleading-vividness), [Availability heuristic (as a fallacy)](#availability-heuristic), [Unrepresentative sample](#unrepresentative-sample), [Stereotyping](#stereotyping), [Jumping to conclusions](#jumping-to-conclusions), [Specificity](#specificity), [Overgenerality](#overgenerality), [Inductive conversion](#inductive-conversion)
 
@@ -4836,9 +4928,11 @@ Status: standard · Detectable from text: partly · Fallback: use only if nothin
 **Required conditions** (all must be shown from the text):
 
 1. A conclusion is drawn.
-2. Relevant evidence was not gathered or considered.
-3. There was time and opportunity to do so.
+2. Relevant evidence was not gathered or considered. *(may need facts outside the text)*
+3. There was time and opportunity to do so. *(may need facts outside the text)*
 4. No more specific entry fits.
+
+Conditions 2, 3 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -4866,7 +4960,9 @@ Status: standard · Detectable from text: partly
 
 1. A vivid, memorable case is described.
 2. It is used to support a claim about how common or likely something is.
-3. Statistical evidence pointing the other way exists (stated, or well known) and is outweighed or ignored.
+3. Statistical evidence pointing the other way exists (stated, or well known) and is outweighed or ignored. *(may need facts outside the text)*
+
+Condition 3 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -4901,7 +4997,7 @@ Status: standard · Detectable from text: yes
 
 - Examples that are shown to be typical. *(catalog wording)*
 
-**Related, use only one per step** (omitted evidence): [Suppressed evidence](#suppressed-evidence), [Selective attention](#selective-attention), [Confirmation bias (as a fallacy)](#confirmation-bias), [Disregarding known science](#disregarding-known-science), [Survivorship bias](#survivorship-bias), [Quoting out of context](#quoting-out-of-context), [Overwhelming exception](#overwhelming-exception)
+**Related, use only one per step** (omitted evidence): [Suppressed evidence](#suppressed-evidence), [Selective attention](#selective-attention), [Confirmation bias (as a fallacy)](#confirmation-bias), [Disregarding known science](#disregarding-known-science), [Survivorship bias](#survivorship-bias), [Quoting out of context](#quoting-out-of-context), [Overwhelming exception](#overwhelming-exception), [Cherry-picking](#cherry-picking)
 
 **Sources:**
 
@@ -4924,7 +5020,7 @@ Status: standard · Detectable from text: yes
 2. It is qualified with so many exceptions that little is left.
 3. It is still presented as the strong headline claim.
 
-**Related, use only one per step** (omitted evidence): [Suppressed evidence](#suppressed-evidence), [Nut-picking](#nut-picking), [Selective attention](#selective-attention), [Confirmation bias (as a fallacy)](#confirmation-bias), [Disregarding known science](#disregarding-known-science), [Survivorship bias](#survivorship-bias), [Quoting out of context](#quoting-out-of-context)
+**Related, use only one per step** (omitted evidence): [Suppressed evidence](#suppressed-evidence), [Nut-picking](#nut-picking), [Selective attention](#selective-attention), [Confirmation bias (as a fallacy)](#confirmation-bias), [Disregarding known science](#disregarding-known-science), [Survivorship bias](#survivorship-bias), [Quoting out of context](#quoting-out-of-context), [Cherry-picking](#cherry-picking)
 
 **Sources:**
 
@@ -4971,14 +5067,14 @@ Status: contested · Detectable from text: no
 **Required conditions** (all must be shown from the text):
 
 1. A conclusion is drawn from observations.
-2. Only observations fitting an expectation were noticed.
-3. Contrary observations were available.
+2. Only observations fitting an expectation were noticed. *(may need facts outside the text)*
+3. Contrary observations were available. *(may need facts outside the text)*
 
 **Legitimate look-alikes** (not this fallacy):
 
 - If the text omits known contrary evidence, consider suppressed evidence. *(catalog wording)*
 
-**Related, use only one per step** (omitted evidence): [Suppressed evidence](#suppressed-evidence), [Nut-picking](#nut-picking), [Confirmation bias (as a fallacy)](#confirmation-bias), [Disregarding known science](#disregarding-known-science), [Survivorship bias](#survivorship-bias), [Quoting out of context](#quoting-out-of-context), [Overwhelming exception](#overwhelming-exception)
+**Related, use only one per step** (omitted evidence): [Suppressed evidence](#suppressed-evidence), [Nut-picking](#nut-picking), [Confirmation bias (as a fallacy)](#confirmation-bias), [Disregarding known science](#disregarding-known-science), [Survivorship bias](#survivorship-bias), [Quoting out of context](#quoting-out-of-context), [Overwhelming exception](#overwhelming-exception), [Cherry-picking](#cherry-picking)
 
 **Sources:**
 
@@ -5042,7 +5138,7 @@ Status: standard · Detectable from text: yes
 <a id="suppressed-evidence"></a>
 ### Suppressed evidence
 
-*Also called:* cherry-picking, card stacking, stacking the deck, one-sidedness, ignoring the counterevidence, ignoring inconvenient data, incomplete evidence, cover-up, argument by half-truth, slanting
+*Also called:* card stacking, stacking the deck, one-sidedness, ignoring the counterevidence, ignoring inconvenient data, incomplete evidence, cover-up, argument by half-truth, slanting
 
 Leaving out evidence that is significant and would weaken the conclusion, when the arguer had it or should have had it, and presenting the case as if it were complete.
 
@@ -5053,22 +5149,24 @@ Status: standard · Detectable from text: partly
 **Required conditions** (all must be shown from the text):
 
 1. An argument presents evidence for a conclusion.
-2. Relevant, significant evidence against it is omitted (identify it).
-3. The arguer knew or should have known of it.
+2. Relevant, significant evidence against it is omitted (identify it). *(may need facts outside the text)*
+3. The arguer knew or should have known of it. *(may need facts outside the text)*
+
+Conditions 2, 3 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
 - The omitted evidence is not significant, or the arguer could not have known it. *(source: IEP, section 6, "Partial List of Fallacies", entry "Suppressed Evidence")*
 - An openly one-sided brief in an adversarial setting where the other side presents its case. *(catalog wording)*
 - A short case that does not claim to be complete. *(catalog wording)*
+- If the contrary evidence is stated in the passage (or plainly known) and simply ignored, use cherry-picking. *(catalog wording)*
 
-**Related, use only one per step** (omitted evidence): [Nut-picking](#nut-picking), [Selective attention](#selective-attention), [Confirmation bias (as a fallacy)](#confirmation-bias), [Disregarding known science](#disregarding-known-science), [Survivorship bias](#survivorship-bias), [Quoting out of context](#quoting-out-of-context), [Overwhelming exception](#overwhelming-exception)
+**Related, use only one per step** (omitted evidence, selective evidence): [Nut-picking](#nut-picking), [Selective attention](#selective-attention), [Confirmation bias (as a fallacy)](#confirmation-bias), [Disregarding known science](#disregarding-known-science), [Survivorship bias](#survivorship-bias), [Quoting out of context](#quoting-out-of-context), [Overwhelming exception](#overwhelming-exception), [Cherry-picking](#cherry-picking), [Texas sharpshooter fallacy](#texas-sharpshooter), [Lottery fallacy](#lottery-fallacy)
 
 **Sources:**
 
 - Internet Encyclopedia of Philosophy, "Fallacies" (Bradley Dowden), section 6, "Partial List of Fallacies", entry "Suppressed Evidence". <https://iep.utm.edu/fallacy/>
-- Internet Encyclopedia of Philosophy, "Fallacies" (Bradley Dowden), section 6, "Partial List of Fallacies", entry "Cherry-Picking". <https://iep.utm.edu/fallacy/>
-- Wikipedia, "List of fallacies", section "Informal fallacies > Faulty generalizations", item "Cherry picking". <https://en.wikipedia.org/wiki/List_of_fallacies>
+- Wikipedia, "List of fallacies", section "Informal fallacies > Faulty generalizations", item "Cherry picking". <https://en.wikipedia.org/wiki/List_of_fallacies> Note: Wikipedia lists suppressed evidence as another name for cherry picking.
 - The Fallacy Files (Gary N. Curtis), entry "One-Sidedness". <https://www.fallacyfiles.org/onesided.html>
 - Internet Encyclopedia of Philosophy, "Fallacies" (Bradley Dowden), section 6, "Partial List of Fallacies", entry "Slanting". <https://iep.utm.edu/fallacy/> Note: lists this under the name 'Slanting'.
 
@@ -5098,6 +5196,7 @@ Status: standard · Detectable from text: yes
 - Correlations are often good evidence of causation when alternatives are addressed. *(source: IEP, section 6, "Partial List of Fallacies", entry "Post Hoc")*
 - A correlation can support a causal conclusion once coincidence, a confounding cause and the reverse direction have been ruled out. *(source: Fallacy Files, entry "Cum Hoc, Ergo Propter Hoc")*
 - A correlation plus a comparison group or a known mechanism, offered as grounds to investigate. *(catalog wording)*
+- If the argument does address causes but misses an obvious third factor, use ignoring a common cause. *(catalog wording)*
 
 **Related, use only one per step** (causation): [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism)
 
@@ -5183,7 +5282,9 @@ Status: standard · Detectable from text: partly
 
 1. An outcome is explained by hidden wrongdoing by people in charge.
 2. No evidence of the wrongdoing is given.
-3. Ordinary explanations are not considered.
+3. Ordinary explanations are not considered. *(may need facts outside the text)*
+
+Condition 3 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -5211,12 +5312,15 @@ Status: standard · Detectable from text: partly
 **Required conditions** (all must be shown from the text):
 
 1. One thing is said to cause another.
-2. A third factor plausibly causes both (name it).
+2. A third factor plausibly causes both (name it). *(may need facts outside the text)*
 3. The argument does not address it.
+
+Condition 2 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
 - Raise as an issue only when there is some evidence of a common cause, not merely possibility. *(source: IEP, section 6, "Partial List of Fallacies", entry "Common Cause")*
+- An obvious common-knowledge third factor (rain causing both wiper use and accidents) counts as 'some evidence' of a common cause. *(catalog wording)*
 
 **Related, use only one per step** (causation): [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism)
 
@@ -5245,6 +5349,7 @@ Status: standard · Detectable from text: yes
 **Legitimate look-alikes** (not this fallacy):
 
 - Rituals valued for their psychological effect on the person doing them. *(catalog wording)*
+- If the reasoning is only 'it followed, so it caused', use post hoc. *(catalog wording)*
 
 **Related, use only one per step** (causation): [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism)
 
@@ -5389,8 +5494,8 @@ Status: contested · Detectable from text: no
 **Required conditions** (all must be shown from the text):
 
 1. A judgement about how common or likely something is is made.
-2. The judgement rests on how easily memorable examples come to mind.
-3. Actual frequency data are available and point the other way.
+2. The judgement rests on how easily memorable examples come to mind. *(may need facts outside the text)*
+3. Actual frequency data are available and point the other way. *(may need facts outside the text)*
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -5418,13 +5523,16 @@ Status: standard · Detectable from text: partly
 **Required conditions** (all must be shown from the text):
 
 1. A probability about a specific case is estimated from specific evidence such as a test result or description.
-2. The base rate (how common the thing is overall) is relevant and is known or knowable.
+2. The base rate (how common the thing is overall) is relevant and is known or knowable. *(may need facts outside the text)*
 3. The estimate ignores or badly underweights that base rate.
+
+Condition 2 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
 - The base rate is unknown and the speaker says so. *(catalog wording)*
 - The specific evidence is so strong that the base rate makes little difference, and this is shown. *(catalog wording)*
+- If 'the chance of this evidence if innocent' is presented as the chance of innocence, use prosecutor's fallacy. *(catalog wording)*
 
 **Related, use only one per step** (probability): [Prosecutor's fallacy](#prosecutors-fallacy), [Conjunction fallacy](#conjunction-fallacy), [Independence fallacy](#independence-fallacy), [Appeal to probability](#appeal-to-probability), [Double counting](#double-counting)
 
@@ -5620,8 +5728,10 @@ Status: standard · Detectable from text: partly
 
 **Required conditions** (all must be shown from the text):
 
-1. Choices about how to analyse the data (subgroups, outcomes, exclusions) were made after seeing the data.
+1. Choices about how to analyse the data (subgroups, outcomes, exclusions) were made after seeing the data. *(may need facts outside the text)*
 2. The result is defended as free of the multiple-comparisons problem because only one test was formally run.
+
+Condition 1 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -5648,9 +5758,11 @@ Status: contested · Detectable from text: partly
 
 **Required conditions** (all must be shown from the text):
 
-1. The process is one of independent chance (or known to behave like it).
+1. The process is one of independent chance (or known to behave like it). *(may need facts outside the text)*
 2. A streak of successes is cited.
 3. Further success is concluded to be more likely because of the streak.
+
+Condition 1 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -5676,8 +5788,10 @@ Status: standard · Detectable from text: partly
 **Required conditions** (all must be shown from the text):
 
 1. Probabilities of several events are multiplied to get the chance of them all happening.
-2. There is a known or plausible link between the events.
+2. There is a known or plausible link between the events. *(may need facts outside the text)*
 3. The link is ignored, and the conclusion depends on the resulting low figure.
+
+Condition 2 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -5736,7 +5850,7 @@ Status: standard · Detectable from text: yes
 
 - The outcome was specified in advance, or matches a pattern that rigging would predict. *(catalog wording)*
 
-**Related, use only one per step** (chance): [Gambler's fallacy](#gamblers-fallacy), [Hot hand fallacy](#hot-hand-fallacy), [Inverse gambler's fallacy](#inverse-gamblers-fallacy), [Regression fallacy](#regression-fallacy)
+**Related, use only one per step** (chance, selective evidence): [Gambler's fallacy](#gamblers-fallacy), [Hot hand fallacy](#hot-hand-fallacy), [Inverse gambler's fallacy](#inverse-gamblers-fallacy), [Regression fallacy](#regression-fallacy), [Suppressed evidence](#suppressed-evidence), [Cherry-picking](#cherry-picking), [Texas sharpshooter fallacy](#texas-sharpshooter), [Survivorship bias](#survivorship-bias)
 
 **Sources:**
 
@@ -5756,8 +5870,10 @@ Status: contested · Detectable from text: partly
 **Required conditions** (all must be shown from the text):
 
 1. Odds from a game, model or textbook case are applied to a real situation.
-2. A specific difference between the real situation and the model is identifiable.
+2. A specific difference between the real situation and the model is identifiable. *(may need facts outside the text)*
 3. That difference is ignored and the conclusion depends on it.
+
+Condition 2 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -5786,8 +5902,10 @@ Status: contested · Detectable from text: partly
 **Required conditions** (all must be shown from the text):
 
 1. A decision or judgement is based on measured quantities.
-2. Something important to the goal is not captured by those measures.
+2. Something important to the goal is not captured by those measures. *(may need facts outside the text)*
 3. It is ignored or dismissed because it is hard to measure.
+
+Condition 2 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -5812,9 +5930,11 @@ Status: standard · Detectable from text: partly
 
 **Required conditions** (all must be shown from the text):
 
-1. Many comparisons or tests were made on the data.
+1. Many comparisons or tests were made on the data. *(may need facts outside the text)*
 2. One or a few 'significant' results are reported as meaningful.
 3. No allowance is made for the number of comparisons.
+
+Condition 1 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -5841,11 +5961,12 @@ Status: standard · Detectable from text: yes
 
 1. The evidence is an association from an observational study (not a controlled experiment).
 2. A causal conclusion is drawn.
-3. Confounders or reverse causation are not addressed.
+3. Confounders or reverse causation are not adequately addressed, and the causal claim is stated as established.
 
 **Legitimate look-alikes** (not this fallacy):
 
 - The association is reported as a link to be tested, or confounders are carefully controlled. *(catalog wording)*
+- Partial adjustment for confounders with a hedged causal claim: record possible issue and name the alternative left unaddressed. *(catalog wording)*
 
 **Related, use only one per step** (causation): [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism)
 
@@ -5898,8 +6019,10 @@ Status: standard · Detectable from text: partly
 **Required conditions** (all must be shown from the text):
 
 1. A model is fitted to existing data with many adjustable parts.
-2. It fits past data closely but has not been tested on new data.
+2. It fits past data closely but has not been tested on new data. *(may need facts outside the text)*
 3. Its predictions are presented as reliable because of the close fit.
+
+Condition 2 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -5928,9 +6051,11 @@ Status: standard · Detectable from text: partly
 
 **Required conditions** (all must be shown from the text):
 
-1. Several analyses, versions or experiments were run.
-2. Only those reaching the significance threshold are reported.
+1. Several analyses, versions or experiments were run. *(may need facts outside the text)*
+2. Only those reaching the significance threshold are reported. *(may need facts outside the text)*
 3. The reported result is presented as if it were the only test.
+
+Conditions 1, 2 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -5963,6 +6088,7 @@ Status: standard · Detectable from text: yes
 **Legitimate look-alikes** (not this fallacy):
 
 - The base rate and other evidence are combined correctly to estimate the probability of guilt. *(catalog wording)*
+- If the error is ignoring how common the condition is when reading a test or screening result, use base-rate fallacy. *(catalog wording)*
 
 **Related, use only one per step** (probability): [Base-rate fallacy](#base-rate-fallacy), [Conjunction fallacy](#conjunction-fallacy), [Independence fallacy](#independence-fallacy), [Appeal to probability](#appeal-to-probability), [Double counting](#double-counting)
 
@@ -5986,9 +6112,11 @@ Status: standard · Detectable from text: partly
 
 **Required conditions** (all must be shown from the text):
 
-1. An unusually extreme result was followed by a more ordinary one.
+1. An unusually extreme result was followed by a more ordinary one. *(may need facts outside the text)*
 2. Something done in between is credited with causing the change.
 3. Drift back toward the average is not considered.
+
+Condition 1 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -6018,15 +6146,17 @@ Status: standard · Detectable from text: partly
 **Required conditions** (all must be shown from the text):
 
 1. The evidence consists only of cases that passed some filter (survived, succeeded, were published).
-2. The cases that did not pass are relevant and ignored.
+2. The cases that did not pass are relevant and ignored. *(may need facts outside the text)*
 3. A general conclusion is drawn.
+
+Condition 2 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
 - The question is only about the survivors themselves. *(catalog wording)*
 - If the filter is how the sample was gathered, use unrepresentative sample; use this only when the filtered-out cases are the missing ones. *(catalog wording)*
 
-**Related, use only one per step** (omitted evidence): [Suppressed evidence](#suppressed-evidence), [Nut-picking](#nut-picking), [Selective attention](#selective-attention), [Confirmation bias (as a fallacy)](#confirmation-bias), [Disregarding known science](#disregarding-known-science), [Quoting out of context](#quoting-out-of-context), [Overwhelming exception](#overwhelming-exception)
+**Related, use only one per step** (omitted evidence, selective evidence): [Suppressed evidence](#suppressed-evidence), [Nut-picking](#nut-picking), [Selective attention](#selective-attention), [Confirmation bias (as a fallacy)](#confirmation-bias), [Disregarding known science](#disregarding-known-science), [Quoting out of context](#quoting-out-of-context), [Overwhelming exception](#overwhelming-exception), [Cherry-picking](#cherry-picking), [Texas sharpshooter fallacy](#texas-sharpshooter), [Lottery fallacy](#lottery-fallacy)
 
 **Sources:**
 
@@ -6047,16 +6177,19 @@ Status: standard · Detectable from text: partly
 
 **Required conditions** (all must be shown from the text):
 
-1. A cluster or pattern is picked out after looking at the data.
+1. A cluster or pattern is picked out after looking at the data. *(may need facts outside the text)*
 2. It is treated as meaningful or as evidence of a cause.
-3. No allowance is made for how many patterns could have been found by chance, and no prior prediction was made.
+3. No allowance is made for how many patterns could have been found by chance, and no prior prediction was made. *(may need facts outside the text)*
+
+Conditions 1, 3 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
 - The pattern was predicted before the data were examined. *(catalog wording)*
 - A cluster found by searching is treated only as a lead to test with new data. *(catalog wording)*
+- If the arguer just picks the favourable part of data already on the table, with no pattern-search, use cherry-picking. *(catalog wording)*
 
-**Related, use only one per step** (multiple testing): [Multiple comparisons fallacy](#multiple-comparisons), [P-hacking](#p-hacking), [Garden of forking paths](#garden-of-forking-paths), [Overfitting (curve fitting)](#curve-fitting)
+**Related, use only one per step** (multiple testing, selective evidence): [Multiple comparisons fallacy](#multiple-comparisons), [P-hacking](#p-hacking), [Garden of forking paths](#garden-of-forking-paths), [Overfitting (curve fitting)](#curve-fitting), [Suppressed evidence](#suppressed-evidence), [Cherry-picking](#cherry-picking), [Survivorship bias](#survivorship-bias), [Lottery fallacy](#lottery-fallacy)
 
 **Sources:**
 
@@ -6080,8 +6213,10 @@ Status: standard · Detectable from text: partly
 **Required conditions** (all must be shown from the text):
 
 1. A conclusion about a population is drawn from a sample.
-2. The way the sample was gathered is likely to make it differ from the population (for example, people chose to take part).
+2. The way the sample was gathered is likely to make it differ from the population (for example, people chose to take part). *(may need facts outside the text)*
 3. The difference bears on the conclusion.
+
+Condition 2 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 

@@ -14,7 +14,7 @@ Each entry gives:
 - **related** entries to choose between, so one step gets one label;
 - **sources**: the published references that list the fallacy, with the exact entry, section or chapter so anyone can check them.
 
-The catalog currently has 215 entries. A further 12 names that describe the same mistake as another entry are folded into that entry as aliases and listed under "Names folded into other entries" in FALLACIES.md. The references are the *Internet Encyclopedia of Philosophy* and *Stanford Encyclopedia of Philosophy* articles on fallacies, Aristotle's *On Sophistical Refutations*, *The Fallacy Files*, and Wikipedia's *List of fallacies*. See [SOURCES.md](SOURCES.md).
+The catalog currently has 216 entries. A further 12 names that describe the same mistake as another entry are folded into that entry as aliases and listed under "Names folded into other entries" in FALLACIES.md. The references are the *Internet Encyclopedia of Philosophy* and *Stanford Encyclopedia of Philosophy* articles on fallacies, Aristotle's *On Sophistical Refutations*, *The Fallacy Files*, and Wikipedia's *List of fallacies*. See [SOURCES.md](SOURCES.md).
 
 ## Files
 
@@ -41,7 +41,7 @@ python3 tools/build_md.py           # validate and regenerate FALLACIES.md and S
 python3 tools/build_md.py --check   # validate and confirm the generated files are up to date
 ```
 
-The validator checks that ids are unique and in kebab-case; that every entry has a name, category, definition and example; that every entry has 2 to 5 required conditions, a `text_detectable` value and a `status`; that related ids, families and redirect targets exist; that sourced look-alikes carry a complete citation; and that every entry has at least one source or is explicitly marked `"sources": "TODO"`.
+The validator checks that ids are unique and in kebab-case; that every entry has a name, category, definition and example; that every entry has 2 to 5 required conditions, a `text_detectable` value consistent with its `outside_text_conditions`, and a `status`; that related ids, families and redirect targets exist; that sourced look-alikes carry a complete citation; and that every entry has at least one source or is explicitly marked `"sources": "TODO"`.
 
 Rules for sources:
 
@@ -57,7 +57,8 @@ Rules for sources:
 | `name`, `aliases` | Standard name and other names in use, including Latin names and names folded in from merged entries. |
 | `category` | Formal (general, propositional, syllogistic, quantifier and modal) or informal (relevance, ambiguity and language, presumption, weak induction, causal, statistical and probabilistic, dialogue and evasion). |
 | `status` | `standard`, or `contested` for names that are disputed or not widely used. Say so if you use a contested entry. |
-| `text_detectable` | `yes`: can be shown from the text. `partly`: needs at least one fact from outside the text. `no`: depends on motive, inner bias or outside facts; raise as a question only, never as a flag. |
+| `text_detectable` | `yes`: can be shown from the text. `partly`: at least one condition may need a fact from outside the text (named in `outside_text_conditions`). `no`: depends on motive, inner bias or outside facts; raise as a question only, never as a flag. |
+| `outside_text_conditions` | The numbers of the required conditions that may need facts from outside the passage. Each is met if the passage states the fact or it is common knowledge; otherwise the verdict is at most possible issue (see METHOD.md step (f)). Empty for `yes` entries. |
 | `use_only_if_nothing_more_specific` | `true` for broad fallback labels (such as non sequitur, false cause, formal fallacy). Use them only when no more specific entry fits. |
 | `definition`, `example` | Plain-words definition and an original example. |
 | `required_conditions` | 2 to 5 numbered conditions, all of which must be shown from the text before flagging. |
