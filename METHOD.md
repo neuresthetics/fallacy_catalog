@@ -18,6 +18,8 @@ Work one step of the argument at a time. For each step you think goes wrong:
 - **Treat stated defaults and procedural rules as such.** A burden of proof, a presumption of innocence, a null hypothesis, a house rule or a decision procedure tells you what to do when evidence is lacking. It is not a claim about what is true.
 - **Respect the conclusion's scope.** A conclusion about what to do, what to investigate, or what is probable is not a claim that the matter is settled.
 - **Keep the role of each statement.** An illustration, a joke or a figure of speech is not a premise unless the speaker relies on it.
+- **Excerpts of real texts.** If the passage is an excerpt and a condition fails only because support may lie past the excerpt boundary (the reply or the evidence may come in the next sentence or chapter), record at most possible issue and say what the full text would need to show. Do not import your memory of the full text as if it were in the passage.
+- **Contested readings.** For a well-known argument whose fallacy charge is disputed in the scholarly literature, name the classic charge, mark the row "contested reading", and give possible issue unless the passage's own words settle it. State the reading under which it is a fallacy.
 
 Charity has a limit: use it to find what the speaker meant, not to rewrite a passage that clearly meets the conditions. If the strongest version has no problem, stop here: there is no issue.
 
@@ -31,6 +33,10 @@ Charity has a limit: use it to find what the speaker meant, not to rewrite a pas
   - Causal alternatives: follow the order in the causation family rule (Simpson's paradox when the passage gives a reversing breakdown; then an identifiable common cause, then reverse direction, then cum hoc; observational interpretation when the study design is the problem).
   - Nature vs tradition: naturalness or "built for" wording is appeal to nature; age or history alone is appeal to tradition; if both appear in one step, report appeal to nature and note tradition.
   - Probability: follow the probability family rule (prosecutor's fallacy, base-rate fallacy, confusion of the inverse).
+  - Generalization vs comparison: an exceptional source case (a special population or special circumstances) used to set a rule for ordinary cases or for everyone is converse accident; one case carried over to another comparable case is false analogy.
+  - Experts disagreeing: "experts disagree, so nothing can be known" is inflation of conflict; a claim that simply ignores well-established findings is disregarding known science.
+- **Separate steps get separate rows.** A step that builds on an earlier error gets its own row if it commits a separate move of its own. Adjacent sentences are two steps when each meets its own entry. Example: "It's up to the county to prove the plant is safe. They haven't, so it isn't" contains a burden demand (misplaced burden of proof) and a conclusion from lack of proof (argument from ignorance); record both if each is shown.
+- **Weak premises without a label.** A second weak link in a chain gets its own row only if it meets an entry's conditions. Otherwise note it as "weak premise" without a fallacy label.
 - **Charged wording is not a second error.** Loaded words in the same step as a flagged error are not a second flag unless they carry their own inference.
 - **Reporting names.** Use the entry's name, not an alias. Where a family rule says to report under a familiar name with a qualifier, do so: a shift of meaning in a syllogism's middle term is reported as "equivocation (four terms)".
 
@@ -48,7 +54,10 @@ Charity has a limit: use it to find what the speaker meant, not to rewrite a pas
 - **Flag**: every condition is met from the text and no look-alike applies.
 - **Possible issue**: the text meets the conditions it can, but at least one condition depends on context that is not in the text, or a look-alike might apply. Say exactly what would settle it.
 - **No issue**: a condition fails, or a look-alike applies.
-- **No argument.** A passage that makes no argument, or only reports, quotes, teaches or satirises someone else's argument, is no issue. Record the entry mentioned, if any.
+- **No argument.** A passage that makes no argument, or only reports, quotes, teaches or satirises someone else's argument, is no issue. Record the fallacy it displays or mentions, if any, in the `reported_fallacy` field, so that a skim of the verdicts still shows it.
+- **Dialogues and exchanges.** Score each participant's argument separately. A participant who advances an argument in direct speech is scored even when the author is satirising it (note the satire). Use "no argument" only when the passage's own voice narrates, teaches or mocks without a participant advancing the argument. An argument quoted inside a report, review, lesson or exercise (the passage's own voice is reporting, reviewing or teaching, as in "identify the flaw in Ben's reply") is no argument; record it under `reported_fallacy`.
+- **Rebuttals and straw men.** When a passage rebuts a view, the rebuttal's own logic is judged under the usual steps. Whether the rebutted view is fairly attributed is a straw-man check, made only when a specific opponent and their words are identifiable in the passage.
+- **Rhetorical notes (not fallacies).** Charged or sectarian wording, invective, and unsupported accusations that no inference rests on go in a "rhetorical notes" field, not in a fallacy flag. They do not change the verdict.
 - **Other errors (not fallacies).** Arithmetic slips, wrong figures and factual mistakes that are not reasoning errors go in a separate "other errors" note. They do not change the verdict.
 - **Correct use of a fallacy name, or a fair reduction to absurdity.** If the speaker correctly identifies or rebuts a fallacy, or argues by reduction to absurdity from the opponent's own stated principle, the verdict is no issue. Record the entry they invoked, so the reader can see it was checked.
 
@@ -68,8 +77,12 @@ Conditions:
   2. ...
 Look-alikes:
   - <look-alike> — does not apply because ...
+Speaker: <who advances this step, for dialogues; optional>
 Verdict: flag | possible issue | no issue   (what would settle it, if possible issue)
-Other errors (not fallacies): <arithmetic or factual slips, if any; optional>
+Contested reading: <yes, with the reading under which it is a fallacy; optional>
+Reported fallacy: <for no-argument or mention rows: the fallacy displayed or named; optional>
+Rhetorical notes (not fallacies): <invective, charged wording, unsupported accusations no inference rests on; optional>
+Other errors (not fallacies): <arithmetic or factual slips; optional>
 ```
 
 ## Worked example 1: a true flag

@@ -1,6 +1,6 @@
 {
   "title": "Fallacy Catalog",
-  "version": "0.5.0",
+  "version": "0.6.0",
   "description": "A plain, sourced catalog of named logical fallacies for checking real arguments. Each entry gives a standard name, aliases, a category, a short definition, an original example, the conditions that must all be shown from the text before the label applies, legitimate look-alikes that are not the fallacy, whether the fallacy can be detected from the text alone, related entries to choose between, and the published references that list it.",
   "license": "MIT",
   "references": [
@@ -52,19 +52,34 @@
       "url": "https://en.wikipedia.org/",
       "accessed": "2026-10-08",
       "note": "Single Wikipedia articles, cited by article and section, for statistical errors not on the list of fallacies."
+    },
+    {
+      "ref": "SEP Fatalism",
+      "title": "Stanford Encyclopedia of Philosophy, \"Fatalism\" (Hugh Rice)",
+      "url": "https://plato.stanford.edu/entries/fatalism/",
+      "accessed": "2026-10-08",
+      "note": "Cited by section."
+    },
+    {
+      "ref": "Bastiat",
+      "title": "Frédéric Bastiat, \"What Is Seen and What Is Not Seen\" (1850), in Selected Essays on Political Economy, trans. Seymour Cain (Library of Economics and Liberty)",
+      "url": "https://www.econlib.org/library/Bastiat/basEss1.html",
+      "accessed": "2026-10-08",
+      "note": "The original statement of the broken-window argument; cited by section."
     }
   ],
   "families": [
     {
       "name": "naturalism",
-      "rule": "Pick the one that matches the step: identifying 'good' with a natural property (naturalistic), a bare is-to-ought step (is-ought), 'natural so good' (appeal to nature), an ought-claim used to settle what is true (moralistic), the outcome of a belief used to settle its truth (consequences).",
+      "rule": "Pick the one that matches the step: identifying 'good' with a natural property (naturalistic), a bare is-to-ought step (is-ought), 'natural so good' (appeal to nature), 'unavoidable or already here, so good or to be welcomed' (appeal to inevitability), an ought-claim used to settle what is true (moralistic), the outcome of a belief used to settle its truth (consequences).",
       "members": [
         "naturalistic-fallacy",
         "is-ought",
         "appeal-to-nature",
         "moralistic-fallacy",
         "naturalistic-fallacy-fallacy",
-        "appeal-to-consequences"
+        "appeal-to-consequences",
+        "appeal-to-inevitability"
       ]
     },
     {
@@ -87,7 +102,7 @@
     },
     {
       "name": "authority and popularity",
-      "rule": "Use one: expertise (authority), fame (celebrity), achievement in another field (accomplishment), numbers (people), a growing trend (bandwagon), age (tradition), newness (novelty), group loyalty (group think), era (chronological snobbery), money (wealth or poverty).",
+      "rule": "Use one: expertise (authority), fame (celebrity), achievement in another field (accomplishment), numbers (people), a growing trend (bandwagon), age (tradition), newness (novelty), group loyalty (group think), era (chronological snobbery), money (wealth or poverty), the speaker's sincerity or lack of motive to lie (sincerity), experts disagreeing so nothing can be known (inflation of conflict). If poverty, wealth or a sacrifice is cited only as the reason the speaker has no motive to lie, use appeal to sincerity.",
       "members": [
         "appeal-to-authority",
         "appeal-to-celebrity",
@@ -99,7 +114,9 @@
         "group-think",
         "chronological-snobbery",
         "appeal-to-wealth",
-        "appeal-to-poverty"
+        "appeal-to-poverty",
+        "inflation-of-conflict",
+        "appeal-to-sincerity"
       ]
     },
     {
@@ -187,7 +204,7 @@
     },
     {
       "name": "causation",
-      "rule": "Use the specific causal entry; false cause only if none fits. First, if the passage gives a breakdown by some factor that reverses or removes an aggregate comparison, use Simpson's paradox. Otherwise work down this order: an obvious third factor that is named or plainly known, including the reason cases were selected into a group: ignoring a common cause. A plausible reverse direction: reversing causation. No specific alternative can be identified: cum hoc. A study cited as showing causation where the study design itself is the problem: observational interpretation.",
+      "rule": "Use the specific causal entry; false cause only if none fits. First, if the passage gives a breakdown by some factor that reverses or removes an aggregate comparison, use Simpson's paradox. Next, if cases were selected for an extreme value and then moved back toward the average, use regression fallacy. Otherwise work down this order: an obvious third factor that is named or plainly known, including the reason cases were selected into a group: ignoring a common cause. A plausible reverse direction: reversing causation. No specific alternative can be identified: cum hoc. A study cited as showing causation where the study design itself is the problem: observational interpretation.",
       "members": [
         "false-cause",
         "post-hoc",
@@ -586,7 +603,7 @@
       "definition": "Changing the meaning of a sentence by stressing a word or syllable differently (in speech or by emphasis in writing), and then reasoning from the shifted meaning.",
       "example": "'We should not speak ILL of our friends', so it's fine to speak ill of strangers.",
       "required_conditions": [
-        "A sentence's meaning changes depending on which word or syllable is stressed or emphasised.",
+        "A sentence's meaning changes depending on which word or syllable is stressed or emphasised, or real emphasis is read as implying a contrast the speaker plainly did not intend.",
         "The argument relies on the shifted meaning.",
         "The original speaker did not mean it that way."
       ],
@@ -597,6 +614,10 @@
         },
         {
           "text": "A quote clipped so that it changes meaning is quoting out of context, not this.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "The implied contrast is what the speaker meant.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -841,7 +862,7 @@
       "definition": "Rejecting a claim or argument by attacking the person who made it rather than the reasons they gave.",
       "example": "Why listen to his tax plan? He's been divorced three times.",
       "required_conditions": [
-        "Someone has made a claim or argument.",
+        "Someone has made a claim, argument or proposal (a rule or policy counts).",
         "The reply attacks the person (character, traits, background) rather than the reasons given.",
         "The attack is offered as a reason to reject the claim or argument (stated, or clearly insinuated by sarcasm or 'consider the source'), and the reasons themselves are left unanswered.",
         "The attacked trait is irrelevant to whether the argument's reasons are good. (Expertise or experience can bear on testimony, not on whether stated reasons support the conclusion.)"
@@ -1129,7 +1150,7 @@
       "required_conditions": [
         "A sentence has two readings because of its grammar (not because of one ambiguous word).",
         "The argument relies on one reading.",
-        "The speaker meant, or the context supports, the other reading."
+        "The speaker meant, or the context supports, the other reading. Context includes the evident purpose of the document or rule."
       ],
       "legitimate_lookalikes": [
         {
@@ -1138,6 +1159,10 @@
         },
         {
           "text": "If a single word carries the ambiguity, use equivocation.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "Both readings fit equally and nothing in the context favours either: record possible issue.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -1329,7 +1354,7 @@
       ],
       "legitimate_lookalikes": [
         {
-          "text": "Achievements in the field the claim is about are ordinary evidence of expertise.",
+          "text": "Achievements in the same field and the same skill the claim is about are ordinary evidence of expertise (performing a skill is not the same skill as teaching it).",
           "caveat_source": "catalog wording"
         },
         {
@@ -1350,7 +1375,9 @@
         "group-think",
         "chronological-snobbery",
         "appeal-to-wealth",
-        "appeal-to-poverty"
+        "appeal-to-poverty",
+        "inflation-of-conflict",
+        "appeal-to-sincerity"
       ],
       "sources": [
         {
@@ -1414,7 +1441,9 @@
         "group-think",
         "chronological-snobbery",
         "appeal-to-wealth",
-        "appeal-to-poverty"
+        "appeal-to-poverty",
+        "inflation-of-conflict",
+        "appeal-to-sincerity"
       ],
       "sources": [
         {
@@ -1503,7 +1532,9 @@
         "group-think",
         "chronological-snobbery",
         "appeal-to-wealth",
-        "appeal-to-poverty"
+        "appeal-to-poverty",
+        "inflation-of-conflict",
+        "appeal-to-sincerity"
       ],
       "sources": [
         {
@@ -1549,6 +1580,7 @@
         "appeal-to-nature",
         "moralistic-fallacy",
         "naturalistic-fallacy-fallacy",
+        "appeal-to-inevitability",
         "appeal-to-emotion",
         "appeal-to-pity",
         "appeal-to-fear",
@@ -1857,6 +1889,51 @@
       ]
     },
     {
+      "id": "appeal-to-inevitability",
+      "name": "Appeal to inevitability",
+      "aliases": [
+        "fait accompli argument"
+      ],
+      "category": "informal: relevance",
+      "status": "standard",
+      "text_detectable": "yes",
+      "outside_text_conditions": [],
+      "use_only_if_nothing_more_specific": false,
+      "definition": "Arguing that because something is unavoidable or already here, it is good, beneficial or to be welcomed.",
+      "example": "Automation is coming whether we like it or not, so it can only be good for workers.",
+      "required_conditions": [
+        "Something is described as unavoidable or already here.",
+        "It is concluded to be good, beneficial or to be welcomed.",
+        "The inevitability is the reason given for that step."
+      ],
+      "legitimate_lookalikes": [
+        {
+          "text": "Accepting that something is unavoidable and planning how to adapt to it, without claiming that it is good.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "Arguing that resisting would be costly or futile, as a practical point about what to do, without claiming the thing itself is good.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If the reason is that something is natural, use appeal to nature; if it is that it has always been done, use appeal to tradition.",
+          "caveat_source": "catalog wording"
+        }
+      ],
+      "families": [
+        "naturalism"
+      ],
+      "related": [
+        "naturalistic-fallacy",
+        "is-ought",
+        "appeal-to-nature",
+        "moralistic-fallacy",
+        "naturalistic-fallacy-fallacy",
+        "appeal-to-consequences"
+      ],
+      "sources": "TODO"
+    },
+    {
       "id": "appeal-to-motive",
       "name": "Appeal to motive",
       "aliases": [
@@ -1871,7 +1948,7 @@
       "definition": "Dismissing an argument by questioning why its proponent is making it.",
       "example": "She only wants the park protected because she lives next to it.",
       "required_conditions": [
-        "Someone has made an argument.",
+        "Someone has made an argument, claim or proposal (a rule or policy counts).",
         "The reply questions why they are making it (their motives).",
         "The motives are offered as a reason the argument fails."
       ],
@@ -1926,7 +2003,7 @@
       "definition": "Arguing that something is good because it is 'natural', or bad because it is 'unnatural'.",
       "example": "This herbal remedy is natural, so it's safe.",
       "required_conditions": [
-        "Something is called natural or unnatural, or equivalent wording is used (evolved, ancestral, 'what our bodies are built for').",
+        "Something is called natural or unnatural, or equivalent wording is used (evolved, ancestral, 'what our bodies are built for', 'survival of the fittest', 'law of nature').",
         "That label is offered as the reason it is good, safe or right (or bad).",
         "The feature that 'natural' stands for is not spelled out and separately shown to matter."
       ],
@@ -1946,6 +2023,10 @@
         {
           "text": "If only age or history is given, use appeal to tradition. If naturalness wording and history appear in the same step, report appeal to nature and note tradition.",
           "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If the reason given is that something is unavoidable or already here, rather than natural, use appeal to inevitability.",
+          "caveat_source": "catalog wording"
         }
       ],
       "families": [
@@ -1957,6 +2038,7 @@
         "moralistic-fallacy",
         "naturalistic-fallacy-fallacy",
         "appeal-to-consequences",
+        "appeal-to-inevitability",
         "appeal-to-tradition"
       ],
       "sources": [
@@ -2011,7 +2093,9 @@
         "group-think",
         "chronological-snobbery",
         "appeal-to-wealth",
-        "appeal-to-poverty"
+        "appeal-to-poverty",
+        "inflation-of-conflict",
+        "appeal-to-sincerity"
       ],
       "sources": [
         {
@@ -2114,7 +2198,9 @@
         "appeal-to-novelty",
         "group-think",
         "chronological-snobbery",
-        "appeal-to-wealth"
+        "appeal-to-wealth",
+        "inflation-of-conflict",
+        "appeal-to-sincerity"
       ],
       "sources": [
         {
@@ -2231,6 +2317,53 @@
           "locator": "section \"Informal fallacies > Relevance fallacies > Red herring fallacies\", item \"Appeal to ridicule\""
         }
       ]
+    },
+    {
+      "id": "appeal-to-sincerity",
+      "name": "Appeal to sincerity",
+      "aliases": [
+        "'no reason to lie' argument"
+      ],
+      "category": "informal: relevance",
+      "status": "standard",
+      "text_detectable": "yes",
+      "outside_text_conditions": [],
+      "use_only_if_nothing_more_specific": false,
+      "definition": "Treating a speaker's sincerity, or the lack of any motive to lie, as showing that what they say is true, without addressing whether they were in a position to know.",
+      "example": "He has nothing to gain from saying the bridge is unsafe, so it must be unsafe.",
+      "required_conditions": [
+        "A claim is supported by someone's testimony.",
+        "The reason offered for its truth is the speaker's sincerity or lack of a motive to lie ('she has no reason to lie', 'he clearly believes it').",
+        "Whether the speaker was in a position to know, or could be mistaken, is not addressed."
+      ],
+      "legitimate_lookalikes": [
+        {
+          "text": "Lack of a motive to lie offered as one reason to trust a witness who was in a position to know (sincerity plus competence).",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "Answering a charge that the speaker is lying, where the question really is honesty rather than accuracy.",
+          "caveat_source": "catalog wording"
+        }
+      ],
+      "families": [
+        "authority and popularity"
+      ],
+      "related": [
+        "appeal-to-authority",
+        "appeal-to-celebrity",
+        "appeal-to-accomplishment",
+        "appeal-to-the-people",
+        "bandwagon",
+        "appeal-to-tradition",
+        "appeal-to-novelty",
+        "group-think",
+        "chronological-snobbery",
+        "appeal-to-wealth",
+        "appeal-to-poverty",
+        "inflation-of-conflict"
+      ],
+      "sources": "TODO"
     },
     {
       "id": "appeal-to-snobbery",
@@ -2399,7 +2532,9 @@
         "group-think",
         "chronological-snobbery",
         "appeal-to-wealth",
-        "appeal-to-poverty"
+        "appeal-to-poverty",
+        "inflation-of-conflict",
+        "appeal-to-sincerity"
       ],
       "sources": [
         {
@@ -2544,7 +2679,10 @@
         "chronological-snobbery",
         "appeal-to-wealth",
         "appeal-to-poverty",
-        "appeal-to-nature"
+        "inflation-of-conflict",
+        "appeal-to-sincerity",
+        "appeal-to-nature",
+        "appeal-to-inevitability"
       ],
       "sources": [
         {
@@ -2583,7 +2721,7 @@
       "example": "This wine costs $300, so it must taste better.",
       "required_conditions": [
         "Something's high cost, or a person's wealth, is cited.",
-        "It is offered as the reason the thing is better or the person's view more likely true, in a respect unrelated to money."
+        "It is offered as the reason the thing is better or the person's view more likely true, in a respect unrelated to how the person became rich."
       ],
       "legitimate_lookalikes": [
         {
@@ -2604,7 +2742,9 @@
         "appeal-to-novelty",
         "group-think",
         "chronological-snobbery",
-        "appeal-to-poverty"
+        "appeal-to-poverty",
+        "inflation-of-conflict",
+        "appeal-to-sincerity"
       ],
       "sources": [
         {
@@ -3144,7 +3284,9 @@
         "group-think",
         "chronological-snobbery",
         "appeal-to-wealth",
-        "appeal-to-poverty"
+        "appeal-to-poverty",
+        "inflation-of-conflict",
+        "appeal-to-sincerity"
       ],
       "sources": [
         {
@@ -3352,6 +3494,52 @@
       ]
     },
     {
+      "id": "broken-window-fallacy",
+      "name": "Broken window fallacy",
+      "aliases": [
+        "glazier's fallacy",
+        "parable of the broken window"
+      ],
+      "category": "informal: presumption",
+      "status": "standard",
+      "text_detectable": "yes",
+      "outside_text_conditions": [],
+      "use_only_if_nothing_more_specific": false,
+      "definition": "Counting the visible activity created by destruction, a loss or a spending programme as a net benefit, while ignoring what the same money or resources would otherwise have been used for (the unseen alternative).",
+      "example": "The storm was good for the town's economy: look at all the roofers and builders who have work now.",
+      "required_conditions": [
+        "Destruction, a loss or spending is said to benefit the economy or a community (jobs, activity, income).",
+        "The benefit counted is the visible spending or activity it causes.",
+        "What the same money or resources would otherwise have done is ignored."
+      ],
+      "legitimate_lookalikes": [
+        {
+          "text": "The resources would otherwise have sat idle, and this is stated or shown; then the net effect is a real question to argue, not this fallacy.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "Counting the visible benefit while also weighing the alternative use of the resources.",
+          "caveat_source": "catalog wording"
+        }
+      ],
+      "families": [],
+      "related": [],
+      "sources": [
+        {
+          "ref": "Wikipedia articles",
+          "title": "Wikipedia, \"Parable of the broken window\"",
+          "url": "https://en.wikipedia.org/wiki/Parable_of_the_broken_window",
+          "locator": "article \"Parable of the broken window\", lead section"
+        },
+        {
+          "ref": "Bastiat",
+          "title": "Frédéric Bastiat, \"What Is Seen and What Is Not Seen\" (1850), trans. Seymour Cain (Library of Economics and Liberty)",
+          "url": "https://www.econlib.org/library/Bastiat/basEss1.html",
+          "locator": "section \"1. The Broken Window\""
+        }
+      ]
+    },
+    {
       "id": "bulverism",
       "name": "Bulverism",
       "aliases": [
@@ -3501,7 +3689,9 @@
         "appeal-to-novelty",
         "group-think",
         "appeal-to-wealth",
-        "appeal-to-poverty"
+        "appeal-to-poverty",
+        "inflation-of-conflict",
+        "appeal-to-sincerity"
       ],
       "sources": [
         {
@@ -3606,7 +3796,12 @@
         "Words that should be read separately are read as one unit (or a statement true in a divided sense is read in a combined sense).",
         "The changed meaning is used to reach the conclusion."
       ],
-      "legitimate_lookalikes": [],
+      "legitimate_lookalikes": [
+        {
+          "text": "A modern form: 'you may do A, and you may do B, so you may do A and B together', or 'A is possible and B is possible, so both together are possible'.",
+          "caveat_source": "catalog wording"
+        }
+      ],
       "families": [
         "ambiguity"
       ],
@@ -4165,6 +4360,10 @@
         {
           "text": "Do not also tag hasty generalization for the same step.",
           "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If one ordinary case is carried over to another comparable case (no exception involved), use false analogy.",
+          "caveat_source": "catalog wording"
         }
       ],
       "families": [
@@ -4182,7 +4381,8 @@
         "jumping-to-conclusions",
         "specificity",
         "overgenerality",
-        "inductive-conversion"
+        "inductive-conversion",
+        "false-analogy"
       ],
       "sources": [
         {
@@ -4634,6 +4834,10 @@
         {
           "text": "A claim that engages the established evidence and argues against it is dissent, not this.",
           "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If the move is 'experts disagree, so nothing can be known' or 'so the field is unreliable' (sometimes described as an appeal to controversy or an argument from expert disagreement), use inflation of conflict.",
+          "caveat_source": "catalog wording"
         }
       ],
       "families": [
@@ -4647,7 +4851,8 @@
         "survivorship-bias",
         "quoting-out-of-context",
         "overwhelming-exception",
-        "cherry-picking"
+        "cherry-picking",
+        "inflation-of-conflict"
       ],
       "sources": [
         {
@@ -5440,6 +5645,10 @@
         {
           "text": "An analogy used to illustrate, not to argue.",
           "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If the source case is an exception (a special population or special circumstances) and the conclusion is a rule for ordinary cases or for everyone, use converse accident.",
+          "caveat_source": "catalog wording"
         }
       ],
       "families": [
@@ -5451,7 +5660,8 @@
         "question-begging-analogy",
         "dangling-comparative",
         "package-deal",
-        "proving-too-much"
+        "proving-too-much",
+        "converse-accident"
       ],
       "sources": [
         {
@@ -5677,7 +5887,7 @@
       "definition": "Presenting too few options, often just two, as the only ones, when others exist.",
       "example": "Either we cut the school's art programme or we go bankrupt.",
       "required_conditions": [
-        "A choice is presented between options as though they were the only ones, or an action is described as amounting to one bad outcome, implying that the only alternative is the speaker's option.",
+        "A choice is presented between options as though they were the only ones; or an action is described as amounting to one bad outcome, implying that the only alternative is the speaker's option; or the conclusion relies on an unstated two-way split, signalled by 'must' after one option is eliminated.",
         "At least one further reasonable option exists (name it).",
         "The conclusion relies on eliminating the stated options."
       ],
@@ -6364,7 +6574,9 @@
         "appeal-to-novelty",
         "chronological-snobbery",
         "appeal-to-wealth",
-        "appeal-to-poverty"
+        "appeal-to-poverty",
+        "inflation-of-conflict",
+        "appeal-to-sincerity"
       ],
       "sources": [
         {
@@ -7256,10 +7468,30 @@
         {
           "text": "Concluding that the specific point in dispute is unsettled.",
           "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If the claim simply conflicts with well-established findings and the conflict is not addressed, use disregarding known science.",
+          "caveat_source": "catalog wording"
         }
       ],
-      "families": [],
-      "related": [],
+      "families": [
+        "authority and popularity"
+      ],
+      "related": [
+        "appeal-to-authority",
+        "appeal-to-celebrity",
+        "appeal-to-accomplishment",
+        "appeal-to-the-people",
+        "bandwagon",
+        "appeal-to-tradition",
+        "appeal-to-novelty",
+        "group-think",
+        "chronological-snobbery",
+        "appeal-to-wealth",
+        "appeal-to-poverty",
+        "appeal-to-sincerity",
+        "disregarding-known-science"
+      ],
       "sources": [
         {
           "ref": "Wikipedia",
@@ -7604,7 +7836,8 @@
         "appeal-to-nature",
         "moralistic-fallacy",
         "naturalistic-fallacy-fallacy",
-        "appeal-to-consequences"
+        "appeal-to-consequences",
+        "appeal-to-inevitability"
       ],
       "sources": [
         {
@@ -8160,10 +8393,16 @@
         {
           "text": "A specific, local displacement where fixed demand is shown.",
           "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If the error is counting the visible activity created by a loss or by spending while ignoring what the same resources would otherwise have done, use broken window fallacy.",
+          "caveat_source": "catalog wording"
         }
       ],
       "families": [],
-      "related": [],
+      "related": [
+        "broken-window-fallacy"
+      ],
       "sources": [
         {
           "ref": "Wikipedia",
@@ -8486,6 +8725,26 @@
         {
           "text": "P itself is shown to be necessary, in which case Q is necessary too.",
           "caveat_source": "catalog wording"
+        },
+        {
+          "text": "Fatalist arguments ('the outcome is already settled, so what we do makes no difference') are often charged with this fallacy.",
+          "caveat_source": "source",
+          "source": {
+            "ref": "Wikipedia articles",
+            "title": "Wikipedia, \"Modal fallacy\"",
+            "url": "https://en.wikipedia.org/wiki/Modal_fallacy",
+            "locator": "article \"Modal fallacy\", section \"Examples\" (Norman Swartz's sea-battle example)"
+          }
+        },
+        {
+          "text": "Whether and where the ancient idle (lazy) argument, 'if your recovery is fated, consulting a doctor is futile', goes wrong is disputed; treat it as a contested reading.",
+          "caveat_source": "source",
+          "source": {
+            "ref": "SEP Fatalism",
+            "title": "Stanford Encyclopedia of Philosophy, \"Fatalism\" (Hugh Rice)",
+            "url": "https://plato.stanford.edu/entries/fatalism/",
+            "locator": "section \"7. The Idle Argument\""
+          }
         }
       ],
       "families": [
@@ -8552,7 +8811,8 @@
         "is-ought",
         "appeal-to-nature",
         "naturalistic-fallacy-fallacy",
-        "appeal-to-consequences"
+        "appeal-to-consequences",
+        "appeal-to-inevitability"
       ],
       "sources": [
         {
@@ -8740,7 +9000,8 @@
         "appeal-to-nature",
         "moralistic-fallacy",
         "naturalistic-fallacy-fallacy",
-        "appeal-to-consequences"
+        "appeal-to-consequences",
+        "appeal-to-inevitability"
       ],
       "sources": [
         {
@@ -8784,7 +9045,8 @@
         "is-ought",
         "appeal-to-nature",
         "moralistic-fallacy",
-        "appeal-to-consequences"
+        "appeal-to-consequences",
+        "appeal-to-inevitability"
       ],
       "sources": [
         {
@@ -11362,7 +11624,7 @@
       "required_conditions": [
         "A general rule or standard is accepted.",
         "An exception is claimed for one case.",
-        "No reason relevant to the rule's purpose is given for the exception; rank, convenience or 'I'm busy' do not count."
+        "No reason relevant to the rule's purpose is given for the exception; rank, convenience or 'I'm busy' do not count, and neither does a bare self-assessment that one meets the purpose the rule exists to verify ('I know I can be impartial')."
       ],
       "legitimate_lookalikes": [
         {

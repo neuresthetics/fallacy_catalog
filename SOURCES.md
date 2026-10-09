@@ -14,7 +14,9 @@ The definitions and examples in the catalog are written in plain words for this 
 | Wikipedia, "List of fallacies" | <https://en.wikipedia.org/wiki/List_of_fallacies> | 2026-10-08 | 142 | Cited by section and item name. |
 | The Fallacy Files (Gary N. Curtis) | <https://www.fallacyfiles.org/> | 2026-10-08 | 85 | Cited by the individual entry page. |
 | Stanford Encyclopedia of Philosophy, "Simpson's Paradox" (Jan Sprenger and Naftali Weinberger) | <https://plato.stanford.edu/entries/paradox-simpson/> | 2026-10-08 | 1 | Cited by section. |
-| Wikipedia (individual articles) | <https://en.wikipedia.org/> | 2026-10-08 | 4 | Single Wikipedia articles, cited by article and section, for statistical errors not on the list of fallacies. |
+| Wikipedia (individual articles) | <https://en.wikipedia.org/> | 2026-10-08 | 5 | Single Wikipedia articles, cited by article and section, for statistical errors not on the list of fallacies. |
+| Stanford Encyclopedia of Philosophy, "Fatalism" (Hugh Rice) | <https://plato.stanford.edu/entries/fatalism/> | 2026-10-08 | 0 | Cited by section. |
+| Frédéric Bastiat, "What Is Seen and What Is Not Seen" (1850), in Selected Essays on Political Economy, trans. Seymour Cain (Library of Economics and Liberty) | <https://www.econlib.org/library/Bastiat/basEss1.html> | 2026-10-08 | 1 | The original statement of the broken-window argument; cited by section. |
 
 ## Notes on the references
 
