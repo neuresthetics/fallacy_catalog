@@ -187,7 +187,7 @@
     },
     {
       "name": "causation",
-      "rule": "Use the specific causal entry; false cause only if none fits. Work down this order: an obvious third factor that is named or plainly known, including the reason cases were selected into a group: ignoring a common cause. A plausible reverse direction: reversing causation. A breakdown by a stated factor that reverses or removes an aggregate comparison: Simpson's paradox. No specific alternative can be identified: cum hoc. A study cited as showing causation where the study design itself is the problem: observational interpretation.",
+      "rule": "Use the specific causal entry; false cause only if none fits. First, if the passage gives a breakdown by some factor that reverses or removes an aggregate comparison, use Simpson's paradox. Otherwise work down this order: an obvious third factor that is named or plainly known, including the reason cases were selected into a group: ignoring a common cause. A plausible reverse direction: reversing causation. No specific alternative can be identified: cum hoc. A study cited as showing causation where the study design itself is the problem: observational interpretation.",
       "members": [
         "false-cause",
         "post-hoc",
@@ -337,7 +337,7 @@
     },
     {
       "name": "probability",
-      "rule": "Use one per step. 'The chance of this evidence if innocent' presented as the chance of innocence: prosecutor's fallacy. A test or screening result combined with how common the condition is: base-rate fallacy. 'All or most H have E; this has E; so (probably) H', with nothing on how common E is outside H: confusion of the inverse.",
+      "rule": "Use one per step. 'The chance of this evidence if innocent' presented as the chance of innocence: prosecutor's fallacy. A test or screening result read as the chance of having the condition, whether or not the passage states how common the condition is: base-rate fallacy. 'All or most H have E; this has E; so (probably) H', with nothing on how common E is outside H: confusion of the inverse.",
       "members": [
         "base-rate-fallacy",
         "prosecutors-fallacy",

@@ -28,7 +28,7 @@ Charity has a limit: use it to find what the speaker meant, not to rewrite a pas
 - Two labels in one sentence are allowed only if you can show two separate errors, each meeting its own conditions. Example: "They've never been proven safe, so they must be what's causing these headaches" contains an argument from ignorance ("never proven safe" treated as showing harm) and a separate causal leap (the headaches blamed on them with no evidence). Both labels may be recorded if each is shown.
 - **Cross-family ties.** Some ties cross families; follow these rules:
   - Ambiguity vs accident: if the key term changes sense between the rule and the case, use equivocation; if it keeps the same sense but the rule's rationale doesn't fit the case, use accident.
-  - Causal alternatives: follow the order in the causation family rule (an identifiable common cause, then reverse direction, then Simpson's paradox, then cum hoc; observational interpretation when the study design is the problem).
+  - Causal alternatives: follow the order in the causation family rule (Simpson's paradox when the passage gives a reversing breakdown; then an identifiable common cause, then reverse direction, then cum hoc; observational interpretation when the study design is the problem).
   - Nature vs tradition: naturalness or "built for" wording is appeal to nature; age or history alone is appeal to tradition; if both appear in one step, report appeal to nature and note tradition.
   - Probability: follow the probability family rule (prosecutor's fallacy, base-rate fallacy, confusion of the inverse).
 - **Charged wording is not a second error.** Loaded words in the same step as a flagged error are not a second flag unless they carry their own inference.
