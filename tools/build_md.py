@@ -276,6 +276,7 @@ def render_sources(doc):
     out.append("- Aristotle's *On Sophistical Refutations* is the original list of thirteen fallacies: six that depend on language (chapter 4) and seven that do not (chapters 4 and 5).")
     out.append("- *The Fallacy Files* is a long-running reference site on fallacies maintained by Gary N. Curtis, with one page per fallacy.")
     out.append("- Wikipedia's *List of fallacies* is used as a cross-check of common names; where a fallacy is listed only there, check the citations on that Wikipedia page before relying on it.")
+    out.append("- A few statistical errors that are not on the general lists of fallacies are cited to a dedicated reference article: the Stanford Encyclopedia of Philosophy entry on Simpson's paradox, or individual Wikipedia articles. These are cited by article and section.")
     return "\n".join(out).rstrip() + "\n"
 
 

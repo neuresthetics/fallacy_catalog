@@ -14,7 +14,7 @@ Each entry gives:
 - **related** entries to choose between, so one step gets one label;
 - **sources**: the published references that list the fallacy, with the exact entry, section or chapter so anyone can check them.
 
-The catalog currently has 216 entries. A further 12 names that describe the same mistake as another entry are folded into that entry as aliases and listed under "Names folded into other entries" in FALLACIES.md. The references are the *Internet Encyclopedia of Philosophy* and *Stanford Encyclopedia of Philosophy* articles on fallacies, Aristotle's *On Sophistical Refutations*, *The Fallacy Files*, and Wikipedia's *List of fallacies*. See [SOURCES.md](SOURCES.md).
+The catalog currently has 220 entries. A further 12 names that describe the same mistake as another entry are folded into that entry as aliases and listed under "Names folded into other entries" in FALLACIES.md. The references are the *Internet Encyclopedia of Philosophy* and *Stanford Encyclopedia of Philosophy* articles on fallacies, Aristotle's *On Sophistical Refutations*, *The Fallacy Files*, and Wikipedia's *List of fallacies*, plus a few dedicated articles for statistical errors (the *Stanford Encyclopedia of Philosophy* entry on Simpson's paradox and individual Wikipedia articles). See [SOURCES.md](SOURCES.md).
 
 ## Files
 

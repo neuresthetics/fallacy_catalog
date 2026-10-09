@@ -12,7 +12,8 @@ Work one step of the argument at a time. For each step you think goes wrong:
 
 **(b) Restate the argument in its strongest reasonable form.** Write out the premises and conclusion as the speaker would accept them. Be concrete:
 - **Read hedges as hedges.** "Likely", "may", "should be investigated" and "I suspect" make a weaker claim than "proves" or "will". Judge the claim actually made, not a stronger one.
-- **Supply common-knowledge premises the speaker would accept.** If a step needs a premise that any ordinary reader takes for granted (drunk driving is dangerous; water boils when heated), assume it, even though it is unstated. Do not count its absence as missing evidence.
+- **Supply common-knowledge premises the speaker would accept.** If a step needs a premise that any ordinary reader takes for granted (drunk driving is dangerous; water boils when heated), assume it, even though it is unstated. Do not count its absence as missing evidence. **Common knowledge** means something an educated general reader would know without looking it up. If reviewers could reasonably differ on whether a fact is common knowledge, treat it as not common knowledge.
+- **Read recommendations as claims when they rest on a cause.** A recommendation whose only rationale is a causal effect ("so take vitamin D", "so close the school") counts as asserting that effect, and as asserting it as established unless it is hedged.
 - **Supply the most plausible unstated premise, not the weakest.** If two readings fit the words, use the one that makes the argument better.
 - **Treat stated defaults and procedural rules as such.** A burden of proof, a presumption of innocence, a null hypothesis, a house rule or a decision procedure tells you what to do when evidence is lacking. It is not a claim about what is true.
 - **Respect the conclusion's scope.** A conclusion about what to do, what to investigate, or what is probable is not a claim that the matter is settled.
@@ -25,11 +26,17 @@ Charity has a limit: use it to find what the speaker meant, not to rewrite a pas
 - Entries marked **Fallback** (`use_only_if_nothing_more_specific: true`), such as non sequitur, false cause and formal fallacy, may be used only when no more specific entry fits. Say which specific entries you considered and why they don't fit.
 - Some families also give a cross-family tie-break (for example, the selective-evidence family separates suppressed evidence, cherry-picking, Texas sharpshooter, survivorship bias and the lottery fallacy). Follow it.
 - Two labels in one sentence are allowed only if you can show two separate errors, each meeting its own conditions. Example: "They've never been proven safe, so they must be what's causing these headaches" contains an argument from ignorance ("never proven safe" treated as showing harm) and a separate causal leap (the headaches blamed on them with no evidence). Both labels may be recorded if each is shown.
+- **Cross-family ties.** Some ties cross families; follow these rules:
+  - Ambiguity vs accident: if the key term changes sense between the rule and the case, use equivocation; if it keeps the same sense but the rule's rationale doesn't fit the case, use accident.
+  - Causal alternatives: follow the order in the causation family rule (an identifiable common cause, then reverse direction, then Simpson's paradox, then cum hoc; observational interpretation when the study design is the problem).
+  - Nature vs tradition: naturalness or "built for" wording is appeal to nature; age or history alone is appeal to tradition; if both appear in one step, report appeal to nature and note tradition.
+  - Probability: follow the probability family rule (prosecutor's fallacy, base-rate fallacy, confusion of the inverse).
+- **Charged wording is not a second error.** Loaded words in the same step as a flagged error are not a second flag unless they carry their own inference.
 - **Reporting names.** Use the entry's name, not an alias. Where a family rule says to report under a familiar name with a qualifier, do so: a shift of meaning in a syllogism's middle term is reported as "equivocation (four terms)".
 
 **(d) Check every required condition.** For each numbered condition in the entry, cite the words in the passage that satisfy it. If any condition is not met, do not flag. If a condition depends on facts that are not in the text (what the speaker knew, what evidence exists, how a study was run), apply step (f).
 
-**(e) Rule out each legitimate look-alike.** For each look-alike listed in the entry, say in one line why it does not apply. If one plausibly applies, downgrade to "possible issue" or drop the flag.
+**(e) Rule out each legitimate look-alike.** For each look-alike listed in the entry, say in one line why it does not apply. A look-alike can downgrade a flag only if the passage supplies its features, or those features are common knowledge in the sense of step (b). A look-alike you would have to imagine (a mechanism that might exist, a default that might have been set) does not count. If one does apply, downgrade to "possible issue" or drop the flag, as the look-alike says.
 
 **(f) Handle conditions that may need facts outside the text.**
 - Each entry lists, in `outside_text_conditions`, the numbered conditions that may need facts from outside the passage (they are marked in FALLACIES.md). Only those conditions are affected; every other condition must be met from the text as usual.
@@ -41,6 +48,8 @@ Charity has a limit: use it to find what the speaker meant, not to rewrite a pas
 - **Flag**: every condition is met from the text and no look-alike applies.
 - **Possible issue**: the text meets the conditions it can, but at least one condition depends on context that is not in the text, or a look-alike might apply. Say exactly what would settle it.
 - **No issue**: a condition fails, or a look-alike applies.
+- **No argument.** A passage that makes no argument, or only reports, quotes, teaches or satirises someone else's argument, is no issue. Record the entry mentioned, if any.
+- **Other errors (not fallacies).** Arithmetic slips, wrong figures and factual mistakes that are not reasoning errors go in a separate "other errors" note. They do not change the verdict.
 - **Correct use of a fallacy name, or a fair reduction to absurdity.** If the speaker correctly identifies or rebuts a fallacy, or argues by reduction to absurdity from the opponent's own stated principle, the verdict is no issue. Record the entry they invoked, so the reader can see it was checked.
 
 **(h) Recommended: a second reviewer.** A second reviewer, who has not seen the first reviewer's verdicts, re-checks each flag using steps (a) to (g). Report only the flags both reviewers agree on; list the disagreements separately as possible issues.
@@ -60,6 +69,7 @@ Conditions:
 Look-alikes:
   - <look-alike> — does not apply because ...
 Verdict: flag | possible issue | no issue   (what would settle it, if possible issue)
+Other errors (not fallacies): <arithmetic or factual slips, if any; optional>
 ```
 
 ## Worked example 1: a true flag

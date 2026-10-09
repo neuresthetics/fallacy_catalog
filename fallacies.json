@@ -1,6 +1,6 @@
 {
   "title": "Fallacy Catalog",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "A plain, sourced catalog of named logical fallacies for checking real arguments. Each entry gives a standard name, aliases, a category, a short definition, an original example, the conditions that must all be shown from the text before the label applies, legitimate look-alikes that are not the fallacy, whether the fallacy can be detected from the text alone, related entries to choose between, and the published references that list it.",
   "license": "MIT",
   "references": [
@@ -38,6 +38,20 @@
       "url": "https://www.fallacyfiles.org/",
       "accessed": "2026-10-08",
       "note": "Cited by the individual entry page."
+    },
+    {
+      "ref": "SEP Simpson",
+      "title": "Stanford Encyclopedia of Philosophy, \"Simpson's Paradox\" (Jan Sprenger and Naftali Weinberger)",
+      "url": "https://plato.stanford.edu/entries/paradox-simpson/",
+      "accessed": "2026-10-08",
+      "note": "Cited by section."
+    },
+    {
+      "ref": "Wikipedia articles",
+      "title": "Wikipedia (individual articles)",
+      "url": "https://en.wikipedia.org/",
+      "accessed": "2026-10-08",
+      "note": "Single Wikipedia articles, cited by article and section, for statistical errors not on the list of fallacies."
     }
   ],
   "families": [
@@ -173,7 +187,7 @@
     },
     {
       "name": "causation",
-      "rule": "Use the specific causal entry; false cause only if none fits. Only a correlation is shown: cum hoc. The argument does address causes but misses an obvious third factor: ignoring a common cause. The reverse direction is named and plausible: reversing causation.",
+      "rule": "Use the specific causal entry; false cause only if none fits. Work down this order: an obvious third factor that is named or plainly known, including the reason cases were selected into a group: ignoring a common cause. A plausible reverse direction: reversing causation. A breakdown by a stated factor that reverses or removes an aggregate comparison: Simpson's paradox. No specific alternative can be identified: cum hoc. A study cited as showing causation where the study design itself is the problem: observational interpretation.",
       "members": [
         "false-cause",
         "post-hoc",
@@ -186,7 +200,8 @@
         "superstitious-thinking",
         "magical-thinking",
         "furtive-fallacy",
-        "retrospective-determinism"
+        "retrospective-determinism",
+        "simpsons-paradox"
       ]
     },
     {
@@ -322,14 +337,15 @@
     },
     {
       "name": "probability",
-      "rule": "Use one per step. A screening or test result combined with how common the condition is: base-rate fallacy. 'The chance of this evidence if innocent' presented as the chance of innocence: prosecutor's fallacy.",
+      "rule": "Use one per step. 'The chance of this evidence if innocent' presented as the chance of innocence: prosecutor's fallacy. A test or screening result combined with how common the condition is: base-rate fallacy. 'All or most H have E; this has E; so (probably) H', with nothing on how common E is outside H: confusion of the inverse.",
       "members": [
         "base-rate-fallacy",
         "prosecutors-fallacy",
         "conjunction-fallacy",
         "independence-fallacy",
         "appeal-to-probability",
-        "double-counting"
+        "double-counting",
+        "confusion-of-the-inverse"
       ]
     },
     {
@@ -473,6 +489,16 @@
         "texas-sharpshooter",
         "survivorship-bias",
         "lottery-fallacy"
+      ]
+    },
+    {
+      "name": "reporting numbers",
+      "rule": "Use one: 'significant' read as 'large' or 'important' (statistical vs practical significance); a relative change whose absolute size is small (relative-risk framing); raw counts compared across groups of very different size (fallacy of the sheep); more precision than the method supports (fake precision).",
+      "members": [
+        "statistical-vs-practical-significance",
+        "relative-risk-framing",
+        "fallacy-of-the-sheep",
+        "fake-precision"
       ]
     }
   ],
@@ -642,6 +668,10 @@
         {
           "text": "Applying a rule strictly for a stated reason (fairness, predictability) after considering the exception.",
           "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If the key term changes sense between the rule and the case, use equivocation.",
+          "caveat_source": "catalog wording"
         }
       ],
       "families": [
@@ -661,7 +691,8 @@
         "specificity",
         "overgenerality",
         "inductive-conversion",
-        "accident-aristotle"
+        "accident-aristotle",
+        "equivocation"
       ],
       "sources": [
         {
@@ -1016,7 +1047,7 @@
       "required_conditions": [
         "A conditional 'if P then Q' is used as a premise.",
         "Q is asserted as true.",
-        "P is concluded as definitely following."
+        "P is concluded as definitely or almost definitely following, or as probable with no other explanation of Q considered."
       ],
       "legitimate_lookalikes": [
         {
@@ -1025,6 +1056,10 @@
         },
         {
           "text": "The conditional is actually a biconditional ('only if' or 'if and only if') in context.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If the premise is a statistical link ('all or most P have Q') and the conclusion is 'probably P', use confusion of the inverse.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -1040,7 +1075,8 @@
         "formal-fallacy",
         "affirming-a-disjunct",
         "denying-a-conjunct",
-        "undistributed-middle"
+        "undistributed-middle",
+        "confusion-of-the-inverse"
       ],
       "sources": [
         {
@@ -1900,11 +1936,15 @@
           "caveat_source": "catalog wording"
         },
         {
-          "text": "Evolutionary history offered as evidence of physiological fit, for a conclusion about fit.",
+          "text": "Independent physiological evidence of fit (digestion, nutrient data) offered for a conclusion about fit. A long history of use, or the phrase 'what our bodies are built for', is not such evidence.",
           "caveat_source": "catalog wording"
         },
         {
           "text": "If the conclusion is a moral one drawn from facts, use is-ought.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If only age or history is given, use appeal to tradition. If naturalness wording and history appear in the same step, report appeal to nature and note tradition.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -1916,7 +1956,8 @@
         "is-ought",
         "moralistic-fallacy",
         "naturalistic-fallacy-fallacy",
-        "appeal-to-consequences"
+        "appeal-to-consequences",
+        "appeal-to-tradition"
       ],
       "sources": [
         {
@@ -2116,7 +2157,8 @@
         "prosecutors-fallacy",
         "conjunction-fallacy",
         "independence-fallacy",
-        "double-counting"
+        "double-counting",
+        "confusion-of-the-inverse"
       ],
       "sources": [
         {
@@ -2482,6 +2524,10 @@
             "url": "https://iep.utm.edu/fallacy/",
             "locator": "section 6, \"Partial List of Fallacies\", entry \"Traditional Wisdom\""
           }
+        },
+        {
+          "text": "If the step also calls the practice natural or what we are 'built for', report appeal to nature and note tradition.",
+          "caveat_source": "catalog wording"
         }
       ],
       "families": [
@@ -2497,7 +2543,8 @@
         "group-think",
         "chronological-snobbery",
         "appeal-to-wealth",
-        "appeal-to-poverty"
+        "appeal-to-poverty",
+        "appeal-to-nature"
       ],
       "sources": [
         {
@@ -2659,7 +2706,11 @@
           }
         },
         {
-          "text": "A procedural default or burden rule (presumption of innocence, a null hypothesis): the conclusion is what to decide or how to act, not that the claim is false.",
+          "text": "A procedural default or burden rule established independently of this argument (a law, regulation, a null hypothesis or a house rule set beforehand), with the conclusion kept to a decision about what to do rather than asserting that the claim is false. It does not apply if an established standard exists and points the other way.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "A precautionary decision under uncertainty, stated as a decision, with the costs of being wrong either way weighed.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -2985,7 +3036,7 @@
           "caveat_source": "catalog wording"
         },
         {
-          "text": "Pointing out that the question presupposes something false; consider complex question.",
+          "text": "The respondent says that the question presupposes something false; then consider complex question. Without that statement, this look-alike does not apply.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -3153,7 +3204,8 @@
         "conjunction-fallacy",
         "independence-fallacy",
         "appeal-to-probability",
-        "double-counting"
+        "double-counting",
+        "confusion-of-the-inverse"
       ],
       "sources": [
         {
@@ -3188,7 +3240,7 @@
       "outside_text_conditions": [],
       "use_only_if_nothing_more_specific": false,
       "definition": "Supporting a conclusion with a premise that is only acceptable to someone who already accepts the conclusion, so the argument gives no independent reason. Includes arguing in a circle, where the conclusion reappears, openly or reworded, among the premises.",
-      "example": "Her advice is trustworthy because she's an honest person, and she's honest because her advice is trustworthy.",
+      "example": "Her advice is trustworthy because she's an honest person, and she's honest because her advice is trustworthy. Also: a forecasting model is declared accurate because it agrees with its own earlier forecasts.",
       "required_conditions": [
         "A conclusion is argued for.",
         "A premise asserts the conclusion, or something the audience could only accept if they already accepted the conclusion.",
@@ -3364,8 +3416,8 @@
       "definition": "Drawing a conclusion from a selected part of the evidence while the rest of it, which is stated or plainly known, points the other way or weakens it and goes unanswered. Unlike suppressed evidence, the contrary evidence is in plain view.",
       "example": "The report shows test scores rose at three of the ten pilot schools and fell at the other seven. The programme clearly works: look at those three schools.",
       "required_conditions": [
-        "The arguer selects a subset of the available or stated data.",
-        "The rest of the data, stated or plainly known, points the other way or dilutes the subset.",
+        "The arguer selects a subset of the available or stated data. This includes choosing a measurement period while the arguer's own stated record extends beyond it.",
+        "The rest of the data, stated or plainly known, points the other way or dilutes the subset; or a comparative claim is made with no comparison figure while the chosen window excludes stated history.",
         "The conclusion rests on the subset, and the rest gets no answer."
       ],
       "legitimate_lookalikes": [
@@ -3635,7 +3687,8 @@
         "superstitious-thinking",
         "magical-thinking",
         "furtive-fallacy",
-        "retrospective-determinism"
+        "retrospective-determinism",
+        "simpsons-paradox"
       ],
       "sources": [
         {
@@ -3711,19 +3764,25 @@
       ],
       "category": "informal: presumption",
       "status": "standard",
-      "text_detectable": "yes",
-      "outside_text_conditions": [],
+      "text_detectable": "partly",
+      "outside_text_conditions": [
+        2
+      ],
       "use_only_if_nothing_more_specific": false,
       "definition": "Asking a question that assumes an unproven claim, so any direct answer seems to concede it.",
       "example": "Have you stopped cheating on your taxes?",
       "required_conditions": [
         "A question is asked.",
-        "It presupposes a claim that the respondent has not accepted.",
+        "It presupposes a claim that is contested and not established in the passage.",
         "Any direct answer would commit the respondent to that claim."
       ],
       "legitimate_lookalikes": [
         {
           "text": "The presupposition has already been established or accepted.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If the respondent replies with an implicit factual rebuttal and the record that would settle it is not in the text, record possible issue under complex question, settled by the record.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -3972,6 +4031,60 @@
       ]
     },
     {
+      "id": "confusion-of-the-inverse",
+      "name": "Confusion of the inverse",
+      "aliases": [
+        "inverse fallacy",
+        "conditional probability fallacy"
+      ],
+      "category": "informal: statistical and probabilistic",
+      "status": "standard",
+      "text_detectable": "yes",
+      "outside_text_conditions": [],
+      "use_only_if_nothing_more_specific": false,
+      "definition": "Treating the chance of a feature given a hypothesis as if it were the chance of the hypothesis given the feature: from 'all or most H have E' and 'this case has E', concluding that it is (probably) H, without asking how common E is among cases that are not H.",
+      "example": "Nearly every fake charity we've exposed used urgent deadlines and pushy phone calls. This charity uses urgent deadlines and pushy calls, so it's probably fake.",
+      "required_conditions": [
+        "The passage states or relies on: all or most H have feature E.",
+        "A case with E is concluded to be H, or probably H.",
+        "Nothing is given or used about how common E is among cases that are not H."
+      ],
+      "legitimate_lookalikes": [
+        {
+          "text": "How common E is outside H is given or used, and E is shown to be rare outside H, so the inference is weighed properly.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If the error is ignoring how common H is overall when reading a test result, use base-rate fallacy; if 'the chance of this evidence if innocent' is presented as the chance of innocence, use prosecutor's fallacy.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If the premise is a strict conditional and the conclusion is stated as certain, use affirming the consequent.",
+          "caveat_source": "catalog wording"
+        }
+      ],
+      "families": [
+        "probability"
+      ],
+      "related": [
+        "base-rate-fallacy",
+        "prosecutors-fallacy",
+        "conjunction-fallacy",
+        "independence-fallacy",
+        "appeal-to-probability",
+        "double-counting",
+        "affirming-the-consequent"
+      ],
+      "sources": [
+        {
+          "ref": "Wikipedia articles",
+          "title": "Wikipedia, \"Confusion of the inverse\"",
+          "url": "https://en.wikipedia.org/wiki/Confusion_of_the_inverse",
+          "locator": "article \"Confusion of the inverse\", lead section"
+        }
+      ]
+    },
+    {
       "id": "conjunction-fallacy",
       "name": "Conjunction fallacy",
       "aliases": [
@@ -4002,7 +4115,8 @@
         "prosecutors-fallacy",
         "independence-fallacy",
         "appeal-to-probability",
-        "double-counting"
+        "double-counting",
+        "confusion-of-the-inverse"
       ],
       "sources": [
         {
@@ -4196,7 +4310,8 @@
         "superstitious-thinking",
         "magical-thinking",
         "furtive-fallacy",
-        "retrospective-determinism"
+        "retrospective-determinism",
+        "simpsons-paradox"
       ],
       "sources": [
         {
@@ -4450,7 +4565,7 @@
       "required_conditions": [
         "A conditional 'if P then Q' is used as a premise.",
         "P is denied.",
-        "Not-Q is concluded as following."
+        "Not-Q is concluded as definitely or almost definitely following, or as probable with no other route to Q considered."
       ],
       "legitimate_lookalikes": [
         {
@@ -4713,7 +4828,8 @@
         "prosecutors-fallacy",
         "conjunction-fallacy",
         "independence-fallacy",
-        "appeal-to-probability"
+        "appeal-to-probability",
+        "confusion-of-the-inverse"
       ],
       "sources": [
         {
@@ -4895,6 +5011,10 @@
         {
           "text": "When the shifting word is the middle term of a categorical syllogism, report it as equivocation and add '(four terms)'.",
           "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If the key term keeps the same sense but the rule's rationale doesn't fit the case, use accident.",
+          "caveat_source": "catalog wording"
         }
       ],
       "families": [
@@ -4918,7 +5038,8 @@
         "combination-of-words",
         "division-of-words",
         "form-of-expression",
-        "quoting-out-of-context"
+        "quoting-out-of-context",
+        "accident"
       ],
       "sources": [
         {
@@ -5194,14 +5315,17 @@
         }
       ],
       "families": [
-        "measurement and models"
+        "measurement and models",
+        "reporting numbers"
       ],
       "related": [
         "mcnamara-fallacy",
         "doorman-fallacy",
         "ludic-fallacy",
         "over-extrapolation",
-        "fallacy-of-the-sheep"
+        "fallacy-of-the-sheep",
+        "statistical-vs-practical-significance",
+        "relative-risk-framing"
       ],
       "sources": [
         {
@@ -5264,14 +5388,17 @@
         }
       ],
       "families": [
-        "measurement and models"
+        "measurement and models",
+        "reporting numbers"
       ],
       "related": [
         "mcnamara-fallacy",
         "fake-precision",
         "doorman-fallacy",
         "ludic-fallacy",
-        "over-extrapolation"
+        "over-extrapolation",
+        "statistical-vs-practical-significance",
+        "relative-risk-framing"
       ],
       "sources": [
         {
@@ -5500,6 +5627,7 @@
         "magical-thinking",
         "furtive-fallacy",
         "retrospective-determinism",
+        "simpsons-paradox",
         "non-cause-aristotle",
         "inconsistency"
       ],
@@ -5549,7 +5677,7 @@
       "definition": "Presenting too few options, often just two, as the only ones, when others exist.",
       "example": "Either we cut the school's art programme or we go bankrupt.",
       "required_conditions": [
-        "A choice is presented between options as though they were the only ones.",
+        "A choice is presented between options as though they were the only ones, or an action is described as amounting to one bad outcome, implying that the only alternative is the speaker's option.",
         "At least one further reasonable option exists (name it).",
         "The conclusion relies on eliminating the stated options."
       ],
@@ -5974,7 +6102,8 @@
         "observational-interpretation",
         "superstitious-thinking",
         "magical-thinking",
-        "retrospective-determinism"
+        "retrospective-determinism",
+        "simpsons-paradox"
       ],
       "sources": [
         {
@@ -6002,7 +6131,7 @@
       "required_conditions": [
         "The process is presented as random with independent outcomes (or is known to be).",
         "A run of one outcome is cited.",
-        "The opposite outcome is concluded to be more likely next because it is 'due'."
+        "The opposite outcome is concluded to be more likely next because it is 'due', or the same outcome is concluded to be less likely because it just occurred."
       ],
       "legitimate_lookalikes": [
         {
@@ -7054,7 +7183,8 @@
         "prosecutors-fallacy",
         "conjunction-fallacy",
         "appeal-to-probability",
-        "double-counting"
+        "double-counting",
+        "confusion-of-the-inverse"
       ],
       "sources": [
         {
@@ -8082,7 +8212,8 @@
         "observational-interpretation",
         "superstitious-thinking",
         "furtive-fallacy",
-        "retrospective-determinism"
+        "retrospective-determinism",
+        "simpsons-paradox"
       ],
       "sources": [
         {
@@ -8793,7 +8924,7 @@
           "caveat_source": "catalog wording"
         },
         {
-          "text": "Applying a criterion that is part of what the word means (someone who eats meat is not a vegan).",
+          "text": "Applying a criterion that is part of what the word means (someone who eats meat is not a vegan). A criterion that the speaker's own earlier claim did not depend on cannot be used this way.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -9074,7 +9205,8 @@
         "superstitious-thinking",
         "magical-thinking",
         "furtive-fallacy",
-        "retrospective-determinism"
+        "retrospective-determinism",
+        "simpsons-paradox"
       ],
       "sources": [
         {
@@ -9575,7 +9707,8 @@
         "superstitious-thinking",
         "magical-thinking",
         "furtive-fallacy",
-        "retrospective-determinism"
+        "retrospective-determinism",
+        "simpsons-paradox"
       ],
       "sources": [
         {
@@ -9735,7 +9868,8 @@
         "conjunction-fallacy",
         "independence-fallacy",
         "appeal-to-probability",
-        "double-counting"
+        "double-counting",
+        "confusion-of-the-inverse"
       ],
       "sources": [
         {
@@ -10343,6 +10477,7 @@
         "magical-thinking",
         "furtive-fallacy",
         "retrospective-determinism",
+        "simpsons-paradox",
         "gamblers-fallacy",
         "hot-hand-fallacy",
         "inverse-gamblers-fallacy",
@@ -10486,6 +10621,53 @@
       ]
     },
     {
+      "id": "relative-risk-framing",
+      "name": "Relative-risk framing (absolute risk left out)",
+      "aliases": [
+        "relative risk without absolute risk"
+      ],
+      "category": "informal: statistical and probabilistic",
+      "status": "standard",
+      "text_detectable": "partly",
+      "outside_text_conditions": [
+        2
+      ],
+      "use_only_if_nothing_more_specific": false,
+      "definition": "Presenting a change in risk only as a relative figure ('halves the risk', '50% more likely') when the absolute change is small, so the effect seems larger or more important than it is.",
+      "example": "This drug cuts your risk of a stroke by 50%, so everyone over 40 should take it (the risk falls from 2 in 1,000 to 1 in 1,000).",
+      "required_conditions": [
+        "A relative change in risk is reported.",
+        "The absolute change is small, whether stated or left out.",
+        "The conclusion relies on the relative figure."
+      ],
+      "legitimate_lookalikes": [
+        {
+          "text": "Both the relative and the absolute figures are given and weighed.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "The outcome is common, so the relative change is also large in absolute terms, and this is stated or plainly known.",
+          "caveat_source": "catalog wording"
+        }
+      ],
+      "families": [
+        "reporting numbers"
+      ],
+      "related": [
+        "statistical-vs-practical-significance",
+        "fallacy-of-the-sheep",
+        "fake-precision"
+      ],
+      "sources": [
+        {
+          "ref": "Wikipedia articles",
+          "title": "Wikipedia, \"Relative risk\"",
+          "url": "https://en.wikipedia.org/wiki/Relative_risk",
+          "locator": "article \"Relative risk\", section \"Usage in reporting\""
+        }
+      ]
+    },
+    {
       "id": "retrospective-determinism",
       "name": "Retrospective determinism",
       "aliases": [],
@@ -10523,6 +10705,7 @@
         "superstitious-thinking",
         "magical-thinking",
         "furtive-fallacy",
+        "simpsons-paradox",
         "historians-fallacy",
         "historical-fallacy",
         "baconian-fallacy"
@@ -10575,7 +10758,8 @@
         "superstitious-thinking",
         "magical-thinking",
         "furtive-fallacy",
-        "retrospective-determinism"
+        "retrospective-determinism",
+        "simpsons-paradox"
       ],
       "sources": [
         {
@@ -10836,6 +11020,72 @@
       ]
     },
     {
+      "id": "simpsons-paradox",
+      "name": "Simpson's paradox (aggregation reversal)",
+      "aliases": [
+        "Simpson's paradox",
+        "Simpson's reversal",
+        "Yule-Simpson effect",
+        "reversal paradox"
+      ],
+      "category": "informal: statistical and probabilistic",
+      "status": "standard",
+      "text_detectable": "partly",
+      "outside_text_conditions": [
+        2
+      ],
+      "use_only_if_nothing_more_specific": false,
+      "definition": "Drawing a conclusion from a comparison of combined totals when the groups being compared differ in make-up, and the comparison within each subgroup comes out the other way or disappears.",
+      "example": "Hospital A loses a higher share of its patients than Hospital B, so B is the safer hospital (A takes far more of the critical cases, and within both the mild and the critical cases A's death rate is lower).",
+      "required_conditions": [
+        "An aggregate comparison between groups is made.",
+        "Data broken down by some factor, stated or plainly known, reverse the comparison or remove it.",
+        "The groups differ in composition on that factor.",
+        "The conclusion is drawn from the aggregate."
+      ],
+      "legitimate_lookalikes": [
+        {
+          "text": "The aggregate is what is actually relevant to the decision (for example, the overall rate for someone who cannot choose their subgroup), and this is the reason given.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If a third factor that causes both is named but no breakdown is given, use ignoring a common cause.",
+          "caveat_source": "catalog wording"
+        }
+      ],
+      "families": [
+        "causation"
+      ],
+      "related": [
+        "false-cause",
+        "post-hoc",
+        "cum-hoc",
+        "common-cause",
+        "reverse-causation",
+        "single-cause",
+        "regression-fallacy",
+        "observational-interpretation",
+        "superstitious-thinking",
+        "magical-thinking",
+        "furtive-fallacy",
+        "retrospective-determinism"
+      ],
+      "sources": [
+        {
+          "ref": "SEP Simpson",
+          "title": "Stanford Encyclopedia of Philosophy, \"Simpson's Paradox\" (Jan Sprenger and Naftali Weinberger)",
+          "url": "https://plato.stanford.edu/entries/paradox-simpson/",
+          "locator": "opening summary and section \"1. Introduction\""
+        },
+        {
+          "ref": "Wikipedia articles",
+          "title": "Wikipedia, \"Simpson's paradox\"",
+          "url": "https://en.wikipedia.org/wiki/Simpson%27s_paradox",
+          "locator": "article \"Simpson's paradox\", lead section"
+        }
+      ]
+    },
+    {
       "id": "single-cause",
       "name": "Fallacy of the single cause",
       "aliases": [
@@ -10876,6 +11126,7 @@
         "magical-thinking",
         "furtive-fallacy",
         "retrospective-determinism",
+        "simpsons-paradox",
         "lack-of-proportion",
         "exaggeration",
         "oversimplification",
@@ -11196,6 +11447,57 @@
       ]
     },
     {
+      "id": "statistical-vs-practical-significance",
+      "name": "Confusing statistical with practical significance",
+      "aliases": [
+        "statistical significance taken as importance"
+      ],
+      "category": "informal: statistical and probabilistic",
+      "status": "standard",
+      "text_detectable": "yes",
+      "outside_text_conditions": [],
+      "use_only_if_nothing_more_specific": false,
+      "definition": "Treating a statistically significant result as if it showed a large or important effect. Statistical significance says how unlikely the result would be by chance alone, not how big the effect is.",
+      "example": "The trial found the new diet led to statistically significant weight loss, so it is a major breakthrough for people trying to slim down (the average loss was 0.4 kg in a year).",
+      "required_conditions": [
+        "A result is called statistically significant.",
+        "It is presented as large, important or worth acting on.",
+        "The stated effect size is too small to support that, or no effect size is given and the claim of importance rests on the word 'significant' alone."
+      ],
+      "legitimate_lookalikes": [
+        {
+          "text": "The effect size is reported and is large enough for the stated use.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "Reporting that a result is statistically significant, without claiming that it is large or important.",
+          "caveat_source": "catalog wording"
+        }
+      ],
+      "families": [
+        "reporting numbers"
+      ],
+      "related": [
+        "relative-risk-framing",
+        "fallacy-of-the-sheep",
+        "fake-precision"
+      ],
+      "sources": [
+        {
+          "ref": "Wikipedia articles",
+          "title": "Wikipedia, \"Misuse of statistics\"",
+          "url": "https://en.wikipedia.org/wiki/Misuse_of_statistics",
+          "locator": "article \"Misuse of statistics\", section \"Confusing statistical significance with practical significance\""
+        },
+        {
+          "ref": "Wikipedia articles",
+          "title": "Wikipedia, \"Clinical significance\"",
+          "url": "https://en.wikipedia.org/wiki/Clinical_significance",
+          "locator": "article \"Clinical significance\", section \"Types of significance > Practical significance\""
+        }
+      ]
+    },
+    {
       "id": "stereotyping",
       "name": "Stereotyping",
       "aliases": [],
@@ -11276,6 +11578,10 @@
         },
         {
           "text": "Rebutting a version of the view that someone really holds, while saying whose version it is.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "Describing the opponent's position in an established but contested usage they would recognise (for example, calling slower growth a 'cut'): possible issue, unless the opponent explicitly rejected that description, in which case it can be flagged.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -11504,7 +11810,8 @@
         "observational-interpretation",
         "magical-thinking",
         "furtive-fallacy",
-        "retrospective-determinism"
+        "retrospective-determinism",
+        "simpsons-paradox"
       ],
       "sources": [
         {
@@ -11735,7 +12042,7 @@
           "caveat_source": "catalog wording"
         },
         {
-          "text": "A cluster found by searching is treated only as a lead to test with new data.",
+          "text": "A cluster found by searching is treated only as a lead to test with new data. A conclusion that also asserts a cause ('this can't be coincidence') or calls for remedies is not only a lead.",
           "caveat_source": "catalog wording"
         },
         {

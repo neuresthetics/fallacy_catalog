@@ -13,6 +13,8 @@ The definitions and examples in the catalog are written in plain words for this 
 | Aristotle, On Sophistical Refutations, trans. W. A. Pickard-Cambridge (Internet Classics Archive) | <https://classics.mit.edu/Aristotle/sophist_refut.mb.txt> | 2026-10-08 | 13 | Chapters 4 and 5 list the thirteen sophistical refutations. |
 | Wikipedia, "List of fallacies" | <https://en.wikipedia.org/wiki/List_of_fallacies> | 2026-10-08 | 142 | Cited by section and item name. |
 | The Fallacy Files (Gary N. Curtis) | <https://www.fallacyfiles.org/> | 2026-10-08 | 85 | Cited by the individual entry page. |
+| Stanford Encyclopedia of Philosophy, "Simpson's Paradox" (Jan Sprenger and Naftali Weinberger) | <https://plato.stanford.edu/entries/paradox-simpson/> | 2026-10-08 | 1 | Cited by section. |
+| Wikipedia (individual articles) | <https://en.wikipedia.org/> | 2026-10-08 | 4 | Single Wikipedia articles, cited by article and section, for statistical errors not on the list of fallacies. |
 
 ## Notes on the references
 
@@ -20,3 +22,4 @@ The definitions and examples in the catalog are written in plain words for this 
 - Aristotle's *On Sophistical Refutations* is the original list of thirteen fallacies: six that depend on language (chapter 4) and seven that do not (chapters 4 and 5).
 - *The Fallacy Files* is a long-running reference site on fallacies maintained by Gary N. Curtis, with one page per fallacy.
 - Wikipedia's *List of fallacies* is used as a cross-check of common names; where a fallacy is listed only there, check the citations on that Wikipedia page before relying on it.
+- A few statistical errors that are not on the general lists of fallacies are cited to a dedicated reference article: the Stanford Encyclopedia of Philosophy entry on Simpson's paradox, or individual Wikipedia articles. These are cited by article and section.

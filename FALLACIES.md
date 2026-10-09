@@ -2,9 +2,9 @@
 
 <!-- Generated from fallacies.json by tools/build_md.py. Do not edit by hand. -->
 
-216 named fallacies, grouped by category and listed alphabetically within each category. 216 entries have confirmed published sources; 0 are marked TODO. See [SOURCES.md](SOURCES.md) for the references, [METHOD.md](METHOD.md) for how to check an argument, and [README.md](README.md) for what each field means.
+220 named fallacies, grouped by category and listed alphabetically within each category. 220 entries have confirmed published sources; 0 are marked TODO. See [SOURCES.md](SOURCES.md) for the references, [METHOD.md](METHOD.md) for how to check an argument, and [README.md](README.md) for what each field means.
 
-Detectable from the text alone: 172 yes, 40 partly, 4 no (*partly* entries name the conditions that may need outside facts; entries marked *no* may only be raised as questions). 12 entries are contested names. 11 are broad fallbacks, to be used only when nothing more specific fits.
+Detectable from the text alone: 173 yes, 43 partly, 4 no (*partly* entries name the conditions that may need outside facts; entries marked *no* may only be raised as questions). 12 entries are contested names. 11 are broad fallbacks, to be used only when nothing more specific fits.
 
 ## Contents
 
@@ -19,7 +19,7 @@ Detectable from the text alone: 172 yes, 40 partly, 4 no (*partly* entries name 
 | [Informal: presumption](#informal-presumption) | 47 |
 | [Informal: weak induction](#informal-weak-induction) | 20 |
 | [Informal: causal](#informal-causal) | 9 |
-| [Informal: statistical and probabilistic](#informal-statistical-and-probabilistic) | 26 |
+| [Informal: statistical and probabilistic](#informal-statistical-and-probabilistic) | 30 |
 | [Informal: dialogue and evasion](#informal-dialogue-and-evasion) | 9 |
 
 - **Formal: general**: [Formal fallacy](#formal-fallacy)
@@ -31,7 +31,7 @@ Detectable from the text alone: 172 yes, 40 partly, 4 no (*partly* entries name 
 - **Informal: presumption**: [Accident](#accident), [Accident (Aristotle's sense)](#accident-aristotle), [Ad hoc rescue](#ad-hoc-rescue), [Baconian fallacy](#baconian-fallacy), [Begging the question](#begging-the-question), [Complex question](#complex-question), [Confirmation bias (as a fallacy)](#confirmation-bias), [Disregarding known science](#disregarding-known-science), [Doorman fallacy](#doorman-fallacy), [Double standard](#double-standard), [Exaggeration](#exaggeration), [Fallacy of exhaustive effort](#fallacy-of-exhaustive-effort), [False balance](#false-balance), [False dilemma](#false-dilemma), [False equivalence](#false-equivalence), [Far-fetched hypothesis](#far-fetched-hypothesis), [Goomba fallacy](#goomba-fallacy), [Hedging](#hedging), [Historian's fallacy](#historians-fallacy), [Historical fallacy](#historical-fallacy), [Homunculus fallacy](#homunculus-fallacy), [Ideology-driven argumentation](#ideology-driven-argumentation), [Inconsistency](#inconsistency), [Kettle logic](#kettle-logic), [Lack of proportion](#lack-of-proportion), [Loaded label](#loaded-label), [Lump of labour fallacy](#lump-of-labour), [Middle ground](#middle-ground), [Mind projection fallacy](#mind-projection), [Nirvana fallacy](#nirvana-fallacy), [No true Scotsman](#no-true-scotsman), [Non-cause (Aristotle's sense)](#non-cause-aristotle), [Oversimplification](#oversimplification), [Proving too much](#proving-too-much), [Psychologist's fallacy](#psychologists-fallacy), [Question-begging analogy](#question-begging-analogy), [Rationalization](#rationalization), [Secundum quid](#secundum-quid), [Self-fulfilling prophecy](#self-fulfilling-prophecy), [Slippery slope](#slippery-slope), [Special pleading](#special-pleading), [Sunk cost fallacy](#sunk-cost), [Superstitious thinking](#superstitious-thinking), [Tokenism](#tokenism), [Unfalsifiability](#unfalsifiability), [Vacuous truth (misuse)](#vacuous-truth), [Willed ignorance](#willed-ignorance)
 - **Informal: weak induction**: [Anecdotal evidence](#anecdotal-evidence), [Argument from ignorance](#argument-from-ignorance), [Argument from incredulity](#argument-from-incredulity), [Argument from silence](#argument-from-silence), [Cherry-picking](#cherry-picking), [Converse accident](#converse-accident), [False analogy](#false-analogy), [Feedback fallacy](#feedback-fallacy), [Hasty generalization](#hasty-generalization), [Inductive conversion](#inductive-conversion), [Inflation of conflict](#inflation-of-conflict), [Jumping to conclusions](#jumping-to-conclusions), [Misleading vividness](#misleading-vividness), [Nut-picking](#nut-picking), [Overwhelming exception](#overwhelming-exception), [Proof surrogate](#proof-surrogate), [Selective attention](#selective-attention), [Specificity](#specificity), [Stereotyping](#stereotyping), [Suppressed evidence](#suppressed-evidence)
 - **Informal: causal**: [Cum hoc ergo propter hoc](#cum-hoc), [Fallacy of the single cause](#single-cause), [False cause](#false-cause), [Furtive fallacy](#furtive-fallacy), [Ignoring a common cause](#common-cause), [Magical thinking](#magical-thinking), [Post hoc ergo propter hoc](#post-hoc), [Retrospective determinism](#retrospective-determinism), [Reversing causation](#reverse-causation)
-- **Informal: statistical and probabilistic**: [Appeal to probability](#appeal-to-probability), [Availability heuristic (as a fallacy)](#availability-heuristic), [Base-rate fallacy](#base-rate-fallacy), [Conjunction fallacy](#conjunction-fallacy), [Double counting](#double-counting), [Ecological fallacy](#ecological-fallacy), [Fake precision](#fake-precision), [Fallacy of the sheep](#fallacy-of-the-sheep), [Gambler's fallacy](#gamblers-fallacy), [Garden of forking paths](#garden-of-forking-paths), [Hot hand fallacy](#hot-hand-fallacy), [Independence fallacy](#independence-fallacy), [Inverse gambler's fallacy](#inverse-gamblers-fallacy), [Lottery fallacy](#lottery-fallacy), [Ludic fallacy](#ludic-fallacy), [McNamara fallacy](#mcnamara-fallacy), [Multiple comparisons fallacy](#multiple-comparisons), [Observational interpretation fallacy](#observational-interpretation), [Over-extrapolation](#over-extrapolation), [Overfitting (curve fitting)](#curve-fitting), [P-hacking](#p-hacking), [Prosecutor's fallacy](#prosecutors-fallacy), [Regression fallacy](#regression-fallacy), [Survivorship bias](#survivorship-bias), [Texas sharpshooter fallacy](#texas-sharpshooter), [Unrepresentative sample](#unrepresentative-sample)
+- **Informal: statistical and probabilistic**: [Appeal to probability](#appeal-to-probability), [Availability heuristic (as a fallacy)](#availability-heuristic), [Base-rate fallacy](#base-rate-fallacy), [Confusing statistical with practical significance](#statistical-vs-practical-significance), [Confusion of the inverse](#confusion-of-the-inverse), [Conjunction fallacy](#conjunction-fallacy), [Double counting](#double-counting), [Ecological fallacy](#ecological-fallacy), [Fake precision](#fake-precision), [Fallacy of the sheep](#fallacy-of-the-sheep), [Gambler's fallacy](#gamblers-fallacy), [Garden of forking paths](#garden-of-forking-paths), [Hot hand fallacy](#hot-hand-fallacy), [Independence fallacy](#independence-fallacy), [Inverse gambler's fallacy](#inverse-gamblers-fallacy), [Lottery fallacy](#lottery-fallacy), [Ludic fallacy](#ludic-fallacy), [McNamara fallacy](#mcnamara-fallacy), [Multiple comparisons fallacy](#multiple-comparisons), [Observational interpretation fallacy](#observational-interpretation), [Over-extrapolation](#over-extrapolation), [Overfitting (curve fitting)](#curve-fitting), [P-hacking](#p-hacking), [Prosecutor's fallacy](#prosecutors-fallacy), [Regression fallacy](#regression-fallacy), [Relative-risk framing (absolute risk left out)](#relative-risk-framing), [Simpson's paradox (aggregation reversal)](#simpsons-paradox), [Survivorship bias](#survivorship-bias), [Texas sharpshooter fallacy](#texas-sharpshooter), [Unrepresentative sample](#unrepresentative-sample)
 - **Informal: dialogue and evasion**: [Argument from repetition](#argument-from-repetition), [Avoiding the issue](#avoiding-the-issue), [Avoiding the question](#avoiding-the-question), [Misplaced burden of proof](#misplaced-burden-of-proof), [Moving the goalposts](#moving-the-goalposts), [Proof by assertion](#proof-by-assertion), [Quibbling](#quibbling), [Smokescreen](#smokescreen), [Thought-terminating cliché](#thought-terminating-cliche)
 
 ## Names folded into other entries
@@ -63,7 +63,7 @@ Entries in the same family describe neighbouring mistakes. For a single step of 
 - **Generalization**: [Accident](#accident), [Secundum quid](#secundum-quid), [Hasty generalization](#hasty-generalization), [Converse accident](#converse-accident), [Anecdotal evidence](#anecdotal-evidence), [Misleading vividness](#misleading-vividness), [Availability heuristic (as a fallacy)](#availability-heuristic), [Unrepresentative sample](#unrepresentative-sample), [Stereotyping](#stereotyping), [Jumping to conclusions](#jumping-to-conclusions), [Specificity](#specificity), [Overgenerality](#overgenerality), [Inductive conversion](#inductive-conversion). One label per step: rule misapplied to an exception (accident), dropped qualification (secundum quid), too few cases (hasty), exceptions made into a rule (converse accident), stories (anecdotal), vivid case (misleading vividness), biased sample (unrepresentative sample), group image applied to an individual (stereotyping).
 - **Diversion**: [Red herring](#red-herring), [Avoiding the issue](#avoiding-the-issue), [Avoiding the question](#avoiding-the-question), [Irrelevant conclusion](#irrelevant-conclusion), [Smokescreen](#smokescreen), [Non sequitur](#non-sequitur), [Relative privation](#relative-privation), [Logic chopping](#logic-chopping), [Quibbling](#quibbling). One label per move. Use the most specific; non sequitur and irrelevant conclusion are fallbacks.
 - **Bare assertion**: [Ipse dixit](#ipse-dixit), [Proof by assertion](#proof-by-assertion), [Argument from repetition](#argument-from-repetition), [Thought-terminating cliché](#thought-terminating-cliche), [Appeal to the stone](#appeal-to-the-stone), [I'm entitled to my opinion](#entitled-to-my-opinion), [Proof surrogate](#proof-surrogate), [Appeal to ridicule](#appeal-to-ridicule), [Subjectivist fallacy](#subjectivist-fallacy), [Willed ignorance](#willed-ignorance). Use one: no support at all (ipse dixit), restating against a counterargument (proof by assertion), citing many repetitions or others' silence as evidence (repetition), a stock phrase (cliche), declaring a view absurd without showing it (appeal to the stone), mocking it for a laugh (ridicule), a right to an opinion (entitled), truth said to be relative to the person (subjectivist), refusing to look (willed ignorance), a phrase in place of evidence (proof surrogate).
-- **Causation**: [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism). Use the specific causal entry; false cause only if none fits. Only a correlation is shown: cum hoc. The argument does address causes but misses an obvious third factor: ignoring a common cause. The reverse direction is named and plausible: reversing causation.
+- **Causation**: [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism), [Simpson's paradox (aggregation reversal)](#simpsons-paradox). Use the specific causal entry; false cause only if none fits. Work down this order: an obvious third factor that is named or plainly known, including the reason cases were selected into a group: ignoring a common cause. A plausible reverse direction: reversing causation. A breakdown by a stated factor that reverses or removes an aggregate comparison: Simpson's paradox. No specific alternative can be identified: cum hoc. A study cited as showing causation where the study design itself is the problem: observational interpretation.
 - **Definition and meaning shifts**: [Persuasive definition](#persuasive-definition), [Redefinition](#redefinition), [Definitional retreat](#definitional-retreat), [No true Scotsman](#no-true-scotsman), [Motte-and-bailey](#motte-and-bailey), [Equivocation](#equivocation), [Loaded label](#loaded-label), [Loaded language](#loaded-language), [Suppressed correlative](#suppressed-correlative), [Etymological fallacy](#etymological-fallacy). Use one: built-in evaluation (persuasive definition), unannounced new meaning (redefinition), shift after an objection (definitional retreat), shift to exclude a counterexample (no true Scotsman), bold-to-modest switch and back (motte-and-bailey), one word two senses (equivocation).
 - **Circularity**: [Begging the question](#begging-the-question), [Question-begging analogy](#question-begging-analogy), [Loaded label](#loaded-label), [Complex question](#complex-question), [Ideology-driven argumentation](#ideology-driven-argumentation). Use one: begging the question for the general case; the others when the circle is in an analogy, a label, a question, or a contested doctrine treated as settled.
 - **Ambiguity**: [Equivocation](#equivocation), [Amphiboly](#amphiboly), [Accent](#accent), [Four terms](#four-terms), [Scope fallacy](#scope-fallacy), [Combination of words (Aristotle)](#combination-of-words), [Division of words (Aristotle)](#division-of-words), [Form of expression (Aristotle)](#form-of-expression), [Quoting out of context](#quoting-out-of-context). One word (equivocation), grammar (amphiboly), stress (accent), reach of 'not' or 'all' (scope), word grouping (combination/division of words). When the shifting word is the middle term of a categorical syllogism, report it as equivocation and add '(four terms)'.
@@ -75,7 +75,7 @@ Entries in the same family describe neighbouring mistakes. For a single step of 
 - **Consistency**: [Inconsistency](#inconsistency), [Kettle logic](#kettle-logic), [Special pleading](#special-pleading), [Double standard](#double-standard). Use the specific entry; inconsistency only if none fits.
 - **Multiple testing**: [Multiple comparisons fallacy](#multiple-comparisons), [P-hacking](#p-hacking), [Garden of forking paths](#garden-of-forking-paths), [Texas sharpshooter fallacy](#texas-sharpshooter), [Overfitting (curve fitting)](#curve-fitting). Use one per analysis.
 - **Chance**: [Gambler's fallacy](#gamblers-fallacy), [Hot hand fallacy](#hot-hand-fallacy), [Inverse gambler's fallacy](#inverse-gamblers-fallacy), [Lottery fallacy](#lottery-fallacy), [Regression fallacy](#regression-fallacy). Use one per step.
-- **Probability**: [Base-rate fallacy](#base-rate-fallacy), [Prosecutor's fallacy](#prosecutors-fallacy), [Conjunction fallacy](#conjunction-fallacy), [Independence fallacy](#independence-fallacy), [Appeal to probability](#appeal-to-probability), [Double counting](#double-counting). Use one per step. A screening or test result combined with how common the condition is: base-rate fallacy. 'The chance of this evidence if innocent' presented as the chance of innocence: prosecutor's fallacy.
+- **Probability**: [Base-rate fallacy](#base-rate-fallacy), [Prosecutor's fallacy](#prosecutors-fallacy), [Conjunction fallacy](#conjunction-fallacy), [Independence fallacy](#independence-fallacy), [Appeal to probability](#appeal-to-probability), [Double counting](#double-counting), [Confusion of the inverse](#confusion-of-the-inverse). Use one per step. 'The chance of this evidence if innocent' presented as the chance of innocence: prosecutor's fallacy. A test or screening result combined with how common the condition is: base-rate fallacy. 'All or most H have E; this has E; so (probably) H', with nothing on how common E is outside H: confusion of the inverse.
 - **Conditionals**: [Affirming the consequent](#affirming-the-consequent), [Denying the antecedent](#denying-the-antecedent), [Commutation of conditionals](#commutation-of-conditionals), [Improper transposition](#improper-transposition), [Confusing necessary and sufficient conditions](#confusing-necessary-and-sufficient). Use the exact form; do not tag both a form and its general name.
 - **Syllogisms**: [Undistributed middle](#undistributed-middle), [Illicit major](#illicit-major), [Illicit minor](#illicit-minor), [Exclusive premises](#exclusive-premises), [Affirmative conclusion from a negative premise](#affirmative-conclusion-from-negative-premise), [Negative conclusion from affirmative premises](#negative-conclusion-from-affirmative-premises), [Four terms](#four-terms), [Existential fallacy](#existential-fallacy), [Illicit conversion](#illicit-conversion), [Illicit contraposition](#illicit-contraposition), [Some are / some are not](#some-are-some-are-not). Name the rule that is broken; use one per syllogism unless two rules are broken. When a term shifts meaning, report it as equivocation and add '(four terms)'.
 - **Quantifiers and modality**: [Quantifier shift](#quantifier-shift), [Scope fallacy](#scope-fallacy), [Modal scope fallacy](#modal-scope-fallacy), [Intensional fallacy](#intensional-fallacy). Use one per step.
@@ -89,6 +89,7 @@ Entries in the same family describe neighbouring mistakes. For a single step of 
 - **Accident: ancient and modern**: [Accident (Aristotle's sense)](#accident-aristotle), [Accident](#accident). Aristotle's sense is about attributes that merely coincide; the modern sense is a rule applied to an exception. Use the one that matches.
 - **Non-cause: ancient and modern**: [Non-cause (Aristotle's sense)](#non-cause-aristotle), [False cause](#false-cause), [Inconsistency](#inconsistency). Aristotle's sense is a superfluous premise blamed in a reduction to absurdity; for real-world causal claims use false cause.
 - **Selective evidence**: [Suppressed evidence](#suppressed-evidence), [Cherry-picking](#cherry-picking), [Texas sharpshooter fallacy](#texas-sharpshooter), [Survivorship bias](#survivorship-bias), [Lottery fallacy](#lottery-fallacy). Contrary evidence absent from the text: suppressed evidence. Contrary evidence stated (or plainly known) but ignored: cherry-picking. A pattern or cluster found by searching and treated as if predicted: Texas sharpshooter. The filter was success or survival: survivorship bias. 'Something improbable happened, so it was designed or rigged': lottery fallacy.
+- **Reporting numbers**: [Confusing statistical with practical significance](#statistical-vs-practical-significance), [Relative-risk framing (absolute risk left out)](#relative-risk-framing), [Fallacy of the sheep](#fallacy-of-the-sheep), [Fake precision](#fake-precision). Use one: 'significant' read as 'large' or 'important' (statistical vs practical significance); a relative change whose absolute size is small (relative-risk framing); raw counts compared across groups of very different size (fallacy of the sheep); more precision than the method supports (fake precision).
 
 ## Formal: general
 
@@ -173,14 +174,15 @@ Status: standard · Detectable from text: yes
 
 1. A conditional 'if P then Q' is used as a premise.
 2. Q is asserted as true.
-3. P is concluded as definitely following.
+3. P is concluded as definitely or almost definitely following, or as probable with no other explanation of Q considered.
 
 **Legitimate look-alikes** (not this fallacy):
 
 - Inference to the best explanation: Q is offered as evidence for P after other explanations are considered, and the conclusion is stated as probable. *(catalog wording)*
 - The conditional is actually a biconditional ('only if' or 'if and only if') in context. *(catalog wording)*
+- If the premise is a statistical link ('all or most P have Q') and the conclusion is 'probably P', use confusion of the inverse. *(catalog wording)*
 
-**Related, use only one per step** (conditionals, formal fallback): [Denying the antecedent](#denying-the-antecedent), [Commutation of conditionals](#commutation-of-conditionals), [Improper transposition](#improper-transposition), [Confusing necessary and sufficient conditions](#confusing-necessary-and-sufficient), [Formal fallacy](#formal-fallacy), [Affirming a disjunct](#affirming-a-disjunct), [Denying a conjunct](#denying-a-conjunct), [Undistributed middle](#undistributed-middle)
+**Related, use only one per step** (conditionals, formal fallback): [Denying the antecedent](#denying-the-antecedent), [Commutation of conditionals](#commutation-of-conditionals), [Improper transposition](#improper-transposition), [Confusing necessary and sufficient conditions](#confusing-necessary-and-sufficient), [Formal fallacy](#formal-fallacy), [Affirming a disjunct](#affirming-a-disjunct), [Denying a conjunct](#denying-a-conjunct), [Undistributed middle](#undistributed-middle), [Confusion of the inverse](#confusion-of-the-inverse)
 
 **Sources:**
 
@@ -293,7 +295,7 @@ Status: standard · Detectable from text: yes
 
 1. A conditional 'if P then Q' is used as a premise.
 2. P is denied.
-3. Not-Q is concluded as following.
+3. Not-Q is concluded as definitely or almost definitely following, or as probable with no other route to Q considered.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -1117,10 +1119,11 @@ Status: standard · Detectable from text: yes
 **Legitimate look-alikes** (not this fallacy):
 
 - 'Natural' stands for a specific property (no additives, long track record) that is separately shown to matter. *(catalog wording)*
-- Evolutionary history offered as evidence of physiological fit, for a conclusion about fit. *(catalog wording)*
+- Independent physiological evidence of fit (digestion, nutrient data) offered for a conclusion about fit. A long history of use, or the phrase 'what our bodies are built for', is not such evidence. *(catalog wording)*
 - If the conclusion is a moral one drawn from facts, use is-ought. *(catalog wording)*
+- If only age or history is given, use appeal to tradition. If naturalness wording and history appear in the same step, report appeal to nature and note tradition. *(catalog wording)*
 
-**Related, use only one per step** (naturalism): [Naturalistic fallacy](#naturalistic-fallacy), [Is-ought fallacy](#is-ought), [Moralistic fallacy](#moralistic-fallacy), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy), [Appeal to consequences](#appeal-to-consequences)
+**Related, use only one per step** (naturalism): [Naturalistic fallacy](#naturalistic-fallacy), [Is-ought fallacy](#is-ought), [Moralistic fallacy](#moralistic-fallacy), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy), [Appeal to consequences](#appeal-to-consequences), [Appeal to tradition](#appeal-to-tradition)
 
 **Sources:**
 
@@ -1385,8 +1388,9 @@ Status: standard · Detectable from text: yes
 **Legitimate look-alikes** (not this fallacy):
 
 - A long record can be some evidence that a practice works; the error is treating age as enough. *(source: IEP, section 6, "Partial List of Fallacies", entry "Traditional Wisdom")*
+- If the step also calls the practice natural or what we are 'built for', report appeal to nature and note tradition. *(catalog wording)*
 
-**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty)
+**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty), [Appeal to nature](#appeal-to-nature)
 
 **Sources:**
 
@@ -2160,6 +2164,7 @@ Condition 2 may need facts outside the text. Each is met if the passage states t
 - Restating a view in words its holder would accept. *(catalog wording)*
 - Drawing out a consequence the opponent is actually committed to. *(catalog wording)*
 - Rebutting a version of the view that someone really holds, while saying whose version it is. *(catalog wording)*
+- Describing the opponent's position in an established but contested usage they would recognise (for example, calling slower growth a 'cut'): possible issue, unless the opponent explicitly rejected that description, in which case it can be flagged. *(catalog wording)*
 
 **Related, use only one per step** (misrepresentation): [Quoting out of context](#quoting-out-of-context), [False attribution](#false-attribution), [Confusing an explanation with an excuse](#confusing-explanation-with-excuse)
 
@@ -2676,8 +2681,9 @@ Status: standard · Detectable from text: yes
 - The word keeps one meaning throughout (substitute a definition at each use to check). *(catalog wording)*
 - Puns or wordplay not offered as argument. *(catalog wording)*
 - When the shifting word is the middle term of a categorical syllogism, report it as equivocation and add '(four terms)'. *(catalog wording)*
+- If the key term keeps the same sense but the rule's rationale doesn't fit the case, use accident. *(catalog wording)*
 
-**Related, use only one per step** (definition and meaning shifts, ambiguity): [Persuasive definition](#persuasive-definition), [Redefinition](#redefinition), [Definitional retreat](#definitional-retreat), [No true Scotsman](#no-true-scotsman), [Motte-and-bailey](#motte-and-bailey), [Loaded label](#loaded-label), [Loaded language](#loaded-language), [Suppressed correlative](#suppressed-correlative), [Etymological fallacy](#etymological-fallacy), [Amphiboly](#amphiboly), [Accent](#accent), [Four terms](#four-terms), [Scope fallacy](#scope-fallacy), [Combination of words (Aristotle)](#combination-of-words), [Division of words (Aristotle)](#division-of-words), [Form of expression (Aristotle)](#form-of-expression), [Quoting out of context](#quoting-out-of-context)
+**Related, use only one per step** (definition and meaning shifts, ambiguity): [Persuasive definition](#persuasive-definition), [Redefinition](#redefinition), [Definitional retreat](#definitional-retreat), [No true Scotsman](#no-true-scotsman), [Motte-and-bailey](#motte-and-bailey), [Loaded label](#loaded-label), [Loaded language](#loaded-language), [Suppressed correlative](#suppressed-correlative), [Etymological fallacy](#etymological-fallacy), [Amphiboly](#amphiboly), [Accent](#accent), [Four terms](#four-terms), [Scope fallacy](#scope-fallacy), [Combination of words (Aristotle)](#combination-of-words), [Division of words (Aristotle)](#division-of-words), [Form of expression (Aristotle)](#form-of-expression), [Quoting out of context](#quoting-out-of-context), [Accident](#accident)
 
 **Sources:**
 
@@ -3257,8 +3263,9 @@ Status: standard · Detectable from text: yes
 
 - The case is an ordinary instance of the rule. *(catalog wording)*
 - Applying a rule strictly for a stated reason (fairness, predictability) after considering the exception. *(catalog wording)*
+- If the key term changes sense between the rule and the case, use equivocation. *(catalog wording)*
 
-**Related, use only one per step** (generalization, accident: ancient and modern): [Secundum quid](#secundum-quid), [Hasty generalization](#hasty-generalization), [Converse accident](#converse-accident), [Anecdotal evidence](#anecdotal-evidence), [Misleading vividness](#misleading-vividness), [Availability heuristic (as a fallacy)](#availability-heuristic), [Unrepresentative sample](#unrepresentative-sample), [Stereotyping](#stereotyping), [Jumping to conclusions](#jumping-to-conclusions), [Specificity](#specificity), [Overgenerality](#overgenerality), [Inductive conversion](#inductive-conversion), [Accident (Aristotle's sense)](#accident-aristotle)
+**Related, use only one per step** (generalization, accident: ancient and modern): [Secundum quid](#secundum-quid), [Hasty generalization](#hasty-generalization), [Converse accident](#converse-accident), [Anecdotal evidence](#anecdotal-evidence), [Misleading vividness](#misleading-vividness), [Availability heuristic (as a fallacy)](#availability-heuristic), [Unrepresentative sample](#unrepresentative-sample), [Stereotyping](#stereotyping), [Jumping to conclusions](#jumping-to-conclusions), [Specificity](#specificity), [Overgenerality](#overgenerality), [Inductive conversion](#inductive-conversion), [Accident (Aristotle's sense)](#accident-aristotle), [Equivocation](#equivocation)
 
 **Sources:**
 
@@ -3360,7 +3367,7 @@ Supporting a conclusion with a premise that is only acceptable to someone who al
 
 Status: standard · Detectable from text: yes
 
-**Example:** Her advice is trustworthy because she's an honest person, and she's honest because her advice is trustworthy.
+**Example:** Her advice is trustworthy because she's an honest person, and she's honest because her advice is trustworthy. Also: a forecasting model is declared accurate because it agrees with its own earlier forecasts.
 
 **Required conditions** (all must be shown from the text):
 
@@ -3397,19 +3404,22 @@ Status: standard · Detectable from text: yes
 
 Asking a question that assumes an unproven claim, so any direct answer seems to concede it.
 
-Status: standard · Detectable from text: yes
+Status: standard · Detectable from text: partly
 
 **Example:** Have you stopped cheating on your taxes?
 
 **Required conditions** (all must be shown from the text):
 
 1. A question is asked.
-2. It presupposes a claim that the respondent has not accepted.
+2. It presupposes a claim that is contested and not established in the passage. *(may need facts outside the text)*
 3. Any direct answer would commit the respondent to that claim.
+
+Condition 2 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
 
 **Legitimate look-alikes** (not this fallacy):
 
 - The presupposition has already been established or accepted. *(catalog wording)*
+- If the respondent replies with an implicit factual rebuttal and the record that would settle it is not in the text, record possible issue under complex question, settled by the record. *(catalog wording)*
 
 **Related, use only one per step** (circularity): [Begging the question](#begging-the-question), [Question-begging analogy](#question-begging-analogy), [Loaded label](#loaded-label), [Ideology-driven argumentation](#ideology-driven-argumentation)
 
@@ -3632,7 +3642,7 @@ Status: standard · Detectable from text: yes
 
 **Required conditions** (all must be shown from the text):
 
-1. A choice is presented between options as though they were the only ones.
+1. A choice is presented between options as though they were the only ones, or an action is described as amounting to one bad outcome, implying that the only alternative is the speaker's option.
 2. At least one further reasonable option exists (name it).
 3. The conclusion relies on eliminating the stated options.
 
@@ -4117,7 +4127,7 @@ Status: standard · Detectable from text: yes
 **Legitimate look-alikes** (not this fallacy):
 
 - Excluding a case using a criterion stated beforehand or independently justified. *(catalog wording)*
-- Applying a criterion that is part of what the word means (someone who eats meat is not a vegan). *(catalog wording)*
+- Applying a criterion that is part of what the word means (someone who eats meat is not a vegan). A criterion that the speaker's own earlier claim did not depend on cannot be used this way. *(catalog wording)*
 
 **Related, use only one per step** (definition and meaning shifts, rescuing a claim): [Persuasive definition](#persuasive-definition), [Redefinition](#redefinition), [Definitional retreat](#definitional-retreat), [Motte-and-bailey](#motte-and-bailey), [Equivocation](#equivocation), [Loaded label](#loaded-label), [Loaded language](#loaded-language), [Suppressed correlative](#suppressed-correlative), [Etymological fallacy](#etymological-fallacy), [Ad hoc rescue](#ad-hoc-rescue), [Hedging](#hedging), [Moving the goalposts](#moving-the-goalposts), [Unfalsifiability](#unfalsifiability), [Far-fetched hypothesis](#far-fetched-hypothesis)
 
@@ -4460,7 +4470,7 @@ Status: standard · Detectable from text: yes
 
 - If the reasoning is 'it followed, so it caused', use post hoc; if it claims thoughts or rituals act on the world, use magical thinking. *(catalog wording)*
 
-**Related, use only one per step** (causation): [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism)
+**Related, use only one per step** (causation): [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism), [Simpson's paradox (aggregation reversal)](#simpsons-paradox)
 
 **Sources:**
 
@@ -4632,7 +4642,8 @@ Status: standard · Detectable from text: yes
 **Legitimate look-alikes** (not this fallacy):
 
 - A thorough search was done and a proof would have been found if it existed. *(source: IEP, section 6, "Partial List of Fallacies", entry "Appeal to Ignorance")*
-- A procedural default or burden rule (presumption of innocence, a null hypothesis): the conclusion is what to decide or how to act, not that the claim is false. *(catalog wording)*
+- A procedural default or burden rule established independently of this argument (a law, regulation, a null hypothesis or a house rule set beforehand), with the conclusion kept to a decision about what to do rather than asserting that the claim is false. It does not apply if an established standard exists and points the other way. *(catalog wording)*
+- A precautionary decision under uncertainty, stated as a decision, with the costs of being wrong either way weighed. *(catalog wording)*
 
 **Related, use only one per step** (ignorance and burden): [Misplaced burden of proof](#misplaced-burden-of-proof), [Argument from silence](#argument-from-silence), [Argument from incredulity](#argument-from-incredulity)
 
@@ -4719,8 +4730,8 @@ Status: standard · Detectable from text: yes
 
 **Required conditions** (all must be shown from the text):
 
-1. The arguer selects a subset of the available or stated data.
-2. The rest of the data, stated or plainly known, points the other way or dilutes the subset.
+1. The arguer selects a subset of the available or stated data. This includes choosing a measurement period while the arguer's own stated record extends beyond it.
+2. The rest of the data, stated or plainly known, points the other way or dilutes the subset; or a comparative claim is made with no comparison figure while the chosen window excludes stated history.
 3. The conclusion rests on the subset, and the rest gets no answer.
 
 **Legitimate look-alikes** (not this fallacy):
@@ -5198,7 +5209,7 @@ Status: standard · Detectable from text: yes
 - A correlation plus a comparison group or a known mechanism, offered as grounds to investigate. *(catalog wording)*
 - If the argument does address causes but misses an obvious third factor, use ignoring a common cause. *(catalog wording)*
 
-**Related, use only one per step** (causation): [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism)
+**Related, use only one per step** (causation): [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism), [Simpson's paradox (aggregation reversal)](#simpsons-paradox)
 
 **Sources:**
 
@@ -5229,7 +5240,7 @@ Status: standard · Detectable from text: yes
 
 - Picking out the most important or most controllable cause while acknowledging others. *(catalog wording)*
 
-**Related, use only one per step** (causation, proportion): [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism), [Lack of proportion](#lack-of-proportion), [Exaggeration](#exaggeration), [Oversimplification](#oversimplification), [Tokenism](#tokenism), [Quibbling](#quibbling)
+**Related, use only one per step** (causation, proportion): [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism), [Simpson's paradox (aggregation reversal)](#simpsons-paradox), [Lack of proportion](#lack-of-proportion), [Exaggeration](#exaggeration), [Oversimplification](#oversimplification), [Tokenism](#tokenism), [Quibbling](#quibbling)
 
 **Sources:**
 
@@ -5258,7 +5269,7 @@ Status: standard · Detectable from text: yes · Fallback: use only if nothing m
 
 - A tentative causal hypothesis offered for testing. *(catalog wording)*
 
-**Related, use only one per step** (causation, non-cause: ancient and modern): [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism), [Non-cause (Aristotle's sense)](#non-cause-aristotle), [Inconsistency](#inconsistency)
+**Related, use only one per step** (causation, non-cause: ancient and modern): [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism), [Simpson's paradox (aggregation reversal)](#simpsons-paradox), [Non-cause (Aristotle's sense)](#non-cause-aristotle), [Inconsistency](#inconsistency)
 
 **Sources:**
 
@@ -5290,7 +5301,7 @@ Condition 3 may need facts outside the text. Each is met if the passage states t
 
 - Wrongdoing alleged with evidence. *(catalog wording)*
 
-**Related, use only one per step** (causation): [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Retrospective determinism](#retrospective-determinism)
+**Related, use only one per step** (causation): [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Retrospective determinism](#retrospective-determinism), [Simpson's paradox (aggregation reversal)](#simpsons-paradox)
 
 **Sources:**
 
@@ -5322,7 +5333,7 @@ Condition 2 may need facts outside the text. Each is met if the passage states t
 - Raise as an issue only when there is some evidence of a common cause, not merely possibility. *(source: IEP, section 6, "Partial List of Fallacies", entry "Common Cause")*
 - An obvious common-knowledge third factor (rain causing both wiper use and accidents) counts as 'some evidence' of a common cause. *(catalog wording)*
 
-**Related, use only one per step** (causation): [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism)
+**Related, use only one per step** (causation): [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism), [Simpson's paradox (aggregation reversal)](#simpsons-paradox)
 
 **Sources:**
 
@@ -5351,7 +5362,7 @@ Status: standard · Detectable from text: yes
 - Rituals valued for their psychological effect on the person doing them. *(catalog wording)*
 - If the reasoning is only 'it followed, so it caused', use post hoc. *(catalog wording)*
 
-**Related, use only one per step** (causation): [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism)
+**Related, use only one per step** (causation): [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism), [Simpson's paradox (aggregation reversal)](#simpsons-paradox)
 
 **Sources:**
 
@@ -5381,7 +5392,7 @@ Status: standard · Detectable from text: yes
 - Sequence is some evidence of cause; the fallacy is the hasty leap, not considering timing. *(source: IEP, section 6, "Partial List of Fallacies", entry "Post Hoc")*
 - Timing plus a known mechanism or controlled comparison. *(catalog wording)*
 
-**Related, use only one per step** (causation): [False cause](#false-cause), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism)
+**Related, use only one per step** (causation): [False cause](#false-cause), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism), [Simpson's paradox (aggregation reversal)](#simpsons-paradox)
 
 **Sources:**
 
@@ -5411,7 +5422,7 @@ Status: standard · Detectable from text: yes
 
 - A demonstrated mechanism that left no alternative. *(catalog wording)*
 
-**Related, use only one per step** (causation, history): [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Historian's fallacy](#historians-fallacy), [Historical fallacy](#historical-fallacy), [Baconian fallacy](#baconian-fallacy)
+**Related, use only one per step** (causation, history): [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Simpson's paradox (aggregation reversal)](#simpsons-paradox), [Historian's fallacy](#historians-fallacy), [Historical fallacy](#historical-fallacy), [Baconian fallacy](#baconian-fallacy)
 
 **Sources:**
 
@@ -5440,7 +5451,7 @@ Status: standard · Detectable from text: yes
 
 - Two-way causation, or a reverse direction ruled out by timing or design. *(catalog wording)*
 
-**Related, use only one per step** (causation): [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism)
+**Related, use only one per step** (causation): [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism), [Simpson's paradox (aggregation reversal)](#simpsons-paradox)
 
 **Sources:**
 
@@ -5472,7 +5483,7 @@ Status: standard · Detectable from text: yes
 
 - Acting with caution on a well-founded probability ('it could happen, so let's insure'). *(catalog wording)*
 
-**Related, use only one per step** (probability): [Base-rate fallacy](#base-rate-fallacy), [Prosecutor's fallacy](#prosecutors-fallacy), [Conjunction fallacy](#conjunction-fallacy), [Independence fallacy](#independence-fallacy), [Double counting](#double-counting)
+**Related, use only one per step** (probability): [Base-rate fallacy](#base-rate-fallacy), [Prosecutor's fallacy](#prosecutors-fallacy), [Conjunction fallacy](#conjunction-fallacy), [Independence fallacy](#independence-fallacy), [Double counting](#double-counting), [Confusion of the inverse](#confusion-of-the-inverse)
 
 **Sources:**
 
@@ -5534,7 +5545,7 @@ Condition 2 may need facts outside the text. Each is met if the passage states t
 - The specific evidence is so strong that the base rate makes little difference, and this is shown. *(catalog wording)*
 - If 'the chance of this evidence if innocent' is presented as the chance of innocence, use prosecutor's fallacy. *(catalog wording)*
 
-**Related, use only one per step** (probability): [Prosecutor's fallacy](#prosecutors-fallacy), [Conjunction fallacy](#conjunction-fallacy), [Independence fallacy](#independence-fallacy), [Appeal to probability](#appeal-to-probability), [Double counting](#double-counting)
+**Related, use only one per step** (probability): [Prosecutor's fallacy](#prosecutors-fallacy), [Conjunction fallacy](#conjunction-fallacy), [Independence fallacy](#independence-fallacy), [Appeal to probability](#appeal-to-probability), [Double counting](#double-counting), [Confusion of the inverse](#confusion-of-the-inverse)
 
 **Sources:**
 
@@ -5542,6 +5553,68 @@ Condition 2 may need facts outside the text. Each is met if the passage states t
 - The Fallacy Files (Gary N. Curtis), entry "The Base Rate Fallacy". <https://www.fallacyfiles.org/baserate.html>
 
 `id: base-rate-fallacy`
+
+<a id="statistical-vs-practical-significance"></a>
+### Confusing statistical with practical significance
+
+*Also called:* statistical significance taken as importance
+
+Treating a statistically significant result as if it showed a large or important effect. Statistical significance says how unlikely the result would be by chance alone, not how big the effect is.
+
+Status: standard · Detectable from text: yes
+
+**Example:** The trial found the new diet led to statistically significant weight loss, so it is a major breakthrough for people trying to slim down (the average loss was 0.4 kg in a year).
+
+**Required conditions** (all must be shown from the text):
+
+1. A result is called statistically significant.
+2. It is presented as large, important or worth acting on.
+3. The stated effect size is too small to support that, or no effect size is given and the claim of importance rests on the word 'significant' alone.
+
+**Legitimate look-alikes** (not this fallacy):
+
+- The effect size is reported and is large enough for the stated use. *(catalog wording)*
+- Reporting that a result is statistically significant, without claiming that it is large or important. *(catalog wording)*
+
+**Related, use only one per step** (reporting numbers): [Relative-risk framing (absolute risk left out)](#relative-risk-framing), [Fallacy of the sheep](#fallacy-of-the-sheep), [Fake precision](#fake-precision)
+
+**Sources:**
+
+- Wikipedia, "Misuse of statistics", article "Misuse of statistics", section "Confusing statistical significance with practical significance". <https://en.wikipedia.org/wiki/Misuse_of_statistics>
+- Wikipedia, "Clinical significance", article "Clinical significance", section "Types of significance > Practical significance". <https://en.wikipedia.org/wiki/Clinical_significance>
+
+`id: statistical-vs-practical-significance`
+
+<a id="confusion-of-the-inverse"></a>
+### Confusion of the inverse
+
+*Also called:* inverse fallacy, conditional probability fallacy
+
+Treating the chance of a feature given a hypothesis as if it were the chance of the hypothesis given the feature: from 'all or most H have E' and 'this case has E', concluding that it is (probably) H, without asking how common E is among cases that are not H.
+
+Status: standard · Detectable from text: yes
+
+**Example:** Nearly every fake charity we've exposed used urgent deadlines and pushy phone calls. This charity uses urgent deadlines and pushy calls, so it's probably fake.
+
+**Required conditions** (all must be shown from the text):
+
+1. The passage states or relies on: all or most H have feature E.
+2. A case with E is concluded to be H, or probably H.
+3. Nothing is given or used about how common E is among cases that are not H.
+
+**Legitimate look-alikes** (not this fallacy):
+
+- How common E is outside H is given or used, and E is shown to be rare outside H, so the inference is weighed properly. *(catalog wording)*
+- If the error is ignoring how common H is overall when reading a test result, use base-rate fallacy; if 'the chance of this evidence if innocent' is presented as the chance of innocence, use prosecutor's fallacy. *(catalog wording)*
+- If the premise is a strict conditional and the conclusion is stated as certain, use affirming the consequent. *(catalog wording)*
+
+**Related, use only one per step** (probability): [Base-rate fallacy](#base-rate-fallacy), [Prosecutor's fallacy](#prosecutors-fallacy), [Conjunction fallacy](#conjunction-fallacy), [Independence fallacy](#independence-fallacy), [Appeal to probability](#appeal-to-probability), [Double counting](#double-counting), [Affirming the consequent](#affirming-the-consequent)
+
+**Sources:**
+
+- Wikipedia, "Confusion of the inverse", article "Confusion of the inverse", lead section. <https://en.wikipedia.org/wiki/Confusion_of_the_inverse>
+
+`id: confusion-of-the-inverse`
 
 <a id="conjunction-fallacy"></a>
 ### Conjunction fallacy
@@ -5563,7 +5636,7 @@ Status: standard · Detectable from text: yes
 
 - Judging that a detail makes a story more plausible as an explanation, without claiming it is more probable. *(catalog wording)*
 
-**Related, use only one per step** (probability): [Base-rate fallacy](#base-rate-fallacy), [Prosecutor's fallacy](#prosecutors-fallacy), [Independence fallacy](#independence-fallacy), [Appeal to probability](#appeal-to-probability), [Double counting](#double-counting)
+**Related, use only one per step** (probability): [Base-rate fallacy](#base-rate-fallacy), [Prosecutor's fallacy](#prosecutors-fallacy), [Independence fallacy](#independence-fallacy), [Appeal to probability](#appeal-to-probability), [Double counting](#double-counting), [Confusion of the inverse](#confusion-of-the-inverse)
 
 **Sources:**
 
@@ -5592,7 +5665,7 @@ Status: standard · Detectable from text: yes
 
 - Categories are explicitly overlapping and the total is not presented as a sum. *(catalog wording)*
 
-**Related, use only one per step** (probability): [Base-rate fallacy](#base-rate-fallacy), [Prosecutor's fallacy](#prosecutors-fallacy), [Conjunction fallacy](#conjunction-fallacy), [Independence fallacy](#independence-fallacy), [Appeal to probability](#appeal-to-probability)
+**Related, use only one per step** (probability): [Base-rate fallacy](#base-rate-fallacy), [Prosecutor's fallacy](#prosecutors-fallacy), [Conjunction fallacy](#conjunction-fallacy), [Independence fallacy](#independence-fallacy), [Appeal to probability](#appeal-to-probability), [Confusion of the inverse](#confusion-of-the-inverse)
 
 **Sources:**
 
@@ -5648,7 +5721,7 @@ Status: standard · Detectable from text: yes
 
 - Precise figures from exact counts, or estimates reported with their margin of error. *(catalog wording)*
 
-**Related, use only one per step** (measurement and models): [McNamara fallacy](#mcnamara-fallacy), [Doorman fallacy](#doorman-fallacy), [Ludic fallacy](#ludic-fallacy), [Over-extrapolation](#over-extrapolation), [Fallacy of the sheep](#fallacy-of-the-sheep)
+**Related, use only one per step** (measurement and models, reporting numbers): [McNamara fallacy](#mcnamara-fallacy), [Doorman fallacy](#doorman-fallacy), [Ludic fallacy](#ludic-fallacy), [Over-extrapolation](#over-extrapolation), [Fallacy of the sheep](#fallacy-of-the-sheep), [Confusing statistical with practical significance](#statistical-vs-practical-significance), [Relative-risk framing (absolute risk left out)](#relative-risk-framing)
 
 **Sources:**
 
@@ -5677,7 +5750,7 @@ Status: standard · Detectable from text: yes
 
 - The groups are of similar size, or the comparison is about totals, not rates. *(catalog wording)*
 
-**Related, use only one per step** (measurement and models): [McNamara fallacy](#mcnamara-fallacy), [Fake precision](#fake-precision), [Doorman fallacy](#doorman-fallacy), [Ludic fallacy](#ludic-fallacy), [Over-extrapolation](#over-extrapolation)
+**Related, use only one per step** (measurement and models, reporting numbers): [McNamara fallacy](#mcnamara-fallacy), [Fake precision](#fake-precision), [Doorman fallacy](#doorman-fallacy), [Ludic fallacy](#ludic-fallacy), [Over-extrapolation](#over-extrapolation), [Confusing statistical with practical significance](#statistical-vs-practical-significance), [Relative-risk framing (absolute risk left out)](#relative-risk-framing)
 
 **Sources:**
 
@@ -5700,7 +5773,7 @@ Status: standard · Detectable from text: yes
 
 1. The process is presented as random with independent outcomes (or is known to be).
 2. A run of one outcome is cited.
-3. The opposite outcome is concluded to be more likely next because it is 'due'.
+3. The opposite outcome is concluded to be more likely next because it is 'due', or the same outcome is concluded to be less likely because it just occurred.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -5797,7 +5870,7 @@ Condition 2 may need facts outside the text. Each is met if the passage states t
 
 - The events are shown to be independent. *(catalog wording)*
 
-**Related, use only one per step** (probability): [Base-rate fallacy](#base-rate-fallacy), [Prosecutor's fallacy](#prosecutors-fallacy), [Conjunction fallacy](#conjunction-fallacy), [Appeal to probability](#appeal-to-probability), [Double counting](#double-counting)
+**Related, use only one per step** (probability): [Base-rate fallacy](#base-rate-fallacy), [Prosecutor's fallacy](#prosecutors-fallacy), [Conjunction fallacy](#conjunction-fallacy), [Appeal to probability](#appeal-to-probability), [Double counting](#double-counting), [Confusion of the inverse](#confusion-of-the-inverse)
 
 **Sources:**
 
@@ -5968,7 +6041,7 @@ Status: standard · Detectable from text: yes
 - The association is reported as a link to be tested, or confounders are carefully controlled. *(catalog wording)*
 - Partial adjustment for confounders with a hedged causal claim: record possible issue and name the alternative left unaddressed. *(catalog wording)*
 
-**Related, use only one per step** (causation): [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism)
+**Related, use only one per step** (causation): [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism), [Simpson's paradox (aggregation reversal)](#simpsons-paradox)
 
 **Sources:**
 
@@ -6090,7 +6163,7 @@ Status: standard · Detectable from text: yes
 - The base rate and other evidence are combined correctly to estimate the probability of guilt. *(catalog wording)*
 - If the error is ignoring how common the condition is when reading a test or screening result, use base-rate fallacy. *(catalog wording)*
 
-**Related, use only one per step** (probability): [Base-rate fallacy](#base-rate-fallacy), [Conjunction fallacy](#conjunction-fallacy), [Independence fallacy](#independence-fallacy), [Appeal to probability](#appeal-to-probability), [Double counting](#double-counting)
+**Related, use only one per step** (probability): [Base-rate fallacy](#base-rate-fallacy), [Conjunction fallacy](#conjunction-fallacy), [Independence fallacy](#independence-fallacy), [Appeal to probability](#appeal-to-probability), [Double counting](#double-counting), [Confusion of the inverse](#confusion-of-the-inverse)
 
 **Sources:**
 
@@ -6122,7 +6195,7 @@ Condition 1 may need facts outside the text. Each is met if the passage states t
 
 - A comparison group that also started extreme shows less change, so the effect exceeds regression. *(catalog wording)*
 
-**Related, use only one per step** (causation, chance): [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism), [Gambler's fallacy](#gamblers-fallacy), [Hot hand fallacy](#hot-hand-fallacy), [Inverse gambler's fallacy](#inverse-gamblers-fallacy), [Lottery fallacy](#lottery-fallacy)
+**Related, use only one per step** (causation, chance): [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism), [Simpson's paradox (aggregation reversal)](#simpsons-paradox), [Gambler's fallacy](#gamblers-fallacy), [Hot hand fallacy](#hot-hand-fallacy), [Inverse gambler's fallacy](#inverse-gamblers-fallacy), [Lottery fallacy](#lottery-fallacy)
 
 **Sources:**
 
@@ -6131,6 +6204,72 @@ Condition 1 may need facts outside the text. Each is met if the passage states t
 - The Fallacy Files (Gary N. Curtis), entry "The Regression Fallacy". <https://www.fallacyfiles.org/regressf.html>
 
 `id: regression-fallacy`
+
+<a id="relative-risk-framing"></a>
+### Relative-risk framing (absolute risk left out)
+
+*Also called:* relative risk without absolute risk
+
+Presenting a change in risk only as a relative figure ('halves the risk', '50% more likely') when the absolute change is small, so the effect seems larger or more important than it is.
+
+Status: standard · Detectable from text: partly
+
+**Example:** This drug cuts your risk of a stroke by 50%, so everyone over 40 should take it (the risk falls from 2 in 1,000 to 1 in 1,000).
+
+**Required conditions** (all must be shown from the text):
+
+1. A relative change in risk is reported.
+2. The absolute change is small, whether stated or left out. *(may need facts outside the text)*
+3. The conclusion relies on the relative figure.
+
+Condition 2 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
+
+**Legitimate look-alikes** (not this fallacy):
+
+- Both the relative and the absolute figures are given and weighed. *(catalog wording)*
+- The outcome is common, so the relative change is also large in absolute terms, and this is stated or plainly known. *(catalog wording)*
+
+**Related, use only one per step** (reporting numbers): [Confusing statistical with practical significance](#statistical-vs-practical-significance), [Fallacy of the sheep](#fallacy-of-the-sheep), [Fake precision](#fake-precision)
+
+**Sources:**
+
+- Wikipedia, "Relative risk", article "Relative risk", section "Usage in reporting". <https://en.wikipedia.org/wiki/Relative_risk>
+
+`id: relative-risk-framing`
+
+<a id="simpsons-paradox"></a>
+### Simpson's paradox (aggregation reversal)
+
+*Also called:* Simpson's paradox, Simpson's reversal, Yule-Simpson effect, reversal paradox
+
+Drawing a conclusion from a comparison of combined totals when the groups being compared differ in make-up, and the comparison within each subgroup comes out the other way or disappears.
+
+Status: standard · Detectable from text: partly
+
+**Example:** Hospital A loses a higher share of its patients than Hospital B, so B is the safer hospital (A takes far more of the critical cases, and within both the mild and the critical cases A's death rate is lower).
+
+**Required conditions** (all must be shown from the text):
+
+1. An aggregate comparison between groups is made.
+2. Data broken down by some factor, stated or plainly known, reverse the comparison or remove it. *(may need facts outside the text)*
+3. The groups differ in composition on that factor.
+4. The conclusion is drawn from the aggregate.
+
+Condition 2 may need facts outside the text. Each is met if the passage states the fact or it is common knowledge; otherwise record possible issue and name the fact that would settle it.
+
+**Legitimate look-alikes** (not this fallacy):
+
+- The aggregate is what is actually relevant to the decision (for example, the overall rate for someone who cannot choose their subgroup), and this is the reason given. *(catalog wording)*
+- If a third factor that causes both is named but no breakdown is given, use ignoring a common cause. *(catalog wording)*
+
+**Related, use only one per step** (causation): [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism)
+
+**Sources:**
+
+- Stanford Encyclopedia of Philosophy, "Simpson's Paradox" (Jan Sprenger and Naftali Weinberger), opening summary and section "1. Introduction". <https://plato.stanford.edu/entries/paradox-simpson/>
+- Wikipedia, "Simpson's paradox", article "Simpson's paradox", lead section. <https://en.wikipedia.org/wiki/Simpson%27s_paradox>
+
+`id: simpsons-paradox`
 
 <a id="survivorship-bias"></a>
 ### Survivorship bias
@@ -6186,7 +6325,7 @@ Conditions 1, 3 may need facts outside the text. Each is met if the passage stat
 **Legitimate look-alikes** (not this fallacy):
 
 - The pattern was predicted before the data were examined. *(catalog wording)*
-- A cluster found by searching is treated only as a lead to test with new data. *(catalog wording)*
+- A cluster found by searching is treated only as a lead to test with new data. A conclusion that also asserts a cause ('this can't be coincidence') or calls for remedies is not only a lead. *(catalog wording)*
 - If the arguer just picks the favourable part of data already on the table, with no pattern-search, use cherry-picking. *(catalog wording)*
 
 **Related, use only one per step** (multiple testing, selective evidence): [Multiple comparisons fallacy](#multiple-comparisons), [P-hacking](#p-hacking), [Garden of forking paths](#garden-of-forking-paths), [Overfitting (curve fitting)](#curve-fitting), [Suppressed evidence](#suppressed-evidence), [Cherry-picking](#cherry-picking), [Survivorship bias](#survivorship-bias), [Lottery fallacy](#lottery-fallacy)
@@ -6317,7 +6456,7 @@ Status: standard · Detectable from text: yes
 **Legitimate look-alikes** (not this fallacy):
 
 - Declining to answer openly, with a reason (confidentiality, an unfair premise). *(catalog wording)*
-- Pointing out that the question presupposes something false; consider complex question. *(catalog wording)*
+- The respondent says that the question presupposes something false; then consider complex question. Without that statement, this look-alike does not apply. *(catalog wording)*
 
 **Related, use only one per step** (diversion): [Red herring](#red-herring), [Avoiding the issue](#avoiding-the-issue), [Irrelevant conclusion](#irrelevant-conclusion), [Smokescreen](#smokescreen), [Non sequitur](#non-sequitur), [Relative privation](#relative-privation), [Logic chopping](#logic-chopping), [Quibbling](#quibbling)
 
