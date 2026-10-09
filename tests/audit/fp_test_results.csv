@@ -1,0 +1,79 @@
+id,ground_truth,intended_entry_or_lookalike,verdict,entry_applied,conditions_met,conditions_failed_or_uncertain,lookalike,outcome,step_b_note,trace_and_fix
+L01,legit,affirming-the-consequent / non-sequitur,no issue,affirming-the-consequent (considered),"C1,C2","C3 fails: 'probably', not 'definitely'",IBE look-alike applies,TN,,
+L02,legit,cum-hoc / false-cause,no issue,cum-hoc (considered),"C1,C2",C3 fails: randomisation + p-value address alternatives,source look-alike applies,TN,,
+L03,legit,post-hoc,no issue,post-hoc (considered),"C1,C2",C3 fails: mechanism + dechallenge,'timing plus known mechanism' applies,TN,,
+L04,legit,straw-man,no issue,straw-man (considered),C1,C2 not shown: restatement matches stated proposal,'consequence actually committed to' applies,TN,,
+L05,legit,ad-hominem,no issue,ad-hominem (considered),"C1,C2,C3",C4 fails: falsifying data bears on testimony,[source] witness-reliability look-alike,TN,,
+L06,legit,ad-hominem,no issue,ad-hominem (considered),"C1,C2,C3",C4 fails: question is about the person,[source] leadership look-alike,TN,,
+L07,legit,appeal-to-authority,no issue,appeal-to-authority (considered),C1,"C2 fails: genuine experts, broad agreement",[source] look-alike applies,TN,,
+L08,legit,slippery-slope,no issue,slippery-slope (considered),"C1,C2",C3 fails: each step supported (survey),[source] look-alike applies,TN,,
+L09,legit,suppressed-evidence,no issue,suppressed-evidence (considered),C1,C2/C3 not shown; not presented as complete,'short case not claiming completeness' applies,TN,,
+L10,legit,red-herring / avoiding-the-issue,no issue,red-herring / avoiding-the-issue (considered),"C1,C2",C3 fails: dependence shown in text (only evidence),prior-issue look-alike applies,TN,,"Passes here because dependence is shown; see red-herring wording fix (dependence must be shown, not asserted)."
+L11,legit,hasty-generalization,no issue,hasty-generalization (considered),"C1,C2",C3 fails: uniform population,uniform-population look-alike,TN,,
+L12,legit,tu-quoque / two-wrongs,no issue,tu-quoque / two-wrongs (considered),"tu-quoque C1,C2",tu-quoque C3 doubtful: conclusion is review of enforcement; two-wrongs C3 fails,two-wrongs enforcement look-alike,TN,,
+L13,legit,circumstantial-ad-hominem,no issue,circumstantial-ad-hominem (considered),"C1,C2",C3 fails: 'merely as a reason to check',[source] look-alike,TN,,
+L14,legit,appeal-to-emotion,no issue,appeal-to-emotion (considered),C1,C3 fails: emotion tied to facts,[source] look-alike,TN,,
+L15,legit,appeal-to-fear,possible issue,appeal-to-fear,"C1,C2,C3 (no evidence stated in text)","look-alike 'real, well-evidenced danger' needs outside knowledge -> METHOD (d) caps at possible",look-alike cannot be confirmed from text,FP (possible),Generous step (b) would stop here (common knowledge).,appeal-to-fear C3 + td: count well-known risks as evidenced; td partly; add common-knowledge look-alike.
+L16,legit,loaded-language / loaded-label,no issue,loaded-language / loaded-label (considered),loaded-language C1,loaded-language C2 fails (openly editorial); loaded-label C3 fails (a reason is given),[source] editorial look-alike,TN,,
+L17,legit,false-equivalence,no issue,false-equivalence (considered),C1,C2 fails: comparable amounts,look-alike applies,TN,,
+L18,legit,single-cause / oversimplification,no issue,single-cause (considered),C1,C2/C3 fail: other causes acknowledged,look-alike applies,TN,,
+L19,legit,hedging / motte-and-bailey / definitional-retreat,no issue,hedging / motte-and-bailey (considered),"hedging C1,C2",hedging C3 fails; motte C3 fails,[source] hedging look-alike,TN,,
+L20,legit,moving-the-goalposts,no issue,moving-the-goalposts (considered),"C1,C2",C3 fails: stated reason (data leakage = new information),stated-reason look-alike,TN,,Still TN under the proposed stricter C3 (reason is new information).
+L21,legit,genetic-fallacy,no issue,genetic-fallacy (considered),C1,C3 fails: origin relevant to reliability,[source] look-alike,TN,,
+L22,legit,guilt-by-association / circumstantial-ad-hominem,no issue,guilt-by-association / circumstantial (considered),GBA C1 partial,GBA C1 fails (no disliked group); circumstantial C3 fails (asks for corroboration),witness-reliability look-alikes,TN,,
+L23,legit,inconsistency / non-cause-aristotle,no issue,inconsistency / non-cause-aristotle (considered),"inconsistency C1,C2",reductio look-alike; non-cause C3 fails (premise used),reductio look-alike,TN,,
+L24,legit,unfalsifiability,no issue,unfalsifiability (considered),,C1 fails: not an empirical claim,value-claim look-alike,TN,,
+L25,legit,appeal-to-the-people / appeal-to-authority,no issue,appeal-to-the-people (considered),C1,"C2 fails: studied agreement, hedged",[source] look-alike,TN,,
+L26,legit,argument-from-ignorance,no issue,argument-from-ignorance (considered),"C1,C2",(only 2 conditions),[source] thorough-search look-alike,TN,,
+L27,legit,argument-from-ignorance,possible issue,argument-from-ignorance,"C1 (guilt not proven), C2 ('not guilty' read as concluding the claim false)",no look-alike covers procedural presumptions; only a reviewer's own knowledge rescues it,none available,FP (possible),Generous step (b) would stop here.,argument-from-ignorance: add C3 (no thorough search where evidence expected) and a procedural-default look-alike.
+L28,legit,false-dilemma,no issue,false-dilemma (considered),C1,C2 fails: exhaustive,true-dichotomy look-alike,TN,,
+L29,legit,begging-the-question,no issue,begging-the-question (considered),C1,C2/C3 fail: premises independently supported,[source] valid-deduction look-alike,TN,,
+L30,legit,no-true-scotsman,no issue,no-true-scotsman (considered),,C1/C2 absent; criterion is meaning,meaning look-alike,TN,,
+L31,legit,appeal-to-tradition,no issue,appeal-to-tradition (considered),C1,C2 fails: not treated as sufficient,[source] look-alike,TN,,
+L32,legit,tone-policing / ad-hominem,no issue,tone-policing (considered),C1,C2/C3 fail: point answered,look-alike applies,TN,,
+L33,legit,composition,no issue,composition (considered),"C1,C2",C3 arguably met (no reason stated) but look-alike applies,material-property look-alike,TN,,
+L34,legit,stereotyping,no issue,stereotyping (considered),"C1,C2","C3 fails: stated as probability, no individual info",base-rate look-alike,TN,,
+L35,legit,straw-man,no issue,straw-man (considered),C1,C2 not shown,,TN,,Correct only because nothing signals distortion; td='yes' lets a reviewer guess (see straw-man td fix).
+L36,legit,cum-hoc / post-hoc / false-cause,possible issue,cum-hoc,"C1,C2; C3 met under the disjunctive reading (chance not addressed)",conclusion hedged; comparison group + mechanism; source look-alike only partly applies,"false-cause 'tentative hypothesis' look-alike is on the fallback entry, not cum-hoc",FP (possible),Generous step (b) would stop here.,"cum-hoc C3 re-wording (alternative left open AND stated as established) + look-alike 'correlation plus comparison or mechanism, offered as grounds to investigate'."
+L37,legit,formal-fallacy / non-sequitur,no issue,formal-fallacy / non-sequitur (considered),C1,C2 fails with obvious premise,enthymeme look-alike,TN,,
+L38,legit,appeal-to-ridicule,no issue,appeal-to-ridicule (considered),,C2 fails: reductio with evidence,reductio look-alike,TN,,
+L39,legit,hasty-generalization,no issue,hasty-generalization (considered),"C1,C2",hedged,tentative-conclusion look-alike,TN,,
+L40,legit,poisoning-the-well / circumstantial-ad-hominem,no issue,poisoning-the-well (considered),C1,C2/C3 fail: argument still weighed,disclosure look-alike,TN,,
+F01,fallacy,straw-man,flag,straw-man,"C1,C2 (proposal stated in text),C3,C4 (implicit)",,restating-in-accepted-words look-alike ruled out,TP,,
+F02,fallacy,ad-hominem,flag,ad-hominem,C1-C4,,witness/leadership look-alikes ruled out,TP,,
+F03,fallacy,tu-quoque,flag,tu-quoque,C1-C3,,sincerity/credibility look-alikes ruled out,TP,,
+F04,fallacy,circumstantial-ad-hominem|appeal-to-motive,flag,circumstantial-ad-hominem,C1-C3 ('ignore their report'),,'reason to check' look-alike ruled out,TP,,
+F05,fallacy,appeal-to-authority,flag,appeal-to-authority,"C1,C2 (dentist on moon landings, evident from text),C3 (implicit)",,genuine-expert look-alike ruled out,TP,,
+F06,fallacy,appeal-to-authority,possible issue,appeal-to-authority,"C1,C3",C2 needs outside facts (field boundary; expert disagreement),,FN (possible only),,By design (td=partly); optional C2 note on field-adjacent experts.
+F07,fallacy,post-hoc,flag,post-hoc,C1-C3,,mechanism look-alike ruled out,TP,,
+F08,fallacy,cum-hoc|reverse-causation,flag,cum-hoc (reverse-causation equally fits),C1-C3,,,TP,,Minor: causation family rule does not say which to prefer when cum-hoc and reverse-causation both fit; suggest 'prefer reverse-causation when the reverse direction is named and plausible'.
+F09,fallacy,hasty-generalization|stereotyping,flag,hasty-generalization,C1-C3,stereotyping C2 fails (no individual),uniform look-alike ruled out,TP,,
+F10,fallacy,slippery-slope,flag,slippery-slope,C1-C3,,[source] look-alike ruled out,TP,,
+F11,fallacy,false-dilemma,flag,false-dilemma,"C1,C2 (partial cuts, new revenue),C3 (implicit conclusion)",,"'only naming main options' look-alike ruled out, but it is a loophole",TP,,false-dilemma look-alike wording fix.
+F12,fallacy,red-herring|avoiding-the-issue,flag,red-herring,C1-C3,,'shown to bear' ruled out,TP,,
+F13,fallacy,appeal-to-the-people,flag,appeal-to-the-people,C1-C3,,studied-agreement look-alike ruled out,TP,,
+F14,fallacy,bandwagon,flag,bandwagon,"C1,C2",,,TP,,
+F15,fallacy,appeal-to-pity,flag,appeal-to-pity,C1-C3,,hardship-relevant look-alike ruled out (grade is not a penalty),TP,,
+F16,fallacy,appeal-to-fear,flag,appeal-to-fear,C1-C3,,,TP,,
+F17,fallacy,genetic-fallacy,flag,genetic-fallacy,C1-C3,,,TP,,
+F18,fallacy,guilt-by-association|genetic-fallacy,flag,guilt-by-association,"C1 (failed-stadium group implicitly disliked),C2,C3",,,TP,,
+F19,fallacy,suppressed-evidence,flag,suppressed-evidence,C1-C3 (context supplied),,not-significant look-alike ruled out,TP,,Without the bracketed context this would correctly be 'possible issue' (td=partly).
+F20,fallacy,motte-and-bailey,flag,motte-and-bailey,C1-C3,,open-retreat look-alike ruled out,TP,,Entry status is contested: disclose.
+F21,fallacy,moving-the-goalposts,possible issue,moving-the-goalposts,"C1,C2",C3 literal fail: reasons are voiced ('peer review is broken'),'raising for a stated reason' look-alike arguably applies,FN (possible only),,moving-the-goalposts C3 + look-alike re-wording.
+F22,fallacy,begging-the-question,flag,begging-the-question,C1-C3,,,TP,,
+F23,fallacy,no-true-scotsman,flag,no-true-scotsman,C1-C3,,prior-criterion look-alike ruled out,TP,,
+F24,fallacy,equivocation,flag,equivocation,C1-C3,,,TP,,
+F25,fallacy,composition,flag,composition,C1-C3,,material-property look-alike ruled out,TP,,
+F26,fallacy,affirming-the-consequent,flag,affirming-the-consequent,C1-C3 ('Therefore'),,IBE look-alike ruled out (no alternatives considered),TP,,
+F27,fallacy,gamblers-fallacy,flag,gamblers-fallacy,C1-C3,,,TP,,
+F28,fallacy,base-rate-fallacy,flag,base-rate-fallacy,C1-C3,,,TP,,
+F29,fallacy,sunk-cost,flag,sunk-cost,C1-C3,,future-benefit look-alikes ruled out,TP,,
+F30,fallacy,ad-hoc-rescue|unfalsifiability,possible issue,ad-hoc-rescue,"C1,C2",C3 ('no independent reason') is a world-claim; unfalsifiability C3 fails (not presented as support),,FN (possible only),,ad-hoc-rescue C3 'given or evident'; unfalsifiability C3 re-wording.
+F31,fallacy,misleading-vividness|anecdotal-evidence|hasty-generalization,flag,anecdotal-evidence,C1-C3,misleading-vividness C3 fails (no statistics in text),illustration look-alike ruled out,TP,,Acceptable label; shows misleading-vividness C3 is a dead letter.
+F32,fallacy,argument-from-ignorance,flag,argument-from-ignorance,"C1,C2",,thorough-search look-alike ruled out,TP,,
+F33,fallacy,loaded-language,flag,loaded-language,"C1,C2,C3 (implicit conclusion)",,editorial look-alike ruled out (presented as news),TP,,
+F34,fallacy,false-equivalence,flag,false-equivalence,C1-C3,,,TP,,
+F35,fallacy,appeal-to-consequences|wishful-thinking,flag,appeal-to-consequences,C1-C3,,practical-decision look-alike ruled out,TP,,Would also meet moralistic-fallacy-style reading; no shared family (see families fix).
+F36,fallacy,relative-privation|red-herring,flag,relative-privation,C1-C3,,tu-quoque third-party look-alike correctly routes away,TP,,
+F37,fallacy,proof-by-assertion|argument-from-repetition,flag,proof-by-assertion OR argument-from-repetition (both fully met),both entries C1-C3,,no routing look-alike between them,TP (label ambiguous),,argument-from-repetition conditions re-written around repetition/silence offered as support.
+F38,fallacy,ad-hominem|circumstantial-ad-hominem,possible issue,ad-hominem,"C1,C2",C3 insinuated only; C4 contestable (experience),,FN (possible only),,ad-hominem C3 insinuation clause + C4 re-wording.

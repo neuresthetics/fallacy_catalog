@@ -1,72 +1,222 @@
 # fallacy_catalog
 
-A plain, sourced catalog of named logical fallacies, for checking arguments against the standard list rather than a custom framework.
+A catalog of 223 named logical fallacies, with sources, and a written procedure for checking an argument against it. It is meant for analysing real arguments, so most of its design is about avoiding false accusations.
 
-Each entry gives:
+Current version: **0.6.0**.
 
-- the standard **name** and common **aliases** (Latin names included);
-- a **category** (formal, or an informal type such as relevance, ambiguity, presumption, weak induction, causal, or statistical);
-- a one- or two-sentence **definition** in plain words;
-- a short **example**;
-- the **required conditions** that must all be shown from the text before the label applies;
-- **legitimate look-alikes**: reasonable arguments that look similar but are not the fallacy;
-- whether it is **detectable from the text** alone, whether it is a **contested** name, and whether it is a broad **fallback** label;
-- **related** entries to choose between, so one step gets one label;
-- **sources**: the published references that list the fallacy, with the exact entry, section or chapter so anyone can check them.
+## What it is and what it isn't
 
-The catalog currently has 223 entries (2 with sources marked TODO). A further 12 names that describe the same mistake as another entry are folded into that entry as aliases and listed under "Names folded into other entries" in FALLACIES.md. The references are the *Internet Encyclopedia of Philosophy* and *Stanford Encyclopedia of Philosophy* articles on fallacies, Aristotle's *On Sophistical Refutations*, *The Fallacy Files*, and Wikipedia's *List of fallacies*, plus a few dedicated articles for statistical errors (the *Stanford Encyclopedia of Philosophy* entries on Simpson's paradox and fatalism, individual Wikipedia articles, and Bastiat's essay "What Is Seen and What Is Not Seen"). See [SOURCES.md](SOURCES.md).
+**It is:**
+- A list of standard fallacy names. Each entry has a plain definition, an example, the conditions that must all be shown from the text before the label applies, the legitimate arguments that look similar but are not the fallacy, and the published references that list it.
+- A procedure ([METHOD.md](METHOD.md)) for applying the list one argument step at a time, with explicit rules for when *not* to flag.
+- A record of how the catalog was audited and tested, with all the test data ([tests/](tests/)).
+
+**It isn't:**
+- A judgement that a conclusion is false. A fallacy flag says that one step does not support its conclusion. The conclusion may still be true, and inferring otherwise is itself a fallacy ([argument from fallacy](FALLACIES.md#argument-from-fallacy)).
+- A complete theory of argument. It does not grade evidence quality in general, check facts, or score how persuasive an argument is.
+- Validated by human experts. All review so far has been done by AI models (see [Limitations](#limitations)).
 
 ## Files
 
 | File | What it is |
 |---|---|
 | [`fallacies.json`](fallacies.json) | The catalog in machine-readable form. This is the source of truth. |
-| [`FALLACIES.md`](FALLACIES.md) | The readable version, grouped by category and alphabetical within each category, with a table of contents. Generated from the JSON. |
-| [`METHOD.md`](METHOD.md) | The procedure for checking an argument, with a false-positive check and two worked examples. |
-| [`SOURCES.md`](SOURCES.md) | The references used and how they are cited. Generated from the JSON. |
-| [`tools/build_md.py`](tools/build_md.py) | Validates the JSON and regenerates the two Markdown files. |
+| [`FALLACIES.md`](FALLACIES.md) | Readable version, grouped by category and alphabetical within each category. Generated from the JSON. |
+| [`METHOD.md`](METHOD.md) | The procedure for checking an argument, with worked examples. |
+| [`SOURCES.md`](SOURCES.md) | The references and how they are cited. Generated from the JSON. |
+| [`tools/build_md.py`](tools/build_md.py) | Validates the JSON and regenerates the two generated Markdown files. |
+| [`tests/`](tests/) | Audits, blind test rounds, answer keys, reviewer verdicts, scores, scoring scripts and regression checks. |
 
-## How to use it to check an argument
+## How the entries were produced
 
-Follow [METHOD.md](METHOD.md). In short: quote the exact passage; restate the argument in its strongest reasonable form; pick the single most specific entry; show the words that meet each required condition (if any condition is unmet, do not flag); say why each legitimate look-alike does not apply; treat entries that are not detectable from the text as questions only; and give a verdict of flag, possible issue or no issue. A second, independent reviewer should re-check each flag.
+### Sources
 
-A fallacy flag is a judgment, not a verdict. The same words can be fallacious in one context and reasonable in another, and naming a fallacy in an argument does not show that its conclusion is false (that would be the [argument from fallacy](FALLACIES.md#argument-from-fallacy)). Treat every flag as a claim to be checked against the passage and the definition.
+Every entry cites at least one published reference that lists the fallacy, unless it is marked `"sources": "TODO"`. The references are:
+- the *Internet Encyclopedia of Philosophy* (IEP) article "Fallacies", section 6 (its alphabetical list);
+- the *Stanford Encyclopedia of Philosophy* (SEP) article "Fallacies";
+- Aristotle, *On Sophistical Refutations* (MIT Internet Classics Archive text);
+- *The Fallacy Files* (individual entry pages);
+- Wikipedia, "List of fallacies";
+- for some later entries: the SEP entries "Simpson's Paradox" and "Fatalism", individual Wikipedia articles (for example "Confusion of the inverse", "Parable of the broken window", "Modal fallacy"), and Bastiat's essay "What Is Seen and What Is Not Seen".
 
-## Editing the catalog
+[SOURCES.md](SOURCES.md) gives each reference with its URL and access date. Each citation in an entry names the exact entry, section, list item or chapter, so anyone can check it.
 
-Edit `fallacies.json`, then run:
+### How each citation was checked
 
-```
-python3 tools/build_md.py           # validate and regenerate FALLACIES.md and SOURCES.md
-python3 tools/build_md.py --check   # validate and confirm the generated files are up to date
-```
+- **The page was fetched, not recalled.** Each reference page was downloaded, and each citation was matched to a specific heading, list item or chapter in the downloaded copy. A citation was written only if the page listed that fallacy. When no page could be confirmed, the entry was marked `TODO` rather than given a guessed source. Two entries are `TODO` in v0.6.0: appeal to inevitability and appeal to sincerity, because no reference we could find lists either as a fallacy.
+- **For the pages added in v0.5.0 and v0.6.0, the check was scripted.** The script that wrote each new citation first asserted that specific phrases from the definition occur in the fetched page, and stopped if any were missing. These one-off build scripts are not part of the repository; the resulting citations are in `fallacies.json`.
+- **Every citation was re-checked by an independent audit.** Audit run 1 compared all citations in v0.1.0 with the cached pages (see [tests/audit/SUMMARY.md](tests/audit/SUMMARY.md)). It found no entry whose source lacked the fallacy outright, but it found mismatches: a "see X" cross-reference cited as if it described the entry, a modern sense attributed to Aristotle, and a Wikipedia one-liner paraphrased past what it says. These were re-cited, annotated or removed.
+- Definitions and examples are written in the catalog's own words, and long passages are not copied. The downloaded pages are not included in this repository, but the URLs and locators are.
 
-The validator checks that ids are unique and in kebab-case; that every entry has a name, category, definition and example; that every entry has 2 to 5 required conditions, a `text_detectable` value consistent with its `outside_text_conditions`, and a `status`; that related ids, families and redirect targets exist; that sourced look-alikes carry a complete citation; and that every entry has at least one source or is explicitly marked `"sources": "TODO"`.
+### `caveat_source`: whose caveat is it?
 
-Rules for sources:
+Each legitimate look-alike carries a `caveat_source`:
+- `source`: the caveat is stated in a cited reference, and the specific reference and locator are given with it. Audit run 2 checked every caveat marked `source` against its reference. Seven did not match, and they were re-cited or downgraded.
+- `catalog wording`: the catalog's own guard note, written to prevent a false positive. It is not claimed to come from any reference.
 
-- Cite only a reference you have actually opened and confirmed lists that fallacy, and give the specific entry, section or chapter.
-- If you cannot confirm a source, set `"sources": "TODO"` rather than guessing.
-- Write definitions and examples in your own words; do not copy long passages from the references.
+### `status`: standard or contested
 
-### Entry fields
+- `standard` (211 entries): a name used in the references for a recognised error.
+- `contested` (12 entries): the name is disputed, used by only one source, or describes something whose status as a fallacy is debated (for example motte-and-bailey and the hot-hand fallacy). If you use a contested entry, say so.
+
+This is separate from the per-row "contested reading" in METHOD.md, which marks a *passage* whose fallacy charge is disputed in the scholarly literature (for example Mill's "proof" of utility).
+
+### Other fields
 
 | Field | Meaning |
 |---|---|
 | `id` | Stable kebab-case identifier. |
 | `name`, `aliases` | Standard name and other names in use, including Latin names and names folded in from merged entries. |
 | `category` | Formal (general, propositional, syllogistic, quantifier and modal) or informal (relevance, ambiguity and language, presumption, weak induction, causal, statistical and probabilistic, dialogue and evasion). |
-| `status` | `standard`, or `contested` for names that are disputed or not widely used. Say so if you use a contested entry. |
-| `text_detectable` | `yes`: can be shown from the text. `partly`: at least one condition may need a fact from outside the text (named in `outside_text_conditions`). `no`: depends on motive, inner bias or outside facts; raise as a question only, never as a flag. |
-| `outside_text_conditions` | The numbers of the required conditions that may need facts from outside the passage. Each is met if the passage states the fact or it is common knowledge; otherwise the verdict is at most possible issue (see METHOD.md step (f)). Empty for `yes` entries. |
-| `use_only_if_nothing_more_specific` | `true` for broad fallback labels (such as non sequitur, false cause, formal fallacy). Use them only when no more specific entry fits. |
+| `text_detectable` | `yes` (176 entries): can be shown from the text. `partly` (43): at least one condition may need a fact from outside the text. `no` (4: confirmation bias, selective attention, availability heuristic, rationalization): depends on motive or inner bias, so it may be raised as a question but never flagged. |
+| `outside_text_conditions` | Which numbered conditions may need facts from outside the passage. Such a condition is met only if the passage states the fact or it is common knowledge; otherwise the verdict is at most "possible issue". |
+| `use_only_if_nothing_more_specific` | `true` for 11 broad fallback labels (such as non sequitur, false cause and formal fallacy). Use them only when no specific entry fits. |
 | `definition`, `example` | Plain-words definition and an original example. |
-| `required_conditions` | 2 to 5 numbered conditions, all of which must be shown from the text before flagging. |
-| `legitimate_lookalikes` | List of `{text, caveat_source}`. `caveat_source` is `"source"` (the caveat is stated in the cited reference, given in `source`) or `"catalog wording"` (the catalog's own guard note). |
-| `families`, `related` | The use-only-one families the entry belongs to, and the other members of those families. Pick one per step. |
-| `sources` | A list of `{ref, title, url, locator}` (with an optional `note`), or `"TODO"`. |
+| `required_conditions` | 2 to 5 numbered conditions. All must be shown before flagging. |
+| `legitimate_lookalikes` | Reasonable arguments that resemble the fallacy, as `{text, caveat_source}`. |
+| `families`, `related` | "Use only one" families (35 in all), each with a rule for choosing between members, so one step gets one label. |
+| `sources` | `{ref, title, url, locator}` (optional `note`), or `"TODO"`. |
 
-Top-level `families` lists each family with its rule for choosing; `redirects` lists names folded into other entries.
+The top-level `redirects` list holds 12 names folded into other entries.
+
+## How to check an argument
+
+Follow [METHOD.md](METHOD.md). In outline, for each step of an argument:
+
+1. Quote the exact words.
+2. Restate the argument in its strongest reasonable form. Read hedges as hedges, supply common-knowledge premises, treat stated defaults (burden of proof, presumption of innocence) as defaults, and respect the conclusion's scope.
+3. Pick the single most specific entry, following the family and cross-family tie-breaks.
+4. Show the words that meet each required condition. If any condition is unmet, do not flag.
+5. Rule out each legitimate look-alike.
+6. Handle conditions that may need outside facts.
+7. Give a verdict: **flag**, **possible issue** (say what would settle it) or **no issue**.
+
+### False-positive controls
+
+The procedure is built to avoid accusing a sound argument. Each control below was added or tightened because an audit or test showed it was needed.
+- **Required conditions.** A label applies only if every numbered condition is shown from the passage's own words. Resemblance is not enough.
+- **Look-alike rule-out.** Each entry lists the legitimate arguments that look like it, such as questioning a paid witness's reliability, a negotiated compromise, or a precaution under uncertainty. The reviewer must say why each one does not apply. A look-alike downgrades a flag only if the passage, or common knowledge, supplies its features.
+- **Outside-text conditions.** Where a condition depends on facts that are not in the passage (what a study did, how common something is), the verdict is at most "possible issue" unless the passage states the fact or it is common knowledge. Bias and motive entries are never flagged.
+- **Reported arguments and no-argument passages.** A passage that reports, teaches, reviews or quotes someone else's fallacy, or makes no argument at all, gets "no issue", and the displayed fallacy is recorded under `reported_fallacy`. In a dialogue, each participant who advances an argument is scored separately. Correctly naming a fallacy, or a fair reduction to absurdity, is no issue.
+- **Real texts.** In an excerpt, a condition that fails only because the support may lie past the excerpt's end gives at most "possible issue". A famous argument whose fallacy charge is disputed in the scholarly literature is marked "contested reading" and given "possible issue" unless its words settle the matter.
+- **Not everything is a fallacy.** Invective and charged wording that no inference rests on go in "rhetorical notes". Arithmetic and factual slips go in "other errors". Neither changes the verdict.
+- **The "possible issue" verdict.** Doubtful cases are not forced into flag or no issue. They are reported with the fact that would settle them.
+- **Specificity and one label per step.** Fallback labels are used only when nothing specific fits. Labels from the same family are not stacked.
+- **A blind second reviewer.** A second reviewer, who has not seen the first reviewer's verdicts, re-checks every flag. Only flags both agree on are reported as flags; disagreements become "possible issue".
+
+## Build history
+
+| Version | Commit | Entries | What changed |
+|---|---|---|---|
+| 0.1.0 | ae96f20 | 228 | First catalog: names, definitions, examples, sourced from the five references above. |
+| 0.2.0 | 91dc7db | 215 | **Independent audit run 1** of all 228 entries: 110 OK, 103 FIX, 12 MERGE, 3 DROP. Fixes applied, 12 merges (kept as aliases and redirects), 3 drops, and 2 additions (separate Aristotle-sense entries for accident and non-cause). Added required conditions, look-alikes, detectability, status, fallback flags, use-only-one families, and METHOD.md. |
+| 0.3.0 | df075a2 | 215 | **Independent audit run 2**: 113 of 118 run-1 rows resolved and 5 partly resolved; 49 issues in the new fields (2 High, 20 Medium, 27 Low); 7 mis-attributed `source` caveats corrected; wording fixes from a 78-passage false-positive test; METHOD step (b) made concrete. |
+| 0.4.0 | ccc9a6f | 216 | **Blind test round 1** fixes: the per-condition `outside_text_conditions` field and METHOD step (f); new cherry-picking entry and selective-evidence tie-break; middle ground, slippery slope and other condition fixes; tie-breaks and reporting rules. |
+| 0.5.0 | 347a415, 46e8036 | 220 | **Blind test round 2** fixes: defaults vs precaution; new entries confusion of the inverse, Simpson's paradox, statistical vs practical significance, and relative vs absolute risk framing; causation and nature tie-breaks; "other errors" note. Two tie-break fixes from the non-blind regression check. |
+| 0.6.0 | deb6e75, e369e78 | 223 | **Blind test round 3** fixes: rules for dialogues, real excerpts, contested readings and rhetorical notes; new entries appeal to inevitability, appeal to sincerity and broken window fallacy; condition or look-alike changes to 16 entries; three fixes from the regression check. |
+
+Details: [tests/audit/SUMMARY.md](tests/audit/SUMMARY.md) and each round's `FIXES.md`.
+
+## Testing
+
+### Protocol
+
+1. **Held-out passages.** For each round, a separate model instance, barred from reading the catalog, wrote a new set of passages and an answer key. The passages are a mix of legitimate arguments (many built to resemble common fallacies), fallacies, borderline cases (round 1), passages with no argument (rounds 2–3), and passages that contain both a sound argument and an error (round 3). Round 3 includes 20 real public-domain excerpts (Darwin, Mill, Paine, Hume, Lincoln, Douglass, Plato and others).
+2. **Two blind reviewers.** Two model instances applied the catalog and METHOD.md to the passages without seeing the key or each other's work. From round 2 on, one reviewer was told to apply every rule strictly and literally, and the other to apply the method as a practical analyst would. Each verdict records the evidence for every condition and the look-alikes ruled out.
+3. **Scoring with adjudication.** A scorer compared both reviewers with the key and traced every error to its cause: the catalog, a reviewer, or the key. The scorer could overrule the key only with a stated reason. Results are reported both "as keyed" and adjudicated, and every overrule is recorded in the answer key's `original_key` and `overrule_reason` columns.
+4. **Fixes, then a regression check.** The catalog was revised in response, and the builder re-applied the method to the affected earlier passages. This check is **not blind**: the builder had the keys in view.
+
+### Results
+
+Numbers below are copied from the score files ([round 1](tests/round1/scores.md), [round 2](tests/round2/scores.md), [round 3](tests/round3/scores.md)). Where two values are given, they are the two reviewers. "Hard FP" means a flag on a legitimate or no-argument passage. "Soft FP" means a possible issue on one. A soft miss is a possible issue on a keyed fallacy, and a hard miss is no issue on one.
+
+| | Round 1 | Round 2 | Round 3 |
+|---|---|---|---|
+| Catalog version (commit) | v0.3.0 (df075a2) | v0.4.0 (ccc9a6f) | v0.5.0 (46e8036) |
+| Entries | 215 | 216 | 220 |
+| Reviewers | A, B (same style) | C strict, D practical | E strict, F practical |
+| Passages | 120 | 100 | 100 (114 / 108 rows) |
+| Mix | 50 legit, 50 fallacy, 20 borderline | 40 legit, 20 no-argument, 40 fallacy | 43 legit, 11 no-argument, 35 fallacy, 11 mixed; 20 real excerpts |
+| Hard FP on legit + no-argument | 0/50, 0/50 | 0/60, 0/60 | 0/54, 0/54 |
+| Soft FP on legit + no-argument | 0, 0 | 0, 0 | 0, 0 |
+| Fallacy hit with acceptable label | 50/50, 49/50 | 35/40, 38/40 | 31/35, 30/35 (as keyed) |
+| Wrong label | 0, 1 | 1, 0 | 2, 1 |
+| Soft miss (as keyed) | 0, 0 | 4, 2 | 1, 4 |
+| Hard miss (as keyed) | 0, 0 | 0, 0 | 1, 0 |
+| Misses after key adjudication | 0, 0 | 3, 1 (Q012 both; Q010 and Q050 C only) * | 1, 2 |
+| Mixed: error units found | n/a | n/a | 11/14, 11/14 as keyed; 10/12, 11/12 adjudicated |
+| Borderline matching the key | 19/20, 20/20 (lenient) | n/a | n/a |
+| Passage verdict agreement | 119/120 (κ 0.985) | 98/100 (κ 0.960) | 95/100 (κ 0.903) |
+| Label agreement on joint flags or steps | 51/52 (98%) | 33/36 (92%) | 48/51 (94%) |
+| Key errors found | 6 | 5 | 6 (R021, R040, R041, R063, R092, R082) |
+
+\* Round 2, after adjudication: Q014 was overruled to possible issue for both reviewers. Q012 stayed a soft miss for both. Q010 and Q050 were soft misses for C only.
+
+In all three rounds, no legitimate or no-argument passage was flagged or given a possible issue by either reviewer: 0 of 328 reviewer judgments. Misses fell as fixes landed, then appeared in new places each round. Agreement between reviewers fell as the material became more realistic: in round 3, 4 of the 5 passage-level disagreements were real excerpts.
+
+**Regression check for v0.6.0 (non-blind):** 159 earlier passages were re-checked against the adjudicated keys, including all 20 real excerpts. Three problems were found and fixed before commit: two gaps in the new rules (a quoted exercise or review would have been scored as an argument; no routing between appeal to poverty and appeal to sincerity) and one mismatch carried over from v0.5.0 (P097). One label in round 3 (R023) moves, by design, from appeal to poverty to the new appeal-to-sincerity entry. See [tests/regression/regression_v060.md](tests/regression/regression_v060.md). v0.6.0 has not yet had a blind round.
+
+## Limitations
+
+- **The reviewers are not independent of each other.** The set writers, reviewers, scorers and auditors are all AI model instances from the same model family, and the same family built the catalog. They probably share blind spots. Round 1's two reviewers agreed on 119 of 120 verdicts and gave the same six possible issues, which the round-1 scorer judged to be consistency of the setup rather than two independent judgments. Later rounds used a strict and a practical reviewer to pull the two apart.
+- **Most test passages are model-written.** Only the 20 round-3 excerpts are real texts. Constructed passages tend to be cleaner than real arguments, and on real texts agreement was lower.
+- **The scorer adjudicated the key.** The scorer changed 18 answer-key rows across the three rounds (17 corrections and 1 clarified reason), usually towards the reviewers' answer. The reasons are recorded, and the "as keyed" numbers are reported alongside.
+- **Regression checks are not blind.** The person who writes the fixes also checks them, with the keys in view. Each new version is only properly tested by the next blind round, and v0.6.0 has not had one yet.
+- **No human expert has validated the catalog or the test results.**
+- **"Possible issue" is used.** The method prefers "possible issue" to a forced call. Reviewers gave it on 6 and 7 of 120 passages (round 1) and 4 and 2 of 100 (round 2). In round 3 they gave it on 5 of 114 and 7 of 108 rows, and it was the worst verdict on 1 and 4 of 100 passages. On keyed fallacies, a possible issue counts as a soft miss. A user who needs a yes/no answer must decide what to do with these cases.
+- **Two entries have no published source** (`TODO`): appeal to inevitability and appeal to sincerity.
+- **Coverage is not exhaustive.** No list of fallacies is complete. Errors outside the catalog get "no issue" from the catalog even when the reasoning is poor, and are at best noted as "weak premise".
+
+## Reproducing
+
+Validate the catalog and confirm that the generated files are up to date:
+
+```
+python3 tools/build_md.py --check
+```
+
+Regenerate FALLACIES.md and SOURCES.md after editing fallacies.json:
+
+```
+python3 tools/build_md.py
+```
+
+Recompute each round's scores from the reviewer verdicts and answer key (run from the repository root; Python 3 standard library only):
+
+```
+python3 tests/round1/score.py
+```
+
+```
+python3 tests/round2/score.py
+```
+
+```
+python3 tests/round3/score.py
+```
+
+Confirm that the recomputed scores match the committed ones:
+
+```
+git diff --stat tests/
+```
+
+To re-run a blind test, give a reviewer only `fallacies.json`, `FALLACIES.md`, `METHOD.md`, this README and a round's `passages.csv`, and compare their verdicts with `answer_key.csv`.
+
+## Editing the catalog
+
+Edit `fallacies.json`, then run `python3 tools/build_md.py`. The validator checks that ids are unique kebab-case; that every entry has a name, category, definition, example, status and 2 to 5 required conditions; that `text_detectable` agrees with `outside_text_conditions`; that related ids, family members and redirect targets exist; that look-alikes marked `source` carry a complete citation; and that every entry has a source or is marked `TODO`.
+
+Rules for sources:
+- Cite only a reference you have opened and confirmed lists that fallacy, with the specific entry, section or chapter.
+- If you cannot confirm a source, use `"sources": "TODO"`.
+- Write definitions and examples in your own words.
+
+## How to cite and use
+
+When you report a flag made with this catalog, give the entry id and the catalog version (for example `straw-man`, fallacy_catalog v0.6.0), quote the passage, and show the conditions and look-alikes as in METHOD.md's record format. Report contested entries and contested readings as such.
+
+To cite the catalog: neuresthetics, *fallacy_catalog: a sourced catalog of logical fallacies with a false-positive-controlled checking method*, version 0.6.0, 2026.
 
 ## License
 

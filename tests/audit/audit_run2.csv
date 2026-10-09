@@ -1,0 +1,231 @@
+id,verdict,severity,run1_verdict,run1_resolution,source_caveat_check,area,issue,proposed_wording,evidence,status,text_detectable,fallback,families
+accent,OK,,FIX,resolved,,,,,,standard,yes,False,ambiguity
+accident,OK,,FIX,resolved,,,,,,standard,yes,False,generalization
+accident-aristotle,FIX,Low,NEW,,,families; status,"Verified: the Coriscus example is in SR ch. 5 (Pickard-Cambridge, Part 5), and the definition matches SEP s.2.1.4. families [] and status 'standard' mean a reviewer may apply this historical sense to modern texts.","Set status 'historical' (or add a look-alike: 'For a general rule misapplied to an exception, use accident.') and related ['accident', 'affirming-the-consequent'].",se_mit.txt Part 5; SEP 2.1.4,standard,yes,False,
+ad-hoc-rescue,FIX,Medium,OK,,1 [source] caveat(s): verified in cited source,conditions wording (text vs world),"C3 'There is no independent reason for the assumption' is a claim about the world (td='partly'), so a text with an obvious ad hoc rescue (FP test F30: psychic failures blamed on skeptics 'disrupting the energy') only reaches 'possible issue'.","C3: 'No independent reason for the assumption is given or evident, and it is offered as settling the conflict.' td can then be 'yes' for the in-text form.",fp_test F30; IEP Ad Hoc Rescue ('if there is no good reason to accept this saving assumption other than that it works to save your cherished belief'),standard,partly,False,rescuing a claim
+ad-hominem,FIX,Medium,FIX,resolved,2 [source] caveat(s): verified in cited source,conditions too strict for insinuation (FN),"C3 needs the attack 'offered as a reason to reject'. Insinuated dismissals ('Interesting argument... from someone who has never run a business') leave this to reviewer judgment, and C4 'irrelevant to whether the claim is true' invites the reply that experience is relevant. FP test F38 gave 'possible issue'.","C3 add: '(stated or clearly insinuated, e.g. by sarcasm or ""consider the source"", with the reasons left unanswered)'. C4: 'The trait is irrelevant to whether the argument's reasons are good. (Expertise or experience can bear on testimony, not on whether stated reasons support the conclusion.)'",fp_test F38; IEP Ad Hominem (age 'may undermine credibility as an authority but not her reasoning'),standard,yes,False,ad hominem
+affirmative-conclusion-from-negative-premise,OK,,OK,,,,,,,standard,yes,False,syllogisms
+affirming-a-disjunct,OK,,OK,,,,,,,standard,yes,False,formal fallback
+affirming-the-consequent,OK,,FIX,resolved,,,,,,standard,yes,False,conditionals;formal fallback
+amphiboly,OK,,FIX,resolved,,,,,,standard,yes,False,ambiguity
+anecdotal-evidence,OK,,OK,,,,,,,standard,yes,False,generalization
+anthropomorphism,OK,,FIX,resolved,2 [source] caveat(s): verified in cited source,,,,,standard,partly,False,projection
+appeal-to-accomplishment,OK,,FIX,resolved,,,,,,standard,yes,False,authority and popularity
+appeal-to-authority,OK (note),,OK,,1 [source] caveat(s): verified in cited source,note (by design),FP test F06 (chemistry laureate on vitamin C) reached only 'possible issue' because 'experts disagree' and 'outside field' need outside facts. This matches td='partly' and is the intended behaviour; no change needed.,None required. Optionally add to C2: 'a field-adjacent expert (a chemist on clinical efficacy) counts as not an expert on this question.',fp_test F06,standard,partly,False,authority and popularity
+appeal-to-celebrity,OK,,FIX,resolved,,,,,,standard,yes,False,authority and popularity
+appeal-to-consequences,FIX,Medium,OK,,,families,"'If X were true it would be terrible, so X is false' meets appeal-to-consequences (family: emotion) and moralistic-fallacy (family: naturalism). Because they share no family, the one-label rule cannot apply.","Add moralistic-fallacy to family 'emotion', or add appeal-to-consequences to 'naturalism', with the rule: 'ought-claim to is-claim (moralistic); outcome of belief or truth to truth (consequences).'",families list,standard,yes,False,emotion
+appeal-to-emotion,OK,,FIX,resolved,1 [source] caveat(s): verified in cited source,,,,,standard,yes,True,emotion
+appeal-to-fear,FIX,High,OK,,,conditions; text_detectable,"C3 'No adequate evidence is given that the feared outcome is likely' is met by any common-knowledge warning, because such warnings rarely state evidence. Look-alike 'real, well-evidenced danger' needs an outside fact, but td='yes'. FP test L15 ('Don't drive home after six drinks: you could kill someone') comes out 'possible issue' under literal application.","C3: 'The feared outcome is unlikely, exaggerated, or unconnected to the action, and is not a well-known risk (well-known risks count as evidenced).' Set text_detectable='partly'. Add look-alike: 'A warning about a risk that is common knowledge, even if no evidence is stated.'",fp_test L15; IEP Appeal to Emotions ('nothing wrong with using emotions... mistake to use emotions as the key premises'),standard,yes,False,emotion
+appeal-to-flattery,OK,,OK,,,,,,,standard,yes,False,emotion
+appeal-to-force,OK,,OK,,1 [source] caveat(s): verified in cited source,,,,,standard,yes,False,emotion
+appeal-to-motive,OK,,OK,,,,,,,standard,yes,False,ad hominem
+appeal-to-nature,OK,,FIX,resolved,,,,,,standard,yes,False,naturalism
+appeal-to-novelty,OK,,FIX,resolved,,,,,,standard,yes,False,authority and popularity
+appeal-to-pity,OK,,OK,,,,,,,standard,yes,False,emotion
+appeal-to-poverty,FIX,Low,OK,,,families; no look-alikes,families [] and no look-alikes.,Add to 'authority and popularity'. Look-alike: 'Cheapness as one indicator of value where there is reason to think it tracks value.',families list,standard,yes,False,
+appeal-to-probability,OK,,FIX,resolved,,,,,,standard,yes,False,probability
+appeal-to-ridicule,OK,,FIX,resolved,,,,,,standard,yes,False,emotion
+appeal-to-snobbery,FIX,Low,OK,,,no look-alikes,No look-alike.,"Add: 'Pointing out that people with relevant expertise choose it, with their reasons.'",entries with no look-alikes,standard,yes,False,emotion
+appeal-to-spite,FIX,Medium,OK,,,conditions too loose; no look-alikes,Two conditions with no relevance limit: any argument that arouses resentment toward wrongdoers is flagged ('This contractor defrauded three clients; don't hire him').,C3: 'The resentment is not tied to evidence bearing on the claim or decision.' Look-alike: 'Past wrongdoing cited as evidence about what the person will do (fraud history when hiring).',condition scan; IEP Appeal to Emotions caveat,standard,yes,False,emotion
+appeal-to-the-people,FIX,Low,FIX,resolved,"1 [source] caveat(s): 1 from IEP Bandwagon, not AttP; rest verified",source caveat attribution,"The [source] look-alike ('agreement among people who have studied the question') is in IEP Bandwagon, not IEP Appeal to the People. The latter says 'what most everyone believes is, for that reason, somewhat likely to be true... the fallacy occurs when this degree of support is overestimated'.","Cite IEP Bandwagon for this caveat, or use the AttP sentence instead.",IEP Appeal to the People; IEP Bandwagon,standard,yes,False,authority and popularity
+appeal-to-the-stone,FIX,Medium,OK,,,families,"'That theory is ridiculous. Next.' meets appeal-to-the-stone (bare assertion) and appeal-to-ridicule (emotion), with no shared family.","Put both in one family, or add a routing look-alike to each: 'If the view is mocked to get a laugh, use appeal to ridicule; if it is just declared absurd, use appeal to the stone.'",families list,standard,yes,False,bare assertion
+appeal-to-tradition,OK,,OK,,1 [source] caveat(s): verified in cited source,,,,,standard,yes,False,authority and popularity
+appeal-to-wealth,FIX,Low,OK,,,families,families []; it mirrors appeal-to-poverty and is a cousin of the authority and popularity appeals.,Add both to 'authority and popularity' (rule: 'money (wealth/poverty)').,families list,standard,yes,False,
+argument-from-fallacy,FIX,Low,FIX,resolved,,families,"This is in family 'formal fallback', but its category is now informal relevance.","Move to 'ignorance and burden' or 'diversion', or leave it with no family.",families list,standard,yes,False,formal fallback
+argument-from-ignorance,FIX,Medium,OK,,1 [source] caveat(s): verified in cited source,conditions; missing look-alike,"There are only two conditions, and both are met by legitimate default rules. The presumption of innocence ('not proven guilty, so verdict not guilty') matches C1 and C2, and no look-alike covers it: FP test L27 gave 'possible issue'. IEP's condition (no thorough search, or no reason to expect evidence) appears only as a look-alike, so the textbook test depends on the reviewer remembering to rule it out.","Add C3: 'Nothing in the context shows a thorough search was made where evidence would be expected if the claim were true.' Add a look-alike (catalog wording): 'A procedural default or burden rule (presumption of innocence, null hypothesis, ""innocent until proven guilty""): the conclusion is what to decide or how to act, not that the claim is false.'",fp_test L27; IEP Appeal to Ignorance ('proper reasoning only if the proof attempts were quite thorough...'),standard,yes,False,ignorance and burden
+argument-from-incredulity,OK,,FIX,resolved,,,,,,standard,yes,False,ignorance and burden
+argument-from-repetition,FIX,Medium,FIX,partly (definition fixed but conditions still overlap proof by assertion),,conditions overlap (builder disagreement 1),"C1–C3 (claim challenged / restated more than once / repetition in place of answering) are also satisfied by every proof-by-assertion case; FP test F37 meets both entries in full. The family rule distinguishes them ('restating against a counterargument' vs 'restating many times'), but the conditions do not. Note on run 1: Wikipedia's ad nauseam text does include 'until nobody cares to discuss it any more and referencing that lack of objection as evidence'. My run-1 note implied it didn't, and that element is what separates the two entries.","C1: 'A claim is restated many times (in one exchange or over time).' C2: 'The repetition itself, or others' having stopped objecting, is offered as support (""how many times must I say it"", ""nobody disputes this any more"").' C3: 'No new support is given.' Add look-alike: 'A single reassertion against a counterargument is proof by assertion, not this.'",fp_test F37; Wikipedia 'Argument from repetition' desc,standard,yes,False,bare assertion
+argument-from-silence,OK,,OK,,,,,,,standard,partly,False,ignorance and burden
+availability-heuristic,OK,,FIX,resolved,,,,,,contested,no,False,generalization
+avoiding-the-issue,OK,,FIX,resolved,1 [source] caveat(s): verified in cited source,,,,,standard,yes,False,diversion
+avoiding-the-question,OK,,FIX,resolved,,,,,,standard,yes,False,diversion
+baconian-fallacy,OK,,OK,,,,,,,standard,yes,False,history
+bandwagon,OK,,FIX,resolved,1 [source] caveat(s): verified in cited source,,,,,standard,yes,False,authority and popularity
+base-rate-fallacy,OK,,OK,,,,,,,standard,partly,False,probability
+begging-the-question,OK,,FIX,resolved,4 [source] caveat(s): verified in cited source,,,,,standard,yes,False,circularity
+bulverism,OK,,OK,,,,,,,standard,partly,False,ad hominem
+chronological-snobbery,OK,,OK,,,,,,,standard,yes,False,authority and popularity
+circumstantial-ad-hominem,FIX,Low,FIX,resolved,1 [source] caveat(s): 1 not in cited sources (IEP Genetic); rest verified,source caveat attribution,"The [source] look-alike 1 ('a stake is a fair reason to check... or seek independent verification') is not in the cited sources (Wikipedia, SEP s.1, IEP Vested Interest). SEP says only 'just because what someone says is in their self-interest, does not mean it should be rejected'. The verification point is in IEP 'Genetic' (planning commission).","Add the IEP 'Genetic' citation, or mark the caveat 'catalog wording' and add SEP's sentence as the [source] caveat.",SEP s.1 item 13; IEP Genetic,standard,yes,False,ad hominem
+combination-of-words,OK,,OK,,,,,,,standard,yes,False,ambiguity
+common-cause,OK,,OK,,1 [source] caveat(s): verified in cited source,,,,,standard,partly,False,causation
+commutation-of-conditionals,OK,,FIX,resolved,,,,,,standard,yes,False,conditionals
+complex-question,OK,,OK,,,,,,,standard,yes,False,circularity
+composition,OK,,OK,,,,,,,standard,yes,False,parts and wholes
+confirmation-bias,OK,,FIX,resolved,,,,,,contested,no,False,omitted evidence
+confusing-explanation-with-excuse,FIX,Low,OK,,,families,families []; it is a kind of misrepresentation and overlaps straw-man.,Add to the proposed 'misrepresentation' family.,families list,standard,yes,False,
+confusing-necessary-and-sufficient,OK,,FIX,resolved,,,,,,standard,yes,False,conditionals
+conjunction-fallacy,OK,,FIX,resolved,,,,,,standard,yes,False,probability
+converse-accident,OK,,FIX,resolved,,,,,,standard,yes,False,generalization
+courtiers-reply,OK,,OK,,,,,,,standard,yes,False,ad hominem
+cum-hoc,FIX,Medium,OK,,1 [source] caveat(s): 1 misattributed (IEP Post Hoc); rest verified,conditions; caveat attribution,"C3 'Chance, a third factor and reverse causation are not addressed' can be read conjunctively (fails if any one is addressed, producing FNs) or disjunctively (met if any one is left open, so FP test L36, a hedged causal hypothesis with a comparison group and a mechanism, gives 'possible issue'). The look-alike marked [source] ('Correlations are often good evidence...') is in IEP's Post Hoc entry, not IEP Cum Hoc. The Fallacy Files Cum Hoc page says instead 'rule out other possible explanations'.","C3: 'At least one plausible alternative (chance, a third factor, reverse direction) is left open, and the causal claim is stated as established rather than as a hypothesis to test.' Re-word the look-alike as the Fallacy Files point ('A correlation can support causation once coincidence, confounding and reverse direction are ruled out') or cite IEP Post Hoc for it. Add look-alike: 'Correlation plus a comparison group or mechanism, offered as grounds to investigate.'",fp_test L36; IEP Cum Hoc body (no such sentence); IEP Post Hoc ('Correlations are often good evidence of causal connection'); FF Cum Hoc 'Exposure',standard,yes,False,causation
+curve-fitting,OK,,FIX,resolved,1 [source] caveat(s): verified in cited source,,,,,standard,partly,False,multiple testing
+dangling-comparative,OK,,OK,,,,,,,standard,yes,False,comparison
+definitional-retreat,FIX,Low,OK,,1 [source] caveat(s): 1 not in source; rest verified,source caveat not in source,The [source] look-alike ('openly conceding that the original claim was too strong') is not in the Wikipedia description ('changing the meaning of a word when an objection is raised...').,Mark caveat_source 'catalog wording'.,wiki_entries 'Definitional retreat',standard,yes,False,definition and meaning shifts;rescuing a claim
+denying-a-conjunct,OK,,OK,,,,,,,standard,yes,False,formal fallback
+denying-the-antecedent,OK,,OK,,,,,,,standard,yes,False,conditionals;formal fallback
+disregarding-known-science,OK,,FIX,resolved,,,,,,standard,partly,False,omitted evidence
+division,OK,,FIX,resolved,,,,,,standard,yes,False,parts and wholes
+division-of-words,OK,,OK,,,,,,,standard,yes,False,ambiguity
+doorman-fallacy,OK,,OK,,,,,,,contested,partly,False,measurement and models
+double-counting,OK,,FIX,resolved,,,,,,standard,yes,False,probability
+double-standard,OK,,FIX,resolved,1 [source] caveat(s): verified in cited source,,,,,standard,yes,False,consistency
+ecological-fallacy,FIX,Low,FIX,resolved,,conditions,"Two conditions; any conclusion about individuals from group data is caught. Look-alikes rescue it, but the conditions should state the error.",C3: 'The group-level pattern is taken to establish the same pattern for individuals (or for a particular person) without individual-level data.',condition scan,standard,yes,False,parts and wholes
+entitled-to-my-opinion,OK,,OK,,,,,,,standard,yes,False,bare assertion
+equivocation,OK,,OK,,,,,,,standard,yes,False,definition and meaning shifts;ambiguity
+etymological-fallacy,FIX,Low,OK,,,families,families []; overlaps genetic-fallacy (meaning judged by origin) and persuasive-definition.,Add to 'definition and meaning shifts'.,families list,standard,yes,False,
+exaggeration,FIX,Low,FIX,resolved,1 [source] caveat(s): verified in cited source,conditions vs definition; td,"C1 'overstated or understated' goes beyond the definition and IEP ('overstate or overemphasize'); understating belongs to lack-of-proportion or suppressed evidence. Judging that something is overstated usually needs facts, yet td='yes'.",C1: 'A claim that is a crucial step is overstated.' Set td='partly'.,IEP Exaggeration,standard,yes,False,proportion
+exclusive-premises,OK,,FIX,resolved,,,,,,standard,yes,False,syllogisms
+existential-fallacy,OK,,OK,,,,,,,standard,yes,False,syllogisms
+fake-precision,OK,,OK,,,,,,,standard,yes,False,measurement and models
+fallacy-of-exhaustive-effort,OK,,OK,,,,,,,standard,yes,False,
+fallacy-of-the-sheep,OK,,OK,,,,,,,standard,yes,False,measurement and models
+false-analogy,OK,,OK,,,,,,,standard,yes,False,comparison
+false-attribution,FIX,Medium,FIX,resolved,,families,families []; overlaps quoting-out-of-context and appeal-to-authority (its own look-alike routes there).,Put in the proposed 'misrepresentation' family (see straw-man).,families list,standard,partly,False,
+false-balance,OK,,FIX,resolved,,,,,,standard,partly,False,comparison
+false-cause,FIX,Medium,FIX,partly (definition narrowed; C2 still uses the old broad test),,conditions vs definition,"The run-1 definition fix was applied, but C2 ('The evidence offered does not adequately support that causal link') is still the old broad test, wider than the new definition. Fallback status limits the damage, but C2 is what reviewers will check.","C2: 'The only support is co-occurrence or sequence, or an obvious alternative (common cause, reversed direction, chance) is left open.' This matches the definition.",definition vs required_conditions in 91dc7db,standard,yes,True,causation
+false-dilemma,FIX,Low,FIX,resolved,,look-alike loophole,"Look-alike '...or the speaker is only naming the main options' can be used to excuse clear cases (FP test F11, 'Either we cut the arts budget entirely or the city goes bankrupt').",'The speaker names the main options without claiming they are the only ones.',fp_test F11,standard,yes,False,options and limits
+false-equivalence,FIX,Low,FIX,resolved,,text_detectable,C2 'differ greatly in a relevant respect' often needs outside facts (e.g. relative seriousness of two scandals).,Set td='partly'.,METHOD (f),standard,yes,False,comparison
+far-fetched-hypothesis,FIX,Low,FIX,resolved,,families,families []; overlaps ad-hoc-rescue when the far-fetched hypothesis is offered to save a claim.,Add to 'rescuing a claim' or add a routing look-alike.,families list,standard,partly,False,
+feedback-fallacy,OK,,FIX,resolved,,,,,,contested,partly,False,
+form-of-expression,OK,,OK,,,,,,,standard,yes,False,ambiguity
+formal-fallacy,FIX,Low,FIX,resolved,1 [source] caveat(s): 1 partly supported; rest verified,families | source caveat partly supported,"Both fallbacks can fire on one invalid argument, because non-sequitur is in 'diversion' and formal-fallacy in 'formal fallback'. Also, the 'formal fallback' family contains argument-from-fallacy, which is now 'informal: relevance', not a formal form. | The [source] look-alike (strong inductive argument judged by inductive standards) is only partly supported: IEP Invalid Reasoning says arguments 'can be assessed by deductive standards', and FF says formal fallacies are 'typically' committed by deductive arguments. The inductive-strength example is in IEP Non Sequitur, which is not cited here.",Remove argument-from-fallacy from 'formal fallback'. Add a rule to formal-fallacy: 'Do not also tag non sequitur for the same step.' | Add the IEP Non Sequitur citation or soften to catalog wording.,families list | IEP Invalid Reasoning; IEP Non Sequitur; FF Formal Fallacy,standard,yes,True,formal fallback
+four-terms,OK,,OK,,,,,,,standard,yes,False,ambiguity;syllogisms
+furtive-fallacy,OK,,OK,,,,,,,standard,partly,False,causation
+gamblers-fallacy,OK,,OK,,1 [source] caveat(s): verified in cited source,,,,,standard,yes,False,chance
+garden-of-forking-paths,OK,,OK,,,,,,,standard,partly,False,multiple testing
+genetic-fallacy,OK,,OK,,1 [source] caveat(s): verified in cited source,,,,,standard,yes,False,ad hominem
+goomba-fallacy,OK,,OK,,,,,,,standard,yes,False,
+group-think,OK,,FIX,resolved,,,,,,standard,partly,False,authority and popularity
+guilt-by-association,OK,,FIX,resolved,,,,,,standard,yes,False,ad hominem
+hasty-generalization,OK,,FIX,resolved,,,,,,standard,yes,False,generalization
+hedging,OK,,OK,,1 [source] caveat(s): verified in cited source,,,,,standard,yes,False,rescuing a claim
+historians-fallacy,OK,,OK,,,,,,,standard,partly,False,history
+historical-fallacy,FIX,Medium,OK,,,conditions too loose; td,"C2 'The process may not have produced the result' is almost always true ('may'), the entry has no look-alikes, and td='yes'.","C2: 'No evidence is given that the process produced the result, and the result could plausibly be present anyway (say why).' Set td='partly'. Look-alike: 'Attribution backed by a before/after comparison or a known mechanism.'",condition scan,standard,yes,False,history
+homunculus-fallacy,OK,,OK,,,,,,,standard,yes,False,projection
+hot-hand-fallacy,OK,,FIX,resolved,,,,,,contested,partly,False,chance
+ideology-driven-argumentation,FIX,Low,FIX,resolved,,families,families []; overlaps begging-the-question and loaded-label (a contested doctrine treated as settled).,"Add to 'circularity', or add a routing look-alike.",families list,standard,yes,True,
+if-by-whiskey,OK,,OK,,,,,,,standard,yes,False,
+illicit-contraposition,OK,,OK,,1 [source] caveat(s): verified in cited source,,,,,standard,yes,False,syllogisms
+illicit-conversion,OK,,OK,,1 [source] caveat(s): verified in cited source,,,,,standard,yes,False,syllogisms
+illicit-major,OK,,OK,,,,,,,standard,yes,False,syllogisms
+illicit-minor,OK,,OK,,,,,,,standard,yes,False,syllogisms
+improper-transposition,OK,,FIX,resolved,,,,,,standard,yes,False,conditionals
+inconsistency,OK,,FIX,resolved,,,,,,standard,yes,True,consistency
+independence-fallacy,OK,,OK,,,,,,,standard,partly,False,probability
+inductive-conversion,OK,,OK,,,,,,,standard,yes,False,generalization
+inflation-of-conflict,OK,,OK,,,,,,,standard,yes,False,
+intensional-fallacy,OK,,FIX,resolved,1 [source] caveat(s): verified in cited source,,,,,standard,yes,False,quantifiers and modality
+intentional-fallacy,OK,,FIX,resolved,,,,,,contested,partly,False,
+inverse-gamblers-fallacy,OK,,OK,,,,,,,standard,yes,False,chance
+ipse-dixit,OK,,FIX,resolved,,,,,,standard,yes,False,bare assertion
+irrelevant-conclusion,OK,,FIX,resolved,1 [source] caveat(s): verified in cited source,,,,,standard,yes,True,diversion
+is-ought,OK,,FIX,resolved,2 [source] caveat(s): verified in cited source,,,,,standard,yes,False,naturalism
+jumping-to-conclusions,OK,,FIX,resolved,1 [source] caveat(s): verified in cited source,,,,,standard,partly,True,generalization
+kettle-logic,OK,,OK,,,,,,,standard,yes,False,consistency
+lack-of-proportion,OK,,FIX,resolved,,,,,,standard,yes,True,proportion
+line-drawing,OK,,FIX,resolved,1 [source] caveat(s): verified in cited source,,,,,standard,yes,False,options and limits
+loaded-label,OK,,OK,,1 [source] caveat(s): verified in cited source,,,,,standard,yes,False,definition and meaning shifts;circularity
+loaded-language,OK,,FIX,resolved,1 [source] caveat(s): verified in cited source,,,,,standard,yes,False,definition and meaning shifts
+logic-chopping,OK,,FIX,resolved,,,,,,standard,yes,False,diversion
+lottery-fallacy,OK,,OK,,,,,,,standard,yes,False,chance
+ludic-fallacy,OK,,FIX,resolved,,,,,,contested,partly,False,measurement and models
+lump-of-labour,OK,,FIX,resolved,,,,,,standard,yes,False,
+magical-thinking,OK,,OK,,,,,,,standard,yes,False,causation
+mcnamara-fallacy,OK,,FIX,resolved,,,,,,contested,partly,False,measurement and models
+middle-ground,OK,,OK,,,,,,,standard,yes,False,options and limits
+mind-projection,OK,,OK,,,,,,,standard,yes,False,projection
+misleading-vividness,FIX,Medium,FIX,resolved,,example fails own C3,"C3 'It outweighs, in the argument, statistical evidence pointing the other way' is not met by the catalog's own shark example, which mentions no statistics. In practice the entry never fires and anecdotal evidence takes the case (FP test F31). That is harmless for FPs but makes the entry dead.","C3: 'Statistical evidence pointing the other way exists (stated, or well known) and is outweighed or ignored.' Set td='partly'.",entry example; fp_test F31,standard,yes,False,generalization
+misplaced-burden-of-proof,OK,,FIX,resolved,1 [source] caveat(s): verified in cited source,,,,,standard,yes,False,ignorance and burden
+modal-scope-fallacy,OK,,OK,,,,,,,standard,yes,False,quantifiers and modality
+moralistic-fallacy,OK,,OK,,,,,,,standard,yes,False,naturalism
+motte-and-bailey,OK,,FIX,resolved,,,,,,contested,yes,False,definition and meaning shifts;rescuing a claim
+moving-the-goalposts,FIX,Medium,FIX,resolved,,conditions too strict (FN),"C3 'without a reason' fails whenever any reason is voiced. In FP test F21 the speaker says 'peer review is broken' and 'one replication proves nothing', so the clear case only reaches 'possible issue'. The look-alike 'raising the standard for a stated reason' widens the loophole.","C3: 'A new, stricter standard is then demanded, and the stated reason (if any) is neither new information nor a change in the claim, so it would have applied when the first standard was set.' Look-alike: 'Raising the standard because of something learned after it was set (e.g. a flaw in how it was met) or because the claim has grown.'",fp_test F21 (and L20 still passes under the new wording),standard,yes,False,rescuing a claim
+multiple-comparisons,OK,,OK,,,,,,,standard,partly,False,multiple testing
+naturalistic-fallacy,OK,,FIX,resolved,,,,,,standard,yes,False,naturalism
+naturalistic-fallacy-fallacy,OK,,OK,,,,,,,standard,yes,False,naturalism
+negative-conclusion-from-affirmative-premises,OK,,OK,,,,,,,standard,yes,False,syllogisms
+nirvana-fallacy,OK,,FIX,resolved,1 [source] caveat(s): verified in cited source,,,,,standard,yes,False,options and limits
+no-true-scotsman,OK,,FIX,resolved,,,,,,standard,yes,False,definition and meaning shifts;rescuing a claim
+non-cause-aristotle,FIX,Low,NEW,,,families; status,Verified against SEP s.2.1.4 (superfluous premise in an ad impossibile argument). families [] and status 'standard'.,"Set status 'historical'; related ['false-cause', 'inconsistency']. Add a look-alike: 'For empirical causal errors, use false cause (SEP: Rhetoric II 24 sense).'",SEP 2.1.4,standard,yes,False,
+non-sequitur,OK,,FIX,resolved,1 [source] caveat(s): verified in cited source,,,,,standard,yes,True,diversion
+nut-picking,OK,,OK,,,,,,,standard,yes,False,omitted evidence
+obscurum-per-obscurius,OK,,OK,,,,,,,standard,yes,False,
+observational-interpretation,OK,,OK,,,,,,,standard,yes,False,causation
+over-extrapolation,OK,,OK,,,,,,,standard,yes,False,measurement and models
+overgenerality,OK,,FIX,resolved,,,,,,standard,yes,False,generalization
+oversimplification,OK,,FIX,resolved,,,,,,standard,yes,True,proportion
+overwhelming-exception,OK,,OK,,,,,,,standard,yes,False,omitted evidence
+p-hacking,OK,,OK,,,,,,,standard,partly,False,multiple testing
+package-deal,OK,,FIX,resolved,,,,,,standard,yes,False,comparison
+pathetic-fallacy,OK,,FIX,resolved,,,,,,standard,yes,False,projection
+persuasive-definition,FIX,Low,FIX,partly (definist absorbed; contradictory duplicate alias),,aliases,"The aliases list both 'definist fallacy (related)' and 'definist fallacy', which contradict each other.",Keep only 'definist fallacy'.,aliases in 91dc7db,standard,yes,False,definition and meaning shifts
+poisoning-the-well,OK,,FIX,resolved,,,,,,standard,yes,False,ad hominem
+post-hoc,OK,,OK,,1 [source] caveat(s): verified in cited source,,,,,standard,yes,False,causation
+proof-by-assertion,FIX,Low,FIX,partly (recategorised; overlap with repetition remains at condition level),,routing,Needs the mirror routing note for F37-type passages.,"Add look-alike: 'If the repetition count or others' silence is itself offered as support, use argument from repetition.'",fp_test F37,standard,yes,False,bare assertion
+proof-surrogate,OK,,OK,,,,,,,standard,yes,False,bare assertion
+prosecutors-fallacy,OK,,OK,,,,,,,standard,yes,False,probability
+proving-too-much,FIX,Low,FIX,partly (definition re-worded but still beyond the cited Wikipedia text),,definition beyond source,"Wikipedia (the only source) says only 'an argument that results in an overly generalized conclusion'. Both the definition clause and C2 ('would also establish things the arguer would reject') are the traditional sense, which is not in the cited source.","Keep, but mark the traditional sense as catalog wording in a note, or find a source that states it. Add family [] -> related ['false-analogy'].",wiki_entries 'Proving too much',standard,yes,False,
+psychologists-fallacy,OK,,OK,,,,,,,standard,partly,False,projection
+quantifier-shift,OK,,OK,,,,,,,standard,yes,False,quantifiers and modality
+question-begging-analogy,OK,,OK,,,,,,,standard,yes,False,circularity;comparison
+quibbling,OK,,OK,,,,,,,standard,yes,False,diversion;proportion
+quoting-out-of-context,FIX,Medium,OK,,,text_detectable,"C2 needs the omitted surrounding words, which are usually not in the passage under review, yet td='yes'.","Set td='partly'; add to C2 '(quote the fuller original; without it, at most possible issue)'.",METHOD (d)/(f),standard,yes,False,omitted evidence;ambiguity
+rationalization,OK,,FIX,resolved,,,,,,contested,no,False,
+red-herring,FIX,Medium,FIX,resolved,1 [source] caveat(s): 1 misattributed (IEP Avoiding the Issue); rest verified,caveat mis-attributed,"Look-alike 2 ('Arguing that another issue must be settled first, when that dependence is real') is marked [source] with IEP Red Herring and Fallacy Files cited, but the sentence comes from IEP's Avoiding the Issue entry. IEP's own Red Herring example is a speaker who asserts that another question 'must first' be determined. So the caveat needs 'dependence shown, not merely asserted', or it excuses IEP's textbook case.","Mark caveat_source 'catalog wording' (or add the IEP Avoiding the Issue citation). Re-word: 'Arguing that another issue must be settled first, when the dependence is shown and not merely asserted.'",IEP Red Herring body (Senate Bill 47 example); IEP Avoiding the Issue last sentence,standard,yes,False,diversion
+redefinition,OK,,OK,,,,,,,standard,yes,False,definition and meaning shifts
+reductio-ad-hitlerum,OK,,OK,,,,,,,standard,yes,False,ad hominem
+referential-fallacy,OK,,OK,,,,,,,standard,yes,False,projection
+regression-fallacy,OK,,OK,,,,,,,standard,partly,False,causation;chance
+reification,OK,,OK,,,,,,,standard,yes,False,projection
+relative-privation,OK,,OK,,,,,,,standard,yes,False,diversion
+retrospective-determinism,OK,,OK,,,,,,,standard,yes,False,causation;history
+reverse-causation,FIX,Low,OK,,,no look-alikes,reverse-causation has no look-alikes.,"Add to reverse-causation: 'Two-way causation, or reverse direction ruled out by timing or design.'",entries with no look-alikes,standard,yes,False,causation
+scapegoating,FIX,Medium,FIX,resolved,,example fails own C3,The example ('The product launch failed because of the new intern') does not meet C3 ('relies on their already being disliked'): nothing says the intern is disliked. A reviewer matching the example would over-flag ordinary unsupported blame.,Example: 'Sales are down because of those newcomers from the city. Everyone here knows what they're like.',entry example vs required_conditions,standard,partly,False,emotion
+scope-fallacy,OK,,OK,,,,,,,standard,yes,False,ambiguity;quantifiers and modality
+secundum-quid,OK,,FIX,resolved,,,,,,standard,yes,False,generalization
+selective-attention,OK,,FIX,resolved,,,,,,contested,no,False,omitted evidence
+self-fulfilling-prophecy,OK,,OK,,,,,,,standard,partly,False,
+single-cause,OK,,FIX,resolved,,,,,,standard,yes,False,causation;proportion
+slippery-slope,OK,,FIX,resolved,1 [source] caveat(s): verified in cited source,,,,,standard,partly,False,options and limits
+smokescreen,OK,,FIX,resolved,1 [source] caveat(s): verified in cited source,,,,,standard,yes,True,diversion
+some-are-some-are-not,OK,,OK,,1 [source] caveat(s): verified in cited source,,,,,standard,yes,False,syllogisms
+special-pleading,OK,,OK,,,,,,,standard,yes,False,consistency
+specificity,OK,,FIX,resolved,,,,,,standard,yes,False,generalization
+stereotyping,OK,,FIX,resolved,,,,,,standard,yes,False,generalization
+straw-man,FIX,High,FIX,resolved,,families; text_detectable,"This is one of the most over-applied labels (run-1 top-20 #4), yet it has families []. It overlaps quoting-out-of-context, irrelevant-conclusion (SEP treats straw man as a kind of ignoratio elenchi), motte-and-bailey (a misreading of the other side's motte), confusing-explanation-with-excuse, false-attribution and goomba-fallacy. C2 ('differs materially from what they said or meant') can only be checked against the original wording, so td='yes' invites guessing.","Create a family 'misrepresentation' {straw-man, quoting-out-of-context, false-attribution, confusing-explanation-with-excuse}. Rule: 'Distorted restatement attacked (straw man); clipped quote (out of context); invented words or source (false attribution); explanation read as excuse (confusing explanation with excuse).' Set td='partly'. Add to C2: '(show the original wording or a reliable summary of it; without it, at most possible issue)'.",families list; run1 top-20; METHOD (d),standard,yes,False,
+style-over-substance,FIX,Low,OK,,,families,families []; overlaps appeal-to-emotion and appeal-to-flattery.,Add to 'emotion' or leave alone; low risk.,families list,standard,yes,False,
+subjectivist-fallacy,FIX,Medium,OK,,,families,"families []; overlaps entitled-to-my-opinion (bare assertion). 'That's your truth, I'm entitled to mine' meets both.",Add to family 'bare assertion' with a routing rule.,families list,standard,yes,False,
+sunk-cost,OK,,FIX,resolved,,,,,,standard,yes,False,
+superstitious-thinking,OK,,FIX,resolved,,,,,,standard,yes,False,causation
+suppressed-correlative,OK,,OK,,,,,,,standard,yes,False,definition and meaning shifts
+suppressed-evidence,OK,,FIX,resolved,1 [source] caveat(s): verified in cited source,,,,,standard,partly,False,omitted evidence
+survivorship-bias,FIX,Low,OK,,,families,"This entry is in 'omitted evidence'. unrepresentative-sample is in 'generalization', and a filtered sample meets both.","Add a routing look-alike: 'If the filter is how the sample was gathered, use unrepresentative sample; use survivorship bias only when the filtered-out cases are the missing ones.'",families list,standard,partly,False,omitted evidence
+texas-sharpshooter,OK,,OK,,,,,,,standard,partly,False,multiple testing
+thought-terminating-cliche,OK,,FIX,resolved,,,,,,standard,yes,False,bare assertion
+tokenism,OK,,FIX,resolved,,,,,,standard,yes,False,proportion
+tone-policing,OK,,FIX,resolved,,,,,,contested,yes,False,ad hominem
+traitorous-critic,OK,,OK,,,,,,,standard,yes,False,ad hominem
+tu-quoque,FIX,Low,FIX,resolved,1 [source] caveat(s): 1 paraphrase drift (sincerity vs reasoning); rest verified,source caveat wording,"The [source] look-alike says hypocrisy is a reason to doubt the speaker's 'sincerity'. IEP says it is 'a reason to be suspicious of the speaker's reasoning, but it is not a sufficient reason to discount it'.","'Discovering that a speaker is a hypocrite is a reason to be suspicious of their reasoning, but not a sufficient reason to discount it.'",IEP Tu Quoque last sentence,standard,yes,False,ad hominem
+two-wrongs,FIX,Medium,FIX,resolved,,families,"families []. 'He did it too, so it's fine for me' meets both two-wrongs and tu-quoque (Fallacy Files places tu quoque near two wrongs), so a reviewer can stack them.","Add to family 'ad hominem', or to a new family 'others' conduct' {tu-quoque, two-wrongs} with the rule: 'Claim or criticism dismissed because the critic does it (tu quoque); wrong act defended because others do it (two wrongs).'",families list,standard,yes,False,
+undistributed-middle,OK,,OK,,,,,,,standard,yes,False,syllogisms;formal fallback
+unfalsifiability,FIX,Medium,FIX,resolved,,conditions too strict; example fails own C3,"C3 'Its compatibility with every outcome is presented as support' is not met by the catalog's own example ('if it didn't work for you, your faith was too weak'), which never presents compatibility as support. IEP's 'untestability' needs only that the explanation is immune to test, not that immunity is boasted of.","C3: 'It is still presented as established or explanatory, although its framing (not evidence) is what protects it from refutation.'",entry example; IEP Untestability,standard,yes,False,rescuing a claim
+unrepresentative-sample,OK,,FIX,resolved,,,,,,standard,partly,False,generalization
+vacuous-truth,OK,,FIX,resolved,,,,,,standard,yes,False,
+vagueness,FIX,Medium,OK,,1 [source] caveat(s): verified in cited source,families; duplicate caveat,"families []. Fallacy Files makes the heap a sub-fallacy of vagueness, and the [source] look-alike repeats line-drawing's IEP sentence ('not hopelessly vague'). Both can fire on one sorites-style passage.","Add to family 'options and limits' or 'ambiguity' together with line-drawing. Rule: 'no sharp line, so no difference (line-drawing); conclusion trades on a fuzzy term (vagueness).'",FF Vagueness page ('Subfallacy: The Fallacy of the Heap'),standard,partly,False,
+willed-ignorance,FIX,Low,FIX,resolved,,families,families []; overlaps proof-by-assertion and entitled-to-my-opinion.,Add to 'bare assertion'.,families list,standard,yes,False,
+wishful-thinking,OK,,OK,,,,,,,standard,partly,False,emotion
+ambiguous-middle,(removed),,MERGE,resolved -> redirect four-terms,,,,,,,,,
+bad-seed,(removed),,MERGE,resolved -> redirect genetic-fallacy,,,,,,,,,
+circular-reasoning,(removed),,MERGE,resolved -> redirect begging-the-question,,,,,,,,,
+definist-fallacy,(removed),,MERGE,resolved -> redirect persuasive-definition,,,,,,,,,
+faulty-comparison,(removed),,MERGE,resolved -> redirect false-analogy,,,,,,,,,
+hyperbolic-discounting,(removed),,DROP,resolved (absent),,,,,,,,,
+illicit-process,(removed),,MERGE,resolved -> redirect illicit-major,,,,,,,,,
+lying,(removed),,DROP,resolved (absent),,,,,,,,,
+masked-man,(removed),,MERGE,resolved -> redirect intensional-fallacy,,,,,,,,,
+opposition,(removed),,MERGE,resolved -> redirect guilt-by-association,,,,,,,,,
+questionable-premise,(removed),,DROP,resolved (absent),,,,,,,,,
+self-selection,(removed),,MERGE,resolved -> redirect unrepresentative-sample,,,,,,,,,
+slanting,(removed),,MERGE,resolved -> redirect suppressed-evidence,,,,,,,,,
+smear-tactic,(removed),,MERGE,resolved -> redirect ad-hominem,,,,,,,,,
+vested-interest,(removed),,MERGE,resolved -> redirect circumstantial-ad-hominem,,,,,,,,,

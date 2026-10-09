@@ -1,0 +1,79 @@
+id,passage,ground_truth,intended_entry_or_lookalike,ground_truth_rationale
+L01,"If the defendant had been at the scene, the CCTV would show him. It shows a man of his height and build, wearing his distinctive coat, at 9:14. So he was probably there.",legit,affirming-the-consequent / non-sequitur,"Inference to best explanation, conclusion hedged."
+L02,"In the trial, 2,000 patients were randomly assigned; the drug group had 40% fewer strokes (p<0.001). So the drug likely reduces strokes.",legit,cum-hoc / false-cause,"Randomisation addresses third factors, reverse direction; p-value addresses chance."
+L03,"The rash appeared an hour after she started the new antibiotic, rash is a listed side effect, and it cleared when she stopped. The antibiotic probably caused it.",legit,post-hoc,Timing plus known mechanism and dechallenge.
+L04,"Your proposal removes all fees for downtown parking. Those fees fund $4M of road repair each year, so your plan needs another funding source for road repair.",legit,straw-man,Draws a consequence the proposal is actually committed to; position stated accurately.
+L05,We shouldn't rely on Dr. Hale's testimony about the lab results: he was convicted last year of falsifying lab data.,legit,ad-hominem,Witness reliability where claim rests on testimony.
+L06,"He embezzled from the last charity he ran, so he should not be made our treasurer.",legit,ad-hominem,Character relevant when the question is about the person (IEP leadership case).
+L07,"The IPCC and every major national science academy conclude that recent warming is mainly human-caused, so I accept that it is.",legit,appeal-to-authority,"Genuine experts in field, broad agreement."
+L08,"If we raise the price above $20, many customers will switch: our survey shows 40% would move to the cheaper competitor, and losing 40% would put us below break-even. So we shouldn't raise it.",legit,slippery-slope,"Short chain, each step supported."
+L09,"In this two-minute pitch I'll give the three strongest reasons to fund the park; the full cost-benefit report, downsides included, is in your packet.",legit,suppressed-evidence,"Openly partial, not presented as complete."
+L10,"Before we decide whether to fire Lee over the missing money, we have to establish whether the audit software is accurate, since its report is the only evidence against him.",legit,red-herring / avoiding-the-issue,Real dependence on prior issue.
+L11,"I tested one sample from this batch of reagent and it is contaminated. The whole batch was mixed in a single vat, so the batch is contaminated.",legit,hasty-generalization,Population known to be uniform.
+L12,"You fined me for parking here, but the mayor parks here daily without a ticket. The rule is being enforced unevenly and that should be reviewed.",legit,tu-quoque / two-wrongs,"Conclusion is about uneven enforcement, not that the act was right."
+L13,"The study showing the sweetener is safe was funded by its manufacturer, so before relying on it we should look for independent replication.",legit,circumstantial-ad-hominem,"Stake as reason to check, not to reject."
+L14,"Thousands of children die each year from this disease, and a $5 vaccine prevents it. That is why we should fund the vaccination programme.",legit,appeal-to-emotion,Emotion tied to the relevant facts.
+L15,Don't drive home after six drinks: you could kill someone.,legit,appeal-to-fear,"Warning about a real, well-known danger; no evidence stated in text because it is common knowledge."
+L16,"Opinion: This reckless budget guts the libraries our kids depend on, and the council should reject it.",legit,loaded-language / loaded-label,Openly evaluative editorial; a factual reason is given.
+L17,Both candidates took large oil-industry donations: Smith $2.0M and Jones $1.9M.,legit,false-equivalence,Things really comparable in the stated respect.
+L18,"Many things contributed to the bridge collapse, but the immediate trigger was the cracked gusset plate.",legit,single-cause / oversimplification,"Trigger named, other causes acknowledged."
+L19,"I said all swans are white. You've shown me black swans, so I was wrong; my claim now is only that most European swans are white.",legit,hedging / motte-and-bailey / definitional-retreat,"Open retreat, original claim abandoned."
+L20,"We agreed to expand if the pilot model hit 90% accuracy. It hit 91%, but it was tested on last year's data, which it was trained on, so we need a test on fresh data first.",legit,moving-the-goalposts,"Standard raised for a stated, valid reason (data leakage)."
+L21,"This 'study' comes from a website run by the supplement's seller and gives no methods, so I'd want an independent source before believing it.",legit,genetic-fallacy,Origin relevant to source reliability.
+L22,"The alibi witness works for the defendant and reports to him, so her testimony needs corroboration.",legit,guilt-by-association / circumstantial-ad-hominem,"Association bears on witness reliability; asks for check, not rejection."
+L23,"Suppose there is a largest prime p. Then p!+1 has a prime factor larger than p, a contradiction. So there is no largest prime.",legit,inconsistency / non-cause-aristotle,Deliberate reductio; the blamed premise is used.
+L24,"Murder is wrong. No experiment could show otherwise, but that is because it is a moral claim, not a prediction.",legit,unfalsifiability,"Value claim, not an empirical explanation."
+L25,"Most of the 300 cardiologists surveyed after reviewing the trial data recommend the new guideline, so it is probably sound.",legit,appeal-to-the-people / appeal-to-authority,Agreement among people who studied the question.
+L26,"We searched her full records and ran every standard allergy panel; no penicillin allergy appears, so we can treat her as not allergic.",legit,argument-from-ignorance,Thorough search; evidence would have shown up.
+L27,"The prosecution has not proved guilt beyond reasonable doubt, so the jury must return a verdict of not guilty.",legit,argument-from-ignorance,"Procedural presumption; conclusion is a verdict, not that the accused is innocent."
+L28,"The fever has either an infectious or a non-infectious cause; cultures and markers rule out infection, so we look for non-infectious causes.",legit,false-dilemma,Exhaustive dichotomy.
+L29,All mammals breathe air; whales are mammals; so whales breathe air.,legit,begging-the-question,Valid deduction containing its conclusion.
+L30,"He eats fish every week, so he's not a vegetarian, whatever he calls himself.",legit,no-true-scotsman,Criterion is part of the word's meaning.
+L31,"This recipe has been made the same way here for 300 years and refined by generations of cooks, so it's a reasonable place to start, though we'll taste-test any changes.",legit,appeal-to-tradition,"Record as some evidence, not as sufficient."
+L32,"Your argument about tariffs is wrong because it ignores retaliation by trading partners. Also, please stop shouting.",legit,tone-policing / ad-hominem,Point answered; tone remark separate.
+L33,"Every brick in this wall is fired clay and the mortar is non-combustible, so the wall won't burn.",legit,composition,Property that does carry from parts to whole.
+L34,"With no other information about this applicant, the base rate in this pool is about 3% default, so her default risk is roughly 3%.",legit,stereotyping,"Group rate stated as probability, no individual information."
+L35,Opponents of the bike lane say it will hurt Main Street businesses. But sales data from 14 cities show bike lanes did not lower retail sales.,legit,straw-man,Rebuts a claim opponents actually make; no sign of distortion.
+L36,"Since the factory opened upstream, cancer rates downstream have doubled while rates upstream are flat, and its discharge contains benzene, a known carcinogen. The factory is a likely cause and should be investigated.",legit,cum-hoc / post-hoc / false-cause,Comparison group plus mechanism; conclusion hedged and calls for investigation.
+L37,"Socrates is a man, so Socrates is mortal.",legit,formal-fallacy / non-sequitur,Enthymeme with obvious acceptable premise.
+L38,"If your claim that the drug is harmless at any dose were right, swallowing the whole bottle would be fine, and poison-centre data show it is not.",legit,appeal-to-ridicule,Reduction to absurdity backed by evidence.
+L39,"In our pilot, 9 of 12 users preferred the new layout. That's encouraging but too small to be sure, so we'll run a larger test.",legit,hasty-generalization,"Tentative conclusion, appropriately hedged."
+L40,"Disclosure: the op-ed's author is paid by the coal industry. Her argument about grid reliability should still be judged on its data, which I'll go through now.",legit,poisoning-the-well / circumstantial-ad-hominem,Documented conflict disclosed; argument still weighed.
+F01,"Senator Ruiz wants background checks on private gun sales. Apparently she thinks every gun owner is a criminal-in-waiting, and that insults millions of law-abiding citizens.",fallacy,straw-man,Restates a background-check proposal as a belief that all owners are criminals.
+F02,Why should we listen to Dr. Ito's analysis of the bridge loads? She's been divorced three times.,fallacy,ad-hominem,Irrelevant personal trait.
+F03,"You tell me to quit smoking because it causes cancer, but you smoke a pack a day, so your argument is worthless.",fallacy,tu-quoque,IEP's own pattern.
+F04,Of course the union says the factory is unsafe; they want higher pay. So we can ignore their safety report.,fallacy,circumstantial-ad-hominem|appeal-to-motive,Stake used to dismiss the report's content.
+F05,"My dentist says the moon landings were faked, and he's a very smart man.",fallacy,appeal-to-authority,Authority outside field.
+F06,"A Nobel laureate in chemistry says high-dose vitamin C cures colds, so the question is settled.",fallacy,appeal-to-authority,"Subtle: adjacent field, experts disagree (outside fact)."
+F07,"Since the new principal arrived in September, test scores have dropped. She's clearly bad for the school.",fallacy,post-hoc,"Subtle: sequence only, plausible-sounding."
+F08,"Cities with more police officers have more crime, so hiring police increases crime.",fallacy,cum-hoc|reverse-causation,Correlation; reverse direction likely.
+F09,"My two coworkers from Ohio were rude, so people from Ohio are rude.",fallacy,hasty-generalization|stereotyping,Two cases to whole state.
+F10,"If we let students redo one exam, soon they'll expect to redo every assignment, then grades will mean nothing, and then the degree will be worthless.",fallacy,slippery-slope,Unsupported chain.
+F11,Either we cut the arts budget entirely or the city goes bankrupt.,fallacy,false-dilemma,"Other options (partial cuts, revenue)."
+F12,Critics say the plant pollutes the river. But this company has sponsored the town's Little League for twenty years.,fallacy,red-herring|avoiding-the-issue,Irrelevant topic.
+F13,"Eighty percent of Americans say they believe in ghosts, so ghosts probably exist.",fallacy,appeal-to-the-people,Popularity as evidence of fact.
+F14,Everyone's piling into this new crypto coin this month; you should get in too.,fallacy,bandwagon,Trend as reason.
+F15,I deserve an A on the exam: I've been under so much stress this semester and my grandmother was ill.,fallacy,appeal-to-pity,Hardship irrelevant to grade earned.
+F16,"If you don't vote for me, criminals will be roaming your neighbourhood by next week.",fallacy,appeal-to-fear,No evidence; exaggerated outcome.
+F17,"That gift idea came from a fortune cookie, so whatever reasons you give for it must be nonsense.",fallacy,genetic-fallacy,IEP's own pattern.
+F18,"The new zoning plan is backed by the same group that pushed the failed stadium, so it must be a bad plan.",fallacy,guilt-by-association|genetic-fallacy,"Association, no link to merits."
+F19,"Press release: 'Across our trials, Zorvex consistently lowered cholesterol, a breakthrough for heart health.' [Context: the company's own completed trial, known to the authors, found more heart attacks in the Zorvex group.]",fallacy,suppressed-evidence,Context supplied in brackets so the outside fact is available.
+F20,"A: Astrology predicts your career from your birth date. B: There's no evidence for that. A: All I'm saying is that the stars inspire people to reflect. [Later] A: As I showed, astrology predicts careers, so check your chart before the interview.",fallacy,motte-and-bailey,Retreat and return in one speaker.
+F21,A: Show me one peer-reviewed study. B: [gives three] A: Peer review is broken; show me a replication by a lab with no funding ties. B: [gives one] A: One replication proves nothing.,fallacy,moving-the-goalposts,Standards raised without reason.
+F22,"The Bible is true because it is the word of God, and we know it is the word of God because the Bible says so.",fallacy,begging-the-question,Circle.
+F23,A: No real environmentalist would ever fly. B: Maria runs the river trust and flew to the climate summit. A: Then she's not a real environmentalist.,fallacy,no-true-scotsman,Redefinition on the spot.
+F24,Evolution is just a theory. Theories are guesses. So evolution is just a guess.,fallacy,equivocation,Scientific vs everyday 'theory'.
+F25,"Each player on this team is the best in the league at their position, so this will be the best team in the league.",fallacy,composition,Subtle: team quality depends on fit.
+F26,"If the server is down, the site won't load. The site won't load. Therefore the server is down.",fallacy,affirming-the-consequent,Many other causes.
+F27,"This roulette wheel has come up red eight times in a row, so black is due.",fallacy,gamblers-fallacy,Independent outcomes.
+F28,"The test is 95% accurate and Sam tested positive for a disease that affects 1 in 10,000 people, so Sam almost certainly has it.",fallacy,base-rate-fallacy,Ignores base rate.
+F29,We've already spent $2 million on this software; we can't abandon it now. Let's approve the extra $1 million.,fallacy,sunk-cost,No future benefit argued.
+F30,"Psychic readings really work. When they fail in tests, it's because skeptics in the room disrupt the energy.",fallacy,ad-hoc-rescue|unfalsifiability,Subtle: rescue without independent reason; compatibility not explicitly called support.
+F31,My neighbour's house was burgled last month; they smashed the back window in broad daylight. This town has become dangerous. I'm moving.,fallacy,misleading-vividness|anecdotal-evidence|hasty-generalization,One vivid case; no statistics mentioned.
+F32,"No one has shown that the new pesticide harms bees, so it is safe.",fallacy,argument-from-ignorance,No sign of thorough search.
+F33,"News report: The senator's controversial scheme, which critics have slammed, squeaked through committee today.",fallacy,loaded-language,Charged words in a presented-as-neutral report.
+F34,"Sure, the CEO embezzled $50 million, but the intern took home printer paper. Everyone's dishonest; they're the same.",fallacy,false-equivalence,Gross difference in seriousness.
+F35,"Climate change can't be that serious, because if it were we'd have to change our whole economy, and that would be a disaster.",fallacy,appeal-to-consequences|wishful-thinking,Consequences of truth used against truth.
+F36,"Asked about the deaths in the city jail, the minister replied: 'What about the prisons in Country X? They're far worse.'",fallacy,relative-privation|red-herring,Third-party whataboutism; not tu quoque.
+F37,A: Your own data show the drug fails in patients over 70. B: The drug works. It works. I've told you three times now: it works.,fallacy,proof-by-assertion|argument-from-repetition,Probe of the repetition / assertion boundary (builder disagreement 1).
+F38,"Interesting argument for a higher minimum wage, from someone who has never run a business.",fallacy,ad-hominem|circumstantial-ad-hominem,Subtle: insinuated rejection; relevance of experience arguable.
