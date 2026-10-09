@@ -4,7 +4,7 @@
 
 215 named fallacies, grouped by category and listed alphabetically within each category. 215 entries have confirmed published sources; 0 are marked TODO. See [SOURCES.md](SOURCES.md) for the references, [METHOD.md](METHOD.md) for how to check an argument, and [README.md](README.md) for what each field means.
 
-Detectable from the text alone: 174 yes, 37 partly, 4 no (entries marked *no* may only be raised as questions). 12 entries are contested names. 11 are broad fallbacks, to be used only when nothing more specific fits.
+Detectable from the text alone: 168 yes, 43 partly, 4 no (entries marked *no* may only be raised as questions). 12 entries are contested names. 11 are broad fallbacks, to be used only when nothing more specific fits.
 
 ## Contents
 
@@ -55,23 +55,23 @@ These names are not separate entries. Use the entry they point to.
 
 Entries in the same family describe neighbouring mistakes. For a single step of an argument, pick the one that fits best and do not stack labels from the same family.
 
-- **Naturalism**: [Naturalistic fallacy](#naturalistic-fallacy), [Is-ought fallacy](#is-ought), [Appeal to nature](#appeal-to-nature), [Moralistic fallacy](#moralistic-fallacy), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy). Pick the one that matches the step: identifying 'good' with a natural property (naturalistic), a bare is-to-ought step (is-ought), 'natural so good' (appeal to nature), ought-to-is (moralistic).
+- **Naturalism**: [Naturalistic fallacy](#naturalistic-fallacy), [Is-ought fallacy](#is-ought), [Appeal to nature](#appeal-to-nature), [Moralistic fallacy](#moralistic-fallacy), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy), [Appeal to consequences](#appeal-to-consequences). Pick the one that matches the step: identifying 'good' with a natural property (naturalistic), a bare is-to-ought step (is-ought), 'natural so good' (appeal to nature), an ought-claim used to settle what is true (moralistic), the outcome of a belief used to settle its truth (consequences).
 - **Ad hominem**: [Ad hominem (abusive)](#ad-hominem), [Circumstantial ad hominem](#circumstantial-ad-hominem), [Tu quoque](#tu-quoque), [Appeal to motive](#appeal-to-motive), [Bulverism](#bulverism), [Poisoning the well](#poisoning-the-well), [Guilt by association](#guilt-by-association), [Reductio ad Hitlerum](#reductio-ad-hitlerum), [Genetic fallacy](#genetic-fallacy), [Traitorous critic fallacy](#traitorous-critic), [Tone policing](#tone-policing), [Courtier's reply](#courtiers-reply). One label per attack. Use the most specific: circumstances or stake (circumstantial), hypocrisy (tu quoque), motives (appeal to motive), explaining away a view not yet shown wrong (bulverism), pre-emptive (poisoning the well), association (guilt by association), origin (genetic).
-- **Authority and popularity**: [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery). Use one: expertise (authority), fame (celebrity), achievement in another field (accomplishment), numbers (people), a growing trend (bandwagon), age (tradition), newness (novelty), group loyalty (group think), era (chronological snobbery).
-- **Emotion**: [Appeal to emotion](#appeal-to-emotion), [Appeal to pity](#appeal-to-pity), [Appeal to fear](#appeal-to-fear), [Appeal to force](#appeal-to-force), [Appeal to flattery](#appeal-to-flattery), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Appeal to ridicule](#appeal-to-ridicule), [Scapegoating](#scapegoating), [Wishful thinking](#wishful-thinking), [Appeal to consequences](#appeal-to-consequences). Use the specific emotion entry if one fits; appeal to emotion only if none does.
+- **Authority and popularity**: [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty). Use one: expertise (authority), fame (celebrity), achievement in another field (accomplishment), numbers (people), a growing trend (bandwagon), age (tradition), newness (novelty), group loyalty (group think), era (chronological snobbery), money (wealth or poverty).
+- **Emotion**: [Appeal to emotion](#appeal-to-emotion), [Appeal to pity](#appeal-to-pity), [Appeal to fear](#appeal-to-fear), [Appeal to force](#appeal-to-force), [Appeal to flattery](#appeal-to-flattery), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Appeal to ridicule](#appeal-to-ridicule), [Scapegoating](#scapegoating), [Wishful thinking](#wishful-thinking), [Appeal to consequences](#appeal-to-consequences), [Style over substance](#style-over-substance). Use the specific emotion entry if one fits; appeal to emotion only if none does.
 - **Omitted evidence**: [Suppressed evidence](#suppressed-evidence), [Nut-picking](#nut-picking), [Selective attention](#selective-attention), [Confirmation bias (as a fallacy)](#confirmation-bias), [Disregarding known science](#disregarding-known-science), [Survivorship bias](#survivorship-bias), [Quoting out of context](#quoting-out-of-context), [Overwhelming exception](#overwhelming-exception). For a passage that leaves out contrary evidence, use suppressed evidence or a more specific text-level entry; the bias entries (confirmation bias, selective attention) are questions only.
 - **Generalization**: [Accident](#accident), [Secundum quid](#secundum-quid), [Hasty generalization](#hasty-generalization), [Converse accident](#converse-accident), [Anecdotal evidence](#anecdotal-evidence), [Misleading vividness](#misleading-vividness), [Availability heuristic (as a fallacy)](#availability-heuristic), [Unrepresentative sample](#unrepresentative-sample), [Stereotyping](#stereotyping), [Jumping to conclusions](#jumping-to-conclusions), [Specificity](#specificity), [Overgenerality](#overgenerality), [Inductive conversion](#inductive-conversion). One label per step: rule misapplied to an exception (accident), dropped qualification (secundum quid), too few cases (hasty), exceptions made into a rule (converse accident), stories (anecdotal), vivid case (misleading vividness), biased sample (unrepresentative sample), group image applied to an individual (stereotyping).
 - **Diversion**: [Red herring](#red-herring), [Avoiding the issue](#avoiding-the-issue), [Avoiding the question](#avoiding-the-question), [Irrelevant conclusion](#irrelevant-conclusion), [Smokescreen](#smokescreen), [Non sequitur](#non-sequitur), [Relative privation](#relative-privation), [Logic chopping](#logic-chopping), [Quibbling](#quibbling). One label per move. Use the most specific; non sequitur and irrelevant conclusion are fallbacks.
-- **Bare assertion**: [Ipse dixit](#ipse-dixit), [Proof by assertion](#proof-by-assertion), [Argument from repetition](#argument-from-repetition), [Thought-terminating cliché](#thought-terminating-cliche), [Appeal to the stone](#appeal-to-the-stone), [I'm entitled to my opinion](#entitled-to-my-opinion), [Proof surrogate](#proof-surrogate). Use one: no support at all (ipse dixit), restating against a counterargument (proof by assertion), restating many times (repetition), a stock phrase (cliche), dismissal as absurd (appeal to the stone), a right to an opinion (entitled), a phrase in place of evidence (proof surrogate).
-- **Causation**: [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism). Use the specific causal entry; false cause only if none fits.
-- **Definition and meaning shifts**: [Persuasive definition](#persuasive-definition), [Redefinition](#redefinition), [Definitional retreat](#definitional-retreat), [No true Scotsman](#no-true-scotsman), [Motte-and-bailey](#motte-and-bailey), [Equivocation](#equivocation), [Loaded label](#loaded-label), [Loaded language](#loaded-language), [Suppressed correlative](#suppressed-correlative). Use one: built-in evaluation (persuasive definition), unannounced new meaning (redefinition), shift after an objection (definitional retreat), shift to exclude a counterexample (no true Scotsman), bold-to-modest switch and back (motte-and-bailey), one word two senses (equivocation).
-- **Circularity**: [Begging the question](#begging-the-question), [Question-begging analogy](#question-begging-analogy), [Loaded label](#loaded-label), [Complex question](#complex-question). Use one: begging the question for the general case; the others when the circle is in an analogy, a label or a question.
+- **Bare assertion**: [Ipse dixit](#ipse-dixit), [Proof by assertion](#proof-by-assertion), [Argument from repetition](#argument-from-repetition), [Thought-terminating cliché](#thought-terminating-cliche), [Appeal to the stone](#appeal-to-the-stone), [I'm entitled to my opinion](#entitled-to-my-opinion), [Proof surrogate](#proof-surrogate), [Appeal to ridicule](#appeal-to-ridicule), [Subjectivist fallacy](#subjectivist-fallacy), [Willed ignorance](#willed-ignorance). Use one: no support at all (ipse dixit), restating against a counterargument (proof by assertion), citing many repetitions or others' silence as evidence (repetition), a stock phrase (cliche), declaring a view absurd without showing it (appeal to the stone), mocking it for a laugh (ridicule), a right to an opinion (entitled), truth said to be relative to the person (subjectivist), refusing to look (willed ignorance), a phrase in place of evidence (proof surrogate).
+- **Causation**: [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism). Use the specific causal entry; false cause only if none fits. When the reverse direction is named and plausible, prefer reversing causation over cum hoc.
+- **Definition and meaning shifts**: [Persuasive definition](#persuasive-definition), [Redefinition](#redefinition), [Definitional retreat](#definitional-retreat), [No true Scotsman](#no-true-scotsman), [Motte-and-bailey](#motte-and-bailey), [Equivocation](#equivocation), [Loaded label](#loaded-label), [Loaded language](#loaded-language), [Suppressed correlative](#suppressed-correlative), [Etymological fallacy](#etymological-fallacy). Use one: built-in evaluation (persuasive definition), unannounced new meaning (redefinition), shift after an objection (definitional retreat), shift to exclude a counterexample (no true Scotsman), bold-to-modest switch and back (motte-and-bailey), one word two senses (equivocation).
+- **Circularity**: [Begging the question](#begging-the-question), [Question-begging analogy](#question-begging-analogy), [Loaded label](#loaded-label), [Complex question](#complex-question), [Ideology-driven argumentation](#ideology-driven-argumentation). Use one: begging the question for the general case; the others when the circle is in an analogy, a label, a question, or a contested doctrine treated as settled.
 - **Ambiguity**: [Equivocation](#equivocation), [Amphiboly](#amphiboly), [Accent](#accent), [Four terms](#four-terms), [Scope fallacy](#scope-fallacy), [Combination of words (Aristotle)](#combination-of-words), [Division of words (Aristotle)](#division-of-words), [Form of expression (Aristotle)](#form-of-expression), [Quoting out of context](#quoting-out-of-context). One word (equivocation), grammar (amphiboly), stress (accent), syllogism middle term (four terms), reach of 'not' or 'all' (scope), word grouping (combination/division of words).
 - **Parts and wholes**: [Composition](#composition), [Division](#division), [Ecological fallacy](#ecological-fallacy). Parts to whole (composition), whole to parts (division), group data to individuals (ecological).
 - **Comparison**: [False analogy](#false-analogy), [False equivalence](#false-equivalence), [False balance](#false-balance), [Question-begging analogy](#question-begging-analogy), [Dangling comparative](#dangling-comparative), [Package deal](#package-deal). Use one: a conclusion carried across from one case to another (false analogy), two things called equal (false equivalence), two sides given equal coverage (false balance).
-- **Options and limits**: [False dilemma](#false-dilemma), [Middle ground](#middle-ground), [Nirvana fallacy](#nirvana-fallacy), [Line-drawing fallacy](#line-drawing), [Slippery slope](#slippery-slope). Use one per step.
+- **Options and limits**: [False dilemma](#false-dilemma), [Middle ground](#middle-ground), [Nirvana fallacy](#nirvana-fallacy), [Line-drawing fallacy](#line-drawing), [Slippery slope](#slippery-slope), [Vagueness (exploiting)](#vagueness). Use one per step. No sharp line, so no real difference (line-drawing); a conclusion that trades on a fuzzy term (vagueness).
 - **Ignorance and burden**: [Argument from ignorance](#argument-from-ignorance), [Misplaced burden of proof](#misplaced-burden-of-proof), [Argument from silence](#argument-from-silence), [Argument from incredulity](#argument-from-incredulity). Use one: absence of proof as proof (argument from ignorance), demanding disproof of an unsupported claim (misplaced burden), absence from a source (silence), personal disbelief (incredulity).
-- **Rescuing a claim**: [Ad hoc rescue](#ad-hoc-rescue), [No true Scotsman](#no-true-scotsman), [Hedging](#hedging), [Moving the goalposts](#moving-the-goalposts), [Unfalsifiability](#unfalsifiability), [Definitional retreat](#definitional-retreat), [Motte-and-bailey](#motte-and-bailey). Use one: an unsupported extra assumption (ad hoc rescue), redefining a group (no true Scotsman), quiet weakening (hedging), raised standard (goalposts), immune to evidence (unfalsifiability), word shift (definitional retreat), bold/modest switch (motte-and-bailey).
+- **Rescuing a claim**: [Ad hoc rescue](#ad-hoc-rescue), [No true Scotsman](#no-true-scotsman), [Hedging](#hedging), [Moving the goalposts](#moving-the-goalposts), [Unfalsifiability](#unfalsifiability), [Definitional retreat](#definitional-retreat), [Motte-and-bailey](#motte-and-bailey), [Far-fetched hypothesis](#far-fetched-hypothesis). Use one: an unsupported extra assumption (ad hoc rescue), redefining a group (no true Scotsman), quiet weakening (hedging), raised standard (goalposts), immune to evidence (unfalsifiability), word shift (definitional retreat), bold/modest switch (motte-and-bailey).
 - **Consistency**: [Inconsistency](#inconsistency), [Kettle logic](#kettle-logic), [Special pleading](#special-pleading), [Double standard](#double-standard). Use the specific entry; inconsistency only if none fits.
 - **Multiple testing**: [Multiple comparisons fallacy](#multiple-comparisons), [P-hacking](#p-hacking), [Garden of forking paths](#garden-of-forking-paths), [Texas sharpshooter fallacy](#texas-sharpshooter), [Overfitting (curve fitting)](#curve-fitting). Use one per analysis.
 - **Chance**: [Gambler's fallacy](#gamblers-fallacy), [Hot hand fallacy](#hot-hand-fallacy), [Inverse gambler's fallacy](#inverse-gamblers-fallacy), [Lottery fallacy](#lottery-fallacy), [Regression fallacy](#regression-fallacy). Use one per step.
@@ -83,7 +83,11 @@ Entries in the same family describe neighbouring mistakes. For a single step of 
 - **History**: [Historian's fallacy](#historians-fallacy), [Historical fallacy](#historical-fallacy), [Baconian fallacy](#baconian-fallacy), [Retrospective determinism](#retrospective-determinism). Use one per step.
 - **Proportion**: [Lack of proportion](#lack-of-proportion), [Exaggeration](#exaggeration), [Oversimplification](#oversimplification), [Fallacy of the single cause](#single-cause), [Tokenism](#tokenism), [Quibbling](#quibbling). Use the specific entry; lack of proportion and oversimplification are fallbacks.
 - **Measurement and models**: [McNamara fallacy](#mcnamara-fallacy), [Fake precision](#fake-precision), [Doorman fallacy](#doorman-fallacy), [Ludic fallacy](#ludic-fallacy), [Over-extrapolation](#over-extrapolation), [Fallacy of the sheep](#fallacy-of-the-sheep). Use one per step.
-- **Formal fallback**: [Formal fallacy](#formal-fallacy), [Affirming the consequent](#affirming-the-consequent), [Denying the antecedent](#denying-the-antecedent), [Affirming a disjunct](#affirming-a-disjunct), [Denying a conjunct](#denying-a-conjunct), [Undistributed middle](#undistributed-middle), [Argument from fallacy](#argument-from-fallacy). Name the specific invalid form if it has one; formal fallacy only if not.
+- **Formal fallback**: [Formal fallacy](#formal-fallacy), [Affirming the consequent](#affirming-the-consequent), [Denying the antecedent](#denying-the-antecedent), [Affirming a disjunct](#affirming-a-disjunct), [Denying a conjunct](#denying-a-conjunct), [Undistributed middle](#undistributed-middle). Name the specific invalid form if it has one; formal fallacy only if not. Do not also tag non sequitur for the same step.
+- **Misrepresentation**: [Straw man](#straw-man), [Quoting out of context](#quoting-out-of-context), [False attribution](#false-attribution), [Confusing an explanation with an excuse](#confusing-explanation-with-excuse). Use one: a distorted restatement that is then attacked (straw man); a clipped quote (out of context); invented words or source (false attribution); an explanation read as an excuse (confusing explanation with excuse).
+- **Others' conduct**: [Tu quoque](#tu-quoque), [Two wrongs make a right](#two-wrongs). Use one: a claim or criticism dismissed because the critic does the same (tu quoque); a wrong act defended because others do it (two wrongs).
+- **Accident: ancient and modern**: [Accident (Aristotle's sense)](#accident-aristotle), [Accident](#accident). Aristotle's sense is about attributes that merely coincide; the modern sense is a rule applied to an exception. Use the one that matches.
+- **Non-cause: ancient and modern**: [Non-cause (Aristotle's sense)](#non-cause-aristotle), [False cause](#false-cause), [Inconsistency](#inconsistency). Aristotle's sense is a superfluous premise blamed in a reduction to absurdity; for real-world causal claims use false cause.
 
 ## Formal: general
 
@@ -106,10 +110,11 @@ Status: standard · Detectable from text: yes · Fallback: use only if nothing m
 
 **Legitimate look-alikes** (not this fallacy):
 
-- A strong inductive or explanatory argument that is not deductively valid; judge it by inductive standards, not as a formal fallacy. *(source: IEP, section 6, "Partial List of Fallacies", entry "Non Sequitur")*
+- A strong inductive or explanatory argument that is not deductively valid; judge it by inductive standards, not as a formal fallacy. *(catalog wording)*
 - An argument that is valid once an obvious, stated-elsewhere premise is supplied. *(catalog wording)*
+- Do not also tag non sequitur for the same step. *(catalog wording)*
 
-**Related, use only one per step** (formal fallback): [Affirming the consequent](#affirming-the-consequent), [Denying the antecedent](#denying-the-antecedent), [Affirming a disjunct](#affirming-a-disjunct), [Denying a conjunct](#denying-a-conjunct), [Undistributed middle](#undistributed-middle), [Argument from fallacy](#argument-from-fallacy)
+**Related, use only one per step** (formal fallback): [Affirming the consequent](#affirming-the-consequent), [Denying the antecedent](#denying-the-antecedent), [Affirming a disjunct](#affirming-a-disjunct), [Denying a conjunct](#denying-a-conjunct), [Undistributed middle](#undistributed-middle)
 
 **Sources:**
 
@@ -143,7 +148,7 @@ Status: standard · Detectable from text: yes
 
 - The options really exclude each other (on/off, alive/dead), so the 'or' is exclusive. *(catalog wording)*
 
-**Related, use only one per step** (formal fallback): [Formal fallacy](#formal-fallacy), [Affirming the consequent](#affirming-the-consequent), [Denying the antecedent](#denying-the-antecedent), [Denying a conjunct](#denying-a-conjunct), [Undistributed middle](#undistributed-middle), [Argument from fallacy](#argument-from-fallacy)
+**Related, use only one per step** (formal fallback): [Formal fallacy](#formal-fallacy), [Affirming the consequent](#affirming-the-consequent), [Denying the antecedent](#denying-the-antecedent), [Denying a conjunct](#denying-a-conjunct), [Undistributed middle](#undistributed-middle)
 
 **Sources:**
 
@@ -174,7 +179,7 @@ Status: standard · Detectable from text: yes
 - Inference to the best explanation: Q is offered as evidence for P after other explanations are considered, and the conclusion is stated as probable. *(catalog wording)*
 - The conditional is actually a biconditional ('only if' or 'if and only if') in context. *(catalog wording)*
 
-**Related, use only one per step** (conditionals, formal fallback): [Denying the antecedent](#denying-the-antecedent), [Commutation of conditionals](#commutation-of-conditionals), [Improper transposition](#improper-transposition), [Confusing necessary and sufficient conditions](#confusing-necessary-and-sufficient), [Formal fallacy](#formal-fallacy), [Affirming a disjunct](#affirming-a-disjunct), [Denying a conjunct](#denying-a-conjunct), [Undistributed middle](#undistributed-middle), [Argument from fallacy](#argument-from-fallacy)
+**Related, use only one per step** (conditionals, formal fallback): [Denying the antecedent](#denying-the-antecedent), [Commutation of conditionals](#commutation-of-conditionals), [Improper transposition](#improper-transposition), [Confusing necessary and sufficient conditions](#confusing-necessary-and-sufficient), [Formal fallacy](#formal-fallacy), [Affirming a disjunct](#affirming-a-disjunct), [Denying a conjunct](#denying-a-conjunct), [Undistributed middle](#undistributed-middle)
 
 **Sources:**
 
@@ -264,7 +269,7 @@ Status: standard · Detectable from text: yes
 
 - The context establishes that exactly one of the two must hold. *(catalog wording)*
 
-**Related, use only one per step** (formal fallback): [Formal fallacy](#formal-fallacy), [Affirming the consequent](#affirming-the-consequent), [Denying the antecedent](#denying-the-antecedent), [Affirming a disjunct](#affirming-a-disjunct), [Undistributed middle](#undistributed-middle), [Argument from fallacy](#argument-from-fallacy)
+**Related, use only one per step** (formal fallback): [Formal fallacy](#formal-fallacy), [Affirming the consequent](#affirming-the-consequent), [Denying the antecedent](#denying-the-antecedent), [Affirming a disjunct](#affirming-a-disjunct), [Undistributed middle](#undistributed-middle)
 
 **Sources:**
 
@@ -293,7 +298,7 @@ Status: standard · Detectable from text: yes
 
 - The speaker means 'only if P then Q' (P is required for Q), which makes the inference valid. *(catalog wording)*
 
-**Related, use only one per step** (conditionals, formal fallback): [Affirming the consequent](#affirming-the-consequent), [Commutation of conditionals](#commutation-of-conditionals), [Improper transposition](#improper-transposition), [Confusing necessary and sufficient conditions](#confusing-necessary-and-sufficient), [Formal fallacy](#formal-fallacy), [Affirming a disjunct](#affirming-a-disjunct), [Denying a conjunct](#denying-a-conjunct), [Undistributed middle](#undistributed-middle), [Argument from fallacy](#argument-from-fallacy)
+**Related, use only one per step** (conditionals, formal fallback): [Affirming the consequent](#affirming-the-consequent), [Commutation of conditionals](#commutation-of-conditionals), [Improper transposition](#improper-transposition), [Confusing necessary and sufficient conditions](#confusing-necessary-and-sufficient), [Formal fallacy](#formal-fallacy), [Affirming a disjunct](#affirming-a-disjunct), [Denying a conjunct](#denying-a-conjunct), [Undistributed middle](#undistributed-middle)
 
 **Sources:**
 
@@ -573,7 +578,7 @@ Status: standard · Detectable from text: yes
 
 - A probabilistic argument ('most spies wear sunglasses...') offered as mere evidence, not proof. *(catalog wording)*
 
-**Related, use only one per step** (syllogisms, formal fallback): [Illicit major](#illicit-major), [Illicit minor](#illicit-minor), [Exclusive premises](#exclusive-premises), [Affirmative conclusion from a negative premise](#affirmative-conclusion-from-negative-premise), [Negative conclusion from affirmative premises](#negative-conclusion-from-affirmative-premises), [Four terms](#four-terms), [Existential fallacy](#existential-fallacy), [Illicit conversion](#illicit-conversion), [Illicit contraposition](#illicit-contraposition), [Some are / some are not](#some-are-some-are-not), [Formal fallacy](#formal-fallacy), [Affirming the consequent](#affirming-the-consequent), [Denying the antecedent](#denying-the-antecedent), [Affirming a disjunct](#affirming-a-disjunct), [Denying a conjunct](#denying-a-conjunct), [Argument from fallacy](#argument-from-fallacy)
+**Related, use only one per step** (syllogisms, formal fallback): [Illicit major](#illicit-major), [Illicit minor](#illicit-minor), [Exclusive premises](#exclusive-premises), [Affirmative conclusion from a negative premise](#affirmative-conclusion-from-negative-premise), [Negative conclusion from affirmative premises](#negative-conclusion-from-affirmative-premises), [Four terms](#four-terms), [Existential fallacy](#existential-fallacy), [Illicit conversion](#illicit-conversion), [Illicit contraposition](#illicit-contraposition), [Some are / some are not](#some-are-some-are-not), [Formal fallacy](#formal-fallacy), [Affirming the consequent](#affirming-the-consequent), [Denying the antecedent](#denying-the-antecedent), [Affirming a disjunct](#affirming-a-disjunct), [Denying a conjunct](#denying-a-conjunct)
 
 **Sources:**
 
@@ -786,8 +791,8 @@ Status: standard · Detectable from text: yes
 
 1. Someone has made a claim or argument.
 2. The reply attacks the person (character, traits, background) rather than the reasons given.
-3. The attack is offered as a reason to reject the claim or argument.
-4. The attacked trait is irrelevant to whether the claim is true or the argument sound.
+3. The attack is offered as a reason to reject the claim or argument (stated, or clearly insinuated by sarcasm or 'consider the source'), and the reasons themselves are left unanswered.
+4. The attacked trait is irrelevant to whether the argument's reasons are good. (Expertise or experience can bear on testimony, not on whether stated reasons support the conclusion.)
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -826,7 +831,7 @@ Status: standard · Detectable from text: yes
 
 - Achievements in the field the claim is about are ordinary evidence of expertise. *(catalog wording)*
 
-**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery)
+**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty)
 
 **Sources:**
 
@@ -856,7 +861,7 @@ Status: standard · Detectable from text: partly
 - Relying on a genuine expert speaking within their field, where experts broadly agree; most reasoning from authority is of this kind. *(source: IEP, section 6, "Partial List of Fallacies", entry "Appeal to Authority")*
 - Citing an authority as one piece of evidence among others. *(catalog wording)*
 
-**Related, use only one per step** (authority and popularity): [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery)
+**Related, use only one per step** (authority and popularity): [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty)
 
 **Sources:**
 
@@ -890,7 +895,7 @@ Status: standard · Detectable from text: yes
 
 - The celebrity speaks within their own field of expertise. *(catalog wording)*
 
-**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery)
+**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty)
 
 **Sources:**
 
@@ -919,7 +924,7 @@ Status: standard · Detectable from text: yes
 
 - Consequences are relevant when deciding what to do rather than what is true. *(catalog wording)*
 
-**Related, use only one per step** (emotion): [Appeal to emotion](#appeal-to-emotion), [Appeal to pity](#appeal-to-pity), [Appeal to fear](#appeal-to-fear), [Appeal to force](#appeal-to-force), [Appeal to flattery](#appeal-to-flattery), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Appeal to ridicule](#appeal-to-ridicule), [Scapegoating](#scapegoating), [Wishful thinking](#wishful-thinking)
+**Related, use only one per step** (naturalism, emotion): [Naturalistic fallacy](#naturalistic-fallacy), [Is-ought fallacy](#is-ought), [Appeal to nature](#appeal-to-nature), [Moralistic fallacy](#moralistic-fallacy), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy), [Appeal to emotion](#appeal-to-emotion), [Appeal to pity](#appeal-to-pity), [Appeal to fear](#appeal-to-fear), [Appeal to force](#appeal-to-force), [Appeal to flattery](#appeal-to-flattery), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Appeal to ridicule](#appeal-to-ridicule), [Scapegoating](#scapegoating), [Wishful thinking](#wishful-thinking), [Style over substance](#style-over-substance)
 
 **Sources:**
 
@@ -951,7 +956,7 @@ Status: standard · Detectable from text: yes · Fallback: use only if nothing m
 
 - Using emotion while arguing is not wrong; the error is using it as the key premise or to downplay relevant information. *(source: IEP, section 6, "Partial List of Fallacies", entry "Appeal to Emotions")*
 
-**Related, use only one per step** (emotion): [Appeal to pity](#appeal-to-pity), [Appeal to fear](#appeal-to-fear), [Appeal to force](#appeal-to-force), [Appeal to flattery](#appeal-to-flattery), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Appeal to ridicule](#appeal-to-ridicule), [Scapegoating](#scapegoating), [Wishful thinking](#wishful-thinking), [Appeal to consequences](#appeal-to-consequences)
+**Related, use only one per step** (emotion): [Appeal to pity](#appeal-to-pity), [Appeal to fear](#appeal-to-fear), [Appeal to force](#appeal-to-force), [Appeal to flattery](#appeal-to-flattery), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Appeal to ridicule](#appeal-to-ridicule), [Scapegoating](#scapegoating), [Wishful thinking](#wishful-thinking), [Appeal to consequences](#appeal-to-consequences), [Style over substance](#style-over-substance)
 
 **Sources:**
 
@@ -968,7 +973,7 @@ Status: standard · Detectable from text: yes · Fallback: use only if nothing m
 
 Trying to win support by stirring up fear rather than giving evidence that the feared outcome is likely.
 
-Status: standard · Detectable from text: yes
+Status: standard · Detectable from text: partly
 
 **Example:** If you don't buy this alarm system, your family could be next.
 
@@ -976,13 +981,14 @@ Status: standard · Detectable from text: yes
 
 1. Fear of an outcome is aroused.
 2. The fear is offered as a reason to accept a claim or course of action.
-3. No adequate evidence is given that the feared outcome is likely.
+3. The feared outcome is unlikely, exaggerated, or unconnected to the action, and is not a well-known risk (well-known risks count as evidenced).
 
 **Legitimate look-alikes** (not this fallacy):
 
 - Warning about a real, well-evidenced danger. *(catalog wording)*
+- A warning about a risk that is common knowledge, even if no evidence is stated (for example, drink-driving). *(catalog wording)*
 
-**Related, use only one per step** (emotion): [Appeal to emotion](#appeal-to-emotion), [Appeal to pity](#appeal-to-pity), [Appeal to force](#appeal-to-force), [Appeal to flattery](#appeal-to-flattery), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Appeal to ridicule](#appeal-to-ridicule), [Scapegoating](#scapegoating), [Wishful thinking](#wishful-thinking), [Appeal to consequences](#appeal-to-consequences)
+**Related, use only one per step** (emotion): [Appeal to emotion](#appeal-to-emotion), [Appeal to pity](#appeal-to-pity), [Appeal to force](#appeal-to-force), [Appeal to flattery](#appeal-to-flattery), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Appeal to ridicule](#appeal-to-ridicule), [Scapegoating](#scapegoating), [Wishful thinking](#wishful-thinking), [Appeal to consequences](#appeal-to-consequences), [Style over substance](#style-over-substance)
 
 **Sources:**
 
@@ -1011,7 +1017,7 @@ Status: standard · Detectable from text: yes
 
 - Sincere praise alongside actual reasons. *(catalog wording)*
 
-**Related, use only one per step** (emotion): [Appeal to emotion](#appeal-to-emotion), [Appeal to pity](#appeal-to-pity), [Appeal to fear](#appeal-to-fear), [Appeal to force](#appeal-to-force), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Appeal to ridicule](#appeal-to-ridicule), [Scapegoating](#scapegoating), [Wishful thinking](#wishful-thinking), [Appeal to consequences](#appeal-to-consequences)
+**Related, use only one per step** (emotion): [Appeal to emotion](#appeal-to-emotion), [Appeal to pity](#appeal-to-pity), [Appeal to fear](#appeal-to-fear), [Appeal to force](#appeal-to-force), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Appeal to ridicule](#appeal-to-ridicule), [Scapegoating](#scapegoating), [Wishful thinking](#wishful-thinking), [Appeal to consequences](#appeal-to-consequences), [Style over substance](#style-over-substance)
 
 **Sources:**
 
@@ -1039,7 +1045,7 @@ Status: standard · Detectable from text: yes
 
 - A threat may give a practical reason to act, but not a relevant reason to believe the claim. *(source: IEP, section 6, "Partial List of Fallacies", entry "Scare Tactic")*
 
-**Related, use only one per step** (emotion): [Appeal to emotion](#appeal-to-emotion), [Appeal to pity](#appeal-to-pity), [Appeal to fear](#appeal-to-fear), [Appeal to flattery](#appeal-to-flattery), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Appeal to ridicule](#appeal-to-ridicule), [Scapegoating](#scapegoating), [Wishful thinking](#wishful-thinking), [Appeal to consequences](#appeal-to-consequences)
+**Related, use only one per step** (emotion): [Appeal to emotion](#appeal-to-emotion), [Appeal to pity](#appeal-to-pity), [Appeal to fear](#appeal-to-fear), [Appeal to flattery](#appeal-to-flattery), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Appeal to ridicule](#appeal-to-ridicule), [Scapegoating](#scapegoating), [Wishful thinking](#wishful-thinking), [Appeal to consequences](#appeal-to-consequences), [Style over substance](#style-over-substance)
 
 **Sources:**
 
@@ -1103,7 +1109,7 @@ Status: standard · Detectable from text: yes
 
 - 'Natural' stands for a specific property (no additives, long track record) that is separately shown to matter. *(catalog wording)*
 
-**Related, use only one per step** (naturalism): [Naturalistic fallacy](#naturalistic-fallacy), [Is-ought fallacy](#is-ought), [Moralistic fallacy](#moralistic-fallacy), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy)
+**Related, use only one per step** (naturalism): [Naturalistic fallacy](#naturalistic-fallacy), [Is-ought fallacy](#is-ought), [Moralistic fallacy](#moralistic-fallacy), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy), [Appeal to consequences](#appeal-to-consequences)
 
 **Sources:**
 
@@ -1132,7 +1138,7 @@ Status: standard · Detectable from text: yes
 
 - Newness offered alongside evidence of real improvement. *(catalog wording)*
 
-**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery)
+**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty)
 
 **Sources:**
 
@@ -1161,7 +1167,7 @@ Status: standard · Detectable from text: yes
 
 - Hardship can be relevant to questions of mercy, need or the fairness of a penalty. *(catalog wording)*
 
-**Related, use only one per step** (emotion): [Appeal to emotion](#appeal-to-emotion), [Appeal to fear](#appeal-to-fear), [Appeal to force](#appeal-to-force), [Appeal to flattery](#appeal-to-flattery), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Appeal to ridicule](#appeal-to-ridicule), [Scapegoating](#scapegoating), [Wishful thinking](#wishful-thinking), [Appeal to consequences](#appeal-to-consequences)
+**Related, use only one per step** (emotion): [Appeal to emotion](#appeal-to-emotion), [Appeal to fear](#appeal-to-fear), [Appeal to force](#appeal-to-force), [Appeal to flattery](#appeal-to-flattery), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Appeal to ridicule](#appeal-to-ridicule), [Scapegoating](#scapegoating), [Wishful thinking](#wishful-thinking), [Appeal to consequences](#appeal-to-consequences), [Style over substance](#style-over-substance)
 
 **Sources:**
 
@@ -1185,6 +1191,12 @@ Status: standard · Detectable from text: yes
 
 1. A person's poverty (or a thing's cheapness) is cited.
 2. It is offered as the reason their view is more likely true or the thing better, in a respect unrelated to money.
+
+**Legitimate look-alikes** (not this fallacy):
+
+- Cheapness as one indicator of value where there is reason to think it tracks value. *(catalog wording)*
+
+**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth)
 
 **Sources:**
 
@@ -1211,8 +1223,9 @@ Status: standard · Detectable from text: yes
 **Legitimate look-alikes** (not this fallacy):
 
 - Showing that the view leads to an absurd result (reduction to absurdity) is a legitimate argument. *(catalog wording)*
+- If the view is simply declared absurd with no mockery, use appeal to the stone. *(catalog wording)*
 
-**Related, use only one per step** (emotion): [Appeal to emotion](#appeal-to-emotion), [Appeal to pity](#appeal-to-pity), [Appeal to fear](#appeal-to-fear), [Appeal to force](#appeal-to-force), [Appeal to flattery](#appeal-to-flattery), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Scapegoating](#scapegoating), [Wishful thinking](#wishful-thinking), [Appeal to consequences](#appeal-to-consequences)
+**Related, use only one per step** (emotion, bare assertion): [Appeal to emotion](#appeal-to-emotion), [Appeal to pity](#appeal-to-pity), [Appeal to fear](#appeal-to-fear), [Appeal to force](#appeal-to-force), [Appeal to flattery](#appeal-to-flattery), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Scapegoating](#scapegoating), [Wishful thinking](#wishful-thinking), [Appeal to consequences](#appeal-to-consequences), [Style over substance](#style-over-substance), [Ipse dixit](#ipse-dixit), [Proof by assertion](#proof-by-assertion), [Argument from repetition](#argument-from-repetition), [Thought-terminating cliché](#thought-terminating-cliche), [Appeal to the stone](#appeal-to-the-stone), [I'm entitled to my opinion](#entitled-to-my-opinion), [Proof surrogate](#proof-surrogate), [Subjectivist fallacy](#subjectivist-fallacy), [Willed ignorance](#willed-ignorance)
 
 **Sources:**
 
@@ -1236,7 +1249,11 @@ Status: standard · Detectable from text: yes
 1. A claim or product is associated with a superior or discerning group.
 2. The audience's wish to belong to that group is offered as the reason to accept it.
 
-**Related, use only one per step** (emotion): [Appeal to emotion](#appeal-to-emotion), [Appeal to pity](#appeal-to-pity), [Appeal to fear](#appeal-to-fear), [Appeal to force](#appeal-to-force), [Appeal to flattery](#appeal-to-flattery), [Appeal to spite](#appeal-to-spite), [Appeal to ridicule](#appeal-to-ridicule), [Scapegoating](#scapegoating), [Wishful thinking](#wishful-thinking), [Appeal to consequences](#appeal-to-consequences)
+**Legitimate look-alikes** (not this fallacy):
+
+- Pointing out that people with relevant expertise choose it, with their reasons. *(catalog wording)*
+
+**Related, use only one per step** (emotion): [Appeal to emotion](#appeal-to-emotion), [Appeal to pity](#appeal-to-pity), [Appeal to fear](#appeal-to-fear), [Appeal to force](#appeal-to-force), [Appeal to flattery](#appeal-to-flattery), [Appeal to spite](#appeal-to-spite), [Appeal to ridicule](#appeal-to-ridicule), [Scapegoating](#scapegoating), [Wishful thinking](#wishful-thinking), [Appeal to consequences](#appeal-to-consequences), [Style over substance](#style-over-substance)
 
 **Sources:**
 
@@ -1259,8 +1276,13 @@ Status: standard · Detectable from text: yes
 
 1. Resentment toward a person or group is aroused.
 2. The resentment is offered as a reason to accept or reject a claim.
+3. The resentment is not tied to evidence bearing on the claim or decision.
 
-**Related, use only one per step** (emotion): [Appeal to emotion](#appeal-to-emotion), [Appeal to pity](#appeal-to-pity), [Appeal to fear](#appeal-to-fear), [Appeal to force](#appeal-to-force), [Appeal to flattery](#appeal-to-flattery), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to ridicule](#appeal-to-ridicule), [Scapegoating](#scapegoating), [Wishful thinking](#wishful-thinking), [Appeal to consequences](#appeal-to-consequences)
+**Legitimate look-alikes** (not this fallacy):
+
+- Past wrongdoing cited as evidence about what the person will do (a record of fraud, when deciding whether to hire). *(catalog wording)*
+
+**Related, use only one per step** (emotion): [Appeal to emotion](#appeal-to-emotion), [Appeal to pity](#appeal-to-pity), [Appeal to fear](#appeal-to-fear), [Appeal to force](#appeal-to-force), [Appeal to flattery](#appeal-to-flattery), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to ridicule](#appeal-to-ridicule), [Scapegoating](#scapegoating), [Wishful thinking](#wishful-thinking), [Appeal to consequences](#appeal-to-consequences), [Style over substance](#style-over-substance)
 
 **Sources:**
 
@@ -1289,8 +1311,9 @@ Status: standard · Detectable from text: yes
 
 - Agreement among people who have studied the question, offered as evidence. *(source: IEP, section 6, "Partial List of Fallacies", entry "Bandwagon")*
 - The question is about conventions, tastes or what is popular. *(catalog wording)*
+- Popular belief is some evidence that a claim is true; the fallacy is overestimating how much. *(source: IEP, section 6, "Partial List of Fallacies", entry "Appeal to the People")*
 
-**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery)
+**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty)
 
 **Sources:**
 
@@ -1321,8 +1344,9 @@ Status: standard · Detectable from text: yes
 **Legitimate look-alikes** (not this fallacy):
 
 - Declining to debate a claim already refuted, with a pointer to the refutation. *(catalog wording)*
+- If the view is mocked to get a laugh, use appeal to ridicule; if it is just declared absurd, use this. *(catalog wording)*
 
-**Related, use only one per step** (bare assertion): [Ipse dixit](#ipse-dixit), [Proof by assertion](#proof-by-assertion), [Argument from repetition](#argument-from-repetition), [Thought-terminating cliché](#thought-terminating-cliche), [I'm entitled to my opinion](#entitled-to-my-opinion), [Proof surrogate](#proof-surrogate)
+**Related, use only one per step** (bare assertion): [Ipse dixit](#ipse-dixit), [Proof by assertion](#proof-by-assertion), [Argument from repetition](#argument-from-repetition), [Thought-terminating cliché](#thought-terminating-cliche), [I'm entitled to my opinion](#entitled-to-my-opinion), [Proof surrogate](#proof-surrogate), [Appeal to ridicule](#appeal-to-ridicule), [Subjectivist fallacy](#subjectivist-fallacy), [Willed ignorance](#willed-ignorance)
 
 **Sources:**
 
@@ -1351,7 +1375,7 @@ Status: standard · Detectable from text: yes
 
 - A long record can be some evidence that a practice works; the error is treating age as enough. *(source: IEP, section 6, "Partial List of Fallacies", entry "Traditional Wisdom")*
 
-**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery)
+**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty)
 
 **Sources:**
 
@@ -1381,6 +1405,8 @@ Status: standard · Detectable from text: yes
 
 - Price as one indicator of quality among others, where there is reason to think price tracks quality. *(catalog wording)*
 
+**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to poverty](#appeal-to-poverty)
+
 **Sources:**
 
 - Internet Encyclopedia of Philosophy, "Fallacies" (Bradley Dowden), section 6, "Partial List of Fallacies", entry "Appeal to Money". <https://iep.utm.edu/fallacy/>
@@ -1408,8 +1434,6 @@ Status: standard · Detectable from text: yes
 **Legitimate look-alikes** (not this fallacy):
 
 - Concluding only that this argument fails to support the claim. *(catalog wording)*
-
-**Related, use only one per step** (formal fallback): [Formal fallacy](#formal-fallacy), [Affirming the consequent](#affirming-the-consequent), [Denying the antecedent](#denying-the-antecedent), [Affirming a disjunct](#affirming-a-disjunct), [Denying a conjunct](#denying-a-conjunct), [Undistributed middle](#undistributed-middle)
 
 **Sources:**
 
@@ -1439,7 +1463,7 @@ Status: standard · Detectable from text: yes
 
 - Pointing out that what most people believe after consideration is likely true, all things considered, is not fallacious. *(source: IEP, section 6, "Partial List of Fallacies", entry "Bandwagon")*
 
-**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery)
+**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty)
 
 **Sources:**
 
@@ -1496,7 +1520,7 @@ Status: standard · Detectable from text: yes
 
 - Showing that the idea rested on a specific belief that has since been disproved. *(catalog wording)*
 
-**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think)
+**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Group think](#group-think), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty)
 
 **Sources:**
 
@@ -1553,6 +1577,8 @@ Status: standard · Detectable from text: yes
 **Legitimate look-alikes** (not this fallacy):
 
 - The speaker does in fact offer the explanation as an excuse. *(catalog wording)*
+
+**Related, use only one per step** (misrepresentation): [Straw man](#straw-man), [Quoting out of context](#quoting-out-of-context), [False attribution](#false-attribution)
 
 **Sources:**
 
@@ -1639,7 +1665,7 @@ Status: standard · Detectable from text: partly
 
 - Accepting a group's view because of the reasoning the group gave for it. *(catalog wording)*
 
-**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Chronological snobbery](#chronological-snobbery)
+**Related, use only one per step** (authority and popularity): [Appeal to authority (illegitimate)](#appeal-to-authority), [Appeal to celebrity](#appeal-to-celebrity), [Appeal to accomplishment](#appeal-to-accomplishment), [Appeal to the people](#appeal-to-the-people), [Bandwagon](#bandwagon), [Appeal to tradition](#appeal-to-tradition), [Appeal to novelty](#appeal-to-novelty), [Chronological snobbery](#chronological-snobbery), [Appeal to wealth](#appeal-to-wealth), [Appeal to poverty](#appeal-to-poverty)
 
 **Sources:**
 
@@ -1699,7 +1725,7 @@ Status: standard · Detectable from text: yes
 
 - Asserting the right to hold a view as a point about freedom, without claiming it answers the evidence. *(catalog wording)*
 
-**Related, use only one per step** (bare assertion): [Ipse dixit](#ipse-dixit), [Proof by assertion](#proof-by-assertion), [Argument from repetition](#argument-from-repetition), [Thought-terminating cliché](#thought-terminating-cliche), [Appeal to the stone](#appeal-to-the-stone), [Proof surrogate](#proof-surrogate)
+**Related, use only one per step** (bare assertion): [Ipse dixit](#ipse-dixit), [Proof by assertion](#proof-by-assertion), [Argument from repetition](#argument-from-repetition), [Thought-terminating cliché](#thought-terminating-cliche), [Appeal to the stone](#appeal-to-the-stone), [Proof surrogate](#proof-surrogate), [Appeal to ridicule](#appeal-to-ridicule), [Subjectivist fallacy](#subjectivist-fallacy), [Willed ignorance](#willed-ignorance)
 
 **Sources:**
 
@@ -1729,7 +1755,7 @@ Status: standard · Detectable from text: yes
 - Stating common knowledge, or a point both sides already accept. *(catalog wording)*
 - 'Trust me, I'm the expert' is an appeal to authority, not this. *(catalog wording)*
 
-**Related, use only one per step** (bare assertion): [Proof by assertion](#proof-by-assertion), [Argument from repetition](#argument-from-repetition), [Thought-terminating cliché](#thought-terminating-cliche), [Appeal to the stone](#appeal-to-the-stone), [I'm entitled to my opinion](#entitled-to-my-opinion), [Proof surrogate](#proof-surrogate)
+**Related, use only one per step** (bare assertion): [Proof by assertion](#proof-by-assertion), [Argument from repetition](#argument-from-repetition), [Thought-terminating cliché](#thought-terminating-cliche), [Appeal to the stone](#appeal-to-the-stone), [I'm entitled to my opinion](#entitled-to-my-opinion), [Proof surrogate](#proof-surrogate), [Appeal to ridicule](#appeal-to-ridicule), [Subjectivist fallacy](#subjectivist-fallacy), [Willed ignorance](#willed-ignorance)
 
 **Sources:**
 
@@ -1793,7 +1819,7 @@ Status: standard · Detectable from text: yes
 - An ought-premise is implicit and uncontroversial in context, which makes the argument complete. *(source: IEP, section 6, "Partial List of Fallacies", entry "Is-Ought")*
 - Philosophers dispute whether every such step is fallacious. *(source: IEP, section 6, "Partial List of Fallacies", entry "Is-Ought")*
 
-**Related, use only one per step** (naturalism): [Naturalistic fallacy](#naturalistic-fallacy), [Appeal to nature](#appeal-to-nature), [Moralistic fallacy](#moralistic-fallacy), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy)
+**Related, use only one per step** (naturalism): [Naturalistic fallacy](#naturalistic-fallacy), [Appeal to nature](#appeal-to-nature), [Moralistic fallacy](#moralistic-fallacy), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy), [Appeal to consequences](#appeal-to-consequences)
 
 **Sources:**
 
@@ -1825,7 +1851,7 @@ Status: standard · Detectable from text: yes
 - Openly evaluative writing (an editorial, a closing argument) that does not claim to be neutral. *(source: IEP, section 6, "Partial List of Fallacies", entry "Loaded Language")*
 - If the label itself assumes the contested conclusion, use loaded label instead; do not tag both. *(catalog wording)*
 
-**Related, use only one per step** (definition and meaning shifts): [Persuasive definition](#persuasive-definition), [Redefinition](#redefinition), [Definitional retreat](#definitional-retreat), [No true Scotsman](#no-true-scotsman), [Motte-and-bailey](#motte-and-bailey), [Equivocation](#equivocation), [Loaded label](#loaded-label), [Suppressed correlative](#suppressed-correlative)
+**Related, use only one per step** (definition and meaning shifts): [Persuasive definition](#persuasive-definition), [Redefinition](#redefinition), [Definitional retreat](#definitional-retreat), [No true Scotsman](#no-true-scotsman), [Motte-and-bailey](#motte-and-bailey), [Equivocation](#equivocation), [Loaded label](#loaded-label), [Suppressed correlative](#suppressed-correlative), [Etymological fallacy](#etymological-fallacy)
 
 **Sources:**
 
@@ -1854,7 +1880,7 @@ Status: standard · Detectable from text: yes
 
 - A moral claim used only as a reason to check the evidence carefully. *(catalog wording)*
 
-**Related, use only one per step** (naturalism): [Naturalistic fallacy](#naturalistic-fallacy), [Is-ought fallacy](#is-ought), [Appeal to nature](#appeal-to-nature), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy)
+**Related, use only one per step** (naturalism): [Naturalistic fallacy](#naturalistic-fallacy), [Is-ought fallacy](#is-ought), [Appeal to nature](#appeal-to-nature), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy), [Appeal to consequences](#appeal-to-consequences)
 
 **Sources:**
 
@@ -1882,7 +1908,7 @@ Status: standard · Detectable from text: yes
 - Arguing (not assuming) that some natural property is a reliable sign of goodness. *(catalog wording)*
 - If the error is a bare step from 'is' to 'ought', use is-ought; if it is 'natural, so good', use appeal to nature. *(catalog wording)*
 
-**Related, use only one per step** (naturalism): [Is-ought fallacy](#is-ought), [Appeal to nature](#appeal-to-nature), [Moralistic fallacy](#moralistic-fallacy), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy)
+**Related, use only one per step** (naturalism): [Is-ought fallacy](#is-ought), [Appeal to nature](#appeal-to-nature), [Moralistic fallacy](#moralistic-fallacy), [Naturalistic fallacy fallacy](#naturalistic-fallacy-fallacy), [Appeal to consequences](#appeal-to-consequences)
 
 **Sources:**
 
@@ -1908,7 +1934,7 @@ Status: standard · Detectable from text: yes
 2. It supplies (or plainly assumes) the value premise needed.
 3. It is rejected as a naturalistic fallacy anyway.
 
-**Related, use only one per step** (naturalism): [Naturalistic fallacy](#naturalistic-fallacy), [Is-ought fallacy](#is-ought), [Appeal to nature](#appeal-to-nature), [Moralistic fallacy](#moralistic-fallacy)
+**Related, use only one per step** (naturalism): [Naturalistic fallacy](#naturalistic-fallacy), [Is-ought fallacy](#is-ought), [Appeal to nature](#appeal-to-nature), [Moralistic fallacy](#moralistic-fallacy), [Appeal to consequences](#appeal-to-consequences)
 
 **Sources:**
 
@@ -1937,6 +1963,7 @@ Status: standard · Detectable from text: yes · Fallback: use only if nothing m
 
 - An invalid argument that still has real inductive strength (for example, affirming the consequent with good evidence) is not a non sequitur. *(source: IEP, section 6, "Partial List of Fallacies", entry "Non Sequitur")*
 - An enthymeme whose unstated premise is obvious and acceptable. *(catalog wording)*
+- If the step has a named invalid form, or you can show a same-form counterexample, use that entry or formal fallacy; do not tag both. *(catalog wording)*
 
 **Related, use only one per step** (diversion): [Red herring](#red-herring), [Avoiding the issue](#avoiding-the-issue), [Avoiding the question](#avoiding-the-question), [Irrelevant conclusion](#irrelevant-conclusion), [Smokescreen](#smokescreen), [Relative privation](#relative-privation), [Logic chopping](#logic-chopping), [Quibbling](#quibbling)
 
@@ -1997,6 +2024,7 @@ Status: standard · Detectable from text: yes
 
 - A related point that is shown to bear on the issue. *(catalog wording)*
 - Arguing that another issue must be settled first, when that dependence is real. *(source: IEP, section 6, "Partial List of Fallacies", entry "Avoiding the Issue")*
+- Merely asserting that another question must be settled first does not count; the dependence must be shown. *(catalog wording)*
 
 **Related, use only one per step** (diversion): [Avoiding the issue](#avoiding-the-issue), [Avoiding the question](#avoiding-the-question), [Irrelevant conclusion](#irrelevant-conclusion), [Smokescreen](#smokescreen), [Non sequitur](#non-sequitur), [Relative privation](#relative-privation), [Logic chopping](#logic-chopping), [Quibbling](#quibbling)
 
@@ -2072,7 +2100,7 @@ Blaming a person or group for a problem without evidence of their role, relying 
 
 Status: standard · Detectable from text: partly
 
-**Example:** The product launch failed because of the new intern.
+**Example:** Sales are down because of those newcomers from the city. Everyone here knows what they're like.
 
 **Required conditions** (all must be shown from the text):
 
@@ -2084,7 +2112,7 @@ Status: standard · Detectable from text: partly
 
 - Blame backed by evidence, however unpopular the target. *(catalog wording)*
 
-**Related, use only one per step** (emotion): [Appeal to emotion](#appeal-to-emotion), [Appeal to pity](#appeal-to-pity), [Appeal to fear](#appeal-to-fear), [Appeal to force](#appeal-to-force), [Appeal to flattery](#appeal-to-flattery), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Appeal to ridicule](#appeal-to-ridicule), [Wishful thinking](#wishful-thinking), [Appeal to consequences](#appeal-to-consequences)
+**Related, use only one per step** (emotion): [Appeal to emotion](#appeal-to-emotion), [Appeal to pity](#appeal-to-pity), [Appeal to fear](#appeal-to-fear), [Appeal to force](#appeal-to-force), [Appeal to flattery](#appeal-to-flattery), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Appeal to ridicule](#appeal-to-ridicule), [Wishful thinking](#wishful-thinking), [Appeal to consequences](#appeal-to-consequences), [Style over substance](#style-over-substance)
 
 **Sources:**
 
@@ -2099,14 +2127,14 @@ Status: standard · Detectable from text: partly
 
 Misrepresenting someone's position as a weaker or more extreme version and then attacking that version instead of what they actually hold.
 
-Status: standard · Detectable from text: yes
+Status: standard · Detectable from text: partly
 
 **Example:** She wants stricter emissions rules. So she wants to ban cars and make us all ride bicycles.
 
 **Required conditions** (all must be shown from the text):
 
 1. The opponent's position is restated or summarised.
-2. The restatement differs materially from what they said or meant (weaker, more extreme or distorted).
+2. The restatement differs materially from what they said or meant (show the original wording or a reliable summary of it; without it, at most possible issue).
 3. The argument attacks the restatement.
 4. The attack is presented as refuting the opponent's actual position.
 
@@ -2115,6 +2143,8 @@ Status: standard · Detectable from text: yes
 - Restating a view in words its holder would accept. *(catalog wording)*
 - Drawing out a consequence the opponent is actually committed to. *(catalog wording)*
 - Rebutting a version of the view that someone really holds, while saying whose version it is. *(catalog wording)*
+
+**Related, use only one per step** (misrepresentation): [Quoting out of context](#quoting-out-of-context), [False attribution](#false-attribution), [Confusing an explanation with an excuse](#confusing-explanation-with-excuse)
 
 **Sources:**
 
@@ -2145,6 +2175,8 @@ Status: standard · Detectable from text: yes
 
 - Clear, persuasive presentation of a well-supported case. *(catalog wording)*
 
+**Related, use only one per step** (emotion): [Appeal to emotion](#appeal-to-emotion), [Appeal to pity](#appeal-to-pity), [Appeal to fear](#appeal-to-fear), [Appeal to force](#appeal-to-force), [Appeal to flattery](#appeal-to-flattery), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Appeal to ridicule](#appeal-to-ridicule), [Scapegoating](#scapegoating), [Wishful thinking](#wishful-thinking), [Appeal to consequences](#appeal-to-consequences)
+
 **Sources:**
 
 - Internet Encyclopedia of Philosophy, "Fallacies" (Bradley Dowden), section 6, "Partial List of Fallacies", entry "Style Over Substance". <https://iep.utm.edu/fallacy/>
@@ -2172,6 +2204,9 @@ Status: standard · Detectable from text: yes
 **Legitimate look-alikes** (not this fallacy):
 
 - Claims that really are about personal taste or preference. *(catalog wording)*
+- If the reply is only that one has a right to an opinion, use entitled to my opinion. *(catalog wording)*
+
+**Related, use only one per step** (bare assertion): [Ipse dixit](#ipse-dixit), [Proof by assertion](#proof-by-assertion), [Argument from repetition](#argument-from-repetition), [Thought-terminating cliché](#thought-terminating-cliche), [Appeal to the stone](#appeal-to-the-stone), [I'm entitled to my opinion](#entitled-to-my-opinion), [Proof surrogate](#proof-surrogate), [Appeal to ridicule](#appeal-to-ridicule), [Willed ignorance](#willed-ignorance)
 
 **Sources:**
 
@@ -2251,12 +2286,12 @@ Status: standard · Detectable from text: yes
 
 **Legitimate look-alikes** (not this fallacy):
 
-- Hypocrisy is a reason to be suspicious of the speaker's sincerity, though not to discount the argument. *(source: IEP, section 6, "Partial List of Fallacies", entry "Tu Quoque")*
+- Finding that a speaker is a hypocrite gives reason to be suspicious of their reasoning, but not enough reason to discount it. *(source: IEP, section 6, "Partial List of Fallacies", entry "Tu Quoque")*
 - The question really is about the speaker's consistency or credibility, not the claim. *(catalog wording)*
 - 'What about X?' that changes the subject to a third party is not this; consider red herring. *(catalog wording)*
 - 'Whataboutism' is not a reliable alias: only the 'you do it too, so your point fails' form is this fallacy. *(catalog wording)*
 
-**Related, use only one per step** (ad hominem): [Ad hominem (abusive)](#ad-hominem), [Circumstantial ad hominem](#circumstantial-ad-hominem), [Appeal to motive](#appeal-to-motive), [Bulverism](#bulverism), [Poisoning the well](#poisoning-the-well), [Guilt by association](#guilt-by-association), [Reductio ad Hitlerum](#reductio-ad-hitlerum), [Genetic fallacy](#genetic-fallacy), [Traitorous critic fallacy](#traitorous-critic), [Tone policing](#tone-policing), [Courtier's reply](#courtiers-reply)
+**Related, use only one per step** (ad hominem, others' conduct): [Ad hominem (abusive)](#ad-hominem), [Circumstantial ad hominem](#circumstantial-ad-hominem), [Appeal to motive](#appeal-to-motive), [Bulverism](#bulverism), [Poisoning the well](#poisoning-the-well), [Guilt by association](#guilt-by-association), [Reductio ad Hitlerum](#reductio-ad-hitlerum), [Genetic fallacy](#genetic-fallacy), [Traitorous critic fallacy](#traitorous-critic), [Tone policing](#tone-policing), [Courtier's reply](#courtiers-reply), [Two wrongs make a right](#two-wrongs)
 
 **Sources:**
 
@@ -2289,6 +2324,9 @@ Status: standard · Detectable from text: yes
 
 - Arguing that a rule is enforced unevenly, or about what penalty is fair, rather than that the act was right. *(catalog wording)*
 - Proportionate self-defence or restitution argued on its own terms. *(catalog wording)*
+- If a criticism is dismissed because the critic does the same, use tu quoque. *(catalog wording)*
+
+**Related, use only one per step** (others' conduct): [Tu quoque](#tu-quoque)
 
 **Sources:**
 
@@ -2319,7 +2357,7 @@ Status: standard · Detectable from text: partly
 
 - Hope as a motive for action rather than a reason for belief. *(catalog wording)*
 
-**Related, use only one per step** (emotion): [Appeal to emotion](#appeal-to-emotion), [Appeal to pity](#appeal-to-pity), [Appeal to fear](#appeal-to-fear), [Appeal to force](#appeal-to-force), [Appeal to flattery](#appeal-to-flattery), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Appeal to ridicule](#appeal-to-ridicule), [Scapegoating](#scapegoating), [Appeal to consequences](#appeal-to-consequences)
+**Related, use only one per step** (emotion): [Appeal to emotion](#appeal-to-emotion), [Appeal to pity](#appeal-to-pity), [Appeal to fear](#appeal-to-fear), [Appeal to force](#appeal-to-force), [Appeal to flattery](#appeal-to-flattery), [Appeal to snobbery](#appeal-to-snobbery), [Appeal to spite](#appeal-to-spite), [Appeal to ridicule](#appeal-to-ridicule), [Scapegoating](#scapegoating), [Appeal to consequences](#appeal-to-consequences), [Style over substance](#style-over-substance)
 
 **Sources:**
 
@@ -2532,7 +2570,7 @@ Status: standard · Detectable from text: yes
 - Openly clarifying what was meant from the start, when the original wording was ambiguous. *(catalog wording)*
 - Openly conceding that the original claim was too strong. *(source: IEP, section 6, "Partial List of Fallacies", entry "Hedging")*
 
-**Related, use only one per step** (definition and meaning shifts, rescuing a claim): [Persuasive definition](#persuasive-definition), [Redefinition](#redefinition), [No true Scotsman](#no-true-scotsman), [Motte-and-bailey](#motte-and-bailey), [Equivocation](#equivocation), [Loaded label](#loaded-label), [Loaded language](#loaded-language), [Suppressed correlative](#suppressed-correlative), [Ad hoc rescue](#ad-hoc-rescue), [Hedging](#hedging), [Moving the goalposts](#moving-the-goalposts), [Unfalsifiability](#unfalsifiability)
+**Related, use only one per step** (definition and meaning shifts, rescuing a claim): [Persuasive definition](#persuasive-definition), [Redefinition](#redefinition), [No true Scotsman](#no-true-scotsman), [Motte-and-bailey](#motte-and-bailey), [Equivocation](#equivocation), [Loaded label](#loaded-label), [Loaded language](#loaded-language), [Suppressed correlative](#suppressed-correlative), [Etymological fallacy](#etymological-fallacy), [Ad hoc rescue](#ad-hoc-rescue), [Hedging](#hedging), [Moving the goalposts](#moving-the-goalposts), [Unfalsifiability](#unfalsifiability), [Far-fetched hypothesis](#far-fetched-hypothesis)
 
 **Sources:**
 
@@ -2617,7 +2655,7 @@ Status: standard · Detectable from text: yes
 - The word keeps one meaning throughout (substitute a definition at each use to check). *(catalog wording)*
 - Puns or wordplay not offered as argument. *(catalog wording)*
 
-**Related, use only one per step** (definition and meaning shifts, ambiguity): [Persuasive definition](#persuasive-definition), [Redefinition](#redefinition), [Definitional retreat](#definitional-retreat), [No true Scotsman](#no-true-scotsman), [Motte-and-bailey](#motte-and-bailey), [Loaded label](#loaded-label), [Loaded language](#loaded-language), [Suppressed correlative](#suppressed-correlative), [Amphiboly](#amphiboly), [Accent](#accent), [Four terms](#four-terms), [Scope fallacy](#scope-fallacy), [Combination of words (Aristotle)](#combination-of-words), [Division of words (Aristotle)](#division-of-words), [Form of expression (Aristotle)](#form-of-expression), [Quoting out of context](#quoting-out-of-context)
+**Related, use only one per step** (definition and meaning shifts, ambiguity): [Persuasive definition](#persuasive-definition), [Redefinition](#redefinition), [Definitional retreat](#definitional-retreat), [No true Scotsman](#no-true-scotsman), [Motte-and-bailey](#motte-and-bailey), [Loaded label](#loaded-label), [Loaded language](#loaded-language), [Suppressed correlative](#suppressed-correlative), [Etymological fallacy](#etymological-fallacy), [Amphiboly](#amphiboly), [Accent](#accent), [Four terms](#four-terms), [Scope fallacy](#scope-fallacy), [Combination of words (Aristotle)](#combination-of-words), [Division of words (Aristotle)](#division-of-words), [Form of expression (Aristotle)](#form-of-expression), [Quoting out of context](#quoting-out-of-context)
 
 **Sources:**
 
@@ -2650,6 +2688,8 @@ Status: standard · Detectable from text: yes
 
 - Using etymology to explain how a meaning arose, not to set the present meaning. *(catalog wording)*
 
+**Related, use only one per step** (definition and meaning shifts): [Persuasive definition](#persuasive-definition), [Redefinition](#redefinition), [Definitional retreat](#definitional-retreat), [No true Scotsman](#no-true-scotsman), [Motte-and-bailey](#motte-and-bailey), [Equivocation](#equivocation), [Loaded label](#loaded-label), [Loaded language](#loaded-language), [Suppressed correlative](#suppressed-correlative)
+
 **Sources:**
 
 - Internet Encyclopedia of Philosophy, "Fallacies" (Bradley Dowden), section 6, "Partial List of Fallacies", entry "Etymological". <https://iep.utm.edu/fallacy/>
@@ -2679,6 +2719,8 @@ Status: standard · Detectable from text: partly
 
 - Honest paraphrase that fairly captures the source. *(catalog wording)*
 - A real source that is not qualified on the topic is appeal to authority; a real quote that is clipped is quoting out of context. *(catalog wording)*
+
+**Related, use only one per step** (misrepresentation): [Straw man](#straw-man), [Quoting out of context](#quoting-out-of-context), [Confusing an explanation with an excuse](#confusing-explanation-with-excuse)
 
 **Sources:**
 
@@ -2785,7 +2827,7 @@ Status: standard · Detectable from text: yes
 - A vague term is not hopelessly vague; borderline cases leave clear cases clear. *(source: IEP, section 6, "Partial List of Fallacies", entry "Line-Drawing")*
 - Using vague words, or calling a case borderline, is fine. *(catalog wording)*
 
-**Related, use only one per step** (options and limits): [False dilemma](#false-dilemma), [Middle ground](#middle-ground), [Nirvana fallacy](#nirvana-fallacy), [Slippery slope](#slippery-slope)
+**Related, use only one per step** (options and limits): [False dilemma](#false-dilemma), [Middle ground](#middle-ground), [Nirvana fallacy](#nirvana-fallacy), [Slippery slope](#slippery-slope), [Vagueness (exploiting)](#vagueness)
 
 **Sources:**
 
@@ -2848,7 +2890,7 @@ Status: contested · Detectable from text: yes
 - Different people in a movement holding bold and modest versions (no single speaker switching). *(catalog wording)*
 - Openly retreating to the modest claim and leaving the bold one aside. *(catalog wording)*
 
-**Related, use only one per step** (definition and meaning shifts, rescuing a claim): [Persuasive definition](#persuasive-definition), [Redefinition](#redefinition), [Definitional retreat](#definitional-retreat), [No true Scotsman](#no-true-scotsman), [Equivocation](#equivocation), [Loaded label](#loaded-label), [Loaded language](#loaded-language), [Suppressed correlative](#suppressed-correlative), [Ad hoc rescue](#ad-hoc-rescue), [Hedging](#hedging), [Moving the goalposts](#moving-the-goalposts), [Unfalsifiability](#unfalsifiability)
+**Related, use only one per step** (definition and meaning shifts, rescuing a claim): [Persuasive definition](#persuasive-definition), [Redefinition](#redefinition), [Definitional retreat](#definitional-retreat), [No true Scotsman](#no-true-scotsman), [Equivocation](#equivocation), [Loaded label](#loaded-label), [Loaded language](#loaded-language), [Suppressed correlative](#suppressed-correlative), [Etymological fallacy](#etymological-fallacy), [Ad hoc rescue](#ad-hoc-rescue), [Hedging](#hedging), [Moving the goalposts](#moving-the-goalposts), [Unfalsifiability](#unfalsifiability), [Far-fetched hypothesis](#far-fetched-hypothesis)
 
 **Sources:**
 
@@ -2968,7 +3010,7 @@ Status: standard · Detectable from text: yes
 <a id="persuasive-definition"></a>
 ### Persuasive definition
 
-*Also called:* victory by definition, definist fallacy (related), definist fallacy
+*Also called:* victory by definition, definist fallacy
 
 Winning an argument by getting others to accept a slanted definition of a key term that builds in the desired conclusion.
 
@@ -2987,7 +3029,7 @@ Status: standard · Detectable from text: yes
 - A stipulated technical definition that is announced and used consistently. *(catalog wording)*
 - Arguing openly for a revised definition. *(catalog wording)*
 
-**Related, use only one per step** (definition and meaning shifts): [Redefinition](#redefinition), [Definitional retreat](#definitional-retreat), [No true Scotsman](#no-true-scotsman), [Motte-and-bailey](#motte-and-bailey), [Equivocation](#equivocation), [Loaded label](#loaded-label), [Loaded language](#loaded-language), [Suppressed correlative](#suppressed-correlative)
+**Related, use only one per step** (definition and meaning shifts): [Redefinition](#redefinition), [Definitional retreat](#definitional-retreat), [No true Scotsman](#no-true-scotsman), [Motte-and-bailey](#motte-and-bailey), [Equivocation](#equivocation), [Loaded label](#loaded-label), [Loaded language](#loaded-language), [Suppressed correlative](#suppressed-correlative), [Etymological fallacy](#etymological-fallacy)
 
 **Sources:**
 
@@ -3005,21 +3047,21 @@ Status: standard · Detectable from text: yes
 
 Quoting someone selectively so that the context that fixes their meaning is lost and they appear to say something else.
 
-Status: standard · Detectable from text: yes
+Status: standard · Detectable from text: partly
 
 **Example:** The critic called the film 'a triumph ... of marketing over substance', and the poster says 'a triumph!'.
 
 **Required conditions** (all must be shown from the text):
 
 1. Someone's words are quoted or paraphrased.
-2. Surrounding words that change the meaning are left out (show them).
+2. Surrounding words that change the meaning are left out (quote the fuller original; without it, at most possible issue).
 3. The argument relies on the shifted meaning.
 
 **Legitimate look-alikes** (not this fallacy):
 
 - A shortened quote that keeps the original meaning. *(catalog wording)*
 
-**Related, use only one per step** (omitted evidence, ambiguity): [Suppressed evidence](#suppressed-evidence), [Nut-picking](#nut-picking), [Selective attention](#selective-attention), [Confirmation bias (as a fallacy)](#confirmation-bias), [Disregarding known science](#disregarding-known-science), [Survivorship bias](#survivorship-bias), [Overwhelming exception](#overwhelming-exception), [Equivocation](#equivocation), [Amphiboly](#amphiboly), [Accent](#accent), [Four terms](#four-terms), [Scope fallacy](#scope-fallacy), [Combination of words (Aristotle)](#combination-of-words), [Division of words (Aristotle)](#division-of-words), [Form of expression (Aristotle)](#form-of-expression)
+**Related, use only one per step** (omitted evidence, ambiguity, misrepresentation): [Suppressed evidence](#suppressed-evidence), [Nut-picking](#nut-picking), [Selective attention](#selective-attention), [Confirmation bias (as a fallacy)](#confirmation-bias), [Disregarding known science](#disregarding-known-science), [Survivorship bias](#survivorship-bias), [Overwhelming exception](#overwhelming-exception), [Equivocation](#equivocation), [Amphiboly](#amphiboly), [Accent](#accent), [Four terms](#four-terms), [Scope fallacy](#scope-fallacy), [Combination of words (Aristotle)](#combination-of-words), [Division of words (Aristotle)](#division-of-words), [Form of expression (Aristotle)](#form-of-expression), [Straw man](#straw-man), [False attribution](#false-attribution), [Confusing an explanation with an excuse](#confusing-explanation-with-excuse)
 
 **Sources:**
 
@@ -3051,7 +3093,7 @@ Status: standard · Detectable from text: yes
 
 - Announced, consistent technical usage. *(catalog wording)*
 
-**Related, use only one per step** (definition and meaning shifts): [Persuasive definition](#persuasive-definition), [Definitional retreat](#definitional-retreat), [No true Scotsman](#no-true-scotsman), [Motte-and-bailey](#motte-and-bailey), [Equivocation](#equivocation), [Loaded label](#loaded-label), [Loaded language](#loaded-language), [Suppressed correlative](#suppressed-correlative)
+**Related, use only one per step** (definition and meaning shifts): [Persuasive definition](#persuasive-definition), [Definitional retreat](#definitional-retreat), [No true Scotsman](#no-true-scotsman), [Motte-and-bailey](#motte-and-bailey), [Equivocation](#equivocation), [Loaded label](#loaded-label), [Loaded language](#loaded-language), [Suppressed correlative](#suppressed-correlative), [Etymological fallacy](#etymological-fallacy)
 
 **Sources:**
 
@@ -3128,7 +3170,7 @@ Status: standard · Detectable from text: yes
 2. One term is redefined to cover everything.
 3. The other is left with nothing to apply to, and the argument relies on this.
 
-**Related, use only one per step** (definition and meaning shifts): [Persuasive definition](#persuasive-definition), [Redefinition](#redefinition), [Definitional retreat](#definitional-retreat), [No true Scotsman](#no-true-scotsman), [Motte-and-bailey](#motte-and-bailey), [Equivocation](#equivocation), [Loaded label](#loaded-label), [Loaded language](#loaded-language)
+**Related, use only one per step** (definition and meaning shifts): [Persuasive definition](#persuasive-definition), [Redefinition](#redefinition), [Definitional retreat](#definitional-retreat), [No true Scotsman](#no-true-scotsman), [Motte-and-bailey](#motte-and-bailey), [Equivocation](#equivocation), [Loaded label](#loaded-label), [Loaded language](#loaded-language), [Etymological fallacy](#etymological-fallacy)
 
 **Sources:**
 
@@ -3156,6 +3198,9 @@ Status: standard · Detectable from text: partly
 **Legitimate look-alikes** (not this fallacy):
 
 - A vague term is not hopelessly vague; vagueness that does not affect the conclusion is harmless. *(source: IEP, section 6, "Partial List of Fallacies", entry "Line-Drawing")*
+- If the argument is that no sharp line means no real difference, use line-drawing instead. *(catalog wording)*
+
+**Related, use only one per step** (options and limits): [False dilemma](#false-dilemma), [Middle ground](#middle-ground), [Nirvana fallacy](#nirvana-fallacy), [Line-drawing fallacy](#line-drawing), [Slippery slope](#slippery-slope)
 
 **Sources:**
 
@@ -3187,7 +3232,7 @@ Status: standard · Detectable from text: yes
 - The case is an ordinary instance of the rule. *(catalog wording)*
 - Applying a rule strictly for a stated reason (fairness, predictability) after considering the exception. *(catalog wording)*
 
-**Related, use only one per step** (generalization): [Secundum quid](#secundum-quid), [Hasty generalization](#hasty-generalization), [Converse accident](#converse-accident), [Anecdotal evidence](#anecdotal-evidence), [Misleading vividness](#misleading-vividness), [Availability heuristic (as a fallacy)](#availability-heuristic), [Unrepresentative sample](#unrepresentative-sample), [Stereotyping](#stereotyping), [Jumping to conclusions](#jumping-to-conclusions), [Specificity](#specificity), [Overgenerality](#overgenerality), [Inductive conversion](#inductive-conversion)
+**Related, use only one per step** (generalization, accident: ancient and modern): [Secundum quid](#secundum-quid), [Hasty generalization](#hasty-generalization), [Converse accident](#converse-accident), [Anecdotal evidence](#anecdotal-evidence), [Misleading vividness](#misleading-vividness), [Availability heuristic (as a fallacy)](#availability-heuristic), [Unrepresentative sample](#unrepresentative-sample), [Stereotyping](#stereotyping), [Jumping to conclusions](#jumping-to-conclusions), [Specificity](#specificity), [Overgenerality](#overgenerality), [Inductive conversion](#inductive-conversion), [Accident (Aristotle's sense)](#accident-aristotle)
 
 **Sources:**
 
@@ -3218,6 +3263,9 @@ Status: standard · Detectable from text: yes
 **Legitimate look-alikes** (not this fallacy):
 
 - The two descriptions really are interchangeable for the property in question. *(catalog wording)*
+- For a general rule misapplied to an exception (the modern sense), use accident. *(catalog wording)*
+
+**Related, use only one per step** (accident: ancient and modern): [Accident](#accident)
 
 **Sources:**
 
@@ -3233,7 +3281,7 @@ Status: standard · Detectable from text: yes
 
 Saving a cherished claim from contrary evidence by inventing an explanation that has no support except that it saves the claim.
 
-Status: standard · Detectable from text: partly
+Status: standard · Detectable from text: yes
 
 **Example:** The psychic failed because the sceptics' negative energy blocked her powers.
 
@@ -3241,13 +3289,13 @@ Status: standard · Detectable from text: partly
 
 1. A claim faces counterevidence.
 2. An extra assumption is added to explain the evidence away.
-3. There is no independent reason for the assumption.
+3. No independent reason for the assumption is given or evident, and it is offered as settling the conflict.
 
 **Legitimate look-alikes** (not this fallacy):
 
 - The rescuing assumption has good independent support. *(source: IEP, section 6, "Partial List of Fallacies", entry "Ad Hoc Rescue")*
 
-**Related, use only one per step** (rescuing a claim): [No true Scotsman](#no-true-scotsman), [Hedging](#hedging), [Moving the goalposts](#moving-the-goalposts), [Unfalsifiability](#unfalsifiability), [Definitional retreat](#definitional-retreat), [Motte-and-bailey](#motte-and-bailey)
+**Related, use only one per step** (rescuing a claim): [No true Scotsman](#no-true-scotsman), [Hedging](#hedging), [Moving the goalposts](#moving-the-goalposts), [Unfalsifiability](#unfalsifiability), [Definitional retreat](#definitional-retreat), [Motte-and-bailey](#motte-and-bailey), [Far-fetched hypothesis](#far-fetched-hypothesis)
 
 **Sources:**
 
@@ -3301,7 +3349,7 @@ Status: standard · Detectable from text: yes
 - A valid deductive argument always 'contains' its conclusion in its premises; that alone is not this fallacy. *(source: IEP, section 6, "Partial List of Fallacies", entry "Begging the Question")*
 - A very large circle of claims (like a dictionary's definitions) can be informative and is not considered fallacious. *(source: IEP, section 6, "Partial List of Fallacies", entry "Circular Reasoning")*
 
-**Related, use only one per step** (circularity): [Question-begging analogy](#question-begging-analogy), [Loaded label](#loaded-label), [Complex question](#complex-question)
+**Related, use only one per step** (circularity): [Question-begging analogy](#question-begging-analogy), [Loaded label](#loaded-label), [Complex question](#complex-question), [Ideology-driven argumentation](#ideology-driven-argumentation)
 
 **Sources:**
 
@@ -3337,7 +3385,7 @@ Status: standard · Detectable from text: yes
 
 - The presupposition has already been established or accepted. *(catalog wording)*
 
-**Related, use only one per step** (circularity): [Begging the question](#begging-the-question), [Question-begging analogy](#question-begging-analogy), [Loaded label](#loaded-label)
+**Related, use only one per step** (circularity): [Begging the question](#begging-the-question), [Question-begging analogy](#question-begging-analogy), [Loaded label](#loaded-label), [Ideology-driven argumentation](#ideology-driven-argumentation)
 
 **Sources:**
 
@@ -3465,13 +3513,13 @@ Status: standard · Detectable from text: yes
 
 Overstating a key step in an argument so that the conclusion looks better supported than it is.
 
-Status: standard · Detectable from text: yes
+Status: standard · Detectable from text: partly
 
 **Example:** Everyone knows the new rule has been a total disaster, so it must be repealed.
 
 **Required conditions** (all must be shown from the text):
 
-1. A claim is overstated or understated.
+1. A claim that is a crucial step in the reasoning is overstated.
 2. The argument relies on the overstated version.
 3. The overstatement is meant literally.
 
@@ -3555,9 +3603,9 @@ Status: standard · Detectable from text: yes
 
 **Legitimate look-alikes** (not this fallacy):
 
-- The options really are exhaustive (a true dichotomy), or the speaker is only naming the main options. *(catalog wording)*
+- The options really are exhaustive (a true dichotomy), or the speaker names the main options without claiming they are the only ones. *(catalog wording)*
 
-**Related, use only one per step** (options and limits): [Middle ground](#middle-ground), [Nirvana fallacy](#nirvana-fallacy), [Line-drawing fallacy](#line-drawing), [Slippery slope](#slippery-slope)
+**Related, use only one per step** (options and limits): [Middle ground](#middle-ground), [Nirvana fallacy](#nirvana-fallacy), [Line-drawing fallacy](#line-drawing), [Slippery slope](#slippery-slope), [Vagueness (exploiting)](#vagueness)
 
 **Sources:**
 
@@ -3574,7 +3622,7 @@ Status: standard · Detectable from text: yes
 
 Implying that two things, often two sides' cases, are roughly equal in strength or seriousness when one is much weaker or much less serious, glossing over the difference.
 
-Status: standard · Detectable from text: yes
+Status: standard · Detectable from text: partly
 
 **Example:** Both of them told lies, so the man who misstated his age is as dishonest as the man who committed fraud.
 
@@ -3616,6 +3664,8 @@ Status: standard · Detectable from text: partly
 
 - An unusual explanation offered after likelier ones have been ruled out. *(catalog wording)*
 - Suggesting an unusual explanation as something to test. *(catalog wording)*
+
+**Related, use only one per step** (rescuing a claim): [Ad hoc rescue](#ad-hoc-rescue), [No true Scotsman](#no-true-scotsman), [Hedging](#hedging), [Moving the goalposts](#moving-the-goalposts), [Unfalsifiability](#unfalsifiability), [Definitional retreat](#definitional-retreat), [Motte-and-bailey](#motte-and-bailey)
 
 **Sources:**
 
@@ -3669,7 +3719,7 @@ Status: standard · Detectable from text: yes
 
 - Openly accepting counterevidence and admitting the original claim was wrong is not this. *(source: IEP, section 6, "Partial List of Fallacies", entry "Hedging")*
 
-**Related, use only one per step** (rescuing a claim): [Ad hoc rescue](#ad-hoc-rescue), [No true Scotsman](#no-true-scotsman), [Moving the goalposts](#moving-the-goalposts), [Unfalsifiability](#unfalsifiability), [Definitional retreat](#definitional-retreat), [Motte-and-bailey](#motte-and-bailey)
+**Related, use only one per step** (rescuing a claim): [Ad hoc rescue](#ad-hoc-rescue), [No true Scotsman](#no-true-scotsman), [Moving the goalposts](#moving-the-goalposts), [Unfalsifiability](#unfalsifiability), [Definitional retreat](#definitional-retreat), [Motte-and-bailey](#motte-and-bailey), [Far-fetched hypothesis](#far-fetched-hypothesis)
 
 **Sources:**
 
@@ -3710,14 +3760,18 @@ Status: standard · Detectable from text: partly
 
 Assuming that a result came about only because a particular process was performed, when the process may have nothing to do with it.
 
-Status: standard · Detectable from text: yes
+Status: standard · Detectable from text: partly
 
 **Example:** Our children turned out well because we followed this parenting book.
 
 **Required conditions** (all must be shown from the text):
 
 1. A result is attributed to a process that was carried out.
-2. The process may not have produced the result (the result could be present anyway).
+2. No evidence is given that the process produced the result, and the result could plausibly be present anyway (say why).
+
+**Legitimate look-alikes** (not this fallacy):
+
+- Attribution backed by a before-and-after comparison or a known mechanism. *(catalog wording)*
 
 **Related, use only one per step** (history): [Historian's fallacy](#historians-fallacy), [Baconian fallacy](#baconian-fallacy), [Retrospective determinism](#retrospective-determinism)
 
@@ -3774,6 +3828,8 @@ Status: standard · Detectable from text: yes · Fallback: use only if nothing m
 
 - Reasoning from openly stated premises to an audience that shares them. *(catalog wording)*
 
+**Related, use only one per step** (circularity): [Begging the question](#begging-the-question), [Question-begging analogy](#question-begging-analogy), [Loaded label](#loaded-label), [Complex question](#complex-question)
+
 **Sources:**
 
 - Internet Encyclopedia of Philosophy, "Fallacies" (Bradley Dowden), section 6, "Partial List of Fallacies", entry "Ideology-Driven Argumentation". <https://iep.utm.edu/fallacy/>
@@ -3803,7 +3859,7 @@ Status: standard · Detectable from text: yes · Fallback: use only if nothing m
 - Apparent conflicts that disappear on a fair reading (different times, respects or senses). *(catalog wording)*
 - Deriving a contradiction on purpose, to reject an assumption (reduction to absurdity), is not this. *(catalog wording)*
 
-**Related, use only one per step** (consistency): [Kettle logic](#kettle-logic), [Special pleading](#special-pleading), [Double standard](#double-standard)
+**Related, use only one per step** (consistency, non-cause: ancient and modern): [Kettle logic](#kettle-logic), [Special pleading](#special-pleading), [Double standard](#double-standard), [Non-cause (Aristotle's sense)](#non-cause-aristotle), [False cause](#false-cause)
 
 **Sources:**
 
@@ -3883,7 +3939,7 @@ Status: standard · Detectable from text: yes
 
 - A label that is not inherently fallacious and is accurate and supported. *(source: Wikipedia, section "Informal fallacies > Improper premise", item "Loaded label")*
 
-**Related, use only one per step** (definition and meaning shifts, circularity): [Persuasive definition](#persuasive-definition), [Redefinition](#redefinition), [Definitional retreat](#definitional-retreat), [No true Scotsman](#no-true-scotsman), [Motte-and-bailey](#motte-and-bailey), [Equivocation](#equivocation), [Loaded language](#loaded-language), [Suppressed correlative](#suppressed-correlative), [Begging the question](#begging-the-question), [Question-begging analogy](#question-begging-analogy), [Complex question](#complex-question)
+**Related, use only one per step** (definition and meaning shifts, circularity): [Persuasive definition](#persuasive-definition), [Redefinition](#redefinition), [Definitional retreat](#definitional-retreat), [No true Scotsman](#no-true-scotsman), [Motte-and-bailey](#motte-and-bailey), [Equivocation](#equivocation), [Loaded language](#loaded-language), [Suppressed correlative](#suppressed-correlative), [Etymological fallacy](#etymological-fallacy), [Begging the question](#begging-the-question), [Question-begging analogy](#question-begging-analogy), [Complex question](#complex-question), [Ideology-driven argumentation](#ideology-driven-argumentation)
 
 **Sources:**
 
@@ -3936,7 +3992,7 @@ Status: standard · Detectable from text: yes
 
 - Compromise as a practical way to reach agreement, not as a claim about truth. *(catalog wording)*
 
-**Related, use only one per step** (options and limits): [False dilemma](#false-dilemma), [Nirvana fallacy](#nirvana-fallacy), [Line-drawing fallacy](#line-drawing), [Slippery slope](#slippery-slope)
+**Related, use only one per step** (options and limits): [False dilemma](#false-dilemma), [Nirvana fallacy](#nirvana-fallacy), [Line-drawing fallacy](#line-drawing), [Slippery slope](#slippery-slope), [Vagueness (exploiting)](#vagueness)
 
 **Sources:**
 
@@ -3988,7 +4044,7 @@ Status: standard · Detectable from text: yes
 
 - The situation requires perfection or near-perfection (for example, some safety standards). *(source: IEP, section 6, "Partial List of Fallacies", entry "Perfectionist")*
 
-**Related, use only one per step** (options and limits): [False dilemma](#false-dilemma), [Middle ground](#middle-ground), [Line-drawing fallacy](#line-drawing), [Slippery slope](#slippery-slope)
+**Related, use only one per step** (options and limits): [False dilemma](#false-dilemma), [Middle ground](#middle-ground), [Line-drawing fallacy](#line-drawing), [Slippery slope](#slippery-slope), [Vagueness (exploiting)](#vagueness)
 
 **Sources:**
 
@@ -4019,7 +4075,7 @@ Status: standard · Detectable from text: yes
 - Excluding a case using a criterion stated beforehand or independently justified. *(catalog wording)*
 - Applying a criterion that is part of what the word means (someone who eats meat is not a vegan). *(catalog wording)*
 
-**Related, use only one per step** (definition and meaning shifts, rescuing a claim): [Persuasive definition](#persuasive-definition), [Redefinition](#redefinition), [Definitional retreat](#definitional-retreat), [Motte-and-bailey](#motte-and-bailey), [Equivocation](#equivocation), [Loaded label](#loaded-label), [Loaded language](#loaded-language), [Suppressed correlative](#suppressed-correlative), [Ad hoc rescue](#ad-hoc-rescue), [Hedging](#hedging), [Moving the goalposts](#moving-the-goalposts), [Unfalsifiability](#unfalsifiability)
+**Related, use only one per step** (definition and meaning shifts, rescuing a claim): [Persuasive definition](#persuasive-definition), [Redefinition](#redefinition), [Definitional retreat](#definitional-retreat), [Motte-and-bailey](#motte-and-bailey), [Equivocation](#equivocation), [Loaded label](#loaded-label), [Loaded language](#loaded-language), [Suppressed correlative](#suppressed-correlative), [Etymological fallacy](#etymological-fallacy), [Ad hoc rescue](#ad-hoc-rescue), [Hedging](#hedging), [Moving the goalposts](#moving-the-goalposts), [Unfalsifiability](#unfalsifiability), [Far-fetched hypothesis](#far-fetched-hypothesis)
 
 **Sources:**
 
@@ -4049,6 +4105,9 @@ Status: standard · Detectable from text: yes
 **Legitimate look-alikes** (not this fallacy):
 
 - The blamed premise was in fact used in deriving the result. *(catalog wording)*
+- For real-world causal errors, use false cause. *(catalog wording)*
+
+**Related, use only one per step** (non-cause: ancient and modern): [False cause](#false-cause), [Inconsistency](#inconsistency)
 
 **Sources:**
 
@@ -4090,7 +4149,7 @@ Status: standard · Detectable from text: yes · Fallback: use only if nothing m
 <a id="proving-too-much"></a>
 ### Proving too much
 
-An argument whose reasoning leads to a far more general conclusion than intended, so that it would also establish things the arguer would reject.
+An argument that leads to an overly general conclusion. A common test (this catalog's wording, not the cited source's): the same reasoning would also establish things the arguer would reject.
 
 Status: standard · Detectable from text: yes
 
@@ -4106,9 +4165,11 @@ Status: standard · Detectable from text: yes
 
 - A relevant difference between the cases is stated. *(catalog wording)*
 
+**Related:** [False analogy](#false-analogy)
+
 **Sources:**
 
-- Wikipedia, "List of fallacies", section "Informal fallacies", item "Proving too much". <https://en.wikipedia.org/wiki/List_of_fallacies>
+- Wikipedia, "List of fallacies", section "Informal fallacies", item "Proving too much". <https://en.wikipedia.org/wiki/List_of_fallacies> Note: Wikipedia describes it only as an argument that results in an overly generalized conclusion; the 'would also prove things the arguer rejects' test is catalog wording.
 
 `id: proving-too-much`
 
@@ -4150,7 +4211,7 @@ Status: standard · Detectable from text: yes
 2. Whether the two cases are alike in the relevant respect is the very point in dispute.
 3. The analogy is used to settle that point.
 
-**Related, use only one per step** (circularity, comparison): [Begging the question](#begging-the-question), [Loaded label](#loaded-label), [Complex question](#complex-question), [False analogy](#false-analogy), [False equivalence](#false-equivalence), [False balance](#false-balance), [Dangling comparative](#dangling-comparative), [Package deal](#package-deal)
+**Related, use only one per step** (circularity, comparison): [Begging the question](#begging-the-question), [Loaded label](#loaded-label), [Complex question](#complex-question), [Ideology-driven argumentation](#ideology-driven-argumentation), [False analogy](#false-analogy), [False equivalence](#false-equivalence), [False balance](#false-balance), [Dangling comparative](#dangling-comparative), [Package deal](#package-deal)
 
 **Sources:**
 
@@ -4258,7 +4319,7 @@ Status: standard · Detectable from text: partly
 - Whether this is fallacious depends on how likely each step is; well-supported chains are reasonable. *(source: IEP, section 6, "Partial List of Fallacies", entry "Slippery Slope")*
 - A chain of tiny vague steps with no practical prediction is line-drawing, not this. *(catalog wording)*
 
-**Related, use only one per step** (options and limits): [False dilemma](#false-dilemma), [Middle ground](#middle-ground), [Nirvana fallacy](#nirvana-fallacy), [Line-drawing fallacy](#line-drawing)
+**Related, use only one per step** (options and limits): [False dilemma](#false-dilemma), [Middle ground](#middle-ground), [Nirvana fallacy](#nirvana-fallacy), [Line-drawing fallacy](#line-drawing), [Vagueness (exploiting)](#vagueness)
 
 **Sources:**
 
@@ -4398,13 +4459,13 @@ Status: standard · Detectable from text: yes
 
 1. A claim is offered as an empirical claim about the world.
 2. It is framed so that no possible observation could count against it.
-3. Its compatibility with every outcome is presented as support.
+3. It is still presented as established or explanatory, although its framing, not evidence, is what protects it from refutation.
 
 **Legitimate look-alikes** (not this fallacy):
 
 - Definitions, mathematics, logical truths and value claims, which are not offered as explanations of events. *(catalog wording)*
 
-**Related, use only one per step** (rescuing a claim): [Ad hoc rescue](#ad-hoc-rescue), [No true Scotsman](#no-true-scotsman), [Hedging](#hedging), [Moving the goalposts](#moving-the-goalposts), [Definitional retreat](#definitional-retreat), [Motte-and-bailey](#motte-and-bailey)
+**Related, use only one per step** (rescuing a claim): [Ad hoc rescue](#ad-hoc-rescue), [No true Scotsman](#no-true-scotsman), [Hedging](#hedging), [Moving the goalposts](#moving-the-goalposts), [Definitional retreat](#definitional-retreat), [Motte-and-bailey](#motte-and-bailey), [Far-fetched hypothesis](#far-fetched-hypothesis)
 
 **Sources:**
 
@@ -4454,6 +4515,8 @@ Status: standard · Detectable from text: yes
 
 - Declining to revisit something already thoroughly considered, with a reason. *(catalog wording)*
 - Remaining unconvinced after looking at the evidence. *(catalog wording)*
+
+**Related, use only one per step** (bare assertion): [Ipse dixit](#ipse-dixit), [Proof by assertion](#proof-by-assertion), [Argument from repetition](#argument-from-repetition), [Thought-terminating cliché](#thought-terminating-cliche), [Appeal to the stone](#appeal-to-the-stone), [I'm entitled to my opinion](#entitled-to-my-opinion), [Proof surrogate](#proof-surrogate), [Appeal to ridicule](#appeal-to-ridicule), [Subjectivist fallacy](#subjectivist-fallacy)
 
 **Sources:**
 
@@ -4510,10 +4573,12 @@ Status: standard · Detectable from text: yes
 
 1. A claim has not been proven false (or true).
 2. It is concluded to be true (or false) on that basis.
+3. Nothing in the context shows a thorough search was made where evidence would be expected if the claim were true.
 
 **Legitimate look-alikes** (not this fallacy):
 
 - A thorough search was done and a proof would have been found if it existed. *(source: IEP, section 6, "Partial List of Fallacies", entry "Appeal to Ignorance")*
+- A procedural default or burden rule (presumption of innocence, a null hypothesis): the conclusion is what to decide or how to act, not that the claim is false. *(catalog wording)*
 
 **Related, use only one per step** (ignorance and burden): [Misplaced burden of proof](#misplaced-burden-of-proof), [Argument from silence](#argument-from-silence), [Argument from incredulity](#argument-from-incredulity)
 
@@ -4637,7 +4702,7 @@ Status: standard · Detectable from text: yes
 - An analogy where the shared features are the ones that matter to the conclusion. *(catalog wording)*
 - An analogy used to illustrate, not to argue. *(catalog wording)*
 
-**Related, use only one per step** (comparison): [False equivalence](#false-equivalence), [False balance](#false-balance), [Question-begging analogy](#question-begging-analogy), [Dangling comparative](#dangling-comparative), [Package deal](#package-deal)
+**Related, use only one per step** (comparison): [False equivalence](#false-equivalence), [False balance](#false-balance), [Question-begging analogy](#question-begging-analogy), [Dangling comparative](#dangling-comparative), [Package deal](#package-deal), [Proving too much](#proving-too-much)
 
 **Sources:**
 
@@ -4793,15 +4858,15 @@ Status: standard · Detectable from text: partly · Fallback: use only if nothin
 
 Letting a few dramatic, memorable cases outweigh a larger body of statistical evidence.
 
-Status: standard · Detectable from text: yes
+Status: standard · Detectable from text: partly
 
-**Example:** I saw a terrible shark attack on the news, so swimming at the beach is too dangerous.
+**Example:** I saw a terrible shark attack on the news, so swimming at the beach is too dangerous, whatever the statistics say.
 
 **Required conditions** (all must be shown from the text):
 
 1. A vivid, memorable case is described.
 2. It is used to support a claim about how common or likely something is.
-3. It outweighs, in the argument, statistical evidence pointing the other way.
+3. Statistical evidence pointing the other way exists (stated, or well known) and is outweighed or ignored.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -4886,7 +4951,7 @@ Status: standard · Detectable from text: yes
 
 - The phrase is accompanied by a checkable citation. *(catalog wording)*
 
-**Related, use only one per step** (bare assertion): [Ipse dixit](#ipse-dixit), [Proof by assertion](#proof-by-assertion), [Argument from repetition](#argument-from-repetition), [Thought-terminating cliché](#thought-terminating-cliche), [Appeal to the stone](#appeal-to-the-stone), [I'm entitled to my opinion](#entitled-to-my-opinion)
+**Related, use only one per step** (bare assertion): [Ipse dixit](#ipse-dixit), [Proof by assertion](#proof-by-assertion), [Argument from repetition](#argument-from-repetition), [Thought-terminating cliché](#thought-terminating-cliche), [Appeal to the stone](#appeal-to-the-stone), [I'm entitled to my opinion](#entitled-to-my-opinion), [Appeal to ridicule](#appeal-to-ridicule), [Subjectivist fallacy](#subjectivist-fallacy), [Willed ignorance](#willed-ignorance)
 
 **Sources:**
 
@@ -5026,11 +5091,13 @@ Status: standard · Detectable from text: yes
 
 1. Two things are shown to occur together (a correlation).
 2. One is concluded to cause the other.
-3. Chance, a third factor and reverse causation are not addressed.
+3. At least one plausible alternative (chance, a third factor, the reverse direction) is left open, and the causal claim is stated as established rather than as a hypothesis to test.
 
 **Legitimate look-alikes** (not this fallacy):
 
 - Correlations are often good evidence of causation when alternatives are addressed. *(source: IEP, section 6, "Partial List of Fallacies", entry "Post Hoc")*
+- A correlation can support a causal conclusion once coincidence, a confounding cause and the reverse direction have been ruled out. *(source: Fallacy Files, entry "Cum Hoc, Ergo Propter Hoc")*
+- A correlation plus a comparison group or a known mechanism, offered as grounds to investigate. *(catalog wording)*
 
 **Related, use only one per step** (causation): [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism)
 
@@ -5085,14 +5152,14 @@ Status: standard · Detectable from text: yes · Fallback: use only if nothing m
 **Required conditions** (all must be shown from the text):
 
 1. A causal conclusion is drawn.
-2. The evidence offered does not adequately support that causal link.
+2. The only support is that the two occur together or in sequence, or an obvious alternative (a common cause, the reverse direction, chance) is left open.
 3. No more specific causal entry (post hoc, correlation, common cause, reverse causation, single cause, regression) fits.
 
 **Legitimate look-alikes** (not this fallacy):
 
 - A tentative causal hypothesis offered for testing. *(catalog wording)*
 
-**Related, use only one per step** (causation): [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism)
+**Related, use only one per step** (causation, non-cause: ancient and modern): [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Reversing causation](#reverse-causation), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism), [Non-cause (Aristotle's sense)](#non-cause-aristotle), [Inconsistency](#inconsistency)
 
 **Sources:**
 
@@ -5264,6 +5331,10 @@ Status: standard · Detectable from text: yes
 2. A is concluded to cause B.
 3. B plausibly causes A instead, and this is not addressed.
 
+**Legitimate look-alikes** (not this fallacy):
+
+- Two-way causation, or a reverse direction ruled out by timing or design. *(catalog wording)*
+
 **Related, use only one per step** (causation): [False cause](#false-cause), [Post hoc ergo propter hoc](#post-hoc), [Cum hoc ergo propter hoc](#cum-hoc), [Ignoring a common cause](#common-cause), [Fallacy of the single cause](#single-cause), [Regression fallacy](#regression-fallacy), [Observational interpretation fallacy](#observational-interpretation), [Superstitious thinking](#superstitious-thinking), [Magical thinking](#magical-thinking), [Furtive fallacy](#furtive-fallacy), [Retrospective determinism](#retrospective-determinism)
 
 **Sources:**
@@ -5434,6 +5505,7 @@ Status: standard · Detectable from text: yes
 
 1. Data are about groups (regions, populations).
 2. A conclusion is drawn about individuals within them.
+3. The group-level pattern is taken to establish the same pattern for individuals (or a particular person) without individual-level data.
 
 **Legitimate look-alikes** (not this fallacy):
 
@@ -5952,6 +6024,7 @@ Status: standard · Detectable from text: partly
 **Legitimate look-alikes** (not this fallacy):
 
 - The question is only about the survivors themselves. *(catalog wording)*
+- If the filter is how the sample was gathered, use unrepresentative sample; use this only when the filtered-out cases are the missing ones. *(catalog wording)*
 
 **Related, use only one per step** (omitted evidence): [Suppressed evidence](#suppressed-evidence), [Nut-picking](#nut-picking), [Selective attention](#selective-attention), [Confirmation bias (as a fallacy)](#confirmation-bias), [Disregarding known science](#disregarding-known-science), [Quoting out of context](#quoting-out-of-context), [Overwhelming exception](#overwhelming-exception)
 
@@ -6034,23 +6107,24 @@ Status: standard · Detectable from text: partly
 
 *Also called:* argumentum ad nauseam, argumentum ad infinitum
 
-Repeating a claim or argument many times as if the repetition itself made it more credible.
+Repeating a claim or argument until people stop disputing it, then citing that lack of objection (or the sheer number of repetitions) as evidence that it is true.
 
 Status: standard · Detectable from text: yes
 
-**Example:** As I've said over and over, this supplement boosts immunity. How many times do I have to say it?
+**Example:** I've raised this at every meeting for a year and nobody argues with it any more, so it's obviously right.
 
 **Required conditions** (all must be shown from the text):
 
-1. A claim has been challenged.
-2. The claim is restated, more than once, without new support.
-3. Repetition is used in place of answering the challenge.
+1. A claim is restated many times, in one exchange or over time.
+2. Others' having stopped objecting, or the number of repetitions, is cited as evidence that the claim is true (for example, 'nobody disputes this any more').
+3. No new support is given.
 
 **Legitimate look-alikes** (not this fallacy):
 
 - Restating a point that was not addressed, while asking for a response. *(catalog wording)*
+- Exasperated restating in reply to a counterargument ('I've told you three times: it works'), without citing the repetition or others' silence as evidence, is proof by assertion, not this. *(catalog wording)*
 
-**Related, use only one per step** (bare assertion): [Ipse dixit](#ipse-dixit), [Proof by assertion](#proof-by-assertion), [Thought-terminating cliché](#thought-terminating-cliche), [Appeal to the stone](#appeal-to-the-stone), [I'm entitled to my opinion](#entitled-to-my-opinion), [Proof surrogate](#proof-surrogate)
+**Related, use only one per step** (bare assertion): [Ipse dixit](#ipse-dixit), [Proof by assertion](#proof-by-assertion), [Thought-terminating cliché](#thought-terminating-cliche), [Appeal to the stone](#appeal-to-the-stone), [I'm entitled to my opinion](#entitled-to-my-opinion), [Proof surrogate](#proof-surrogate), [Appeal to ridicule](#appeal-to-ridicule), [Subjectivist fallacy](#subjectivist-fallacy), [Willed ignorance](#willed-ignorance)
 
 **Sources:**
 
@@ -6164,14 +6238,13 @@ Status: standard · Detectable from text: yes
 
 1. A standard of evidence or success is stated.
 2. It is met (or the evidence is supplied).
-3. A new, stricter standard is then demanded without a reason.
+3. A new, stricter standard is then demanded, and the stated reason (if any) is neither new information nor a change in the claim, so it would already have applied when the first standard was set.
 
 **Legitimate look-alikes** (not this fallacy):
 
-- Raising the standard for a stated reason, such as new information. *(catalog wording)*
-- Asking for stronger evidence for a claim that has grown since the standard was set. *(catalog wording)*
+- Raising the standard because of something learned after it was set (for example, a flaw in how it was met), or because the claim has grown. *(catalog wording)*
 
-**Related, use only one per step** (rescuing a claim): [Ad hoc rescue](#ad-hoc-rescue), [No true Scotsman](#no-true-scotsman), [Hedging](#hedging), [Unfalsifiability](#unfalsifiability), [Definitional retreat](#definitional-retreat), [Motte-and-bailey](#motte-and-bailey)
+**Related, use only one per step** (rescuing a claim): [Ad hoc rescue](#ad-hoc-rescue), [No true Scotsman](#no-true-scotsman), [Hedging](#hedging), [Unfalsifiability](#unfalsifiability), [Definitional retreat](#definitional-retreat), [Motte-and-bailey](#motte-and-bailey), [Far-fetched hypothesis](#far-fetched-hypothesis)
 
 **Sources:**
 
@@ -6199,8 +6272,9 @@ Status: standard · Detectable from text: yes
 **Legitimate look-alikes** (not this fallacy):
 
 - Briefly maintaining a position while promising or citing an answer elsewhere. *(catalog wording)*
+- If others' silence or the number of repetitions is itself cited as evidence, use argument from repetition instead. *(catalog wording)*
 
-**Related, use only one per step** (bare assertion): [Ipse dixit](#ipse-dixit), [Argument from repetition](#argument-from-repetition), [Thought-terminating cliché](#thought-terminating-cliche), [Appeal to the stone](#appeal-to-the-stone), [I'm entitled to my opinion](#entitled-to-my-opinion), [Proof surrogate](#proof-surrogate)
+**Related, use only one per step** (bare assertion): [Ipse dixit](#ipse-dixit), [Argument from repetition](#argument-from-repetition), [Thought-terminating cliché](#thought-terminating-cliche), [Appeal to the stone](#appeal-to-the-stone), [I'm entitled to my opinion](#entitled-to-my-opinion), [Proof surrogate](#proof-surrogate), [Appeal to ridicule](#appeal-to-ridicule), [Subjectivist fallacy](#subjectivist-fallacy), [Willed ignorance](#willed-ignorance)
 
 **Sources:**
 
@@ -6288,7 +6362,7 @@ Status: standard · Detectable from text: yes
 
 - The phrase sums up a reason that has been given. *(catalog wording)*
 
-**Related, use only one per step** (bare assertion): [Ipse dixit](#ipse-dixit), [Proof by assertion](#proof-by-assertion), [Argument from repetition](#argument-from-repetition), [Appeal to the stone](#appeal-to-the-stone), [I'm entitled to my opinion](#entitled-to-my-opinion), [Proof surrogate](#proof-surrogate)
+**Related, use only one per step** (bare assertion): [Ipse dixit](#ipse-dixit), [Proof by assertion](#proof-by-assertion), [Argument from repetition](#argument-from-repetition), [Appeal to the stone](#appeal-to-the-stone), [I'm entitled to my opinion](#entitled-to-my-opinion), [Proof surrogate](#proof-surrogate), [Appeal to ridicule](#appeal-to-ridicule), [Subjectivist fallacy](#subjectivist-fallacy), [Willed ignorance](#willed-ignorance)
 
 **Sources:**
 

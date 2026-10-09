@@ -220,9 +220,12 @@ def render_fallacies(doc):
                     out.append(f"- {item['text']} *({src})*")
                 out.append("")
             if e["related"]:
-                fams = ", ".join(e["families"])
                 rel = ", ".join(f"[{names[r]}](#{r})" for r in e["related"])
-                out.append(f"**Related, use only one per step** ({fams}): {rel}\n")
+                if e["families"]:
+                    fams = ", ".join(e["families"])
+                    out.append(f"**Related, use only one per step** ({fams}): {rel}\n")
+                else:
+                    out.append(f"**Related:** {rel}\n")
             if e["sources"] == "TODO":
                 out.append("**Sources:** TODO (no confirmed published source yet)\n")
             else:

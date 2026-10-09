@@ -1,6 +1,6 @@
 {
   "title": "Fallacy Catalog",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "A plain, sourced catalog of named logical fallacies for checking real arguments. Each entry gives a standard name, aliases, a category, a short definition, an original example, the conditions that must all be shown from the text before the label applies, legitimate look-alikes that are not the fallacy, whether the fallacy can be detected from the text alone, related entries to choose between, and the published references that list it.",
   "license": "MIT",
   "references": [
@@ -43,13 +43,14 @@
   "families": [
     {
       "name": "naturalism",
-      "rule": "Pick the one that matches the step: identifying 'good' with a natural property (naturalistic), a bare is-to-ought step (is-ought), 'natural so good' (appeal to nature), ought-to-is (moralistic).",
+      "rule": "Pick the one that matches the step: identifying 'good' with a natural property (naturalistic), a bare is-to-ought step (is-ought), 'natural so good' (appeal to nature), an ought-claim used to settle what is true (moralistic), the outcome of a belief used to settle its truth (consequences).",
       "members": [
         "naturalistic-fallacy",
         "is-ought",
         "appeal-to-nature",
         "moralistic-fallacy",
-        "naturalistic-fallacy-fallacy"
+        "naturalistic-fallacy-fallacy",
+        "appeal-to-consequences"
       ]
     },
     {
@@ -72,7 +73,7 @@
     },
     {
       "name": "authority and popularity",
-      "rule": "Use one: expertise (authority), fame (celebrity), achievement in another field (accomplishment), numbers (people), a growing trend (bandwagon), age (tradition), newness (novelty), group loyalty (group think), era (chronological snobbery).",
+      "rule": "Use one: expertise (authority), fame (celebrity), achievement in another field (accomplishment), numbers (people), a growing trend (bandwagon), age (tradition), newness (novelty), group loyalty (group think), era (chronological snobbery), money (wealth or poverty).",
       "members": [
         "appeal-to-authority",
         "appeal-to-celebrity",
@@ -82,7 +83,9 @@
         "appeal-to-tradition",
         "appeal-to-novelty",
         "group-think",
-        "chronological-snobbery"
+        "chronological-snobbery",
+        "appeal-to-wealth",
+        "appeal-to-poverty"
       ]
     },
     {
@@ -99,7 +102,8 @@
         "appeal-to-ridicule",
         "scapegoating",
         "wishful-thinking",
-        "appeal-to-consequences"
+        "appeal-to-consequences",
+        "style-over-substance"
       ]
     },
     {
@@ -152,7 +156,7 @@
     },
     {
       "name": "bare assertion",
-      "rule": "Use one: no support at all (ipse dixit), restating against a counterargument (proof by assertion), restating many times (repetition), a stock phrase (cliche), dismissal as absurd (appeal to the stone), a right to an opinion (entitled), a phrase in place of evidence (proof surrogate).",
+      "rule": "Use one: no support at all (ipse dixit), restating against a counterargument (proof by assertion), citing many repetitions or others' silence as evidence (repetition), a stock phrase (cliche), declaring a view absurd without showing it (appeal to the stone), mocking it for a laugh (ridicule), a right to an opinion (entitled), truth said to be relative to the person (subjectivist), refusing to look (willed ignorance), a phrase in place of evidence (proof surrogate).",
       "members": [
         "ipse-dixit",
         "proof-by-assertion",
@@ -160,12 +164,15 @@
         "thought-terminating-cliche",
         "appeal-to-the-stone",
         "entitled-to-my-opinion",
-        "proof-surrogate"
+        "proof-surrogate",
+        "appeal-to-ridicule",
+        "subjectivist-fallacy",
+        "willed-ignorance"
       ]
     },
     {
       "name": "causation",
-      "rule": "Use the specific causal entry; false cause only if none fits.",
+      "rule": "Use the specific causal entry; false cause only if none fits. When the reverse direction is named and plausible, prefer reversing causation over cum hoc.",
       "members": [
         "false-cause",
         "post-hoc",
@@ -193,17 +200,19 @@
         "equivocation",
         "loaded-label",
         "loaded-language",
-        "suppressed-correlative"
+        "suppressed-correlative",
+        "etymological-fallacy"
       ]
     },
     {
       "name": "circularity",
-      "rule": "Use one: begging the question for the general case; the others when the circle is in an analogy, a label or a question.",
+      "rule": "Use one: begging the question for the general case; the others when the circle is in an analogy, a label, a question, or a contested doctrine treated as settled.",
       "members": [
         "begging-the-question",
         "question-begging-analogy",
         "loaded-label",
-        "complex-question"
+        "complex-question",
+        "ideology-driven-argumentation"
       ]
     },
     {
@@ -244,13 +253,14 @@
     },
     {
       "name": "options and limits",
-      "rule": "Use one per step.",
+      "rule": "Use one per step. No sharp line, so no real difference (line-drawing); a conclusion that trades on a fuzzy term (vagueness).",
       "members": [
         "false-dilemma",
         "middle-ground",
         "nirvana-fallacy",
         "line-drawing",
-        "slippery-slope"
+        "slippery-slope",
+        "vagueness"
       ]
     },
     {
@@ -273,7 +283,8 @@
         "moving-the-goalposts",
         "unfalsifiability",
         "definitional-retreat",
-        "motte-and-bailey"
+        "motte-and-bailey",
+        "far-fetched-hypothesis"
       ]
     },
     {
@@ -407,15 +418,49 @@
     },
     {
       "name": "formal fallback",
-      "rule": "Name the specific invalid form if it has one; formal fallacy only if not.",
+      "rule": "Name the specific invalid form if it has one; formal fallacy only if not. Do not also tag non sequitur for the same step.",
       "members": [
         "formal-fallacy",
         "affirming-the-consequent",
         "denying-the-antecedent",
         "affirming-a-disjunct",
         "denying-a-conjunct",
-        "undistributed-middle",
-        "argument-from-fallacy"
+        "undistributed-middle"
+      ]
+    },
+    {
+      "name": "misrepresentation",
+      "rule": "Use one: a distorted restatement that is then attacked (straw man); a clipped quote (out of context); invented words or source (false attribution); an explanation read as an excuse (confusing explanation with excuse).",
+      "members": [
+        "straw-man",
+        "quoting-out-of-context",
+        "false-attribution",
+        "confusing-explanation-with-excuse"
+      ]
+    },
+    {
+      "name": "others' conduct",
+      "rule": "Use one: a claim or criticism dismissed because the critic does the same (tu quoque); a wrong act defended because others do it (two wrongs).",
+      "members": [
+        "tu-quoque",
+        "two-wrongs"
+      ]
+    },
+    {
+      "name": "accident: ancient and modern",
+      "rule": "Aristotle's sense is about attributes that merely coincide; the modern sense is a rule applied to an exception. Use the one that matches.",
+      "members": [
+        "accident-aristotle",
+        "accident"
+      ]
+    },
+    {
+      "name": "non-cause: ancient and modern",
+      "rule": "Aristotle's sense is a superfluous premise blamed in a reduction to absurdity; for real-world causal claims use false cause.",
+      "members": [
+        "non-cause-aristotle",
+        "false-cause",
+        "inconsistency"
       ]
     }
   ],
@@ -586,7 +631,8 @@
         }
       ],
       "families": [
-        "generalization"
+        "generalization",
+        "accident: ancient and modern"
       ],
       "related": [
         "secundum-quid",
@@ -600,7 +646,8 @@
         "jumping-to-conclusions",
         "specificity",
         "overgenerality",
-        "inductive-conversion"
+        "inductive-conversion",
+        "accident-aristotle"
       ],
       "sources": [
         {
@@ -651,10 +698,18 @@
         {
           "text": "The two descriptions really are interchangeable for the property in question.",
           "caveat_source": "catalog wording"
+        },
+        {
+          "text": "For a general rule misapplied to an exception (the modern sense), use accident.",
+          "caveat_source": "catalog wording"
         }
       ],
-      "families": [],
-      "related": [],
+      "families": [
+        "accident: ancient and modern"
+      ],
+      "related": [
+        "accident"
+      ],
       "sources": [
         {
           "ref": "Aristotle",
@@ -678,14 +733,14 @@
       ],
       "category": "informal: presumption",
       "status": "standard",
-      "text_detectable": "partly",
+      "text_detectable": "yes",
       "use_only_if_nothing_more_specific": false,
       "definition": "Saving a cherished claim from contrary evidence by inventing an explanation that has no support except that it saves the claim.",
       "example": "The psychic failed because the sceptics' negative energy blocked her powers.",
       "required_conditions": [
         "A claim faces counterevidence.",
         "An extra assumption is added to explain the evidence away.",
-        "There is no independent reason for the assumption."
+        "No independent reason for the assumption is given or evident, and it is offered as settling the conflict."
       ],
       "legitimate_lookalikes": [
         {
@@ -708,7 +763,8 @@
         "moving-the-goalposts",
         "unfalsifiability",
         "definitional-retreat",
-        "motte-and-bailey"
+        "motte-and-bailey",
+        "far-fetched-hypothesis"
       ],
       "sources": [
         {
@@ -739,8 +795,8 @@
       "required_conditions": [
         "Someone has made a claim or argument.",
         "The reply attacks the person (character, traits, background) rather than the reasons given.",
-        "The attack is offered as a reason to reject the claim or argument.",
-        "The attacked trait is irrelevant to whether the claim is true or the argument sound."
+        "The attack is offered as a reason to reject the claim or argument (stated, or clearly insinuated by sarcasm or 'consider the source'), and the reasons themselves are left unanswered.",
+        "The attacked trait is irrelevant to whether the argument's reasons are good. (Expertise or experience can bear on testimony, not on whether stated reasons support the conclusion.)"
       ],
       "legitimate_lookalikes": [
         {
@@ -906,8 +962,7 @@
         "affirming-the-consequent",
         "denying-the-antecedent",
         "denying-a-conjunct",
-        "undistributed-middle",
-        "argument-from-fallacy"
+        "undistributed-middle"
       ],
       "sources": [
         {
@@ -965,8 +1020,7 @@
         "formal-fallacy",
         "affirming-a-disjunct",
         "denying-a-conjunct",
-        "undistributed-middle",
-        "argument-from-fallacy"
+        "undistributed-middle"
       ],
       "sources": [
         {
@@ -1221,7 +1275,9 @@
         "appeal-to-tradition",
         "appeal-to-novelty",
         "group-think",
-        "chronological-snobbery"
+        "chronological-snobbery",
+        "appeal-to-wealth",
+        "appeal-to-poverty"
       ],
       "sources": [
         {
@@ -1280,7 +1336,9 @@
         "appeal-to-tradition",
         "appeal-to-novelty",
         "group-think",
-        "chronological-snobbery"
+        "chronological-snobbery",
+        "appeal-to-wealth",
+        "appeal-to-poverty"
       ],
       "sources": [
         {
@@ -1366,7 +1424,9 @@
         "appeal-to-tradition",
         "appeal-to-novelty",
         "group-think",
-        "chronological-snobbery"
+        "chronological-snobbery",
+        "appeal-to-wealth",
+        "appeal-to-poverty"
       ],
       "sources": [
         {
@@ -1402,9 +1462,15 @@
         }
       ],
       "families": [
+        "naturalism",
         "emotion"
       ],
       "related": [
+        "naturalistic-fallacy",
+        "is-ought",
+        "appeal-to-nature",
+        "moralistic-fallacy",
+        "naturalistic-fallacy-fallacy",
         "appeal-to-emotion",
         "appeal-to-pity",
         "appeal-to-fear",
@@ -1414,7 +1480,8 @@
         "appeal-to-spite",
         "appeal-to-ridicule",
         "scapegoating",
-        "wishful-thinking"
+        "wishful-thinking",
+        "style-over-substance"
       ],
       "sources": [
         {
@@ -1482,7 +1549,8 @@
         "appeal-to-ridicule",
         "scapegoating",
         "wishful-thinking",
-        "appeal-to-consequences"
+        "appeal-to-consequences",
+        "style-over-substance"
       ],
       "sources": [
         {
@@ -1514,18 +1582,22 @@
       ],
       "category": "informal: relevance",
       "status": "standard",
-      "text_detectable": "yes",
+      "text_detectable": "partly",
       "use_only_if_nothing_more_specific": false,
       "definition": "Trying to win support by stirring up fear rather than giving evidence that the feared outcome is likely.",
       "example": "If you don't buy this alarm system, your family could be next.",
       "required_conditions": [
         "Fear of an outcome is aroused.",
         "The fear is offered as a reason to accept a claim or course of action.",
-        "No adequate evidence is given that the feared outcome is likely."
+        "The feared outcome is unlikely, exaggerated, or unconnected to the action, and is not a well-known risk (well-known risks count as evidenced)."
       ],
       "legitimate_lookalikes": [
         {
           "text": "Warning about a real, well-evidenced danger.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "A warning about a risk that is common knowledge, even if no evidence is stated (for example, drink-driving).",
           "caveat_source": "catalog wording"
         }
       ],
@@ -1542,7 +1614,8 @@
         "appeal-to-ridicule",
         "scapegoating",
         "wishful-thinking",
-        "appeal-to-consequences"
+        "appeal-to-consequences",
+        "style-over-substance"
       ],
       "sources": [
         {
@@ -1595,7 +1668,8 @@
         "appeal-to-ridicule",
         "scapegoating",
         "wishful-thinking",
-        "appeal-to-consequences"
+        "appeal-to-consequences",
+        "style-over-substance"
       ],
       "sources": [
         {
@@ -1650,7 +1724,8 @@
         "appeal-to-ridicule",
         "scapegoating",
         "wishful-thinking",
-        "appeal-to-consequences"
+        "appeal-to-consequences",
+        "style-over-substance"
       ],
       "sources": [
         {
@@ -1778,7 +1853,8 @@
         "naturalistic-fallacy",
         "is-ought",
         "moralistic-fallacy",
-        "naturalistic-fallacy-fallacy"
+        "naturalistic-fallacy-fallacy",
+        "appeal-to-consequences"
       ],
       "sources": [
         {
@@ -1829,7 +1905,9 @@
         "bandwagon",
         "appeal-to-tradition",
         "group-think",
-        "chronological-snobbery"
+        "chronological-snobbery",
+        "appeal-to-wealth",
+        "appeal-to-poverty"
       ],
       "sources": [
         {
@@ -1877,7 +1955,8 @@
         "appeal-to-ridicule",
         "scapegoating",
         "wishful-thinking",
-        "appeal-to-consequences"
+        "appeal-to-consequences",
+        "style-over-substance"
       ],
       "sources": [
         {
@@ -1910,9 +1989,27 @@
         "A person's poverty (or a thing's cheapness) is cited.",
         "It is offered as the reason their view is more likely true or the thing better, in a respect unrelated to money."
       ],
-      "legitimate_lookalikes": [],
-      "families": [],
-      "related": [],
+      "legitimate_lookalikes": [
+        {
+          "text": "Cheapness as one indicator of value where there is reason to think it tracks value.",
+          "caveat_source": "catalog wording"
+        }
+      ],
+      "families": [
+        "authority and popularity"
+      ],
+      "related": [
+        "appeal-to-authority",
+        "appeal-to-celebrity",
+        "appeal-to-accomplishment",
+        "appeal-to-the-people",
+        "bandwagon",
+        "appeal-to-tradition",
+        "appeal-to-novelty",
+        "group-think",
+        "chronological-snobbery",
+        "appeal-to-wealth"
+      ],
       "sources": [
         {
           "ref": "Wikipedia",
@@ -1985,10 +2082,15 @@
         {
           "text": "Showing that the view leads to an absurd result (reduction to absurdity) is a legitimate argument.",
           "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If the view is simply declared absurd with no mockery, use appeal to the stone.",
+          "caveat_source": "catalog wording"
         }
       ],
       "families": [
-        "emotion"
+        "emotion",
+        "bare assertion"
       ],
       "related": [
         "appeal-to-emotion",
@@ -2000,7 +2102,17 @@
         "appeal-to-spite",
         "scapegoating",
         "wishful-thinking",
-        "appeal-to-consequences"
+        "appeal-to-consequences",
+        "style-over-substance",
+        "ipse-dixit",
+        "proof-by-assertion",
+        "argument-from-repetition",
+        "thought-terminating-cliche",
+        "appeal-to-the-stone",
+        "entitled-to-my-opinion",
+        "proof-surrogate",
+        "subjectivist-fallacy",
+        "willed-ignorance"
       ],
       "sources": [
         {
@@ -2029,7 +2141,12 @@
         "A claim or product is associated with a superior or discerning group.",
         "The audience's wish to belong to that group is offered as the reason to accept it."
       ],
-      "legitimate_lookalikes": [],
+      "legitimate_lookalikes": [
+        {
+          "text": "Pointing out that people with relevant expertise choose it, with their reasons.",
+          "caveat_source": "catalog wording"
+        }
+      ],
       "families": [
         "emotion"
       ],
@@ -2043,7 +2160,8 @@
         "appeal-to-ridicule",
         "scapegoating",
         "wishful-thinking",
-        "appeal-to-consequences"
+        "appeal-to-consequences",
+        "style-over-substance"
       ],
       "sources": [
         {
@@ -2068,9 +2186,15 @@
       "example": "Those rich executives never paid their fair share; vote against anything they support.",
       "required_conditions": [
         "Resentment toward a person or group is aroused.",
-        "The resentment is offered as a reason to accept or reject a claim."
+        "The resentment is offered as a reason to accept or reject a claim.",
+        "The resentment is not tied to evidence bearing on the claim or decision."
       ],
-      "legitimate_lookalikes": [],
+      "legitimate_lookalikes": [
+        {
+          "text": "Past wrongdoing cited as evidence about what the person will do (a record of fraud, when deciding whether to hire).",
+          "caveat_source": "catalog wording"
+        }
+      ],
       "families": [
         "emotion"
       ],
@@ -2084,7 +2208,8 @@
         "appeal-to-ridicule",
         "scapegoating",
         "wishful-thinking",
-        "appeal-to-consequences"
+        "appeal-to-consequences",
+        "style-over-substance"
       ],
       "sources": [
         {
@@ -2137,6 +2262,16 @@
         {
           "text": "The question is about conventions, tastes or what is popular.",
           "caveat_source": "catalog wording"
+        },
+        {
+          "text": "Popular belief is some evidence that a claim is true; the fallacy is overestimating how much.",
+          "caveat_source": "source",
+          "source": {
+            "ref": "IEP",
+            "title": "Internet Encyclopedia of Philosophy, \"Fallacies\" (Bradley Dowden)",
+            "url": "https://iep.utm.edu/fallacy/",
+            "locator": "section 6, \"Partial List of Fallacies\", entry \"Appeal to the People\""
+          }
         }
       ],
       "families": [
@@ -2150,7 +2285,9 @@
         "appeal-to-tradition",
         "appeal-to-novelty",
         "group-think",
-        "chronological-snobbery"
+        "chronological-snobbery",
+        "appeal-to-wealth",
+        "appeal-to-poverty"
       ],
       "sources": [
         {
@@ -2209,6 +2346,10 @@
         {
           "text": "Declining to debate a claim already refuted, with a pointer to the refutation.",
           "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If the view is mocked to get a laugh, use appeal to ridicule; if it is just declared absurd, use this.",
+          "caveat_source": "catalog wording"
         }
       ],
       "families": [
@@ -2220,7 +2361,10 @@
         "argument-from-repetition",
         "thought-terminating-cliche",
         "entitled-to-my-opinion",
-        "proof-surrogate"
+        "proof-surrogate",
+        "appeal-to-ridicule",
+        "subjectivist-fallacy",
+        "willed-ignorance"
       ],
       "sources": [
         {
@@ -2279,7 +2423,9 @@
         "bandwagon",
         "appeal-to-novelty",
         "group-think",
-        "chronological-snobbery"
+        "chronological-snobbery",
+        "appeal-to-wealth",
+        "appeal-to-poverty"
       ],
       "sources": [
         {
@@ -2325,8 +2471,21 @@
           "caveat_source": "catalog wording"
         }
       ],
-      "families": [],
-      "related": [],
+      "families": [
+        "authority and popularity"
+      ],
+      "related": [
+        "appeal-to-authority",
+        "appeal-to-celebrity",
+        "appeal-to-accomplishment",
+        "appeal-to-the-people",
+        "bandwagon",
+        "appeal-to-tradition",
+        "appeal-to-novelty",
+        "group-think",
+        "chronological-snobbery",
+        "appeal-to-poverty"
+      ],
       "sources": [
         {
           "ref": "IEP",
@@ -2372,17 +2531,8 @@
           "caveat_source": "catalog wording"
         }
       ],
-      "families": [
-        "formal fallback"
-      ],
-      "related": [
-        "formal-fallacy",
-        "affirming-the-consequent",
-        "denying-the-antecedent",
-        "affirming-a-disjunct",
-        "denying-a-conjunct",
-        "undistributed-middle"
-      ],
+      "families": [],
+      "related": [],
       "sources": [
         {
           "ref": "Wikipedia",
@@ -2419,7 +2569,8 @@
       "example": "No one has proved that ghosts don't exist, so they do.",
       "required_conditions": [
         "A claim has not been proven false (or true).",
-        "It is concluded to be true (or false) on that basis."
+        "It is concluded to be true (or false) on that basis.",
+        "Nothing in the context shows a thorough search was made where evidence would be expected if the claim were true."
       ],
       "legitimate_lookalikes": [
         {
@@ -2431,6 +2582,10 @@
             "url": "https://iep.utm.edu/fallacy/",
             "locator": "section 6, \"Partial List of Fallacies\", entry \"Appeal to Ignorance\""
           }
+        },
+        {
+          "text": "A procedural default or burden rule (presumption of innocence, a null hypothesis): the conclusion is what to decide or how to act, not that the claim is false.",
+          "caveat_source": "catalog wording"
         }
       ],
       "families": [
@@ -2532,16 +2687,20 @@
       "status": "standard",
       "text_detectable": "yes",
       "use_only_if_nothing_more_specific": false,
-      "definition": "Repeating a claim or argument many times as if the repetition itself made it more credible.",
-      "example": "As I've said over and over, this supplement boosts immunity. How many times do I have to say it?",
+      "definition": "Repeating a claim or argument until people stop disputing it, then citing that lack of objection (or the sheer number of repetitions) as evidence that it is true.",
+      "example": "I've raised this at every meeting for a year and nobody argues with it any more, so it's obviously right.",
       "required_conditions": [
-        "A claim has been challenged.",
-        "The claim is restated, more than once, without new support.",
-        "Repetition is used in place of answering the challenge."
+        "A claim is restated many times, in one exchange or over time.",
+        "Others' having stopped objecting, or the number of repetitions, is cited as evidence that the claim is true (for example, 'nobody disputes this any more').",
+        "No new support is given."
       ],
       "legitimate_lookalikes": [
         {
           "text": "Restating a point that was not addressed, while asking for a response.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "Exasperated restating in reply to a counterargument ('I've told you three times: it works'), without citing the repetition or others' silence as evidence, is proof by assertion, not this.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -2554,7 +2713,10 @@
         "thought-terminating-cliche",
         "appeal-to-the-stone",
         "entitled-to-my-opinion",
-        "proof-surrogate"
+        "proof-surrogate",
+        "appeal-to-ridicule",
+        "subjectivist-fallacy",
+        "willed-ignorance"
       ],
       "sources": [
         {
@@ -2841,7 +3003,9 @@
         "appeal-to-tradition",
         "appeal-to-novelty",
         "group-think",
-        "chronological-snobbery"
+        "chronological-snobbery",
+        "appeal-to-wealth",
+        "appeal-to-poverty"
       ],
       "sources": [
         {
@@ -2982,7 +3146,8 @@
       "related": [
         "question-begging-analogy",
         "loaded-label",
-        "complex-question"
+        "complex-question",
+        "ideology-driven-argumentation"
       ],
       "sources": [
         {
@@ -3118,7 +3283,9 @@
         "bandwagon",
         "appeal-to-tradition",
         "appeal-to-novelty",
-        "group-think"
+        "group-think",
+        "appeal-to-wealth",
+        "appeal-to-poverty"
       ],
       "sources": [
         {
@@ -3387,7 +3554,8 @@
       "related": [
         "begging-the-question",
         "question-begging-analogy",
-        "loaded-label"
+        "loaded-label",
+        "ideology-driven-argumentation"
       ],
       "sources": [
         {
@@ -3558,8 +3726,14 @@
           "caveat_source": "catalog wording"
         }
       ],
-      "families": [],
-      "related": [],
+      "families": [
+        "misrepresentation"
+      ],
+      "related": [
+        "straw-man",
+        "quoting-out-of-context",
+        "false-attribution"
+      ],
       "sources": [
         {
           "ref": "IEP",
@@ -3785,7 +3959,7 @@
       "required_conditions": [
         "Two things are shown to occur together (a correlation).",
         "One is concluded to cause the other.",
-        "Chance, a third factor and reverse causation are not addressed."
+        "At least one plausible alternative (chance, a third factor, the reverse direction) is left open, and the causal claim is stated as established rather than as a hypothesis to test."
       ],
       "legitimate_lookalikes": [
         {
@@ -3797,6 +3971,20 @@
             "url": "https://iep.utm.edu/fallacy/",
             "locator": "section 6, \"Partial List of Fallacies\", entry \"Post Hoc\""
           }
+        },
+        {
+          "text": "A correlation can support a causal conclusion once coincidence, a confounding cause and the reverse direction have been ruled out.",
+          "caveat_source": "source",
+          "source": {
+            "ref": "Fallacy Files",
+            "title": "The Fallacy Files (Gary N. Curtis)",
+            "url": "https://www.fallacyfiles.org/cumhocfa.html",
+            "locator": "entry \"Cum Hoc, Ergo Propter Hoc\""
+          }
+        },
+        {
+          "text": "A correlation plus a comparison group or a known mechanism, offered as grounds to investigate.",
+          "caveat_source": "catalog wording"
         }
       ],
       "families": [
@@ -3987,10 +4175,12 @@
         "loaded-label",
         "loaded-language",
         "suppressed-correlative",
+        "etymological-fallacy",
         "ad-hoc-rescue",
         "hedging",
         "moving-the-goalposts",
-        "unfalsifiability"
+        "unfalsifiability",
+        "far-fetched-hypothesis"
       ],
       "sources": [
         {
@@ -4032,8 +4222,7 @@
         "affirming-the-consequent",
         "denying-the-antecedent",
         "affirming-a-disjunct",
-        "undistributed-middle",
-        "argument-from-fallacy"
+        "undistributed-middle"
       ],
       "sources": [
         {
@@ -4079,8 +4268,7 @@
         "formal-fallacy",
         "affirming-a-disjunct",
         "denying-a-conjunct",
-        "undistributed-middle",
-        "argument-from-fallacy"
+        "undistributed-middle"
       ],
       "sources": [
         {
@@ -4384,7 +4572,8 @@
       "example": "Richer states vote for party X, so richer people vote for party X.",
       "required_conditions": [
         "Data are about groups (regions, populations).",
-        "A conclusion is drawn about individuals within them."
+        "A conclusion is drawn about individuals within them.",
+        "The group-level pattern is taken to establish the same pattern for individuals (or a particular person) without individual-level data."
       ],
       "legitimate_lookalikes": [
         {
@@ -4442,7 +4631,10 @@
         "argument-from-repetition",
         "thought-terminating-cliche",
         "appeal-to-the-stone",
-        "proof-surrogate"
+        "proof-surrogate",
+        "appeal-to-ridicule",
+        "subjectivist-fallacy",
+        "willed-ignorance"
       ],
       "sources": [
         {
@@ -4494,6 +4686,7 @@
         "loaded-label",
         "loaded-language",
         "suppressed-correlative",
+        "etymological-fallacy",
         "amphiboly",
         "accent",
         "four-terms",
@@ -4559,8 +4752,20 @@
           "caveat_source": "catalog wording"
         }
       ],
-      "families": [],
-      "related": [],
+      "families": [
+        "definition and meaning shifts"
+      ],
+      "related": [
+        "persuasive-definition",
+        "redefinition",
+        "definitional-retreat",
+        "no-true-scotsman",
+        "motte-and-bailey",
+        "equivocation",
+        "loaded-label",
+        "loaded-language",
+        "suppressed-correlative"
+      ],
       "sources": [
         {
           "ref": "IEP",
@@ -4590,12 +4795,12 @@
       ],
       "category": "informal: presumption",
       "status": "standard",
-      "text_detectable": "yes",
+      "text_detectable": "partly",
       "use_only_if_nothing_more_specific": false,
       "definition": "Overstating a key step in an argument so that the conclusion looks better supported than it is.",
       "example": "Everyone knows the new rule has been a total disaster, so it must be repealed.",
       "required_conditions": [
-        "A claim is overstated or understated.",
+        "A claim that is a crucial step in the reasoning is overstated.",
         "The argument relies on the overstated version.",
         "The overstatement is meant literally."
       ],
@@ -4884,7 +5089,8 @@
         "false-balance",
         "question-begging-analogy",
         "dangling-comparative",
-        "package-deal"
+        "package-deal",
+        "proving-too-much"
       ],
       "sources": [
         {
@@ -4954,8 +5160,14 @@
           "caveat_source": "catalog wording"
         }
       ],
-      "families": [],
-      "related": [],
+      "families": [
+        "misrepresentation"
+      ],
+      "related": [
+        "straw-man",
+        "quoting-out-of-context",
+        "confusing-explanation-with-excuse"
+      ],
       "sources": [
         {
           "ref": "Wikipedia",
@@ -5022,7 +5234,7 @@
       "example": "Countries with more Nobel laureates eat more chocolate, so chocolate makes people smarter.",
       "required_conditions": [
         "A causal conclusion is drawn.",
-        "The evidence offered does not adequately support that causal link.",
+        "The only support is that the two occur together or in sequence, or an obvious alternative (a common cause, the reverse direction, chance) is left open.",
         "No more specific causal entry (post hoc, correlation, common cause, reverse causation, single cause, regression) fits."
       ],
       "legitimate_lookalikes": [
@@ -5032,7 +5244,8 @@
         }
       ],
       "families": [
-        "causation"
+        "causation",
+        "non-cause: ancient and modern"
       ],
       "related": [
         "post-hoc",
@@ -5045,7 +5258,9 @@
         "superstitious-thinking",
         "magical-thinking",
         "furtive-fallacy",
-        "retrospective-determinism"
+        "retrospective-determinism",
+        "non-cause-aristotle",
+        "inconsistency"
       ],
       "sources": [
         {
@@ -5098,7 +5313,7 @@
       ],
       "legitimate_lookalikes": [
         {
-          "text": "The options really are exhaustive (a true dichotomy), or the speaker is only naming the main options.",
+          "text": "The options really are exhaustive (a true dichotomy), or the speaker names the main options without claiming they are the only ones.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -5109,7 +5324,8 @@
         "middle-ground",
         "nirvana-fallacy",
         "line-drawing",
-        "slippery-slope"
+        "slippery-slope",
+        "vagueness"
       ],
       "sources": [
         {
@@ -5150,7 +5366,7 @@
       "aliases": [],
       "category": "informal: presumption",
       "status": "standard",
-      "text_detectable": "yes",
+      "text_detectable": "partly",
       "use_only_if_nothing_more_specific": false,
       "definition": "Implying that two things, often two sides' cases, are roughly equal in strength or seriousness when one is much weaker or much less serious, glossing over the difference.",
       "example": "Both of them told lies, so the man who misstated his age is as dishonest as the man who committed fraud.",
@@ -5215,8 +5431,18 @@
           "caveat_source": "catalog wording"
         }
       ],
-      "families": [],
-      "related": [],
+      "families": [
+        "rescuing a claim"
+      ],
+      "related": [
+        "ad-hoc-rescue",
+        "no-true-scotsman",
+        "hedging",
+        "moving-the-goalposts",
+        "unfalsifiability",
+        "definitional-retreat",
+        "motte-and-bailey"
+      ],
       "sources": [
         {
           "ref": "IEP",
@@ -5325,16 +5551,14 @@
       "legitimate_lookalikes": [
         {
           "text": "A strong inductive or explanatory argument that is not deductively valid; judge it by inductive standards, not as a formal fallacy.",
-          "caveat_source": "source",
-          "source": {
-            "ref": "IEP",
-            "title": "Internet Encyclopedia of Philosophy, \"Fallacies\" (Bradley Dowden)",
-            "url": "https://iep.utm.edu/fallacy/",
-            "locator": "section 6, \"Partial List of Fallacies\", entry \"Non Sequitur\""
-          }
+          "caveat_source": "catalog wording"
         },
         {
           "text": "An argument that is valid once an obvious, stated-elsewhere premise is supplied.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "Do not also tag non sequitur for the same step.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -5346,8 +5570,7 @@
         "denying-the-antecedent",
         "affirming-a-disjunct",
         "denying-a-conjunct",
-        "undistributed-middle",
-        "argument-from-fallacy"
+        "undistributed-middle"
       ],
       "sources": [
         {
@@ -5741,7 +5964,9 @@
         "bandwagon",
         "appeal-to-tradition",
         "appeal-to-novelty",
-        "chronological-snobbery"
+        "chronological-snobbery",
+        "appeal-to-wealth",
+        "appeal-to-poverty"
       ],
       "sources": [
         {
@@ -5955,7 +6180,8 @@
         "moving-the-goalposts",
         "unfalsifiability",
         "definitional-retreat",
-        "motte-and-bailey"
+        "motte-and-bailey",
+        "far-fetched-hypothesis"
       ],
       "sources": [
         {
@@ -6011,15 +6237,20 @@
       ],
       "category": "informal: presumption",
       "status": "standard",
-      "text_detectable": "yes",
+      "text_detectable": "partly",
       "use_only_if_nothing_more_specific": false,
       "definition": "Assuming that a result came about only because a particular process was performed, when the process may have nothing to do with it.",
       "example": "Our children turned out well because we followed this parenting book.",
       "required_conditions": [
         "A result is attributed to a process that was carried out.",
-        "The process may not have produced the result (the result could be present anyway)."
+        "No evidence is given that the process produced the result, and the result could plausibly be present anyway (say why)."
       ],
-      "legitimate_lookalikes": [],
+      "legitimate_lookalikes": [
+        {
+          "text": "Attribution backed by a before-and-after comparison or a known mechanism.",
+          "caveat_source": "catalog wording"
+        }
+      ],
       "families": [
         "history"
       ],
@@ -6141,8 +6372,15 @@
           "caveat_source": "catalog wording"
         }
       ],
-      "families": [],
-      "related": [],
+      "families": [
+        "circularity"
+      ],
+      "related": [
+        "begging-the-question",
+        "question-begging-analogy",
+        "loaded-label",
+        "complex-question"
+      ],
       "sources": [
         {
           "ref": "IEP",
@@ -6467,12 +6705,15 @@
         }
       ],
       "families": [
-        "consistency"
+        "consistency",
+        "non-cause: ancient and modern"
       ],
       "related": [
         "kettle-logic",
         "special-pleading",
-        "double-standard"
+        "double-standard",
+        "non-cause-aristotle",
+        "false-cause"
       ],
       "sources": [
         {
@@ -6776,7 +7017,10 @@
         "thought-terminating-cliche",
         "appeal-to-the-stone",
         "entitled-to-my-opinion",
-        "proof-surrogate"
+        "proof-surrogate",
+        "appeal-to-ridicule",
+        "subjectivist-fallacy",
+        "willed-ignorance"
       ],
       "sources": [
         {
@@ -6920,7 +7164,8 @@
         "naturalistic-fallacy",
         "appeal-to-nature",
         "moralistic-fallacy",
-        "naturalistic-fallacy-fallacy"
+        "naturalistic-fallacy-fallacy",
+        "appeal-to-consequences"
       ],
       "sources": [
         {
@@ -7120,7 +7365,8 @@
         "false-dilemma",
         "middle-ground",
         "nirvana-fallacy",
-        "slippery-slope"
+        "slippery-slope",
+        "vagueness"
       ],
       "sources": [
         {
@@ -7204,9 +7450,11 @@
         "equivocation",
         "loaded-language",
         "suppressed-correlative",
+        "etymological-fallacy",
         "begging-the-question",
         "question-begging-analogy",
-        "complex-question"
+        "complex-question",
+        "ideology-driven-argumentation"
       ],
       "sources": [
         {
@@ -7269,7 +7517,8 @@
         "motte-and-bailey",
         "equivocation",
         "loaded-label",
-        "suppressed-correlative"
+        "suppressed-correlative",
+        "etymological-fallacy"
       ],
       "sources": [
         {
@@ -7585,7 +7834,8 @@
         "false-dilemma",
         "nirvana-fallacy",
         "line-drawing",
-        "slippery-slope"
+        "slippery-slope",
+        "vagueness"
       ],
       "sources": [
         {
@@ -7638,14 +7888,14 @@
       "aliases": [],
       "category": "informal: weak induction",
       "status": "standard",
-      "text_detectable": "yes",
+      "text_detectable": "partly",
       "use_only_if_nothing_more_specific": false,
       "definition": "Letting a few dramatic, memorable cases outweigh a larger body of statistical evidence.",
-      "example": "I saw a terrible shark attack on the news, so swimming at the beach is too dangerous.",
+      "example": "I saw a terrible shark attack on the news, so swimming at the beach is too dangerous, whatever the statistics say.",
       "required_conditions": [
         "A vivid, memorable case is described.",
         "It is used to support a claim about how common or likely something is.",
-        "It outweighs, in the argument, statistical evidence pointing the other way."
+        "Statistical evidence pointing the other way exists (stated, or well known) and is outweighed or ignored."
       ],
       "legitimate_lookalikes": [
         {
@@ -7821,7 +8071,8 @@
         "naturalistic-fallacy",
         "is-ought",
         "appeal-to-nature",
-        "naturalistic-fallacy-fallacy"
+        "naturalistic-fallacy-fallacy",
+        "appeal-to-consequences"
       ],
       "sources": [
         {
@@ -7870,10 +8121,12 @@
         "loaded-label",
         "loaded-language",
         "suppressed-correlative",
+        "etymological-fallacy",
         "ad-hoc-rescue",
         "hedging",
         "moving-the-goalposts",
-        "unfalsifiability"
+        "unfalsifiability",
+        "far-fetched-hypothesis"
       ],
       "sources": [
         {
@@ -7900,15 +8153,11 @@
       "required_conditions": [
         "A standard of evidence or success is stated.",
         "It is met (or the evidence is supplied).",
-        "A new, stricter standard is then demanded without a reason."
+        "A new, stricter standard is then demanded, and the stated reason (if any) is neither new information nor a change in the claim, so it would already have applied when the first standard was set."
       ],
       "legitimate_lookalikes": [
         {
-          "text": "Raising the standard for a stated reason, such as new information.",
-          "caveat_source": "catalog wording"
-        },
-        {
-          "text": "Asking for stronger evidence for a claim that has grown since the standard was set.",
+          "text": "Raising the standard because of something learned after it was set (for example, a flaw in how it was met), or because the claim has grown.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -7921,7 +8170,8 @@
         "hedging",
         "unfalsifiability",
         "definitional-retreat",
-        "motte-and-bailey"
+        "motte-and-bailey",
+        "far-fetched-hypothesis"
       ],
       "sources": [
         {
@@ -8003,7 +8253,8 @@
         "is-ought",
         "appeal-to-nature",
         "moralistic-fallacy",
-        "naturalistic-fallacy-fallacy"
+        "naturalistic-fallacy-fallacy",
+        "appeal-to-consequences"
       ],
       "sources": [
         {
@@ -8045,7 +8296,8 @@
         "naturalistic-fallacy",
         "is-ought",
         "appeal-to-nature",
-        "moralistic-fallacy"
+        "moralistic-fallacy",
+        "appeal-to-consequences"
       ],
       "sources": [
         {
@@ -8141,7 +8393,8 @@
         "false-dilemma",
         "middle-ground",
         "line-drawing",
-        "slippery-slope"
+        "slippery-slope",
+        "vagueness"
       ],
       "sources": [
         {
@@ -8198,10 +8451,12 @@
         "loaded-label",
         "loaded-language",
         "suppressed-correlative",
+        "etymological-fallacy",
         "ad-hoc-rescue",
         "hedging",
         "moving-the-goalposts",
-        "unfalsifiability"
+        "unfalsifiability",
+        "far-fetched-hypothesis"
       ],
       "sources": [
         {
@@ -8245,10 +8500,19 @@
         {
           "text": "The blamed premise was in fact used in deriving the result.",
           "caveat_source": "catalog wording"
+        },
+        {
+          "text": "For real-world causal errors, use false cause.",
+          "caveat_source": "catalog wording"
         }
       ],
-      "families": [],
-      "related": [],
+      "families": [
+        "non-cause: ancient and modern"
+      ],
+      "related": [
+        "false-cause",
+        "inconsistency"
+      ],
       "sources": [
         {
           "ref": "Aristotle",
@@ -8295,6 +8559,10 @@
         },
         {
           "text": "An enthymeme whose unstated premise is obvious and acceptable.",
+          "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If the step has a named invalid form, or you can show a same-form counterexample, use that entry or formal fallacy; do not tag both.",
           "caveat_source": "catalog wording"
         }
       ],
@@ -8753,7 +9021,6 @@
       "name": "Persuasive definition",
       "aliases": [
         "victory by definition",
-        "definist fallacy (related)",
         "definist fallacy"
       ],
       "category": "informal: ambiguity and language",
@@ -8788,7 +9055,8 @@
         "equivocation",
         "loaded-label",
         "loaded-language",
-        "suppressed-correlative"
+        "suppressed-correlative",
+        "etymological-fallacy"
       ],
       "sources": [
         {
@@ -8974,6 +9242,10 @@
         {
           "text": "Briefly maintaining a position while promising or citing an answer elsewhere.",
           "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If others' silence or the number of repetitions is itself cited as evidence, use argument from repetition instead.",
+          "caveat_source": "catalog wording"
         }
       ],
       "families": [
@@ -8985,7 +9257,10 @@
         "thought-terminating-cliche",
         "appeal-to-the-stone",
         "entitled-to-my-opinion",
-        "proof-surrogate"
+        "proof-surrogate",
+        "appeal-to-ridicule",
+        "subjectivist-fallacy",
+        "willed-ignorance"
       ],
       "sources": [
         {
@@ -9026,7 +9301,10 @@
         "argument-from-repetition",
         "thought-terminating-cliche",
         "appeal-to-the-stone",
-        "entitled-to-my-opinion"
+        "entitled-to-my-opinion",
+        "appeal-to-ridicule",
+        "subjectivist-fallacy",
+        "willed-ignorance"
       ],
       "sources": [
         {
@@ -9092,7 +9370,7 @@
       "status": "standard",
       "text_detectable": "yes",
       "use_only_if_nothing_more_specific": false,
-      "definition": "An argument whose reasoning leads to a far more general conclusion than intended, so that it would also establish things the arguer would reject.",
+      "definition": "An argument that leads to an overly general conclusion. A common test (this catalog's wording, not the cited source's): the same reasoning would also establish things the arguer would reject.",
       "example": "We shouldn't fund the new library because some people never read (the same reasoning would rule out funding anything some people don't use).",
       "required_conditions": [
         "An argument for a conclusion is given.",
@@ -9106,13 +9384,16 @@
         }
       ],
       "families": [],
-      "related": [],
+      "related": [
+        "false-analogy"
+      ],
       "sources": [
         {
           "ref": "Wikipedia",
           "title": "Wikipedia, \"List of fallacies\"",
           "url": "https://en.wikipedia.org/wiki/List_of_fallacies",
-          "locator": "section \"Informal fallacies\", item \"Proving too much\""
+          "locator": "section \"Informal fallacies\", item \"Proving too much\"",
+          "note": "Wikipedia describes it only as an argument that results in an overly generalized conclusion; the 'would also prove things the arguer rejects' test is catalog wording"
         }
       ]
     },
@@ -9229,6 +9510,7 @@
         "begging-the-question",
         "loaded-label",
         "complex-question",
+        "ideology-driven-argumentation",
         "false-analogy",
         "false-equivalence",
         "false-balance",
@@ -9306,13 +9588,13 @@
       ],
       "category": "informal: ambiguity and language",
       "status": "standard",
-      "text_detectable": "yes",
+      "text_detectable": "partly",
       "use_only_if_nothing_more_specific": false,
       "definition": "Quoting someone selectively so that the context that fixes their meaning is lost and they appear to say something else.",
       "example": "The critic called the film 'a triumph ... of marketing over substance', and the poster says 'a triumph!'.",
       "required_conditions": [
         "Someone's words are quoted or paraphrased.",
-        "Surrounding words that change the meaning are left out (show them).",
+        "Surrounding words that change the meaning are left out (quote the fuller original; without it, at most possible issue).",
         "The argument relies on the shifted meaning."
       ],
       "legitimate_lookalikes": [
@@ -9323,7 +9605,8 @@
       ],
       "families": [
         "omitted evidence",
-        "ambiguity"
+        "ambiguity",
+        "misrepresentation"
       ],
       "related": [
         "suppressed-evidence",
@@ -9340,7 +9623,10 @@
         "scope-fallacy",
         "combination-of-words",
         "division-of-words",
-        "form-of-expression"
+        "form-of-expression",
+        "straw-man",
+        "false-attribution",
+        "confusing-explanation-with-excuse"
       ],
       "sources": [
         {
@@ -9437,6 +9723,10 @@
             "url": "https://iep.utm.edu/fallacy/",
             "locator": "section 6, \"Partial List of Fallacies\", entry \"Avoiding the Issue\""
           }
+        },
+        {
+          "text": "Merely asserting that another question must be settled first does not count; the dependence must be shown.",
+          "caveat_source": "catalog wording"
         }
       ],
       "families": [
@@ -9501,7 +9791,8 @@
         "equivocation",
         "loaded-label",
         "loaded-language",
-        "suppressed-correlative"
+        "suppressed-correlative",
+        "etymological-fallacy"
       ],
       "sources": [
         {
@@ -9844,7 +10135,12 @@
         "A is concluded to cause B.",
         "B plausibly causes A instead, and this is not addressed."
       ],
-      "legitimate_lookalikes": [],
+      "legitimate_lookalikes": [
+        {
+          "text": "Two-way causation, or a reverse direction ruled out by timing or design.",
+          "caveat_source": "catalog wording"
+        }
+      ],
       "families": [
         "causation"
       ],
@@ -9885,7 +10181,7 @@
       "text_detectable": "partly",
       "use_only_if_nothing_more_specific": false,
       "definition": "Blaming a person or group for a problem without evidence of their role, relying on their already being disliked or unpopular.",
-      "example": "The product launch failed because of the new intern.",
+      "example": "Sales are down because of those newcomers from the city. Everyone here knows what they're like.",
       "required_conditions": [
         "A problem is blamed on a person or group.",
         "No evidence of their role is given.",
@@ -9910,7 +10206,8 @@
         "appeal-to-spite",
         "appeal-to-ridicule",
         "wishful-thinking",
-        "appeal-to-consequences"
+        "appeal-to-consequences",
+        "style-over-substance"
       ],
       "sources": [
         {
@@ -10202,7 +10499,8 @@
         "false-dilemma",
         "middle-ground",
         "nirvana-fallacy",
-        "line-drawing"
+        "line-drawing",
+        "vagueness"
       ],
       "sources": [
         {
@@ -10508,13 +10806,13 @@
       ],
       "category": "informal: relevance",
       "status": "standard",
-      "text_detectable": "yes",
+      "text_detectable": "partly",
       "use_only_if_nothing_more_specific": false,
       "definition": "Misrepresenting someone's position as a weaker or more extreme version and then attacking that version instead of what they actually hold.",
       "example": "She wants stricter emissions rules. So she wants to ban cars and make us all ride bicycles.",
       "required_conditions": [
         "The opponent's position is restated or summarised.",
-        "The restatement differs materially from what they said or meant (weaker, more extreme or distorted).",
+        "The restatement differs materially from what they said or meant (show the original wording or a reliable summary of it; without it, at most possible issue).",
         "The argument attacks the restatement.",
         "The attack is presented as refuting the opponent's actual position."
       ],
@@ -10532,8 +10830,14 @@
           "caveat_source": "catalog wording"
         }
       ],
-      "families": [],
-      "related": [],
+      "families": [
+        "misrepresentation"
+      ],
+      "related": [
+        "quoting-out-of-context",
+        "false-attribution",
+        "confusing-explanation-with-excuse"
+      ],
       "sources": [
         {
           "ref": "IEP",
@@ -10584,8 +10888,22 @@
           "caveat_source": "catalog wording"
         }
       ],
-      "families": [],
-      "related": [],
+      "families": [
+        "emotion"
+      ],
+      "related": [
+        "appeal-to-emotion",
+        "appeal-to-pity",
+        "appeal-to-fear",
+        "appeal-to-force",
+        "appeal-to-flattery",
+        "appeal-to-snobbery",
+        "appeal-to-spite",
+        "appeal-to-ridicule",
+        "scapegoating",
+        "wishful-thinking",
+        "appeal-to-consequences"
+      ],
       "sources": [
         {
           "ref": "IEP",
@@ -10627,10 +10945,26 @@
         {
           "text": "Claims that really are about personal taste or preference.",
           "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If the reply is only that one has a right to an opinion, use entitled to my opinion.",
+          "caveat_source": "catalog wording"
         }
       ],
-      "families": [],
-      "related": [],
+      "families": [
+        "bare assertion"
+      ],
+      "related": [
+        "ipse-dixit",
+        "proof-by-assertion",
+        "argument-from-repetition",
+        "thought-terminating-cliche",
+        "appeal-to-the-stone",
+        "entitled-to-my-opinion",
+        "proof-surrogate",
+        "appeal-to-ridicule",
+        "willed-ignorance"
+      ],
       "sources": [
         {
           "ref": "IEP",
@@ -10755,7 +11089,8 @@
         "motte-and-bailey",
         "equivocation",
         "loaded-label",
-        "loaded-language"
+        "loaded-language",
+        "etymological-fallacy"
       ],
       "sources": [
         {
@@ -10879,6 +11214,10 @@
         {
           "text": "The question is only about the survivors themselves.",
           "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If the filter is how the sample was gathered, use unrepresentative sample; use this only when the filtered-out cases are the missing ones.",
+          "caveat_source": "catalog wording"
         }
       ],
       "families": [
@@ -10989,7 +11328,10 @@
         "argument-from-repetition",
         "appeal-to-the-stone",
         "entitled-to-my-opinion",
-        "proof-surrogate"
+        "proof-surrogate",
+        "appeal-to-ridicule",
+        "subjectivist-fallacy",
+        "willed-ignorance"
       ],
       "sources": [
         {
@@ -11154,7 +11496,7 @@
       ],
       "legitimate_lookalikes": [
         {
-          "text": "Hypocrisy is a reason to be suspicious of the speaker's sincerity, though not to discount the argument.",
+          "text": "Finding that a speaker is a hypocrite gives reason to be suspicious of their reasoning, but not enough reason to discount it.",
           "caveat_source": "source",
           "source": {
             "ref": "IEP",
@@ -11177,7 +11519,8 @@
         }
       ],
       "families": [
-        "ad hominem"
+        "ad hominem",
+        "others' conduct"
       ],
       "related": [
         "ad-hominem",
@@ -11190,7 +11533,8 @@
         "genetic-fallacy",
         "traitorous-critic",
         "tone-policing",
-        "courtiers-reply"
+        "courtiers-reply",
+        "two-wrongs"
       ],
       "sources": [
         {
@@ -11250,10 +11594,18 @@
         {
           "text": "Proportionate self-defence or restitution argued on its own terms.",
           "caveat_source": "catalog wording"
+        },
+        {
+          "text": "If a criticism is dismissed because the critic does the same, use tu quoque.",
+          "caveat_source": "catalog wording"
         }
       ],
-      "families": [],
-      "related": [],
+      "families": [
+        "others' conduct"
+      ],
+      "related": [
+        "tu-quoque"
+      ],
       "sources": [
         {
           "ref": "IEP",
@@ -11319,8 +11671,7 @@
         "affirming-the-consequent",
         "denying-the-antecedent",
         "affirming-a-disjunct",
-        "denying-a-conjunct",
-        "argument-from-fallacy"
+        "denying-a-conjunct"
       ],
       "sources": [
         {
@@ -11365,7 +11716,7 @@
       "required_conditions": [
         "A claim is offered as an empirical claim about the world.",
         "It is framed so that no possible observation could count against it.",
-        "Its compatibility with every outcome is presented as support."
+        "It is still presented as established or explanatory, although its framing, not evidence, is what protects it from refutation."
       ],
       "legitimate_lookalikes": [
         {
@@ -11382,7 +11733,8 @@
         "hedging",
         "moving-the-goalposts",
         "definitional-retreat",
-        "motte-and-bailey"
+        "motte-and-bailey",
+        "far-fetched-hypothesis"
       ],
       "sources": [
         {
@@ -11536,10 +11888,22 @@
             "url": "https://iep.utm.edu/fallacy/",
             "locator": "section 6, \"Partial List of Fallacies\", entry \"Line-Drawing\""
           }
+        },
+        {
+          "text": "If the argument is that no sharp line means no real difference, use line-drawing instead.",
+          "caveat_source": "catalog wording"
         }
       ],
-      "families": [],
-      "related": [],
+      "families": [
+        "options and limits"
+      ],
+      "related": [
+        "false-dilemma",
+        "middle-ground",
+        "nirvana-fallacy",
+        "line-drawing",
+        "slippery-slope"
+      ],
       "sources": [
         {
           "ref": "Fallacy Files",
@@ -11577,8 +11941,20 @@
           "caveat_source": "catalog wording"
         }
       ],
-      "families": [],
-      "related": [],
+      "families": [
+        "bare assertion"
+      ],
+      "related": [
+        "ipse-dixit",
+        "proof-by-assertion",
+        "argument-from-repetition",
+        "thought-terminating-cliche",
+        "appeal-to-the-stone",
+        "entitled-to-my-opinion",
+        "proof-surrogate",
+        "appeal-to-ridicule",
+        "subjectivist-fallacy"
+      ],
       "sources": [
         {
           "ref": "IEP",
@@ -11630,7 +12006,8 @@
         "appeal-to-spite",
         "appeal-to-ridicule",
         "scapegoating",
-        "appeal-to-consequences"
+        "appeal-to-consequences",
+        "style-over-substance"
       ],
       "sources": [
         {

@@ -10,7 +10,15 @@ Work one step of the argument at a time. For each step you think goes wrong:
 
 **(a) Quote the exact passage.** Copy the words, with enough surrounding text that a reader can see what the speaker meant. Do not paraphrase at this stage.
 
-**(b) Restate the argument in its strongest reasonable form.** Write out the premises and conclusion as the speaker would accept them, filling any unstated premise with the most plausible one rather than the weakest. If the strongest version has no problem, stop here: there is no issue.
+**(b) Restate the argument in its strongest reasonable form.** Write out the premises and conclusion as the speaker would accept them. Be concrete:
+- **Read hedges as hedges.** "Likely", "may", "should be investigated" and "I suspect" make a weaker claim than "proves" or "will". Judge the claim actually made, not a stronger one.
+- **Supply common-knowledge premises the speaker would accept.** If a step needs a premise that any ordinary reader takes for granted (drunk driving is dangerous; water boils when heated), assume it, even though it is unstated. Do not count its absence as missing evidence.
+- **Supply the most plausible unstated premise, not the weakest.** If two readings fit the words, use the one that makes the argument better.
+- **Treat stated defaults and procedural rules as such.** A burden of proof, a presumption of innocence, a null hypothesis, a house rule or a decision procedure tells you what to do when evidence is lacking. It is not a claim about what is true.
+- **Respect the conclusion's scope.** A conclusion about what to do, what to investigate, or what is probable is not a claim that the matter is settled.
+- **Keep the role of each statement.** An illustration, a joke or a figure of speech is not a premise unless the speaker relies on it.
+
+Charity has a limit: use it to find what the speaker meant, not to rewrite a passage that clearly meets the conditions. If the strongest version has no problem, stop here: there is no issue.
 
 **(c) Pick the most specific entry.** Use one label per step.
 - Check the entry's **Related, use only one per step** list and pick the single entry in that family that fits best. Do not stack labels from the same family.
@@ -57,8 +65,8 @@ Entry: [Ad hominem (abusive)](FALLACIES.md#ad-hominem). Other entries considered
 Conditions:
 1. Someone has made a claim or argument: "the bridge needs new bearings ... points to the corrosion readings."
 2. The reply attacks the person rather than the reasons: "fired from her last job for showing up late."
-3. The attack is offered as a reason to reject the argument: "so we can ignore her bridge argument."
-4. The trait is irrelevant to whether the argument is sound: punctuality has no bearing on what the corrosion readings show.
+3. The attack is offered as a reason to reject the argument, and her reasons are left unanswered: "so we can ignore her bridge argument"; the corrosion readings are never discussed.
+4. The trait is irrelevant to whether the argument's reasons are good: punctuality has no bearing on what the corrosion readings show.
 
 Look-alikes:
 - Questioning a witness's reliability: does not apply, because the argument rests on the inspection report's readings, not on her word.
