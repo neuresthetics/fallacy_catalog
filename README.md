@@ -25,7 +25,7 @@ Current version: **0.6.1**.
 | [`METHOD.md`](METHOD.md) | The procedure for checking an argument, with worked examples. |
 | [`SOURCES.md`](SOURCES.md) | The references and how they are cited. Generated from the JSON. |
 | [`tools/build_md.py`](tools/build_md.py) | Validates the JSON and regenerates the two generated Markdown files. |
-| [`frameworks/`](frameworks/) | Sourced reference frameworks kept separate from the fallacy list, currently MINDSPACE (Dolan et al. 2010) for detecting persuasion levers. |
+| [`frameworks/`](frameworks/) | Sourced reference frameworks kept separate from the fallacy list, currently MINDSPACE (Dolan et al. 2010) for detecting persuasion levers. Not part of the audit method; see the folder README. |
 | [`tests/`](tests/) | Audits, blind test rounds, answer keys, reviewer verdicts, scores, scoring scripts and regression checks. |
 
 ## How the entries were produced

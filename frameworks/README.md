@@ -10,6 +10,12 @@ The catalog uses it to **detect and openly name persuasion levers** (messenger, 
 
 The file also covers related frameworks (nudge, EAST, BIT, MINDSPACE X), the report's own guidance on permission and transparency, the ethics debate, replication evidence, and how MINDSPACE is used across the neuresthetics repos.
 
+### Not part of the audit method
+MINDSPACE is a contained, separate analysis. It is not part of `METHOD.md`, and fallacy audits never load or cite this file. A MINDSPACE pass runs only on request, writes its own output, and never changes a fallacy verdict. Blind fallacy reviewers do not see MINDSPACE material.
+
+### Earlier covert use in the neuresthetics repos
+Some older neuresthetics repos applied MINDSPACE covertly, for example the Steel Men Collider "AutoNudge" block. These were experiments, published on purpose to show how the framework was learned. They are not current practice, and this catalog uses MINDSPACE only to detect and openly name levers.
+
 ### Known gaps
 - No publication titled "Mindspace and beyond" could be found. MINDSPACE X (2025) is the closest follow-up.
 - The full texts of Dolan et al. 2012 and Hausman & Welch 2010 weren't accessible. They are cited from Crossref metadata only.
