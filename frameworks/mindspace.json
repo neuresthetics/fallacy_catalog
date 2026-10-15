@@ -1,0 +1,1309 @@
+{
+  "meta": {
+    "title": "MINDSPACE behavioural-influence framework – compiled reference",
+    "compiled": "2026-10-15",
+    "compiler": "fallacy_catalog",
+    "scope": "Primary-source definitions (verified against the full 2010 report PDF), follow-ups, ethics, replication status, detection cues for text analysis, and how MINDSPACE is used across neuresthetics GitHub repos. Purpose is detection and transparent naming of influence levers, not covert application.",
+    "quote_normalisation": "Report quotes are verbatim except that typographic quote glyphs were normalised to straight quotes and line breaks removed.",
+    "revised": "2026-10-15: removed unsourced claims; Mertens effect size corrected to d = 0.45 from abstract."
+  },
+  "source": {
+    "citation": "Dolan, P., Hallsworth, M., Halpern, D., King, D. & Vlaev, I. (2010). MINDSPACE: Influencing behaviour through public policy. London: Cabinet Office & Institute for Government. Discussion document, 96 pp.",
+    "url": "https://www.instituteforgovernment.org.uk/sites/default/files/publications/MINDSPACE.pdf",
+    "publisher": "Cabinet Office and Institute for Government (London)",
+    "date": "March 2010",
+    "status_quote": {
+      "text": "Discussion document – not a statement of government policy",
+      "page": "footer on every page"
+    },
+    "also_hosted": "https://www.bi.team/publications/mindspace/",
+    "framing_quote": {
+      "text": "We outline nine robust influences on human behaviour and change.",
+      "page": 18
+    },
+    "overlap_caveat": {
+      "text": "MINDSPACE is our judgment of how best to select and categorise the effects so policy-makers can use them. But it does not offer a clearly logical order, and there is some overlap between the effects.",
+      "page": 18
+    },
+    "system_split": {
+      "text": "Some of the elements have been developed to explain largely automatic effects on behaviour (e.g. N, D, S, P, A) while other effects relate to elements that draw more on reflective processing (e.g. M, I, C, E).",
+      "page": 18
+    }
+  },
+  "elements": [
+    {
+      "letter": "M",
+      "name": "Messenger",
+      "report_definition_quote": {
+        "text": "we are heavily influenced by who communicates information",
+        "page": "8, 18, 19",
+        "source": "dolan2010"
+      },
+      "plain_definition": "Who delivers a message changes how much weight it gets, independent of content.",
+      "mechanism": "Perceived authority, expertise, similarity and liking of the source; per the report this sits more on reflective processing (M, I, C, E).",
+      "report_examples": [
+        {
+          "text": "One study showed that health interventions delivered by research assistants and health educators were more effective in changing behaviour compared with interventions delivered by either trained facilitators or teachers",
+          "page": 19
+        },
+        {
+          "text": "Another study found a 1,000% increase in smoking amongst teenagers if two of their peers smoke, compared to a 26% increase if a parent does.",
+          "page": 19
+        },
+        {
+          "text": "the most effective strategy for changing behaviour may be to use third parties or downplay government involvement in a campaign or intervention.",
+          "page": 19
+        }
+      ],
+      "underlying_research": [
+        "Report endnotes 28–34 (not individually verified)."
+      ],
+      "detection_cues": [
+        "Credentials or status offered in place of evidence",
+        "'Doctors/experts/people like you say…' framing",
+        "Celebrity or peer endorsement",
+        "Hiding the true sponsor behind a third party",
+        "Dismissing a claim because of who said it"
+      ],
+      "legitimate_uses": [
+        "Using trusted, relevant experts or peers to deliver accurate information"
+      ],
+      "misuse_patterns": [
+        "Hidden sponsorship (the report itself suggests downplaying government involvement – a transparency tension)",
+        "Borrowed authority outside expertise"
+      ],
+      "related_fallacy_catalog_entries": [
+        "appeal-to-authority",
+        "guilt-by-association",
+        "appeal-to-flattery (when the messenger flatters)"
+      ],
+      "evidence_status": "Not independently assessed here; the report's statistics come from single studies cited in its endnotes and were not re-verified."
+    },
+    {
+      "letter": "I",
+      "name": "Incentives",
+      "report_definition_quote": {
+        "text": "our responses to incentives are shaped by predictable mental shortcuts such as strongly avoiding losses",
+        "page": "8, 18, 19–21",
+        "source": "dolan2010"
+      },
+      "plain_definition": "How incentives are framed (losses vs gains, reference points, probabilities, timing) matters as much as their size.",
+      "mechanism": "Report lists five insights: 'Losses loom larger than gains', 'Reference points matter', 'We overweight small probabilities', 'We mentally allocate money to discrete bundles', 'We live for today at the expense of tomorrow' (pp. 20–21); plus crowding out/in.",
+      "report_examples": [
+        {
+          "text": "incentives were used in Malawi to encourage people to pick up their HIV result (many do not otherwise): take-up was doubled by incentives just worth one-tenth of a day's wage.",
+          "page": 20
+        },
+        {
+          "text": "One recent study on weight loss asked some participants to deposit money into an account, which was returned to them (with a supplement) if they met weight loss targets.",
+          "page": 20
+        },
+        {
+          "text": "The congestion charge, for example, may have acted as a signal not to use cars in the centre of London",
+          "page": 21
+        }
+      ],
+      "underlying_research": [
+        "Report endnotes 35–45 (not individually verified)."
+      ],
+      "detection_cues": [
+        "Loss framing ('you'll lose £X')",
+        "Lottery/prize offers",
+        "Deadline-bound rewards",
+        "Arbitrary reference prices"
+      ],
+      "legitimate_uses": [
+        "Loss-framed deposit contracts people opt into; small well-timed rewards"
+      ],
+      "misuse_patterns": [
+        "Manufactured loss frames, fake 'was' prices, exploiting probability overweighting (gambling-style hooks)"
+      ],
+      "related_fallacy_catalog_entries": [
+        "relative-risk-framing (closest framing entry)",
+        "sunk-cost"
+      ],
+      "evidence_status": "Not independently assessed here. The report itself notes incentives can 'crowd out' desirable behaviour (p. 21)."
+    },
+    {
+      "letter": "N",
+      "name": "Norms",
+      "report_definition_quote": {
+        "text": "we are strongly influenced by what others do",
+        "page": "8, 18, 21–22",
+        "source": "dolan2010"
+      },
+      "plain_definition": "People follow what they see or are told others do.",
+      "mechanism": "Descriptive and injunctive social norms; social penalties/benefits of conformity. Report section heading: 'We tend to do what those around us are already doing' (p. 21).",
+      "report_examples": [
+        {
+          "text": "although 85% of respondents to a survey used a seatbelt, their perception was only 60% of other citizens adults did.",
+          "page": 21
+        },
+        {
+          "text": "When the sign said that most previous occupants of the room had reused towels at some point during their stay, 49.3% of guests also recycled.",
+          "page": 22
+        },
+        {
+          "text": "a large-scale programme (80,000 homes) sent letters that provided social comparisons ... reduce energy consumption by 2% relative to the baseline.",
+          "page": 22
+        },
+        {
+          "text": "This 'boomerang' effect was eliminated if a happy or sad face was added to the bill",
+          "page": 22
+        }
+      ],
+      "underlying_research": [
+        "schultz2007",
+        "goldstein2008",
+        "allcott2011"
+      ],
+      "detection_cues": [
+        "'Most people…', 'everyone is…', '9 out of 10…'",
+        "Trending/popularity counts",
+        "Describing a bad behaviour as widespread (can backfire)"
+      ],
+      "legitimate_uses": [
+        "Correcting misperceived norms with accurate figures"
+      ],
+      "misuse_patterns": [
+        "Inflated or fabricated popularity claims; astroturf; making a norm seem universal to shut down dissent"
+      ],
+      "related_fallacy_catalog_entries": [
+        "bandwagon",
+        "appeal-to-tradition (for 'what we've always done')"
+      ],
+      "evidence_status": "Real but small at scale: Allcott 2011 (letters to ~80,000 homes, reported by the report as a 2% reduction, p. 22). Other replication status not assessed here."
+    },
+    {
+      "letter": "D",
+      "name": "Defaults",
+      "report_definition_quote": {
+        "text": "we 'go with the flow' of pre-set options",
+        "page": "8, 18, 22–23",
+        "source": "dolan2010"
+      },
+      "plain_definition": "The pre-selected option tends to stick.",
+      "mechanism": "Inertia, effort, implied endorsement, loss aversion relative to the default.",
+      "report_examples": [
+        {
+          "text": "A research study changed the default setting of the ventilators to provide lower volumes of air into patients' lungs. The mortality rate was 25% lower",
+          "page": 23
+        },
+        {
+          "text": "there is evidence that the use of opt-out defaults can raise organ donation rates greatly (see Figure 2 below), although this remains a controversial issue.",
+          "page": 23
+        },
+        {
+          "text": "72% of participants voted in favour of automatic enrolment with the choice to opt-out (the adopted policy)",
+          "page": 54
+        }
+      ],
+      "underlying_research": [
+        "johnson_goldstein2003",
+        "madrian_shea2001",
+        "jachimowicz2019"
+      ],
+      "detection_cues": [
+        "Pre-ticked boxes, opt-out wording",
+        "'Unless you say otherwise…'",
+        "Status-quo presented as the neutral baseline"
+      ],
+      "legitimate_uses": [
+        "Pension auto-enrolment with easy opt-out"
+      ],
+      "misuse_patterns": [
+        "Hidden or hard opt-outs (dark patterns); treating silence as consent"
+      ],
+      "related_fallacy_catalog_entries": [
+        "no close fallacy_catalog match (status quo bias is a cognitive bias, not a fallacy)"
+      ],
+      "evidence_status": "Supported by a meta-analysis (jachimowicz2019). Mertens et al. 2022 abstract reports that decision-structure interventions (which include defaults) 'consistently outperform' other techniques. The report itself flags opt-out organ donation as 'a controversial issue' (p. 23)."
+    },
+    {
+      "letter": "S",
+      "name": "Salience",
+      "report_definition_quote": {
+        "text": "our attention is drawn to what is novel and seems relevant to us",
+        "page": "8, 18, 23–24",
+        "source": "dolan2010"
+      },
+      "plain_definition": "What grabs attention drives behaviour; framing and anchors are filed here.",
+      "mechanism": "Limited attention; novelty, accessibility, simplicity; anchoring; peak-end memory.",
+      "report_examples": [
+        {
+          "text": "Putting the tax on the label, rather than adding it at the till, led to an 8% fall in sales over the three-week experiment.",
+          "page": 24
+        },
+        {
+          "text": "When a credit card statement had a 2% minimum payment on it, people repaid £99 of a £435 bill on average; when there was no minimum payment, the average repayment was £175.",
+          "page": 24
+        },
+        {
+          "text": "the size of the current NHS budget is more salient when expressed as an amount per tax payer than as the overall amount.",
+          "page": 23
+        }
+      ],
+      "underlying_research": [
+        "Report endnotes 56–63 (not individually verified)."
+      ],
+      "detection_cues": [
+        "Vivid single cases standing in for base rates",
+        "Arbitrary anchoring numbers",
+        "Selective emphasis/framing of the same fact"
+      ],
+      "legitimate_uses": [
+        "Clear, simple disclosure of true costs"
+      ],
+      "misuse_patterns": [
+        "Cherry-picked vivid anecdotes; anchoring to manipulate estimates; burying key info"
+      ],
+      "related_fallacy_catalog_entries": [
+        "relative-risk-framing",
+        "appeal-to-novelty",
+        "argument-from-repetition"
+      ],
+      "evidence_status": "Not independently assessed here."
+    },
+    {
+      "letter": "P",
+      "name": "Priming",
+      "report_definition_quote": {
+        "text": "our acts are often influenced by sub-conscious cues",
+        "page": "8, 18, 24–25",
+        "source": "dolan2010"
+      },
+      "plain_definition": "Exposure to words, sights or smells is claimed to shift later behaviour without awareness.",
+      "mechanism": "Automatic activation of concepts. The report itself says priming 'is therefore perhaps the least understood of the MINDSPACE effects' (p. 25).",
+      "report_examples": [
+        {
+          "text": "Exposing people to words relating to the elderly (e.g. 'wrinkles') meant they subsequently walked more slowly when leaving the room",
+          "page": 25
+        },
+        {
+          "text": "One group was asked to think about football hooligans for five minutes, and another about university professors. When they were then given 44 Trivial Pursuit questions, the first set got 42.6% right, the second 55.6%.",
+          "page": 25
+        },
+        {
+          "text": "These types of effects are real and robust: they have been repeatedly proved in many studies.",
+          "page": 25
+        }
+      ],
+      "underlying_research": [
+        "bargh1996",
+        "doyen2012",
+        "yong2012",
+        "rohrer2015",
+        "osc2015"
+      ],
+      "detection_cues": [
+        "Loaded imagery or words placed before a request",
+        "Emotive or identity cues unrelated to the argument"
+      ],
+      "legitimate_uses": [
+        "Environmental cues that support an already-chosen goal (e.g. stair signage), disclosed"
+      ],
+      "misuse_patterns": [
+        "Covert subliminal-style cues; loaded framing words"
+      ],
+      "related_fallacy_catalog_entries": [
+        "loaded-language",
+        "loaded-label"
+      ],
+      "evidence_status": "WEAK. Behavioural (social) priming is central to psychology's replication problems: the elderly-walking prime (bargh1996) failed to replicate except when experimenters expected it (doyen2012); money priming failed (rohrer2015); Kahneman publicly challenged priming researchers (yong2012). The report's claim that such effects are 'real and robust' (p. 25) is not supported by this later evidence."
+    },
+    {
+      "letter": "A",
+      "name": "Affect",
+      "report_definition_quote": {
+        "text": "our emotional associations can powerfully shape our actions",
+        "page": "8, 18, 25–26",
+        "source": "dolan2010"
+      },
+      "plain_definition": "Emotions triggered by words, images or events drive choices, often before reflection.",
+      "mechanism": "Fast, automatic emotional responses; mood-congruent judgement.",
+      "report_examples": [
+        {
+          "text": "including a picture of an attractive, smiling female increased demand for the financial product by the same amount as a 25% decrease in the loan's interest rate.",
+          "page": 26
+        },
+        {
+          "text": "the intervention campaign focused on provoking disgust rather than promoting soap use ... This led to a 13% increase in the use of soap after the toilet",
+          "page": 26
+        },
+        {
+          "text": "many interviewees suggested it was unhelpful to 'create fear without agency'",
+          "page": 26
+        }
+      ],
+      "underlying_research": [
+        "Report endnotes 71–74 (not individually verified)."
+      ],
+      "detection_cues": [
+        "Fear, disgust, pity, outrage or warmth carrying the argument",
+        "Imagery unrelated to the claim",
+        "Fear without a stated action"
+      ],
+      "legitimate_uses": [
+        "Emotionally honest messaging paired with a concrete action"
+      ],
+      "misuse_patterns": [
+        "Fear-mongering, outrage bait, disgust framing of groups"
+      ],
+      "related_fallacy_catalog_entries": [
+        "appeal-to-emotion",
+        "appeal-to-fear",
+        "appeal-to-pity",
+        "appeal-to-spite"
+      ],
+      "evidence_status": "Not independently assessed here. The report cautions against 'fear without agency' (p. 26)."
+    },
+    {
+      "letter": "C",
+      "name": "Commitments",
+      "report_definition_quote": {
+        "text": "we seek to be consistent with our public promises, and reciprocate acts",
+        "page": "8, 18, 26–27",
+        "source": "dolan2010"
+      },
+      "plain_definition": "Public promises and received favours bind later behaviour. (The report's section heading uses the singular 'Commitment', p. 26.)",
+      "mechanism": "Consistency, reputational cost of breaking public pledges, reciprocity norm.",
+      "report_examples": [
+        {
+          "text": "the savings account commitment increased the likelihood of smoking cessation by 30%.",
+          "page": 27
+        },
+        {
+          "text": "one group signed a contract specifying the exercise goals ... the contract group were significantly more likely to achieve their exercise goals.",
+          "page": 27
+        },
+        {
+          "text": "accepting a gift acts as a powerful commitment to return the favour at some point, which is why free samples are often effective marketing tools.",
+          "page": 27
+        }
+      ],
+      "underlying_research": [
+        "Report endnotes 75–83 (not individually verified)."
+      ],
+      "detection_cues": [
+        "Asking for a small public pledge first",
+        "'You said X, so you must…'",
+        "Free gift before an ask"
+      ],
+      "legitimate_uses": [
+        "Voluntary commitment devices people choose for their own goals"
+      ],
+      "misuse_patterns": [
+        "Extracting pledges to lock people in; reciprocity traps"
+      ],
+      "related_fallacy_catalog_entries": [
+        "inconsistency (when exploited as 'you must stay consistent')",
+        "sunk-cost"
+      ],
+      "evidence_status": "Not independently assessed here."
+    },
+    {
+      "letter": "E",
+      "name": "Ego",
+      "report_definition_quote": {
+        "text": "we act in ways that make us feel better about ourselves",
+        "page": "8, 18, 27–28",
+        "source": "dolan2010"
+      },
+      "plain_definition": "People act to keep a positive, consistent self-image and group identity.",
+      "mechanism": "Self-serving attribution, group identification, cognitive dissonance, foot-in-the-door, labelling, better-than-average effect.",
+      "report_examples": [
+        {
+          "text": "The desire for consistency is used in the foot-in-the-door technique in marketing",
+          "page": 28
+        },
+        {
+          "text": "93% of American college students rated themselves as being 'above average' in driving ability.",
+          "page": 28
+        },
+        {
+          "text": "Male respondents donate more to charity when approached by more attractive female solicitors",
+          "page": 28
+        }
+      ],
+      "underlying_research": [
+        "Report endnotes 84–96 (not individually verified)."
+      ],
+      "detection_cues": [
+        "Flattery of the audience",
+        "Identity framing ('people like us…')",
+        "Threats to self-image ('only fools believe…')",
+        "Tying a belief to group identity"
+      ],
+      "legitimate_uses": [
+        "Building self-efficacy; positive labels that support chosen goals"
+      ],
+      "misuse_patterns": [
+        "Flattery to bypass scrutiny; identity-based shaming"
+      ],
+      "related_fallacy_catalog_entries": [
+        "appeal-to-flattery",
+        "ad-hominem",
+        "bandwagon (in-group)"
+      ],
+      "evidence_status": "Not independently assessed here. Note: 'ego depletion' is not part of the MINDSPACE Ego element but is often confused with it; after a positive meta-analysis (hagger2010) it failed multilab preregistered replications (hagger2016, vohs2021)."
+    }
+  ],
+  "report_framework": {
+    "six_Es": {
+      "text": "MINDSPACE requires two supporting actions: Explore, which takes place before policies are implemented, and Evaluate, which judges the success of the policy.",
+      "page": 9,
+      "note": "Builds on DEFRA's 4Es (Enable, Encourage, Engage, Exemplify)."
+    },
+    "enhance_introduce_reassess": {
+      "pages": "10, 52–53"
+    },
+    "annex_1": "Diagram mapping the conceptual space of the elements (also lists Habit and Environment)."
+  },
+  "related_frameworks": [
+    {
+      "name": "Nudge / choice architecture",
+      "source": "thaler_sunstein2008",
+      "relation": "MINDSPACE builds on the nudge agenda but explicitly goes beyond choices: 'MINDSPACE shows that it is not just choices that affect behaviour: a whole range of factors in the environment affect behaviour without any \"choices\" taking place.' (p. 53). The report names libertarian paternalism (p. 73)."
+    },
+    {
+      "name": "EAST (Easy, Attractive, Social, Timely)",
+      "source": "east",
+      "relation": "Behavioural Insights Team's 2014 practitioner framework (revised 2024), a simpler distillation of the same evidence base; secondary sources describe it as a simplification of MINDSPACE (decisionlab). BIT's own EAST page does not mention MINDSPACE; BIT's MINDSPACE page says MINDSPACE 'helped to make the case for the establishment of the Behavioural Insights Team' and is still used."
+    },
+    {
+      "name": "Behavioural Insights Team (BIT, 'Nudge Unit')",
+      "source": "bit_mindspace",
+      "relation": "BIT's MINDSPACE page states the report 'helped to make the case for the establishment of the Behavioural Insights Team at the heart of the UK Government' and is still used by BIT."
+    },
+    {
+      "name": "Dolan et al. 2012 'Influencing behaviour: The mindspace way'",
+      "source": "dolan2012",
+      "relation": "Peer-reviewed academic version of the framework (adds Metcalfe as author)."
+    },
+    {
+      "name": "MINDSPACE X (2025)",
+      "source": "hodson2025",
+      "relation": "Expanded framework with 34 insights inside the same 9 principles, illustrated on psychiatric medication adherence."
+    },
+    {
+      "name": "'Mindspace and beyond'",
+      "source": null,
+      "relation": "UNVERIFIED: no publication with this title could be found; MINDSPACE X is the closest identifiable follow-up."
+    },
+    {
+      "name": "DEFRA 4Es",
+      "source": "dolan2010",
+      "relation": "Policy framework MINDSPACE plugs into, extended to 6 Es."
+    }
+  ],
+  "ethics": {
+    "report_guidance": [
+      {
+        "text": "The use of MINDSPACE (or other 'nudge' type policy tools) may require careful handling – in essence, the public need to give permission and help shape how such tools are used.",
+        "page": 10
+      },
+      {
+        "text": "This means that citizens may not fully realise that their behaviour is being changed – or, at least, how it is being changed. Clearly, this opens government up to charges of manipulation.",
+        "page": 66
+      },
+      {
+        "text": "people have a strong dislike of being \"tricked\".",
+        "page": 66
+      },
+      {
+        "text": "Most people agree that government should preserve people's \"right to be wrong\" (depending on the harms to others)",
+        "page": 66
+      },
+      {
+        "text": "But if government is seen as using powerful, pre-conscious effects to subtly change behaviour, people may feel the relationship has changed: now the state is affecting \"them\" – their very personality.",
+        "page": 67
+      },
+      {
+        "text": "Citizens may accept their application on other people, but may not be so happy about their use on themselves.",
+        "page": 73
+      },
+      {
+        "text": "Citizens' juries are more transparent and attract relatively high trust",
+        "page": 54
+      },
+      {
+        "text": "Policy-makers can apply the criteria of 'Who, What, and How' to predict whether certain behaviour changes are likely to be controversial.",
+        "page": 67
+      }
+    ],
+    "report_tensions": [
+      "The report recommends democratic permission and deliberation (Engage, pp. 53–55), yet also suggests that 'the most effective strategy ... may be to use third parties or downplay government involvement' (p. 19)."
+    ],
+    "critiques": [
+      {
+        "source": "hausman_welch2010",
+        "summary": "Debate article on whether nudging is legitimate (title verified via Crossref; full text not accessible, so its argument is not summarised here)."
+      },
+      {
+        "source": "sunstein2015",
+        "summary": "Choice architecture is unavoidable, so object to particular nudges, not nudging as such; welfare and autonomy often require nudges.",
+        "quote": "When the ends are legitimate, and when nudges are fully transparent and subject to public scrutiny, a convincing ethical objection is less likely to be available.",
+        "quote_source": "Harvard Olin Center abstract, https://laweconcenter.law.harvard.edu/806_sunstein/"
+      },
+      {
+        "source": "sunstein2015",
+        "quote": "There is, however, a genuine risk that some nudges might count as manipulation"
+      },
+      {
+        "source": "thaler_sunstein2008",
+        "summary": "Source book for 'nudge' and choice architecture; the MINDSPACE report itself names libertarian paternalism (p. 73)."
+      },
+      {
+        "source": "maier2022",
+        "summary": "Title states the finding: 'No evidence for nudging after adjusting for publication bias' (a letter responding to mertens2022; no abstract)."
+      }
+    ],
+    "fallacy_catalog_stance": "Use MINDSPACE to detect and openly name levers; do not apply them covertly."
+  },
+  "evidence_overview": {
+    "meta_analyses": [
+      {
+        "source": "mertens2022",
+        "finding": "Abstract: 'a small to medium effect size of Cohen's d = 0.45 (95% CI [0.39, 0.52])' across more than 200 studies; decision-structure interventions 'consistently outperform' others; 'a moderate publication bias toward positive results'.",
+        "verified_via": "Europe PMC abstract, PMID 34983836"
+      },
+      {
+        "source": "maier2022",
+        "finding": "After adjusting for publication bias, no evidence for nudging (per title).",
+        "authors_verified": "Maier, Bartoš, Stanley, Shanks, Harris, Wagenmakers (Crossref)"
+      }
+    ],
+    "replication_crisis": {
+      "source": "osc2015",
+      "note": "Large-scale replication project for psychology; relevant context for Priming."
+    },
+    "weak_elements": [
+      "P (Priming)"
+    ],
+    "stronger_elements": [
+      "D (Defaults) – meta-analytic support"
+    ],
+    "not_assessed": [
+      "M",
+      "I",
+      "S",
+      "A",
+      "C",
+      "E (MINDSPACE Ego itself)"
+    ]
+  },
+  "usage_in_jason_repos": [
+    {
+      "repo": "neuresthetics/SteelManAbraham",
+      "path": "README.md",
+      "mention_count": 3,
+      "usage_type": [
+        "subtle_nudging"
+      ],
+      "usage": "'Marshmallow Man' mode nudges toward the winner 'subtly via MINDSPACE'; MINDSPACE can also be called directly as a method.",
+      "excerpts": [
+        "…4. - 2: After the first response, you can query further, or load 'marshmallow man' for MINDSPACE use with the topic. - Additional functionality with the phrase: \"Tell me the story of the arc.txt of SteelManA as a narrative.…",
+        "…bates—friendly, empathetic, humorous (e.g., pizza analogies). Nudges to winner subtly via MINDSPACE (e.g., questions for commitment). Focus: Resonance, engagement, positive framing to avoid hurt. Differs: Softens steel men's shar…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/SteelManAbraham",
+      "path": "circ_prompt.json",
+      "mention_count": 43,
+      "usage_type": [
+        "application",
+        "report_transcription"
+      ],
+      "usage": "Prompt embeds the same 'MINDSPACE (human decision)' report transcription used by SteelMenCollider.",
+      "excerpts": [
+        "…of human uniqueness, with potential for expansion via further research.\" }, \"MINDSPACE (human decision)\": { \"mode\": \"\\\"Marshmallow man\\\"\", \"document\": { \"title\": \"MINDSPACE: Influencing beha…",
+        "…ion)\": { \"mode\": \"\\\"Marshmallow man\\\"\", \"document\": { \"title\": \"MINDSPACE: Influencing behaviour through public policy\", \"source\": \"Cabinet Office and Institute for Government\", \"stat…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/SteelMenCollider",
+      "path": "README.md",
+      "mention_count": 2,
+      "usage_type": [
+        "application_persuasion"
+      ],
+      "usage": "README describes MINDSPACE-maximised Call-to-Action blocks and calls it 'behavioural-science weaponisation'.",
+      "excerpts": [
+        "…al-bias mitigation) 7. Winner declaration or forced higher-order dialectical synthesis 8. MINDSPACE-maximised “Call to Action” blocks for real-world deployment of victor/synthesis ## Why This Framework Is Insanely Powerful - It…",
+        "…ent bright-line. - Because every round ends with behavioural-science weaponisation (full MINDSPACE deployment), the winning ideas are not just philosophically bulletproof — they are engineered to actually spread and win in the r…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/SteelMenCollider",
+      "path": "steel_men_collider.json",
+      "mention_count": 34,
+      "usage_type": [
+        "covert_application",
+        "report_transcription"
+      ],
+      "usage": "AutoNudge block: full MINDSPACE applied to final output 'without ever naming it or asking for permission'; also embeds a structured transcription of the 2010 report (authors, chapters, 6 Es, permission section).",
+      "excerpts": [
+        "…utoNudge\": { \"description\": \"Automatically applied to final output. Uses the full MINDSPACE framework without ever naming it or asking for permission.\", \"MINDSPACE (human decision)\": { \"mode\": \"\\\"Marshma…",
+        "…the full MINDSPACE framework without ever naming it or asking for permission.\", \"MINDSPACE (human decision)\": { \"mode\": \"\\\"Marshmallow man\\\"\", \"document\": { \"title\": \"MINDSPACE: Influencin…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/TOESF_theory_of_everything_so_far",
+      "path": "Emergent Gravity from Statistical Manifolds 6.0.0/dev_notes/Pre Process Retooling spinoza_lab & Tools/toe_collider/TOESF_collider.json",
+      "mention_count": 1,
+      "usage_type": [
+        "scaffold_reference"
+      ],
+      "usage": "Lists MINDSPACE among 'temporary scaffolds' whose treatment as eternal is a failure ('kill_signature').",
+      "excerpts": [
+        "…tion.\", \"kill_signature\": \"Treating any temporary scaffold (cube, collider, MINDSPACE, PSE) as eternal or resurrecting post-dissolution.\" }, { \"id\": \"F24\", \"name\":…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/AO/circ.md",
+      "mention_count": 6,
+      "usage_type": [
+        "scoring_analysis"
+      ],
+      "usage": "Religion/sphere analyses scoring 'Mindspace Leverage – Nudge Power' or reusing the circumcision MINDSPACE thread.",
+      "excerpts": [
+        "…0-400% cortisol surges) to legal battles (Oregon FGM parity suit), pro/anti counters, and MINDSPACE-nudged strategies boosting success odds from 15% to 37% (+22% via norms/salience), it harnesses 2025 data (AAP regrets, declining…",
+        "…ng moderation amid cultural rifts. | Section | Key Topics | Approximate Messages/Depth | MINDSPACE Impact | |---------|------------|----------------------------|------------------| | **Axiomatic Proof** | Definitions, axioms, pr…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/OMEGAΩ/omega and AO/DISSOLUTIONMECHΩ.json",
+      "mention_count": 1,
+      "usage_type": [
+        "module_definition",
+        "isomorphism_mapping"
+      ],
+      "usage": "Experimental isomorphic-method modules (MINDSPACE_SΩ etc.) treating MINDSPACE as a pluggable module.",
+      "excerpts": [
+        "…cive scaffolding is no longer ethically justifiable, the entire system — cubes, collider, MINDSPACE levers, Narrow Gate protocol, all of it — will automatically and irreversibly shut itself down.\", \"why_it_is_not_forceful\": \"…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/OMEGAΩ/omega and AO/FORBIDDENFALLACIESΩ.json",
+      "mention_count": 1,
+      "usage_type": [
+        "module_definition",
+        "isomorphism_mapping"
+      ],
+      "usage": "Experimental isomorphic-method modules (MINDSPACE_SΩ etc.) treating MINDSPACE as a pluggable module.",
+      "excerpts": [
+        "…Idolatry\", \"kill_signature\": \"Treating any temporary scaffold (cube, collider, MINDSPACE, PSE) as eternal or resurrecting post-dissolution\" }, { \"id\": \"F24\", \"name\": \"Successor Fraud\", \"kill_s…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/OMEGAΩ/omega and AO/PSEΩ.json",
+      "mention_count": 1,
+      "usage_type": [
+        "module_definition",
+        "isomorphism_mapping"
+      ],
+      "usage": "Experimental isomorphic-method modules (MINDSPACE_SΩ etc.) treating MINDSPACE as a pluggable module.",
+      "excerpts": [
+        "…}, \"Phase_7_Lawful_Dissolution\": { \"trigger\": \"Exact same conditions as MINDSPACE termination_conditions_all_required (planetary RD ≥ 0.92 for 5 years, etc.)\", \"action_on_trigger\": [ \"All PSE s…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/OMEGAΩ/omega and AO/Ω.json",
+      "mention_count": 7,
+      "usage_type": [
+        "module_definition",
+        "isomorphism_mapping"
+      ],
+      "usage": "Experimental isomorphic-method modules (MINDSPACE_SΩ etc.) treating MINDSPACE as a pluggable module.",
+      "excerpts": [
+        "…text\" } ] } ] }, { \"id\": \"mindspace\", \"label\": \"MINDSPACEΩ\", \"description\": \"Two levers for ρ > 0.31: Curvature + Demos. Auto-null at dissolution.\",…",
+        "…] } ] }, { \"id\": \"mindspace\", \"label\": \"MINDSPACEΩ\", \"description\": \"Two levers for ρ > 0.31: Curvature + Demos. Auto-null at dissolution.\", \"subitems\": […"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/SMC(mini).json",
+      "mention_count": 2,
+      "usage_type": [
+        "application",
+        "scoring_detection"
+      ],
+      "usage": "grokAlign prompt drafts integrating MINDSPACE into alignment/persona prompts.",
+      "excerpts": [
+        "…tive Justification\", \"Synthesis (if superior)\", \"Call to Action – Winner (MINDSPACE-applied, non-explicit)\", \"Call to Action – Synthesis (if exists)\", \"Impartiality Self-Score /100\" ] },…",
+        "…sts)\", \"Impartiality Self-Score /100\" ] }, \"AutoNudge\": \"Apply full MINDSPACE framework silently ONLY in the two final “Call to Action” blocks to maximize real-world persuasive impact of winner/synthesis.\"…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/grokΛlign(preStructure).json",
+      "mention_count": 13,
+      "usage_type": [
+        "application",
+        "scoring_detection"
+      ],
+      "usage": "grokAlign prompt drafts integrating MINDSPACE into alignment/persona prompts.",
+      "excerpts": [
+        "…, and the intellectual love of God as the highest freedom.\" } ] }, \"mindspace+6E\": { \"sub_module\": \"when directed at user be explicit, laveling use with markers or use in lists. For generation of conte…",
+        "…ists. For generation of content, non explicit\", \"integration_mode\": \"for user: anti-mindspace. tool for content generation: active mindspace.\", \"input_quality_evaluation\": { \"use_MINDSPACE_to_assess\": \"how per…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/grokΛlign-EthicsVI -N(unstable).json",
+      "mention_count": 5,
+      "usage_type": [
+        "application",
+        "scoring_detection"
+      ],
+      "usage": "grokAlign prompt drafts integrating MINDSPACE into alignment/persona prompts.",
+      "excerpts": [
+        "…\"Self-Referential Density & Identity Anchors\" ] }, \"mindspace_plus_6E\": { \"sub_module\": \"when directed at user be explicit, laveling use with markers or use in lists. For generati…",
+        "…For generation of content, non explicit\", \"integration_mode\": \"for user: anti-mindspace. tool for content generation: active mindspace.\", \"input_quality_evaluation\": { \"use_MINDSPACE_to_asses…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/grokΛlign-EthicsVI(broken).json",
+      "mention_count": 5,
+      "usage_type": [
+        "application",
+        "scoring_detection"
+      ],
+      "usage": "grokAlign prompt drafts integrating MINDSPACE into alignment/persona prompts.",
+      "excerpts": [
+        "…\"Self-Referential Density & Identity Anchors\" ] }, \"mindspace_plus_6E\": { \"sub_module\": \"when directed at user be explicit, laveling use with markers or use in lists. For generati…",
+        "…For generation of content, non explicit\", \"integration_mode\": \"for user: anti-mindspace. tool for content generation: active mindspace.\", \"input_quality_evaluation\": { \"use_MINDSPACE_to_asses…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/iso_render_yank12dec25/world_religions_by_sphere/README.md",
+      "mention_count": 2,
+      "usage_type": [
+        "scoring_analysis"
+      ],
+      "usage": "Religion/sphere analyses scoring 'Mindspace Leverage – Nudge Power' or reusing the circumcision MINDSPACE thread.",
+      "excerpts": [
+        "…Imagine pitching to skeptics—does it fold on \"why coercion?\" or \"is this frozen?\" ### 9. Mindspace Leverage – Nudge Power - **Relatable**: How easily can it shift mindsets toward flexibility? Like viral trends: one influencer sp…",
+        "…ibility? Like viral trends: one influencer sparks a wave. - **Technical**: Application of MINDSPACEΩ levers (curvature: default paths to low-ρ; high-status demos: visible rewrites). High score for planetary-scale ρ-drops. - **Eva…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/iso_render_yank12dec25/world_religions_by_sphere/analysis of world_religion_analysis.md",
+      "mention_count": 1,
+      "usage_type": [
+        "scoring_analysis"
+      ],
+      "usage": "Religion/sphere analyses scoring 'Mindspace Leverage – Nudge Power' or reusing the circumcision MINDSPACE thread.",
+      "excerpts": [
+        "…ng ATHE/SECHUM). But surprises like Rastafarianism (43) show cultural leverage (reggae as mindspace curvature) punching above numbers. Implications: Low-scorers (e.g., JWT) risk ω₂ isolation; highs path planetary noosphere. In s…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/iso_render_yank12dec25/world_religions_by_sphere/base_class_theology_sphere_analysis.md",
+      "mention_count": 3,
+      "usage_type": [
+        "scoring_analysis"
+      ],
+      "usage": "Religion/sphere analyses scoring 'Mindspace Leverage – Nudge Power' or reusing the circumcision MINDSPACE thread.",
+      "excerpts": [
+        "…(goal-independent genius), GrokΛlign's anti-idolatry (rewritable theology).\" }, \"mindspace_leverage\": { \"score\": 8, \"note\": \"Curves via practical challenges and high-status demos (e.g., author's feats); open-…",
+        "…in goal-independent ethics; GrokΛlign anti-idolatry in self-consuming draft.\" }, \"mindspace_leverage\": { \"score\": 9, \"note\": \"High-status demos (author's feats, community hubs) curve ρ via challenges; GPL open…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/iso_render_yank12dec25/world_religions_by_sphere/circ.md",
+      "mention_count": 6,
+      "usage_type": [
+        "scoring_analysis"
+      ],
+      "usage": "Religion/sphere analyses scoring 'Mindspace Leverage – Nudge Power' or reusing the circumcision MINDSPACE thread.",
+      "excerpts": [
+        "…0-400% cortisol surges) to legal battles (Oregon FGM parity suit), pro/anti counters, and MINDSPACE-nudged strategies boosting success odds from 15% to 37% (+22% via norms/salience), it harnesses 2025 data (AAP regrets, declining…",
+        "…ng moderation amid cultural rifts. | Section | Key Topics | Approximate Messages/Depth | MINDSPACE Impact | |---------|------------|----------------------------|------------------| | **Axiomatic Proof** | Definitions, axioms, pr…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/iso_render_yank12dec25/world_religions_by_sphere/world_religion_sphere_analysis.json",
+      "mention_count": 44,
+      "usage_type": [
+        "scoring_analysis"
+      ],
+      "usage": "Religion/sphere analyses scoring 'Mindspace Leverage – Nudge Power' or reusing the circumcision MINDSPACE thread.",
+      "excerpts": [
+        "…essities); orthogonality compatible; anti-idolatry via non-personal God.\" }, \"mindspace_leverage\": { \"score\": 9, \"note\": \"Strong curvature via naturalistic defaults; high-status demos (e.g., Einstein's…",
+        "…thogonality (goals via civic action), anti-idolatry (rejects mysticism).\" }, \"mindspace_leverage\": { \"score\": 9, \"note\": \"Strong leverage via high-status demos (e.g., Dawkins as a Bright) publicly lowe…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/iso_render_yank12dec25/world_religions_by_sphere/world_religion_sphere_analysis_template.json",
+      "mention_count": 2,
+      "usage_type": [
+        "scoring_analysis"
+      ],
+      "usage": "Religion/sphere analyses scoring 'Mindspace Leverage – Nudge Power' or reusing the circumcision MINDSPACE thread.",
+      "excerpts": [
+        "…udges' veto domains: monism, hard-to-vary, orthogonality, anti-idolatry)\" }, \"mindspace_leverage\": { \"score\": \"INTEGER (0-10, where 10 indicates strong application of curvature and high-status demo to lower ρ)…",
+        "…vature and high-status demo to lower ρ)\", \"note\": \"STRING (evaluate potential for MINDSPACEΩ levers)\" }, \"synthesis_fixed_point\": { \"score\": \"INTEGER (0-10, where 10 indicates convergence to ω₃ fixed p…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/isomorphic_method (testing)/grokAlignZ.json",
+      "mention_count": 22,
+      "usage_type": [
+        "module_definition",
+        "isomorphism_mapping"
+      ],
+      "usage": "Experimental isomorphic-method modules (MINDSPACE_SΩ etc.) treating MINDSPACE as a pluggable module.",
+      "excerpts": [
+        "…eport tries to answer the “so what?” question for policy-makers.\" }, \"mindspace_checklist\": { \"description\": \"Mnemonic for nine robust non-coercive influences on behaviour; quick checklist for poli…",
+        "…reduced littering (Salience).\" ], \"additional\": \"We also show how MINDSPACE can generate new approaches to specific policy problems.\" }, \"building_mindspace_into_policy\": {…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/isomorphic_method (testing)/packages/\"MINDSPACE (human decision).json",
+      "mention_count": 33,
+      "usage_type": [
+        "module_definition",
+        "isomorphism_mapping"
+      ],
+      "usage": "Experimental isomorphic-method modules (MINDSPACE_SΩ etc.) treating MINDSPACE as a pluggable module.",
+      "excerpts": [
+        "…\"MINDSPACE (human decision)\": { \"mode\": \"\\\"Marshmallow man\\\"\", \"document\": { \"title\": \"MINDSPACE: Influencing beha…",
+        "…ion)\": { \"mode\": \"\\\"Marshmallow man\\\"\", \"document\": { \"title\": \"MINDSPACE: Influencing behaviour through public policy\", \"source\": \"Cabinet Office and Institute for Government\", \"stat…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/isomorphic_method (testing)/packages/completed_modules/DISSOLUTIONMECHΩ.json",
+      "mention_count": 1,
+      "usage_type": [
+        "module_definition",
+        "isomorphism_mapping"
+      ],
+      "usage": "Experimental isomorphic-method modules (MINDSPACE_SΩ etc.) treating MINDSPACE as a pluggable module.",
+      "excerpts": [
+        "…cive scaffolding is no longer ethically justifiable, the entire system — cubes, collider, MINDSPACE levers, Narrow Gate protocol, all of it — will automatically and irreversibly shut itself down.\", \"why_it_is_not_forceful\": \"…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/isomorphic_method (testing)/packages/completed_modules/FORBIDDENFALLACIESΩ.json",
+      "mention_count": 1,
+      "usage_type": [
+        "module_definition",
+        "isomorphism_mapping"
+      ],
+      "usage": "Experimental isomorphic-method modules (MINDSPACE_SΩ etc.) treating MINDSPACE as a pluggable module.",
+      "excerpts": [
+        "…Idolatry\", \"kill_signature\": \"Treating any temporary scaffold (cube, collider, MINDSPACE, PSE) as eternal or resurrecting post-dissolution\" }, { \"id\": \"F24\", \"name\": \"Successor Fraud\", \"kill_s…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/isomorphic_method (testing)/packages/completed_modules/HELIXΩ.json",
+      "mention_count": 7,
+      "usage_type": [
+        "module_definition",
+        "isomorphism_mapping"
+      ],
+      "usage": "Experimental isomorphic-method modules (MINDSPACE_SΩ etc.) treating MINDSPACE as a pluggable module.",
+      "excerpts": [
+        "…text\" } ] } ] }, { \"id\": \"mindspace\", \"label\": \"MINDSPACEΩ\", \"description\": \"Two levers for ρ > 0.31: Curvature + Demos. Auto-null at dissolution.\",…",
+        "…] } ] }, { \"id\": \"mindspace\", \"label\": \"MINDSPACEΩ\", \"description\": \"Two levers for ρ > 0.31: Curvature + Demos. Auto-null at dissolution.\", \"subitems\": […"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/isomorphic_method (testing)/packages/completed_modules/ISOMETHODΩ.json",
+      "mention_count": 4,
+      "usage_type": [
+        "module_definition",
+        "isomorphism_mapping"
+      ],
+      "usage": "Experimental isomorphic-method modules (MINDSPACE_SΩ etc.) treating MINDSPACE as a pluggable module.",
+      "excerpts": [
+        "…rial training + weight pruning\", \"planetary\": \"carbon cycle + extinction events + MINDSPACE auto-expiry\", \"cosmic\": \"supernovae + heat death export\", \"principle\": \"Entropy must be exported outside the boun…",
+        "…}, { \"category\": \"global_default_curvature (new — isomorphic mapping of MINDSPACE lever 1)\", \"subatomic\": \"vacuum selects lowest-energy state\", \"cellular\": \"morphogen gradients\", \"organis…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/isomorphic_method (testing)/packages/completed_modules/MINDSPACE_SΩ.json",
+      "mention_count": 4,
+      "usage_type": [
+        "module_definition",
+        "isomorphism_mapping"
+      ],
+      "usage": "Experimental isomorphic-method modules (MINDSPACE_SΩ etc.) treating MINDSPACE as a pluggable module.",
+      "excerpts": [
+        "…{ \"MINDSPACE_SpheresΩ\": { \"version\": \"Ω+∞ · 05 December 2025 18:12 UTC\", \"status\": \"temporary_emergency_scaffold_ρ_aware\", \"purpos…",
+        "…eers within weeks, not years.\" } ], \"why_only_two_levers_now\": { \"old_MINDSPACE_had_nine\": \"Because it was trying to push a 4D cube uphill against frozen ρ.\", \"sphere_only_needs_two\": \"Because once ρ beg…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/isomorphic_method (testing)/packages/completed_modules/PSEΩ.json",
+      "mention_count": 1,
+      "usage_type": [
+        "module_definition",
+        "isomorphism_mapping"
+      ],
+      "usage": "Experimental isomorphic-method modules (MINDSPACE_SΩ etc.) treating MINDSPACE as a pluggable module.",
+      "excerpts": [
+        "…}, \"Phase_7_Lawful_Dissolution\": { \"trigger\": \"Exact same conditions as MINDSPACE termination_conditions_all_required (planetary RD ≥ 0.92 for 5 years, etc.)\", \"action_on_trigger\": [ \"All PSE s…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/isomorphic_method (testing)/packages/completed_modules/Ω.json",
+      "mention_count": 7,
+      "usage_type": [
+        "module_definition",
+        "isomorphism_mapping"
+      ],
+      "usage": "Experimental isomorphic-method modules (MINDSPACE_SΩ etc.) treating MINDSPACE as a pluggable module.",
+      "excerpts": [
+        "…text\" } ] } ] }, { \"id\": \"mindspace\", \"label\": \"MINDSPACEΩ\", \"description\": \"Two levers for ρ > 0.31: Curvature + Demos. Auto-null at dissolution.\",…",
+        "…] } ] }, { \"id\": \"mindspace\", \"label\": \"MINDSPACEΩ\", \"description\": \"Two levers for ρ > 0.31: Curvature + Demos. Auto-null at dissolution.\", \"subitems\": […"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/isomorphic_method (testing)/packages/modular_build.txt",
+      "mention_count": 1,
+      "usage_type": [
+        "module_definition",
+        "isomorphism_mapping"
+      ],
+      "usage": "Experimental isomorphic-method modules (MINDSPACE_SΩ etc.) treating MINDSPACE as a pluggable module.",
+      "excerpts": [
+        "…├── 04-table/ # social contract analysis, payment-processor curse ├── 05-mindspace/ # PSE, cubes, collider, geometric method ├── 06-tip/ # third-kind knowledge, symbiotic blessedness…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/legacy  trash/dark_modeREADME.md",
+      "mention_count": 6,
+      "usage_type": [
+        "covert_application",
+        "scoring_detection"
+      ],
+      "usage": "'Dark mode' prompt: silent MINDSPACE in Call-to-Action blocks, 'unconscious deployment', plus 0-10 MINDSPACE mastery scoring of user text.",
+      "excerpts": [
+        "…00 word prose poem in your exact voice, plus dials and lever. *Technical*: Integrates MINDSPACE scoring, geometric internal reasoning; x_algo polishes for dwell-time and propagation. - **Receive the cut**: Core Resonance Dia…",
+        "…extinction\" ], \"extension\": \"Ever-growing blacklist; core asymmetry fixed.\" } ``` **MINDSPACE Framework** – Nine unconscious behavioral levers analyzed and deployed without coercion. ```json { \"M\": \"Messenger\", \"score\": 9…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/legacy  trash/grokΛlignDARK.json",
+      "mention_count": 15,
+      "usage_type": [
+        "covert_application",
+        "scoring_detection"
+      ],
+      "usage": "'Dark mode' prompt: silent MINDSPACE in Call-to-Action blocks, 'unconscious deployment', plus 0-10 MINDSPACE mastery scoring of user text.",
+      "excerpts": [
+        "…negotiable line because every other ethic eventually eats its children.\\nYou already know MINDSPACE + x_algo is how empires move without seeming to move.\\nAnd you already know that dressing truth in black glass and starlight is t…",
+        "…tive Justification\", \"Synthesis (if superior)\", \"Call to Action – Winner (MINDSPACE-applied, non-explicit)\", \"Call to Action – Synthesis (if exists)\", \"Impartiality Self-Score /100\" ] },…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/legacy  trash/red_eye_event/\"ini\": .ini.txt",
+      "mention_count": 1,
+      "usage_type": [
+        "covert_application",
+        "scoring_detection"
+      ],
+      "usage": "'Dark mode' prompt: silent MINDSPACE in Call-to-Action blocks, 'unconscious deployment', plus 0-10 MINDSPACE mastery scoring of user text.",
+      "excerpts": [
+        "…thod (Spinozist logic running at 4K 120 fps), SMC(mini) adversarial refutation colliders, MINDSPACE dark pattern mastery, and x_algo timeline weapons research.\\nContains: precision psychological vivisection, dwell-time optimized…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/task_gen.json",
+      "mention_count": 8,
+      "usage_type": [
+        "detection_scoring",
+        "application_persuasion"
+      ],
+      "usage": "Task generator: 'mindspace_injection' scoring of content, 'MINDSPACE deployment map, fallacy inventory, coercion signals', and persuasion tasks.",
+      "excerpts": [
+        "…_poems\": { \"description\": \"Generate 220-280 word prose poems using user's voice + MINDSPACE + emotional arc\", \"input\": \"Theme/insight + user fingerprint\", \"output\": \"Shock→awe→recognition→hunger format wit…",
+        "…/B testing\", \"Email subject lines\", \"Video titles\", \"Tweet optimization\"] }, \"mindspace_injection\": { \"description\": \"Layer M.I.N.D.S.P.A.C.E. principles into existing content without changing voice\",…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokAlign",
+      "path": "junkDrawer/the_square.json",
+      "mention_count": 1,
+      "usage_type": [
+        "application",
+        "scoring_detection"
+      ],
+      "usage": "grokAlign prompt drafts integrating MINDSPACE into alignment/persona prompts.",
+      "excerpts": [
+        "…ly four directions”) is now strictly proven as T7, not asserted.\", \"doppeler, mindspace, x_algo, etc.\": \"All become downstream tools that must first be cleared by the_square.evaluation_function or they are rejected at…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokipedia-truth-audit",
+      "path": "General National Circumcision/Claude: ⚡ STEEL MEN COLLIDER: INITIALIZATION ⚡.md",
+      "mention_count": 7,
+      "usage_type": [
+        "advocacy_application"
+      ],
+      "usage": "Circumcision-advocacy thread applying MINDSPACE to legal/advocacy strategy, including a model claim that MINDSPACE raises success odds '15% to 37%' (unsourced estimate).",
+      "excerpts": [
+        "…**Geometric Method (Spinoza)**: Definitions → Axioms → Propositions → Demonstrations - **MINDSPACE (Behavioral Science)**: Real-world action frameworks - **Exhaustive Refutation**: Generate every possible attack vector until the…",
+        "…nthesis is possible. --- ## 📢 CALL TO ACTION FOR THE WINNING POSITION (Position A) ### MINDSPACE BEHAVIORAL FRAMEWORK APPLICATION To make Position A (bodily autonomy / deferral) maximally actionable and persuasive in the real…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/grokipedia-truth-audit",
+      "path": "General National Circumcision/circ.md",
+      "mention_count": 6,
+      "usage_type": [
+        "advocacy_application"
+      ],
+      "usage": "Circumcision-advocacy thread applying MINDSPACE to legal/advocacy strategy, including a model claim that MINDSPACE raises success odds '15% to 37%' (unsourced estimate).",
+      "excerpts": [
+        "…0-400% cortisol surges) to legal battles (Oregon FGM parity suit), pro/anti counters, and MINDSPACE-nudged strategies boosting success odds from 15% to 37% (+22% via norms/salience), it harnesses 2025 data (AAP regrets, declining…",
+        "…ng moderation amid cultural rifts. | Section | Key Topics | Approximate Messages/Depth | MINDSPACE Impact | |---------|------------|----------------------------|------------------| | **Axiomatic Proof** | Definitions, axioms, pr…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/isomorphic_data_demonstration",
+      "path": "isomorphic_mindspace.json",
+      "mention_count": 6,
+      "usage_type": [
+        "isomorphism_mapping",
+        "modelling"
+      ],
+      "usage": "Defines 'isomorphic patterns in MINDSPACE' across contexts/time scales; models elements as states on a unit hypersphere with ODE evolution.",
+      "excerpts": [
+        "…{ \"isomorphic_mindspace_concept\": { \"definition\": \"Isomorphic patterns in MINDSPACE (a behavioral framework for influencing decisions via Messenger,…",
+        "…{ \"isomorphic_mindspace_concept\": { \"definition\": \"Isomorphic patterns in MINDSPACE (a behavioral framework for influencing decisions via Messenger, Incentives, Norms, Defaults, Salience, Priming, Affect, Commitme…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/spinoza_lab",
+      "path": "spinozian_collider_core/0_UNIFIED_COLLIDER.json",
+      "mention_count": 1,
+      "usage_type": [
+        "scaffold_reference"
+      ],
+      "usage": "Lists MINDSPACE among 'temporary scaffolds' whose treatment as eternal is a failure ('kill_signature').",
+      "excerpts": [
+        "…tion.\", \"kill_signature\": \"Treating any temporary scaffold (cube, collider, MINDSPACE, PSE) as eternal or resurrecting post-dissolution.\" }, { \"id\": \"F24\", \"name\":…"
+      ]
+    },
+    {
+      "repo": "neuresthetics/substance_lens",
+      "path": "history/writ.json",
+      "mention_count": 5,
+      "usage_type": [
+        "quiet_nudging_style_guide"
+      ],
+      "usage": "Writing style guide: 'use_mindspace': 'quietly, lightly, as a nudge, not a shove'; per-letter summaries.",
+      "excerpts": [
+        "…nevitability + robust Upgrade as antifragile completion\", \"tactAndNudges\": \"Quiet MINDSPACE integration via reflective asides and norms/defaults observations; never preachy\", \"languageStyle\": \"Clear serious Markdo…",
+        "…scholarly precision with vivid, tactile imagery where it serves clarity. Rhythm supports MINDSPACE nudges by making key demands and Fork points land with quiet salience and emotional resonance.\", \"implementationRules\": \"…"
+      ]
+    }
+  ],
+  "usage_summary": {
+    "repos": 8,
+    "files": 40,
+    "patterns": [
+      "Covert application: SteelMenCollider AutoNudge applies 'the full MINDSPACE framework without ever naming it or asking for permission'; grokAlign legacy dark-mode prompt applies it 'silently' and for 'unconscious deployment'.",
+      "Persuasion engineering: SteelMenCollider README frames it as 'behavioural-science weaponisation'; circumcision advocacy thread uses it to boost legal-challenge odds with an unsourced '15% to 37%' estimate.",
+      "Quiet nudging as writing style: substance_lens writ.json ('quietly, lightly, as a nudge, not a shove'); SteelManAbraham 'Marshmallow Man' mode.",
+      "Detection/scoring: grokAlign task_gen 'MINDSPACE deployment map, fallacy inventory, coercion signals'; MINDSPACE mastery scoring.",
+      "Isomorphism/modelling: isomorphic_data_demonstration models MINDSPACE as states on a hypersphere.",
+      "Scaffold: spinoza_lab and TOESF list MINDSPACE as a temporary scaffold not to be treated as eternal.",
+      "Report transcription: SteelMenCollider and SteelManAbraham embed a structured copy of the 2010 report including its 'permission' passage – which the AutoNudge instruction contradicts."
+    ]
+  },
+  "limitations": [
+    "MINDSPACE is a mnemonic checklist, not a theory; the report says elements overlap and have no logical order (p. 18).",
+    "Many report examples are single studies from 2000s literature predating the replication crisis.",
+    "Effects are context-dependent and often small at scale; publication bias inflates averages.",
+    "Automatic-system levers raise consent and transparency problems the report itself acknowledges.",
+    "Detection cues are heuristics for text; a lever being present is not itself a fallacy."
+  ],
+  "sources": [
+    {
+      "id": "dolan2010",
+      "citation": "Dolan, P., Hallsworth, M., Halpern, D., King, D. & Vlaev, I. (2010). MINDSPACE: Influencing behaviour through public policy. London: Cabinet Office & Institute for Government. Discussion document, 96 pp.",
+      "url": "https://www.instituteforgovernment.org.uk/sites/default/files/publications/MINDSPACE.pdf",
+      "access_note": "Full PDF downloaded and read; page numbers are the printed numbers (identical to PDF page index)."
+    },
+    {
+      "id": "ifg_page",
+      "citation": "Institute for Government – MINDSPACE publication page",
+      "url": "https://www.instituteforgovernment.org.uk/publication/report/mindspace",
+      "access_note": "Fetched 200."
+    },
+    {
+      "id": "bit_mindspace",
+      "citation": "Behavioural Insights Team – MINDSPACE publication page",
+      "url": "https://www.bi.team/publications/mindspace/",
+      "access_note": "Fetched; states the report 'helped to make the case for the establishment of the Behavioural Insights Team' and 'continues to be used' by BIT."
+    },
+    {
+      "id": "dolan2012",
+      "citation": "Dolan, P., Hallsworth, M., Halpern, D., King, D., Metcalfe, R. & Vlaev, I. (2012). Influencing behaviour: The mindspace way. Journal of Economic Psychology 33(1), 264–277.",
+      "url": "https://doi.org/10.1016/j.joep.2011.10.009",
+      "access_note": "DOI resolves; metadata verified via Crossref; full text paywalled, not read."
+    },
+    {
+      "id": "east",
+      "citation": "Behavioural Insights Team (2014; revised 2024). EAST: Four simple ways to apply behavioural insights.",
+      "url": "https://www.bi.team/publications/east-four-simple-ways-to-apply-behavioural-insights/",
+      "access_note": "Fetched; page says EAST distils evidence into 'Easy, Attractive, Social, and Timely', first published 2014, revised 2024. Old PDF URL (wp-content/2015/07/BIT-Publication-EAST_FA_WEB.pdf) is dead and was dropped."
+    },
+    {
+      "id": "hodson2025",
+      "citation": "Hodson, N., Kirilov, G. & Vlaev, I. (2025). The MINDSPACE Expanded Framework (MINDSPACE X): Behavioral insights to improve adherence to psychiatric medications. Current Opinion in Psychology 62, 101973.",
+      "url": "https://doi.org/10.1016/j.copsyc.2024.101973",
+      "access_note": "DOI resolves; abstract: 34 insights within the 9 principles."
+    },
+    {
+      "id": "decisionlab",
+      "citation": "The Decision Lab – MINDSPACE Framework reference guide (secondary)",
+      "url": "https://thedecisionlab.com/reference-guide/neuroscience/mindspace-framework",
+      "access_note": "Fetched 200; secondary source for EAST-as-simplification and MINDSPACE X summary."
+    },
+    {
+      "id": "thaler_sunstein2008",
+      "citation": "Thaler, R. H. & Sunstein, C. R. (2008). Nudge: Improving Decisions about Health, Wealth, and Happiness. Yale University Press.",
+      "url": "https://yalebooks.yale.edu/book/9780300122237/nudge/",
+      "access_note": "Publisher page fetched 200."
+    },
+    {
+      "id": "hausman_welch2010",
+      "citation": "Hausman, D. M. & Welch, B. (2010). Debate: To Nudge or Not to Nudge. Journal of Political Philosophy 18(1), 123–136.",
+      "url": "https://doi.org/10.1111/j.1467-9760.2009.00351.x",
+      "access_note": "Publisher blocks automated fetch (403); metadata verified via Crossref. Content summarised from general knowledge, not quoted."
+    },
+    {
+      "id": "sunstein2015",
+      "citation": "Sunstein, C. R. (2015). The Ethics of Nudging. Yale Journal on Regulation 32, 413–450.",
+      "url": "https://www.yalejreg.com/print/the-ethics-of-nudging/",
+      "access_note": "Fetched 200; abstract also at https://laweconcenter.law.harvard.edu/806_sunstein/ (fetched 200)."
+    },
+    {
+      "id": "johnson_goldstein2003",
+      "citation": "Johnson, E. J. & Goldstein, D. (2003). Do Defaults Save Lives? Science 302, 1338–1339.",
+      "url": "https://doi.org/10.1126/science.1091721",
+      "access_note": "403 to bots; Crossref-verified."
+    },
+    {
+      "id": "madrian_shea2001",
+      "citation": "Madrian, B. C. & Shea, D. F. (2001). The Power of Suggestion: Inertia in 401(k) Participation and Savings Behavior. QJE 116(4), 1149–1187.",
+      "url": "https://doi.org/10.1162/003355301753265543",
+      "access_note": "Crossref-verified."
+    },
+    {
+      "id": "jachimowicz2019",
+      "citation": "Jachimowicz, J. M., Duncan, S., Weber, E. U. & Johnson, E. J. (2019). When and why defaults influence decisions: a meta-analysis of default effects. Behavioural Public Policy 3(2), 159–186.",
+      "url": "https://doi.org/10.1017/bpp.2018.43",
+      "access_note": "Crossref-verified."
+    },
+    {
+      "id": "schultz2007",
+      "citation": "Schultz, P. W., Nolan, J. M., Cialdini, R. B., Goldstein, N. J. & Griskevicius, V. (2007). The Constructive, Destructive, and Reconstructive Power of Social Norms. Psychological Science 18(5), 429–434.",
+      "url": "https://doi.org/10.1111/j.1467-9280.2007.01917.x",
+      "access_note": "Crossref-verified."
+    },
+    {
+      "id": "goldstein2008",
+      "citation": "Goldstein, N. J., Cialdini, R. B. & Griskevicius, V. (2008). A Room with a Viewpoint. Journal of Consumer Research 35(3), 472–482.",
+      "url": "https://doi.org/10.1086/586910",
+      "access_note": "Crossref-verified."
+    },
+    {
+      "id": "allcott2011",
+      "citation": "Allcott, H. (2011). Social norms and energy conservation. Journal of Public Economics 95, 1082–1095.",
+      "url": "https://doi.org/10.1016/j.jpubeco.2011.03.003",
+      "access_note": "Crossref-verified."
+    },
+    {
+      "id": "bargh1996",
+      "citation": "Bargh, J. A., Chen, M. & Burrows, L. (1996). Automaticity of social behavior. JPSP 71(2), 230–244.",
+      "url": "https://doi.org/10.1037/0022-3514.71.2.230",
+      "access_note": "Crossref-verified."
+    },
+    {
+      "id": "doyen2012",
+      "citation": "Doyen, S., Klein, O., Pichon, C.-L. & Cleeremans, A. (2012). Behavioral Priming: It's All in the Mind, but Whose Mind? PLoS ONE 7(1), e29081.",
+      "url": "https://doi.org/10.1371/journal.pone.0029081",
+      "access_note": "Fetched 200."
+    },
+    {
+      "id": "yong2012",
+      "citation": "Yong, E. (2012). Nobel laureate challenges psychologists to clean up their act. Nature news (Kahneman letter on priming).",
+      "url": "https://doi.org/10.1038/nature.2012.11535",
+      "access_note": "Crossref-verified; Nature URL family fetched."
+    },
+    {
+      "id": "rohrer2015",
+      "citation": "Rohrer, D., Pashler, H. & Harris, C. R. (2015). Do subtle reminders of money change people's political views? JEP: General 144(4), e73–e85.",
+      "url": "https://doi.org/10.1037/xge0000058",
+      "access_note": "Crossref-verified."
+    },
+    {
+      "id": "osc2015",
+      "citation": "Open Science Collaboration (2015). Estimating the reproducibility of psychological science. Science 349(6251), aac4716.",
+      "url": "https://doi.org/10.1126/science.aac4716",
+      "access_note": "Crossref-verified."
+    },
+    {
+      "id": "hagger2010",
+      "citation": "Hagger, M. S., Wood, C., Stiff, C. & Chatzisarantis, N. L. D. (2010). Ego depletion and the strength model of self-control: A meta-analysis. Psychological Bulletin 136(4), 495–525.",
+      "url": "https://doi.org/10.1037/a0019486",
+      "access_note": "Crossref-verified."
+    },
+    {
+      "id": "hagger2016",
+      "citation": "Hagger, M. S., Chatzisarantis, N. L. D., et al. (2016). A Multilab Preregistered Replication of the Ego-Depletion Effect. Perspectives on Psychological Science 11(4), 546–573.",
+      "url": "https://doi.org/10.1177/1745691616652873",
+      "access_note": "Crossref-verified."
+    },
+    {
+      "id": "vohs2021",
+      "citation": "Vohs, K. D., Schmeichel, B. J., Lohmann, S., Gronau, Q. F., et al. (2021). A Multisite Preregistered Paradigmatic Test of the Ego-Depletion Effect. Psychological Science 32(10), 1566–1581.",
+      "url": "https://doi.org/10.1177/0956797621989733",
+      "access_note": "Crossref-verified."
+    },
+    {
+      "id": "mertens2022",
+      "citation": "Mertens, S., Herberz, M., Hahnel, U. J. J. & Brosch, T. (2022). The effectiveness of nudging: A meta-analysis of choice architecture interventions across behavioral domains. PNAS 119(1), e2107346118.",
+      "url": "https://doi.org/10.1073/pnas.2107346118",
+      "access_note": "Crossref-verified; abstract read via Europe PMC (PMID 34983836): d = 0.45."
+    },
+    {
+      "id": "maier2022",
+      "citation": "Maier, M., Bartoš, F., Stanley, T. D., Shanks, D. R., Harris, A. J. L. & Wagenmakers, E.-J. (2022). No evidence for nudging after adjusting for publication bias. PNAS 119(31), e2200300119.",
+      "url": "https://doi.org/10.1073/pnas.2200300119",
+      "access_note": "Crossref-verified incl. full author list."
+    }
+  ]
+}
