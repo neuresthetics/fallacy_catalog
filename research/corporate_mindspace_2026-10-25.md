@@ -4,7 +4,7 @@
 **Date:** 2026-10-25 (America/Los_Angeles)  
 **Scope:** How corporations, consultancies, and UX/product teams use MINDSPACE by name or equivalent behavioural levers; naming euphemisms; ethics/regulation; lever-mapped examples.  
 **Stance for this bot:** detection and naming. Past covert uses in Jason's repos are past learning experiments only.  
-**Method:** Web search + page fetch of primary/high-quality secondary sources. Seven same-day passes (2026-10-25 America/Los_Angeles).
+**Method:** Web search + page fetch of primary/high-quality secondary sources. First–eighth same-day passes (2026-10-25 America/Los_Angeles). Committed through the eighth pass at Jason Burns's request. Not part of METHOD.md and not for fallacy audits.
 
 ---
 
@@ -65,6 +65,16 @@
 
 
 ---
+
+### Eighth-pass conclusion delta (2026-10-25 ~20:43 America/Los_Angeles)
+
+- **Canada enforcement lane opened:** Competition Bureau drip-pricing wins — **Cineplex** ~C$38.9M Tribunal penalty (Sep 2024); **SiriusXM Canada** C$3.3M settlement (Jun 2024); 2025 suits vs **DoorDash** and **Canada’s Wonderland** (ongoing). OPC GPEN Sweep 2024: **99%** of 145 Canadian sites/apps had ≥1 privacy deceptive-design indicator; FPT Oct 2024 resolution on privacy DDPs (Defaults/Salience/Affect/obstruction).
+- **UK CMA post-2024 OCA / subscription stack:** **Wowcher** undertakings (Jul 2024) — fake urgency timers + pre-ticked VIP → £4M+ refunds to ~870k customers; Nov 2025 DMCCA first wave — 8 investigations (StubHub, viagogo, Gold’s Gym, Wayfair, Marks Electrical default opt-ins, etc.); **Adobe UK ETF** investigation opened **19 Mar 2026** (unfair term / misleading omission — open, no finding yet); subscription-trap rules expected Spring 2027.
+- **Recommender / addictive design (beyond Oct 2025 Meta notice-and-action):** EC preliminary **TikTok addictive design** (6 Feb 2026) and **Meta Instagram/Facebook addictive design** (10 Jul 2026) — infinite scroll, autoplay, push notifications, personalised recommenders as systemic-risk failures (Salience+Affect+Norms engagement loop). Still **preliminary**. Oct 2024 RFIs to YouTube/Snapchat/TikTok on recommenders.
+- **Africa regional statute:** COMESA Competition and Consumer Protection Regulations 2025 (Council 4 Dec 2025) — Regulation 53: dark patterns/scams **prohibited per se**. Corporate Africa named BE labs still thin; CAK e-commerce guidance exists without a 2024–26 mega-fine primary this pass.
+- **GoodRx gap partially closed:** FTC→DOJ GoodRx order (Feb 2023, HBNR) — $1.5M + permanent bar on health-data-for-ads; order text **names dark patterns** ban on manipulative consent designs. Not a PBM formulary-UI case.
+- **Insurance sludge (distinct defendant):** *Barrows v. Humana* (W.D. Ky.) — Aug 2025 order lets contract/fraud/good-faith claims proceed over alleged **nH Predict** AI post-acute denials (same tool family as UHC Lokken; still **litigation**, not adjudicated liability).
+- **Still open / thin:** Nubank/Ambev *named* BE units (product-level nudge journalism ≠ unit); Norton/Autodesk/LinkedIn Premium FTC/DOJ cancel parallels; VA named 2024–26 ARL defendants; corporate lobbying×BI Fortune primary; new Fortune “we launched a nudge unit” annual-report names beyond prior roster (Rabobank Behavioral Expert team = culture/HR BE, not consumer CRO).
 
 ## Lever-by-lever corporate / commercial examples
 
@@ -1006,7 +1016,110 @@ Verification: WebFetch of AGCM EN presses, NY AG, DOJ/FTC, ACM, DGCCRF, AEPD, Ba
 134. Behavioural Insights Team — BIT Academy (corporate/public capacity-building courses). https://www.bi.team/bit-academy/
 135. ESCWA — *Strengthening consumer protection in e-commerce across the Arab region: Addressing behavioural biases and dark patterns* (E/ESCWA/CL6.GCP/2025/TP.7, Nov 2025). https://www.unescwa.org/publications/consumer-protection-e-commerce-arab-region-behavioural-biases-dark-patterns — PDF https://www.unescwa.org/sites/default/files/pubs/pdf/consumer-protection-e-commerce-arab-region-behavioural-biases-dark-patterns-english.pdf
 
+## Continued research (eighth pass)
+
+**Trigger:** Jason “both” — eighth research pass + distilled memo (2026-10-25). **This executor:** research append + memo file only — **do not** git push/merge (seventh-pass already on GitHub `neuresthetics/fallacy_catalog` `research/corporate_mindspace_2026-10-25.md` @ `2cd7195`; local file may lead). **Focus:** NEW ground only — Canada OPC/Competition Bureau; UK CMA post-2024; recommender/addictive-design DSA beyond Oct 2025 Meta N&A; gap closes (GoodRx dark-pattern consent order; Humana nH Predict; COMESA; Rabobank); avoid rehash of Italy AGCM Amazon/eDreams/Virgin Active, NL ACM, FR DGCCRF, ES AEPD, Bancolombia, MELI×CCL, NY AG SiriusXM/Equinox, Adobe US DOJ proposed $150M, CBI BNPL, Optum PreCheck, ESCWA, Cigna PxDx.
+
+### 1. Canada — Competition Bureau (drip / subscription-adjacent) + OPC deceptive design
+
+| Case / artifact | Facts | Status | Lever map | Source |
+| --- | --- | --- | --- | --- |
+| **Competition Bureau × Cineplex** | Tribunal (23 Sep 2024): drip pricing via mandatory **$1.50** online booking fee; contradictory/incomplete ticket-page info. Penalty **>C$38.9M** (= fees collected Jun 2022–Dec 2023) + 10-year conduct ban. | Final Tribunal order | Salience (hidden fee) + Defaults-adjacent partitioned price | [#136] |
+| **Competition Bureau × SiriusXM Canada** | Agreement registered with Tribunal (5 Jun 2024): advertised sub prices unattainable outside Quebec due to mandatory Music Royalty & Admin Fee (+10–20%). **C$3.3M** penalty + C$30k costs; drip-pricing ban; compliance program. | Settlement | Salience / drip | [#137] |
+| **Competition Bureau × DoorDash** | Application (9 Jun 2025): alleged drip pricing — mandatory service/delivery/expanded-range/small-order/regulatory fees so advertised prices/discounts unattainable; ~decade of conduct alleged. | **Ongoing suit** | Salience / drip | [#138] |
+| **Competition Bureau × Canada’s Wonderland** | Application (5 May 2025): alleged drip pricing — mandatory processing fees ($0.99 / $6.99–$9.99) excluded from advertised prices. | **Ongoing suit** | Salience / drip | [#139] |
+| **OPC GPEN Sweep 2024 (Canada report)** | 145 CA sites/apps: **99%** ≥1 privacy DDP indicator (vs 97% global). 65% least-privacy defaults when upfront choices present; 65% false hierarchy on privacy settings; account-delete in ≤2 clicks only **25%**; delete option not found **43%**. Named examples include Prada cookie false hierarchy, La-Z-Boy preselection, Sephora confirm-shaming, **LinkedIn nagging** to app, Ticketmaster delete obstruction, Burger King / Zara forced action. Children’s sites (n=67 with AB/BC): false hierarchy / confirm-shaming / nagging **higher** than general. | Sweep / soft enforcement signal (not named-defendant fine) | Defaults + Salience + Affect (confirm-shame) + sludge | [#140] |
+| **FPT Privacy Resolution (8–10 Oct 2024)** | Federal/provincial/territorial privacy authorities: avoid DDPs that coerce against privacy interests; privacy-by-default; neutral choice UI; reduce click-friction for privacy goals; just-in-time consent. | Soft-law / guidance | Defaults + Salience + obstruction | [#141] |
+
+**Detection takeaway:** Canada’s hard money is currently on **drip pricing** (Competition Act post-2022 amendments). Privacy dark patterns are **prevalence-mapped** (OPC) and resolution-backed, but named-defendant privacy-DDP fines remain thinner than EU cookie cases.
+
+### 2. UK CMA — post-2024 OCA, DMCCA first wave, subscription track
+
+| Case / artifact | Facts | Status | Lever map | Source |
+| --- | --- | --- | --- | --- |
+| **Wowcher undertakings** | 19 Jul 2024: countdown / “deals refresh” / scarcity & popularity claims; **pre-ticked VIP** membership. Formal undertakings (no admission): accurate timers/claims; stop pre-ticks; **>£4M** credit refunds to **~870k** VIP customers. Part of CMA Online Choice Architecture programme (Emma Sleep / Simba Sleep adjacent — Emma already in fifth-pass ACCC/ACL lane). | Undertakings (voluntary) | Salience/Affect (false urgency) + Defaults (pre-tick) + Norms-fake (popularity) | [#142] |
+| **CMA online pricing drive (18 Nov 2025)** | First DMCCA consumer investigations: **8 firms** — StubHub, viagogo (mandatory ticket fees); AA / BSM Driving School (mandatory fees presentation); Gold’s Gym (joining fee drip); Wayfair (time-limited sales); Marks Electrical (**default opt-ins**); Appliances Direct (timers + default opt-ins). Plus **100** advisory letters across 14 sectors. Sweep of >400 businesses / 19 sectors. Fines up to **10% global turnover** if infringement found. | **Open investigations** — no infringement finding yet | Salience (drip/timers) + Defaults (opt-ins) + Affect (pressure) | [#143] |
+| **CMA × Adobe UK (ETF)** | Opened **19 Mar 2026**: whether early-termination-fee term is unfair consumer-contract term and/or presentation is unfair commercial practice (misleading omission). Distinct from US DOJ ROSCA proposed order (still pending entry). | **Open** — no finding | Incentives (ETF) + Salience (disclosure) + sludge-adjacent | [#144] |
+| **UK subscription-trap rules (DBT)** | Government announcement: clear pre-signup info; trial/renewal reminders; easy cancel (online exit for online signup); 14-day cooling-off after trial end or 12-month+ renew. **Expected force Spring 2027**. Claimed ~£400M/yr consumer savings framing. | **Future statute** (not yet in force) | Defaults symmetry / sludge ban | [#145] |
+
+### 3. Platform recommender / feed design — Salience + Affect + Norms (2024–2026)
+
+| Artifact | Facts | Status | Lever map | Source |
+| --- | --- | --- | --- | --- |
+| **EC RFI — YouTube, Snapchat, TikTok recommenders** | 2 Oct 2024: DSA requests on recommender parameters, mental-wellbeing / addictive behaviour / rabbit holes, minors, illegal-content amplification; TikTok also elections/media pluralism. | Information-gathering → possible Art. 66 proceedings | Salience (ranking) + Affect (engagement loop) + Norms (what “everyone” sees) | [#146] |
+| **EC preliminary — TikTok addictive design** | 6 Feb 2026: infinite scroll, autoplay, push notifications, highly personalised recommender; inadequate risk assessment for compulsive use (incl. minors at night); screen-time / parental tools “easy to dismiss” / limited friction. Commission signals need to change basic design (e.g. disable infinite scroll over time, night breaks, adapt recommender). | **Preliminary** — not final fine | Affect + Salience + Defaults (low-friction continue) | [#147] |
+| **EC preliminary — Meta Instagram/Facebook addictive design** | 10 Jul 2026: same feature cluster (infinite scroll, autoplay, notifications, personalised recommenders); inadequate risk assessment / mitigation for physical & mental wellbeing incl. minors. **Distinct** from 24 Oct 2025 Meta notice-and-action dark-pattern preliminary (already in file). | **Preliminary** | Same | [#148] |
+
+**Detection takeaway:** Treat engagement-max recommenders as industrial **Affect + Salience + Norms** stacks. Cite as preliminary until non-compliance decisions / fines land. Do not conflate with DMA pay-or-consent or Oct 2025 N&A findings.
+
+### 4. Gap board — eighth-pass closes / remains
+
+| Gap | Eighth-pass result |
+| --- | --- |
+| Nubank / Ambev / MELI *named* BE units | MELI×CCL already closed (pass 7). **Nubank/Ambev named units still open.** Product-level nudge journalism (e.g. Nubank adolescent “caixinhas” credit framed as Thaler-style nudge in Bloomberg Línea Sep 2025) ≠ public Head of Behavioural Science / lab. |
+| Norton / Autodesk / LinkedIn Premium cancel sludge | **Still no FTC/DOJ/state-AG parallel to Adobe.** LinkedIn appears in OPC Sweep as **nagging-to-app** example (privacy DDP), not cancel-ARL enforcement. |
+| Africa corporate BE units / enforcement | **COMESA 2025 Reg. 53** dark patterns/scams **per se** — major regional statute close. Named consumer-corp Africa nudge labs still open; CAK e-commerce dark-pattern work is guidance/complaints-level this pass. |
+| Corporate lobbying × BI | **Still open** — no Fortune GR primary “we run MINDSPACE on policymakers.” |
+| VA named ARL defendants 2024–26 | **Still thin** — statute strengthened (pass 7); no high-profile VA AG press package with named corporate defendant found this pass. |
+| GoodRx / PBM UI | **Partially closed:** GoodRx FTC order **names dark patterns** for health-data consent (not formulary steering UI). PBM pricing/steering remains separate FTC lane. |
+| New Fortune/EU in-house BE naming post-2024 | **Rabobank Behavioral Expert team** (5-person culture/behaviour interventions; Lead Behavioral Expertise) — careers primary. Swiss Re BRU continues (Human-AI behavioural consultant role through 2027) but already rostered. No fresh Unilever/Nestlé/Walmart “nudge unit launch” annual-report line this pass. |
+| Insurance/healthcare sludge beyond Cigna/UHC/Optum | **Humana / nH Predict** (*Barrows*, Aug 2025 partial MTD denial) — contested litigation, distinct defendant, same AI-deny family. |
+
+### 5. Named cases / units detail (eighth)
+
+**GoodRx (FTC Health Breach Notification Rule — dark patterns in consent)**  
+Feb 2023 FTC→DOJ action: GoodRx shared Rx/health data with Facebook/Google/Criteo etc. contrary to promises; used data to retarget med-specific ads; fake HIPAA seal alleged. Stipulated order: $1.5M civil penalty; permanent bar on sharing user health info with applicable third parties for advertising; **affirmative express consent** for other sharing; order **prohibits using manipulative designs / dark patterns to obtain consent**. Maps to Messenger (trust/seal) + Defaults/Salience (consent UI) — privacy lane, not PBM list-price sludge.
+
+**Humana — Barrows et al. (W.D. Ky. 3:23-cv-00654)**  
+Class allegations: Humana used **nH Predict** AI to deny/cut post-acute care contrary to individual clinical need, without adequate disclosure. Judge Rebecca Grady Jennings (≈14–15 Aug 2025): contract, implied covenant of good faith, and common-law fraud claims may proceed; several statutory unfair-practices claims dismissed (Medicare preemption). **Litigation stage** — cite as allegation with live claims, not adjudicated “deny-by-design” fact. Lever map: Defaults/friction (algorithmic gate) + Ego (clinical signature theatre) — same family as UHC Lokken / Cigna PxDx.
+
+**COMESA Regulations 2025 — dark patterns per se**  
+Council of Ministers approved **4 Dec 2025**. Chapter Five Unfair Trade Practices, Regulation 53 False or Misleading Representation includes “(c) engage in practices that amount to dark patterns or scams” and states “Dark patterns and scams shall be prohibited per se.” Regional binding instrument for Common Market — enforcement will run through COMESA Competition and Consumer Commission + Member States. Closes Africa **policy** gap more than corporate-unit census.
+
+**Rabobank Behavioral Expert team**  
+Careers/recruiting primary: 5-member Behavioral Expert team under Lead Behavioral Expertise; organisational psychology / culture interventions, evidence-based behaviour change with HR Business and leadership — **internal Norms/Ego/Messenger**, not consumer checkout CRO. Counts as post-2023 EU bank public BE capacity naming.
+
+**Nubank (product nudge, not unit)**  
+Bloomberg Línea (29 Sep 2025): adolescent credit card with limit tied to “caixinhas” savings — framed explicitly via Thaler nudge / auto-enrol analogy. Useful as **product-level Defaults + Incentives** example; does **not** close named in-house Behavioural Science lab gap.
+
+### 6. Gap board after eighth pass
+
+| Gap | Status after eighth |
+| --- | --- |
+| Canada OPC / Competition Bureau | **Closed for 2024–26 slice** (Cineplex, SiriusXM CA, DoorDash/Wonderland suits, OPC Sweep + FPT resolution) |
+| UK CMA post-2024 | **Closed for slice** (Wowcher; DMCCA 8; Adobe UK open; Spring 2027 sub rules announced) |
+| Recommender / addictive design | **Preliminary closes** (TikTok Feb 2026 + Meta Jul 2026 addictive-design; Oct 2024 RFIs) — watch for final decisions |
+| GoodRx dark-pattern consent | **Partially closed** (FTC order names dark patterns) |
+| Humana AI sludge | **Open litigation primary** added (distinct from Cigna/UHC filings already in brief) |
+| COMESA dark patterns | **Statute closed**; firm-level Africa BE units still open |
+| Nubank/Ambev named units | Still open |
+| Norton/Autodesk/LinkedIn Premium cancel | Still open |
+| VA named ARL 2024–26 | Still open |
+| Lobbying × BE | Still open |
+
+## Sources (continued — eighth pass)
+
+Verification: WebFetch of OPC Sweep report, FPT resolution, Competition Bureau presses (Cineplex, SiriusXM, DoorDash, Wonderland), CMA Wowcher / Nov 2025 pricing drive / Adobe UK case page, EC DSA addictive-design + recommender RFI pages, FTC GoodRx press, COMESA Regulations 2025 PDF (Reg. 53), Rabobank Behavioral Expert vacancy, Swiss Re BRU page (continuity only). Humana *Barrows* via Bloomberg Law + GovInfo docket references. Some EC/FTC pages may 403 datacenter curl — content confirmed via WebFetch.
+
+136. Competition Bureau — Cineplex drip-pricing Tribunal win / ~C$38.9M penalty (23 Sep 2024). https://www.canada.ca/en/competition-bureau/news/2024/09/competition-bureau-wins-deceptive-marketing-case-against-cineplex.html
+137. Competition Bureau — SiriusXM Canada C$3.3M drip-pricing settlement (5 Jun 2024). https://www.canada.ca/en/competition-bureau/news/2024/06/sirius-to-pay-33-million-penalty-to-settle-concerns-over-subscription-price-advertising.html
+138. Competition Bureau — DoorDash drip-pricing application (9 Jun 2025). https://www.canada.ca/en/competition-bureau/news/2025/06/competition-bureau-sues-doordash-for-allegedly-advertising-misleading-prices-and-discounts.html
+139. Competition Bureau — Canada’s Wonderland drip-pricing application (5 May 2025). https://www.canada.ca/en/competition-bureau/news/2025/05/competition-bureau-sues-canadas-wonderland-for-allegedly-advertising-misleading-prices-online.html
+140. OPC — Sweep Report 2024: Deceptive Design Patterns (GPEN; 145 CA sites/apps; 99% ≥1 indicator). https://www.priv.gc.ca/en/about-the-opc/what-we-do/international-collaboration/international-privacy-networks/international-privacy-sweep/2024_sweep/opc-sweep-report-2024/ — PDF https://www.priv.gc.ca/media/6299/opc-gpen-2024-eng.pdf
+141. FPT Privacy Commissioners — Resolution: Identifying and mitigating harms from privacy-related deceptive design patterns (Toronto, 8–10 Oct 2024). https://www.priv.gc.ca/en/about-the-opc/what-we-do/provincial-and-territorial-collaboration/joint-resolutions-with-provinces-and-territories/res_241010_dd/
+142. CMA — Wowcher undertakings / >£4M VIP refunds (19 Jul 2024). https://www.gov.uk/government/news/cma-secures-over-4-million-in-refunds-for-wowcher-customers — case https://www.gov.uk/cma-cases/wowcher-group-consumer-protection-case
+143. CMA — Online pricing practices drive; 8 DMCCA investigations + 100 advisory letters (18 Nov 2025). https://www.gov.uk/government/news/cma-launches-major-consumer-protection-drive-focused-on-online-pricing-practices
+144. CMA — Adobe UK early-termination-fee investigation opened (19 Mar 2026; open, no finding). https://www.gov.uk/cma-cases/adobe-consumer-protection-enforcement-case
+145. GOV.UK / DBT — Subscription traps crackdown; rules expected Spring 2027 (~£400M/yr savings framing). https://www.gov.uk/government/news/consumers-to-save-around-400-million-every-year-from-government-crackdown-on-costly-subscription-traps
+146. European Commission — RFI to YouTube, Snapchat, TikTok on recommender systems under DSA (2 Oct 2024). https://digital-strategy.ec.europa.eu/en/news/commission-sends-requests-information-youtube-snapchat-and-tiktok-recommender-systems-under-digital
+147. European Commission — Preliminary findings: TikTok addictive design breaches DSA (6 Feb 2026). https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-tiktoks-addictive-design-breach-digital-services-act
+148. European Commission — Preliminary findings: Meta Instagram/Facebook addictive design breaches DSA (10 Jul 2026). https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-addictive-design-instagram-and-facebook-breach-digital-services-act
+149. FTC — GoodRx Health Breach Notification Rule enforcement; dark-patterns ban in consent order ($1.5M) (1 Feb 2023). https://www.ftc.gov/news-events/news/press-releases/2023/02/ftc-enforcement-action-bar-goodrx-sharing-consumers-sensitive-health-info-advertising
+150. COMESA — Competition and Consumer Protection Regulations, 2025 (Council 4 Dec 2025); Reg. 53 dark patterns/scams prohibited per se. https://comesacompetition.org/wp-content/uploads/2026/03/COMESA-Competition-and-Consumer-Protection-Regulation-2025.pdf
+151. Rabobank — Behavioral Expert vacancy (Behavioral Expert team / Lead Behavioral Expertise; culture & behaviour interventions). https://www.banken.nl/vacatures/43204/rabobank/behavioral-expert
+152. Bloomberg Law — *Barrows* AI class action vs Humana proceeds (15 Aug 2025); W.D. Ky. 3:23-cv-00654. https://news.bloomberglaw.com/health-law-and-business/ai-class-action-against-humana-gets-federal-judges-go-ahead — docket context https://www.govinfo.gov/app/details/USCOURTS-kywd-3_23-cv-00654/context
+153. Bloomberg Línea — Nubank adolescent credit / “caixinhas” framed as nudge (29 Sep 2025) — product-level, not named BE unit. https://www.bloomberglinea.com.br/negocios/nubank-cresce-entre-adolescentes-agora-quer-ensinar-a-poupar-com-cartao-de-credito/
+
 ---
 
-*End of brief (first–seventh same-day passes). Committed to neuresthetics/fallacy_catalog under research/ at Jason's request (2026-10-25). Contained MINDSPACE research note — not part of fallacy_catalog METHOD or fallacy audits.*
-
+*End of brief (first–eighth same-day passes). Committed to neuresthetics/fallacy_catalog under research/ through the eighth pass at Jason Burns's request (2026-10-26). Contained MINDSPACE research note — not part of fallacy_catalog METHOD.md or fallacy audits. Distilled memo: `corporate_mindspace_MEMO_2026-10-25.md`.*
