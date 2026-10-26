@@ -73,7 +73,7 @@ Corporations run the **same lever stack** as public BI (Defaults, Salience, Norm
 
 Nubank/Ambev *named* BE units · Norton/Autodesk/LinkedIn Premium FTC cancel parallels · VA named 2024–26 ARL defendants · Fortune GR × behavioural design primary · Africa *corporate* labs (statute ≠ units)
 
-Full brief (tables, all #sources): `/workspace/mindspace/research/corporate_mindspace_2026-10-25.md`  
-GitHub (through pass 7 only, @ `2cd7195`): `neuresthetics/fallacy_catalog/research/corporate_mindspace_2026-10-25.md`
+Full brief (tables, all #sources; through eighth pass): `research/corporate_mindspace_2026-10-25.md`  
+GitHub (`main` @ `6a961643ca64ee00e69fa439654abbfe7602c671`): `neuresthetics/fallacy_catalog/research/corporate_mindspace_2026-10-25.md` · memo `neuresthetics/fallacy_catalog/research/corporate_mindspace_MEMO_2026-10-25.md`
 
 🧠
