@@ -1,0 +1,85 @@
+{
+  "passage_id": "method_ex1_ad_hominem",
+  "source_text": "Dr. Reyes says the bridge needs new bearings, and she points to the corrosion readings in the inspection report. But Reyes was fired from her last job for showing up late, so we can ignore her bridge argument.",
+  "expected_checker": {
+    "entry_id": "ad-hominem",
+    "verdict": "flag"
+  },
+  "steps": [
+    {
+      "id": "s1",
+      "span": { "quote": "Reyes was fired from her last job for showing up late, so we can ignore her bridge argument." },
+      "claim_ids": ["c_arg", "c_rej", "c_trait"]
+    }
+  ],
+  "agents": [
+    {
+      "id": "reyes",
+      "name_span": { "quote": "Dr. Reyes" },
+      "traits": [
+        {
+          "id": "t_late",
+          "label": "fired for showing up late",
+          "span": { "quote": "fired from her last job for showing up late" }
+        }
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "id": "c_arg",
+      "text": "The bridge needs new bearings (supported by corrosion readings in the inspection report).",
+      "span": { "quote": "the bridge needs new bearings, and she points to the corrosion readings" },
+      "role": "premise",
+      "hedge": "none",
+      "scope": "truth",
+      "speaker": "reyes",
+      "is_argument_or_proposal": true
+    },
+    {
+      "id": "c_trait",
+      "text": "Reyes was fired for showing up late.",
+      "span": { "quote": "Reyes was fired from her last job for showing up late" },
+      "role": "premise",
+      "hedge": "none",
+      "scope": "truth",
+      "speaker": null
+    },
+    {
+      "id": "c_rej",
+      "text": "We can ignore Reyes's bridge argument.",
+      "span": { "quote": "so we can ignore her bridge argument" },
+      "role": "conclusion",
+      "hedge": "none",
+      "scope": "action",
+      "speaker": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_att",
+      "type": "attacks_person",
+      "source": "t_late",
+      "target": "c_arg",
+      "span": { "quote": "Reyes was fired from her last job for showing up late" },
+      "answered": false
+    },
+    {
+      "id": "e_so",
+      "type": "supports",
+      "source": "c_trait",
+      "target": "c_rej",
+      "span": { "quote": "so we can ignore her bridge argument" },
+      "warrant": "asserted"
+    },
+    {
+      "id": "e_ign",
+      "type": "ignores",
+      "source": "c_rej",
+      "target": "c_arg",
+      "span": { "quote": "ignore her bridge argument" },
+      "answered": false
+    }
+  ],
+  "extractor": { "kind": "human", "charity_applied": true }
+}

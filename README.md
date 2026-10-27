@@ -23,6 +23,7 @@ Current version: **0.6.1**.
 | [`fallacies.json`](fallacies.json) | The catalog in machine-readable form. This is the source of truth. |
 | [`FALLACIES.md`](FALLACIES.md) | Readable version, grouped by category and alphabetical within each category. Generated from the JSON. |
 | [`METHOD.md`](METHOD.md) | The procedure for checking an argument, with worked examples. |
+| [`IDEA_DETECTION.md`](IDEA_DETECTION.md) | Idea-level checker: an extractor may propose an Idea IR; only the deterministic checker verdicts. Pilot patterns, not a new catalog. |
 | [`SOURCES.md`](SOURCES.md) | The references and how they are cited. Generated from the JSON. |
 | [`tools/build_md.py`](tools/build_md.py) | Validates the JSON and regenerates the two generated Markdown files. |
 | [`frameworks/`](frameworks/) | Sourced reference frameworks kept separate from the fallacy list, currently MINDSPACE (Dolan et al. 2010) for detecting persuasion levers. Not part of the audit method; see the folder README. |
@@ -91,6 +92,10 @@ Follow [METHOD.md](METHOD.md). In outline, for each step of an argument:
 5. Rule out each legitimate look-alike.
 6. Handle conditions that may need outside facts.
 7. Give a verdict: **flag**, **possible issue** (say what would settle it) or **no issue**.
+
+### Idea-level checker
+
+[IDEA_DETECTION.md](IDEA_DETECTION.md) is the machine-checkable companion to this procedure. An extractor may propose an Idea IR (claims, support edges, quoted spans). A deterministic checker matches pilot `ir_pattern` / `ir_forbid` entries and is the only component that emits **flag**, **possible issue**, or **no issue**. It does not replace METHOD, does not add fallacy names, and does not consult MINDSPACE. Patterns stay in a side file; they are not merged into `fallacies.json`.
 
 ### False-positive controls
 
@@ -195,6 +200,16 @@ python3 tests/round2/score.py
 
 ```
 python3 tests/round3/score.py
+```
+
+Check the idea-level fixtures (METHOD example 1 flags `ad-hominem`; example 2 is `no_issue` on `appeal-to-authority`):
+
+```
+python3 -m idea_detection.eval_fixtures
+```
+
+```
+python3 -m unittest tests/idea_detection/test_checker.py
 ```
 
 Confirm that the recomputed scores match the committed ones:

@@ -4,6 +4,8 @@ This is the procedure for using [FALLACIES.md](FALLACIES.md) on a real argument.
 
 Naming a fallacy does not show that the conclusion is false. It shows only that this step does not support it (to claim more would be the [argument from fallacy](FALLACIES.md#argument-from-fallacy)).
 
+A machine-checkable companion lives in [idea_detection/](idea_detection/README.md) and is summarized in [IDEA_DETECTION.md](IDEA_DETECTION.md). It does not replace this procedure. An extractor may propose an Idea IR; only the deterministic checker may issue a verdict.
+
 ## The procedure
 
 Work one step of the argument at a time. For each step you think goes wrong:

@@ -1,0 +1,179 @@
+{
+  "title": "Pilot ir_pattern / ir_forbid drafts",
+  "status": "pilot side file — not merged into fallacies.json. Catalog prose conditions remain authoritative.",
+  "pattern_language": {
+    "combinators": ["all", "any", "not"],
+    "atoms": [
+      "exists_claim",
+      "exists_edge",
+      "exists_agent_trait",
+      "predicate"
+    ],
+    "note": "Every matched atom must bind a span.quote at eval time. Patterns must not contradict required_conditions / legitimate_lookalikes prose."
+  },
+  "entries": [
+    {
+      "id": "ad-hominem",
+      "geometric_break_ref": "F001",
+      "support_must_be_absent": ["unanswered_reasons"],
+      "ir_pattern": {
+        "all": [
+          { "exists_claim": { "var": "C", "is_argument_or_proposal": true } },
+          { "exists_edge": { "type": "attacks_person", "target_var": "C", "var": "E_att" } },
+          { "exists_edge": { "type": "supports", "from_attack": "E_att", "to_reject_of": "C" } },
+          { "predicate": "reasons_unanswered", "of": "C" },
+          { "predicate": "trait_irrelevant_to_reasons", "of": "C", "trait_from": "E_att" }
+        ]
+      },
+      "ir_forbid": [
+        { "predicate": "claim_rests_on_testimony", "of": "C" },
+        { "predicate": "uses_opponents_own_commitments" },
+        { "predicate": "insult_without_inferential_edge" }
+      ]
+    },
+    {
+      "id": "appeal-to-authority",
+      "outside_text_predicates": [
+        "source_not_expert_on_question",
+        "experts_substantially_disagree",
+        "source_untrustworthy",
+        "source_misquoted"
+      ],
+      "ir_pattern": {
+        "all": [
+          { "exists_claim": { "var": "K", "role_in": ["conclusion", "recommendation"] } },
+          { "exists_edge": { "type": "appeals_to_source", "target_var": "K", "var": "E_auth" } },
+          {
+            "any": [
+              { "predicate": "source_not_expert_on_question", "of": "E_auth" },
+              { "predicate": "experts_substantially_disagree", "of": "E_auth" },
+              { "predicate": "source_untrustworthy", "of": "E_auth" },
+              { "predicate": "source_misquoted", "of": "E_auth" }
+            ]
+          },
+          { "predicate": "authority_treated_as_settling", "of": "K" }
+        ]
+      },
+      "ir_forbid": [
+        {
+          "all": [
+            { "predicate": "source_expert_in_field", "of": "E_auth" },
+            { "predicate": "passage_reports_expert_agreement", "of": "E_auth" }
+          ]
+        },
+        { "predicate": "authority_one_piece_among_others", "of": "K" }
+      ]
+    },
+    {
+      "id": "equivocation",
+      "term_identity_required": true,
+      "ir_pattern": {
+        "all": [
+          { "predicate": "term_occurs_at_least", "term_var": "T", "n": 2 },
+          { "predicate": "sense_shift", "term_var": "T" },
+          { "predicate": "conclusion_requires_sense_identity", "term_var": "T" }
+        ]
+      },
+      "ir_forbid": [
+        { "predicate": "single_sense_throughout", "term_var": "T" },
+        { "predicate": "wordplay_not_argument" }
+      ],
+      "tie_break_note": "Same sense + rule rationale fails case → accident (METHOD cross-family)."
+    },
+    {
+      "id": "false-cause",
+      "use_only_if_nothing_more_specific": true,
+      "geometric_break_ref": "F034",
+      "ir_pattern": {
+        "all": [
+          {
+            "any": [
+              { "exists_edge": { "type": "causes", "var": "E_c" } },
+              { "exists_claim": { "var": "K", "asserts_cause": true } }
+            ]
+          },
+          { "predicate": "support_only_correlate_or_sequence", "of": "E_c" },
+          { "predicate": "obvious_alternative_left_open", "of": "E_c" },
+          { "predicate": "no_more_specific_causal_entry_matches" }
+        ]
+      },
+      "ir_forbid": [
+        { "predicate": "tentative_hypothesis_for_testing", "of": "K" }
+      ]
+    },
+    {
+      "id": "begging-the-question",
+      "geometric_break_ref": "F014",
+      "ir_pattern": {
+        "all": [
+          { "exists_claim": { "var": "K", "role_in": ["conclusion"] } },
+          {
+            "any": [
+              { "predicate": "depends_on_cycle", "of": "K" },
+              { "predicate": "premise_asserts_or_presupposes", "of": "K", "premise_var": "P" }
+            ]
+          },
+          { "predicate": "not_independently_supported", "of": "P" }
+        ]
+      },
+      "ir_forbid": [
+        { "predicate": "premise_independently_defensible", "of": "P" },
+        { "predicate": "proper_recursive_definition" },
+        { "predicate": "valid_containment_only" }
+      ]
+    },
+    {
+      "id": "cherry-picking",
+      "ir_pattern": {
+        "all": [
+          { "exists_edge": { "type": "selects_subset", "var": "E_sel", "set_var": "S" } },
+          { "predicate": "rest_against_or_dilutes", "of": "S" },
+          { "exists_claim": { "var": "K", "role_in": ["conclusion"] } },
+          { "predicate": "conclusion_rests_on_subset", "of": "K", "set_var": "S" },
+          { "predicate": "rest_unanswered", "of": "S" }
+        ]
+      },
+      "ir_forbid": [
+        { "predicate": "subset_pre_specified_independent_reason", "of": "S" },
+        { "predicate": "rest_acknowledged_and_answered", "of": "S" },
+        { "predicate": "contrary_absent_from_text_use_suppressed_evidence" }
+      ]
+    },
+    {
+      "id": "straw-man",
+      "outside_text_predicates": ["misattributes"],
+      "geometric_break_ref": "F002",
+      "ir_pattern": {
+        "all": [
+          { "exists_claim": { "var": "R", "role_in": ["attribution"] } },
+          { "exists_edge": { "type": "misattributes", "source_var": "R", "var": "E_mis" } },
+          { "exists_edge": { "type": "attacks_claim", "target_var": "R" } },
+          { "predicate": "presented_as_refuting_actual_position", "of": "R" }
+        ]
+      },
+      "ir_forbid": [
+        { "predicate": "restatement_holder_would_accept", "of": "R" },
+        { "predicate": "draws_actual_commitment_consequence", "of": "R" },
+        { "predicate": "names_whose_version_is_rebutted", "of": "R" }
+      ],
+      "note": "Without original wording in passage (or reliable in-text summary), at most possible issue (METHOD outside_text_conditions: [2])."
+    },
+    {
+      "id": "argument-from-ignorance",
+      "ir_pattern": {
+        "all": [
+          { "exists_claim": { "var": "U", "role_in": ["premise"], "text_signals_unproven": true } },
+          { "exists_claim": { "var": "K", "role_in": ["conclusion"] } },
+          { "exists_edge": { "type": "supports", "source_var": "U", "target_var": "K" } },
+          { "predicate": "absence_of_proof_used_as_proof", "from": "U", "to": "K" },
+          { "predicate": "no_thorough_search_shown" }
+        ]
+      },
+      "ir_forbid": [
+        { "predicate": "thorough_search_done" },
+        { "predicate": "procedural_default_action_only" },
+        { "predicate": "precautionary_decision_with_costs_weighed" }
+      ]
+    }
+  ]
+}
