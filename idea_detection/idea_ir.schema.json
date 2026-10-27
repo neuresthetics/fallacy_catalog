@@ -1,0 +1,229 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/neuresthetics/fallacy_catalog/blob/main/idea_detection/idea_ir.schema.json",
+  "title": "IdeaIR",
+  "description": "Minimal IR for idea-level fallacy detection. Companion to idea_detection/IDEA_LEVEL_DETECTION.md. The checker strips expected_checker and never treats it as a verdict.",
+  "type": "object",
+  "required": ["passage_id", "source_text", "steps", "claims", "edges"],
+  "additionalProperties": false,
+  "properties": {
+    "passage_id": { "type": "string" },
+    "source_text": { "type": "string" },
+    "excerpt": {
+      "type": "boolean",
+      "description": "Passage is an excerpt; support may lie past the boundary. A match is at most possible_issue."
+    },
+    "contested_reading": {
+      "type": ["string", "null"],
+      "description": "Named scholarly dispute. When set, a match is at most possible_issue."
+    },
+    "expected_checker": {
+      "type": "object",
+      "description": "Eval metadata only. Ignored by the checker.",
+      "additionalProperties": false,
+      "required": ["entry_id", "verdict"],
+      "properties": {
+        "entry_id": { "type": "string" },
+        "verdict": { "enum": ["flag", "possible_issue", "no_issue"] },
+        "reason": { "type": "string" }
+      }
+    },
+    "steps": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/Step" }
+    },
+    "claims": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/Claim" }
+    },
+    "edges": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/Edge" }
+    },
+    "terms": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/Term" }
+    },
+    "bindings": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/TermBinding" }
+    },
+    "evidence_sets": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/EvidenceSet" }
+    },
+    "agents": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/Agent" }
+    },
+    "extractor": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": { "enum": ["llm", "human"] },
+        "model": { "type": "string" },
+        "charity_applied": { "type": "boolean" }
+      }
+    }
+  },
+  "$defs": {
+    "Span": {
+      "type": "object",
+      "required": ["quote"],
+      "additionalProperties": false,
+      "properties": {
+        "quote": { "type": "string" },
+        "start": { "type": "integer", "minimum": 0 },
+        "end": { "type": "integer", "minimum": 0 }
+      }
+    },
+    "Step": {
+      "type": "object",
+      "required": ["id", "claim_ids"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "span": { "$ref": "#/$defs/Span" },
+        "claim_ids": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "speaker": { "type": ["string", "null"] },
+        "no_argument": { "type": "boolean" }
+      }
+    },
+    "Claim": {
+      "type": "object",
+      "required": ["id", "text", "role", "hedge", "scope"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "text": { "type": "string" },
+        "span": { "$ref": "#/$defs/Span" },
+        "role": {
+          "enum": [
+            "premise",
+            "conclusion",
+            "illustration",
+            "recommendation",
+            "default_rule",
+            "report",
+            "attribution"
+          ]
+        },
+        "hedge": { "enum": ["none", "weak", "strong"] },
+        "scope": {
+          "enum": ["truth", "action", "investigate", "procedural"]
+        },
+        "speaker": { "type": ["string", "null"] },
+        "unstated": { "type": "boolean" },
+        "common_knowledge": { "type": "boolean" },
+        "asserts_cause": { "type": "boolean" },
+        "is_argument_or_proposal": { "type": "boolean" }
+      }
+    },
+    "Edge": {
+      "type": "object",
+      "required": ["id", "type", "source", "target"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "type": {
+          "enum": [
+            "supports",
+            "depends_on",
+            "causes",
+            "correlates",
+            "appeals_to_source",
+            "attacks_person",
+            "attacks_claim",
+            "misattributes",
+            "shifts_burden",
+            "selects_subset",
+            "ignores",
+            "instantiates"
+          ]
+        },
+        "source": { "type": "string" },
+        "target": { "type": "string" },
+        "span": { "$ref": "#/$defs/Span" },
+        "warrant": {
+          "enum": ["asserted", "inductive", "deductive"]
+        },
+        "answered": { "type": "boolean" }
+      }
+    },
+    "Term": {
+      "type": "object",
+      "required": ["id", "surface"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "surface": { "type": "string" },
+        "senses": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "gloss"],
+            "additionalProperties": false,
+            "properties": {
+              "id": { "type": "string" },
+              "gloss": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "TermBinding": {
+      "type": "object",
+      "required": ["term_id", "claim_id", "sense_id"],
+      "additionalProperties": false,
+      "properties": {
+        "term_id": { "type": "string" },
+        "claim_id": { "type": "string" },
+        "sense_id": { "type": "string" },
+        "span": { "$ref": "#/$defs/Span" }
+      }
+    },
+    "EvidenceSet": {
+      "type": "object",
+      "required": ["id", "member_ids"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "member_ids": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "selection_time": {
+          "enum": ["before_data", "after_data", "unknown"]
+        },
+        "stated_in_text": { "type": "boolean" },
+        "direction": { "enum": ["favors", "against", "mixed"] },
+        "prior_prediction": { "type": ["boolean", "null"] }
+      }
+    },
+    "Agent": {
+      "type": "object",
+      "required": ["id"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "name_span": { "$ref": "#/$defs/Span" },
+        "traits": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "label"],
+            "additionalProperties": false,
+            "properties": {
+              "id": { "type": "string" },
+              "label": { "type": "string" },
+              "span": { "$ref": "#/$defs/Span" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "passage_id": "method_ex2_authority",
+  "source_text": "Every national health agency and the large reviews of the trial data agree that serious side effects from this vaccine are rare, so I'm not worried about getting it.",
+  "expected_checker": {
+    "entry_id": "appeal-to-authority",
+    "verdict": "no_issue",
+    "reason": "illegitimacy disjunct not met; ir_forbid expert-agreement matches"
+  },
+  "steps": [
+    {
+      "id": "s1",
+      "span": { "quote": "Every national health agency and the large reviews of the trial data agree that serious side effects from this vaccine are rare, so I'm not worried about getting it." },
+      "claim_ids": ["c_agree", "c_risk"]
+    }
+  ],
+  "claims": [
+    {
+      "id": "c_agree",
+      "text": "National health agencies and large reviews of trial data agree that serious side effects are rare.",
+      "span": { "quote": "Every national health agency and the large reviews of the trial data agree that serious side effects from this vaccine are rare" },
+      "role": "premise",
+      "hedge": "none",
+      "scope": "truth",
+      "speaker": null
+    },
+    {
+      "id": "c_risk",
+      "text": "The speaker's risk from getting the vaccine is low enough not to worry.",
+      "span": { "quote": "so I'm not worried about getting it" },
+      "role": "conclusion",
+      "hedge": "weak",
+      "scope": "action",
+      "speaker": null
+    }
+  ],
+  "edges": [
+    {
+      "id": "e_auth",
+      "type": "appeals_to_source",
+      "source": "c_agree",
+      "target": "c_risk",
+      "span": { "quote": "Every national health agency and the large reviews of the trial data agree" },
+      "warrant": "inductive"
+    }
+  ],
+  "agents": [
+    {
+      "id": "agencies_reviews",
+      "name_span": { "quote": "national health agency and the large reviews" },
+      "traits": []
+    }
+  ],
+  "extractor": { "kind": "human", "charity_applied": true }
+}

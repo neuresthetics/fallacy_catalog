@@ -11,6 +11,7 @@ This folder holds every test run against the catalog: the passages, the answer k
 | `round3/` | 100 passages (43 legit, 11 no-argument, 35 fallacy, 11 mixed), 20 of them real public-domain excerpts. Reviewers E (strict literal) and F (practical). Catalog v0.5.0. |
 | `regression/` | Non-blind re-checks after the v0.5.0 and v0.6.0 fixes (with a v0.6.1 note on the two dropped entries). |
 | `audit/` | The two independent audits of the catalog that came before blind testing. |
+| `idea_detection/` | Checker tests for the idea-level layer (METHOD fixtures, outside-text gates, `text_detectable: no`). |
 
 Each round folder contains:
 
