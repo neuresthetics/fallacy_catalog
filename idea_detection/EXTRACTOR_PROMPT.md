@@ -20,6 +20,9 @@ Optional when needed: `terms`, `bindings`, `evidence_sets`, `agents`, `extractor
 7. **Excerpts:** do not import memory of text outside the given passage.
 8. **Dialogues:** set `speaker` per claim; each participant’s steps are separate.
 9. **No argument:** reports, teaching prompts, satire without a participant advancing an argument → `steps[].no_argument: true`, claims as `report` only.
+10. **Anti-collapse:** if the passage has a premise→conclusion cue (`so`, `must`, `therefore`, `thus`, dismiss, ignore), do **not** emit only `role: "report"` with zero edges. Prefer under-specified claims and edges over an empty report.
+11. **Quoted adversary:** when a quoted speaker is answered, emit separate `speaker`s and at least one inferential edge (`supports`, `attacks_claim`, `attacks_person`, or `ignores`).
+12. **Association:** “associated with / once supported / backed by” offered for an evaluative conclusion → `agents` + trait, a `supports` edge into that conclusion, and optional `ignores` of object-level reasons. Do **not** require `attacks_person`.
 
 ## Graph rules
 
@@ -29,7 +32,25 @@ Optional when needed: `terms`, `bindings`, `evidence_sets`, `agents`, `extractor
 - For repeated key words that look sense-shifting: fill `terms` + `bindings` with distinct `sense_id`s and glosses.
 - For person attacks: create `agents` with `traits`, and `attacks_person` edges.
 - For selective evidence: create `evidence_sets` and `selects_subset` / `ignores` edges.
+- A particular case offered as settling a group → `instantiates` from the case to the general conclusion.
+- A chain of steps to an extreme result → one `causes` edge per step.
+- “Either / or” or “the only choice” used to settle a conclusion → that exclusive premise and a `supports` edge into the conclusion.
+- Many or most people offered as the reason a claim is true or right → `appeals_to_source`.
 - Set `extractor.charity_applied: true` when these rules were applied.
+
+## Few-shots (shapes, not verdicts)
+
+Do not name a fallacy. These show the graph to emit when the cue is present.
+
+1. **Anti-collapse (dismiss after a cost note).** Passage: “The inspection would cost more this year. But Mora was fired for lateness, so dismiss the inspection.” Bad: one `report`, zero edges. Emit the cost claim, the lateness trait on an agent, `attacks_person`, `supports` into “dismiss the inspection”, and `ignores` of the cost note.
+
+2. **Anti-collapse (`so` / `must`).** Passage: “The two shops on this street were closed, so every shop in town must be closed.” Bad: one `report`. Emit the case, the general conclusion, and `instantiates`.
+
+3. **Dialogue / quotation.** Passage: Alex said, “The plant violates the permit.” Blair answered, “You skipped the maintenance logs, so the permit point can be set aside.” Bad: one report with no speakers. Emit Alex’s claim and Blair’s claims with separate `speaker`s, plus `supports` or `ignores` from the reply into setting the permit point aside.
+
+4. **Dialogue, second speaker.** Passage: “Rin wrote, ‘The levy is paid.’ Sol replied, ‘You voted against the levy last year, therefore ignore that letter.’” Two speakers and at least one inferential edge. Not a single report.
+
+5. **Association, no person-attack required.** Passage: “This housing plan is associated with a developer who once supported the last failure, so it must be a bad plan.” Emit an agent trait (“associated with” / “once supported”), `supports` into “must be a bad plan”, and `ignores` if an object-level reason is brushed aside. `attacks_person` is optional and not required.
 
 ## Forbidden
 

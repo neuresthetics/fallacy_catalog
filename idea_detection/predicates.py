@@ -23,6 +23,7 @@ from idea_detection.model import (
     MISSING_FACT,
     NOT_EXPERT_RE,
     RECURSIVE_RE,
+    REJECT_RE,
     RULED_OUT_RE,
     SEQUENCE_RE,
     TESTIMONY_RE,
@@ -33,6 +34,7 @@ from idea_detection.model import (
     claim_of,
     content_overlap,
     edge_of,
+    quotes_related,
     find_cycle,
     has_inferential_attack,
     jaccard,
@@ -45,6 +47,113 @@ from idea_detection.model import (
 
 REPORT_RE = re.compile(
     r"\b(?:says?|said|according to|claims?|agrees?|writes|wrote)\b",
+    re.I,
+)
+SMALL_N_RE = re.compile(
+    r"\b(?:one|two|three|a couple|a few|a single|a handful|"
+    r"my (?:\w+ )?neighbou?rs?)\b",
+    re.I,
+)
+SWEEP_RE = re.compile(
+    r"\b(?:all|every|everyone|everybody|always|never|anyone|no one|"
+    r"people|the whole|in general)\b",
+    re.I,
+)
+UNIFORM_POP_RE = re.compile(
+    r"\b(?:uniform|identical in this respect|known to be the same|all the same)\b",
+    re.I,
+)
+LOW_STAKES_RE = re.compile(
+    r"\b(?:low-stakes|low stakes|reversible|we can undo|easy to reverse)\b",
+    re.I,
+)
+LARGE_EFFECT_RE = re.compile(
+    r"\b(?:large,? consistent|large and consistent|consistent effect)\b",
+    re.I,
+)
+SELECTION_BIAS_RE = re.compile(
+    r"\b(?:unrepresentative|biased sample|self-selected|selection bias|"
+    r"how the sample was chosen)\b",
+    re.I,
+)
+EXCLUSIVE_RE = re.compile(
+    r"\beither\b.+\bor\b|\bthe only (?:choice|options?|alternative|way)\b|"
+    r"\bonly two (?:choices|options|possibilities)\b|"
+    r"\bno other (?:choice|option|way)\b|\bmust be one or the other\b",
+    re.I,
+)
+NON_EXCLUSIVE_RE = re.compile(
+    r"\b(?:main options|among others|not the only|not saying (?:those|these) are the only|"
+    r"could also|for example)\b",
+    re.I,
+)
+EXHAUSTIVE_SPLIT_RE = re.compile(
+    r"\b(?:true dichotomy|logically exhaustive|exhaust the possibilities|"
+    r"no third possibility|these two exhaust)\b",
+    re.I,
+)
+COMPLEMENT_RE = re.compile(
+    r"\b(?:or not\b|whether or not|on or off|true or false|pass or fail|"
+    r"guilty or not guilty|alive or dead)\b",
+    re.I,
+)
+RELY_SPLIT_RE = re.compile(
+    r"\b(?:must|have to|therefore|no choice|so we)\b",
+    re.I,
+)
+SLOPE_LEAP_RE = re.compile(
+    r"\b(?:soon|inevitabl\w*|before you know|no stopping|slippery|"
+    r"will have no choice)\b",
+    re.I,
+)
+MECHANISM_RE = re.compile(
+    r"\b(?:precedents?|legal duty|bylaws?|statutes?|binding rule|binding precedent|"
+    r"mechanism)\b",
+    re.I,
+)
+LINE_DRAWING_RE = re.compile(
+    r"\b(?:where (?:do|to) (?:you |we )?draw the line|no sharp (?:line|boundary)|"
+    r"tiny vague steps?|no practical prediction)\b",
+    re.I,
+)
+UNDESIRABLE_RE = re.compile(
+    r"\b(?:worthless|disaster|collapse|ruined|catastrophe|lose everything)\b",
+    re.I,
+)
+CROWD_RE = re.compile(
+    r"\b(?:millions|everyone|everybody|most people|many people|the majority|"
+    r"the masses|most users|people use|common belief|widespread)\b",
+    re.I,
+)
+PREFERENCE_Q_RE = re.compile(
+    r"\b(?:prefer\w*|tastes?|fashion|convention|what people (?:like|want)|"
+    r"the popular|is popular|popular choice|in style)\b",
+    re.I,
+)
+ASSOCIATION_RE = re.compile(
+    r"\b(?:associated with|association with|backed by|endorsed by|linked to|"
+    r"allied with|friend of|in league with|once supported|"
+    r"the company (?:they|it) keeps)\b",
+    re.I,
+)
+EVALUATIVE_REJECT_RE = re.compile(
+    r"\b(?:must be (?:bad|wrong|a bad)|bad plan|condemn\w*|worthless plan)\b",
+    re.I,
+)
+CAUTION_RE = re.compile(
+    r"\b(?:cautious|be careful|be wary|for disclosure|merely noting|just noting|"
+    r"not a reason to reject)\b",
+    re.I,
+)
+PROBATIVE_LINK_RE = re.compile(
+    r"\b(?:same (?:method|fraud|scheme)|witness(?:'s|s)? reliability|"
+    r"paid to (?:say|write|claim)|bears on (?:the|this) (?:claim|plan)|"
+    r"the link shows)\b",
+    re.I,
+)
+SHARED_COMMITMENT_RE = re.compile(
+    r"\b(?:actually shares|same commitment|the specific commitment|"
+    r"endorses this exact|shares the commitment)\b",
     re.I,
 )
 
@@ -239,7 +348,7 @@ def source_misquoted(ctx, env, spec):
     return _unknown(ctx, env, span, "source_misquoted")
 
 
-def authority_treated_as_settling(ctx, env, spec):
+def _treated_as_settling(ctx, env, spec, name):
     claim = claim_of(ctx.ir, env, spec.get("of"))
     if claim is None:
         return []
@@ -256,10 +365,14 @@ def authority_treated_as_settling(ctx, env, spec):
     span = claim.get("span")
     if not ctx.ir.quote_ok(span):
         return []
-    return _closed(env, span, "authority_treated_as_settling")
+    return _closed(env, span, name)
 
 
-def authority_one_piece_among_others(ctx, env, spec):
+def authority_treated_as_settling(ctx, env, spec):
+    return _treated_as_settling(ctx, env, spec, "authority_treated_as_settling")
+
+
+def _one_piece_among_others(ctx, env, spec, name):
     claim = claim_of(ctx.ir, env, spec.get("of"))
     if claim is None:
         return []
@@ -272,7 +385,11 @@ def authority_one_piece_among_others(ctx, env, spec):
     span = others[0].get("span") if ctx.ir.quote_ok(others[0].get("span")) else claim.get("span")
     if not ctx.ir.quote_ok(span):
         return []
-    return _closed(env, span, "authority_one_piece_among_others")
+    return _closed(env, span, name)
+
+
+def authority_one_piece_among_others(ctx, env, spec):
+    return _one_piece_among_others(ctx, env, spec, "authority_one_piece_among_others")
 
 
 def _term_bindings(ctx, term_id):
@@ -777,6 +894,396 @@ def procedural_default_action_only(ctx, env, spec):
     return []
 
 
+def _claim_blob(ctx, claim):
+    return ctx.ir.text_of(claim["id"])
+
+
+def sample_too_small_for_sweep(ctx, env, spec):
+    edge = edge_of(ctx.ir, env, spec)
+    conclusion = claim_of(ctx.ir, env, spec.get("conclusion") or "K")
+    if edge is None or edge.get("type") != "instantiates" or conclusion is None:
+        return []
+    sample = source_side_text(ctx.ir, edge)
+    if not SMALL_N_RE.search(sample) or not SWEEP_RE.search(_claim_blob(ctx, conclusion)):
+        return []
+    span = edge.get("span") if ctx.ir.quote_ok(edge.get("span")) else conclusion.get("span")
+    if not ctx.ir.quote_ok(span):
+        return []
+    return _closed(env, span, "sample_too_small_for_sweep")
+
+
+def population_known_uniform(ctx, env, spec):
+    span = matched_span(ctx.ir.source, UNIFORM_POP_RE)
+    if not span or not ctx.ir.quote_ok(span):
+        return []
+    return _closed(env, span, "population_known_uniform")
+
+
+def cautious_generalization(ctx, env, spec):
+    claim = claim_of(ctx.ir, env, spec.get("of") or "K")
+    if claim is None:
+        return []
+    blob = _claim_blob(ctx, claim)
+    cautious = (
+        claim.get("hedge") == "weak"
+        or claim.get("scope") == "investigate"
+        or HYPOTHESIS_RE.search(blob)
+    )
+    if not cautious:
+        return []
+    span = claim.get("span")
+    if not ctx.ir.quote_ok(span):
+        return []
+    return _closed(env, span, "cautious_generalization")
+
+
+def low_stakes_consistent_effect(ctx, env, spec):
+    if not LOW_STAKES_RE.search(ctx.ir.source) or not LARGE_EFFECT_RE.search(ctx.ir.source):
+        return []
+    span = matched_span(ctx.ir.source, LOW_STAKES_RE)
+    if not span or not ctx.ir.quote_ok(span):
+        return []
+    return _closed(env, span, "low_stakes_consistent_effect")
+
+
+def doubt_is_sample_selection(ctx, env, spec):
+    span = matched_span(ctx.ir.source, SELECTION_BIAS_RE)
+    if not span or not ctx.ir.quote_ok(span):
+        return []
+    return _closed(env, span, "doubt_is_sample_selection")
+
+
+def _split_blob(ctx, env, spec):
+    claim = claim_of(ctx.ir, env, spec.get("of") or "D")
+    if claim is None:
+        return None, ""
+    return claim, _claim_blob(ctx, claim)
+
+
+def exclusive_split_claimed(ctx, env, spec):
+    claim, blob = _split_blob(ctx, env, spec)
+    if claim is None or NON_EXCLUSIVE_RE.search(blob) or not EXCLUSIVE_RE.search(blob):
+        return []
+    span = claim.get("span")
+    if not ctx.ir.quote_ok(span):
+        return []
+    return _closed(env, span, "exclusive_split_claimed")
+
+
+def split_not_a_true_dichotomy(ctx, env, spec):
+    claim, blob = _split_blob(ctx, env, spec)
+    if claim is None:
+        return []
+    if EXHAUSTIVE_SPLIT_RE.search(blob) or COMPLEMENT_RE.search(blob):
+        return []
+    span = claim.get("span")
+    if not ctx.ir.quote_ok(span):
+        return []
+    return _closed(env, span, "split_not_a_true_dichotomy")
+
+
+def conclusion_relies_on_split(ctx, env, spec):
+    claim = claim_of(ctx.ir, env, spec.get("of") or "K")
+    if claim is None or claim.get("hedge") == "weak":
+        return []
+    if not RELY_SPLIT_RE.search(_claim_blob(ctx, claim)):
+        return []
+    span = claim.get("span")
+    if not ctx.ir.quote_ok(span):
+        return []
+    return _closed(env, span, "conclusion_relies_on_split")
+
+
+def options_not_claimed_exhaustive(ctx, env, spec):
+    claim, blob = _split_blob(ctx, env, spec)
+    k = claim_of(ctx.ir, env, "K")
+    texts = [blob]
+    if k is not None:
+        texts.append(_claim_blob(ctx, k))
+    joined = " ".join(texts)
+    if not NON_EXCLUSIVE_RE.search(joined):
+        return []
+    span = matched_span(ctx.ir.source, NON_EXCLUSIVE_RE)
+    if span is None and claim is not None:
+        span = claim.get("span")
+    if not ctx.ir.quote_ok(span):
+        return []
+    return _closed(env, span, "options_not_claimed_exhaustive")
+
+
+def split_shown_exhaustive(ctx, env, spec):
+    claim, blob = _split_blob(ctx, env, spec)
+    if claim is None:
+        return []
+    if not (EXHAUSTIVE_SPLIT_RE.search(blob) or COMPLEMENT_RE.search(blob)):
+        return []
+    span = claim.get("span")
+    if not ctx.ir.quote_ok(span):
+        return []
+    return _closed(env, span, "split_shown_exhaustive")
+
+
+def _incoming_causes(ctx):
+    incoming = {}
+    for edge in ctx.ir.edges:
+        if edge.get("type") == "causes" and edge.get("source") and edge.get("target"):
+            incoming.setdefault(edge.get("target"), []).append(edge)
+    return incoming
+
+
+def _chains_ending_at(ctx, claim_id):
+    incoming = _incoming_causes(ctx)
+    found = []
+
+    def walk(node, path, seen):
+        preds = [edge for edge in incoming.get(node, []) if edge.get("source") not in seen]
+        if not preds:
+            if len(path) >= 2:
+                found.append(list(reversed(path)))
+            return
+        for edge in preds:
+            walk(edge.get("source"), path + [edge], seen | {node})
+
+    if claim_id:
+        walk(claim_id, [], set())
+    return found
+
+
+def _edge_blob(ctx, edge):
+    return " ".join([
+        source_side_text(ctx.ir, edge),
+        ctx.ir.text_of(edge.get("target")),
+    ])
+
+
+def _chain_for(ctx, env, spec):
+    claim = claim_of(ctx.ir, env, spec.get("of") or "K")
+    if claim is None:
+        return None, []
+    chains = _chains_ending_at(ctx, claim["id"])
+    if not chains:
+        return claim, []
+    return claim, chains[0]
+
+
+def _chain_text(ctx, chain):
+    return " ".join(_edge_blob(ctx, edge) for edge in chain)
+
+
+def _links_have_mechanism(ctx, chain):
+    return bool(chain) and all(MECHANISM_RE.search(_edge_blob(ctx, edge)) for edge in chain)
+
+
+def causal_chain_to_outcome(ctx, env, spec):
+    claim, chain = _chain_for(ctx, env, spec)
+    if claim is None or len(chain) < 2:
+        return []
+    blob = _chain_text(ctx, chain) + " " + _claim_blob(ctx, claim)
+    if not UNDESIRABLE_RE.search(blob) and not REJECT_RE.search(ctx.ir.source):
+        return []
+    span = chain[-1].get("span") if ctx.ir.quote_ok(chain[-1].get("span")) else claim.get("span")
+    if not ctx.ir.quote_ok(span):
+        return []
+    return _closed(env, span, "causal_chain_to_outcome")
+
+
+def later_link_unsupported(ctx, env, spec):
+    claim, chain = _chain_for(ctx, env, spec)
+    if claim is None or len(chain) < 2 or _links_have_mechanism(ctx, chain):
+        return []
+    blob = _chain_text(ctx, chain)
+    span = None
+    for edge in chain:
+        if SLOPE_LEAP_RE.search(_edge_blob(ctx, edge)) and ctx.ir.quote_ok(edge.get("span")):
+            span = edge["span"]
+            break
+    if SLOPE_LEAP_RE.search(blob):
+        if span is None:
+            span = matched_span(ctx.ir.source, SLOPE_LEAP_RE) or claim.get("span")
+        if not ctx.ir.quote_ok(span):
+            return []
+        return _closed(env, span, "later_link_unsupported")
+    anchor = chain[-1].get("span") if ctx.ir.quote_ok(chain[-1].get("span")) else claim.get("span")
+    if not ctx.ir.quote_ok(anchor):
+        return []
+    return _unknown(ctx, env, anchor, "later_link_unsupported")
+
+
+def each_causal_link_supported(ctx, env, spec):
+    claim, chain = _chain_for(ctx, env, spec)
+    if claim is None or len(chain) < 2 or not _links_have_mechanism(ctx, chain):
+        return []
+    span = None
+    for edge in chain:
+        if MECHANISM_RE.search(_edge_blob(ctx, edge)) and ctx.ir.quote_ok(edge.get("span")):
+            span = edge["span"]
+            break
+    if span is None:
+        span = matched_span(ctx.ir.source, MECHANISM_RE)
+    if not ctx.ir.quote_ok(span):
+        return []
+    return _closed(env, span, "each_causal_link_supported")
+
+
+def line_drawing_without_prediction(ctx, env, spec):
+    if not LINE_DRAWING_RE.search(ctx.ir.source):
+        return []
+    if UNDESIRABLE_RE.search(ctx.ir.source) or REJECT_RE.search(ctx.ir.source):
+        return []
+    span = matched_span(ctx.ir.source, LINE_DRAWING_RE)
+    if not span or not ctx.ir.quote_ok(span):
+        return []
+    return _closed(env, span, "line_drawing_without_prediction")
+
+
+def source_is_number_of_people(ctx, env, spec):
+    _edge, text, span = _authority_edge(ctx, env, spec)
+    if span is None or not CROWD_RE.search(text) or EXPERT_RE.search(text):
+        return []
+    return _closed(env, span, "source_is_number_of_people")
+
+
+def popularity_treated_as_settling(ctx, env, spec):
+    return _treated_as_settling(ctx, env, spec, "popularity_treated_as_settling")
+
+
+def popularity_one_piece_among_others(ctx, env, spec):
+    return _one_piece_among_others(ctx, env, spec, "popularity_one_piece_among_others")
+
+
+def popularity_not_decisive(ctx, env, spec):
+    claim = claim_of(ctx.ir, env, spec.get("of") or "K")
+    if claim is None:
+        return []
+    weak = (
+        claim.get("hedge") == "weak"
+        or claim.get("role") == "default_rule"
+        or claim.get("scope") in ("investigate", "procedural")
+    )
+    if not weak:
+        return []
+    span = claim.get("span")
+    if not ctx.ir.quote_ok(span):
+        return []
+    return _closed(env, span, "popularity_not_decisive")
+
+
+def expert_agreement_on_the_question(ctx, env, spec):
+    _edge, text, span = _authority_edge(ctx, env, spec)
+    if span is None or not EXPERT_RE.search(text) or not AGREE_RE.search(text):
+        return []
+    return _closed(env, span, "expert_agreement_on_the_question")
+
+
+def claim_not_about_popularity_itself(ctx, env, spec):
+    claim = claim_of(ctx.ir, env, spec.get("of") or "K")
+    if claim is None or PREFERENCE_Q_RE.search(_claim_blob(ctx, claim)):
+        return []
+    span = claim.get("span")
+    if not ctx.ir.quote_ok(span):
+        return []
+    return _closed(env, span, "claim_not_about_popularity_itself")
+
+
+def question_is_convention_taste_or_popularity(ctx, env, spec):
+    claim = claim_of(ctx.ir, env, spec.get("of") or "K")
+    if claim is None or not PREFERENCE_Q_RE.search(_claim_blob(ctx, claim)):
+        return []
+    span = claim.get("span")
+    if not ctx.ir.quote_ok(span):
+        return []
+    return _closed(env, span, "question_is_convention_taste_or_popularity")
+
+
+def _trait_from(ctx, env, spec):
+    ref = env.bindings.get(spec.get("trait_var") or spec.get("of"))
+    if not ref or ref.get("kind") != "trait":
+        return None
+    return ctx.ir.traits.get(ref["id"])
+
+
+def trait_is_association(ctx, env, spec):
+    trait = _trait_from(ctx, env, spec)
+    if trait is None:
+        return []
+    trait_text = f"{trait.get('label') or ''} {ctx.ir.text_of(trait['id'])}"
+    if not ASSOCIATION_RE.search(trait_text):
+        return []
+    edge = edge_of(ctx.ir, env, {"of": spec.get("edge") or "E_assoc"})
+    if edge is None or edge.get("type") != "supports":
+        return []
+    edge_text = source_side_text(ctx.ir, edge)
+    same = (
+        edge.get("source") == trait["id"]
+        or ASSOCIATION_RE.search(edge_text)
+        or quotes_related(edge_text, trait_text)
+        or content_overlap(edge_text, trait_text)
+    )
+    if not same:
+        return []
+    span = trait.get("span") if ctx.ir.quote_ok(trait.get("span")) else edge.get("span")
+    if not ctx.ir.quote_ok(span):
+        return []
+    return _closed(env, span, "trait_is_association")
+
+
+def association_used_as_evaluative_reason(ctx, env, spec):
+    claim = claim_of(ctx.ir, env, spec.get("of") or "K")
+    if claim is None or claim.get("hedge") == "weak":
+        return []
+    blob = _claim_blob(ctx, claim)
+    if CAUTION_RE.search(blob) or not EVALUATIVE_REJECT_RE.search(blob):
+        return []
+    span = claim.get("span")
+    if not ctx.ir.quote_ok(span):
+        return []
+    return _closed(env, span, "association_used_as_evaluative_reason")
+
+
+def independent_merits_engaged(ctx, env, spec):
+    claim = claim_of(ctx.ir, env, spec.get("of") or "K")
+    if claim is None:
+        return []
+    for edge in ctx.ir.edges:
+        if edge.get("target") != claim["id"] or edge.get("type") not in ("supports", "causes"):
+            continue
+        blob = source_side_text(ctx.ir, edge)
+        if ASSOCIATION_RE.search(blob):
+            continue
+        span = edge.get("span") if ctx.ir.quote_ok(edge.get("span")) else claim.get("span")
+        if ctx.ir.quote_ok(span):
+            return _closed(env, span, "independent_merits_engaged")
+    return []
+
+
+def association_mere_disclosure(ctx, env, spec):
+    claim = claim_of(ctx.ir, env, spec.get("of") or "K")
+    if claim is None:
+        return []
+    blob = _claim_blob(ctx, claim)
+    disclosed = CAUTION_RE.search(blob) or CAUTION_RE.search(ctx.ir.source) or claim.get("hedge") == "weak"
+    if not disclosed or EVALUATIVE_REJECT_RE.search(blob):
+        return []
+    span = matched_span(ctx.ir.source, CAUTION_RE) or claim.get("span")
+    if not ctx.ir.quote_ok(span):
+        return []
+    return _closed(env, span, "association_mere_disclosure")
+
+
+def association_bears_on_the_claim(ctx, env, spec):
+    span = matched_span(ctx.ir.source, PROBATIVE_LINK_RE)
+    if not span or not ctx.ir.quote_ok(span):
+        return []
+    return _closed(env, span, "association_bears_on_the_claim")
+
+
+def shares_the_criticised_commitment(ctx, env, spec):
+    span = matched_span(ctx.ir.source, SHARED_COMMITMENT_RE)
+    if not span or not ctx.ir.quote_ok(span):
+        return []
+    return _closed(env, span, "shares_the_criticised_commitment")
+
+
 def precautionary_decision_with_costs_weighed(ctx, env, spec):
     claim = claim_of(ctx.ir, env, "K") or claim_of(ctx.ir, env, spec.get("of"))
     if claim is None or claim.get("scope") != "action":
@@ -834,4 +1341,31 @@ PREDICATES = {
     "thorough_search_done": thorough_search_done,
     "procedural_default_action_only": procedural_default_action_only,
     "precautionary_decision_with_costs_weighed": precautionary_decision_with_costs_weighed,
+    "sample_too_small_for_sweep": sample_too_small_for_sweep,
+    "population_known_uniform": population_known_uniform,
+    "cautious_generalization": cautious_generalization,
+    "low_stakes_consistent_effect": low_stakes_consistent_effect,
+    "doubt_is_sample_selection": doubt_is_sample_selection,
+    "exclusive_split_claimed": exclusive_split_claimed,
+    "split_not_a_true_dichotomy": split_not_a_true_dichotomy,
+    "conclusion_relies_on_split": conclusion_relies_on_split,
+    "options_not_claimed_exhaustive": options_not_claimed_exhaustive,
+    "split_shown_exhaustive": split_shown_exhaustive,
+    "causal_chain_to_outcome": causal_chain_to_outcome,
+    "later_link_unsupported": later_link_unsupported,
+    "each_causal_link_supported": each_causal_link_supported,
+    "line_drawing_without_prediction": line_drawing_without_prediction,
+    "source_is_number_of_people": source_is_number_of_people,
+    "popularity_treated_as_settling": popularity_treated_as_settling,
+    "popularity_one_piece_among_others": popularity_one_piece_among_others,
+    "popularity_not_decisive": popularity_not_decisive,
+    "expert_agreement_on_the_question": expert_agreement_on_the_question,
+    "claim_not_about_popularity_itself": claim_not_about_popularity_itself,
+    "question_is_convention_taste_or_popularity": question_is_convention_taste_or_popularity,
+    "trait_is_association": trait_is_association,
+    "association_used_as_evaluative_reason": association_used_as_evaluative_reason,
+    "independent_merits_engaged": independent_merits_engaged,
+    "association_mere_disclosure": association_mere_disclosure,
+    "association_bears_on_the_claim": association_bears_on_the_claim,
+    "shares_the_criticised_commitment": shares_the_criticised_commitment,
 }

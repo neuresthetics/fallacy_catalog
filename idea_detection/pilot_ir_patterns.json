@@ -174,6 +174,95 @@
         { "predicate": "procedural_default_action_only" },
         { "predicate": "precautionary_decision_with_costs_weighed" }
       ]
+    },
+    {
+      "id": "hasty-generalization",
+      "ir_pattern": {
+        "all": [
+          { "exists_claim": { "var": "K", "role_in": ["conclusion"] } },
+          { "exists_edge": { "type": "instantiates", "target_var": "K", "var": "E_inst" } },
+          { "predicate": "sample_too_small_for_sweep", "of": "E_inst", "conclusion": "K" }
+        ]
+      },
+      "ir_forbid": [
+        { "predicate": "population_known_uniform", "of": "K" },
+        { "predicate": "cautious_generalization", "of": "K" },
+        { "predicate": "low_stakes_consistent_effect", "of": "K" },
+        { "predicate": "doubt_is_sample_selection", "of": "E_inst" }
+      ],
+      "note": "Small-n instantiates a sweeping conclusion. Uniform populations, cautious wording, low-stakes consistent effects, and selection-not-size doubts are look-alikes."
+    },
+    {
+      "id": "slippery-slope",
+      "outside_text_predicates": ["later_link_unsupported"],
+      "ir_pattern": {
+        "all": [
+          { "exists_claim": { "var": "K", "role_in": ["conclusion", "recommendation"] } },
+          { "predicate": "causal_chain_to_outcome", "of": "K" },
+          { "predicate": "later_link_unsupported", "of": "K" }
+        ]
+      },
+      "ir_forbid": [
+        { "predicate": "each_causal_link_supported", "of": "K" },
+        { "predicate": "line_drawing_without_prediction", "of": "K" }
+      ],
+      "note": "Catalog outside_text_conditions [3]: a chain without a stated leap is at most possible issue. A 'probably' hedge does not supply the missing link and is not a forbid. A binding mechanism on each link is a look-alike."
+    },
+    {
+      "id": "false-dilemma",
+      "ir_pattern": {
+        "all": [
+          { "exists_claim": { "var": "D", "role_in": ["premise"] } },
+          { "exists_claim": { "var": "K", "role_in": ["conclusion", "recommendation"] } },
+          { "exists_edge": { "type": "supports", "source_var": "D", "target_var": "K" } },
+          { "predicate": "exclusive_split_claimed", "of": "D" },
+          { "predicate": "split_not_a_true_dichotomy", "of": "D" },
+          { "predicate": "conclusion_relies_on_split", "of": "K" }
+        ]
+      },
+      "ir_forbid": [
+        { "predicate": "options_not_claimed_exhaustive", "of": "D" },
+        { "predicate": "split_shown_exhaustive", "of": "D" }
+      ],
+      "note": "Exclusive options treated as settling. Naming main options without 'only', or a true dichotomy / stated exhaustiveness, is a look-alike."
+    },
+    {
+      "id": "appeal-to-the-people",
+      "ir_pattern": {
+        "all": [
+          { "exists_claim": { "var": "K", "role_in": ["conclusion", "recommendation"] } },
+          { "exists_edge": { "type": "appeals_to_source", "target_var": "K", "var": "E_pop" } },
+          { "predicate": "source_is_number_of_people", "of": "E_pop" },
+          { "predicate": "popularity_treated_as_settling", "of": "K" },
+          { "predicate": "claim_not_about_popularity_itself", "of": "K" }
+        ]
+      },
+      "ir_forbid": [
+        { "predicate": "expert_agreement_on_the_question", "of": "E_pop" },
+        { "predicate": "question_is_convention_taste_or_popularity", "of": "K" },
+        { "predicate": "popularity_one_piece_among_others", "of": "K" },
+        { "predicate": "popularity_not_decisive", "of": "K" }
+      ],
+      "note": "Catalog id for appeal to popularity. Parallel to authority: the source is the crowd, and a weak hedge is not decisive. Does not loosen appeal-to-authority."
+    },
+    {
+      "id": "guilt-by-association",
+      "ir_pattern": {
+        "all": [
+          { "exists_agent_trait": { "var": "T" } },
+          { "exists_claim": { "var": "K", "role_in": ["conclusion", "recommendation"] } },
+          { "exists_edge": { "type": "supports", "target_var": "K", "var": "E_assoc" } },
+          { "predicate": "trait_is_association", "trait_var": "T", "edge": "E_assoc" },
+          { "predicate": "association_used_as_evaluative_reason", "of": "K", "trait_var": "T" }
+        ]
+      },
+      "ir_forbid": [
+        { "predicate": "independent_merits_engaged", "of": "K" },
+        { "predicate": "association_mere_disclosure", "of": "K" },
+        { "predicate": "association_bears_on_the_claim", "of": "K" },
+        { "predicate": "shares_the_criticised_commitment", "of": "K" }
+      ],
+      "note": "Split from ad-hominem. Association plus supports into an evaluative conclusion; attacks_person is not required. Proportionate caution and merits actually engaged stay no issue. Ad hominem atoms and forbids are unchanged."
     }
   ]
 }
