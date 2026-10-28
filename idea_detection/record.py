@@ -192,17 +192,25 @@ def format_method_record(record: dict) -> str:
     lines = [
         "idea_detection assist / lead-to-check",
         _assist_note(record),
-        "",
+    ]
+    if record.get("layer_path"):
+        lines.append("Layer path: " + str(record["layer_path"]))
+    if record.get("peel_path"):
+        lines.append("Peel path: " + str(record["peel_path"]))
+    lines.append("")
+    lines.append(
         f"Passage: {_quoted(record.get('passage') or '')}" if record.get("passage")
-        else "Passage: (no passage quote in the IR or in closed span bindings)",
-        "Strongest reading: " + _reading_line(record.get("strongest_reading") or {}),
+        else "Passage: (no passage quote in the IR or in closed span bindings)"
+    )
+    lines.append("Strongest reading: " + _reading_line(record.get("strongest_reading") or {}))
+    lines.append(
         "Entry: {name} ({eid})   Other entries considered: {others}".format(
             name=record.get("entry_name") or "(name not in fallacies.json)",
             eid=record.get("entry_id"),
             others=record.get("other_entries_considered") or "not produced by the checker",
-        ),
-        "Conditions:",
-    ]
+        )
+    )
+    lines.append("Conditions:")
     for cond in record.get("conditions") or []:
         lines.append(f"  {cond['n']}. {cond['text']} — {cond['note']}")
     if not record.get("conditions"):

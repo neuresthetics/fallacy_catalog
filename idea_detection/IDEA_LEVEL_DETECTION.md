@@ -111,6 +111,14 @@ passage
 
 Fallback entries (`use_only_if_nothing_more_specific`) only if no specific match. Two labels in one step only if two separate fully met errors (METHOD).
 
+### Nested layers
+
+A flat pass caps excerpts and leaves outside-text gaps as possible issue. The nested pass peels every premise, citation, sub-claim, and hit atom, then re-checks the supplied window. It does not loosen forbids or rewrite METHOD. Depth is unlimited; `--max-depth` is only an ops safety valve. Procedure: [`NESTED_LAYERS.md`](NESTED_LAYERS.md).
+
+```
+python3 -m idea_detection.nested --context-map path/to/contexts.jsonl path/to/irs/
+```
+
 ---
 
 ## 5. Concrete `ir_pattern` / `ir_forbid` (JSON)
