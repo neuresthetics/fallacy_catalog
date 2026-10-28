@@ -17,7 +17,7 @@ METHOD already thinks in ideas (quote → strongest reading → conditions → l
 
 | Role | May do | Must not do |
 |---|---|---|
-| **Extractor** (LLM or human) | Segment steps; emit claims, edges, terms, spans under METHOD charity; mark `unstated` / CK | Emit a fallacy verdict, entry id, or “this is ad hominem” prose that the pipeline treats as authoritative |
+| **Extractor** (LLM or human) | Segment steps; emit claims, edges, terms, spans under METHOD charity; mark `unstated` / CK. If the passage has `so` / `must` / `therefore` / dismiss / ignore, do not emit only `report` with zero edges. A quoted adversary who is answered gets a separate speaker and at least one inferential edge. An “associated with” evaluation gets an agent trait and `supports`, not a required `attacks_person` | Emit a fallacy verdict, entry id, or “this is ad hominem” prose that the pipeline treats as authoritative |
 | **Normalizer** (deterministic) | Downgrade hedges from span words; force `default_rule`+`procedural` on burden/null language; drop illustration-only `supports` unless reliance marked | Invent missing contrary evidence |
 | **Checker** (deterministic) | Eval `ir_pattern` / `ir_forbid`; apply `outside_text_conditions` + `text_detectable`; family tie-breaks; emit flag / possible issue / no issue | Trust extractor prose; flag on surface cues alone |
 
@@ -221,7 +221,21 @@ Aligns with METHOD: condition 2 is outside-text; if the illegitimacy disjunct is
 }
 ```
 
-Full pilot set (8 entries) lives in `idea_detection/pilot_ir_patterns.json`.
+Full pilot set (13 entries) lives in `idea_detection/pilot_ir_patterns.json`.
+
+### 5.5 Post-e2e batch
+
+Hasty generalization, slippery slope, false dilemma, appeal to the people, and guilt by association are pilot-only. Appeal to the people is the catalog id (appeal to popularity is an alias). Guilt by association is split from ad hominem: do not edit ad hominem atoms or forbids, and do not require `attacks_person` for an association used as the sole support of an evaluative conclusion.
+
+| Id | IR shape | `ir_forbid` (look-alikes) |
+|---|---|---|
+| `hasty-generalization` | `instantiates` from a small-n case into a sweeping conclusion | uniform population; cautious / low-stakes consistent effect; doubt is selection, not size |
+| `slippery-slope` | two or more `causes` steps into an undesirable conclusion; a stated leap (`soon`, `inevitably`) closes the outside-text gap | each link has a mechanism (precedent, bylaw, statute); line-drawing with no prediction |
+| `false-dilemma` | exclusive premise `supports` a conclusion that relies on the split | main options not claimed exhaustive; true dichotomy or stated exhaustiveness |
+| `appeal-to-the-people` | `appeals_to_source` whose source is the crowd, treated as settling | expert agreement; the question is taste or popularity; one piece among others; hedge not decisive |
+| `guilt-by-association` | agent trait of association + `supports` into an evaluative conclusion | merits engaged; mere disclosure or proportionate caution; the link bears on the claim; the person shares the criticised commitment |
+
+Slippery slope lists `later_link_unsupported` as outside-text: a bare chain with no leap cue is possible issue, not a flag. “Probably” does not supply the missing link and is not a forbid. Hedge, `default_rule`, and precautionary charity are unchanged.
 
 ---
 
@@ -324,7 +338,7 @@ Rewrite METHOD; replace catalog with geometric-80; motive flags; new fallacy nam
 
 ## 13. Decisions (no Jason blocker)
 
-1. Bootstrap patterns for ~8 pilots; compile remaining prose conditions later with span verification.  
+1. Bootstrap patterns for the pilot set (originally eight; the post-e2e batch adds five). Compile remaining prose conditions later with span verification.  
 2. Geometric node taxonomy optional.
 
 ## 14. Next build steps

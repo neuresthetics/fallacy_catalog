@@ -121,6 +121,7 @@ MISSING_FACT = {
     "source_untrustworthy": "whether the source can be trusted",
     "source_misquoted": "whether the source is misquoted",
     "misattributes": "the original wording of the position being restated",
+    "later_link_unsupported": "whether each later step in the chain is likely",
 }
 
 CLAIM_ROLES = {

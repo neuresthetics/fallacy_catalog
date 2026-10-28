@@ -419,6 +419,434 @@ class CheckerTests(unittest.TestCase):
         self.assertTrue(names <= set(PREDICATES))
         self.assertTrue(outside <= set(PREDICATES))
 
+    def test_original_pilot_forbids_unchanged(self):
+        by_id = {entry["id"]: entry for entry in self.patterns}
+        self.assertEqual(
+            [item["predicate"] for item in by_id["ad-hominem"]["ir_forbid"]],
+            [
+                "claim_rests_on_testimony",
+                "uses_opponents_own_commitments",
+                "insult_without_inferential_edge",
+            ],
+        )
+        pattern_names = set()
+        _walk_predicates(by_id["ad-hominem"]["ir_pattern"], pattern_names)
+        self.assertEqual(
+            pattern_names,
+            {"reasons_unanswered", "trait_irrelevant_to_reasons"},
+        )
+        self.assertEqual(
+            [item["predicate"] for item in by_id["false-cause"]["ir_forbid"]],
+            ["tentative_hypothesis_for_testing"],
+        )
+        self.assertEqual(
+            [item["predicate"] for item in by_id["argument-from-ignorance"]["ir_forbid"]],
+            [
+                "thorough_search_done",
+                "procedural_default_action_only",
+                "precautionary_decision_with_costs_weighed",
+            ],
+        )
+        authority_names = set()
+        _walk_predicates(by_id["appeal-to-authority"]["ir_pattern"], authority_names)
+        self.assertIn("authority_treated_as_settling", authority_names)
+        self.assertEqual(
+            [entry["id"] for entry in self.patterns],
+            [
+                "ad-hominem",
+                "appeal-to-authority",
+                "equivocation",
+                "false-cause",
+                "begging-the-question",
+                "cherry-picking",
+                "straw-man",
+                "argument-from-ignorance",
+                "hasty-generalization",
+                "slippery-slope",
+                "false-dilemma",
+                "appeal-to-the-people",
+                "guilt-by-association",
+            ],
+        )
+
+    def _flags(self, ir):
+        report = check_passage(ir)
+        self.assertTrue(report["ok"], report["errors"])
+        return [row["entry_id"] for row in report["results"] if row["verdict"] == "flag"], report
+
+    def test_hasty_generalization_flags_and_charity_blocks(self):
+        source = "My two neighbours from that city were rude, so people from that city are rude."
+        ir = _passage(
+            "hasty_rude",
+            source,
+            [
+                _claim("c_s", "My two neighbours from that city were rude.", "My two neighbours from that city were rude", "premise"),
+                _claim("c_k", "People from that city are rude.", "people from that city are rude", "conclusion"),
+            ],
+            [_edge("e_i", "instantiates", "c_s", "c_k", "so people from that city are rude")],
+        )
+        flags, report = self._flags(ir)
+        row = result_for(report, "hasty-generalization")
+        self.assertEqual(row["verdict"], "flag", row["reason"])
+        self.assertEqual(flags, ["hasty-generalization"])
+
+        cautious = "My two neighbours from that city were rude, so people from that city may be rude."
+        hedged = _passage(
+            "hasty_may",
+            cautious,
+            [
+                _claim("c_s", "My two neighbours from that city were rude.", "My two neighbours from that city were rude", "premise"),
+                _claim("c_k", "People from that city may be rude.", "people from that city may be rude", "conclusion"),
+            ],
+            [_edge("e_i", "instantiates", "c_s", "c_k", "so people from that city may be rude")],
+        )
+        row = result_for(check_passage(hedged), "hasty-generalization")
+        self.assertEqual(row["verdict"], "no_issue", row["reason"])
+        self.assertIn("ir_forbid", row["reason"])
+
+        uniform = (
+            "The coins are known to be uniform, and my two samples were counterfeit, "
+            "so every coin in the bag is counterfeit."
+        )
+        blocked = _passage(
+            "hasty_uniform",
+            uniform,
+            [
+                _claim("c_s", "My two samples were counterfeit.", "my two samples were counterfeit", "premise"),
+                _claim("c_k", "Every coin in the bag is counterfeit.", "every coin in the bag is counterfeit", "conclusion"),
+            ],
+            [_edge("e_i", "instantiates", "c_s", "c_k", "so every coin in the bag is counterfeit")],
+        )
+        row = result_for(check_passage(blocked), "hasty-generalization")
+        self.assertEqual(row["verdict"], "no_issue", row["reason"])
+        self.assertIn("population_known_uniform", row["reason"])
+
+        stakes = (
+            "Two patients improved, a large consistent effect, and the choice is reversible "
+            "and low-stakes, so this treatment works for everyone."
+        )
+        low = _passage(
+            "hasty_low",
+            stakes,
+            [
+                _claim("c_s", "Two patients improved.", "Two patients improved", "premise"),
+                _claim("c_k", "This treatment works for everyone.", "this treatment works for everyone", "conclusion"),
+            ],
+            [_edge("e_i", "instantiates", "c_s", "c_k", "so this treatment works for everyone")],
+        )
+        row = result_for(check_passage(low), "hasty-generalization")
+        self.assertEqual(row["verdict"], "no_issue", row["reason"])
+        self.assertIn("low_stakes_consistent_effect", row["reason"])
+
+        selected = "The two respondents were a self-selected sample, so people in the city are supporters."
+        biased = _passage(
+            "hasty_selection",
+            selected,
+            [
+                _claim("c_s", "The two respondents were a self-selected sample.", "The two respondents were a self-selected sample", "premise"),
+                _claim("c_k", "People in the city are supporters.", "people in the city are supporters", "conclusion"),
+            ],
+            [_edge("e_i", "instantiates", "c_s", "c_k", "so people in the city are supporters")],
+        )
+        row = result_for(check_passage(biased), "hasty-generalization")
+        self.assertEqual(row["verdict"], "no_issue", row["reason"])
+        self.assertIn("doubt_is_sample_selection", row["reason"])
+
+    def test_slippery_slope_flags_leap_and_blocks_mechanism(self):
+        source = (
+            "If we let students redo one test, soon they'll expect to redo every test, "
+            "and degrees will be worthless."
+        )
+        ir = _passage(
+            "slope_soon",
+            source,
+            [
+                _claim("c1", "We let students redo one test.", "let students redo one test", "premise"),
+                _claim("c2", "They'll expect to redo every test.", "they'll expect to redo every test", "premise"),
+                _claim("c_k", "Degrees will be worthless.", "degrees will be worthless", "conclusion"),
+            ],
+            [
+                _edge("e1", "causes", "c1", "c2", "soon they'll expect to redo every test"),
+                _edge("e2", "causes", "c2", "c_k", "and degrees will be worthless"),
+            ],
+        )
+        flags, report = self._flags(ir)
+        row = result_for(report, "slippery-slope")
+        self.assertEqual(row["verdict"], "flag", row["reason"])
+        self.assertEqual(flags, ["slippery-slope"])
+
+        probable = source.replace("degrees will be worthless", "degrees will probably be worthless")
+        hedged = _passage(
+            "slope_probably",
+            probable,
+            [
+                _claim("c1", "We let students redo one test.", "let students redo one test", "premise"),
+                _claim("c2", "They'll expect to redo every test.", "they'll expect to redo every test", "premise"),
+                _claim("c_k", "Degrees will probably be worthless.", "degrees will probably be worthless", "conclusion"),
+            ],
+            [
+                _edge("e1", "causes", "c1", "c2", "soon they'll expect to redo every test"),
+                _edge("e2", "causes", "c2", "c_k", "degrees will probably be worthless"),
+            ],
+        )
+        flags, report = self._flags(hedged)
+        row = result_for(report, "slippery-slope")
+        self.assertEqual(row["verdict"], "flag", row["reason"])
+        self.assertEqual(flags, ["slippery-slope"])
+        self.assertNotEqual(result_for(report, "false-cause")["verdict"], "flag")
+
+        bare = (
+            "Letting students redo one test will lead them to expect a redo of every test, "
+            "and that expectation will lead to degrees being worthless."
+        )
+        open_ir = _passage(
+            "slope_open",
+            bare,
+            [
+                _claim("c1", "Students redo one test.", "redo one test", "premise"),
+                _claim("c2", "They expect a redo of every test.", "expect a redo of every test", "premise"),
+                _claim("c_k", "Degrees being worthless.", "degrees being worthless", "conclusion"),
+            ],
+            [
+                _edge("e1", "causes", "c1", "c2", "will lead them to expect a redo of every test"),
+                _edge("e2", "causes", "c2", "c_k", "will lead to degrees being worthless"),
+            ],
+        )
+        flags, report = self._flags(open_ir)
+        row = result_for(report, "slippery-slope")
+        self.assertEqual(row["verdict"], "possible_issue", row["reason"])
+        self.assertEqual(flags, [])
+
+        supported = (
+            "The bylaws make a passed exception a binding precedent, so letting students redo "
+            "one test legally requires letting them redo every test, and the statute then makes "
+            "degrees worthless."
+        )
+        blocked = _passage(
+            "slope_bylaw",
+            supported,
+            [
+                _claim("c1", "Letting students redo one test.", "letting students redo one test", "premise"),
+                _claim("c2", "Legally requires letting them redo every test.", "letting them redo every test", "premise"),
+                _claim("c_k", "The statute then makes degrees worthless.", "the statute then makes degrees worthless", "conclusion"),
+            ],
+            [
+                _edge("e1", "causes", "c1", "c2", "The bylaws make a passed exception a binding precedent"),
+                _edge("e2", "causes", "c2", "c_k", "the statute then makes degrees worthless"),
+            ],
+        )
+        row = result_for(check_passage(blocked), "slippery-slope")
+        self.assertEqual(row["verdict"], "no_issue", row["reason"])
+        self.assertIn("each_causal_link_supported", row["reason"])
+
+        line = "Allowing one redo and allowing two differ by tiny vague steps, so where do you draw the line?"
+        drawing = _passage(
+            "slope_line",
+            line,
+            [
+                _claim("c1", "Allowing one redo and allowing two differ by tiny vague steps.", "tiny vague steps", "premise"),
+                _claim("c_k", "Where do you draw the line?", "where do you draw the line", "conclusion"),
+            ],
+            [_edge("e", "supports", "c1", "c_k", "so where do you draw the line")],
+        )
+        row = result_for(check_passage(drawing), "slippery-slope")
+        self.assertEqual(row["verdict"], "no_issue", row["reason"])
+        self.assertIn("line_drawing_without_prediction", row["reason"])
+
+    def test_false_dilemma_flags_and_blocks_true_split(self):
+        source = "Either we cut the school's art programme or we go bankrupt, so we must cut the art programme."
+        ir = _passage(
+            "dilemma_art",
+            source,
+            [
+                _claim("c_d", "Either we cut the school's art programme or we go bankrupt.", "Either we cut the school's art programme or we go bankrupt", "premise"),
+                _claim("c_k", "We must cut the art programme.", "so we must cut the art programme", "conclusion"),
+            ],
+            [_edge("e", "supports", "c_d", "c_k", "so we must cut the art programme")],
+        )
+        flags, report = self._flags(ir)
+        row = result_for(report, "false-dilemma")
+        self.assertEqual(row["verdict"], "flag", row["reason"])
+        self.assertEqual(flags, ["false-dilemma"])
+
+        dichotomy = "Either the switch is on or off, so if it is not on it must be off."
+        true_split = _passage(
+            "dilemma_switch",
+            dichotomy,
+            [
+                _claim("c_d", "Either the switch is on or off.", "Either the switch is on or off", "premise"),
+                _claim("c_k", "If it is not on it must be off.", "so if it is not on it must be off", "conclusion"),
+            ],
+            [_edge("e", "supports", "c_d", "c_k", "so if it is not on it must be off")],
+        )
+        row = result_for(check_passage(true_split), "false-dilemma")
+        self.assertEqual(row["verdict"], "no_issue", row["reason"])
+        self.assertIn("split_shown_exhaustive", row["reason"])
+
+        named = (
+            "The main options include cutting art or raising fees, and I am not saying those "
+            "are the only ones, so we might raise fees."
+        )
+        soft = _passage(
+            "dilemma_main",
+            named,
+            [
+                _claim("c_d", "The main options include cutting art or raising fees.", "The main options include cutting art or raising fees", "premise"),
+                _claim("c_k", "We might raise fees.", "so we might raise fees", "conclusion"),
+            ],
+            [_edge("e", "supports", "c_d", "c_k", "so we might raise fees")],
+        )
+        row = result_for(check_passage(soft), "false-dilemma")
+        self.assertEqual(row["verdict"], "no_issue", row["reason"])
+        self.assertIn("options_not_claimed_exhaustive", row["reason"])
+
+    def test_appeal_to_the_people_flags_and_blocks_lookalikes(self):
+        source = "Millions of people use this remedy, so it must work."
+        ir = _passage(
+            "pop_remedy",
+            source,
+            [
+                _claim("c_s", "Millions of people use this remedy.", "Millions of people use this remedy", "premise"),
+                _claim("c_k", "It must work.", "so it must work", "conclusion"),
+            ],
+            [_edge("e", "appeals_to_source", "c_s", "c_k", "Millions of people use this remedy")],
+        )
+        flags, report = self._flags(ir)
+        row = result_for(report, "appeal-to-the-people")
+        self.assertEqual(row["verdict"], "flag", row["reason"])
+        self.assertEqual(flags, ["appeal-to-the-people"])
+        self.assertNotEqual(result_for(report, "appeal-to-authority")["verdict"], "flag")
+
+        experts = "Most specialists who have studied the question agree the remedy works, so it works."
+        agreed = _passage(
+            "pop_experts",
+            experts,
+            [
+                _claim("c_s", "Most specialists who have studied the question agree the remedy works.", "Most specialists who have studied the question agree the remedy works", "premise"),
+                _claim("c_k", "It works.", "so it works", "conclusion"),
+            ],
+            [_edge("e", "appeals_to_source", "c_s", "c_k", "specialists who have studied the question agree")],
+        )
+        row = result_for(check_passage(agreed), "appeal-to-the-people")
+        self.assertEqual(row["verdict"], "no_issue", row["reason"])
+        self.assertIn("expert_agreement_on_the_question", row["reason"])
+
+        taste = "Most people prefer the blue logo, so blue is the popular choice."
+        liked = _passage(
+            "pop_taste",
+            taste,
+            [
+                _claim("c_s", "Most people prefer the blue logo.", "Most people prefer the blue logo", "premise"),
+                _claim("c_k", "Blue is the popular choice.", "so blue is the popular choice", "conclusion"),
+            ],
+            [_edge("e", "appeals_to_source", "c_s", "c_k", "Most people prefer the blue logo")],
+        )
+        row = result_for(check_passage(liked), "appeal-to-the-people")
+        self.assertEqual(row["verdict"], "no_issue", row["reason"])
+        self.assertIn("ir_forbid", row["reason"])
+
+        weak = "Millions of people use this remedy, so it may work."
+        maybe = _passage(
+            "pop_may",
+            weak,
+            [
+                _claim("c_s", "Millions of people use this remedy.", "Millions of people use this remedy", "premise"),
+                _claim("c_k", "It may work.", "so it may work", "conclusion"),
+            ],
+            [_edge("e", "appeals_to_source", "c_s", "c_k", "Millions of people use this remedy")],
+        )
+        row = result_for(check_passage(maybe), "appeal-to-the-people")
+        self.assertEqual(row["verdict"], "no_issue", row["reason"])
+        self.assertIn("popularity_not_decisive", row["reason"])
+
+    def test_guilt_by_association_flags_without_person_attack(self):
+        source = (
+            "A dictator once supported this policy, and the budget case for it is left aside, "
+            "so it must be a bad plan."
+        )
+        ir = _passage(
+            "gba_plan",
+            source,
+            [
+                _claim("c_a", "A dictator once supported this policy.", "A dictator once supported this policy", "premise"),
+                _claim("c_b", "The budget case for it is left aside.", "the budget case for it is left aside", "premise"),
+                _claim("c_k", "It must be a bad plan.", "so it must be a bad plan", "conclusion"),
+            ],
+            [
+                _edge("e_s", "supports", "c_a", "c_k", "so it must be a bad plan"),
+                _edge("e_i", "ignores", "c_k", "c_b", "left aside"),
+            ],
+            agents=[{
+                "id": "backer",
+                "name_span": {"quote": "A dictator"},
+                "traits": [{
+                    "id": "t_assoc",
+                    "label": "associated with a dictator",
+                    "span": {"quote": "A dictator once supported this policy"},
+                }],
+            }],
+        )
+        flags, report = self._flags(ir)
+        row = result_for(report, "guilt-by-association")
+        self.assertEqual(row["verdict"], "flag", row["reason"])
+        self.assertEqual(flags, ["guilt-by-association"])
+        self.assertNotEqual(result_for(report, "ad-hominem")["verdict"], "flag")
+
+        caution = "This plan is associated with a group I dislike, so I would be cautious about it."
+        wary = _passage(
+            "gba_caution",
+            caution,
+            [
+                _claim("c_a", "This plan is associated with a group I dislike.", "associated with a group I dislike", "premise"),
+                _claim("c_k", "I would be cautious about it.", "so I would be cautious about it", "conclusion"),
+            ],
+            [_edge("e_s", "supports", "c_a", "c_k", "so I would be cautious about it")],
+            agents=[{
+                "id": "group",
+                "name_span": {"quote": "a group"},
+                "traits": [{
+                    "id": "t_assoc",
+                    "label": "associated with a group",
+                    "span": {"quote": "associated with a group I dislike"},
+                }],
+            }],
+        )
+        flags, report = self._flags(wary)
+        row = result_for(report, "guilt-by-association")
+        self.assertEqual(row["verdict"], "no_issue", row["reason"])
+        self.assertIn("association_mere_disclosure", row["reason"])
+        self.assertEqual(flags, [])
+
+        merits = (
+            "A dictator once supported this policy, but the budget figures show it fails on the merits, "
+            "so it must be a bad plan."
+        )
+        engaged = _passage(
+            "gba_merits",
+            merits,
+            [
+                _claim("c_a", "A dictator once supported this policy.", "A dictator once supported this policy", "premise"),
+                _claim("c_m", "The budget figures show it fails on the merits.", "the budget figures show it fails on the merits", "premise"),
+                _claim("c_k", "It must be a bad plan.", "so it must be a bad plan", "conclusion"),
+            ],
+            [
+                _edge("e_s", "supports", "c_a", "c_k", "A dictator once supported this policy"),
+                _edge("e_m", "supports", "c_m", "c_k", "fails on the merits"),
+            ],
+            agents=[{
+                "id": "backer",
+                "name_span": {"quote": "A dictator"},
+                "traits": [{
+                    "id": "t_assoc",
+                    "label": "associated with a dictator",
+                    "span": {"quote": "A dictator once supported this policy"},
+                }],
+            }],
+        )
+        row = result_for(check_passage(engaged), "guilt-by-association")
+        self.assertEqual(row["verdict"], "no_issue", row["reason"])
+        self.assertIn("independent_merits_engaged", row["reason"])
+
     def test_package_does_not_consult_mindspace(self):
         package = ROOT / "idea_detection"
         for path in package.rglob("*.py"):
