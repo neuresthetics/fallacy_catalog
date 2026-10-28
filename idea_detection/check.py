@@ -270,9 +270,62 @@ def format_report(report: dict) -> str:
 
 def main(argv=None) -> int:
     parser = argparse.ArgumentParser(description="Check an Idea IR against pilot fallacy patterns.")
-    parser.add_argument("paths", nargs="+", help="Idea IR JSON files")
+    parser.add_argument(
+        "paths",
+        nargs="+",
+        help="Idea IR JSON files. With --method-record, a directory of *.json is also accepted.",
+    )
     parser.add_argument("--json", action="store_true", help="Print the raw report as JSON")
+    parser.add_argument(
+        "--method-record",
+        action="store_true",
+        help="Emit METHOD-shaped records for flag and possible_issue rows (idea_detection assist)",
+    )
+    parser.add_argument(
+        "--method-format",
+        choices=("markdown", "jsonl"),
+        default="markdown",
+        help="With --method-record, markdown (default) or JSONL. --json forces JSONL.",
+    )
+    parser.add_argument(
+        "--verdicts",
+        default="flag,possible_issue",
+        help="With --method-record: flag, possible_issue, no_issue (comma-separated)",
+    )
     args = parser.parse_args(argv)
+    if args.method_record:
+        from idea_detection.record import emit_method_stdout, iter_ir_paths, parse_verdicts
+        try:
+            verdicts = parse_verdicts(args.verdicts)
+        except ValueError as exc:
+            print(str(exc), file=sys.stderr)
+            return 2
+        catalog = load_catalog()
+        patterns = load_patterns()
+        ir_paths = iter_ir_paths(args.paths)
+        if not ir_paths:
+            print("no Idea IR JSON files found", file=sys.stderr)
+            return 2
+        passages = []
+        exit_code = 0
+        for path in ir_paths:
+            try:
+                data = json.loads(path.read_text(encoding="utf-8"))
+            except (OSError, json.JSONDecodeError) as exc:
+                print(f"{path}: {exc}", file=sys.stderr)
+                exit_code = 1
+                continue
+            report = check_passage(data, catalog=catalog, patterns=patterns)
+            if not report["ok"]:
+                exit_code = 1
+                print(f"{path}: {report.get('errors')}", file=sys.stderr)
+            passages.append((str(path), data, report))
+        fmt = "jsonl" if args.json else args.method_format
+        rendered = emit_method_stdout(
+            passages, fmt=fmt, verdicts=verdicts, catalog=catalog, patterns=patterns,
+        )
+        return 1 if exit_code or rendered else 0
+
     exit_code = 0
     reports = []
     for raw_path in args.paths:

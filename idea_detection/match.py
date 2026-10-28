@@ -214,6 +214,8 @@ def _match_edge(spec, ctx: Ctx, env: Env) -> list:
             fact = "the original wording of the position being restated"
             if fact not in new.missing_facts:
                 new.missing_facts.append(fact)
+            if new.atom_spans:
+                new.atom_spans[-1]["open"] = True
         hits.append(new)
     return hits
 

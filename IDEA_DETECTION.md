@@ -55,3 +55,31 @@ python3 -m idea_detection idea_detection/fixtures/method_ex1_ad_hominem.json
 METHOD example 1 flags `ad-hominem`. METHOD example 2 is `no_issue` on `appeal-to-authority` (the illegitimacy condition is not met, and the expert-agreement look-alike matches).
 
 Design, schema, and the extractor contract: [`idea_detection/IDEA_LEVEL_DETECTION.md`](idea_detection/IDEA_LEVEL_DETECTION.md), [`idea_detection/idea_ir.schema.json`](idea_detection/idea_ir.schema.json), [`idea_detection/EXTRACTOR_PROMPT.md`](idea_detection/EXTRACTOR_PROMPT.md).
+
+## Bulk METHOD records
+
+The short checker report is a verdict and a reason. A METHOD record is the audit shape in [METHOD.md](METHOD.md): the passage quote, the catalog entry name and id, each required condition, each legitimate look-alike, and the verdict. [`idea_detection/record.py`](idea_detection/record.py) renders that shape from checker rows plus `fallacies.json`. It does not rewrite METHOD, and it is not a hand review.
+
+Every record is labeled **idea_detection assist / lead-to-check**. A "met by" quote is copied only from a closed span the checker bound for a span name declared for that condition. If a condition has no declared span, or the span is an outside-text gap, the line says so and attaches no satisfying quote. When the verdict is flag, look-alikes that have a paired `ir_forbid` atom are reported as checked with none matched. The renderer does not write a separate prose reason for each look-alike. METHOD example 2 stays `no_issue` and is not emitted as a flag.
+
+From the repository root, one IR, a list, or a folder of IR JSON files:
+
+```
+python3 -m idea_detection --method-record idea_detection/fixtures/method_ex1_ad_hominem.json
+```
+
+```
+python3 -m idea_detection --method-record path/to/irs/
+```
+
+```
+python3 -m idea_detection --method-record --method-format jsonl path/to/irs/
+```
+
+A saved checker report (`python3 -m idea_detection --json`) can be rendered the same way. Pass `--ir` when the report has no `source_text`:
+
+```
+python3 -m idea_detection.record --json report.json --ir path/to/irs/
+```
+
+`--verdicts flag,possible_issue` is the default. `no_issue` adds rows the checker blocked with `ir_forbid` or a fallback. Rows whose pattern simply did not match stay out.
