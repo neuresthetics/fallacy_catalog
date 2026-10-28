@@ -1,0 +1,11 @@
+id,truth,acceptable,flagged,possible,miss_class
+ex-hit,fallacy,ad hominem (circumstantial); genetic fallacy,ad-hominem,,
+ex-fp,legit,straw man,straw-man,,
+ex-clean,no-argument,,,
+ex-charity,borderline,appeal to inappropriate authority,,,
+ex-outside,fallacy,genetic fallacy,,,
+ex-wrong-possible,fallacy,division; appeal to pity,,appeal-to-authority,
+ex-partial,fallacy,appeal to unqualified authority,,appeal-to-authority,
+ex-ir-gap,fallacy,whataboutism; tu quoque (if used to deflect),,,ir_gap
+ex-gba,fallacy,guilt by association,,,
+ex-contested,contested,tu quoque; circumstantial ad hominem; bulverism,,,
