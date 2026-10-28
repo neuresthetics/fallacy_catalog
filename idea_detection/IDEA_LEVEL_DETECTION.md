@@ -327,6 +327,7 @@ Do not edit published JSON until reviewed. Side file: `idea_detection/pilot_ir_p
 - `text_detectable: no` suite → 0 flags.  
 - Ablate surface-only vs full checker (surface-only must FP more).  
 - Proposed bar: FP(flag) ≤ 5% on look-alike suite.
+- Process, charity forbids, and miss taxonomy: [`DEV_PROCESS.md`](DEV_PROCESS.md). Score a results CSV with `python3 -m idea_detection.score_eval`. The eight-pilot held-out numbers are [`E2E_SUMMARY.md`](E2E_SUMMARY.md).
 
 ---
 

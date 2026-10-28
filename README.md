@@ -24,6 +24,7 @@ Current version: **0.6.1**.
 | [`FALLACIES.md`](FALLACIES.md) | Readable version, grouped by category and alphabetical within each category. Generated from the JSON. |
 | [`METHOD.md`](METHOD.md) | The procedure for checking an argument, with worked examples. |
 | [`IDEA_DETECTION.md`](IDEA_DETECTION.md) | Idea-level checker: an extractor may propose an Idea IR; only the deterministic checker verdicts. Pilot patterns, not a new catalog. |
+| [`idea_detection/DEV_PROCESS.md`](idea_detection/DEV_PROCESS.md) | How that checker is designed, tested on fixtures, scored on the held-out rounds, and extended. |
 | [`SOURCES.md`](SOURCES.md) | The references and how they are cited. Generated from the JSON. |
 | [`tools/build_md.py`](tools/build_md.py) | Validates the JSON and regenerates the two generated Markdown files. |
 | [`frameworks/`](frameworks/) | Sourced reference frameworks kept separate from the fallacy list, currently MINDSPACE (Dolan et al. 2010) for detecting persuasion levers. Not part of the audit method; see the folder README. |
@@ -97,6 +98,10 @@ Follow [METHOD.md](METHOD.md). In outline, for each step of an argument:
 
 [IDEA_DETECTION.md](IDEA_DETECTION.md) is the machine-checkable companion to this procedure. An extractor may propose an Idea IR (claims, support edges, quoted spans). A deterministic checker matches pilot `ir_pattern` / `ir_forbid` entries and is the only component that emits **flag**, **possible issue**, or **no issue**. It does not replace METHOD, does not add fallacy names, and does not consult MINDSPACE. Patterns stay in a side file; they are not merged into `fallacies.json`.
 
+The development loop for that layer — design, refine from a run, implement, fixture tests, held-out scoring, miss taxonomy, next pilot — is [idea_detection/DEV_PROCESS.md](idea_detection/DEV_PROCESS.md). Thirteen pilots are in the side file (the original eight, plus hasty generalization, slippery slope, false dilemma, appeal to the people, and guilt by association). Charity forbids stay in place: a weak hedge, a procedural default, a precaution, and a testimony or relevance look-alike are not bought back as recall. [METHOD.md](METHOD.md) remains the procedure for hand audits, including Genius Study audits.
+
+Held-out scoring uses `python3 -m idea_detection.score_eval` on a results CSV. A flag on legit or no-argument is the false-positive gate. A `possible_issue` under the wrong name is `wrong_possible`, not a hit. Misses split into `expected_outside`, `expected_charity`, `ir_gap`, `pattern_gap`, and `contested_stay`. Genetic fallacy, bulverism, ad hoc rescue, and special pleading are inside coverage only if those ids are pilots. Guilt by association is a pilot; its name does not count as ad hominem. The eight-pilot N=398 totals (58 hits, 0 false positives, 0 failures) are in [idea_detection/E2E_SUMMARY.md](idea_detection/E2E_SUMMARY.md). They predate the five added pilots.
+
 ### False-positive controls
 
 The procedure is built to avoid accusing a sound argument. Each control below was added or tightened because an audit or test showed it was needed.
@@ -125,6 +130,8 @@ The procedure is built to avoid accusing a sound argument. Each control below wa
 Details: [tests/audit/SUMMARY.md](tests/audit/SUMMARY.md) and each round's `FIXES.md`.
 
 ## Testing
+
+The catalog was produced and tested by the audit and blind-round protocol below. The idea-level checker is a separate loop: fixture tests in `tests/idea_detection/`, and a held-out score that reads the same passage files. Both are summarized here; the checker loop is written out in [idea_detection/DEV_PROCESS.md](idea_detection/DEV_PROCESS.md).
 
 ### Protocol
 
@@ -162,6 +169,12 @@ Numbers below are copied from the score files ([round 1](tests/round1/scores.md)
 In all three rounds, no legitimate or no-argument passage was flagged or given a possible issue by either reviewer: 0 of 328 reviewer judgments. Misses fell as fixes landed, then appeared in new places each round. Agreement between reviewers fell as the material became more realistic: in round 3, 4 of the 5 passage-level disagreements were real excerpts.
 
 **Regression check for v0.6.0 (non-blind):** 159 earlier passages were re-checked against the adjudicated keys, including all 20 real excerpts. Three problems were found and fixed before commit: two gaps in the new rules (a quoted exercise or review would have been scored as an argument; no routing between appeal to poverty and appeal to sincerity) and one mismatch carried over from v0.5.0 (P097). That check referred to two entries since dropped in v0.6.1; R023 now routes to appeal to poverty (the keyed label) and R084 to is-ought and appeal to nature (both keyed), as noted in the file. See [tests/regression/regression_v060.md](tests/regression/regression_v060.md). v0.6.x has not yet had a blind round.
+
+### Idea-level checker
+
+Fixture tests and `python3 -m idea_detection.eval_fixtures` cover the METHOD examples and the pilot look-alikes. They do not replace the blind rounds above.
+
+One held-out machine run scored all 398 passages in round 1, round 2, round 3, and `tests/audit/fp_test_passages.csv` against the original eight pilots: 58 hits, 0 false positives, 0 extractor failures. Totals, and the miss labels from the review of that run, are in [idea_detection/E2E_SUMMARY.md](idea_detection/E2E_SUMMARY.md). The five pilots added later are not in that table. A local re-run writes its IR dump and results CSV under `tmp/` and scores them with `python3 -m idea_detection.score_eval`. That extract is not part of CI.
 
 ## Limitations
 
@@ -210,6 +223,16 @@ python3 -m idea_detection.eval_fixtures
 
 ```
 python3 -m unittest tests/idea_detection/test_checker.py
+```
+
+```
+python3 -m unittest tests/idea_detection/test_score_eval.py
+```
+
+Score a held-out results CSV (columns `id`, `truth`, `acceptable`, `flagged`, `possible`, optional `miss_class`):
+
+```
+python3 -m idea_detection.score_eval idea_detection/examples/score_eval_example.csv
 ```
 
 Confirm that the recomputed scores match the committed ones:

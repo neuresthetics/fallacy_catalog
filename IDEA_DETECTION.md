@@ -18,6 +18,18 @@ The original eight are unchanged, including ad hominem’s `trait_irrelevant_to_
 
 Each new pilot has an `ir_forbid` for the catalog look-alikes: a uniform population, a cautious or low-stakes generalization, or a selection-not-size doubt; a causal chain whose links are each given a mechanism, or line-drawing with no prediction; options that are not claimed to be the only ones, or a true dichotomy; expert agreement, a question about taste or popularity itself, popularity as one piece among others, or a non-decisive hedge; association offered only as disclosure or caution, or merits that are actually engaged. A slippery chain with no stated leap is at most possible issue (catalog outside-text condition on whether each later step is likely). A “probably” hedge does not fill that gap. Hedge, `default_rule`, and precautionary mappings stay as in the extractor prompt.
 
+## Development process
+
+The loop is design note, refine from a run, implement pilots and forbids, fixture tests, held-out scoring, miss taxonomy, then the next pilot. Full steps, the charity forbids that stay in place, and the rules for adding a pilot: [`idea_detection/DEV_PROCESS.md`](idea_detection/DEV_PROCESS.md).
+
+Held-out scoring labels are `hit`, `fp`, `clean`, `partial`, `wrong_possible`, `expected_outside`, `expected_charity`, `ir_gap`, `pattern_gap`, `contested_stay`, and `inside_miss` (an inside miss that still needs `ir_gap` or `pattern_gap`). A wrong-label `possible_issue` is `wrong_possible`, not a hit. Genetic fallacy, bulverism, ad hoc rescue, and special pleading count as inside a pilot only when that id is itself a pilot. Guilt by association is a pilot, so its own name counts; it does not count as ad hominem. Details and the eight-pilot N=398 numbers: [`idea_detection/E2E_SUMMARY.md`](idea_detection/E2E_SUMMARY.md).
+
+```
+python3 -m idea_detection.score_eval idea_detection/examples/score_eval_example.csv
+```
+
+[METHOD.md](METHOD.md) stays the procedure for hand audits, including Genius Study audits. This layer does not rewrite it.
+
 ## Run the fixture eval
 
 From the repository root:
@@ -28,6 +40,10 @@ python3 -m idea_detection.eval_fixtures
 
 ```
 python3 -m unittest tests/idea_detection/test_checker.py
+```
+
+```
+python3 -m unittest tests/idea_detection/test_score_eval.py
 ```
 
 Check one IR file:
