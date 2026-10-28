@@ -67,7 +67,21 @@ python3 -m idea_detection idea_detection/fixtures/method_ex1_ad_hominem.json
 ```
 
 ```
+python3 -m unittest tests/idea_detection/test_method_record.py
+```
+
+```
 python3 -m idea_detection.score_eval idea_detection/examples/score_eval_example.csv
+```
+
+Full-detail output for a folder of Idea IR files (METHOD record shape, not the one-line verdict):
+
+```
+python3 -m idea_detection --method-record path/to/irs/
+```
+
+```
+python3 -m idea_detection --method-record --method-format jsonl path/to/irs/
 ```
 
 `eval_fixtures` checks the two METHOD fixtures: example 1 flags `ad-hominem`; example 2 is `no_issue` on `appeal-to-authority`. The checker strips `expected_checker` and does not treat it as a verdict.
@@ -143,4 +157,6 @@ The N=398 review's remaining outside-pilot candidates, in the order that review 
 
 ## METHOD
 
-[METHOD.md](../METHOD.md) is the procedure for checking an argument by hand, including Genius Study audits. This layer does not rewrite it. A machine flag still has to be readable as a METHOD record: quoted spans, conditions met, look-alikes ruled out.
+[METHOD.md](../METHOD.md) is the procedure for checking an argument by hand, including Genius Study audits. This layer does not rewrite it.
+
+A machine flag is readable as a METHOD record through [`record.py`](record.py): entry id and name, passage quote, each catalog condition, each legitimate look-alike, and the verdict. The record is an idea_detection assist / lead-to-check. "Met by" uses a closed checker span only. A condition with no declared span, or only an open outside-text span, is marked not shown, and no quote is invented. Flagged look-alikes say the paired `ir_forbid` atoms were checked and none matched. They do not grow a handwritten reason. `no_issue` passages, including METHOD example 2, are not emitted as flags. Bulk use is `python3 -m idea_detection --method-record` on one IR, many IR paths, or a directory of `*.json`. JSONL is `--method-format jsonl`. A saved `--json` report is `python3 -m idea_detection.record --json report.json --ir <irs>`.

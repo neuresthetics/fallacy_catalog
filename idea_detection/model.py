@@ -214,17 +214,21 @@ def succeed(
         new.bindings.update(extra_bindings)
     if var and node_id and kind:
         new.bindings[var] = {"kind": kind, "id": node_id, "span": span}
-    new.atom_spans.append({
+    recorded = {
         "atom": atom,
         "name": name,
         "var": var,
         "id": node_id,
         "quote": span.get("quote") if isinstance(span, dict) else None,
-    })
+    }
+    # Open atoms bind an anchor quote for an outside-text gap. They do not
+    # show that the catalog condition is met.
     if open_ or missing:
+        recorded["open"] = True
         new.open = True
         if missing and missing not in new.missing_facts:
             new.missing_facts.append(missing)
+    new.atom_spans.append(recorded)
     return new
 
 
