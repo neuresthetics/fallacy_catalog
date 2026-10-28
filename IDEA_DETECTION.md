@@ -83,3 +83,13 @@ python3 -m idea_detection.record --json report.json --ir path/to/irs/
 ```
 
 `--verdicts flag,possible_issue` is the default. `no_issue` adds rows the checker blocked with `ir_forbid` or a fallback. Rows whose pattern simply did not match stay out.
+
+## Nested layers
+
+A folder of excerpt IRs can come back as possible issue only, because the flat checker will not treat outside-text gaps as flags. The nested pass peels premises, citations, and sub-claims and re-checks text a client supplies (a snapshot window or a child IR). It does not fetch a corpus and it does not loosen the flat gates. Depth is unlimited unless `--max-depth` is set. Records from that pass carry a layer path (`L0→L1→…`).
+
+```
+python3 -m idea_detection.nested --context-map path/to/contexts.jsonl path/to/irs/
+```
+
+Design: [`idea_detection/NESTED_LAYERS.md`](idea_detection/NESTED_LAYERS.md).
