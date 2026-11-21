@@ -1,6 +1,6 @@
 # Corporate MINDSPACE — distilled memo (2026-10-25)
 
-**For:** Jason (mindspace bot) · **From:** research brief `corporate_mindspace_2026-10-25.md` (passes 1–8; sources through **#153**)  
+**For:** Jason (mindspace bot) · **From:** research brief `corporate_mindspace_2026-10-25.md` (passes 1–30; sources through **#267**; GitHub holds passes 1–30)  
 **Stance:** detection / naming only · not METHOD.md · not for fallacy audits
 
 ---
@@ -69,11 +69,38 @@ Corporations run the **same lever stack** as public BI (Defaults, Salience, Norm
 7. **NY SiriusXM** — retention-script cancel obstruction (#124)  
 8. **MELI × Common Cents** — rare corporate cite of **Dolan 2010 MINDSPACE** (#116)
 
+## Passes 9–20 (2026-11-04) — top adds
+
+- **Amazon Prime settled:** $2.5B ($1B penalty + $1.5B redress), with execs named and a confirm-shaming decline button banned (#214)
+- **Adobe order entered** 10 Apr 2026: $75M + $75M (#154–155)
+- **UK DMCCA first fines:** AA £4.2M, Marks Electrical (pre-ticks), StubHub. Subscription regime starts **1 Jan 2027** (#156–160)
+- **Cancel mazes are the most-enforced misuse:** Uber (23 screens, pending), Cerebral (easy-cancel button *removed when churn rose*), Match, Care.com (#181–193, #217)
+- **Microsoft Copilot plan migration:** ACCC suit + CMA probe, both pending (#158, #198)
+- **Robinhood MA order:** bans confetti, lottery rewards and tap-games (#177–178)
+- **AI companions:** guilt farewells in 37% of exits (#163)
+- **Critique:** Szaszi d≈0.01–0.08 bias-corrected; Chater–Loewenstein i-frame deflection (#204–207)
+
+## Passes 21–25 (2026-11-21) — top adds
+
+- **EU Digital Fairness Act proposed** 11 Nov 2026 (COM(2026) 1100). It covers a dark-pattern blacklist, a right to switch off addictive features, trial and renewal reminders, an online cancel button, a right to a human, and rules for AI agents. Proposal only (#220–221)
+- **More UK DMCCA fines:** Wayfair £4.8M (fake countdowns), Appliances Direct £1.2M (pre-ticks), Gold's Gym £45k (#228). StubHub date confirmed: 23 Jun 2026
+- **Gaps closed:** Coupang fine = **₩2.5M** (KFTC primary, #229). LinkedIn: no regulator cancel case (#230–231). Autodesk: not found
+- **AI:** ChatGPT has ads (#233). AI shopping agents fall for dark patterns ~41% of the time, most of all preselection and hidden info (#234–235). 9th Cir. let Perplexity's shopping agent keep running (#237)
+- **India penalty orders:** CCPA fined Rapido and Ola ₹10 lakh each for confirm shaming. Ola's own data showed paying extra *lowered* acceptance (#240–241). Senacon targets fake scarcity at Viagogo (#242)
+
+## Passes 26–30 (2026-11-21) — top adds
+
+- **DFA blacklist mapped:** Annex I points 53–62, the 10 banned dark patterns, mostly Defaults, Salience and Affect (#245)
+- **EU primaries:** X fined €120M because its paid blue check counts as deceptive design (Messenger, #247). TikTok "rabbit hole" preliminary finding (#246)
+- **Kids:** ICO fined Reddit £14.47M and TikTok's £12.7M fine is now final. EU guidelines say streaks and autoplay should be off by default for minors. Brazil banned loot boxes for minors (#250–254)
+- **Workers:** the EU Platform Work Directive bans algorithmic "undue pressure" (due 2 Dec 2026). Glovo was fined €5M over score-gated shifts (#255–256)
+- **Civic:** Maryland treats a pre-checked recurring donation box as non-consent. Low charity default amounts raise participation but shrink gifts (#263, #267)
+
 ## Still open
 
-Nubank/Ambev *named* BE units · Norton/Autodesk/LinkedIn Premium FTC cancel parallels · VA named 2024–26 ARL defendants · Fortune GR × behavioural design primary · Africa *corporate* labs (statute ≠ units)
+Uber (trial Oct 2027) / ACCC and CMA Microsoft / DSA TikTok and Meta decisions · DFA legislative path · FTC NPRM · CCPA × Uber · Reddit ICO appeal · CA AADC remand · PWD transposition · Nubank / Mercado Pago BE units · driver quest findings · charity-default enforcement
 
-Full brief (tables, all #sources; through eighth pass): `research/corporate_mindspace_2026-10-25.md`  
-GitHub (`main` @ `6a961643ca64ee00e69fa439654abbfe7602c671`): `neuresthetics/fallacy_catalog/research/corporate_mindspace_2026-10-25.md` · memo `neuresthetics/fallacy_catalog/research/corporate_mindspace_MEMO_2026-10-25.md`
+Full brief (tables, all #sources): `/workspace/mindspace/research/corporate_mindspace_2026-10-25.md`  
+GitHub holds passes 1–30 (sources #1–#267): `neuresthetics/fallacy_catalog/research/corporate_mindspace_2026-10-25.md`
 
 🧠

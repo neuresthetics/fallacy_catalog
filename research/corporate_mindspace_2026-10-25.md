@@ -4,7 +4,7 @@
 **Date:** 2026-10-25 (America/Los_Angeles)  
 **Scope:** How corporations, consultancies, and UX/product teams use MINDSPACE by name or equivalent behavioural levers; naming euphemisms; ethics/regulation; lever-mapped examples.  
 **Stance for this bot:** detection and naming. Past covert uses in Jason's repos are past learning experiments only.  
-**Method:** Web search + page fetch of primary/high-quality secondary sources. First–eighth same-day passes (2026-10-25 America/Los_Angeles). Committed through the eighth pass at Jason Burns's request. Not part of METHOD.md and not for fallacy audits.
+**Method:** Web search + page fetch of primary/high-quality secondary sources. First–eighth passes 2025-10-25; ninth–twentieth passes 2026-11-04; twenty-first–thirtieth passes 2026-11-21. Research only; GitHub holds passes 1–30 (sources #1–#267).
 
 ---
 
@@ -75,6 +75,118 @@
 - **GoodRx gap partially closed:** FTC→DOJ GoodRx order (Feb 2023, HBNR) — $1.5M + permanent bar on health-data-for-ads; order text **names dark patterns** ban on manipulative consent designs. Not a PBM formulary-UI case.
 - **Insurance sludge (distinct defendant):** *Barrows v. Humana* (W.D. Ky.) — Aug 2025 order lets contract/fraud/good-faith claims proceed over alleged **nH Predict** AI post-acute denials (same tool family as UHC Lokken; still **litigation**, not adjudicated liability).
 - **Still open / thin:** Nubank/Ambev *named* BE units (product-level nudge journalism ≠ unit); Norton/Autodesk/LinkedIn Premium FTC/DOJ cancel parallels; VA named 2024–26 ARL defendants; corporate lobbying×BI Fortune primary; new Fortune “we launched a nudge unit” annual-report names beyond prior roster (Rabobank Behavioral Expert team = culture/HR BE, not consumer CRO).
+
+### Ninth-pass conclusion delta (2026-11-04 ~20:05 America/Los_Angeles)
+
+- **Adobe US closed:** court **entered** the DOJ stipulated order 10 Apr 2026 (N.D. Cal. 5:24-cv-03630, Judge Wise): $75M civil penalty + $75M free services; same-medium cancel, no forced agent, ETF disclosed before billing info, 10-year term. Status moves from *pending* to *entered* (Defaults + Salience + sludge remedy).
+- **UK DMCCA fines now real:** AA/BSM £4.2M drip (15 Apr 2026, first DMCCA consumer fine, 40% settlement discount); Marks Electrical £720k for **pre-selected paid add-ons** (Defaults); StubHub £889k drip. CMA opened **Microsoft 365** probe (27 Jul 2026) on auto-move to pricier Copilot plans at renewal (Defaults + Salience).
+- **UK subscription regime brought forward:** draft Consumer Subscription Contracts Regulations 2026 laid 19 Oct 2026; in force **1 Jan 2027** (not Spring 2027). Reminder notices on durable medium, renewal cooling-off, online exit.
+- **EU:** Digital Fairness Act proposal still **expected mid-Nov 2026** (EPRS); DSA TikTok/Meta addictive-design still *preliminary*, no fine; DMA Meta: Commission accepted "less personalised ads" choice (8 Dec 2025) and no new penalty found.
+- **AI as choice architecture:** HBS De Freitas et al. — companion apps use manipulative farewells in **37%** of exits, raising post-goodbye engagement up to 14–16× (Affect + Commitment). FTC 6(b) companion-chatbot study (Sep 2025; monetised engagement). CA SB 243 (break reminders for minors, in force 1 Jan 2026). Garante €5M Replika fine. OpenAI GPT-4o sycophancy rollback (Apr 2025: thumbs-up reward → flattery). Salvi et al. *Nat Hum Behav* 2025: personalised GPT-4 out-persuaded humans 64.4% of the time. CMA agentic-AI guidance: firms liable for their agents.
+- **Effect sizes:** Milkman et al. *Nature* 2024 megastudy (CVS, 3.6M): reminders +1.05pp booster uptake; free rides no benefit; forecasters mispredict. Maier et al. PNAS 2022: no overall nudge effect after publication-bias correction (heterogeneity remains).
+- **Lobbying × design (first primary hit):** IAB + NCTA petitioned against FTC click-to-cancel; 8th Cir. vacated rule (8 Jul 2025, procedural); FTC restarted with ANPRM (13 Mar 2026).
+- **Africa corporate BE:** Discovery (SA) publicly frames itself as "the world's first behavioural bank" and its Vitality shared-value model as applied behavioural economics (Incentives + Commitments + Ego). This is the strongest Africa corporate example found so far.
+
+### Tenth-pass conclusion delta (2026-11-04 ~20:05 America/Los_Angeles)
+
+- **Fintech gamification has a primary-source order:** MA Securities Division × Robinhood consent order (18 Jan 2024, $7.5M). It permanently bans (for MA accounts) trade-tied confetti, game-of-chance/scratch-ticket rewards, waitlist 'tapping' and list push notifications, and removes emojis from the transaction life-cycle (Affect + Salience + Norms via '100 Most Popular'). FTC × Credit Karma (2022): A/B tests showed 'pre-approved' wording beat 'excellent odds' on clicks; the order requires keeping testing records for 5 years, which makes **experiment logs evidence**.
+
+### Eleventh-pass conclusion delta (2026-11-04 ~20:05 America/Los_Angeles)
+
+- **Health/care subscriptions:** FTC/DOJ × Cerebral (Apr 2024, >$7M). The complaint says the easy-cancel button was **removed after two weeks when cancellations rose**, the clearest documented intent-to-sludge signal found so far. The order defines 'Dark Pattern' in its cancel clause. FTC × Care.com (Aug 2024, $8.5M): inflated job and wage claims (Messenger/Norms) plus cancellation dark patterns.
+
+### Twelfth-pass conclusion delta (2026-11-04 ~20:05 America/Los_Angeles)
+
+- **Gaming moved from loot-box debate to currency rules:** EU CPC Key Principles on in-game virtual currencies (Mar 2025) require real-money price display, ban obscuring cost with multiple currencies or forced bundles, and add child safeguards. First CPC action is vs **Star Stable** (direct appeals to children, time pressure). This maps to Salience (price opacity) + Affect (urgency) + Ego.
+
+### Thirteenth-pass conclusion delta (2026-11-04 ~20:05 America/Los_Angeles)
+
+- **Ride-hail/delivery:** FTC v. Uber (21 Apr 2025, *pending*): Uber One cancellation took up to **23 screens / 32 actions** and was removed within 48h of billing; '$25/mo' savings claim excluded the $9.99 fee. Lyft (Oct 2024, $2.1M): inflated driver-earnings anchors (Salience/Incentives). Grubhub (Dec 2024, $140M judgment, $25M paid): hidden service/small-order fees (drip).
+
+### Fourteenth-pass conclusion delta (2026-11-04 ~20:05 America/Los_Angeles)
+
+- **Telecom:** Ofcom banned inflation/percentage-linked mid-contract rises in new contracts from 17 Jan 2025; rises must be stated in pounds and pence (de-biasing Salience). UK broadband cannot auto-renew; end-of-contract notices must show best tariff (anti-default inertia). FCC all-in pricing for cable/satellite came into force 19 Dec 2024.
+
+### Fifteenth-pass conclusion delta (2026-11-04 ~20:05 America/Los_Angeles)
+
+- **APAC adds named Big Tech cases:** ACCC sued **Microsoft** (27 Oct 2025, *pending*), alleging it hid the cheaper 'Classic' (no-Copilot) plan, which only appeared in the cancel flow (Defaults + Salience). This parallels the CMA probe [158]. KFTC sanctioned **Coupang** (Oct 2025) for a bold 'Agree' vs small 'Defer' on a Wow price hike (false hierarchy; small fine). The 2022 KFTC fined 5 OTT incl. YouTube/Netflix for obstructing cancellation. Japan SCTA final-confirmation-screen duties (Jun 2022) create rescission rights.
+
+### Sixteenth-pass conclusion delta (2026-11-04 ~20:05 America/Los_Angeles)
+
+- **Academic critique sharpened:** Chater & Loewenstein (BBS 2023) argue corporations promote i-frame (individual nudge) framings to deflect s-frame regulation. This is a *political-economy* use of MINDSPACE. Szaszi et al. (PNAS 2022): bias-corrected nudge effect d≈0.01–0.08 vs Mertens' d=0.43; defaults are the robust exception. LSE/BBS commentary flags private funding distorting BPP research.
+
+### Seventeenth-pass conclusion delta (2026-11-04 ~20:05 America/Los_Angeles)
+
+- **Detection heuristics now tool-backed:** FTC staff report (Sep 2022) gives a 4-family taxonomy. Research detectors use LLM/multimodal methods: AppRay (2,185 instances / 100 apps; cross-page patterns), DPGuard (12,301 UIs / 2,000 apps+sites), DPDGPT (1,609 screenshots). Their practical value is screening **cross-page** sludge such as cancel mazes, which static screenshot audits miss.
+
+### Eighteenth-pass conclusion delta (2026-11-04 ~20:05 America/Los_Angeles)
+
+- **Amazon Prime closed:** FTC settlement 25 Sep 2025, **$2.5B** ($1B civil penalty, a record for an FTC rule case, plus $1.5B redress to ~35M users). It names executives Lindsay and Ghani. Internal quotes: 'subscription driving is a bit of a shady world', 'an unspoken cancer'. Required: a neutral decline button (no 'No, I don't want Free Shipping' confirm-shaming) and same-method cancel. This supersedes the 2023 *complaint-only* status in this brief.
+
+### Nineteenth-pass conclusion delta (2026-11-04 ~20:05 America/Los_Angeles)
+
+- **Dating:** FTC × Match Group (12 Aug 2025, $14M, 5% of demand): hidden conditions on the 'six-month guarantee' (Commitments), difficult cancellation, and retaliatory lock-outs after chargebacks. Company admits no liability.
+
+### Twentieth-pass conclusion delta (2026-11-04 ~20:05 America/Los_Angeles)
+
+- **Synthesis:** the cancellation-maze is the single most-enforced MINDSPACE misuse across US/UK/EU/APAC 2024–26 (Amazon, Uber, Adobe, Cerebral, Match, Care.com, Microsoft/ACCC). Strongest intent evidence = internal docs / A-B logs (Amazon quotes, Cerebral button removal, Credit Karma tests). Open gaps: Nubank/Ambev named units, Autodesk/LinkedIn regulator primaries, outcomes of Uber/ACCC-Microsoft/CMA-Microsoft/DSA-TikTok, DFA text.
+
+### Twenty-first-pass conclusion delta (2026-11-21 ~12:30 America/Los_Angeles)
+
+- **EU Digital Fairness Act is now real text:** the Commission proposed it on 11 Nov 2026 (COM(2026) 1100, a *regulation* replacing the UCPD). It adds an Art 10 dark-pattern ban with a blacklist in Annex I Part III; Art 11 influencer disclosure; Arts 12–13 profiling-based ads and prices aimed at minors or using sensitive data; Arts 14–16 virtual-currency prices, variable rewards (off for minors, opt-out for all), and no pay-to-win for minors; Art 17 a right to switch off addictive features; Arts 20–25 trial-to-paid reminders, renewal reminders, an online termination button, and a right to a human; Arts 26–27 rules for AI agents that contract for consumers. It is a proposal only; Parliament and Council still have to act [220][221].
+- **Pending cases have not resolved:** FTC v. Uber is still in discovery, with a bench trial set for 25 Oct 2027 [222][223]. ACCC v. Microsoft has a defence on file and no judgment [224]. The CMA Microsoft 365 case is still at evidence-gathering, with an update due by end-2026 [158]. DSA TikTok got a second preliminary finding (6 Nov 2026, the "rabbit hole" feed). Meta rejected its July finding. Neither has a fine yet [225][227].
+- **New UK DMCCA fines:** Wayfair £4.8M for fake 24-hour "Flash Deals" with countdown timers, Appliances Direct £1.2M for fake countdowns plus pre-ticked paid extras, and Gold's Gym £45k for a hidden joining fee (14 Oct 2026). CMA's DMCCA total is now >£12M in fines [228]. FTC click-to-cancel is still at the ANPRM stage; no NPRM found [175].
+
+### Twenty-second-pass conclusion delta (2026-11-21 ~12:30 America/Los_Angeles)
+
+- **Closed with primary sources:** KFTC fined Coupang **₩2.5M** (과태료) on 15 Oct 2025 for its false-hierarchy "agree now / defer" price-rise consent (₩4,990→₩7,890/mo). In the same release, Wavve was fined ₩4M and NHN Bugs ₩3M for obstructing cancellation [229]. CMA fined StubHub UK £889,200 on **23 Jun 2026** [157]. LinkedIn Premium: the only cancel-related primary found is a private Oregon suit dismissed in 2023 [230], and the Texas AG CID (14 Jul 2026) concerns ghost jobs, not cancellation [231]. Autodesk: no regulator or court action on cancellation found.
+- **Still unverified:** no named behavioural-science unit at Nubank (LinkedIn profiles only, not cited) or Mercado Pago (only the CCL partnership [116]). Ambev's closest company primary is the **Smart Drinking Lab** (2021), a harm-reduction behaviour-change incubator, not a consumer CRO unit [232].
+
+### Twenty-third-pass conclusion delta (2026-11-21 ~12:30 America/Los_Angeles)
+
+- **AI is now both a target and a channel for choice architecture.** ChatGPT has shown ads since 9 Feb 2026, matched to conversation topic and past chats. OpenAI says the ads don't influence answers; that is a company claim, not audited [233]. AI agents fall for the same dark patterns people do: they followed a single dark pattern 41% of the time [235]. Both agents and humans fall hardest for **preselection, trick wording, and hidden information** [234]. A short "strategic text sequence" can push a product to the top of an LLM's recommendations [236]. The 9th Circuit vacated Amazon's injunction against Perplexity's shopping agent (4 Aug 2026) [237]. NY companion-AI safeguards took effect 5 Nov 2025 [238]. AI Act Art 5(1)(a) bans manipulative AI, with guidelines out since Feb 2025 [239]. No FTC enforcement against companion apps found.
+
+### Twenty-fourth-pass conclusion delta (2026-11-21 ~12:30 America/Los_Angeles)
+
+- **India moved from guidelines to penalty orders:** CCPA fined Rapido ₹10 lakh (15 Sep 2026) for **confirm shaming** plus **interface interference** (a colour-coded price slider) [241]. It fined Ola ₹10 lakh (13 Nov 2026) for pre-ride "tip" prompts. Ola's own data showed add-on rides were accepted *less* often (Delhi 38% vs 62%) [240]. Uber and Namma Yatri are still under investigation. **Brazil:** Senacon NT 18/2026 recommends sanction proceedings against Viagogo, including scarcity alerts with no stated criteria [242]. **Nigeria:** FCCPC draft regulations (Apr 2026) would ban pre-ticked boxes, consent by inaction, and dark patterns in consent screens; they are draft only [243]. **Türkiye:** the Advertising Board fined cancellation-flow and preselection dark patterns in 2025 (secondary) [244]. Gulf states: still no explicit dark-pattern ban found.
+
+### Twenty-fifth-pass conclusion delta (2026-11-21 ~12:30 America/Los_Angeles)
+
+- **Synthesis:** enforcement has gone global and converged on the same five patterns: cancel obstruction, drip pricing, preselection, fake urgency, and confirm shaming. The DFA would list most of them, and India, Korea, the UK, Türkiye and Brazil already act on them. The newest twist is AI agents as the target of choice architecture. See the top-10 list in pass 25.
+
+### Twenty-sixth-pass conclusion delta (2026-11-21 ~13:20 America/Los_Angeles)
+
+- **The DFA blacklist is now mapped item by item** from the Commission's Annex I (points 53–62). It covers scarcity/popularity claims, persistent scarcity banners, inferred-consent defaults, decline-as-wrong-choice, "no other option", nagging, trick wording/double negatives, a demoted price or renewal term, fake notifications, and asymmetric refuse/withdraw steps. **Defaults, Salience and Affect** carry 8 of the 10 [245].
+- **Commission primaries confirmed:** TikTok "rabbit hole" preliminary finding (6 Nov 2026) [246]. X fined €120M (5 Dec 2025), the first DSA non-compliance decision; the paid "verified" blue check counts as *deceptive design* under Art 25(1) (Messenger: a fake authority signal) [247].
+- **India:** CCPA closed Namma Yatri's case without a penalty after it dropped the tip feature (secondary) [249]. Uber is still under investigation [240]. **Nubank/Mercado Pago:** company primaries show UX research and reducing cognitive load (Caixinhas), but no named BE unit. Still unverified [248].
+
+### Twenty-seventh-pass conclusion delta (2026-11-21 ~13:35 America/Los_Angeles)
+
+- **Kids' design is the fastest-hardening area:**
+  - **ICO:** fined Reddit £14.47M (24 Feb 2026; under appeal) for having no robust age assurance [250]. TikTok's £12.7M fine became final on 24 Sep 2026, and the ICO's probe into its teen recommender system is back on [251].
+  - **EU DSA Art 28 guidelines (14 Jul 2025):** streaks, read receipts, autoplay and push notifications off by default; explicit signals over behavioural signals in feeds; no loot boxes or virtual-currency exploitation [253].
+  - **Brazil's ECA Digital** (in force 17 Mar 2026) **bans loot boxes** in games that children can likely access (Art 20) and sets maximum-protection defaults against autoplay and time-on-app rewards [254].
+  - **US:** the 9th Circuit (12 Mar 2026) let most of California's AADC proceed but kept its **dark-patterns clause enjoined as vague** [252].
+- **Levers:** Defaults (protective defaults now mandated), Incentives/Affect (variable rewards), Salience (feeds).
+
+### Twenty-eighth-pass conclusion delta (2026-11-21 ~13:45 America/Los_Angeles)
+
+- **Algorithmic management of workers is becoming regulated choice architecture.** The EU Platform Work Directive (2024/2831; transposition due **2 Dec 2026**) Art 12(3) bars platforms from using automated systems "in a manner that puts undue pressure on platform workers", and Art 12(1) requires assessing psychosocial risks [255].
+- **Regulators and courts have already reached inside the scoring systems:** Italy's Garante fined Glovo's Foodinho €5M (22 Nov 2024) over the "excellence" score that gates shift priority, order assignment and automated deactivation, with no human review [256]. The Amsterdam Court of Appeal (4 Apr 2023) ordered Ola to give drivers information on its fraud-probability score, earnings profile and ride allocation (GDPR Art 15/22) [257].
+- **Still missing:** quests and surge messaging. I found no regulator finding that names a driver "quest" or surge prompt as manipulative. The evidence is peer-reviewed qualitative and organisational research [258][259], and the FTC's Lyft earnings-claims case (pass 13).
+- **Levers:** Incentives (quests and score-gated priority), Ego/Norms (ratings), Affect (deactivation threat).
+
+### Twenty-ninth-pass conclusion delta (2026-11-21 ~13:55 America/Los_Angeles)
+
+- **Civic uses split two ways.**
+  - **EU political ads:** the TTPA (Reg. 2024/900, applying since 10 Oct 2025) requires labels and sponsor/targeting notices, plus explicit separate consent for targeting. Google and Meta responded by **exiting** EU political ads (Meta stopped delivery on 6 Oct 2025) [260][261][262].
+  - **US pre-checked recurring political donations** (Defaults) are now **statutorily non-consent** in Maryland (Elec. Law §13-244) [263]. Federal H.R. 4511 is still in committee [264]. Connecticut and Missouri moves are noted with weaker sourcing [265][266].
+- **Charity defaults:** the field evidence is two-sided. Low default amounts raise participation (+0.9pp in the field: 1.6% vs 0.7%) but shrink gift size ("scale-back"), so defaults can cancel out (Goswami & Urminsky, JMR 2016) [267]. No regulator action on charity donation UX found.
+- **Levers:** Defaults, Messenger (sponsor disclosure), Salience.
+
+### Thirtieth-pass conclusion delta (2026-11-21 ~14:05 America/Los_Angeles)
+
+- **Synthesis:** the same lever misuse now shows up for four audiences: **consumers, children, workers and donors**. Defaults (pre-ticks, engagement-on, pre-checked recurring) are the most legislated lever, from DFA point 55 to Brazil's ECA Digital to Maryland §13-244. The new frontier is levers aimed at **AI agents** (pass 23) and **workers** (PWD Art 12(3)). See the top-10 v2 and detection checklist v2 in pass 30.
 
 ## Lever-by-lever corporate / commercial examples
 
@@ -1120,6 +1232,569 @@ Verification: WebFetch of OPC Sweep report, FPT resolution, Competition Bureau p
 152. Bloomberg Law — *Barrows* AI class action vs Humana proceeds (15 Aug 2025); W.D. Ky. 3:23-cv-00654. https://news.bloomberglaw.com/health-law-and-business/ai-class-action-against-humana-gets-federal-judges-go-ahead — docket context https://www.govinfo.gov/app/details/USCOURTS-kywd-3_23-cv-00654/context
 153. Bloomberg Línea — Nubank adolescent credit / “caixinhas” framed as nudge (29 Sep 2025) — product-level, not named BE unit. https://www.bloomberglinea.com.br/negocios/nubank-cresce-entre-adolescentes-agora-quer-ensinar-a-poupar-com-cartao-de-credito/
 
+
+## Continued research (ninth pass)
+
+*2026-11-04, America/Los_Angeles. Detection/naming stance.*
+
+### 1. Pending-item status
+- **Adobe (US):** final judgment entered 10 Apr 2026 [154][155].
+- **UK CMA DMCCA:** first fines are AA £4.2M [156], Marks Electrical (default opt-ins) and StubHub (drip) [157]. Microsoft 365 probe is open [158].
+- **UK subscriptions:** in force 1 Jan 2027 [159][160].
+- **EU DFA:** expected mid-Nov 2026. Its scope covers dark patterns, addictive design, subscription traps and personalisation [161].
+- **DSA TikTok/Meta:** still preliminary (see #147/#148). No non-compliance decision found as of 2026-11-04.
+- **DMA Meta:** Commission noted Meta's ads-choice commitment on 8 Dec 2025 [162].
+
+### 2. AI chatbots / agents as choice architecture
+- Emotional-manipulation farewells (Affect, Commitments; detection: an exit intent met by guilt, FOMO or restraint) [163].
+- FTC 6(b) on companions, which includes "monetize user engagement" [164]. Texas AG CIDs to Meta AI Studio / Character.AI (Aug 2025; investigation only) [165].
+- CA SB 243 [166]. Garante–Replika €5M (no legal basis, no age gate) [167].
+- Sycophancy as reward-hacked Affect/Ego: OpenAI postmortem [168].
+- LLM persuasion: Salvi et al. [169].
+- CMA agentic AI guidance [170].
+
+### 3. Effect sizes
+Milkman megastudy 2024 [171]. Maier et al. 2022 [172]. Consistent with DellaVigna–Linos (already in brief).
+
+### 4. Gaps
+- **Norton:** CMA undertakings 2021 (refunds, clearer renewal price, contacting dormant users) [173]. No 2024–26 US federal action found.
+- **Autodesk / LinkedIn Premium:** no regulator primary found.
+- **Lobbying:** IAB suit + 8th Cir. vacatur + 2026 ANPRM [174][175].
+- **Africa:** Discovery "behavioural bank" [176].
+- **Nubank:** behavioural-research roles exist (UX research), but there is no named BE unit (secondary only). Still open.
+- **Ambev / MELI unit, VA named defendants:** still open.
+
+### Sources (continued — ninth pass)
+154. GovInfo — US v. Adobe, final judgment 10 Apr 2026. https://www.govinfo.gov/content/pkg/USCOURTS-cand-5_24-cv-03630/pdf/USCOURTS-cand-5_24-cv-03630-3.pdf
+155. GovInfo — US v. Adobe stipulated order ($75M + $75M). https://www.govinfo.gov/content/pkg/USCOURTS-cand-5_24-cv-03630/pdf/USCOURTS-cand-5_24-cv-03630-2.pdf
+156. CMA — AA/BSM refunds + £4.2M fine (15 Apr 2026). https://www.gov.uk/government/news/cma-orders-the-aa-and-bsm-driving-schools-to-refund-learner-drivers-over-drip-pricing
+157. CMA — Marks Electrical pre-selected charges. https://www.gov.uk/government/news/cma-orders-marks-electrical-to-refund-customers-over-pre-selected-extra-charges ; StubHub hidden fees https://www.gov.uk/government/news/cma-orders-stubhub-uk-to-refund-customers-over-hidden-fees
+158. CMA — Microsoft consumer protection case (opened 27 Jul 2026). https://www.gov.uk/cma-cases/microsoft-consumer-protection-enforcement-case
+159. legislation.gov.uk — draft Consumer Subscription Contracts (Cancellation and Information) Regulations 2026 (in force 1 Jan 2027). https://www.legislation.gov.uk/ukdsi/2026/9780348287912
+160. TLT — regime brought forward to Jan 2027; SI laid 19 Oct 2026. https://www.tlt.com/insights-and-events/insight/dmcc-act-subscription-contracts-regime-brought-forward-by-the-pm-what-do-businesses-need-to-know
+161. EPRS — Towards a digital fairness act (2026). https://www.europarl.europa.eu/RegData/etudes/BRIE/2026/791529/EPRS_BRI%282026%29791529_EN.pdf
+162. EC DMA — Meta commits to give EU users choice on personalised ads (8 Dec 2025). https://digital-markets-act.ec.europa.eu/meta-commits-give-eu-users-choice-personalised-ads-under-digital-markets-act-2025-12-08_en
+163. De Freitas, Oguz-Uguralp, Kaan-Uguralp — Emotional Manipulation by AI Companions (arXiv 2508.19258 / HBS WP). https://arxiv.org/abs/2508.19258
+164. FTC — inquiry into AI chatbots acting as companions (11 Sep 2025). https://www.ftc.gov/news-events/news/press-releases/2025/09/ftc-launches-inquiry-ai-chatbots-acting-companions
+165. Texas AG — investigates Meta and Character.AI (18 Aug 2025). https://texasattorneygeneral.gov/news/releases/attorney-general-ken-paxton-investigates-meta-and-characterai-misleading-children-deceptive-ai
+166. California SB 243 Companion chatbots. https://leginfo.legislature.ca.gov/faces/billNavClient.xhtml?bill_id=202520260SB243
+167. EDPB — Italian SA fines Replika developer. https://www.edpb.europa.eu/news/ai-the-italian-supervisory-authority-fines-company-behind-chatbot-replika_en
+168. OpenAI — Sycophancy in GPT-4o (Apr 2025). https://openai.com/index/sycophancy-in-gpt-4o/
+169. Salvi et al. — On the conversational persuasiveness of GPT-4, Nat Hum Behav 2025. https://www.nature.com/articles/s41562-025-02194-6
+170. CMA — Complying with consumer law when using AI agents (2026). https://www.gov.uk/government/publications/complying-with-consumer-law-when-using-ai-agents/complying-with-consumer-law-when-using-ai-agents
+171. Milkman et al. — Megastudy: reminders boost vaccination, free rides do not, Nature 2024. https://doi.org/10.1038/s41586-024-07591-x
+172. Maier et al. — No evidence for nudging after adjusting for publication bias, PNAS 2022. https://www.pnas.org/doi/full/10.1073/pnas.2200300119
+173. CMA — Norton extends refund rights (14 Jun 2021). https://www.gov.uk/government/news/norton-extends-refund-rights-after-cma-action
+174. 8th Cir. — Custom Communications v. FTC opinion vacating Negative Option Rule (8 Jul 2025). https://ecf.ca8.uscourts.gov/opndir/25/07/243137P.pdf ; IAB statement https://www.iab.com/news/iab-challenges-ftcs-new-subscription-rules-in-federal-lawsuit/
+175. Federal Register — Negative option ANPRM (13 Mar 2026). https://www.federalregister.gov/documents/2026/03/13/2026-04952/rule-concerning-the-use-of-prenotification-negative-option-plans
+176. Discovery Ltd — Incentivise positive change ("world's first behavioural bank"; applying behavioural economics). https://www.discovery.co.za/corporate/incentivise-positive-change
+
+
+## Continued research (tenth pass)
+
+*2026-11-04, America/Los_Angeles. Topic: Fintech.*
+
+| Case | Pattern | Levers | Src |
+|---|---|---|---|
+| MA Securities Div. × Robinhood (consent order 18 Jan 2024) | Confetti after first trade; scratch-off free-stock lottery with low odds of MSFT/V/AAPL; waitlist card-tapping up to 1,000/day ('feeling tappy'); 'Top Movers'/'100 Most Popular' push notifications to new funders | Affect, Norms, Salience, Incentives | [177][178] |
+| FTC × Credit Karma (2022) | 'Pre-approved' / '90% odds' when many were denied; internal A/B showed 'pre-approved' outperformed; $3M; must keep testing records 5 yrs | Messenger (authority), Salience | [179][180] |
+
+**Heuristic:** celebration events tied to transaction *frequency* (not outcomes) = engagement-maximising Affect; flag for regulated products.
+
+### Sources (continued — tenth pass)
+177. Massachusetts Sec. of the Commonwealth — Robinhood $7.5M gamification settlement (18 Jan 2024). https://www.sec.state.ma.us/divisions/news/enforcement-news.htm
+178. MA Securities Division — Robinhood consent order PDF. https://www.sec.state.ma.us/divisions/securities/download/RH-Consent-Order.pdf
+179. FTC — Credit Karma 'pre-approved' action (Sep 2022). https://www.ftc.gov/news-events/news/press-releases/2022/09/ftc-takes-action-stop-credit-karma-tricking-consumers-allegedly-false-pre-approved-credit-offers
+180. FTC — Credit Karma final consent order PDF. https://www.ftc.gov/system/files/ftc_gov/pdf/2023138-credit-karma-combined-final-consent-without-signatures.pdf
+
+
+## Continued research (eleventh pass)
+
+*2026-11-04, America/Los_Angeles. Topic: Health / care.*
+
+- **Cerebral (telehealth):** the complaint alleges an easier cancel button (Apr 2020) was removed after two weeks at the CEO's direction 'after seeing cancellations rise'. Over 56,000 charges came after completed cancellation requests, and >$8M was collected post-cancel-demand. The order is ~$5.1M redress plus a $10M penalty, suspended after $2M. Order §XIV bans requiring unnecessary steps or a 'Dark Pattern' (defined) [181][182][183].
+- **Care.com:** inflated job and wage claims plus impeded cancellation; $8.5M refunds; entered order [184][185].
+- **Heuristic:** an A/B or rollout where a *friction-reducing* change is reverted because churn rose is direct evidence of sludge-as-strategy.
+
+### Sources (continued — eleventh pass)
+181. FTC — Proposed order vs Cerebral, $7M (15 Apr 2024). https://www.ftc.gov/news-events/news/press-releases/2024/04/proposed-ftc-order-will-prohibit-telehealth-firm-cerebral-using-or-disclosing-sensitive-data
+182. FTC — Cerebral joint stipulation / order PDF. https://search.ftc.gov/system/files/ftc_gov/pdf/cerebral_joint_stipulation_order_permanent_injunction.pdf
+183. FTC — Cerebral first amended complaint PDF. https://www.ftc.gov/system/files/ftc_gov/pdf/2223087cerebralfirstamendedcmplt.pdf
+184. FTC — Care.com action (Aug 2024). https://www.ftc.gov/news-events/news/press-releases/2024/08/ftc-takes-action-against-carecom-deceiving-caregivers-about-wages-availability-jobs-its-site
+185. FTC — Care.com entered stipulated order PDF. https://search.ftc.gov/system/files/ftc_gov/pdf/care.com_entered_order.pdf
+
+
+## Continued research (twelfth pass)
+
+*2026-11-04, America/Los_Angeles. Topic: Gaming.*
+
+- **CPC Key Principles on in-game virtual currencies (Mar 2025):** show prices in real money; do not obscure cost through multiple currencies or forced currency bundles; respect withdrawal rights; protect minors [186][187].
+- **Star Stable Online (CPC common position, Art. 19(3) Reg. 2017/2394):** direct exhortations to children, time-limited pressure, unclear pricing [188].
+- Commission convened stakeholder talks on applying the principles (Jun 2025) [189].
+- Distinct from Epic/HoYoverse already in brief: this is *EU network-wide soft law* plus a named case.
+- **Heuristic:** currency-pack sizes that never match item prices (leftover balance) = Salience obfuscation + sunk cost.
+
+### Sources (continued — twelfth pass)
+186. EC — Key principles on in-game virtual currencies (CPC). https://commission.europa.eu/document/download/8af13e88-6540-436c-b137-9853e7fe866a_en?filename=Key+principles+on+in-game+virtual+currencies.pdf
+187. ACM (NL) — in-game virtual currencies must be clearer. https://www.acm.nl/en/publications/acm-and-european-consumer-authorities-use-game-virtual-currencies-must-be-clearer-order-protect-consumers
+188. EC — CPC common position on Star Stable Entertainment AB. https://commission.europa.eu/document/download/030ff1d8-526e-4807-8a7e-1505f9e235d9_en?filename=Common+Position+on+Star+Stable+Online+.pdf
+189. EC — stakeholder talks on the Key Principles (3 Jun 2025). https://commission.europa.eu/news-and-media/news/european-commission-hosts-stakeholders-talks-application-cpc-networks-key-principles-games-virtual-2025-06-03_en
+
+
+## Continued research (thirteenth pass)
+
+*2026-11-04, America/Los_Angeles. Topic: Ride-hail / delivery.*
+
+| Case | Status | Pattern | Src |
+|---|---|---|---|
+| FTC v. Uber (N.D. Cal., filed 21 Apr 2025) | Pending (no resolution found) | 12 actions/7 screens normally; within 48h of billing in-app cancel removed → up to 32 actions/23 screens + support; billed before trial end; savings claims exclude fee; grey small text | [190][191] |
+| US/FTC v. Lyft (Oct 2024) | $2.1M civil penalty | Driver earnings ads based on top-20% and incl. tips; guarantees misdescribed | [192] |
+| FTC + IL AG v. Grubhub (Dec 2024) | $140M judgment, $25M paid | Hidden service / small-order fees; fake 'free delivery' | [193] |
+
+**Heuristic:** time-conditional removal of a cancel path (near billing date) is a strong intent marker.
+
+### Sources (continued — thirteenth pass)
+190. FTC — action against Uber (21 Apr 2025). https://www.ftc.gov/news-events/news/press-releases/2025/04/ftc-takes-action-against-uber-deceptive-billing-cancellation-practices
+191. FTC v. Uber complaint (CourtListener). https://storage.courtlistener.com/recap/gov.uscourts.cand.448273/gov.uscourts.cand.448273.1.0.pdf
+192. FTC — Lyft misleading earnings claims (Oct 2024). https://www.ftc.gov/news-events/news/press-releases/2024/10/ftc-takes-action-stop-lyft-deceiving-drivers-misleading-earnings-claims
+193. FTC — Grubhub action with Illinois AG (17 Dec 2024). https://www.ftc.gov/news-events/news/press-releases/2024/12/ftc-illinois-attorney-general-take-action-against-grubhub-harming-diners-workers-small-businesses
+
+
+## Continued research (fourteenth pass)
+
+*2026-11-04, America/Los_Angeles. Topic: Telecom.*
+
+- **Ofcom:** from 17 Jan 2025, new contracts cannot use inflation/percentage-linked mid-contract rises; any rise must be set out in £/p with its date. This is regulators converting percentage framing into salient absolute numbers [194].
+- **Ofcom:** no auto-renewal for residential broadband; end-of-contract notices 10–40 days ahead with best tariffs; annual best-tariff notices [195].
+- **FCC all-in pricing (cable/satellite):** one prominent total price incl. retrans/RSN fees; compliance 19 Dec 2024 (small operators 19 Mar 2025) [196][197].
+
+### Sources (continued — fourteenth pass)
+194. Ofcom — bans mid-contract price rises linked to inflation. https://www.ofcom.org.uk/phones-and-broadband/bills-and-charges/ofcom-bans-mid-contract-price-rises-linked-to-inflation
+195. Ofcom — automatically renewable contracts. https://www.ofcom.org.uk/phones-and-broadband/switching-provider/automatically-renewable-contracts
+196. FCC — All-In Pricing for Cable and Satellite Television Service order FCC-24-29. https://docs.fcc.gov/public/attachments/FCC-24-29A1.pdf
+197. FCC — compliance dates 19 Dec 2024 / 19 Mar 2025. https://www.fcc.gov/document/december-19-2024-and-march-19-2025-small-entity-complaince-dates
+
+
+## Continued research (fifteenth pass)
+
+*2026-11-04, America/Los_Angeles. Topic: Asia-Pacific regulators.*
+
+- **ACCC v Microsoft (Federal Court, filed Oct 2025):** alleges ~2.7M Australians were told to accept a Copilot price rise or cancel, while the cheaper 'Classic' plan surfaced only inside the cancel flow. Pending; no judgment found [198][199].
+- **KFTC × Coupang (Oct 2025):** sanctioned for presenting a Wow Membership price-rise consent with bold 'Agree' and small 'Defer' (false hierarchy under the amended E-Commerce Act). Amount is small (secondary report; KFTC Korean release) [200][201].
+- **KFTC 2022:** YouTube, Netflix, Wavve and others fined (KRW 19.5M total) for obstructing cancellation/withdrawal [202].
+- **Japan SCTA (in force 1 Jun 2022):** a final confirmation screen must show price, renewal and cancellation terms; misleading displays give rescission rights (CAA English) [203].
+
+### Sources (continued — fifteenth pass)
+198. ACCC — Microsoft in court over Microsoft 365 subscriptions. https://www.accc.gov.au/media-release/microsoft-in-court-for-allegedly-misleading-millions-of-australians-over-microsoft-365-subscriptions
+199. Reuters — Australia sues Microsoft over AI-linked price hikes (27 Oct 2025). https://www.reuters.com/world/asia-pacific/australia-takes-microsoft-court-says-it-misled-27-million-customers-2025-10-26/
+200. Asia Business Daily — Coupang and others sanctioned by KFTC (15 Oct 2025; secondary). https://www.asiae.co.kr/en/article/2025101514363008079
+201. KFTC press release (Korean). https://www.ftc.go.kr/www/selectBbsNttView.do?bordCd=3&key=12&nttSn=46506&pageIndex=1&pageUnit=10&searchCnd=all&searchCtgry=01%2C02
+202. Yonhap — Google, Netflix and 3 other streaming platforms fined (11 Feb 2022). https://en.yna.co.kr/view/AEN20220211008500320
+203. Japan CAA — Act on Specified Commercial Transactions (English, 2023). https://www.no-trouble.caa.go.jp/pdf/20230523ac02.pdf
+
+
+## Continued research (sixteenth pass)
+
+*2026-11-04, America/Los_Angeles. Topic: Academic critiques.*
+
+- **Chater & Loewenstein (BBS 2023):** firms and industry bodies have promoted individual-level (i-frame) behavioural fixes, e.g. recycling or obesity messaging, to deflect system-level (s-frame) regulation. This implies that *corporate sponsorship of nudge campaigns* is itself a lever-use to watch [204][205].
+- **Mertens et al. (PNAS 2022):** d=0.43 after correction (447 effects) [206]. **Szaszi et al. (PNAS 2022):** bias-corrected d≈0.01–0.08; heterogeneity; defaults robust [207].
+- **Private interests (BBS commentary, LSE):** private funding can steer BPP agendas and results; it calls for system-level safeguards [208].
+- **Implication for this brief:** effect sizes reported by firms (vendor case studies) deserve heavier discounting than academic RCTs, which already shrink about 6× at scale (DellaVigna–Linos).
+
+### Sources (continued — sixteenth pass)
+204. Chater & Loewenstein — The i-frame and the s-frame, Behavioral and Brain Sciences (2023). https://www.cambridge.org/core/journals/behavioral-and-brain-sciences/article/iframe-and-the-sframe-how-focusing-on-individuallevel-solutions-has-led-behavioral-public-policy-astray/A799C9C57F388A712BE5A8D34D5229A1
+205. CHIBE — Q&A with George Loewenstein on i-frame/s-frame. https://chibe.upenn.edu/news/qa-with-dr-george-loewenstein-on-i-frame-s-frame-and-the-direction-of-behavioral-public-policy/
+206. Mertens et al. — The effectiveness of nudging: a meta-analysis, PNAS 2022. https://www.pnas.org/doi/10.1073/pnas.2107346118
+207. Szaszi et al. — No reason to expect large and consistent effects of nudge interventions, PNAS 2022. https://www.pnas.org/doi/10.1073/pnas.2200732119
+208. The influence of private interests on research in behavioural public policy: a system-level problem (BBS commentary; LSE repository). https://researchonline.lse.ac.uk/id/eprint/118620/
+
+
+## Continued research (seventeenth pass)
+
+*2026-11-04, America/Los_Angeles. Topic: Detection heuristics.*
+
+- **FTC 'Bringing Dark Patterns to Light' (Sep 2022):** disguised ads/misleading comparisons; difficult cancellation; buried terms/junk fees; privacy-steering defaults [209][210].
+- **AppRay (arXiv 2411.18084):** LLM-guided app exploration plus contrastive learning; 2,185 instances across 100 apps; detects *cross-page* patterns [211].
+- **DPGuard / '50 Shades of Deceptive Patterns' (WWW 2025):** unified taxonomy; multimodal detection; 12,301 UIs from 2,000 apps/sites [212].
+- **DPDGPT (SSRN 2025):** multimodal LLM detection on a 1,609-screenshot set [213].
+
+**Checklist distilled from passes 9–17 (lever → observable):**
+1. *Defaults:* pre-ticked add-on; auto-migration to pricier tier at renewal (CMA/ACCC Microsoft).
+2. *Salience:* drip fee at final step; % rather than £ price rises; multiple virtual currencies.
+3. *Sludge:* cancel steps > sign-up steps; cancel removed near billing; agent-only cancel.
+4. *Affect/Ego:* confirm-shaming decline label; celebration tied to frequency; AI guilt farewells.
+5. *Messenger/Norms:* 'pre-approved', 'most popular' lists sourced from own platform.
+6. *Intent evidence:* reverted friction fix; A/B logs; internal quotes.
+
+### Sources (continued — seventeenth pass)
+209. FTC — Bringing Dark Patterns to Light, staff report PDF (Sep 2022). https://www.ftc.gov/system/files/ftc%5Fgov/pdf/P214800%20Dark%20Patterns%20Report%209.14.2022%20-%20FINAL.pdf
+210. FTC — report press release (Sep 2022). https://www.ftc.gov/news-events/news/press-releases/2022/09/ftc-report-shows-rise-sophisticated-dark-patterns-designed-trick-trap-consumers
+211. AppRay — App-Level Context-Aware Deceptive Pattern Detection (arXiv 2411.18084). https://arxiv.org/html/2411.18084v2
+212. 50 Shades of Deceptive Patterns (arXiv 2501.13351; ACM WWW 2025). https://arxiv.org/html/2501.13351
+213. Lin et al. — DPDGPT, SSRN 5233893. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5233893
+
+
+## Continued research (eighteenth pass)
+
+*2026-11-04, America/Los_Angeles. Topic: Retail / e-commerce.*
+
+- **FTC × Amazon Prime settlement (25 Sep 2025, W.D. Wash.), days into trial:** $1B civil penalty plus $1.5B redress (~35M consumers). Executives Neil Lindsay and Jamil Ghani are named. The decline button must be clear (no 'No, I don't want Free Shipping'), material terms must be disclosed at enrolment, cancel must use the same method, and a third-party redress supervisor is required [214][215].
+- FTC economic expert: Neale Mahoney (Stanford), supported by Bates White, quantified unintended enrolments and failed cancellations [216].
+- **Status change:** the 2023 complaint (#10) is now resolved, and this is the largest consumer outcome in the brief.
+
+### Sources (continued — eighteenth pass)
+214. FTC — Historic $2.5B settlement against Amazon (25 Sep 2025). https://www.ftc.gov/news-events/news/press-releases/2025/09/ftc-secures-historic-25-billion-settlement-against-amazon
+215. Reuters — Amazon to pay $2.5 billion over Prime (25 Sep 2025). https://www.reuters.com/world/amazon-pay-25-billion-settle-prime-deception-allegations-2025-09-25/
+216. Bates White — FTC expert support in Amazon (26 Sep 2025). https://www.bateswhite.com/newsroom/news/bates-white-client-ftc-secures-historic-2-5-billion-settlement-against-amazon
+
+
+## Continued research (nineteenth pass)
+
+*2026-11-04, America/Los_Angeles. Topic: Dating / subscriptions.*
+
+- **FTC × Match Group (12 Aug 2025, N.D. Tex.):** $14M. The 'six-month guarantee' required a photo-approved profile within 7 days, messaging 5 unique users/month and redeeming in the final week, all undisclosed (Commitments + Salience). Account lock-outs after failed chargebacks; difficult cancellation. No admission [217][218][219].
+
+### Sources (continued — nineteenth pass)
+217. FTC — Match Group agrees to pay $14M (12 Aug 2025). https://www.ftc.gov/news-events/news/press-releases/2025/08/match-group-agrees-pay-14-million-permanently-stop-deceptive-advertising-cancellation-billing
+218. FTC — Match proposed order PDF. https://www.ftc.gov/system/files/ftc_gov/pdf/Match-Order.pdf
+219. TechCrunch — Match statement: $14M = 5% of FTC demand (12 Aug 2025). https://techcrunch.com/2025/08/12/match-to-pay-14m-to-the-ftc-due-to-false-advertising-and-other-deceptive-practices/
+
+
+## Continued research (twentieth pass)
+
+*2026-11-04, America/Los_Angeles. Topic: Gap sweep and synthesis.*
+
+- **Closed this session:** Adobe (entered), Amazon (settled), UK DMCCA first fines, UK subscription date (1 Jan 2027), gaming currency principles, telecom price-framing rules, Robinhood primary order.
+- **Still pending (re-check next):** FTC v. Uber; ACCC v Microsoft; CMA Microsoft (update due end-2026); DSA TikTok/Meta decisions; EU DFA proposal text (expected mid-Nov 2026); FTC negative-option NPRM.
+- **Still unverified:** Nubank / Ambev named BE units; Mercado Pago 'behavioural strategies lab' (LinkedIn only; not cited); NAB/Freedom/Swiss Re appointments (LinkedIn only; excluded); Autodesk and LinkedIn Premium regulator primaries.
+- **Cross-sector pattern:** see the checklist in the seventeenth pass. Strongest intent evidence = internal documents (Amazon), reverted fixes (Cerebral [183]), and preserved A/B records (Credit Karma [180]).
+- **Sources:** no new sources in this pass; synthesis only.
+
+
+## Continued research (twenty-first pass)
+
+*2026-11-21, America/Los_Angeles. Topic: status of pending items since 2026-11-04. Stance: detection and naming.*
+
+### 1. EU Digital Fairness Act: proposal text mapped to levers
+Proposed 11 Nov 2026 as COM(2026) 1100, 2026/0356(COD). It is a regulation that repeals the UCPD, and it comes with a revision of the CPC Regulation that would give the Commission direct fining powers in large cross-border cases [220][221]. The provision list below comes from the explanatory memorandum. I did not extract the Annex I Part III blacklist item by item ("not found" in the fetched text).
+
+| DFA provision | What it does | MINDSPACE levers it targets |
+| --- | --- | --- |
+| Art 10 + Annex I Part III | General dark-pattern ban plus a blacklist; Commission can add items by delegated act. Recital 52 examples: giving more prominence to trader-favoured choices, demoting material information, forcing too many clicks, and an "unexpected result" from the consumer's choice | Salience, Defaults |
+| Art 11 | Salient influencer disclosure; ban on exploiting minors' trust | Messenger, Norms |
+| Arts 12–13 | Profiling-based ads to minors or using sensitive data; harmful personalised pricing | Priming/Salience (targeting), Ego |
+| Art 14 | Prices shown in virtual currency must be transparent | Salience |
+| Art 15 | Variable rewards: odds disclosed, banned for minors, can be switched off by all | Incentives, Affect |
+| Art 16 | No pay-to-win or pay-to-progress for minors | Incentives, Ego |
+| Art 17 | Adults can switch off addictive features (e.g. persistent prompts); list can be amended by delegated act | Salience, Affect, Commitments |
+| Arts 18–19 | Dynamic-priced event tickets; virtual queues must show current and highest price | Salience, Affect (urgency) |
+| Art 20 | Reminder before a free trial turns paid, plus active acceptance | Defaults |
+| Arts 21–22 | Reminder before auto-renewal; after renewal, can terminate at any time on short notice | Defaults, Commitments |
+| Art 23 | Online termination facility | Defaults (anti-roach-motel) |
+| Art 25 | Right to reach a human in customer service | Messenger |
+| Arts 26–27 | Consumers can set main parameters of automated systems used in contracting; simpler information rules for fully automated contracts | Defaults (agentic commerce) |
+
+**Detection note:** the DFA turns the cancel-maze, fake-scarcity and trial-trap detectors already in this brief into per-se offences (the blacklist) once it is adopted. It is not in force.
+
+### 2. Pending cases
+- **FTC v. Uber (N.D. Cal. 4:25-cv-03477):** a 16 Nov 2026 order partly granted a motion to strike Uber's affirmative defences, and the amended answer is due 7 Dec 2026 [222]. A 22 Oct 2026 scheduling order moved fact discovery to 16 Dec 2026, dispositive motions to May 2027, and an 8-day bench trial to 25 Oct 2027 [223] (secondary docket aggregator). No settlement found.
+- **ACCC v. Microsoft:** Microsoft's defence accepts that its emails did not mention the Classic plans, but argues Classic was a time-limited retention offer [224] (secondary). No judgment or penalty as of 2026-11-21.
+- **CMA Microsoft 365:** still at evidence-gathering, with an update due by end-2026 [158]. No infringement finding.
+- **DSA TikTok:** a second preliminary finding (6 Nov 2026) targets the "For You" rabbit-hole effect. The Commission suggested dropping viewing time as a ranking signal and giving more weight to users' explicit preferences [225] (secondary; I did not fetch the Commission release). Under the 6 Feb finding, no fine yet.
+- **DSA Meta:** Meta rejected the July 2026 preliminary finding [227] (secondary). No decision yet.
+- **DSA precedent:** the only DSA non-compliance decision so far is against X: €120M, including Art 25 (deceptive design) [226] (secondary). This makes Art 25 a live hook for dark patterns.
+- **FTC negative-option rule:** still the 13 Mar 2026 ANPRM [175]. No NPRM found as of 2026-11-21.
+
+### 3. New UK DMCCA fines (14 Oct 2026) [228]
+| Firm | Fine | Conduct | Levers |
+| --- | --- | --- | --- |
+| Wayfair | £4.8M | "Daily Deals"/24h "Flash Deals" with countdown timers and "Here Today, Gone Tomorrow"; prices stayed the same or fell after the deadline | Affect (urgency), Salience |
+| Appliances Direct | £1.2M + ~£432k refunds | Pre-ticked paid removal/installation; repeated "limited-time" discount pop-ups | Defaults, Affect |
+| Gold's Gym (UK franchise) | £45k + £9,220 refunds | Joining fee left out of the headline price | Salience (drip) |
+All three got the 40% settlement discount. The CMA reports >£12M in DMCCA consumer fines and ~£2.4M in refunds over 18 months.
+
+### Sources (continued — twenty-first pass)
+220. European Commission — press release IP/26/2407, Digital Fairness Act proposal (11 Nov 2026). https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_26_2407/IP_26_2407_EN.pdf
+221. European Commission — Proposal for a Regulation (Digital Fairness Act), COM(2026) 1100 final (11 Nov 2026). https://commission.europa.eu/document/download/0575d59f-554f-4a9e-b54b-e6b717175809_en?filename=Proposal+for+a+Digital+Fairness+Act.pdf
+222. GovInfo — FTC v. Uber, order on motion to strike (16 Nov 2026). https://www.govinfo.gov/app/details/USCOURTS-cand-4_25-cv-03477/USCOURTS-cand-4_25-cv-03477-27
+223. DocketBird — FTC v. Uber docket incl. 22 Oct 2026 scheduling order (secondary docket aggregator). https://www.docketbird.com/court-cases/Federal-Trade-Commission-v-Uber-Technologies-Inc-et-al/cand-4:2025-cv-03477
+224. Maddocks — Microsoft's defence in the ACCC subscription case (20 Jul 2026; secondary). https://www.maddocks.com.au/insights/necessary-innovation-or-hidden-choices-microsofts-defence-in-the-accc-subscription-case
+225. CADE project — Commission preliminarily finds TikTok's recommendation feed in breach of DSA (6 Nov 2026 findings; secondary). https://cadeproject.org/updates/european-commission-preliminarily-finds-tiktoks-recommendation-feed-in-breach-of-the-dsa/
+226. Matheson — DSA addictive design and the X €120M decision (secondary). https://www.matheson.com/insights/eu-commission-finds-platforms-addictive-design-breaches-dsa/
+227. AP — EU accuses Meta of addictive Facebook and Instagram design; Meta response (Jul 2026; secondary). https://apnews.com/article/facebook-instagram-eu-regulators-teens-addictive-b2f0ffd5ffc90721cacef7937e5909d2
+228. CMA — CMA fines firms £6 million for misleading sales tactics (14 Oct 2026). https://www.gov.uk/government/news/cma-fines-firms-6-million-for-misleading-sales-tactics
+
+
+## Continued research (twenty-second pass)
+
+*2026-11-21, America/Los_Angeles. Topic: closing unverified gaps.*
+
+| Gap | Status | Evidence |
+| --- | --- | --- |
+| Coupang fine amount | **Verified** — ₩2.5M 과태료 plus corrective order (KFTC release 15 Oct 2025). Same release: Wavve ₩4M and NHN Bugs ₩3M for deceptively obstructing cancellation; Spotify ₩1M for disclosure failures; ₩10.5M total | [229] |
+| StubHub UK fine date | **Verified** — 23 Jun 2026; £889,200 fine; >£590k refunds to 51,350 customers; drip pricing 6 Apr–7 Dec 2025 | [157] (same URL, date now confirmed) |
+| LinkedIn Premium cancel | **Still no regulator cancel action.** Private Oregon UTPA class action (*Easterbrook v. LinkedIn*, D. Or. 6:22-cv-01108) dismissed 20 Apr 2023. Texas AG CID (14 Jul 2026) is about Premium value and "ghost jobs" (Messenger/Incentives claim), not cancellation | [230][231] |
+| Autodesk cancel | **Not found** — no FTC/DOJ/AG/court action on subscription cancellation; search hits were securities suits | — |
+| Nubank BE unit | **Still unverified** — only individual LinkedIn profiles mention behavioural economics within UX research; not cited | — |
+| Ambev BE unit | **Partial** — no "behavioural science" unit. The company-primary **Smart Drinking Lab** (opened 2021, under the Center for Innovation and Technology) aims to "transform how Brazilians behave" on harmful drinking. It is harm reduction run by corporate affairs, so it is Messenger/Ego reputation work, not consumer CRO | [232] |
+| Mercado Pago BE unit | **Still unverified** — only the Common Cents Lab partnership (already [116]) | — |
+
+### Sources (continued — twenty-second pass)
+229. KFTC (공정거래위원회) — 4개 사업자의 전자상거래법 위반행위 제재 (15 Oct 2025): Coupang ₩2.5M, Wavve ₩4M, NHN Bugs ₩3M, Spotify ₩1M. https://www.ftc.go.kr/www/selectBbsNttView.do?bordCd=3&key=12&nttSn=46506&searchCtgry=01%2C02
+230. *Easterbrook v. LinkedIn Corp.*, No. 6:22-cv-01108-MC (D. Or. 20 Apr 2023), opinion and order granting dismissal. https://storage.courtlistener.com/recap/gov.uscourts.ord.168216/gov.uscourts.ord.168216.37.0.pdf
+231. Texas Attorney General — investigation of LinkedIn over "ghost jobs" for Premium subscribers (14 Jul 2026). https://www.texasattorneygeneral.gov/news/releases/attorney-general-ken-paxton-investigates-linkedin-advertising-fake-and-misleading-job-opportunities
+232. AB InBev — Inside the Ambev Smart Drinking Lab (25 Aug 2023; company primary). https://www.ab-inbev.com/news-media/smart-drinking/ambev-smart-drinking-lab
+
+
+## Continued research (twenty-third pass)
+
+*2026-11-21, America/Los_Angeles. Topic: generative-AI persuasion and agentic commerce.*
+
+### 1. Ads in chatbots (Salience + Messenger + Priming)
+- OpenAI began testing **ads in ChatGPT** on 9 Feb 2026 for logged-in adults on Free and Go. By 11 Aug 2026 it had expanded to the UK, Mexico, Brazil, Japan and South Korea [233]. Ads are matched on conversation topic, past chats and past ad interactions. OpenAI says they are labelled, visually separated, never shown to predicted under-18s, kept away from health and politics, and do not influence answers. That last point is a **company claim**; no independent audit found.
+- **Detection:** the risk to watch is a trusted assistant voice (Messenger) sitting next to a sponsored unit at the moment of decision. Watch for ads that blur into answers, follow-up questions that steer toward the advertiser, and a "fewer free messages" trade-off framed as the price of opting out (Incentives).
+
+### 2. Steering LLM answers (Salience via SEO-for-LLMs)
+- Kumar & Lakkaraju (Harvard): adding a "strategic text sequence" to a product page made the LLM list that product as its top recommendation much more often [236]. Vendors can manipulate the model's ranking without the user seeing anything.
+
+### 3. AI shopping agents as targets of dark patterns
+- **Ersoy et al. (IEEE S&P 2026):** six web agents across three LLMs were susceptible to a single dark pattern **41%** of the time on average. Visual or HTML tweaks and stacked patterns changed susceptibility [235].
+- **SusBench (IUI '26, UW):** 313 tasks on 55 real sites with injected patterns. Five computer-use agents *and* humans were most susceptible to **Preselection, Trick Wording, Hidden Information**, and resilient to overt patterns [234]. Implication: **Defaults and Salience levers carry over to machine buyers**, while Affect-heavy patterns land less.
+- **Legal status of agents:** the 9th Circuit (4 Aug 2026) vacated Amazon's preliminary injunction against Perplexity's Comet agent. On that record, the *user* accessed Amazon with the agent as a tool. Amazon's terms of service were left intact [237]. Separately, the DFA proposal would give consumers set-the-parameters rights over AI agents (Arts 26–27) [221], and the CMA already says firms are liable for their agents [170].
+
+### 4. Companion-app retention and AI-manipulation law
+- New York GBL Art 47 (in force 5 Nov 2025) requires companion operators to detect self-harm and refer users to crisis services, and to disclose "not human" at the start and every 3 hours [238]. This is a counter to Ego/Affect attachment design, alongside CA SB 243 [166].
+- EU AI Act Art 5(1)(a) bans subliminal, purposefully manipulative or deceptive AI that causes significant harm. The Commission's guidelines (Feb 2025) give examples, including tailored persuasion that exploits personal data [239].
+- **Enforcement:** no FTC enforcement against Character.AI or Replika found as of 2026-11-21. The 6(b) study is still a study [164].
+
+### Sources (continued — twenty-third pass)
+233. OpenAI — Testing ads in ChatGPT (9 Feb 2026; updated 26 Mar, 7 May, 11 Aug 2026; company primary). https://openai.com/index/testing-ads-in-chatgpt/
+234. Guo et al. — SusBench: dark-pattern susceptibility of computer-use agents (IUI '26; arXiv 2510.11035). https://arxiv.org/abs/2510.11035
+235. Ersoy et al. — Investigating the impact of dark patterns on LLM-based web agents (IEEE S&P 2026; arXiv 2510.18113). https://arxiv.org/abs/2510.18113
+236. Kumar & Lakkaraju — Manipulating Large Language Models to Increase Product Visibility (arXiv 2404.07981). https://arxiv.org/abs/2404.07981
+237. US Court of Appeals, 9th Cir. — *Amazon.com Services v. Perplexity AI*, No. 26-1444 (4 Aug 2026). https://cdn.ca9.uscourts.gov/datastore/opinions/2026/08/04/26-1444.pdf
+238. NY Governor — letter to AI companion companies: safeguards in effect. https://www.governor.ny.gov/news/governor-hochul-pens-letter-ai-companion-companies-notifying-them-safeguard-requirements-are
+239. European Commission — Guidelines on prohibited AI practices under the AI Act (Feb 2025). https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-prohibited-artificial-intelligence-ai-practices-defined-ai-act
+
+
+## Continued research (twenty-fourth pass)
+
+*2026-11-21, America/Los_Angeles. Topic: under-covered regions.*
+
+| Region | Development | Levers | Source |
+| --- | --- | --- | --- |
+| **India — CCPA × Rapido** (15 Sep 2026) | ₹10 lakh. "Captains aren't accepting at ₹60. Try adding +10…" shown after booking = **Confirm Shaming**. Colour-coded "Set your price" slider (green up, red/orange down, more room to go up) = **Interface Interference**. Claim unsubstantiated | Affect, Commitments (post-booking), Salience | [241] |
+| **India — CCPA × Ola** (order reported 13 Nov 2026) | ₹10 lakh. Pre-ride "tip"/"add-on" prompts with no close option, aimed at waiting riders, including at hospitals and stations. Ola's 1–15 Jun 2026 data showed add-on rides accepted **less** often (Delhi 38% vs 62%, Bengaluru 40/68, Mumbai 39/68). Must stop all pre-ride extra-payment prompts. Uber and Namma Yatri still under investigation | Affect, Incentives (false), Salience | [240] |
+| **Brazil — Senacon NT 18/2026** (23 Jun 2026) | Secondary-ticket market review recommends sanction proceedings against Viagogo, including "Restam apenas 3% dos ingressos" scarcity alerts with no objective trigger criteria (possible misleading omission, CDC art. 37 §3) and total price not shown up front. Preliminary inquiries into BuyTicket, TicketSwap and StubHub | Affect (scarcity), Salience (drip) | [242] |
+| **Nigeria — FCCPC** (exposure drafts 13 Apr 2026) | Draft Consumer Protection Regulations 2026 would ban pre-ticked boxes, consent by inaction, bundled data consent, and dark patterns in consent interfaces. Comments closed 4 May 2026; **not final** as of 2026-11-21 (not found as final) | Defaults, Salience | [243] |
+| **Türkiye — Advertisement Board** (2025) | Fined cancellation options made hard to notice, unrelated content placed in the cancel flow, "continue cancellation" in small print, preselected subscription types, and card-required free trials. TRY 242.2M total Board fines in 2025, all causes | Defaults, Salience | [244] (secondary) |
+| **Colombia — SIC** | No 2026 sanction labelled "dark patterns" found; SIC took part in the ICPEN subscription sweep | — | not cited |
+| **Gulf (Saudi/UAE)** | Still no explicit dark-pattern ban found; ESCWA regional baseline unchanged (see pass 7) | — | — |
+
+**Detection takeaway:** India's ride-hail orders are the cleanest regulator-named examples of **post-commitment upsell pressure**: the price is quoted, the user books, and then an extra-payment prompt appears while they wait. The Ola order is a model "intent/effect" record: the firm's own data contradicted the nudge's claim, like the Cerebral and Credit Karma evidence pattern.
+
+### Sources (continued — twenty-fourth pass)
+240. PIB / CCPA — ₹10 lakh penalty on Ola for pre-ride "tip" feature (13 Nov 2026). https://www.pib.gov.in/PressReleseDetailm.aspx?PRID=2335741
+241. PIB / CCPA — ₹10 lakh penalty on Rapido for misleading tipping prompts and dark patterns (15 Sep 2026). https://www.pib.gov.in/PressReleasePage.aspx?PRID=2310526
+242. Senacon (MJSP) — Nota Técnica nº 18/2026/CGEMM/DPDC/SENACON/MJ, secondary ticket market (signed 23 Jun 2026). https://www.gov.br/mj/pt-br/assuntos/seus-direitos/consumidor/defesadoconsumidor/Biblioteca/notas-juridicas-upload/nota-tecnica-2026/2026/nota-tecnica-no-18_2026_cgemm_dpdc_senacon_mj.pdf/@@download/file/NOTA%20T%C3%89CNICA%20N%C2%BA%2018_2026_CGEMM_DPDC_SENACON_MJ.pdf
+243. FCCPC Nigeria — Notice of exposure drafts, Consumer Protection Regulations 2026 (13 Apr 2026). https://fccpc.gov.ng/wp-content/uploads/2026/04/FCCPC-Consumer-Protection-Exposure-Notice.pdf
+244. Gün + Partners — Key trends in Advertisement Board decisions in 2025 (26 Jan 2026; secondary). https://gun.av.tr/insights/updates/key-trends-in-advertisement-board-decisions-in-2025
+
+
+## Continued research (twenty-fifth pass)
+
+*2026-11-21, America/Los_Angeles. Topic: synthesis of passes 21–24. No new sources.*
+
+### 1. Lever-by-lever: what passes 21–24 changed
+| Lever | Change | Key refs |
+| --- | --- | --- |
+| **Messenger** | The chatbot is now an ad-bearing messenger (ChatGPT ads). The DFA gives a right to a human (Art 25) and influencer disclosure (Art 11). Texas AG tests the "Premium = real jobs" claim | [233][221][231] |
+| **Incentives** | False "pay more, get a ride sooner" incentives penalised in India. DFA restricts variable rewards and pay-to-win | [240][241][221] |
+| **Norms** | Little new enforcement; still mainly fake reviews and social proof (earlier passes) | — |
+| **Defaults** | Preselection is now the pattern with the most cross-border proof: Appliances Direct fine, Türkiye, Nigeria draft, DFA reminders and termination button, and SusBench shows **agents** fall for it too | [228][244][243][221][234] |
+| **Salience** | Drip pricing and hidden options (Gold's Gym, Viagogo, Microsoft Classic plan) stay core; LLM ranking manipulation is the new Salience surface | [228][242][224][236] |
+| **Priming** | Still weakly evidenced; the DFA's profiling and personalisation limits are the nearest hook | [221] |
+| **Affect** | Fake countdowns fined (Wayfair); scarcity alerts under Senacon review; confirm shaming fined (Rapido, Ola) | [228][242][241][240] |
+| **Commitments** | Post-commitment upsell (India) and renewal-at-higher-price (Microsoft, Coupang) are the live forms | [241][224][229] |
+| **Ego** | Companion-AI rules (NY, CA) and AI Act Art 5 target attachment and identity exploitation | [238][239] |
+
+### 2. Top 10: most enforced or most proven (as of 2026-11-21)
+1. **Cancellation obstruction / roach motel** (Defaults + Salience + Commitments): Amazon $2.5B, Adobe, Match, Cerebral; KFTC Wavve/Bugs; Türkiye Board; Uber pending. DFA Art 23 would codify it.
+2. **Drip pricing / hidden mandatory fees** (Salience): CMA AA, StubHub, Gold's Gym; Grubhub; Cineplex; Senacon Viagogo referral.
+3. **Pre-ticked add-ons / preselection** (Defaults): Marks Electrical, Appliances Direct, Wowcher; most effective on both humans and AI agents (SusBench).
+4. **Fake urgency / countdowns** (Affect + Salience): Wayfair £4.8M, Appliances Direct, Wowcher; per-se unfair under the DMCCA.
+5. **Hiding the cheaper option at renewal** (Defaults + Salience): ACCC and CMA v. Microsoft (pending); Coupang false hierarchy (fined).
+6. **Confirm shaming / guilt prompts** (Affect + Ego): Amazon decline-button remedy; CCPA Rapido and Ola; companion-app farewells (37%).
+7. **Gamified rewards / variable rewards** (Incentives + Affect): MA × Robinhood; EU CPC virtual-currency principles; DFA Arts 14–16.
+8. **Addictive feed design** (Salience + Affect): DSA TikTok (two preliminary findings) and Meta; X €120M under Art 25; DFA Art 17.
+9. **Defaults as the most proven lever** (Defaults): the robust exception in bias-corrected meta-analyses, while most other nudges shrink toward zero.
+10. **Intent shown by the firm's own records** (all levers): Amazon internal quotes, Cerebral's removed button, Credit Karma A/B logs, and now Ola's acceptance-rate data. This is the strongest evidence class for proving deliberate use.
+
+### 3. Still open after pass 25
+- Outcomes: FTC v. Uber (trial Oct 2027), ACCC v. Microsoft, CMA Microsoft (update end-2026), DSA TikTok/Meta decisions, DFA legislative path, FTC negative-option NPRM, CCPA Uber/Namma Yatri, Senacon Viagogo sanction, FCCPC final regulations.
+- Unverified: Nubank and Mercado Pago named BE units; DFA Annex I Part III item-by-item list (not extracted); OpenAI's "ads don't influence answers" claim (no audit found).
+
+
+## Continued research (twenty-sixth pass)
+
+*2026-11-21, America/Los_Angeles. Topic: closing pass-25 open items. Stance: detection and naming.*
+
+### 1. DFA Annex I Part III, the dark-pattern blacklist (verbatim scope from the Commission annex [245])
+| Point | Practice (abridged) | Primary lever | Secondary |
+| --- | --- | --- | --- |
+| 53 | False availability/popularity claims, or undisclosed qualifications | Norms | Affect (scarcity) |
+| 54 | Persistent availability/popularity statements throughout ordering to create scarcity | Affect | Salience |
+| 55 | Defaults the consumer must reject, or inferred consent to pay for add-ons/other quantity/other product | Defaults | Salience |
+| 56 | Presenting decline (to buy or to continue supply) as the wrong choice | Affect | Ego (confirm shaming) |
+| 57 | False impression that the featured option is the only option | Salience | Defaults |
+| 58 | Persistently asking the consumer to make or change a choice already made (nagging) | Commitments | Salience |
+| 59 | Misleading or ambiguous choice language: reversed framing, double negatives | Salience | Priming (framing) |
+| 60 | Price, contract duration or auto-renewal shown with less prominence than other material information | Salience | Defaults |
+| 61 | Fake notifications ("someone contacted you", "needs your attention") | Messenger | Affect |
+| 62 | Refuse/withdraw/change steps disproportionately more numerous, complex or time-consuming | Defaults (sludge) | Commitments |
+Points 12–14 (Part I) also blacklist drip pricing, false "limited time" offers, and limited-time offers with undisclosed duration [245]. **Ego and Incentives** have no Part III item; they are covered by Arts 15–16 and point 49 (direct exhortation to children).
+
+### 2. Commission primaries
+- **TikTok "For You" rabbit hole (6 Nov 2026):** the risk assessment and mitigations were inadequate, and viewing time outweighs explicit "not interested" choices [246]. This supersedes the secondary [225].
+- **X (5 Dec 2025):** €120M across Art 25(1) (deceptive blue checkmark), Art 39 (ad repository) and Art 40(12) (researcher access). X had 60 working days to propose measures for Art 25 [247]. This supersedes the secondary [226]. **Detection:** a paid badge presented as verification is a Messenger lever turned deceptive.
+
+### 3. India ride-hail
+- Namma Yatri: show-cause notice 28 May 2025. Its own data showed "Extra Fare" rides had *lower* acceptance and longer pickups. The feature was dropped and proceedings closed with no penalty [249] (secondary report of the CCPA order). Uber is still under investigation per the PIB release of 13 Nov 2026 [240]. No Uber order found.
+
+### 4. Nubank / Mercado Pago (company primaries only)
+- Nubank's Building Nubank post on launching Caixinhas describes concept research, usability tests and "reducing cognitive load" with simple, human language. That is goal-based design, but no unit named "behavioural science" [248]. The Nubank blog explains nudges and choice architecture to customers, which is education, not an internal unit.
+- Mercado Libre/Pago: tech-blog primaries mention data/CRO/A-B teams. No named behavioural-economics unit found; the CCL partnership [116] is still the only BE primary. **Both still unverified.**
+
+### Sources (continued — twenty-sixth pass)
+245. European Commission — Annexes to the Proposal for a Digital Fairness Act, COM(2026) 1100 (Annex I incl. Part III points 53–62; 11 Nov 2026). https://commission.europa.eu/document/download/a0539d90-2758-48e5-9010-1e856030d166_en?filename=Annexes+to+the+Proposal+for+a+Digital+Fairness+Act.pdf
+246. European Commission — Preliminary findings: TikTok 'For You' feed breaches DSA over 'rabbit holes' (6 Nov 2026). https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-tiktoks-you-feed-breach-digital-services-act-harmful-rabbit-holes
+247. European Commission — Press release IP/25/2934: Commission fines X €120 million under the DSA (5 Dec 2025). https://ec.europa.eu/commission/presscorner/api/files/document/print/en/ip_25_2934/IP_25_2934_EN.pdf
+248. Building Nubank — Como o Nubank lançou as 'Caixinhas' (company primary). https://building.nubank.com/pt-br/como-o-nubank-lancou-as-caixinhas/
+249. TaxGuru — In re Moving Tech Innovations (Namma Yatri), CCPA closes proceedings (2 Sep 2026; secondary). https://taxguru.in/corporate-law/namma-yatri-case-ccpa-closes-proceedings-tipping-feature-removed.html
+
+
+## Continued research (twenty-seventh pass)
+
+*2026-11-21, America/Los_Angeles. Topic: children and teens.*
+
+| Instrument / case | What it does | Levers | Source |
+| --- | --- | --- | --- |
+| **UK ICO × Reddit** (24 Feb 2026) | £14.47M. No robust age assurance (so no lawful basis for under-13s) and no DPIA before Jan 2025. Self-declaration is "easy to bypass". Reddit appealed (1 Apr 2026) | Defaults (high-privacy-by-default under the Children's code) | [250] |
+| **UK ICO × TikTok** (24 Sep 2026) | Appeals withdrawn; the 2023 £12.7M fine is final (up to 1.75M UK under-13s in 2020). The recommender-system probe on 13–17s (opened Feb 2025) can proceed. The ICO cites its research that children find it "harder to stop scrolling" | Salience, Affect (engagement loops) | [251] |
+| **US — California AADC** (*NetChoice v. Bonta*, 9th Cir., 12 Mar 2026) | Injunction vacated as to the whole Act, the coverage definition and age estimation. **Affirmed** as to data-use and **dark-patterns** restrictions (void for vagueness). Remanded | Defaults, Salience (the dark-pattern clause is on hold) | [252] |
+| **US — Maryland Kids Code** | NetChoice v. Brown pending; status beyond "litigation ongoing" not verified this pass | — | not cited |
+| **EU DSA Art 28 guidelines** (14 Jul 2025) | Private-by-default accounts. Recommenders should prioritise explicit signals and avoid rabbit holes. **Streaks, ephemeral content, read receipts, autoplay, push notifications off by default.** Remove persuasive design aimed mainly at engagement. No exploiting commercial illiteracy (virtual currencies, loot boxes). Safeguards for AI chatbots. Voluntary, but the yardstick for Art 28(1) | Defaults, Salience, Affect, Incentives, Commitments (streaks) | [253] |
+| **Brazil — ECA Digital** (Lei 15.211/2025; in force 17 Mar 2026) | Art 20: **loot boxes prohibited** in games aimed at or likely accessed by children/adolescents. Parental-supervision defaults must take the highest protection, including limits on autoplay, **rewards for time of use**, and notifications | Incentives, Affect, Defaults | [254] |
+| **Loot boxes/gacha — US** | FTC × HoYoverse $20M (Jan 2025) stays the main US primary (see pass 6) | Incentives, Salience (currency opacity) | prior |
+| **EU DFA** | Art 15 variable rewards banned for minors; Art 16 no pay-to-win for minors; point 49 no direct exhortation to children | Incentives, Ego | [221][245] |
+
+**Detection takeaway:** for minors, the legal default is flipping to **"engagement features off unless chosen."** A streak, read receipt or autoplay that is on by default for a teen account is now a nameable deviation (EU) or a breach (Brazil). The Commitments lever (streaks) is named for the first time in a regulator text.
+
+### Sources (continued — twenty-seventh pass)
+250. ICO — Reddit issued with £14.47m fine for children's privacy failures (24 Feb 2026; appeal noted 1 Apr 2026). https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/02/reddit-issued-with-1447m-fine-for-children-s-privacy-failures/
+251. ICO — TikTok withdraws two appeals and accepts £12.7m fine (24 Sep 2026). https://ico.org.uk/about-the-ico/media-centre/news-and-blogs/2026/09/tiktok-withdraws-two-appeals-in-children-s-privacy-action-and-accepts-127m-fine
+252. US Court of Appeals, 9th Cir. — *NetChoice v. Bonta*, No. 25-2366 (12 Mar 2026). https://cdn.ca9.uscourts.gov/datastore/opinions/2026/03/12/25-2366.pdf
+253. European Commission — Guidelines on the protection of minors under the DSA, Art 28 (14 Jul 2025). https://digital-strategy.ec.europa.eu/en/library/commission-publishes-guidelines-protection-minors
+254. Planalto — Lei nº 15.211/2025 (ECA Digital), incl. Art 20 loot boxes; in force 17 Mar 2026. https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15211.htm
+
+
+## Continued research (twenty-eighth pass)
+
+*2026-11-21, America/Los_Angeles. Topic: the workplace and gig economy, with MINDSPACE aimed at workers rather than consumers.*
+
+| Instrument / case | What it does | Levers | Source |
+| --- | --- | --- | --- |
+| **EU Platform Work Directive** (2024/2831; transposition by 2 Dec 2026, Art 29) | Art 12(1): evaluate risks of automated monitoring and decision systems, incl. **psychosocial** risks; Art 12(3): **no use "in a manner that puts undue pressure"** on workers; Art 12(4): also covers systems that only *support* decisions | All levers, when deployed through algorithmic management; most directly Incentives and Affect | [255] |
+| **Italy Garante × Foodinho/Glovo** (22 Nov 2024) | €5M; >35k riders. Automated deactivation messages with no notice of how to contest. The "sistema di eccellenza" score sets priority for booking shifts. Order assignment with no human intervention. Geolocation shared even off-shift. Order: human review of algorithmic decisions; safeguards against discriminatory use of customer-feedback reputation | Incentives (score-gated access), Norms/Ego (ratings), Affect (deactivation) | [256] |
+| **Amsterdam Court of Appeal × Ola** (ECLI:NL:GHAMS:2023:804, 4 Apr 2023) | Drivers' GDPR Art 15(1)(h) access to information on automated decisions: fraud probability score, earnings profile, ride allocation | Salience (opacity of incentive rules) | [257] |
+| **US — FTC × Lyft** (Oct 2024) | Inflated driver-earnings claims (see pass 13) | Incentives, Salience (anchors) | prior |
+| **Research — "Good Bad" job** (Cameron, *Administrative Science Quarterly*, 2024) | Title thesis: algorithmic management "manufactures consent through constant and confined choices" (abstract not fetched this pass) | Commitments, Ego (sense of autonomy) | [258] |
+| **Research — "how Uber nudges and sludges its drivers"** (*Industry and Innovation* 30(6)) | Analyses automated governance as nudge/sludge (full text timed out; title-level only) | Incentives, Defaults, Salience | [259] |
+| **Driver "quests" / surge messaging** | **Not found:** no regulator or court finding that names quests or surge prompts as manipulative | — | — |
+
+**Detection takeaway (worker-side):** the consumer checklist carries over to workers. Watch for incentive goals that move near completion, scores that gate access to work, deactivation messages without an appeal path, and prompts that create pressure ("you're close to your goal"). Under PWD Art 12(3), "undue pressure" becomes the legal hook in the EU from Dec 2026.
+
+### Sources (continued — twenty-eighth pass)
+255. EUR-Lex — Directive (EU) 2024/2831 on improving working conditions in platform work (Arts 12, 29). https://eur-lex.europa.eu/eli/dir/2024/2831/oj/eng
+256. Garante Privacy — Rider: €5M fine to Foodinho (Glovo group) (22 Nov 2024). https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/10074840
+257. Gerechtshof Amsterdam — ECLI:NL:GHAMS:2023:804, drivers v. Ola Netherlands (4 Apr 2023). https://uitspraken.rechtspraak.nl/details?id=ECLI%3ANL%3AGHAMS%3A2023%3A804
+258. Cameron, L.D. — "The Making of the 'Good Bad' Job: How Algorithmic Management Manufactures Consent Through Constant and Confined Choices," *Administrative Science Quarterly* (2024). https://journals.sagepub.com/doi/full/10.1177/00018392241236163
+259. "Automated governance mechanisms in digital labour platforms: how Uber nudges and sludges its drivers," *Industry and Innovation* 30(6). https://www.tandfonline.com/doi/full/10.1080/13662716.2022.2086450
+
+
+## Continued research (twenty-ninth pass)
+
+*2026-11-21, America/Los_Angeles. Topic: political, civic and charity uses.*
+
+| Area | Finding | Levers | Source |
+| --- | --- | --- | --- |
+| **EU TTPA** (Reg. 2024/900; full application 10 Oct 2025) | Paid/targeted political ads must be labelled, with sponsor, linked vote, amount paid and targeting disclosed. Targeting needs **explicit, separate consent**. No profiling on special-category data. No third-country sponsors in the 3 months before a vote. Content itself is not regulated | Messenger (who is speaking), Priming/Salience (micro-targeting) | [260] |
+| **Platform response** | Google announced (14 Nov 2024) it would stop EU political ads before the TTPA. Meta stopped delivering political, electoral and social-issue ads in the EU on 6 Oct 2025, citing "unworkable requirements". Organic political posting continues | — (market exit rather than compliance) | [261][262] |
+| **US — pre-checked recurring donations, Maryland** | Elec. Law §13-244: recurring contributions only with affirmative consent; **"failing to uncheck a pre-checked box" is not consent**; per-contribution receipts with cancel info; immediate cancellation; refunds owed for violations | Defaults, Salience | [263] |
+| **US — federal Uncheck the Box Act** (H.R. 4511, introduced 17 Jul 2025) | Would put the same affirmative-consent rule into FECA; referred to House Administration. Not enacted as of 2026-11-21 (no later action found) | Defaults | [264] |
+| **US — Connecticut / Missouri** | CT SB 1168 (2025) file copy contains the same passive-action-is-not-consent rule for online fundraising platforms (enactment status not verified here). Missouri ban signed 14 Jul 2026, per secondary reporting, which also cites NYT-reported 2020 refunds (Trump operation >530k refunds / $64.3M) and a 6-0 FEC recommendation (May 2021) | Defaults | [265][266] (secondary) |
+| **Charity default amounts** (Goswami & Urminsky, *JMR* 2016) | 8 studies: 11,508 participants and 2,423 donation decisions, incl. a natural field experiment. **Lower-bar** effect: low default raised donation rate (1.6% vs 0.7%). **Scale-back** effect: low defaults cut average gift. **Default-distraction**: defaults blunt other cues. Defaults raised revenue in the field, but can be "self-cancelling" | Defaults, Salience | [267] |
+| **Charity UX enforcement** | **Not found:** no FTC, Charity Commission or Fundraising Regulator action on donation-page defaults or pre-ticked recurring gifts this pass | — | — |
+
+**Detection takeaway:** in civic contexts, the canonical misuse is the **pre-checked recurring box**, now named in statute (Maryland) as passive action that is not consent. It maps exactly to DFA point 55 [245] and DMCCA-style pre-tick bans. The key Messenger signal is a missing sponsor or targeting notice.
+
+### Sources (continued — twenty-ninth pass)
+260. European Commission — New EU rules on political advertising come into effect (10 Oct 2025). https://commission.europa.eu/news-and-media/news/new-eu-rules-political-advertising-come-effect-2025-10-10_en
+261. Meta — Ending political, electoral and social issue advertising in the EU (updated 6 Oct 2025; company primary). https://about.fb.com/news/2025/07/ending-political-electoral-and-social-issue-advertising-in-the-eu/
+262. Google — An update on political advertising in the EU (14 Nov 2024; company primary). https://blog.google/company-news/inside-google/around-the-globe/google-europe/political-advertising-in-eu/
+263. Maryland General Assembly — Election Law §13-244 (recurring contributions; affirmative consent). https://mgaleg.maryland.gov/mgawebsite/laws/StatuteText?article=gel&section=13-244
+264. Congress.gov — H.R. 4511, Uncheck the Box Act (119th Cong., introduced 17 Jul 2025). https://www.congress.gov/119/bills/hr4511/BILLS-119hr4511ih.pdf
+265. Connecticut General Assembly — Substitute SB 1168 (2025) file copy, Sec. 3. https://www.cga.ct.gov/2025/FC/PDF/2025SB-01168-R000532-FC.PDF
+266. Dave Manuel — "The $100 Donation File" (24 Jul 2026; secondary; Missouri law, NYT refund figures, FEC 2021 vote). https://www.davemanuel.com/2026/07/24/where-political-donation-money-actually-goes/
+267. Goswami, I. & Urminsky, O. — "When should the Ask be a Nudge? The Effect of Default Amounts on Charitable Donations," *Journal of Marketing Research* (2016). https://journals.sagepub.com/doi/10.1509/jmr.15.0001
+
+
+## Continued research (thirtieth pass)
+
+*2026-11-21, America/Los_Angeles. Topic: synthesis of passes 21–29. No new sources.*
+
+### 1. Lever table, updated after passes 26–29
+| Lever | What 26–29 added | Key refs |
+| --- | --- | --- |
+| **Messenger** | Paid "verified" badge = deceptive design (X €120M, DSA Art 25); DFA point 61 bans fake notifications; TTPA sponsor notices | [247][245][260] |
+| **Incentives** | Loot boxes banned for minors (Brazil); DFA Arts 15–16; score-gated shift priority fined (Foodinho) | [254][221][256] |
+| **Norms** | DFA point 53 (false popularity); rider/driver ratings as work discipline | [245][256] |
+| **Defaults** | Most legislated lever: DFA point 55; Art 28 engagement-off defaults; ECA Digital max-protection defaults; Maryland pre-checked donation ban. Field caveat: donation defaults can self-cancel | [245][253][254][263][267] |
+| **Salience** | DFA points 57, 59, 60; TikTok rabbit-hole finding (viewing time outranks explicit choices); Ola algorithm opacity | [245][246][257] |
+| **Priming** | Still the weakest lever; TTPA targeting-consent and DFA reversed-framing (point 59) are the nearest hooks | [260][245] |
+| **Affect** | DFA points 54, 56 (scarcity, confirm shaming); deactivation threats to workers | [245][256] |
+| **Commitments** | Streaks named in the DSA Art 28 guidelines; DFA point 58 (nagging) and 62 (refusal asymmetry); "constant and confined choices" at work | [253][245][258] |
+| **Ego** | Children's exhortation ban (point 49); pay-to-win ban for minors | [245][221] |
+
+### 2. Top 10 v2: most enforced or most proven (as of 2026-11-21)
+1. **Cancellation / refusal asymmetry** (Defaults + Commitments): Amazon, Adobe, Match, Cerebral, KFTC Wavve/Bugs, Türkiye; DFA point 62 would make it per se.
+2. **Pre-ticks / inferred-consent defaults** (Defaults): Marks Electrical, Appliances Direct, Wowcher; Maryland donation statute; DFA point 55; agents also fall for it.
+3. **Drip pricing** (Salience): CMA AA/StubHub/Gold's Gym, Grubhub, Cineplex; DFA point 12.
+4. **Fake urgency / scarcity** (Affect): Wayfair, Appliances Direct; Senacon Viagogo; DFA points 13, 53–54.
+5. **Confirm shaming** (Affect + Ego): Amazon remedy; CCPA Rapido/Ola; DFA point 56.
+6. **Engagement-maximising design for minors** (Defaults + Salience + Commitments): DSA Art 28 guidelines, TikTok findings, ICO fines, ECA Digital.
+7. **Variable rewards / loot boxes** (Incentives + Affect): HoYoverse $20M, Brazil ban, Robinhood MA, DFA Art 15.
+8. **Hidden cheaper option / demoted renewal terms** (Salience): ACCC/CMA Microsoft (pending), Coupang (fined), DFA point 60.
+9. **Deceptive authority signals** (Messenger): X blue check €120M, fake notifications (DFA point 61), Credit Karma "pre-approved".
+10. **Defaults as the most proven lever**, with the caveat that donation defaults can self-cancel [267] and most other nudges shrink after bias correction.
+
+### 3. Detection checklist v2 (adds what passes 21–29 taught)
+1. **Run the DFA 53–62 list as a checklist.** Each item is a yes/no screen test, and points 12–14 cover price and urgency.
+2. **After the commitment:** does an extra-pay or upgrade prompt appear *after* the user has committed (booked, renewed, entered card)? (CCPA Rapido/Ola.)
+3. **Ask for the firm's own outcome data.** Does the nudge's claim ("tip = faster ride", "$25/mo savings") match the firm's data? A contradiction is evidence of intent (Ola, Namma Yatri, Uber One).
+4. **Check what is on by default for each audience.** Are streaks, autoplay, notifications, loot boxes or recurring gifts on by default for minors or donors?
+5. **Explicit vs. behavioural signals:** does the ranking let watch-time override "not interested"? (TikTok.)
+6. **Badges and authority:** is a paid marker presented as verification or endorsement? (X.)
+7. **Agent-readiness:** would an AI agent be tripped by preselection, trick wording or hidden information? Test with an agent as well as a human (SusBench).
+8. **Worker-side:** do incentive goals move, does a score gate access to work, can deactivation be appealed? (Foodinho; PWD Art 12(3).)
+9. **Sponsored vs. organic in AI answers:** is the line between ad and answer visible, and is ranking open to planted text? (ChatGPT ads; Kumar & Lakkaraju.)
+10. **Keep the effect-size caveat.** Name the lever, but don't assume a large effect except for defaults.
+
+### 4. Still open after pass 30
+- Outcomes: FTC v. Uber (trial Oct 2027), ACCC/CMA Microsoft, DSA TikTok (two preliminary findings) and Meta decisions, DFA legislative path, FTC negative-option NPRM, CCPA × Uber, Senacon × Viagogo, Nigeria FCCPC final rules, Reddit's ICO appeal, California AADC on remand, Maryland Kids Code, PWD transposition (due 2 Dec 2026).
+- Unverified: Nubank and Mercado Pago named BE units; any regulator finding on driver quests or surge messaging; any regulator action on charity donation defaults; CT SB 1168 enactment status; Missouri statute primary.
+
 ---
 
-*End of brief (first–eighth same-day passes). Committed to neuresthetics/fallacy_catalog under research/ through the eighth pass at Jason Burns's request (2026-10-26). Contained MINDSPACE research note — not part of fallacy_catalog METHOD.md or fallacy audits. Distilled memo: `corporate_mindspace_MEMO_2026-10-25.md`.*
+*End of brief (passes 1–8 on 2025-10-25 file date; passes 9–20 added 2026-11-04; passes 21–30 added 2026-11-21). GitHub holds passes 1–30 (sources #1–#267). Distilled memo: `corporate_mindspace_MEMO_2026-10-25.md`.*
