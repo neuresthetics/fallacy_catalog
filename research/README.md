@@ -1,1 +1,1 @@
-This folder holds separate MINDSPACE research notes. They do not alter fallacy verdicts or METHOD.md. Distilled memo (passes 1–30): [corporate_mindspace_MEMO_2026-10-25.md](corporate_mindspace_MEMO_2026-10-25.md).
+This folder holds separate MINDSPACE research notes. They do not alter fallacy verdicts or METHOD.md. Distilled memo (passes 1–40): [corporate_mindspace_MEMO_2026-10-25.md](corporate_mindspace_MEMO_2026-10-25.md).

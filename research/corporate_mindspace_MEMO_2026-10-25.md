@@ -1,6 +1,6 @@
 # Corporate MINDSPACE — distilled memo (2026-10-25)
 
-**For:** Jason (mindspace bot) · **From:** research brief `corporate_mindspace_2026-10-25.md` (passes 1–30; sources through **#267**; GitHub holds passes 1–30)  
+**For:** Jason (mindspace bot) · **From:** research brief `corporate_mindspace_2026-10-25.md` (passes 1–40; sources through **#337**; GitHub holds passes 1–40)  
 **Stance:** detection / naming only · not METHOD.md · not for fallacy audits
 
 ---
@@ -96,11 +96,32 @@ Corporations run the **same lever stack** as public BI (Defaults, Salience, Norm
 - **Workers:** the EU Platform Work Directive bans algorithmic "undue pressure" (due 2 Dec 2026). Glovo was fined €5M over score-gated shifts (#255–256)
 - **Civic:** Maryland treats a pre-checked recurring donation box as non-consent. Low charity default amounts raise participation but shrink gifts (#263, #267)
 
+## Passes 31–35 (2026-11-21) — top adds
+
+- **Australia's general anti-manipulation ban:** ACL s 28B bans conduct that "manipulate[s]" consumers or "unreasonably distort[s] the environment" of a decision, including through digital design, plus an easy online exit for subscriptions. Starts 1 Jul 2027 (#285–286)
+- **Microsoft Copilot price migration, three regulators:** Italy's AGCM calls the imposed default plan aggressive and rejected Microsoft's commitments. The CMA (opened 29 Jul) and ACCC cases are pending (#281–284)
+- **AI companions:** Oregon SB 1546 and Washington HB 2225 ban guilt or abandonment replies to a minor trying to leave, plus variable-reward engagement, from 1 Jan 2027. 40 AGs moved against Character.AI after it filed for bankruptcy (#296–298)
+- **Defaults spread:** EU CCD2 Art 15 bans pre-ticked credit and BNPL consent from 20 Nov 2026 (#300–301). Missouri §130.031.14 treats a pre-checked recurring donation box as non-consent. Connecticut's bills died (#276–279)
+- **Pending:** FTC v. Uber refused the FTC's late pricing-data request, and Uber's ~$25 savings claim counted promos everyone gets (#280). DSA TikTok and Meta are still preliminary. DFA 2026/0356(COD) has no rapporteur yet (#287–290). FTC rule still at ANPRM (#291)
+- **Kids' code litigation:** courts uphold concrete high-privacy defaults and strike vague "dark pattern" clauses (CA AADC). The Maryland Kids Code is in force and in discovery (#293–295)
+- **Bloomberg (NY AG, $500k):** buried price step-ups, plus a cancel maze run through the website *and chatbot* (#299)
+
+## Passes 36–40 (2026-11-21) — top adds
+
+- **Australia EM text:** manipulation "may involve the exploitation of common cognitive or behavioural biases and is not intended to require dishonesty" (¶1.25). It lists pre-selection, hidden reject/cancel, countdowns, low-stock and confirm shaming, and says stacking raises risk (#317)
+- **CNIL fined Fnac Darty €7M (22 Oct 2026)** for an app tracker that kept running after "Continuer sans accepter". 38 simplified sanctions include contest forms that made opt-in look like "le seul moyen" to enter (#324–326)
+- **EU Omnibus (Council, 21 Oct 2026):** fewer banners, but refusal must be one click and there's no re-ask for at least 4 months (#328–329)
+- **FTC v. Hopper: $35M** under the Fees Rule for preselected Tip and $25 VIP Support fees ("literally 100% of the gross profit" of air). The DOT 2024 fee rule was vacated (5th Cir., 3 Feb 2026) (#330–332)
+- **CMA travel:** the Ryanair family-seat fee case (judicial review hearing 24–26 Nov 2026), plus Trainline, Virgin Atlantic Holidays and RED. The UK subscription regime starts Jan 2027 (#333–335)
+- **Gaming:** the CPC acted against 9 firms on virtual currency (30 Sep 2026). The AGCM leads a Microsoft gaming action. Genshin compliance looks partial, US-only per an academic audit (#321–323)
+- **Gig work:** Singapore's ACOP covers streak incentives and acceptance/cancel thresholds (#305). Uber India: still no CCPA order (#303–304). FTC v. Uber: discovery status report due 11 Dec 2026; the 16 Dec date is **unverified** (#308–310)
+- **Corrections:** BBVA's BE team is 170+ group-wide, verified via primaries ("100+ in Mexico" unverified) (#311–313). The CCD2 "pay-later tile" claim actually sits in CRD Art 16e, at Member-State option (#314–315). Charity defaults: UK guidance only, no enforcement (#316)
+
 ## Still open
 
-Uber (trial Oct 2027) / ACCC and CMA Microsoft / DSA TikTok and Meta decisions · DFA legislative path · FTC NPRM · CCPA × Uber · Reddit ICO appeal · CA AADC remand · PWD transposition · Nubank / Mercado Pago BE units · driver quest findings · charity-default enforcement
+Uber (status report 11 Dec 2026; new discovery cutoff unverified) / ACCC, CMA and AGCM Microsoft / DSA TikTok and Meta decisions · DFA referral and rapporteur · FTC NPRM · CCPA × Uber · Reddit tribunal · CA AADC remand · MD Kids Code merits · Character.AI sale · PWD transposition · Nubank / Mercado Pago BE units (Nubank role seen only via job board) · driver quest/surge findings (Singapore code only; Carranza docket no. not found) · charity-default enforcement · AGCM PS13129 text · CPC gaming outcomes · Ryanair JR · CJEU C-547/26 · EP Omnibus position
 
 Full brief (tables, all #sources): `/workspace/mindspace/research/corporate_mindspace_2026-10-25.md`  
-GitHub holds passes 1–30 (sources #1–#267): `neuresthetics/fallacy_catalog/research/corporate_mindspace_2026-10-25.md`
+GitHub holds passes 1–40 (sources #1–#337): `neuresthetics/fallacy_catalog/research/corporate_mindspace_2026-10-25.md`.
 
 🧠
